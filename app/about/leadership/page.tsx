@@ -16,7 +16,7 @@ const team = [
     name: 'Rohit Tamhane',
     role: 'Founder & CEO',
     email: 'info@arcadiahomecare.ca',
-    photo: null, // no photo on old site for Rohit — use initials
+    photo: '/images/team/rohit-tamhane.webp',
     bio: 'Rohit founded Arcadia Home Care in 2005 after volunteering with the Alzheimer Society of Toronto — an experience that showed him what families navigating dementia truly needed. Under his leadership, Arcadia has grown almost entirely through word-of-mouth, a testament to the trust families place in the care they receive.',
     quote: 'While serving as a volunteer with the Alzheimer Society of Toronto, I realized what I wanted to be in life. Since then, my staff and I have been gratified to see the positive results that can be achieved from early intervention, utilization of existing resources, services provided by knowledgeable workers, and case management.',
   },
@@ -364,9 +364,15 @@ export default function LeadershipPage() {
         <section>
           <div className="founder-section">
             <div style={{ textAlign: 'center' }}>
-              <div className="founder-avatar">
-                <span className="founder-initials">RT</span>
-              </div>
+              <img
+                src="/images/team/rohit-tamhane.webp"
+                alt="Rohit Tamhane"
+                style={{
+                  width: '100%', maxWidth: 260, aspectRatio: '1',
+                  objectFit: 'cover', borderRadius: '50%', display: 'block',
+                  margin: '0 auto',
+                }}
+              />
             </div>
             <div>
               <p className="founder-eyebrow">Our Founder</p>
