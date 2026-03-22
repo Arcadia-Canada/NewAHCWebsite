@@ -369,7 +369,7 @@ export default function LeadershipPage() {
                 alt="Rohit Tamhane"
                 style={{
                   width: '100%', maxWidth: 260, aspectRatio: '1',
-                  objectFit: 'cover', objectPosition: 'center 20%',
+                  objectFit: 'cover', objectPosition: 'center 10%',
                   borderRadius: '50%', display: 'block',
                   margin: '0 auto',
                 }}
