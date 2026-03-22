@@ -1,0 +1,129 @@
+"use client"
+
+import Link from "next/link"
+import { colors, fonts, phone, trustItems } from "@/components/arcadia-colors"
+
+const steps = [
+  { num: 1, title: "Book a Free Consultation", description: "A no-obligation call where we listen to your situation and begin to understand what your family needs.", href: "/contact/", icon: "📞" },
+  { num: 2, title: "Care Assessment", description: "An in-home visit to understand your loved one's daily routines, medical needs, and personal preferences.", href: "/how-care-starts/care-assessment/", icon: "📋" },
+  { num: 3, title: "Matching Caregivers", description: "We carefully match your family with a caregiver suited to your loved one's personality, language, and care requirements.", href: "/how-care-starts/matching-caregivers/", icon: "🤝" },
+  { num: 4, title: "First Week of Care", description: "Care begins with close monitoring and daily check-ins to ensure everything is working well for your family.", href: "/how-care-starts/first-week-of-care/", icon: "📅" },
+  { num: 5, title: "Pricing and Funding", description: "We help you navigate insurance coverage, publicly funded options, and private pay — clearly and honestly.", href: "/how-care-starts/pricing-and-funding/", icon: "💰" },
+  { num: 6, title: "Referral Process", description: "For discharge planners and health professionals: a streamlined pathway to get your patient the right support fast.", href: "/how-care-starts/referral-process/", icon: "📨" },
+  { num: 7, title: "Ongoing Support", description: "We stay in touch as care continues — reviewing the care plan, adjusting as needs change, and making sure your family has the support that fits.", href: "/how-care-starts/ongoing-support/", icon: "🌱" },
+]
+
+export default function HowCareStartsHubPage() {
+  return (
+    <main style={{ fontFamily: fonts.body, color: colors.text }}>
+
+      {/* Hero */}
+      <section style={{ background: colors.primary, padding: "96px 24px 80px", textAlign: "center" }}>
+        <div style={{ maxWidth: 720, margin: "0 auto" }}>
+          <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: colors.accent, marginBottom: 16 }}>
+            How Care Starts
+          </p>
+          <h1 style={{ fontFamily: fonts.display, fontSize: "clamp(2.5rem, 5vw, 3.8rem)", fontWeight: 600, color: colors.white, lineHeight: 1.15, marginBottom: 0 }}>
+            Simple Steps to Get the Right Care
+          </h1>
+          <p style={{ fontSize: 17, color: "rgba(255,255,255,0.75)", lineHeight: 1.7, fontWeight: 300, margin: "16px 0 32px" }}>
+            From your first call to ongoing support — here is exactly what happens when you reach out to Arcadia.
+          </p>
+          <div style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap" }}>
+            <a href={phone.tel} className="arc-btn-primary">📞 Call {phone.display}</a>
+            <Link href="/contact/" className="arc-btn-outline">Book a Free Consultation</Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Trust strip */}
+      <div style={{ background: colors.warm, borderBottom: `1px solid ${colors.border}`, padding: "12px 24px", display: "flex", justifyContent: "center", gap: 40, flexWrap: "wrap" }}>
+        {trustItems.map(item => (
+          <div key={item.text} style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 13, fontWeight: 500, color: colors.primary }}>
+            <span>{item.icon}</span><span>{item.text}</span>
+          </div>
+        ))}
+      </div>
+
+      {/* Step cards */}
+      <section style={{ background: colors.warm, padding: "96px 24px" }}>
+        <div style={{ maxWidth: 1000, margin: "0 auto" }}>
+          <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: colors.accent, marginBottom: 12 }}>
+            The Process
+          </p>
+          <h2 style={{ fontFamily: fonts.display, fontSize: "clamp(1.6rem, 3vw, 2.6rem)", fontWeight: 600, color: colors.primary, marginBottom: 40 }}>
+            What Happens After You Call
+          </h2>
+          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gridTemplateColumns: "1fr", gap: 20 }}>
+            {steps.map(({ num, title, description, href, icon }) => (
+              <li key={href}>
+                <Link href={href} className="arc-card" style={{ flexDirection: "row", alignItems: "flex-start", gap: 20 }}>
+                  {/* Step number */}
+                  <div style={{ flexShrink: 0, width: 56, textAlign: "center" }}>
+                    <span style={{ display: "block", fontSize: 10, fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", color: colors.textLight, marginBottom: 2 }}>
+                      Step {num}
+                    </span>
+                    <span style={{ fontFamily: fonts.display, fontSize: 40, fontWeight: 600, color: colors.accent, lineHeight: 1, opacity: 0.9 }}>
+                      {String(num).padStart(2, "0")}
+                    </span>
+                  </div>
+                  {/* Icon */}
+                  <div style={{ flexShrink: 0, display: "flex", alignItems: "center", justifyContent: "center", width: 48, height: 48, background: "rgba(200,48,42,0.08)", borderRadius: 10, fontSize: 24 }}>
+                    {icon}
+                  </div>
+                  {/* Content */}
+                  <div style={{ flex: 1, minWidth: 0 }}>
+                    <h3 style={{ fontFamily: fonts.display, fontSize: 19, fontWeight: 600, color: colors.primary, marginBottom: 8, lineHeight: 1.3 }}>
+                      {title}
+                    </h3>
+                    <p style={{ fontSize: 15, color: colors.textLight, lineHeight: 1.65, marginBottom: 12 }}>
+                      {description}
+                    </p>
+                    <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", paddingTop: 12, borderTop: `1px solid ${colors.border}` }}>
+                      <span style={{ fontSize: 13, fontWeight: 700, color: colors.accent, textTransform: "uppercase", letterSpacing: "0.05em" }}>Learn More</span>
+                      <span className="arc-card-arrow" style={{ fontSize: 18, color: colors.accent, transition: "all 0.2s" }}>→</span>
+                    </div>
+                  </div>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/* Bottom CTA */}
+      <section style={{ background: colors.primary, padding: "80px 24px", textAlign: "center" }}>
+        <div style={{ maxWidth: 640, margin: "0 auto" }}>
+          <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "rgba(255,255,255,0.5)", marginBottom: 16 }}>Get Started</p>
+          <h2 style={{ fontFamily: fonts.display, fontSize: "clamp(1.8rem, 3.5vw, 2.6rem)", fontWeight: 600, color: colors.white, marginBottom: 16, lineHeight: 1.2 }}>
+            It Starts With One Conversation
+          </h2>
+          <p style={{ fontSize: 16, color: "rgba(255,255,255,0.7)", lineHeight: 1.7, marginBottom: 24 }}>
+            There&apos;s no obligation. We listen first — then help you understand what your loved one needs and how we can help.
+          </p>
+          <a href={phone.tel} style={{ display: "block", fontSize: "1.5rem", fontWeight: 700, color: colors.accent, textDecoration: "none", marginBottom: 24 }}>{phone.display}</a>
+          <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap" }}>
+            <a href={phone.tel} className="arc-btn-primary">📞 Call {phone.display}</a>
+            <Link href="/contact/" className="arc-btn-outline">Book a Free Consultation</Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Referral strip */}
+      <section style={{ background: colors.warm, borderTop: `1px solid ${colors.border}`, padding: "56px 24px", display: "flex", justifyContent: "center" }}>
+        <div style={{ maxWidth: 560, width: "100%", background: colors.surface, border: `1px solid ${colors.border}`, borderRadius: 12, padding: "28px 32px", textAlign: "center", boxShadow: "0 4px 16px rgba(28,43,58,0.06)" }}>
+          <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: colors.textLight, marginBottom: 8 }}>
+            For professionals
+          </p>
+          <p style={{ fontSize: 15, color: colors.primary, marginBottom: 20, fontWeight: 500, lineHeight: 1.6 }}>
+            <strong>Referring a patient?</strong> We work with discharge planners, social workers, and specialist teams across the GTA.
+          </p>
+          <Link href="/referral-form/" className="arc-btn-primary">
+            Submit a Professional Referral →
+          </Link>
+        </div>
+      </section>
+
+    </main>
+  )
+}

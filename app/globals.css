@@ -1,0 +1,244 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #2D2D2D;
+  --color-primary: #1C2B3A;
+  --color-accent: #C8302A;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+body {
+  background: var(--background);
+  color: #2D2D2D;
+  font-family: var(--font-dm-sans), system-ui, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-cormorant), Georgia, serif;
+}
+
+/* ---------------------------------------------------
+   Arcadia Typography Refinements
+   Applies to article pages and long-form content.
+   Does not affect nav, buttons, or utility text.
+--------------------------------------------------- */
+
+.article-content p,
+.hub-intro p,
+.pro-content p,
+.care-plan-content p {
+  font-size: 1.0625rem;
+  line-height: 1.85;
+  margin-bottom: 1.4em;
+}
+
+.article-content h2,
+.hub-articles h2,
+.pro-content h2,
+.care-plan-content h2 {
+  margin-top: 56px;
+  margin-bottom: 18px;
+}
+
+.article-body {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 64px;
+}
+
+@media (max-width: 900px) {
+  .article-body {
+    grid-template-columns: 1fr;
+    max-width: 680px;
+  }
+}
+
+/* ---------------------------------------------------
+   Hero Depth
+--------------------------------------------------- */
+
+.article-hero,
+.loc-hero,
+.pro-hero,
+.care-plan-hero,
+.hub-hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.article-hero::before,
+.loc-hero::before,
+.pro-hero::before,
+.care-plan-hero::before,
+.hub-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 20% 20%,
+    rgba(255, 255, 255, 0.08),
+    transparent 45%
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+.article-hero-inner,
+.loc-hero-inner,
+.pro-hero-inner,
+.care-plan-hero-inner,
+.hub-hero-inner {
+  position: relative;
+  z-index: 1;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Red CTA buttons */
+a.btn-red,
+.btn-red,
+a.btn-red-sm,
+.btn-red-sm,
+a.hcs-step-btn-red,
+.hcs-step-btn-red,
+a.loc-city-btn-red,
+.loc-city-btn-red,
+a.loc-region-btn-red,
+.loc-region-btn-red {
+  color: #ffffff !important;
+}
+a.btn-red:hover,
+.btn-red:hover,
+a.btn-red-sm:hover,
+.btn-red-sm:hover,
+a.hcs-step-btn-red:hover,
+.hcs-step-btn-red:hover,
+a.loc-city-btn-red:hover,
+.loc-city-btn-red:hover,
+a.loc-region-btn-red:hover,
+.loc-region-btn-red:hover {
+  color: #ffffff !important;
+}
+
+@media (max-width: 768px) {
+  .hero-grid { flex-direction: column !important; }
+  .hero-image { display: none !important; }
+  .services-grid { grid-template-columns: 1fr 1fr !important; }
+  .steps-grid { flex-direction: column !important; }
+  .locations-grid { grid-template-columns: 1fr 1fr !important; }
+  .cta-grid { flex-direction: column !important; }
+  .pillar-grid { flex-direction: column !important; }
+  .conditions-grid { flex-wrap: wrap !important; }
+}
+
+@media (max-width: 480px) {
+  .services-grid { grid-template-columns: 1fr !important; }
+  .locations-grid { grid-template-columns: 1fr !important; }
+}
+
+/* ---------------------------------------------------
+   Arcadia Standard Buttons
+   Use these classes on all pages for consistency.
+   .arc-btn-primary = red fill (primary action)
+   .arc-btn-outline = white border (on dark backgrounds)
+--------------------------------------------------- */
+
+.arc-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #C8302A;
+  color: #ffffff !important;
+  padding: 13px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(200,48,42,0.30);
+  transition: background 0.2s, transform 0.2s;
+  line-height: 1;
+}
+.arc-btn-primary:hover {
+  background: #a82520;
+  transform: translateY(-2px);
+  color: #ffffff !important;
+}
+
+.arc-btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  color: #ffffff !important;
+  padding: 13px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+  border: 1.5px solid rgba(255,255,255,0.35);
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+  line-height: 1;
+}
+.arc-btn-outline:hover {
+  background: rgba(255,255,255,0.10);
+  border-color: rgba(255,255,255,0.65);
+  color: #ffffff !important;
+}
+
+/* ---------------------------------------------------
+   Arcadia Standard Card
+   Use .arc-card on all hub page cards for consistency.
+--------------------------------------------------- */
+
+.arc-card {
+  position: relative;
+  background: #FAFAF8;
+  border: 1px solid #E5E0D8;
+  border-radius: 14px;
+  padding: 28px 26px 24px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.25s ease;
+  overflow: hidden;
+  color: #2D2D2D;
+}
+.arc-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: #C8302A;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+.arc-card:hover {
+  background: #ffffff;
+  border-color: #C8302A;
+  box-shadow: 0 12px 40px rgba(28,43,58,0.12);
+  transform: translateY(-3px);
+}
+.arc-card:hover::before {
+  transform: scaleX(1);
+}
+.arc-card:hover .arc-card-arrow {
+  transform: translateX(4px);
+}

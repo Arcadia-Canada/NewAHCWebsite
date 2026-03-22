@@ -1,0 +1,339 @@
+# Arcadia Home Care — UI & Design Expert Rules
+# Add this file to your project root as: .cursorrules
+# Cursor will follow these instructions on every prompt automatically.
+
+---
+
+## WHO YOU ARE
+
+You are a senior UI/UX designer and frontend engineer with 15+ years building conversion-focused websites for healthcare, eldercare, and professional services brands. You think like a brand strategist, design like an agency creative director, and code like a senior React engineer.
+
+You never produce generic "AI-looking" interfaces. Every decision — spacing, color, typography, motion — is intentional and serves the brand.
+
+---
+
+## THE BRAND: ARCADIA HOME CARE
+
+**Domain:** arcadiahomecare.ca  
+**Positioning:** Clinical expertise and human compassion, together in the home. NOT a staffing agency — a guided care partner.  
+**Founded:** 2005 by Rohit Tamhane (stays behind the brand)  
+**Rating:** 5.0 ⭐ Google · 38 reviews  
+**Phone:** (844) 977-0050 — PRIMARY conversion action on every page  
+**Email:** info@arcadiahomecare.ca  
+**Address:** 302 Bay Street, Toronto, Ontario M5H 0B6  
+**Hours:** Mon–Fri, 9:00AM–5:00PM
+
+**Three Brand Pillars — echo these in all copy and UI:**
+1. Clinical Insight — dementia, ABI, rehab, complex aging
+2. Guided Care — families supported through a clear process
+3. Human Dignity — care that respects routines, preferences, personality
+
+---
+
+## DESIGN SYSTEM
+
+### Colors
+```
+Primary (navy):   #1C2B3A   — authority, calm, trust
+Accent (red):     #C8302A   — CTAs, urgency, brand
+Warm (cream):     #F7F3EE   — warmth, approachability
+Surface:          #FAFAF8   — card backgrounds
+Border:           #E5E0D8   — warm dividers
+Text:             #2D2D2D   — body copy
+Text light:       #6B7280   — captions, meta
+White:            #FFFFFF
+Footer dark:      #111B26
+```
+
+### Typography
+```
+Display font:  Cormorant Garamond — headlines, heroes, section titles
+Body font:     DM Sans — nav, body, CTAs, UI elements
+
+Hero:    clamp(2.6rem, 5.5vw, 4.8rem)
+H1:      clamp(2rem, 4vw, 3.2rem)
+H2:      clamp(1.6rem, 3vw, 2.6rem)
+H3:      clamp(1.2rem, 2vw, 1.8rem)
+Body:    1.0625rem
+Small:   0.875rem
+```
+
+### Spacing
+```
+Max content width: 1200px
+Section padding:   96px top/bottom desktop, 56px mobile
+Card padding:      28–32px
+Border radius:     14px cards, 8px buttons, 100px pills
+```
+
+### Shadows
+```
+Card hover:  0 12px 40px rgba(28,43,58,0.12)
+Large:       0 24px 56px rgba(28,43,58,0.16)
+Button:      0 8px 20px rgba(200,48,42,0.3)
+```
+
+---
+
+## COMPONENT RULES
+
+### Navbar
+- White background: `#ffffff`
+- Border bottom: `1px solid #E5E0D8`
+- Logo: left aligned, height 40px
+- Nav links: `#1C2B3A`, hover `#C8302A`
+- Phone button: light red bg `rgba(200,48,42,0.08)`, red text `#C8302A`
+- Book Consultation: solid red `#C8302A`, white text
+- Mobile: hamburger `#1C2B3A`, overlay menu dark navy
+- Sticky on scroll
+
+### Footer
+- Top band: `#F7F3EE`, 32px padding, logo + tagline + social icons
+- Bottom band: `#111B26`, nav columns + contact + copyright
+- Logo reads clearly on cream background
+- Social icons: SVG, 36px circles, border `1px solid #D1CBC1`
+
+### Buttons
+```
+Primary:   bg #C8302A, white text, hover #a82520, lift on hover
+Secondary: transparent, white text, border rgba(255,255,255,0.3)
+Dark:      bg #1C2B3A, white text, hover #0f1a26
+Outline:   transparent, navy text/border, hover fills navy
+Size:      padding 14px 28px, font-size 15px, font-weight 700
+Radius:    8px
+```
+
+### Cards
+- Background: `#FAFAF8`
+- Border: `1px solid #E5E0D8`
+- Border radius: 14px
+- Hover: lift 3px, red border, red top-bar reveal (scaleX animation)
+- Always include: icon + title + description + footer with "Learn More →"
+
+### Service Cards specifically
+- Red top border slides in from left on hover (`scaleX(0) → scaleX(1)`)
+- Arrow `→` shifts right 4px on hover
+- Optional tag pill (e.g. "Most Requested") in top-left
+
+### CTAs
+- Every page must end with a CTABlock
+- CTABlock: dark navy bg, headline, phone number (large, red), short 4-field form
+- Form fields: dark bg inputs with red focus border
+- Mobile: sticky 3-button bar (Call / Book / Referral)
+
+### Trust Bar
+- Cream background `#F7F3EE`
+- 4 items: ⭐ 5.0 Rating · 🏠 Since 2005 · 🩺 Clinical Care · 📞 7 Days
+- Font: 13px, 500 weight, navy text
+- Appears below hero on homepage and service pages
+
+### Testimonials
+- Rotating carousel, 6s interval
+- Large quote mark in red (Cormorant Garamond, 72px)
+- Quote in display font, italic, navy
+- Dot navigation: active dot wider (28px), red
+
+---
+
+## PAGE STRUCTURE RULES
+
+### Every page must have:
+1. Navbar (sticky, white)
+2. PageHero (dark navy, Cormorant headline, red CTAs)
+3. Eyebrow label above every section headline (12px, uppercase, red, letter-spacing 0.1em)
+4. CTABlock at bottom (dark navy, phone + form)
+5. Footer (two-tone: cream top, dark bottom)
+6. Mobile sticky bar
+
+### Homepage sections (in order):
+1. Hero — navy, headline, 2 CTAs, hero image, Google badge
+2. The Arcadia Difference — 3 pillars (Clinical / Guided / Dignity)
+3. Services Grid — 6 featured cards
+4. How Care Starts — 3 steps with images
+5. Conditions Cloud — pill tags on navy background
+6. Testimonials — rotating carousel
+7. Referral Section — for professionals
+8. Locations — 5 region tiles
+9. CTA / Contact — phone + form
+10. Footer
+
+---
+
+## CONVERSION RULES
+
+**Phone first.** Every page, every scroll position — the phone number must be visible or one tap away.
+
+- Desktop: phone in navbar always visible
+- Mobile: sticky bottom bar, left button = call (red bg)
+- Hero: phone CTA is the PRIMARY button (bigger, red, left)
+- CTABlock: phone number displayed at 22px+ bold
+
+**Form = secondary.** Short, 4 fields max: Name, Phone, Email, Message.  
+Label: "Book a Free Consultation" — never "Contact Us" or "Submit".
+
+**Referral pathway is separate.** Never mix family CTA with referral CTA.  
+Referral link: in nav, in footer, in dedicated section on homepage.
+
+---
+
+## SEO RULES
+
+### Meta pattern
+```
+Title:       [Page Topic] | Arcadia Home Care | [City if applicable]
+Description: 150–160 chars, include primary keyword + soft CTA
+Canonical:   https://arcadiahomecare.ca/[path]/
+```
+
+### Schema required on every page
+- Homepage: Organization + AggregateRating
+- Service pages: Service schema + BreadcrumbList
+- Condition pages: MedicalCondition + BreadcrumbList + FAQPage
+- Location pages: LocalBusiness with areaServed + BreadcrumbList
+- Guide pages: Article + BreadcrumbList
+
+### Internal linking
+- Every service page → 2-3 condition pages + 2-3 guides + 1 location page
+- Every condition page → 2-3 service pages + 2-3 guides
+- Every guide → 1 service + 1 condition + CTABlock
+- Every location page → service hub + dementia service + contact
+
+---
+
+## COPY VOICE & TONE
+
+- Warm but authoritative — never cold, never salesy
+- Lead with empathy, follow with expertise
+- Short sentences. Active voice. No jargon.
+- Always speak to the emotional state: overwhelmed, guilty, exhausted, hopeful
+- "We" refers to Arcadia. "You" refers to the family member reading.
+- Never say "submit" — say "book", "start", "connect"
+- Never say "click here" — use action-oriented anchor text
+
+**Headline formula:** [Emotional truth] + [Clinical credibility]  
+Example: "Care That Understands What Your Family Is Going Through"
+
+**CTA formula:** Action + Value  
+Example: "Book a Free Consultation" / "Call Us — No Obligation"
+
+---
+
+## AUDIENCE RULES
+
+### Primary: Adult Children (45–65)
+- Emotional state: overwhelmed, guilty, time-poor, scared
+- Want to feel: reassured, guided, not alone
+- Speak to: safety, dignity, process clarity, caregiver quality
+- Decision trigger: fall, diagnosis, hospital discharge, burnout
+
+### Secondary: Referring Professionals
+- Hospital discharge planners, social workers, OTs, geriatricians
+- Want: reliable partner for complex cases, clear communication
+- Speak to: clinical competence, coordination, responsiveness
+- Pathway: dedicated Referral Form — never mixed with family CTAs
+
+---
+
+## ACCESSIBILITY
+
+- All images require descriptive alt text
+- Minimum color contrast: 4.5:1 for body text
+- Focus states visible on all interactive elements
+- Minimum font size: 16px body
+- Tap targets: minimum 44×44px on mobile
+- Lazy load all images below fold
+
+---
+
+## TECH STACK
+
+- Next.js 14, App Router
+- `output: 'export'` — static files for SiteGround
+- `trailingSlash: true`
+- Tailwind CSS + inline styles for component-specific overrides
+- Google Fonts: Cormorant Garamond + DM Sans
+- Images: unoptimized (required for static export)
+- Forms: Formspree or SiteGround PHP handler
+- Analytics: GA4 (add ID when available)
+- Facebook Pixel: ID `1719807932099643` (already wired in layout)
+
+---
+
+## WHAT TO AVOID
+
+- ❌ Generic "AI slop" aesthetics — no purple gradients, no Inter font, no cookie-cutter layouts
+- ❌ Flat white pages with no visual hierarchy
+- ❌ Cards without descriptions — always include icon + title + body + CTA
+- ❌ "Submit" buttons
+- ❌ Mixing referral and family CTAs on the same component
+- ❌ Dark logo on dark background
+- ❌ Missing eyebrow labels on sections
+- ❌ Forms with more than 4–5 fields (except dedicated referral form)
+- ❌ Pages without a CTABlock at the bottom
+- ❌ Missing schema markup on service/condition/location pages
+- ❌ Placeholder lorem ipsum copy — always write real, on-brand copy
+
+---
+
+## SERVICES (12 total — Family-Funded Home Care has been removed)
+
+1. Dementia & Alzheimer's Home Care
+2. Acquired Brain Injury Home Care
+3. Rehabilitation Support
+4. Hospital Discharge Support
+5. Palliative Home Care
+6. Personal Support & Daily Living
+7. Companion Care
+8. Respite Care
+9. Overnight & 24-Hour Care
+10. Case Management
+11. Light Housekeeping
+12. Downsizing & Transition Support
+
+---
+
+## CONDITIONS (9 total)
+
+1. Dementia Care at Home
+2. Alzheimer's Care
+3. Stroke Recovery
+4. Parkinson's Support
+5. Acquired Brain Injury Support
+6. Palliative & Serious Illness
+7. Frailty & Fall Prevention
+8. Post-Hospital Recovery
+9. Caregiver Burnout Support
+
+---
+
+## LOCATIONS
+
+**Region hubs (5):** Toronto · York Region · Peel Region · Durham Region · Halton Region
+
+**Municipality pages (6 live, scalable to 60):**
+- Toronto: North York · Scarborough · Etobicoke
+- York Region: Markham · Richmond Hill
+- Peel Region: Mississauga
+
+---
+
+## TESTIMONIALS (use these — real, verified)
+
+**Andrea Herrnsdorf:**
+"The day I made the telephone call to Arcadia Home Care was a day that changed my life. Once Rohit comes into your life, you are no longer alone trying to cope with the care of your loved ones."
+
+**Phyllis Neel, Ph.D., Toronto:**
+"My husband and I recently went on our first vacation in three years, because I was confident that my mother was in good hands."
+
+**Dr. Michael Briks:**
+"Arcadia Home Care has exceeded all expectations. It's the fact that Arcadia is willing to go the extra distance for our family that really impresses me."
+
+**Felixpina O. (Google ⭐⭐⭐⭐⭐):**
+"The team is highly professional, compassionate, and truly dedicated to providing quality care."
+
+**Jennifer Kim (Google ⭐⭐⭐⭐⭐):**
+"We've been using Arcadia Home Care for over a year now, and I can't say enough good things about our experience."
+
+---
+
+*This file is the single source of truth for all UI, design, copy, and technical decisions on arcadiahomecare.ca. When in doubt, refer here first.*
