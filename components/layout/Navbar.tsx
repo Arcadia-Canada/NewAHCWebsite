@@ -29,6 +29,7 @@ export default function Navbar() {
         }}
       >
         <div
+          className="nav-inner"
           style={{
             maxWidth: 1200,
             margin: "0 auto",
@@ -36,12 +37,13 @@ export default function Navbar() {
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
-            height: 72,
+            height: 64,
             flexWrap: "nowrap",
           }}
         >
           <a href="/" style={{ display: "flex", alignItems: "center", gap: 10, flexShrink: 0 }}>
             <img
+              className="nav-logo"
               src="/images/arcadia-logo.svg"
               alt="Arcadia Home Care"
               style={{ height: 40, width: "auto", flexShrink: 0 }}
@@ -55,6 +57,7 @@ export default function Navbar() {
               gap: 32,
               fontSize: 14,
               fontWeight: 500,
+              marginLeft: 48,
             }}
             className="desktop-nav"
           >
@@ -89,7 +92,7 @@ export default function Navbar() {
           </div>
 
           <div
-            style={{ display: "flex", alignItems: "center", gap: 12, marginLeft: 24 }}
+            style={{ display: "flex", alignItems: "center", gap: 24, marginLeft: 24 }}
             className="desktop-nav"
           >
             <a
@@ -228,6 +231,8 @@ export default function Navbar() {
         @media (max-width: 768px) {
           .desktop-nav { display: none !important; }
           .mobile-menu-btn { display: block !important; }
+          .nav-inner { height: 56px !important; padding: 0 16px !important; }
+          .nav-logo { height: 34px !important; }
         }
       `}</style>
     </>
