@@ -20,38 +20,6 @@ const team = [
     bio: 'Rohit founded Arcadia Home Care in 2005 after volunteering with the Alzheimer Society of Toronto — an experience that showed him what families navigating dementia truly needed. Under his leadership, Arcadia has grown almost entirely through word-of-mouth, a testament to the trust families place in the care they receive.',
     quote: 'While serving as a volunteer with the Alzheimer Society of Toronto, I realized what I wanted to be in life. Since then, my staff and I have been gratified to see the positive results that can be achieved from early intervention, utilization of existing resources, services provided by knowledgeable workers, and case management.',
   },
-  {
-    name: 'Melissa Vigar',
-    role: 'Director of Operations',
-    email: 'melissa@arcadiahomecare.ca',
-    photo: '/images/team/melissa-vigar.webp',
-    bio: 'Melissa oversees day-to-day operations across all service areas, ensuring that every client receives consistent, high-quality care. Her focus on process, communication, and team support keeps Arcadia running with the reliability families depend on.',
-    quote: null,
-  },
-  {
-    name: 'Peter Glazer',
-    role: 'Clinical Director',
-    email: 'peter@arcadiahomecare.ca',
-    photo: '/images/team/peter-glazer.webp',
-    bio: 'Peter leads clinical oversight and quality assurance across all of Arcadia\'s care programs. With deep expertise in dementia, acquired brain injury, and complex care, Peter ensures that every care plan reflects both clinical best practices and the individual needs of each client.',
-    quote: null,
-  },
-  {
-    name: 'Dyan Tan',
-    role: 'HR Manager',
-    email: 'dyan@arcadiahomecare.ca',
-    photo: '/images/team/dyan-tan.webp',
-    bio: 'Dyan leads the recruitment, onboarding, and ongoing development of Arcadia\'s caregiver team. Her rigorous screening process and commitment to staff wellbeing are the foundation of Arcadia\'s above-industry-average caregiver retention rates.',
-    quote: null,
-  },
-  {
-    name: 'Glady May Abogado',
-    role: 'Scheduling Supervisor',
-    email: 'gladymay@arcadiahomecare.ca',
-    photo: '/images/team/glady-may.webp',
-    bio: 'Glady May manages caregiver scheduling across all regions, ensuring continuity of care and minimal disruption for clients and their families. Her deep knowledge of the team allows her to match the right caregiver to every shift.',
-    quote: null,
-  },
 ]
 
 const values = [
@@ -404,55 +372,6 @@ export default function LeadershipPage() {
           </div>
         </section>
 
-        {/* Leadership Team */}
-        <section className="team-section">
-          <div className="team-inner">
-            <div className="team-header">
-              <p className="ldr-eyebrow" style={{ textAlign: 'center' }}>The Team</p>
-              <h2>Meet Our Leadership Team</h2>
-              <p>
-                The people who guide Arcadia every day — from clinical oversight and operations
-                to scheduling and HR — share one thing: a genuine commitment to the families we serve.
-              </p>
-            </div>
-            <div className="team-grid">
-              {team.filter(m => m.name !== 'Rohit Tamhane').map((member, i) => (
-                <div key={i} className="team-card">
-                  <div className="team-photo-wrap">
-                    {member.photo ? (
-                      <img src={member.photo} alt={member.name} loading="lazy" />
-                    ) : (
-                      <div style={{
-                        width: '100%', height: '100%', display: 'flex',
-                        alignItems: 'center', justifyContent: 'center',
-                        background: '#1C2B3A',
-                      }}>
-                        <span style={{
-                          fontFamily: "'Cormorant Garamond', Georgia, serif",
-                          fontSize: '3rem', fontWeight: 600, color: '#fff',
-                        }}>
-                          {member.name.split(' ').map(n => n[0]).join('')}
-                        </span>
-                      </div>
-                    )}
-                  </div>
-                  <div className="team-card-body">
-                    <div className="team-name">{member.name}</div>
-                    <div className="team-role">{member.role}</div>
-                    <p className="team-bio">{member.bio}</p>
-                    <a href={`mailto:${member.email}`} className="team-email">
-                      <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                        <rect x="1" y="3" width="12" height="9" rx="1.5" stroke="#1C2B3A" strokeWidth="1.3"/>
-                        <path d="M1 4l6 4.5L13 4" stroke="#1C2B3A" strokeWidth="1.3" strokeLinecap="round"/>
-                      </svg>
-                      {member.email}
-                    </a>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
 
         {/* Values */}
         <section className="values-bg">
