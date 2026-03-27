@@ -92,7 +92,7 @@ export default function Navbar() {
           </div>
 
           <div
-            style={{ display: "flex", alignItems: "center", gap: 12, marginLeft: 24 }}
+            style={{ display: "flex", alignItems: "center", gap: 24, marginLeft: 24 }}
             className="desktop-nav"
           >
             <a
