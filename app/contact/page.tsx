@@ -191,6 +191,116 @@ export default function ContactPage() {
           </button>
         </form>
       </section>
+
+      <section
+        style={{
+          gridColumn: "1 / -1",
+          marginTop: 8,
+          borderRadius: 16,
+          border: "1px solid #E5E0D8",
+          background: "#FFFFFF",
+          padding: 24,
+        }}
+      >
+        <p
+          style={{
+            fontSize: 12,
+            fontWeight: 700,
+            letterSpacing: "0.1em",
+            textTransform: "uppercase",
+            color: "#C8302A",
+            marginBottom: 12,
+          }}
+        >
+          Helpful Pages
+        </p>
+        <h2
+          style={{
+            fontFamily: "'Cormorant Garamond', Georgia, serif",
+            fontSize: "clamp(1.5rem, 3vw, 2rem)",
+            color: "#1C2B3A",
+            marginBottom: 10,
+          }}
+        >
+          Explore Care Options Before You Book
+        </h2>
+        <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
+          <a href="/our-services/" style={{ color: "#1C2B3A", textDecoration: "none", border: "1px solid #E5E0D8", borderRadius: 100, padding: "8px 14px", fontSize: 14, fontWeight: 600 }}>
+            Our Services
+          </a>
+          <a href="/conditions/" style={{ color: "#1C2B3A", textDecoration: "none", border: "1px solid #E5E0D8", borderRadius: 100, padding: "8px 14px", fontSize: 14, fontWeight: 600 }}>
+            Conditions We Support
+          </a>
+          <a href="/how-care-starts/" style={{ color: "#1C2B3A", textDecoration: "none", border: "1px solid #E5E0D8", borderRadius: 100, padding: "8px 14px", fontSize: 14, fontWeight: 600 }}>
+            How Care Starts
+          </a>
+          <a href="/faqs/" style={{ color: "#1C2B3A", textDecoration: "none", border: "1px solid #E5E0D8", borderRadius: 100, padding: "8px 14px", fontSize: 14, fontWeight: 600 }}>
+            Home Care FAQs
+          </a>
+        </div>
+      </section>
+
+      <section
+        style={{
+          gridColumn: "1 / -1",
+          marginTop: 8,
+          borderRadius: 16,
+          border: "1px solid #E5E0D8",
+          background: "#FAFAF8",
+          padding: 24,
+        }}
+      >
+        <h2
+          style={{
+            fontFamily: "'Cormorant Garamond', Georgia, serif",
+            fontSize: "clamp(1.5rem, 3vw, 2rem)",
+            color: "#1C2B3A",
+            marginBottom: 10,
+          }}
+        >
+          What Happens After You Reach Out
+        </h2>
+        <p style={{ fontSize: 15, color: "#4B5563", lineHeight: 1.75, marginBottom: 14 }}>
+          Your first conversation is focused on clarity, not pressure. We learn
+          about your loved one&apos;s condition, daily routines, current risks,
+          and what your family is carrying right now. From there, we explain
+          realistic care options and a practical next step.
+        </p>
+        <p style={{ fontSize: 15, color: "#4B5563", lineHeight: 1.75 }}>
+          If you are facing an urgent transition, such as a recent diagnosis or
+          a hospital discharge, tell us what timeline you are working with. We
+          can often move quickly while still matching care thoughtfully.
+        </p>
+      </section>
+
+      <section
+        style={{
+          gridColumn: "1 / -1",
+          marginTop: 8,
+          borderRadius: 16,
+          border: "1px solid #E5E0D8",
+          background: "#FFFFFF",
+          padding: 24,
+        }}
+      >
+        <h2
+          style={{
+            fontFamily: "'Cormorant Garamond', Georgia, serif",
+            fontSize: "clamp(1.5rem, 3vw, 2rem)",
+            color: "#1C2B3A",
+            marginBottom: 10,
+          }}
+        >
+          Situations We Commonly Help With
+        </h2>
+        <ul style={{ margin: 0, paddingLeft: 18, color: "#4B5563", lineHeight: 1.9, fontSize: 15 }}>
+          <li>New dementia symptoms and increased supervision needs</li>
+          <li>Returning home safely after hospitalization</li>
+          <li>Caregiver burnout and need for reliable respite support</li>
+          <li>Overnight care for safety, sleep, or wandering risk</li>
+          <li>Complex ongoing support with clinical coordination</li>
+        </ul>
+      </section>
     </main>
   );
 }

@@ -255,6 +255,34 @@ export default function PreHirePage() {
           transition: all 0.2s; display: inline-flex; align-items: center; gap: 7px;
         }
         .btn-ghost:hover { background: rgba(255,255,255,0.14); }
+
+        .related-pages {
+          margin-top: 26px; display: flex; flex-wrap: wrap; gap: 10px;
+        }
+        .related-pages a {
+          font-size: 13px; font-weight: 700; color: #1C2B3A; text-decoration: none;
+          border: 1px solid #D9D2C8; border-radius: 100px; padding: 8px 12px;
+          background: #fff;
+        }
+        .related-pages a:hover { border-color: #C8302A; color: #C8302A; }
+
+        .candidate-faq {
+          margin-top: 28px; background: #FAFAF8; border: 1px solid #E5E0D8;
+          border-radius: 14px; padding: 28px;
+        }
+        .candidate-faq h3 {
+          font-family: 'Cormorant Garamond', Georgia, serif;
+          font-size: 1.8rem; color: #1C2B3A; margin-bottom: 12px;
+        }
+        .candidate-faq p {
+          font-size: 0.9375rem; color: #4B5563; line-height: 1.75; margin-bottom: 14px;
+        }
+        .candidate-faq ul {
+          margin: 0; padding-left: 18px; color: #4B5563;
+        }
+        .candidate-faq li {
+          font-size: 0.9375rem; line-height: 1.8; margin-bottom: 6px;
+        }
       `}</style>
 
       <main className="prehire-page">
@@ -391,6 +419,33 @@ export default function PreHirePage() {
               </a>
             </div>
           </div>
+          <div className="related-pages">
+            <a href="/careers/">Careers</a>
+            <a href="/about/">About Arcadia</a>
+            <a href="/contact/">Contact</a>
+            <a href="/our-services/">Our Services</a>
+          </div>
+
+          <section className="candidate-faq">
+            <h3>What Candidates Usually Ask</h3>
+            <p>
+              The pre-hire flow is intentionally simple: complete the general
+              application, finish the role-appropriate skills assessment, and
+              upload your documents. Once submitted, our hiring team reviews
+              materials and follows up with next-step communication.
+            </p>
+            <p>
+              To avoid delays, ensure your contact details are current and your
+              uploaded files are legible, complete, and aligned with the role
+              you are applying for.
+            </p>
+            <ul>
+              <li>Complete Step 1 before opening role-specific assessments.</li>
+              <li>Choose only one skills assessment: PSW or RN/RPN.</li>
+              <li>Use the document upload step for certifications and IDs.</li>
+              <li>Call or email if you are unsure which role stream applies.</li>
+            </ul>
+          </section>
 
         </div>
       </main>

@@ -2,14 +2,14 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'How to Introduce Home Care to a Parent with Dementia | Arcadia Home Care',
-  description: 'Practical strategies for introducing home care to a parent with dementia who is resistant, fearful, or confused. Written for Toronto families navigating this difficult conversation.',
+  title: 'Early Signs of Dementia in a Parent | Arcadia Home Care',
+  description: 'Early signs of dementia in a parent: memory, judgment, mood, and daily-function changes families in Toronto should watch for before a crisis.',
   alternates: {
-    canonical: 'https://arcadiahomecare.ca/resources/dementia-memory-care/introducing-home-care-dementia/',
+    canonical: 'https://arcadiahomecare.ca/resources/dementia-memory-care/early-signs-of-dementia-in-a-parent/',
   },
 }
 
-export default function IntroducingHomeCareArticlePage() {
+export default function EarlySignsOfDementiaArticlePage() {
   return (
     <>
       <script
@@ -19,9 +19,9 @@ export default function IntroducingHomeCareArticlePage() {
             {
               '@context': 'https://schema.org',
               '@type': 'Article',
-              headline: 'How to Introduce Home Care to a Parent with Dementia',
-              description: 'Practical strategies for introducing home care to a parent with dementia who is resistant, fearful, or confused.',
-              url: 'https://arcadiahomecare.ca/resources/dementia-memory-care/introducing-home-care-dementia/',
+              headline: 'Early Signs of Dementia in a Parent',
+              description: 'A practical guide to early dementia warning signs in aging parents and when families should seek assessment.',
+              url: 'https://arcadiahomecare.ca/resources/dementia-memory-care/early-signs-of-dementia-in-a-parent/',
               publisher: {
                 '@type': 'Organization',
                 name: 'Arcadia Home Care',
@@ -73,7 +73,7 @@ export default function IntroducingHomeCareArticlePage() {
                 { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://arcadiahomecare.ca/' },
                 { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://arcadiahomecare.ca/resources/' },
                 { '@type': 'ListItem', position: 3, name: 'Dementia & Memory Care', item: 'https://arcadiahomecare.ca/resources/dementia-memory-care/' },
-                { '@type': 'ListItem', position: 4, name: 'Introducing Home Care to a Parent with Dementia', item: 'https://arcadiahomecare.ca/resources/dementia-memory-care/introducing-home-care-dementia/' },
+                { '@type': 'ListItem', position: 4, name: 'Early Signs of Dementia in a Parent', item: 'https://arcadiahomecare.ca/resources/dementia-memory-care/early-signs-of-dementia-in-a-parent/' },
               ],
             },
           ]),
@@ -155,7 +155,7 @@ export default function IntroducingHomeCareArticlePage() {
         <section className="article-hero">
           <div className="article-hero-inner">
             <p className="article-eyebrow">For families navigating dementia care in Toronto</p>
-            <h1>How to Introduce Home Care to a Parent with Dementia</h1>
+            <h1>Early Signs of Dementia in a Parent</h1>
             <p>
               Your parent needs help at home — but they don't want it. This is one of the most common and
               painful situations families face when introducing home care to a parent with dementia. The

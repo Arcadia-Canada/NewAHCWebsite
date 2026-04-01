@@ -33,6 +33,13 @@ export default function PrivacyPolicyPage() {
         .privacy-contact-box h3 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.3rem; font-weight: 600; color: #1C2B3A; margin-bottom: 12px; }
         .privacy-contact-box p { font-size: 0.9375rem; color: #4B5563; line-height: 1.75; margin-bottom: 8px; }
         .privacy-contact-box a { color: #C8302A; font-weight: 600; text-decoration: none; }
+        .privacy-related-links { margin-top: 22px; display: flex; flex-wrap: wrap; gap: 10px; }
+        .privacy-related-links a {
+          font-size: 13px; font-weight: 700; color: #1C2B3A;
+          text-decoration: none; border: 1px solid #D9D2C8;
+          border-radius: 100px; padding: 8px 12px; background: #fff;
+        }
+        .privacy-related-links a:hover { border-color: #C8302A; color: #C8302A; }
       `}</style>
 
       <main className="privacy-page">
@@ -199,6 +206,12 @@ export default function PrivacyPolicyPage() {
               </a>{' '}
               at www.ipc.on.ca.
             </p>
+            <div className="privacy-related-links">
+              <a href="/contact/">Contact Arcadia</a>
+              <a href="/faqs/">Home Care FAQs</a>
+              <a href="/how-care-starts/">How Care Starts</a>
+              <a href="/our-services/">Our Services</a>
+            </div>
           </div>
         </div>
       </main>

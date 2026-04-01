@@ -10,13 +10,6 @@ const REGION_CITY_PAIRS: { region: string; city: string }[] = [
   { region: "peel-region", city: "mississauga-home-care" },
 ];
 
-/** Deferred city pages: noindex until we have real local content. */
-const NOINDEX_PAIRS: { region: string; city: string }[] = [
-  { region: "york-region", city: "markham-home-care" },
-  { region: "york-region", city: "richmond-hill-home-care" },
-  { region: "peel-region", city: "mississauga-home-care" },
-];
-
 export function generateStaticParams() {
   return REGION_CITY_PAIRS;
 }
@@ -27,11 +20,19 @@ type CityPageProps = {
 
 export async function generateMetadata({ params }: CityPageProps): Promise<Metadata> {
   const { region, city } = await params;
-  const isDeferred = NOINDEX_PAIRS.some((p) => p.region === region && p.city === city);
-  if (isDeferred) {
-    return { robots: { index: false, follow: false } };
-  }
-  return {};
+  const cityLabel = citySlugToLabel(city);
+  const regionLabel = region
+    .split("-")
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+    .join(" ");
+
+  return {
+    title: `${cityLabel} Home Care | Arcadia Home Care`,
+    description: `Home care in ${cityLabel}, ${regionLabel}. Arcadia supports families with dementia care, rehabilitation support, and post-hospital transition planning.`,
+    alternates: {
+      canonical: `https://arcadiahomecare.ca/locations/${region}/${city}/`,
+    },
+  };
 }
 
 const colors = {

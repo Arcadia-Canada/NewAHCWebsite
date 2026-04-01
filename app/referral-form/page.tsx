@@ -172,6 +172,105 @@ export default function ReferralFormPage() {
           </div>
         </form>
       </section>
+
+      <section
+        style={{
+          marginTop: 18,
+          borderRadius: 16,
+          border: "1px solid #E5E0D8",
+          background: "#FFFFFF",
+          padding: 24,
+        }}
+      >
+        <p
+          style={{
+            fontSize: 12,
+            fontWeight: 700,
+            letterSpacing: "0.1em",
+            textTransform: "uppercase",
+            color: "#C8302A",
+            marginBottom: 12,
+          }}
+        >
+          Referral Resources
+        </p>
+        <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
+          <a href="/for-professionals/" style={{ color: "#1C2B3A", textDecoration: "none", border: "1px solid #E5E0D8", borderRadius: 100, padding: "8px 14px", fontSize: 14, fontWeight: 600 }}>
+            For Professionals
+          </a>
+          <a href="/our-services/hospital-discharge-support/" style={{ color: "#1C2B3A", textDecoration: "none", border: "1px solid #E5E0D8", borderRadius: 100, padding: "8px 14px", fontSize: 14, fontWeight: 600 }}>
+            Hospital Discharge Support
+          </a>
+          <a href="/our-services/case-management/" style={{ color: "#1C2B3A", textDecoration: "none", border: "1px solid #E5E0D8", borderRadius: 100, padding: "8px 14px", fontSize: 14, fontWeight: 600 }}>
+            Case Management
+          </a>
+          <a href="/contact/" style={{ color: "#1C2B3A", textDecoration: "none", border: "1px solid #E5E0D8", borderRadius: 100, padding: "8px 14px", fontSize: 14, fontWeight: 600 }}>
+            Family Consultation Pathway
+          </a>
+        </div>
+      </section>
+
+      <section
+        style={{
+          marginTop: 16,
+          borderRadius: 16,
+          border: "1px solid #E5E0D8",
+          background: "#FAFAF8",
+          padding: 24,
+        }}
+      >
+        <h2
+          style={{
+            fontFamily: "'Cormorant Garamond', Georgia, serif",
+            fontSize: "clamp(1.5rem, 3vw, 2rem)",
+            color: "#1C2B3A",
+            marginBottom: 10,
+          }}
+        >
+          When To Submit a Referral
+        </h2>
+        <p style={{ fontSize: 15, color: "#4B5563", lineHeight: 1.75, marginBottom: 14 }}>
+          This pathway is designed for clinicians and care coordinators who
+          need dependable home support for medically and socially complex cases.
+          We commonly support hospital discharge transitions, progressive
+          cognitive decline, fall-risk scenarios, and families experiencing
+          rapid caregiver strain.
+        </p>
+        <p style={{ fontSize: 15, color: "#4B5563", lineHeight: 1.75 }}>
+          If the situation is time-sensitive, include expected discharge date,
+          current mobility status, medication considerations, and who will be
+          the primary family contact. These details help us coordinate quickly
+          and safely.
+        </p>
+      </section>
+
+      <section
+        style={{
+          marginTop: 12,
+          borderRadius: 16,
+          border: "1px solid #E5E0D8",
+          background: "#FFFFFF",
+          padding: 24,
+        }}
+      >
+        <h2
+          style={{
+            fontFamily: "'Cormorant Garamond', Georgia, serif",
+            fontSize: "clamp(1.5rem, 3vw, 2rem)",
+            color: "#1C2B3A",
+            marginBottom: 10,
+          }}
+        >
+          What Helps Us Triage Efficiently
+        </h2>
+        <ul style={{ margin: 0, paddingLeft: 18, color: "#4B5563", lineHeight: 1.9, fontSize: 15 }}>
+          <li>Primary diagnosis and immediate care concerns</li>
+          <li>Required visit cadence (daily, overnight, 24-hour, respite)</li>
+          <li>Mobility, transfer, and fall-risk considerations</li>
+          <li>Cognitive and behavioral profile if dementia is present</li>
+          <li>Discharge timing and preferred care start date</li>
+        </ul>
+      </section>
     </main>
   );
 }

@@ -6,7 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "seo:report": "node scripts/seo-report.mjs",
+    "nlg:report": "node scripts/nlg-report.mjs",
+    "voice:report": "node scripts/voice-search-report.mjs",
+    "content:intel": "node scripts/ai-content-intelligence-report.mjs",
+    "indexability:report": "node scripts/indexability-report.mjs",
+    "crawl:4xx": "node scripts/4xx-report.mjs"
   },
   "dependencies": {
     "next": "16.1.6",

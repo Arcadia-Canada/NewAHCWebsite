@@ -9,9 +9,6 @@ const REGION_SLUGS = [
   "halton-region",
 ];
 
-/** Deferred regions: noindex until we have real local content. */
-const NOINDEX_REGIONS = ["york-region", "peel-region", "durham-region", "halton-region"];
-
 export function generateStaticParams() {
   return REGION_SLUGS.map((region) => ({ region }));
 }
@@ -22,10 +19,18 @@ type RegionPageProps = {
 
 export async function generateMetadata({ params }: RegionPageProps): Promise<Metadata> {
   const { region } = await params;
-  if (NOINDEX_REGIONS.includes(region)) {
-    return { robots: { index: false, follow: false } };
-  }
-  return {};
+  const label = region
+    .split("-")
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+    .join(" ");
+
+  return {
+    title: `${label} Home Care | Arcadia Home Care`,
+    description: `Specialized home care across ${label}. Arcadia supports families with dementia, rehabilitation, hospital discharge, and complex aging care in the GTA.`,
+    alternates: {
+      canonical: `https://arcadiahomecare.ca/locations/${region}/`,
+    },
+  };
 }
 
 const colors = {
