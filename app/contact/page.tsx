@@ -1,3 +1,14 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact Arcadia Home Care | Toronto & GTA",
+  description:
+    "Book a free home care consultation in Toronto and the GTA. Speak with Arcadia about dementia care, discharge support, and family caregiver guidance.",
+  alternates: {
+    canonical: "https://arcadiahomecare.ca/contact/",
+  },
+};
+
 export default function ContactPage() {
   return (
     <main

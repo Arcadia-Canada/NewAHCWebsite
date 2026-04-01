@@ -1,3 +1,14 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Professional Referral Form | Arcadia Home Care",
+  description:
+    "Submit a professional referral for home care support in Toronto and the GTA. Arcadia works with discharge planners, social workers, OTs, and physicians.",
+  alternates: {
+    canonical: "https://arcadiahomecare.ca/referral-form/",
+  },
+};
+
 export default function ReferralFormPage() {
   const fields: { label: string; required?: boolean; type?: string }[] = [
     { label: "Referring Professional Name", required: true },
