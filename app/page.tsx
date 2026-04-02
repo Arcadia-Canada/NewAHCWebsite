@@ -547,6 +547,176 @@ function CTASection() {
 // ─── PAGE ─────────────────────────────────────────────────────────────────────
 export default function Home() {
   return (
+    <>
+    <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify([
+      {
+        '@context': 'https://schema.org',
+        '@type': 'WebSite',
+        name: 'Arcadia Home Care',
+        url: 'https://arcadiahomecare.ca/',
+      },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'LocalBusiness',
+        '@id': 'https://arcadiahomecare.ca/#business',
+        name: 'Arcadia Home Care',
+        url: 'https://arcadiahomecare.ca/',
+        telephone: '+1-844-977-0050',
+        email: 'info@arcadiahomecare.ca',
+        image: 'https://arcadiahomecare.ca/images/image 43-08b42066-435w.webp',
+        description:
+          'Arcadia Home Care provides specialized home care services across Toronto and the GTA, including dementia care, acquired brain injury care, rehabilitation support, hospital discharge support, palliative care, and case management.',
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: '302 Bay St.',
+          addressLocality: 'Toronto',
+          addressRegion: 'ON',
+          postalCode: 'M5H 0B6',
+          addressCountry: 'CA',
+        },
+        areaServed: [
+          { '@type': 'Place', name: 'Toronto' },
+          { '@type': 'Place', name: 'York Region' },
+          { '@type': 'Place', name: 'Peel Region' },
+          { '@type': 'Place', name: 'Durham Region' },
+          { '@type': 'Place', name: 'Halton Region' },
+        ],
+        openingHoursSpecification: [
+          {
+            '@type': 'OpeningHoursSpecification',
+            dayOfWeek: [
+              'https://schema.org/Monday',
+              'https://schema.org/Tuesday',
+              'https://schema.org/Wednesday',
+              'https://schema.org/Thursday',
+              'https://schema.org/Friday',
+            ],
+            opens: '09:00',
+            closes: '17:00',
+          },
+        ],
+        aggregateRating: {
+          '@type': 'AggregateRating',
+          ratingValue: '5.0',
+          reviewCount: '38',
+        },
+        review: [
+          {
+            '@type': 'Review',
+            author: { '@type': 'Person', name: 'Janet Cuddy' },
+            reviewRating: {
+              '@type': 'Rating',
+              ratingValue: '5',
+              bestRating: '5',
+            },
+            reviewBody:
+              'I often needed to cover a shift with very short notice, or on the weekend, and I was always met with a helpful, positive response. They were a lifesaver. The PSWs assigned to my mother were marvellous — skilled, kind and dependable.',
+          },
+          {
+            '@type': 'Review',
+            author: { '@type': 'Person', name: 'Jennifer Kim' },
+            reviewRating: {
+              '@type': 'Rating',
+              ratingValue: '5',
+              bestRating: '5',
+            },
+            reviewBody:
+              "Their communication is outstanding — whenever I send an inquiry, they respond incredibly quickly. I've honestly never worked with a business that gets back to clients this fast. Highly recommended!",
+          },
+          {
+            '@type': 'Review',
+            author: { '@type': 'Person', name: 'Alice Gomes' },
+            reviewRating: {
+              '@type': 'Rating',
+              ratingValue: '5',
+              bestRating: '5',
+            },
+            reviewBody:
+              'Through a 5+ year battle with dementia, the one thing that remained constant was the care and support provided by the team from Arcadia. Expectations were consistently exceeded. I would, without hesitation, recommend Arcadia.',
+          },
+        ],
+        knowsAbout: [
+          'Dementia home care',
+          'Alzheimer’s home care',
+          'Acquired brain injury care',
+          'Rehabilitation support',
+          'Hospital discharge support',
+          'Palliative home care',
+          'Case management',
+        ],
+        hasOfferCatalog: {
+          '@type': 'OfferCatalog',
+          name: 'Home Care Services',
+          itemListElement: [
+            {
+              '@type': 'Offer',
+              itemOffered: {
+                '@type': 'Service',
+                name: "Dementia & Alzheimer's Home Care",
+                url: 'https://arcadiahomecare.ca/our-services/dementia-alzheimers-home-care/',
+                description:
+                  'Safe, familiar support for loved ones living with cognitive decline in their own home.',
+              },
+            },
+            {
+              '@type': 'Offer',
+              itemOffered: {
+                '@type': 'Service',
+                name: 'Acquired Brain Injury Care',
+                url: 'https://arcadiahomecare.ca/our-services/acquired-brain-injury-home-care/',
+                description:
+                  'Coordinated home care to support recovery and rebuilding independence.',
+              },
+            },
+            {
+              '@type': 'Offer',
+              itemOffered: {
+                '@type': 'Service',
+                name: 'Rehabilitation Support',
+                url: 'https://arcadiahomecare.ca/our-services/rehabilitation-support/',
+                description:
+                  'Goal-oriented home care that works alongside OT, PT, and specialist teams.',
+              },
+            },
+            {
+              '@type': 'Offer',
+              itemOffered: {
+                '@type': 'Service',
+                name: 'Hospital Discharge Support',
+                url: 'https://arcadiahomecare.ca/our-services/hospital-discharge-support/',
+                description:
+                  'A safe, supported transition from hospital to home coordinated from day one.',
+              },
+            },
+            {
+              '@type': 'Offer',
+              itemOffered: {
+                '@type': 'Service',
+                name: 'Palliative Home Care',
+                url: 'https://arcadiahomecare.ca/our-services/palliative-home-care/',
+                description:
+                  'Comfort-focused care that preserves dignity and supports the whole family.',
+              },
+            },
+            {
+              '@type': 'Offer',
+              itemOffered: {
+                '@type': 'Service',
+                name: 'Case Management',
+                url: 'https://arcadiahomecare.ca/our-services/case-management/',
+                description:
+                  "Coordinated oversight and planning so a loved one's care stays consistent and well-organized.",
+              },
+            },
+          ],
+        },
+      },
+    ]),
+  }}
+/>
     <main>
       <Hero />
       <DifferenceSection />
@@ -559,5 +729,6 @@ export default function Home() {
       <LocationsSection />
       <CTASection />
     </main>
+    </>
   );
 }

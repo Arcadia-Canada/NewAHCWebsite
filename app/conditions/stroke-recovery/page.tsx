@@ -52,7 +52,7 @@ export default function StrokeRecoveryPage() {
               '@type': 'MedicalCondition',
               'name': 'Stroke',
               'description': 'A stroke occurs when the blood supply to part of the brain is cut off, causing brain cells to die. Effects depend on where the stroke occurs and how much of the brain is affected.',
-              'relevantSpecialty': 'Neurology',
+              "relevantSpecialty": "https://schema.org/Neurologic",
             },
             {
               '@context': 'https://schema.org',

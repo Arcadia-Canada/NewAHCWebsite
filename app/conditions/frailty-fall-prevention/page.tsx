@@ -63,7 +63,7 @@ export default function FrailtyFallPreventionPage() {
               '@type': 'MedicalCondition',
               'name': 'Frailty and Fall Risk in Older Adults',
               'description': 'Frailty is a state of increased vulnerability to adverse outcomes in older adults, characterized by reduced strength, endurance, and physiological function. Fall risk is closely associated with frailty and is a leading cause of injury and loss of independence in older adults.',
-              'relevantSpecialty': 'Geriatrics',
+              'relevantSpecialty': "https://schema.org/Geriatrics",
             },
             {
               '@context': 'https://schema.org',

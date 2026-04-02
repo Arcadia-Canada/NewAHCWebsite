@@ -1,44 +1,47 @@
-// app/conditions/acquired-brain-injury-support/page.tsx
+// app/conditions/alzheimers-care/page.tsx
 // Tier 2 condition page
-// Target keyword: "acquired brain injury home care toronto"
-// Persona: family member of someone post-ABI — often younger, often post-rehab,
-// navigating insurance, WSIB, or auto insurance for the first time
-// Distinct angle: sudden onset, rehabilitation focus, system navigation complexity
+// Target keyword: "alzheimers care at home toronto"
+// Persona: adult child or spouse noticing increasing memory loss, confusion,
+// wandering risk, and caregiver strain at home
+// Distinct angle: practical home support, routine, safety, family guidance
 // Schema: MedicalCondition + FAQPage + BreadcrumbList
 
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Acquired Brain Injury Support at Home | Toronto & GTA | Arcadia Home Care',
-  description: 'Support and guidance for families navigating acquired brain injury at home in Toronto and the GTA. Arcadia has supported ABI clients and their families for over 16 years — working alongside rehabilitation teams to help people return to meaningful life at home.',
-  alternates: { canonical: 'https://arcadiahomecare.ca/conditions/acquired-brain-injury-support/' },
+  title: "Alzheimer's Care at Home | Toronto & GTA | Arcadia Home Care",
+  description:
+    "Specialized Alzheimer's care at home in Toronto and the GTA. Arcadia helps families manage memory loss, safety concerns, routines, and caregiver strain with structured home support.",
+  alternates: {
+    canonical: 'https://arcadiahomecare.ca/conditions/alzheimers-care/',
+  },
 }
 
 const faqs = [
   {
-    q: 'What is the difference between a Rehabilitation Support Worker and a PSW for someone with ABI?',
-    a: 'A Personal Support Worker focuses on personal care and daily living tasks. A Rehabilitation Support Worker is trained to implement community rehabilitation programs under the supervision of licensed health professionals — helping the person work toward specific functional and cognitive goals, not just maintain their current level of function. For someone with ABI, an RSW is often the more appropriate choice, particularly in the earlier stages of community rehabilitation.',
+    q: "What is the difference between Alzheimer's home care and regular senior care?",
+    a: "Alzheimer's care at home requires more than help with daily tasks. It involves understanding memory loss, confusion, behavioural changes, safety risks, and the importance of routine. A caregiver supporting someone with Alzheimer's needs to know how to reduce distress, respond calmly to repetition or confusion, and maintain structure in a way that protects dignity. That is different from standard senior care focused mainly on physical assistance.",
   },
   {
-    q: 'Can Arcadia work with our case manager, occupational therapist, or physiotherapist?',
-    a: 'Yes — and this is how we prefer to work. Our RSWs and caregivers operate as part of a broader care team, implementing plans developed by the treating professionals rather than working in isolation. We communicate regularly with case managers, OTs, physiotherapists, social workers, and other team members, and we document progress in a way that supports the rehabilitation process.',
+    q: "Can Arcadia help if my parent is repeating questions, forgetting medication, or becoming unsafe alone?",
+    a: "Yes. These are some of the most common reasons families reach out. Repetition, missed medications, wandering risk, leaving the stove on, poor judgment, and difficulty managing personal care are often signs that more structured support is needed. Our role is not just to assist in the moment, but to help reduce risk and create more stability at home.",
   },
   {
-    q: 'Is ABI home care covered by insurance in Ontario?',
-    a: 'It depends on the cause of the injury. ABI resulting from a motor vehicle accident may be covered under Ontario\'s auto insurance system. Workplace injuries may fall under WSIB. Some private health insurance plans cover home care for ABI. Each situation is different and the funding landscape can be complex. Our team is familiar with these systems and can help you understand what may be available and how to access it.',
+    q: "Do you support people in the early stages of Alzheimer's, or only later stages?",
+    a: "Both. In the early stages, support often focuses on routine, reminders, appointments, meal preparation, supervision, and helping the person remain independent for as long as possible. In later stages, care becomes more hands-on and may include full personal care, mobility support, behavioural guidance, feeding assistance, and close supervision. The right level of support depends on the person's current presentation, not just the diagnosis.",
   },
   {
-    q: 'My family member completed inpatient rehabilitation. Why do they still need support at home?',
-    a: 'Inpatient rehabilitation is focused and intensive, but it happens in a controlled environment. The real work of rebuilding independence happens in the community — navigating a real home, real routines, real relationships, and real cognitive demands. Many people who function adequately in a rehabilitation setting encounter significant challenges once they return home. Community rehabilitation support bridges that gap.',
+    q: "How do you match caregivers for someone with Alzheimer's?",
+    a: "Matching matters greatly in dementia care. We look not only at experience, but also at temperament, communication style, patience, consistency, and the ability to work calmly within the person's routine. For someone living with Alzheimer's, the wrong match can increase distress. The right match can make daily life significantly more stable.",
   },
   {
-    q: 'Can Arcadia support someone with ABI who also has behavioural or emotional changes?',
-    a: 'Yes. Personality and emotional changes — irritability, impulsivity, depression, anxiety, or reduced social awareness — are common after ABI and can be among the most challenging aspects for families. Our RSWs are trained to work with these presentations in a structured, consistent way. We work closely with the treating team to ensure our approach is aligned with the overall rehabilitation plan.',
+    q: "Can home care delay the move to long-term care?",
+    a: "In some situations, yes. Home care cannot change the underlying progression of Alzheimer's disease, but the right support can reduce risk, support the family, and help the person remain at home longer than would otherwise be possible. That depends on the severity of symptoms, the safety of the home environment, the level of caregiver strain, and the amount of support in place.",
   },
 ]
 
-export default function AcquiredBrainInjurySupportPage() {
+export default function AlzheimersCarePage() {
   return (
     <>
       <script
@@ -48,26 +51,45 @@ export default function AcquiredBrainInjurySupportPage() {
             {
               '@context': 'https://schema.org',
               '@type': 'MedicalCondition',
-              'name': 'Acquired Brain Injury',
-              'description': 'Acquired brain injury refers to any damage to the brain that occurs after birth and is not related to a congenital or degenerative disease. Causes include traumatic injury, stroke, anoxia, infection, and tumour.',
-              'relevantSpecialty': "https://schema.org/Neurology",
+              name: "Alzheimer's Disease",
+              description:
+                "Alzheimer's disease is a progressive neurological condition that affects memory, thinking, behaviour, and the ability to manage daily life independently.",
+              relevantSpecialty: 'https://schema.org/Geriatric',
             },
             {
               '@context': 'https://schema.org',
               '@type': 'FAQPage',
-              'mainEntity': faqs.map(faq => ({
+              mainEntity: faqs.map((faq) => ({
                 '@type': 'Question',
-                'name': faq.q,
-                'acceptedAnswer': { '@type': 'Answer', 'text': faq.a },
+                name: faq.q,
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: faq.a,
+                },
               })),
             },
             {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
-              'itemListElement': [
-                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://arcadiahomecare.ca/' },
-                { '@type': 'ListItem', 'position': 2, 'name': 'Conditions', 'item': 'https://arcadiahomecare.ca/conditions/' },
-                { '@type': 'ListItem', 'position': 3, 'name': 'Acquired Brain Injury Support', 'item': 'https://arcadiahomecare.ca/conditions/acquired-brain-injury-support/' },
+              itemListElement: [
+                {
+                  '@type': 'ListItem',
+                  position: 1,
+                  name: 'Home',
+                  item: 'https://arcadiahomecare.ca/',
+                },
+                {
+                  '@type': 'ListItem',
+                  position: 2,
+                  name: 'Conditions',
+                  item: 'https://arcadiahomecare.ca/conditions/',
+                },
+                {
+                  '@type': 'ListItem',
+                  position: 3,
+                  name: "Alzheimer's Care",
+                  item: 'https://arcadiahomecare.ca/conditions/alzheimers-care/',
+                },
               ],
             },
           ]),
@@ -286,18 +308,16 @@ export default function AcquiredBrainInjurySupportPage() {
       `}</style>
 
       <main className="condition-page">
-
-        {/* Hero */}
         <section className="condition-hero">
           <div className="condition-hero-inner">
             <p className="condition-eyebrow">Conditions We Support · Toronto & GTA</p>
-            <h1>Acquired Brain Injury Support at Home in Toronto & the GTA</h1>
+            <h1>Alzheimer&apos;s Care at Home in Toronto & the GTA</h1>
             <p>
-              An acquired brain injury changes a person's life in ways that are often
-              invisible to everyone outside the immediate family. The rehabilitation
-              system helps — but it has an endpoint. What comes after, in the community
-              and at home, is where real recovery happens. And where most families realize
-              they need more support than they expected.
+              Alzheimer&apos;s changes far more than memory. It changes routines,
+              judgment, communication, confidence, and the balance of daily life
+              for the whole family. What begins as forgetfulness often becomes a
+              growing need for structure, supervision, and support that is difficult
+              to manage alone at home.
             </p>
             <div className="hero-actions">
               <a href="tel:8449770050" className="btn-red">
@@ -311,84 +331,80 @@ export default function AcquiredBrainInjurySupportPage() {
           </div>
         </section>
 
-        {/* Breadcrumb */}
         <nav className="breadcrumb" aria-label="Breadcrumb">
           <div className="breadcrumb-inner">
             <Link href="/">Home</Link><span>›</span>
             <Link href="/conditions/">Conditions</Link><span>›</span>
-            Acquired Brain Injury Support
+            Alzheimer&apos;s Care
           </div>
         </nav>
 
-        {/* Body + Sidebar */}
         <div className="condition-body">
           <article className="condition-article">
-
-            <h2>What acquired brain injury means, and why home support matters</h2>
+            <h2>What Alzheimer&apos;s means at home, and why specialized support matters</h2>
             <p>
-              Acquired brain injury — or ABI — refers to any damage to the brain that
-              occurs after birth and is not related to a congenital or degenerative
-              condition. The causes vary widely: stroke, traumatic injury from a fall
-              or accident, anoxia, infection, tumour, or toxic exposure. What they share
-              is that they change the brain in ways that affect how a person thinks,
-              moves, communicates, and manages everyday life.
+              Alzheimer&apos;s disease is a progressive neurological condition that
+              affects memory, reasoning, language, behaviour, and the ability to
+              manage everyday life safely. Families often notice the early signs
+              gradually: repeated questions, missed appointments, medication errors,
+              trouble following familiar routines, confusion about time, or a growing
+              inability to manage tasks that once felt automatic.
             </p>
             <p>
-              ABI can affect people of any age. It is not, as some assume, primarily
-              a condition of older adults. Many of the families Arcadia works with are
-              navigating the impact of ABI on a spouse, sibling, or parent in their
-              forties, fifties, or younger — someone who, before the injury, was
-              independent, working, and fully engaged in daily life.
+              What makes Alzheimer&apos;s especially difficult for families is that
+              the changes are not only practical. They are emotional. A spouse or
+              adult child is not just taking on more responsibilities. They are
+              adapting to a loved one whose judgment, reactions, and day-to-day
+              functioning may no longer be predictable.
             </p>
             <p>
-              The rehabilitation system in Ontario provides important structured support
-              following ABI, but inpatient and outpatient rehabilitation are
-              time-limited. Once that phase ends, families often need help
-              translating rehab goals into real life at home.
+              Good home support helps make life more manageable. It reduces risk,
+              creates consistency, preserves dignity, and gives the family room to
+              function without living in a constant state of vigilance.
             </p>
 
-            <h2>What ABI home support can include</h2>
+            <h2>What Alzheimer&apos;s home care can include</h2>
             <p>
-              Support for someone living with acquired brain injury is different from
-              general home care. It is not just about physical assistance — it is about
-              helping the person build and maintain function, manage the cognitive and
-              emotional effects of the injury, and participate in their own rehabilitation
-              goals. Here is what a structured ABI support plan typically involves:
+              Support for someone living with Alzheimer&apos;s must be structured
+              around routine, familiarity, and safety. It is not only about helping
+              with physical tasks. It is also about reducing confusion, preventing
+              distress, and supporting the person in a way that feels calm and
+              predictable. A thoughtful care plan can include:
             </p>
 
             <div className="includes-grid">
               {[
                 {
-                  title: 'Community rehabilitation programs',
-                  body: 'Implementing structured programs developed by occupational therapists, physiotherapists, or case managers — focused on functional goals specific to the individual.',
+                  title: 'Routine-based daily support',
+                  body: 'Maintaining consistent daily rhythms for waking, meals, hygiene, rest, and activity so the person feels more settled and less overwhelmed.',
                 },
                 {
-                  title: 'Cognitive support and strategy use',
-                  body: 'Helping the person use memory aids, routines, and compensatory strategies to manage cognitive fatigue, memory gaps, and executive function challenges.',
+                  title: 'Medication reminders and supervision',
+                  body: 'Helping prevent missed doses, double doses, or confusion about what medication should be taken and when.',
                 },
                 {
-                  title: 'Personal care and daily living',
-                  body: 'Assistance with personal care, hygiene, meal preparation, and household tasks — calibrated to the person\'s current abilities and rehabilitation goals.',
+                  title: 'Personal care and hygiene',
+                  body: 'Assistance with bathing, dressing, grooming, toileting, and other personal care needs in a respectful and calm manner.',
                 },
                 {
-                  title: 'Mobility and physical support',
-                  body: 'Assisting with transfers, movement, exercises, and community outings — in line with the physiotherapy or occupational therapy program.',
+                  title: 'Meal preparation and nutrition',
+                  body: 'Preparing appropriate meals, encouraging intake, and monitoring changes in appetite, hydration, or ability to eat independently.',
                 },
                 {
-                  title: 'Behavioural and emotional support',
-                  body: 'Working with personality and emotional changes — irritability, impulsivity, anxiety, emotional lability — in a structured, consistent way that is aligned with the treating team\'s approach.',
+                  title: 'Safety monitoring',
+                  body: 'Reducing risks related to wandering, kitchen safety, falls, unlocked doors, poor judgment, and unsafe decision-making at home.',
                 },
                 {
-                  title: 'Community participation and social reintegration',
-                  body: 'Supporting the person to re-engage with their community — outings, activities, social situations — in a way that is safe and builds confidence progressively.',
+                  title: 'Behavioural support',
+                  body: 'Responding appropriately to agitation, repetition, resistance, sundowning, confusion, and other common dementia-related behaviours.',
                 },
                 {
-                  title: 'Family guidance and caregiver support',
-                  body: 'Helping family members understand the nature of ABI, manage interactions more effectively, and take genuine rest through respite without guilt.',
+                  title: 'Meaningful engagement',
+                  body: 'Providing conversation, simple activities, walks, music, familiar routines, and social interaction that support emotional well-being.',
                 },
                 {
-                  title: 'Documentation and team communication',
-                  body: 'Recording progress and observations accurately, and communicating with case managers, OTs, and other team members to support continuity of care.',
+                  title: 'Family support and respite',
+                  body: 'Giving spouses and adult children time to rest, work, attend appointments, or simply step away without constant worry.',
                 },
               ].map((item, i) => (
                 <div key={i} className="includes-item">
@@ -402,42 +418,40 @@ export default function AcquiredBrainInjurySupportPage() {
             </div>
 
             <p>
-              For a more detailed look at how Arcadia structures ABI home care,
-              including the role of our RSW Supervisor, see our{' '}
-              <Link href="/our-services/acquired-brain-injury-home-care/">
-                Acquired Brain Injury Home Care service page
+              For a closer look at how Arcadia provides condition-specific dementia
+              support, see our{' '}
+              <Link href="/our-services/dementia-alzheimers-home-care/">
+                Dementia &amp; Alzheimer&apos;s Home Care service page
               </Link>.
             </p>
 
-            <h2>The gap between rehabilitation discharge and real independence</h2>
+            <h2>When families usually realize more support is needed</h2>
             <p>
-              One of the most common things families say when they first contact Arcadia
-              is some version of this: the rehabilitation team said he was doing well enough
-              to go home, but home is much harder than the rehab unit was.
+              Families often wait longer than they should before getting help.
+              Usually that is not because they do not see the problem. It is because
+              they are trying to hold things together, hoping the situation will stay
+              manageable a little longer.
             </p>
             <p>
-              That gap is real, and it is not a failure of the rehabilitation system —
-              it is simply what happens when a controlled, structured environment meets
-              the complexity and unpredictability of real life. A person with ABI may
-              manage a task competently in a rehab setting and struggle significantly
-              with the same task at home, where the distractions, demands, and emotional
-              stakes are completely different.
+              The turning point usually comes when the pattern becomes impossible to
+              ignore: a parent is no longer safe alone, a spouse is becoming exhausted,
+              or daily life has narrowed into a cycle of supervision, reminders, and
+              crisis prevention. Alzheimer&apos;s care at home is often most effective
+              when it begins before the situation becomes unworkable.
             </p>
             <p>
-              Community rehabilitation support — provided by trained Rehabilitation
-              Support Workers working under clinical supervision — bridges that gap.
-              It takes the goals and strategies established in formal rehabilitation
-              and helps the person apply and generalize them in their actual environment,
-              with the people and challenges they actually face.
+              Early support can help stabilize routines, reduce family conflict,
+              maintain the person&apos;s confidence, and slow the spiral into avoidable
+              crisis. Later support may need to be more intensive, but it is still
+              valuable. The important thing is that support matches the person&apos;s
+              current needs, not what the family wishes those needs still were.
             </p>
 
-            {/* Mid-page CTA */}
             <div className="mid-cta">
-              <h3>Not sure what kind of support your situation needs?</h3>
+              <h3>Not sure whether it is time to bring in help?</h3>
               <p>
-                Our team has been working with ABI clients and families for over 16 years.
-                A conversation costs nothing, and it usually helps — whether or not
-                Arcadia turns out to be the right fit.
+                Families often call us when they are not sure what level of support
+                is needed yet. That is exactly the right time to have the conversation.
               </p>
               <a href="tel:8449770050" className="mid-cta-phone">(844) 977-0050</a>
               <Link href="/contact/" className="btn-red">
@@ -445,30 +459,31 @@ export default function AcquiredBrainInjurySupportPage() {
               </Link>
             </div>
 
-            <h2>What good ABI home support looks like in practice</h2>
+            <h2>What good Alzheimer&apos;s home support looks like in practice</h2>
             <p>
-              The quality of ABI home support varies significantly depending on the
-              provider. Here is what families should expect from a well-run program,
-              regardless of who is providing it:
+              Not all dementia care is the same. Families should expect more than
+              a caregiver who is simply kind and available. Good Alzheimer&apos;s
+              support should be structured, consistent, and grounded in an actual
+              understanding of how dementia changes behaviour and function.
             </p>
 
             <div className="helps-grid">
               {[
                 {
-                  title: 'RSWs supervised by a qualified clinician',
-                  body: 'Rehabilitation Support Workers should not be operating independently for ABI cases. They should be working under the supervision of a qualified RSW Manager or clinical director who oversees care plans, monitors progress, and ensures the work remains aligned with the rehabilitation goals set by the treating team. Ask any provider how their RSW team is supervised, how often care plans are reviewed, and who is accountable when something is not working.',
+                  title: 'Consistency matters more than novelty',
+                  body: 'People living with Alzheimer&apos;s generally cope better when routines, faces, communication style, and the flow of the day are predictable. Constant changes in caregivers or routines can increase confusion and distress.',
                 },
                 {
-                  title: 'A care plan built around the individual\'s goals — not a generic program',
-                  body: 'Every ABI presents differently. A plan that works for someone recovering from a stroke may be entirely wrong for someone managing the effects of a traumatic brain injury or anoxic event. The starting point should always be a thorough assessment of the individual — their specific deficits, their strengths, their goals, and what their life looked like before the injury.',
+                  title: 'Communication should reduce stress, not add to it',
+                  body: 'Caregivers should know how to redirect gently, avoid unnecessary correction, respond calmly to repetition, and speak in a way that supports dignity even when the person is confused.',
                 },
                 {
-                  title: 'Active coordination with the rest of the care team',
-                  body: 'ABI care rarely involves a single provider. Case managers, occupational therapists, physiotherapists, speech-language pathologists, psychologists, and social workers may all be involved. A good home care provider communicates actively with all of them — not just at intake, but on an ongoing basis as the situation evolves.',
+                  title: 'Care should balance safety with independence',
+                  body: 'The goal is not to take over everything too early. It is to support the person in doing what they still can, while reducing the risks around what they can no longer manage safely.',
                 },
                 {
-                  title: 'Honest assessment of progress and honest conversations when things are not working',
-                  body: 'Recovery from ABI is not always linear, and some goals may need to be revised over time. A provider who only reports positive progress is not serving the family or the client well. Families deserve clear, honest information about how things are going — and prompt conversations when the care plan needs to change.',
+                  title: 'The family needs support too',
+                  body: 'A good provider pays attention to caregiver strain, not just client tasks. Spouses and adult children often need guidance, respite, and an honest outside perspective on what is changing.',
                 },
               ].map((item, i) => (
                 <div key={i} className="helps-card">
@@ -479,37 +494,40 @@ export default function AcquiredBrainInjurySupportPage() {
             </div>
 
             <p>
-              At Arcadia, our RSW team is supervised by an RSW Manager with over fifteen years of field experience, and care plans are reviewed regularly in coordination with the treating team.
+              At Arcadia, Alzheimer&apos;s support is built around routine,
+              temperament match, family communication, and the practical realities
+              of living with memory loss at home over time.
             </p>
 
-            <h2>Navigating insurance and funding for ABI care in Ontario</h2>
+            <h2>Safety, supervision, and day-to-day risk at home</h2>
             <p>
-              One of the most practically challenging aspects of ABI for families is
-              understanding what funding is available and how to access it. The answer
-              depends significantly on the cause of the injury.
+              One of the biggest reasons families seek Alzheimer&apos;s home care is
+              not a single dramatic event. It is the accumulation of risk: forgotten
+              medication, poor nutrition, confusion with appliances, increased fall
+              risk, wandering, leaving the home at odd hours, refusing care, or
+              becoming distressed by ordinary parts of the day.
             </p>
             <p>
-              ABI resulting from a <strong>motor vehicle accident</strong> may be covered
-              under Ontario's auto insurance system, which can fund rehabilitation and
-              attendant care. ABI from a <strong>workplace incident</strong> may fall
-              under WSIB. Some <strong>private extended health benefits</strong> cover
-              home care for ABI. And for those without insurance coverage, there are
-              publicly funded options through Ontario Health atHome, though these are
-              typically limited in scope.
+              Structured support can reduce these risks significantly. It can also
+              help the family move out of reactive mode. Instead of managing one
+              incident at a time, they begin to have a system in place that supports
+              safer daily living.
             </p>
             <p>
-              Arcadia is familiar with these systems and has experience working with
-              case managers and insurance adjusters across all of them. We can help
-              you understand what documentation is typically required, what is
-              reasonable to expect from each funding source, and how to structure
-              care so that it aligns with what is covered. If you are working with a{' '}
-              <Link href="/referral-form/">case manager who wants to refer directly</Link>,
-              we welcome that.
+              For clients leaving hospital or moving through a period of increased
+              instability, Alzheimer&apos;s care may also overlap with{' '}
+              <Link href="/our-services/hospital-discharge-support/">
+                hospital discharge support
+              </Link>{' '}
+              or more intensive{' '}
+              <Link href="/our-services/overnight-24-hour-care/">
+                overnight and 24-hour care
+              </Link>.
             </p>
 
-            <h2>ABI support across Toronto and the GTA</h2>
+            <h2>Alzheimer&apos;s support across Toronto and the GTA</h2>
             <p>
-              Arcadia provides acquired brain injury support across{' '}
+              Arcadia provides Alzheimer&apos;s care at home across{' '}
               <Link href="/locations/toronto/">Toronto</Link>,{' '}
               <Link href="/locations/toronto/north-york-home-care/">North York</Link>,{' '}
               <Link href="/locations/toronto/scarborough-home-care/">Scarborough</Link>,{' '}
@@ -517,15 +535,13 @@ export default function AcquiredBrainInjurySupportPage() {
               <Link href="/locations/york-region/markham-home-care/">Markham</Link>,{' '}
               <Link href="/locations/york-region/richmond-hill-home-care/">Richmond Hill</Link>, and{' '}
               <Link href="/locations/peel-region/mississauga-home-care/">Mississauga</Link>.
-              We have been working with ABI clients in the GTA for over 16 years, and
-              a number of our Rehabilitation Support Workers have been with us since
-              the beginning — an unusual level of continuity in this field.
+              We support families trying to keep home life stable, safe, and as
+              dignified as possible while the condition changes over time.
             </p>
 
-            {/* FAQ */}
             <div className="faq-section">
               <p className="faq-eyebrow">Frequently Asked Questions</p>
-              <h2>Questions families ask about ABI home support</h2>
+              <h2>Questions families ask about Alzheimer&apos;s care at home</h2>
               {faqs.map((faq, i) => (
                 <div key={i} className="faq-item">
                   <div className="faq-q">{faq.q}</div>
@@ -533,10 +549,8 @@ export default function AcquiredBrainInjurySupportPage() {
                 </div>
               ))}
             </div>
-
           </article>
 
-          {/* Sidebar */}
           <aside className="condition-sidebar">
             <div className="sidebar-cta">
               <h3>Talk to our team</h3>
@@ -547,17 +561,17 @@ export default function AcquiredBrainInjurySupportPage() {
 
             <div className="sidebar-card" style={{ marginTop: 20 }}>
               <div className="sidebar-card-title">Related Services</div>
-              <Link href="/our-services/acquired-brain-injury-home-care/" className="sidebar-link">ABI Home Care</Link>
-              <Link href="/our-services/rehabilitation-support/" className="sidebar-link">Rehabilitation Support</Link>
-              <Link href="/our-services/hospital-discharge-support/" className="sidebar-link">Hospital Discharge Support</Link>
+              <Link href="/our-services/dementia-alzheimers-home-care/" className="sidebar-link">Dementia & Alzheimer&apos;s Home Care</Link>
               <Link href="/our-services/respite-care/" className="sidebar-link">Respite Care</Link>
+              <Link href="/our-services/overnight-24-hour-care/" className="sidebar-link">Overnight & 24-Hour Care</Link>
+              <Link href="/our-services/hospital-discharge-support/" className="sidebar-link">Hospital Discharge Support</Link>
             </div>
 
             <div className="sidebar-card">
               <div className="sidebar-card-title">Related Conditions</div>
-              <Link href="/conditions/stroke-recovery/" className="sidebar-link">Stroke Recovery</Link>
-              <Link href="/conditions/post-hospital-recovery/" className="sidebar-link">Post-Hospital Recovery</Link>
+              <Link href="/conditions/dementia-care-at-home/" className="sidebar-link">Dementia Care at Home</Link>
               <Link href="/conditions/caregiver-burnout-support/" className="sidebar-link">Caregiver Burnout Support</Link>
+              <Link href="/conditions/frailty-fall-prevention/" className="sidebar-link">Frailty & Fall Prevention</Link>
             </div>
 
             <div className="sidebar-card">
@@ -578,17 +592,32 @@ export default function AcquiredBrainInjurySupportPage() {
           </aside>
         </div>
 
-        {/* Related links */}
         <section className="related-section">
           <div className="related-inner">
             <p className="related-eyebrow">You May Also Find Helpful</p>
-            <h2>More resources for families navigating ABI</h2>
+            <h2>More resources for families navigating Alzheimer&apos;s at home</h2>
             <div className="related-grid">
               {[
-                { type: 'Service', title: 'Acquired Brain Injury Home Care', href: '/our-services/acquired-brain-injury-home-care/' },
-                { type: 'Service', title: 'Rehabilitation Support', href: '/our-services/rehabilitation-support/' },
-                { type: 'Condition', title: 'Stroke Recovery at Home', href: '/conditions/stroke-recovery/' },
-                { type: 'Resource', title: 'Brain Injury & Rehabilitation Guides', href: '/resources/brain-injury-rehabilitation/' },
+                {
+                  type: 'Service',
+                  title: "Dementia & Alzheimer's Home Care",
+                  href: '/our-services/dementia-alzheimers-home-care/',
+                },
+                {
+                  type: 'Service',
+                  title: 'Respite Care',
+                  href: '/our-services/respite-care/',
+                },
+                {
+                  type: 'Condition',
+                  title: 'Dementia Care at Home',
+                  href: '/conditions/dementia-care-at-home/',
+                },
+                {
+                  type: 'Resource',
+                  title: 'Dementia & Caregiver Guides',
+                  href: '/resources/',
+                },
               ].map((item, i) => (
                 <Link key={i} href={item.href} className="related-card">
                   <div className="related-card-type">{item.type}</div>
@@ -600,14 +629,12 @@ export default function AcquiredBrainInjurySupportPage() {
           </div>
         </section>
 
-        {/* Bottom CTA */}
         <section className="bottom-cta">
           <p className="condition-eyebrow" style={{ textAlign: 'center' }}>Get Started</p>
-          <h2>Support at home matters. We help families put the right structure in place.</h2>
+          <h2>Alzheimer&apos;s changes daily life. The right support can make home feel manageable again.</h2>
           <p>
-            Whether you are just leaving rehabilitation or have been managing for
-            months without enough support, a conversation with our team is a
-            useful starting point.
+            Whether you are seeing early changes or managing increasing care needs,
+            a conversation with our team is a practical place to start.
           </p>
           <a href="tel:8449770050" className="bottom-cta-phone">(844) 977-0050</a>
           <div className="cta-actions">
@@ -615,7 +642,6 @@ export default function AcquiredBrainInjurySupportPage() {
             <Link href="/referral-form/" className="btn-outline">Submit a Professional Referral</Link>
           </div>
         </section>
-
       </main>
     </>
   )

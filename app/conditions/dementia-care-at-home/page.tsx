@@ -69,7 +69,7 @@ export default function DementiaCareAtHomePage() {
               '@type': 'MedicalCondition',
               'name': 'Dementia',
               'description': 'Dementia is a term for a group of symptoms affecting memory, thinking, and social abilities severely enough to interfere with daily life.',
-              'relevantSpecialty': 'Geriatrics',
+              "relevantSpecialty": "https://schema.org/Geriatric",
             },
             {
               '@context': 'https://schema.org',

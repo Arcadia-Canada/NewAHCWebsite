@@ -49,7 +49,7 @@ export default function PostHospitalRecoveryPage() {
               '@type': 'MedicalCondition',
               'name': 'Post-Hospital Recovery',
               'description': 'The period following hospital discharge during which a patient requires ongoing support to recover safely at home and avoid readmission.',
-              'relevantSpecialty': 'Geriatrics',
+              'relevantSpecialty': "https://schema.org/Geriatrics",
             },
             {
               '@context': 'https://schema.org',

@@ -1,11 +1,6 @@
 {
   "redirects": [
     {
-      "source": "/conditions/alzheimers-care/",
-      "destination": "/conditions/dementia-care-at-home/",
-      "statusCode": 301
-    },
-    {
       "source": "/how-care-starts/book-a-consultation/",
       "destination": "/contact/",
       "statusCode": 301

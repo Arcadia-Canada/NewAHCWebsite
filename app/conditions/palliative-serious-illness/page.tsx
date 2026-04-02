@@ -50,7 +50,7 @@ export default function PalliativeSeriousIllnessPage() {
               '@type': 'MedicalCondition',
               'name': 'Palliative Care',
               'description': 'Palliative care is specialized medical care focused on providing relief from the symptoms, pain, and stress of serious illness, with the goal of improving quality of life for both the patient and family.',
-              'relevantSpecialty': 'Palliative Medicine',
+              'relevantSpecialty': "https://schema.org/Palliative Medicine",
             },
             {
               '@context': 'https://schema.org',

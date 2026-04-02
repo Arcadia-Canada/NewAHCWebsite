@@ -93,7 +93,7 @@ export default function ParkinsonsSupportPage() {
               '@type': 'MedicalCondition',
               'name': "Parkinson's Disease",
               'description': "Parkinson's disease is a progressive neurological condition affecting movement, balance, and coordination. It also commonly affects cognition, mood, and communication as it advances.",
-              'relevantSpecialty': 'Neurology',
+              'relevantSpecialty': "https://schema.org/Neurology",
             },
             {
               '@context': 'https://schema.org',

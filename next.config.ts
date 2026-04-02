@@ -9,11 +9,6 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
-        source: "/conditions/alzheimers-care/",
-        destination: "/conditions/dementia-care-at-home/",
-        permanent: true,
-      },
-      {
         source: "/how-care-starts/book-a-consultation/",
         destination: "/contact/",
         permanent: true,

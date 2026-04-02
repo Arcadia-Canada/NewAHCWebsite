@@ -43,7 +43,7 @@ export default function CaregiverBurnoutSupportPage() {
               '@type': 'MedicalCondition',
               'name': 'Caregiver Burnout',
               'description': 'A state of physical, emotional, and mental exhaustion that can affect people who provide long-term care for a family member or loved one.',
-              'relevantSpecialty': 'Geriatrics',
+              'relevantSpecialty': "https://schema.org/Geriatrics",
             },
             {
               '@context': 'https://schema.org',
