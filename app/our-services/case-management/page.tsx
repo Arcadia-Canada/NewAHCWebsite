@@ -12,7 +12,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Case Management | Home Care Coordination Toronto | Arcadia Home Care',
+  title: 'Case Management | Home Care Coordination | Arcadia',
   description: 'Care coordination and case management for complex home care situations in Toronto and the GTA. Arcadia helps families navigate the healthcare system, coordinate multiple providers, and build a care plan that actually holds together.',
   alternates: { canonical: 'https://www.arcadiahomecare.ca/our-services/case-management/' },
 }

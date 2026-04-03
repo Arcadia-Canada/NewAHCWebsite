@@ -45,6 +45,23 @@ export default function HowCareStartsHubPage() {
         ))}
       </div>
 
+      <section style={{ background: colors.white, padding: "56px 24px 0" }}>
+        <div style={{ maxWidth: 760, margin: "0 auto" }}>
+          <h2 style={{ fontFamily: fonts.display, fontSize: "clamp(1.45rem, 2.6vw, 1.9rem)", fontWeight: 600, color: colors.primary, marginBottom: 18, lineHeight: 1.25 }}>
+            Why we structured care this way
+          </h2>
+          <p style={{ fontSize: 16, color: colors.textLight, lineHeight: 1.75, marginBottom: 16 }}>
+            Most families do not need a sales pitch — they need clarity. The steps below mirror how Arcadia actually works: a conversation that respects your pace, an assessment that reflects real home life (not only a discharge summary), deliberate caregiver matching, and pricing conversations that account for insurance, publicly funded programs, and private options without jargon.
+          </p>
+          <p style={{ fontSize: 16, color: colors.textLight, lineHeight: 1.75, marginBottom: 16 }}>
+            Hospital discharge planners and family physicians often need a predictable referral pathway; adult children may need help translating medical instructions into a weekly schedule. By separating assessment, matching, funding, and ongoing review into clear stages, everyone involved — including your loved one — knows what happens next and who to call when something changes.
+          </p>
+          <p style={{ fontSize: 16, color: colors.textLight, lineHeight: 1.75, marginBottom: 0 }}>
+            If you are comparing providers, use these pages to see how transparent we are before you commit to a single visit. When you are ready, book a free consultation or call — we answer seven days a week across the GTA.
+          </p>
+        </div>
+      </section>
+
       {/* Step cards */}
       <section style={{ background: colors.warm, padding: "96px 24px" }}>
         <div style={{ maxWidth: 1000, margin: "0 auto" }}>

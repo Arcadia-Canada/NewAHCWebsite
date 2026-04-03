@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Navigating Home Care in Ontario | Resources for Families | Arcadia',
+  title: 'Ontario Home Care Resources | Arcadia Home Care',
   description: 'Practical guides for Ontario families making decisions about home care — costs, providers, public vs. private care, PSWs, and how to get started.',
   alternates: {
     canonical: 'https://www.arcadiahomecare.ca/resources/navigating-home-care/',

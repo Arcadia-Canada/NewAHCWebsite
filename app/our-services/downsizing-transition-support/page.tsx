@@ -13,7 +13,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Downsizing & Transition Support | Senior Moving Help Toronto | Arcadia Home Care',
+  title: 'Downsizing & Transition Support | Toronto | Arcadia',
   description: 'Downsizing and transition support for older adults and families in Toronto and the GTA. Arcadia helps with the practical and emotional work of moving — sorting, decluttering, packing, and supporting the person through one of life\'s most significant transitions.',
   alternates: { canonical: 'https://www.arcadiahomecare.ca/our-services/downsizing-transition-support/' },
 }

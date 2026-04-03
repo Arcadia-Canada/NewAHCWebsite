@@ -12,7 +12,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Light Housekeeping for Seniors | Toronto & GTA | Arcadia Home Care',
+  title: 'Senior Light Housekeeping | Toronto & GTA | Arcadia',
   description: 'Light housekeeping support for older adults and individuals with complex needs in Toronto and the GTA. Arcadia helps maintain a clean, safe, and functional home — matched with the personal support and companionship families need.',
   alternates: { canonical: 'https://www.arcadiahomecare.ca/our-services/light-housekeeping/' },
 }

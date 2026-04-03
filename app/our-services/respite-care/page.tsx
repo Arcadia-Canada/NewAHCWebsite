@@ -10,7 +10,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Respite Care for Family Caregivers | Toronto & GTA | Arcadia Home Care',
+  title: 'Respite Care for Families | Toronto | Arcadia',
   description: 'Respite care for family caregivers in Toronto and the GTA. Arcadia provides reliable, consistent relief — so caregivers can rest, work, and attend to their own lives knowing their loved one is well cared for.',
   alternates: { canonical: 'https://www.arcadiahomecare.ca/our-services/respite-care/' },
 }

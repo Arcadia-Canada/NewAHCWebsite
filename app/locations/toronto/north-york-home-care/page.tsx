@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Home Care in North York | Dementia, ABI & Palliative Care | Arcadia",
+  title: "North York Home Care | Dementia & Palliative | Arcadia",
   description: "Clinically informed home care across North York — dementia care, acquired brain injury, hospital discharge support, palliative care. Serving North York families since 2005.",
   alternates: { canonical: "https://www.arcadiahomecare.ca/locations/toronto/north-york-home-care/" },
 };

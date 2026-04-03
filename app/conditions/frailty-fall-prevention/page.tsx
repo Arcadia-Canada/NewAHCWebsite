@@ -12,7 +12,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Frailty & Fall Prevention at Home | Toronto & GTA | Arcadia Home Care',
+  title: 'Frailty & Fall Prevention | Toronto | Arcadia',
   description: 'Home care support for older adults at risk of falls in Toronto and the GTA. Arcadia helps families put the right support in place before a fall happens — keeping aging parents safe, active, and independent at home.',
   alternates: { canonical: 'https://www.arcadiahomecare.ca/conditions/frailty-fall-prevention/' },
 }

@@ -10,7 +10,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Acquired Brain Injury Support at Home | Toronto & GTA | Arcadia Home Care',
+  title: 'Acquired Brain Injury Care | Toronto | Arcadia',
   description: 'Support and guidance for families navigating acquired brain injury at home in Toronto and the GTA. Arcadia has supported ABI clients and their families for over 16 years — working alongside rehabilitation teams to help people return to meaningful life at home.',
   alternates: { canonical: 'https://www.arcadiahomecare.ca/conditions/acquired-brain-injury-support/' },
 }

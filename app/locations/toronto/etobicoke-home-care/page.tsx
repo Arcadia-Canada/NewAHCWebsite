@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Home Care in Etobicoke | Dementia, ABI & Palliative Care | Arcadia",
+  title: "Etobicoke Home Care | Dementia & Palliative | Arcadia",
   description: "Clinically informed home care across Etobicoke — dementia care, acquired brain injury, hospital discharge support, palliative care. Serving Etobicoke families since 2005.",
   alternates: { canonical: "https://www.arcadiahomecare.ca/locations/toronto/etobicoke-home-care/" },
 };

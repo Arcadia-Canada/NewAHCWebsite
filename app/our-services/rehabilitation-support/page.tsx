@@ -10,7 +10,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Rehabilitation Support at Home | Toronto & GTA | Arcadia Home Care',
+  title: 'Rehabilitation Support | Toronto & GTA | Arcadia',
   description: 'Community rehabilitation support for individuals recovering from brain injury, stroke, surgery, work-related injury, or serious illness in Toronto and the GTA. Arcadia\'s trained RSWs work under clinical supervision to help clients rebuild independence at home.',
   alternates: { canonical: 'https://www.arcadiahomecare.ca/our-services/rehabilitation-support/' },
 }

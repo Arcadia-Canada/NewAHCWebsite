@@ -10,7 +10,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Hospital Discharge Support | Home Care After Hospital | Toronto & GTA | Arcadia Home Care',
+  title: 'Hospital Discharge Support | Toronto & GTA | Arcadia',
   description: 'Home care support arranged quickly after hospital discharge in Toronto and the GTA. Arcadia helps families and discharge teams put the right care in place within 24–48 hours — helping reduce the risk of complications and avoidable returns to hospital and making the transition home safe.',
   alternates: { canonical: 'https://www.arcadiahomecare.ca/our-services/hospital-discharge-support/' },
 }

@@ -47,6 +47,24 @@ export default function ConditionsHubPage() {
         ))}
       </div>
 
+      {/* SEO: substantive overview (addresses thin hub content) */}
+      <section style={{ background: colors.white, padding: "72px 24px 0" }}>
+        <div style={{ maxWidth: 760, margin: "0 auto" }}>
+          <h2 style={{ fontFamily: fonts.display, fontSize: "clamp(1.5rem, 2.8vw, 2rem)", fontWeight: 600, color: colors.primary, marginBottom: 20, lineHeight: 1.25 }}>
+            Clinical home care shaped around diagnosis and daily life
+          </h2>
+          <p style={{ fontSize: 16, color: colors.textLight, lineHeight: 1.75, marginBottom: 18 }}>
+            Families rarely face a single isolated symptom. Cognitive change often overlaps with mobility risk; recovery from stroke or surgery may intersect with frailty, medication complexity, or caregiver exhaustion. Arcadia&apos;s condition pages explain how we think about each situation in context — not as a label on a chart, but as a person living at home with routines, relationships, and goals worth protecting.
+          </p>
+          <p style={{ fontSize: 16, color: colors.textLight, lineHeight: 1.75, marginBottom: 18 }}>
+            Whether you are researching dementia and Alzheimer&apos;s care, exploring support after an acquired brain injury, planning for palliative comfort at home, or trying to prevent the next fall before it happens, the same principles apply: clear communication with your family, honest alignment with your clinical team, and caregivers who are trained to notice change early. We publish these guides so you can compare what you are seeing at home with what experienced teams look for when they assess safety, dignity, and sustainability of care.
+          </p>
+          <p style={{ fontSize: 16, color: colors.textLight, lineHeight: 1.75, marginBottom: 18 }}>
+            Use the links below to go deeper on the condition that matches your situation. If you are unsure where to start, call us — we listen first, then help you understand what level of support would make the biggest difference for your parent or spouse in Toronto and the GTA.
+          </p>
+        </div>
+      </section>
+
       {/* Condition cards */}
       <section style={{ background: colors.warm, padding: "96px 24px" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>

@@ -166,12 +166,45 @@ export default async function RegionPage({ params }: RegionPageProps) {
               fontSize: 16,
               color: colors.textLight,
               lineHeight: 1.7,
-              marginBottom: 32,
+              marginBottom: 22,
             }}
           >
             Arcadia serves families across {label} with the same clinical depth
             and guided care process we&apos;ve offered since 2005. Explore city-level
             pages below or call to discuss your situation.
+          </p>
+          <p
+            style={{
+              fontSize: 16,
+              color: colors.textLight,
+              lineHeight: 1.75,
+              marginBottom: 22,
+              textAlign: "left",
+            }}
+          >
+            Home care in the GTA is rarely about a single task. Families juggle hospital follow-up, medication changes, dementia-related safety risks, and the emotional weight of watching a parent decline. Our regional teams plan coverage with realistic drive times, consistent caregiver matching, and clear escalation paths when something changes overnight — because frailty, confusion, or post-surgical weakness do not follow business hours.
+          </p>
+          <p
+            style={{
+              fontSize: 16,
+              color: colors.textLight,
+              lineHeight: 1.75,
+              marginBottom: 22,
+              textAlign: "left",
+            }}
+          >
+            Whether you need short-term support after discharge, ongoing personal care, or specialized dementia and palliative coverage, we document what matters to your family and share updates with the professionals you authorize. That coordination reduces duplicate instructions, missed appointments, and the quiet anxiety of wondering whether anyone has the full picture.
+          </p>
+          <p
+            style={{
+              fontSize: 16,
+              color: colors.textLight,
+              lineHeight: 1.75,
+              marginBottom: 32,
+              textAlign: "left",
+            }}
+          >
+            If you are comparing options, start with a free consultation. We will ask what you are seeing at home, what specialists have recommended, and what would make the next month feel safer for everyone involved — then we translate that into a schedule and caregiver profile that fits {label}, not a generic checklist.
           </p>
           <a href="tel:8449770050" className="loc-region-btn loc-region-btn-red">
             📞 (844) 977-0050

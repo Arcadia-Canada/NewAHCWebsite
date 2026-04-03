@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Normal Aging vs. Dementia: What\'s the Difference? | Arcadia Home Care',
+  title: 'Normal Aging vs Dementia | Arcadia Home Care',
   description: 'Not every memory lapse is dementia. Learn the real differences between normal aging and dementia — and which changes in your parent warrant a doctor\'s visit.',
   alternates: {
     canonical: 'https://www.arcadiahomecare.ca/resources/dementia-memory-care/normal-aging-vs-dementia/',

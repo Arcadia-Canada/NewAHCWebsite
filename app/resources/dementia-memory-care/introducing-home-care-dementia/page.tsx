@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'How to Introduce Home Care to a Parent with Dementia | Arcadia Home Care',
+  title: 'Introducing Home Care for Dementia | Arcadia',
   description: 'Practical strategies for introducing home care to a parent with dementia who is resistant, fearful, or confused. Written for Toronto families navigating this difficult conversation.',
   alternates: {
     canonical: 'https://www.arcadiahomecare.ca/resources/dementia-memory-care/introducing-home-care-dementia/',

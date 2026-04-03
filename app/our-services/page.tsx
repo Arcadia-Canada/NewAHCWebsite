@@ -79,6 +79,21 @@ export default function OurServicesPage() {
           ))}
         </div>
 
+        <section style={{ maxWidth: 760, margin: '0 auto', padding: '48px 24px 0', fontFamily: fonts.body }}>
+          <h2 style={{ fontFamily: fonts.display, fontSize: 'clamp(1.5rem, 2.8vw, 2rem)', color: colors.primary, fontWeight: 600, marginBottom: 18, lineHeight: 1.25 }}>
+            How Arcadia builds services around your situation
+          </h2>
+          <p style={{ fontSize: 16, color: colors.textLight, lineHeight: 1.75, marginBottom: 16 }}>
+            Home care is not a single task list — it is a set of decisions about safety, dignity, and sustainability. Some families need intensive dementia care with predictable routines; others need short-term rehabilitation support after discharge, overnight supervision when wandering risk is high, or respite so a spouse can sleep. Our twelve services exist so we can combine personal support, clinical coordination, and practical help in the home without asking you to become the project manager for every specialist involved.
+          </p>
+          <p style={{ fontSize: 16, color: colors.textLight, lineHeight: 1.75, marginBottom: 16 }}>
+            Case management keeps communication flowing between your family, physicians, and community resources. Light housekeeping and companion care address isolation and environmental risk alongside hands-on care. Palliative and hospital-discharge pathways are structured so transitions do not fall through the cracks when paperwork, medications, and follow-up appointments multiply.
+          </p>
+          <p style={{ fontSize: 16, color: colors.textLight, lineHeight: 1.75, marginBottom: 0 }}>
+            Browse each service below for plain-language detail on what we deliver in Toronto and the GTA. If you are unsure which line fits best, call us — we will help you translate your loved one&apos;s needs into a realistic plan before you commit.
+          </p>
+        </section>
+
         {/* Grid */}
         <section className="services-grid-section">
           <h2>All 12 Services</h2>

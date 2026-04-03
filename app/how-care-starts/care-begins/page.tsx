@@ -12,7 +12,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Care Begins | The First Week of Home Care | Arcadia Home Care Toronto',
+  title: 'Care Begins: First Week | Arcadia | Toronto',
   description: 'What to expect when home care begins with Arcadia in Toronto and the GTA. The first visit, the first week, and how Arcadia monitors and adjusts care in the early stages to make sure it is working.',
   alternates: { canonical: 'https://www.arcadiahomecare.ca/how-care-starts/care-begins/' },
 }

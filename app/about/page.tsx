@@ -5,8 +5,15 @@ import Link from 'next/link'
 import { colors, fonts, trustItems } from '@/components/arcadia-colors'
 
 export const metadata: Metadata = {
-  title: 'Our Caregivers | Arcadia Home Care | Toronto & GTA',
+  title: 'About Our Caregivers | Arcadia Home Care | GTA',
   description: 'Meet the Arcadia Home Care team. Rigorously screened, continuously trained, and carefully matched to every client. Serving Toronto and the GTA since 2005.',
+  keywords: [
+    'about arcadia home care',
+    'about us',
+    'home care caregivers toronto',
+    'arcadia caregivers',
+    'home care team gta',
+  ],
   alternates: { canonical: 'https://www.arcadiahomecare.ca/about/' },
 }
 

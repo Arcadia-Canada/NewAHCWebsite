@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Brain Injury & Rehabilitation Resources for Families | Arcadia Home Care',
+  title: 'Brain Injury Resources for Families | Arcadia',
   description: 'Guides for families navigating life after acquired brain injury, stroke, or rehabilitation in Toronto — recovery at home, cognitive changes, and caregiver support.',
   alternates: {
     canonical: 'https://www.arcadiahomecare.ca/resources/brain-injury-rehabilitation/',

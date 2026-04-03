@@ -9,7 +9,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Home Care After Hospital Discharge | Toronto & GTA | Arcadia Home Care',
+  title: 'Post-Hospital Home Care | Toronto | Arcadia',
   description: 'Returning home after a hospital stay requires the right support to be safe and successful. Arcadia helps Toronto and GTA families plan and arrange post-hospital home care — quickly, and with clinical guidance.',
   alternates: { canonical: 'https://www.arcadiahomecare.ca/conditions/post-hospital-recovery/' },
 }

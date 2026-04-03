@@ -62,8 +62,12 @@ function citySlugToLabel(slug: string): string {
 }
 
 export default async function CityLocationPage({ params }: CityPageProps) {
-  const { city } = await params;
+  const { region, city } = await params;
   const cityLabel = citySlugToLabel(city);
+  const regionLabel = region
+    .split("-")
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+    .join(" ");
 
   return (
     <main
@@ -157,7 +161,6 @@ export default async function CityLocationPage({ params }: CityPageProps) {
         ))}
       </div>
 
-      {/* Placeholder content block — replace with unique local content per Locations.md */}
       <section
         style={{
           background: colors.warm,
@@ -165,16 +168,50 @@ export default async function CityLocationPage({ params }: CityPageProps) {
         }}
       >
         <div style={{ maxWidth: 900, margin: "0 auto" }}>
+          <h2
+            style={{
+              fontFamily: "'Cormorant Garamond', Georgia, serif",
+              fontSize: "clamp(1.5rem, 2.8vw, 2.1rem)",
+              fontWeight: 600,
+              color: colors.text,
+              marginBottom: 20,
+              lineHeight: 1.25,
+            }}
+          >
+            Home care that fits {cityLabel} and {regionLabel}
+          </h2>
           <p
             style={{
               fontSize: 16,
               color: colors.textLight,
-              lineHeight: 1.7,
+              lineHeight: 1.75,
+              marginBottom: 18,
             }}
           >
-            This page will include unique local content for {cityLabel}: nearby
-            hospitals, neighbourhoods served, local health context, and a CTA.
-            See Locations.md for the required structure and copy per city.
+            Families in {cityLabel} choose Arcadia when they need clinically guided support without giving up the familiarity of their own neighbourhood. We plan visits around traffic patterns, hospital follow-up locations, and the reality of parking and building access — small details that determine whether care feels sustainable or stressful week after week.
+          </p>
+          <p
+            style={{
+              fontSize: 16,
+              color: colors.textLight,
+              lineHeight: 1.75,
+              marginBottom: 18,
+            }}
+          >
+            Our caregivers are matched for skills and temperament: dementia care where routines matter, rehabilitation support when therapists assign home exercises, palliative comfort when the priority is symptom management and family presence, and personal support when frailty or post-hospital recovery makes bathing, meals, and mobility the urgent focus. Case managers keep authorized clinicians and family members aligned so instructions do not conflict across appointments.
+          </p>
+          <p
+            style={{
+              fontSize: 16,
+              color: colors.textLight,
+              lineHeight: 1.75,
+              marginBottom: 18,
+            }}
+          >
+            If your situation is changing quickly — a new fall, a hospital discharge, or worsening confusion — tell us when you call. We prioritize rapid starts when safety is at risk and honest timelines when we need to staff a specialized match rather than send whoever is available.
+          </p>
+          <p style={{ fontSize: 16, color: colors.textLight, lineHeight: 1.75, marginBottom: 0 }}>
+            Serving {cityLabel} is part of how we support the wider {regionLabel} community. Book a free consultation or call (844) 977-0050 to describe what you are seeing at home; we listen first, then recommend a realistic plan.
           </p>
         </div>
       </section>

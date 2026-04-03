@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Referring Patients to Arcadia Home Care | For Healthcare Professionals',
+  title: 'Professional Referrals | Arcadia Home Care | GTA',
   description: 'Information for discharge planners, social workers, and Ontario Health atHome coordinators referring patients to Arcadia Home Care across Toronto and the GTA.',
   alternates: {
     canonical: 'https://www.arcadiahomecare.ca/for-professionals/',

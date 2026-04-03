@@ -11,7 +11,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Personal Support & Daily Living | PSW Home Care Toronto | Arcadia Home Care',
+  title: 'Personal Support & Daily Living | PSW Care | Arcadia',
   description: 'Personal support and daily living assistance for older adults and individuals with complex needs in Toronto and the GTA. Arcadia\'s trained PSWs provide compassionate, dignified care — matched carefully to each client\'s routines, preferences, and personality.',
   alternates: { canonical: 'https://www.arcadiahomecare.ca/our-services/personal-support-daily-living/' },
 }

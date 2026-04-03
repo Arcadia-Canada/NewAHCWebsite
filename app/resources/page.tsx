@@ -111,6 +111,20 @@ export default function ResourcesHubPage() {
           ))}
         </div>
 
+        <section style={{ background: colors.white, padding: "56px 24px 0" }}>
+          <div style={{ maxWidth: 760, margin: "0 auto" }}>
+            <h2 style={{ fontFamily: fonts.display, fontSize: "clamp(1.5rem, 2.8vw, 2rem)", fontWeight: 600, color: colors.primary, marginBottom: 18, lineHeight: 1.25 }}>
+              Evidence-informed guides for real family decisions
+            </h2>
+            <p style={{ fontSize: 16, color: colors.textLight, lineHeight: 1.75, marginBottom: 16 }}>
+              These articles are written for people who are awake at night searching for answers — not for algorithms. You will find practical framing on dementia progression, caregiver burnout, how to compare home care providers in Ontario, and what brain injury recovery can look like when rehabilitation moves into the home. Each cluster links to deeper pages so you can read at the level of detail you need without wading through generic filler.
+            </p>
+            <p style={{ fontSize: 16, color: colors.textLight, lineHeight: 1.75, marginBottom: 0 }}>
+              If a topic you need is not listed yet, call Arcadia anyway. Many families start with a conversation and a few trusted articles; we help you connect what you read to what you are seeing in your parent&apos;s kitchen, hallway, and medication routine across the GTA.
+            </p>
+          </div>
+        </section>
+
         {/* Category cards */}
         <section style={{ background: colors.warm, padding: "96px 24px" }}>
           <div style={{ maxWidth: 960, margin: "0 auto" }}>
