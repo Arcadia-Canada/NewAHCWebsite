@@ -3,18 +3,18 @@
 import { colors, fonts, phone, trustItems, arcBtn, hoverPrimary, hoverOutline } from '@/components/arcadia-colors'
 
 const services = [
-  { icon: '🧠', title: "Dementia & Alzheimer's Home Care", desc: 'Safe, familiar support for loved ones living with cognitive decline — in the comfort of their own home.', href: '/our-services/dementia-alzheimers-home-care', tag: 'Most Requested' },
-  { icon: '⚡', title: 'Acquired Brain Injury Home Care', desc: 'Coordinated with your clinical team to support recovery and rebuild independence after brain injury.', href: '/our-services/acquired-brain-injury-home-care', tag: null },
-  { icon: '📈', title: 'Rehabilitation Support', desc: 'Goal-oriented home care that works alongside your OT, PT, and specialist team.', href: '/our-services/rehabilitation-support', tag: null },
-  { icon: '🏥', title: 'Hospital Discharge Support', desc: 'A safe, supported transition from hospital to home — coordinated from day one.', href: '/our-services/hospital-discharge-support', tag: null },
-  { icon: '💙', title: 'Palliative Home Care', desc: 'Comfort-focused care that preserves dignity and supports the whole family through serious illness.', href: '/our-services/palliative-home-care', tag: null },
-  { icon: '🤝', title: 'Personal Support & Daily Living', desc: 'Hands-on help with bathing, dressing, meals, and daily routines — delivered with respect and warmth.', href: '/our-services/personal-support-daily-living', tag: null },
-  { icon: '☕', title: 'Companion Care', desc: 'Meaningful company, conversation, and engagement for seniors who need connection as much as care.', href: '/our-services/companion-care', tag: null },
-  { icon: '🌿', title: 'Respite Care', desc: 'Relief for family caregivers — scheduled or emergency coverage so you can rest without worry.', href: '/our-services/respite-care', tag: 'For Families' },
-  { icon: '🌙', title: 'Overnight & 24-Hour Care', desc: 'Around-the-clock support for individuals who need continuous supervision and assistance.', href: '/our-services/overnight-24-hour-care', tag: null },
-  { icon: '📋', title: 'Case Management', desc: 'A vital link between your loved one, your family, and every professional involved in their care.', href: '/our-services/case-management', tag: null },
-  { icon: '🏠', title: 'Light Housekeeping', desc: 'A clean, safe home environment — because where someone lives is part of how they feel.', href: '/our-services/light-housekeeping', tag: null },
-  { icon: '📦', title: 'Downsizing & Transition Support', desc: 'Practical, compassionate help navigating a move — decluttering, organizing, and transitioning with dignity.', href: '/our-services/downsizing-transition-support', tag: null },
+  { icon: '🧠', title: "Dementia & Alzheimer's Home Care", desc: 'Safe, familiar support for loved ones living with cognitive decline — in the comfort of their own home.', href: '/our-services/dementia-alzheimers-home-care/', tag: 'Most Requested' },
+  { icon: '⚡', title: 'Acquired Brain Injury Home Care', desc: 'Coordinated with your clinical team to support recovery and rebuild independence after brain injury.', href: '/our-services/acquired-brain-injury-home-care/', tag: null },
+  { icon: '📈', title: 'Rehabilitation Support', desc: 'Goal-oriented home care that works alongside your OT, PT, and specialist team.', href: '/our-services/rehabilitation-support/', tag: null },
+  { icon: '🏥', title: 'Hospital Discharge Support', desc: 'A safe, supported transition from hospital to home — coordinated from day one.', href: '/our-services/hospital-discharge-support/', tag: null },
+  { icon: '💙', title: 'Palliative Home Care', desc: 'Comfort-focused care that preserves dignity and supports the whole family through serious illness.', href: '/our-services/palliative-home-care/', tag: null },
+  { icon: '🤝', title: 'Personal Support & Daily Living', desc: 'Hands-on help with bathing, dressing, meals, and daily routines — delivered with respect and warmth.', href: '/our-services/personal-support-daily-living/', tag: null },
+  { icon: '☕', title: 'Companion Care', desc: 'Meaningful company, conversation, and engagement for seniors who need connection as much as care.', href: '/our-services/companion-care/', tag: null },
+  { icon: '🌿', title: 'Respite Care', desc: 'Relief for family caregivers — scheduled or emergency coverage so you can rest without worry.', href: '/our-services/respite-care/', tag: 'For Families' },
+  { icon: '🌙', title: 'Overnight & 24-Hour Care', desc: 'Around-the-clock support for individuals who need continuous supervision and assistance.', href: '/our-services/overnight-24-hour-care/', tag: null },
+  { icon: '📋', title: 'Case Management', desc: 'A vital link between your loved one, your family, and every professional involved in their care.', href: '/our-services/case-management/', tag: null },
+  { icon: '🏠', title: 'Light Housekeeping', desc: 'A clean, safe home environment — because where someone lives is part of how they feel.', href: '/our-services/light-housekeeping/', tag: null },
+  { icon: '📦', title: 'Downsizing & Transition Support', desc: 'Practical, compassionate help navigating a move — decluttering, organizing, and transitioning with dignity.', href: '/our-services/downsizing-transition-support/', tag: null },
 ]
 
 export default function OurServicesPage() {
