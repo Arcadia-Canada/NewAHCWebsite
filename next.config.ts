@@ -88,6 +88,11 @@ const nextConfig: NextConfig = {
         destination: "/conditions/dementia-care-at-home/",
         permanent: true,
       },
+      {
+        source: "/for-professionals/",
+        destination: "/healthcare-professionals/",
+        permanent: true,
+      },
     ];
   },
 };

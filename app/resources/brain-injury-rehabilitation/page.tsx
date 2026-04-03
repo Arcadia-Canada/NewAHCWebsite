@@ -198,7 +198,7 @@ export default function BrainInjuryRehabHub() {
             <div className="referral-hook">
               Healthcare professionals: learn about referring patients to Arcadia for ABI and rehabilitation
               support →{' '}
-              <Link href="/for-professionals/">For Healthcare Professionals</Link>
+              <Link href="/healthcare-professionals/">For Healthcare Professionals</Link>
             </div>
           </div>
 
@@ -216,7 +216,7 @@ export default function BrainInjuryRehabHub() {
               <Link href="/our-services/acquired-brain-injury-home-care/" className="sidebar-link">ABI Home Care Service</Link>
               <Link href="/our-services/rehabilitation-support/" className="sidebar-link">Rehabilitation Support</Link>
               <Link href="/our-services/hospital-discharge-support/" className="sidebar-link">Hospital Discharge Support</Link>
-              <Link href="/for-professionals/" className="sidebar-link">For Healthcare Professionals</Link>
+              <Link href="/healthcare-professionals/" className="sidebar-link">For Healthcare Professionals</Link>
             </div>
 
             <div className="sidebar-card">

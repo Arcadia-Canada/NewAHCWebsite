@@ -5,11 +5,11 @@ export const metadata: Metadata = {
   title: 'Professional Referrals | Arcadia Home Care | GTA',
   description: 'Information for discharge planners, social workers, and Ontario Health atHome coordinators referring patients to Arcadia Home Care across Toronto and the GTA.',
   alternates: {
-    canonical: 'https://www.arcadiahomecare.ca/for-professionals/',
+    canonical: 'https://www.arcadiahomecare.ca/healthcare-professionals/',
   },
 }
 
-export default function ForProfessionalsPage() {
+export default function HealthcareProfessionalsPage() {
   return (
     <>
       <script
@@ -21,7 +21,7 @@ export default function ForProfessionalsPage() {
               '@type': 'WebPage',
               name: 'Referring Patients to Arcadia Home Care',
               description: 'Information for healthcare professionals referring patients to Arcadia Home Care in Toronto and the GTA.',
-              url: 'https://www.arcadiahomecare.ca/for-professionals/',
+              url: 'https://www.arcadiahomecare.ca/healthcare-professionals/',
               publisher: {
                 '@type': 'Organization',
                 name: 'Arcadia Home Care',
@@ -63,7 +63,7 @@ export default function ForProfessionalsPage() {
               '@type': 'BreadcrumbList',
               itemListElement: [
                 { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.arcadiahomecare.ca/' },
-                { '@type': 'ListItem', position: 2, name: 'For Healthcare Professionals', item: 'https://www.arcadiahomecare.ca/for-professionals/' },
+                { '@type': 'ListItem', position: 2, name: 'Healthcare Professionals', item: 'https://www.arcadiahomecare.ca/healthcare-professionals/' },
               ],
             },
           ]),

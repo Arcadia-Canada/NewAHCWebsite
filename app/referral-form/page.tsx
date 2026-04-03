@@ -206,7 +206,7 @@ export default function ReferralFormPage() {
           Referral Resources
         </p>
         <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
-          <a href="/for-professionals/" style={{ color: "#1C2B3A", textDecoration: "none", border: "1px solid #E5E0D8", borderRadius: 100, padding: "8px 14px", fontSize: 14, fontWeight: 600 }}>
+          <a href="/healthcare-professionals/" style={{ color: "#1C2B3A", textDecoration: "none", border: "1px solid #E5E0D8", borderRadius: 100, padding: "8px 14px", fontSize: 14, fontWeight: 600 }}>
             For Professionals
           </a>
           <a href="/our-services/hospital-discharge-support/" style={{ color: "#1C2B3A", textDecoration: "none", border: "1px solid #E5E0D8", borderRadius: 100, padding: "8px 14px", fontSize: 14, fontWeight: 600 }}>

@@ -85,6 +85,11 @@
       "source": "/conditions/alzheimers-care/",
       "destination": "/conditions/dementia-care-at-home/",
       "statusCode": 301
+    },
+    {
+      "source": "/for-professionals/",
+      "destination": "/healthcare-professionals/",
+      "statusCode": 301
     }
   ]
 }

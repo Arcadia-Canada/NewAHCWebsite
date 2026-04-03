@@ -25,7 +25,7 @@ const PATHS = [
   "/conditions/stroke-recovery/",
   "/contact/",
   "/faqs/",
-  "/for-professionals/",
+  "/healthcare-professionals/",
   "/how-care-starts/",
   "/how-care-starts/care-assessment/",
   "/how-care-starts/care-begins/",
