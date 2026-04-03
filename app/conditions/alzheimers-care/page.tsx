@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   description:
     "Specialized Alzheimer's care at home in Toronto and the GTA. Arcadia helps families manage memory loss, safety concerns, routines, and caregiver strain with structured home support.",
   alternates: {
-    canonical: 'https://arcadiahomecare.ca/conditions/alzheimers-care/',
+    canonical: 'https://www.arcadiahomecare.ca/conditions/alzheimers-care/',
   },
 }
 
@@ -76,19 +76,19 @@ export default function AlzheimersCarePage() {
                   '@type': 'ListItem',
                   position: 1,
                   name: 'Home',
-                  item: 'https://arcadiahomecare.ca/',
+                  item: 'https://www.arcadiahomecare.ca/',
                 },
                 {
                   '@type': 'ListItem',
                   position: 2,
                   name: 'Conditions',
-                  item: 'https://arcadiahomecare.ca/conditions/',
+                  item: 'https://www.arcadiahomecare.ca/conditions/',
                 },
                 {
                   '@type': 'ListItem',
                   position: 3,
                   name: "Alzheimer's Care",
-                  item: 'https://arcadiahomecare.ca/conditions/alzheimers-care/',
+                  item: 'https://www.arcadiahomecare.ca/conditions/alzheimers-care/',
                 },
               ],
             },

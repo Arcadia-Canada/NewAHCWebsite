@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: CityPageProps): Promise<Metad
     title: `${cityLabel} Home Care | Arcadia Home Care`,
     description: `Home care in ${cityLabel}, ${regionLabel}. Arcadia supports families with dementia care, rehabilitation support, and post-hospital transition planning.`,
     alternates: {
-      canonical: `https://arcadiahomecare.ca/locations/${region}/${city}/`,
+      canonical: `https://www.arcadiahomecare.ca/locations/${region}/${city}/`,
     },
   };
 }

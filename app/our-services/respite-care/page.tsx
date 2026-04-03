@@ -12,7 +12,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Respite Care for Family Caregivers | Toronto & GTA | Arcadia Home Care',
   description: 'Respite care for family caregivers in Toronto and the GTA. Arcadia provides reliable, consistent relief — so caregivers can rest, work, and attend to their own lives knowing their loved one is well cared for.',
-  alternates: { canonical: 'https://arcadiahomecare.ca/our-services/respite-care/' },
+  alternates: { canonical: 'https://www.arcadiahomecare.ca/our-services/respite-care/' },
 }
 
 const faqs = [
@@ -109,9 +109,9 @@ export default function RespiteCarePage() {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               'itemListElement': [
-                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://arcadiahomecare.ca/' },
-                { '@type': 'ListItem', 'position': 2, 'name': 'Our Services', 'item': 'https://arcadiahomecare.ca/our-services/' },
-                { '@type': 'ListItem', 'position': 3, 'name': 'Respite Care', 'item': 'https://arcadiahomecare.ca/our-services/respite-care/' },
+                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://www.arcadiahomecare.ca/' },
+                { '@type': 'ListItem', 'position': 2, 'name': 'Our Services', 'item': 'https://www.arcadiahomecare.ca/our-services/' },
+                { '@type': 'ListItem', 'position': 3, 'name': 'Respite Care', 'item': 'https://www.arcadiahomecare.ca/our-services/respite-care/' },
               ],
             },
           ]),

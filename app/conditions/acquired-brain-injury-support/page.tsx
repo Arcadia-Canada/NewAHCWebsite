@@ -12,7 +12,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Acquired Brain Injury Support at Home | Toronto & GTA | Arcadia Home Care',
   description: 'Support and guidance for families navigating acquired brain injury at home in Toronto and the GTA. Arcadia has supported ABI clients and their families for over 16 years — working alongside rehabilitation teams to help people return to meaningful life at home.',
-  alternates: { canonical: 'https://arcadiahomecare.ca/conditions/acquired-brain-injury-support/' },
+  alternates: { canonical: 'https://www.arcadiahomecare.ca/conditions/acquired-brain-injury-support/' },
 }
 
 const faqs = [
@@ -65,9 +65,9 @@ export default function AcquiredBrainInjurySupportPage() {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               'itemListElement': [
-                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://arcadiahomecare.ca/' },
-                { '@type': 'ListItem', 'position': 2, 'name': 'Conditions', 'item': 'https://arcadiahomecare.ca/conditions/' },
-                { '@type': 'ListItem', 'position': 3, 'name': 'Acquired Brain Injury Support', 'item': 'https://arcadiahomecare.ca/conditions/acquired-brain-injury-support/' },
+                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://www.arcadiahomecare.ca/' },
+                { '@type': 'ListItem', 'position': 2, 'name': 'Conditions', 'item': 'https://www.arcadiahomecare.ca/conditions/' },
+                { '@type': 'ListItem', 'position': 3, 'name': 'Acquired Brain Injury Support', 'item': 'https://www.arcadiahomecare.ca/conditions/acquired-brain-injury-support/' },
               ],
             },
           ]),

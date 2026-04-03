@@ -9,7 +9,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Caregiver Burnout Support | Toronto & GTA | Arcadia Home Care',
   description: 'Support for family caregivers who are exhausted or burning out. Arcadia helps Toronto and GTA families get respite, clarity, and practical support so they can keep showing up for their loved ones.',
-  alternates: { canonical: 'https://arcadiahomecare.ca/conditions/caregiver-burnout-support/' },
+  alternates: { canonical: 'https://www.arcadiahomecare.ca/conditions/caregiver-burnout-support/' },
 }
 
 const faqs = [
@@ -58,9 +58,9 @@ export default function CaregiverBurnoutSupportPage() {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               'itemListElement': [
-                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://arcadiahomecare.ca/' },
-                { '@type': 'ListItem', 'position': 2, 'name': 'Conditions', 'item': 'https://arcadiahomecare.ca/conditions/' },
-                { '@type': 'ListItem', 'position': 3, 'name': 'Caregiver Burnout Support', 'item': 'https://arcadiahomecare.ca/conditions/caregiver-burnout-support/' },
+                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://www.arcadiahomecare.ca/' },
+                { '@type': 'ListItem', 'position': 2, 'name': 'Conditions', 'item': 'https://www.arcadiahomecare.ca/conditions/' },
+                { '@type': 'ListItem', 'position': 3, 'name': 'Caregiver Burnout Support', 'item': 'https://www.arcadiahomecare.ca/conditions/caregiver-burnout-support/' },
               ],
             },
           ]),

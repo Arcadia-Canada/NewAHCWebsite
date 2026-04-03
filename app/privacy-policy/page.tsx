@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: 'Privacy Policy | Arcadia Home Care',
   description: 'How Arcadia Home Care collects, uses, and protects your personal information in compliance with PHIPA and PIPEDA.',
   alternates: {
-    canonical: 'https://arcadiahomecare.ca/privacy-policy/',
+    canonical: 'https://www.arcadiahomecare.ca/privacy-policy/',
   },
 }
 

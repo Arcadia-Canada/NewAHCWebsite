@@ -14,7 +14,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Frailty & Fall Prevention at Home | Toronto & GTA | Arcadia Home Care',
   description: 'Home care support for older adults at risk of falls in Toronto and the GTA. Arcadia helps families put the right support in place before a fall happens — keeping aging parents safe, active, and independent at home.',
-  alternates: { canonical: 'https://arcadiahomecare.ca/conditions/frailty-fall-prevention/' },
+  alternates: { canonical: 'https://www.arcadiahomecare.ca/conditions/frailty-fall-prevention/' },
 }
 
 const faqs = [
@@ -78,9 +78,9 @@ export default function FrailtyFallPreventionPage() {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               'itemListElement': [
-                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://arcadiahomecare.ca/' },
-                { '@type': 'ListItem', 'position': 2, 'name': 'Conditions', 'item': 'https://arcadiahomecare.ca/conditions/' },
-                { '@type': 'ListItem', 'position': 3, 'name': 'Frailty & Fall Prevention', 'item': 'https://arcadiahomecare.ca/conditions/frailty-fall-prevention/' },
+                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://www.arcadiahomecare.ca/' },
+                { '@type': 'ListItem', 'position': 2, 'name': 'Conditions', 'item': 'https://www.arcadiahomecare.ca/conditions/' },
+                { '@type': 'ListItem', 'position': 3, 'name': 'Frailty & Fall Prevention', 'item': 'https://www.arcadiahomecare.ca/conditions/frailty-fall-prevention/' },
               ],
             },
           ]),

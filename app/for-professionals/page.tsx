@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'Referring Patients to Arcadia Home Care | For Healthcare Professionals',
   description: 'Information for discharge planners, social workers, and Ontario Health atHome coordinators referring patients to Arcadia Home Care across Toronto and the GTA.',
   alternates: {
-    canonical: 'https://arcadiahomecare.ca/for-professionals/',
+    canonical: 'https://www.arcadiahomecare.ca/for-professionals/',
   },
 }
 
@@ -21,11 +21,11 @@ export default function ForProfessionalsPage() {
               '@type': 'WebPage',
               name: 'Referring Patients to Arcadia Home Care',
               description: 'Information for healthcare professionals referring patients to Arcadia Home Care in Toronto and the GTA.',
-              url: 'https://arcadiahomecare.ca/for-professionals/',
+              url: 'https://www.arcadiahomecare.ca/for-professionals/',
               publisher: {
                 '@type': 'Organization',
                 name: 'Arcadia Home Care',
-                url: 'https://arcadiahomecare.ca',
+                url: 'https://www.arcadiahomecare.ca',
                 telephone: '+18449770050',
               },
             },
@@ -33,7 +33,7 @@ export default function ForProfessionalsPage() {
               '@context': 'https://schema.org',
               '@type': 'MedicalOrganization',
               name: 'Arcadia Home Care',
-              url: 'https://arcadiahomecare.ca',
+              url: 'https://www.arcadiahomecare.ca',
               telephone: '+18449770050',
               address: {
                 '@type': 'PostalAddress',
@@ -62,8 +62,8 @@ export default function ForProfessionalsPage() {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               itemListElement: [
-                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://arcadiahomecare.ca/' },
-                { '@type': 'ListItem', position: 2, name: 'For Healthcare Professionals', item: 'https://arcadiahomecare.ca/for-professionals/' },
+                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.arcadiahomecare.ca/' },
+                { '@type': 'ListItem', position: 2, name: 'For Healthcare Professionals', item: 'https://www.arcadiahomecare.ca/for-professionals/' },
               ],
             },
           ]),

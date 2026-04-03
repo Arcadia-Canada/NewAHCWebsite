@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'Early Signs of Dementia in a Parent | Arcadia Home Care',
   description: 'Early signs of dementia in a parent: memory, judgment, mood, and daily-function changes families in Toronto should watch for before a crisis.',
   alternates: {
-    canonical: 'https://arcadiahomecare.ca/resources/dementia-memory-care/early-signs-of-dementia-in-a-parent/',
+    canonical: 'https://www.arcadiahomecare.ca/resources/dementia-memory-care/early-signs-of-dementia-in-a-parent/',
   },
 }
 
@@ -21,11 +21,11 @@ export default function EarlySignsOfDementiaArticlePage() {
               '@type': 'Article',
               headline: 'Early Signs of Dementia in a Parent',
               description: 'A practical guide to early dementia warning signs in aging parents and when families should seek assessment.',
-              url: 'https://arcadiahomecare.ca/resources/dementia-memory-care/early-signs-of-dementia-in-a-parent/',
+              url: 'https://www.arcadiahomecare.ca/resources/dementia-memory-care/early-signs-of-dementia-in-a-parent/',
               publisher: {
                 '@type': 'Organization',
                 name: 'Arcadia Home Care',
-                url: 'https://arcadiahomecare.ca',
+                url: 'https://www.arcadiahomecare.ca',
               },
             },
             {
@@ -70,10 +70,10 @@ export default function EarlySignsOfDementiaArticlePage() {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               itemListElement: [
-                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://arcadiahomecare.ca/' },
-                { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://arcadiahomecare.ca/resources/' },
-                { '@type': 'ListItem', position: 3, name: 'Dementia & Memory Care', item: 'https://arcadiahomecare.ca/resources/dementia-memory-care/' },
-                { '@type': 'ListItem', position: 4, name: 'Early Signs of Dementia in a Parent', item: 'https://arcadiahomecare.ca/resources/dementia-memory-care/early-signs-of-dementia-in-a-parent/' },
+                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.arcadiahomecare.ca/' },
+                { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://www.arcadiahomecare.ca/resources/' },
+                { '@type': 'ListItem', position: 3, name: 'Dementia & Memory Care', item: 'https://www.arcadiahomecare.ca/resources/dementia-memory-care/' },
+                { '@type': 'ListItem', position: 4, name: 'Early Signs of Dementia in a Parent', item: 'https://www.arcadiahomecare.ca/resources/dementia-memory-care/early-signs-of-dementia-in-a-parent/' },
               ],
             },
           ]),

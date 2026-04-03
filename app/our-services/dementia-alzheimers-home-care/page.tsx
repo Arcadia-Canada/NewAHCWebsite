@@ -18,7 +18,7 @@ const images = getServiceImages('dementia-alzheimers')
 export const metadata: Metadata = {
   title: "Dementia & Alzheimer's Home Care Toronto | Arcadia Home Care",
   description: "Specialized dementia and Alzheimer's home care in Toronto and the GTA. Arcadia has provided clinically guided, compassionate dementia care since 2005 — matching families with trained, consistent caregivers who understand what this kind of care actually requires.",
-  alternates: { canonical: 'https://arcadiahomecare.ca/our-services/dementia-alzheimers-home-care/' },
+  alternates: { canonical: 'https://www.arcadiahomecare.ca/our-services/dementia-alzheimers-home-care/' },
 }
 
 const faqs = [
@@ -123,9 +123,9 @@ export default function DementiaAlzheimersHomeCarePage() {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               'itemListElement': [
-                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://arcadiahomecare.ca/' },
-                { '@type': 'ListItem', 'position': 2, 'name': 'Our Services', 'item': 'https://arcadiahomecare.ca/our-services/' },
-                { '@type': 'ListItem', 'position': 3, 'name': "Dementia & Alzheimer's Home Care", 'item': 'https://arcadiahomecare.ca/our-services/dementia-alzheimers-home-care/' },
+                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://www.arcadiahomecare.ca/' },
+                { '@type': 'ListItem', 'position': 2, 'name': 'Our Services', 'item': 'https://www.arcadiahomecare.ca/our-services/' },
+                { '@type': 'ListItem', 'position': 3, 'name': "Dementia & Alzheimer's Home Care", 'item': 'https://www.arcadiahomecare.ca/our-services/dementia-alzheimers-home-care/' },
               ],
             },
           ]),

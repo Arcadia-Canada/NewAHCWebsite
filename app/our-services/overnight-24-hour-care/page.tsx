@@ -13,7 +13,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Overnight & 24-Hour Home Care | Toronto & GTA | Arcadia Home Care',
   description: 'Overnight and 24-hour home care in Toronto and the GTA. Arcadia provides trained, consistent overnight caregivers for individuals who need nighttime supervision — and for family caregivers who need to sleep.',
-  alternates: { canonical: 'https://arcadiahomecare.ca/our-services/overnight-24-hour-care/' },
+  alternates: { canonical: 'https://www.arcadiahomecare.ca/our-services/overnight-24-hour-care/' },
 }
 
 const faqs = [
@@ -118,9 +118,9 @@ export default function OvernightCare24HourPage() {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               'itemListElement': [
-                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://arcadiahomecare.ca/' },
-                { '@type': 'ListItem', 'position': 2, 'name': 'Our Services', 'item': 'https://arcadiahomecare.ca/our-services/' },
-                { '@type': 'ListItem', 'position': 3, 'name': 'Overnight & 24-Hour Care', 'item': 'https://arcadiahomecare.ca/our-services/overnight-24-hour-care/' },
+                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://www.arcadiahomecare.ca/' },
+                { '@type': 'ListItem', 'position': 2, 'name': 'Our Services', 'item': 'https://www.arcadiahomecare.ca/our-services/' },
+                { '@type': 'ListItem', 'position': 3, 'name': 'Overnight & 24-Hour Care', 'item': 'https://www.arcadiahomecare.ca/our-services/overnight-24-hour-care/' },
               ],
             },
           ]),

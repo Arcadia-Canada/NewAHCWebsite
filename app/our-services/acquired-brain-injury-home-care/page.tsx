@@ -12,7 +12,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Acquired Brain Injury Home Care Toronto | Arcadia Home Care',
   description: 'Specialized acquired brain injury home care and community rehabilitation support in Toronto and the GTA. Arcadia has served ABI clients for over 16 years — working alongside rehabilitation teams, case managers, and insurers to support recovery at home.',
-  alternates: { canonical: 'https://arcadiahomecare.ca/our-services/acquired-brain-injury-home-care/' },
+  alternates: { canonical: 'https://www.arcadiahomecare.ca/our-services/acquired-brain-injury-home-care/' },
 }
 
 const faqs = [
@@ -117,9 +117,9 @@ export default function ABIHomeCarePage() {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               'itemListElement': [
-                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://arcadiahomecare.ca/' },
-                { '@type': 'ListItem', 'position': 2, 'name': 'Our Services', 'item': 'https://arcadiahomecare.ca/our-services/' },
-                { '@type': 'ListItem', 'position': 3, 'name': 'Acquired Brain Injury Home Care', 'item': 'https://arcadiahomecare.ca/our-services/acquired-brain-injury-home-care/' },
+                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://www.arcadiahomecare.ca/' },
+                { '@type': 'ListItem', 'position': 2, 'name': 'Our Services', 'item': 'https://www.arcadiahomecare.ca/our-services/' },
+                { '@type': 'ListItem', 'position': 3, 'name': 'Acquired Brain Injury Home Care', 'item': 'https://www.arcadiahomecare.ca/our-services/acquired-brain-injury-home-care/' },
               ],
             },
           ]),

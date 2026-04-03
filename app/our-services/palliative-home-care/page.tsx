@@ -14,7 +14,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Palliative Home Care | Toronto & GTA | Arcadia Home Care',
   description: 'Private palliative home care support in Toronto and the GTA. Arcadia provides compassionate, clinically guided care alongside the palliative team — filling the gaps in publicly funded hours so your loved one can remain at home with consistent support and dignity.',
-  alternates: { canonical: 'https://arcadiahomecare.ca/our-services/palliative-home-care/' },
+  alternates: { canonical: 'https://www.arcadiahomecare.ca/our-services/palliative-home-care/' },
 }
 
 const faqs = [
@@ -119,9 +119,9 @@ export default function PalliativeHomeCarePage() {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               'itemListElement': [
-                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://arcadiahomecare.ca/' },
-                { '@type': 'ListItem', 'position': 2, 'name': 'Our Services', 'item': 'https://arcadiahomecare.ca/our-services/' },
-                { '@type': 'ListItem', 'position': 3, 'name': 'Palliative Home Care', 'item': 'https://arcadiahomecare.ca/our-services/palliative-home-care/' },
+                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://www.arcadiahomecare.ca/' },
+                { '@type': 'ListItem', 'position': 2, 'name': 'Our Services', 'item': 'https://www.arcadiahomecare.ca/our-services/' },
+                { '@type': 'ListItem', 'position': 3, 'name': 'Palliative Home Care', 'item': 'https://www.arcadiahomecare.ca/our-services/palliative-home-care/' },
               ],
             },
           ]),

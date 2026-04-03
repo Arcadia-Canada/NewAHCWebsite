@@ -5,7 +5,7 @@ import { colors, fonts, phone, trustItems } from "@/components/arcadia-colors"
 export const metadata: Metadata = {
   title: "Referral Process | Arcadia Home Care Toronto",
   description: "How to refer a patient or client to Arcadia Home Care in Toronto and the GTA. We work with discharge planners, social workers, OTs, case managers, and physicians.",
-  alternates: { canonical: "https://arcadiahomecare.ca/how-care-starts/referral-process/" },
+  alternates: { canonical: "https://www.arcadiahomecare.ca/how-care-starts/referral-process/" },
 }
 
 const whoCanRefer = [

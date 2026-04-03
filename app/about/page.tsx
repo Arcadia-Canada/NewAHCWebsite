@@ -7,7 +7,7 @@ import { colors, fonts, trustItems } from '@/components/arcadia-colors'
 export const metadata: Metadata = {
   title: 'Our Caregivers | Arcadia Home Care | Toronto & GTA',
   description: 'Meet the Arcadia Home Care team. Rigorously screened, continuously trained, and carefully matched to every client. Serving Toronto and the GTA since 2005.',
-  alternates: { canonical: 'https://arcadiahomecare.ca/about/' },
+  alternates: { canonical: 'https://www.arcadiahomecare.ca/about/' },
 }
 
 const caregiverQuotes = [

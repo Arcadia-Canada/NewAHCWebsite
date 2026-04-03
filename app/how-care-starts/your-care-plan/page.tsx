@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'Your Care Plan | How Care Starts | Arcadia Home Care',
   description: 'What goes into an Arcadia care plan — how we document your loved one\'s needs, preferences, and routines so every caregiver shows up prepared.',
   alternates: {
-    canonical: 'https://arcadiahomecare.ca/how-care-starts/your-care-plan/',
+    canonical: 'https://www.arcadiahomecare.ca/how-care-starts/your-care-plan/',
   },
 }
 
@@ -21,20 +21,20 @@ export default function YourCarePlanPage() {
               '@type': 'WebPage',
               name: 'Your Care Plan',
               description: 'What goes into an Arcadia care plan and how we use it to deliver consistent, personalized home care.',
-              url: 'https://arcadiahomecare.ca/how-care-starts/your-care-plan/',
+              url: 'https://www.arcadiahomecare.ca/how-care-starts/your-care-plan/',
               publisher: {
                 '@type': 'Organization',
                 name: 'Arcadia Home Care',
-                url: 'https://arcadiahomecare.ca',
+                url: 'https://www.arcadiahomecare.ca',
               },
             },
             {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               itemListElement: [
-                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://arcadiahomecare.ca/' },
-                { '@type': 'ListItem', position: 2, name: 'How Care Starts', item: 'https://arcadiahomecare.ca/how-care-starts/' },
-                { '@type': 'ListItem', position: 3, name: 'Your Care Plan', item: 'https://arcadiahomecare.ca/how-care-starts/your-care-plan/' },
+                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.arcadiahomecare.ca/' },
+                { '@type': 'ListItem', position: 2, name: 'How Care Starts', item: 'https://www.arcadiahomecare.ca/how-care-starts/' },
+                { '@type': 'ListItem', position: 3, name: 'Your Care Plan', item: 'https://www.arcadiahomecare.ca/how-care-starts/your-care-plan/' },
               ],
             },
           ]),

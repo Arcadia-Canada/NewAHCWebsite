@@ -556,12 +556,12 @@ export default function Home() {
         '@context': 'https://schema.org',
         '@type': 'WebSite',
         name: 'Arcadia Home Care',
-        url: 'https://arcadiahomecare.ca/',
+        url: 'https://www.arcadiahomecare.ca/',
       },
       {
         '@context': 'https://schema.org',
         '@type': 'LocalBusiness',
-        '@id': 'https://arcadiahomecare.ca/#business',
+        '@id': 'https://www.arcadiahomecare.ca/#business',
         name: 'Arcadia Home Care',
         url: 'https://www.arcadiahomecare.ca/',
         telephone: '+1-844-977-0050',
@@ -652,7 +652,7 @@ export default function Home() {
               itemOffered: {
                 '@type': 'Service',
                 name: "Dementia & Alzheimer's Home Care",
-                url: 'https://arcadiahomecare.ca/our-services/dementia-alzheimers-home-care/',
+                url: 'https://www.arcadiahomecare.ca/our-services/dementia-alzheimers-home-care/',
                 description:
                   'Safe, familiar support for loved ones living with cognitive decline in their own home.',
               },
@@ -662,7 +662,7 @@ export default function Home() {
               itemOffered: {
                 '@type': 'Service',
                 name: 'Acquired Brain Injury Care',
-                url: 'https://arcadiahomecare.ca/our-services/acquired-brain-injury-home-care/',
+                url: 'https://www.arcadiahomecare.ca/our-services/acquired-brain-injury-home-care/',
                 description:
                   'Coordinated home care to support recovery and rebuilding independence.',
               },
@@ -672,7 +672,7 @@ export default function Home() {
               itemOffered: {
                 '@type': 'Service',
                 name: 'Rehabilitation Support',
-                url: 'https://arcadiahomecare.ca/our-services/rehabilitation-support/',
+                url: 'https://www.arcadiahomecare.ca/our-services/rehabilitation-support/',
                 description:
                   'Goal-oriented home care that works alongside OT, PT, and specialist teams.',
               },
@@ -682,7 +682,7 @@ export default function Home() {
               itemOffered: {
                 '@type': 'Service',
                 name: 'Hospital Discharge Support',
-                url: 'https://arcadiahomecare.ca/our-services/hospital-discharge-support/',
+                url: 'https://www.arcadiahomecare.ca/our-services/hospital-discharge-support/',
                 description:
                   'A safe, supported transition from hospital to home coordinated from day one.',
               },
@@ -692,7 +692,7 @@ export default function Home() {
               itemOffered: {
                 '@type': 'Service',
                 name: 'Palliative Home Care',
-                url: 'https://arcadiahomecare.ca/our-services/palliative-home-care/',
+                url: 'https://www.arcadiahomecare.ca/our-services/palliative-home-care/',
                 description:
                   'Comfort-focused care that preserves dignity and supports the whole family.',
               },
@@ -702,7 +702,7 @@ export default function Home() {
               itemOffered: {
                 '@type': 'Service',
                 name: 'Case Management',
-                url: 'https://arcadiahomecare.ca/our-services/case-management/',
+                url: 'https://www.arcadiahomecare.ca/our-services/case-management/',
                 description:
                   "Coordinated oversight and planning so a loved one's care stays consistent and well-organized.",
               },

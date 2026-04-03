@@ -16,7 +16,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: "Parkinson's Support at Home | Toronto & GTA | Arcadia Home Care",
   description: "Home care support for people living with Parkinson's disease in Toronto and the GTA. Arcadia provides compassionate, consistent care that adapts as the condition progresses — helping people stay at home safely and with dignity.",
-  alternates: { canonical: 'https://arcadiahomecare.ca/conditions/parkinsons-support/' },
+  alternates: { canonical: 'https://www.arcadiahomecare.ca/conditions/parkinsons-support/' },
 }
 
 const faqs = [
@@ -108,9 +108,9 @@ export default function ParkinsonsSupportPage() {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               'itemListElement': [
-                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://arcadiahomecare.ca/' },
-                { '@type': 'ListItem', 'position': 2, 'name': 'Conditions', 'item': 'https://arcadiahomecare.ca/conditions/' },
-                { '@type': 'ListItem', 'position': 3, 'name': "Parkinson's Support", 'item': 'https://arcadiahomecare.ca/conditions/parkinsons-support/' },
+                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://www.arcadiahomecare.ca/' },
+                { '@type': 'ListItem', 'position': 2, 'name': 'Conditions', 'item': 'https://www.arcadiahomecare.ca/conditions/' },
+                { '@type': 'ListItem', 'position': 3, 'name': "Parkinson's Support", 'item': 'https://www.arcadiahomecare.ca/conditions/parkinsons-support/' },
               ],
             },
           ]),

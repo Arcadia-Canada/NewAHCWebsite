@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: RegionPageProps): Promise<Met
     title: `${label} Home Care | Arcadia Home Care`,
     description: `Specialized home care across ${label}. Arcadia supports families with dementia, rehabilitation, hospital discharge, and complex aging care in the GTA.`,
     alternates: {
-      canonical: `https://arcadiahomecare.ca/locations/${region}/`,
+      canonical: `https://www.arcadiahomecare.ca/locations/${region}/`,
     },
   };
 }

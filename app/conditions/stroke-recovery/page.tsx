@@ -14,7 +14,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Stroke Recovery at Home | Toronto & GTA | Arcadia Home Care',
   description: 'Home care support for stroke survivors and their families in Toronto and the GTA. Arcadia helps bridge the gap between hospital discharge and independent living — with clinical guidance, rehabilitation support, and consistent in-home care.',
-  alternates: { canonical: 'https://arcadiahomecare.ca/conditions/stroke-recovery/' },
+  alternates: { canonical: 'https://www.arcadiahomecare.ca/conditions/stroke-recovery/' },
 }
 
 const faqs = [
@@ -67,9 +67,9 @@ export default function StrokeRecoveryPage() {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               'itemListElement': [
-                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://arcadiahomecare.ca/' },
-                { '@type': 'ListItem', 'position': 2, 'name': 'Conditions', 'item': 'https://arcadiahomecare.ca/conditions/' },
-                { '@type': 'ListItem', 'position': 3, 'name': 'Stroke Recovery', 'item': 'https://arcadiahomecare.ca/conditions/stroke-recovery/' },
+                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://www.arcadiahomecare.ca/' },
+                { '@type': 'ListItem', 'position': 2, 'name': 'Conditions', 'item': 'https://www.arcadiahomecare.ca/conditions/' },
+                { '@type': 'ListItem', 'position': 3, 'name': 'Stroke Recovery', 'item': 'https://www.arcadiahomecare.ca/conditions/stroke-recovery/' },
               ],
             },
           ]),

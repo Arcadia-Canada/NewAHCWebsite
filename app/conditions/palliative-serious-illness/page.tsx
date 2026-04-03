@@ -12,7 +12,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Palliative Home Care Support | Toronto & GTA | Arcadia Home Care',
   description: 'Private palliative support at home for families in Toronto and the GTA who need more than publicly funded care provides. Compassionate, clinically guided supplemental care — overnight, on weekends, and through every stage.',
-  alternates: { canonical: 'https://arcadiahomecare.ca/conditions/palliative-serious-illness/' },
+  alternates: { canonical: 'https://www.arcadiahomecare.ca/conditions/palliative-serious-illness/' },
 }
 
 const faqs = [
@@ -65,9 +65,9 @@ export default function PalliativeSeriousIllnessPage() {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               'itemListElement': [
-                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://arcadiahomecare.ca/' },
-                { '@type': 'ListItem', 'position': 2, 'name': 'Conditions', 'item': 'https://arcadiahomecare.ca/conditions/' },
-                { '@type': 'ListItem', 'position': 3, 'name': 'Palliative & Serious Illness', 'item': 'https://arcadiahomecare.ca/conditions/palliative-serious-illness/' },
+                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://www.arcadiahomecare.ca/' },
+                { '@type': 'ListItem', 'position': 2, 'name': 'Conditions', 'item': 'https://www.arcadiahomecare.ca/conditions/' },
+                { '@type': 'ListItem', 'position': 3, 'name': 'Palliative & Serious Illness', 'item': 'https://www.arcadiahomecare.ca/conditions/palliative-serious-illness/' },
               ],
             },
           ]),

@@ -13,7 +13,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Companion Care for Seniors | Toronto & GTA | Arcadia Home Care',
   description: 'Companion care for older adults in Toronto and the GTA. Arcadia matches seniors with warm, consistent companions who provide conversation, activities, outings, and human presence — reducing isolation and supporting confidence at home.',
-  alternates: { canonical: 'https://arcadiahomecare.ca/our-services/companion-care/' },
+  alternates: { canonical: 'https://www.arcadiahomecare.ca/our-services/companion-care/' },
 }
 
 const faqs = [
@@ -118,9 +118,9 @@ export default function CompanionCarePage() {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               'itemListElement': [
-                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://arcadiahomecare.ca/' },
-                { '@type': 'ListItem', 'position': 2, 'name': 'Our Services', 'item': 'https://arcadiahomecare.ca/our-services/' },
-                { '@type': 'ListItem', 'position': 3, 'name': 'Companion Care', 'item': 'https://arcadiahomecare.ca/our-services/companion-care/' },
+                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://www.arcadiahomecare.ca/' },
+                { '@type': 'ListItem', 'position': 2, 'name': 'Our Services', 'item': 'https://www.arcadiahomecare.ca/our-services/' },
+                { '@type': 'ListItem', 'position': 3, 'name': 'Companion Care', 'item': 'https://www.arcadiahomecare.ca/our-services/companion-care/' },
               ],
             },
           ]),

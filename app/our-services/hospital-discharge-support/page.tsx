@@ -12,7 +12,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Hospital Discharge Support | Home Care After Hospital | Toronto & GTA | Arcadia Home Care',
   description: 'Home care support arranged quickly after hospital discharge in Toronto and the GTA. Arcadia helps families and discharge teams put the right care in place within 24–48 hours — helping reduce the risk of complications and avoidable returns to hospital and making the transition home safe.',
-  alternates: { canonical: 'https://arcadiahomecare.ca/our-services/hospital-discharge-support/' },
+  alternates: { canonical: 'https://www.arcadiahomecare.ca/our-services/hospital-discharge-support/' },
 }
 
 const faqs = [
@@ -117,9 +117,9 @@ export default function HospitalDischargeSupportPage() {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               'itemListElement': [
-                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://arcadiahomecare.ca/' },
-                { '@type': 'ListItem', 'position': 2, 'name': 'Our Services', 'item': 'https://arcadiahomecare.ca/our-services/' },
-                { '@type': 'ListItem', 'position': 3, 'name': 'Hospital Discharge Support', 'item': 'https://arcadiahomecare.ca/our-services/hospital-discharge-support/' },
+                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://www.arcadiahomecare.ca/' },
+                { '@type': 'ListItem', 'position': 2, 'name': 'Our Services', 'item': 'https://www.arcadiahomecare.ca/our-services/' },
+                { '@type': 'ListItem', 'position': 3, 'name': 'Hospital Discharge Support', 'item': 'https://www.arcadiahomecare.ca/our-services/hospital-discharge-support/' },
               ],
             },
           ]),

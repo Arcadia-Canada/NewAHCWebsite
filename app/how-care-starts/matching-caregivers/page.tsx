@@ -12,7 +12,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Caregiver Matching | How Care Starts | Arcadia Home Care Toronto',
   description: 'How Arcadia matches caregivers to clients in Toronto and the GTA. A careful, considered process — not a scheduling decision. We match on clinical fit, personality, language, cultural background, and the specific demands of each situation.',
-  alternates: { canonical: 'https://arcadiahomecare.ca/how-care-starts/matching-caregivers/' },
+  alternates: { canonical: 'https://www.arcadiahomecare.ca/how-care-starts/matching-caregivers/' },
 }
 
 export default function CaregiverMatchingPage() {
@@ -46,9 +46,9 @@ export default function CaregiverMatchingPage() {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               'itemListElement': [
-                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://arcadiahomecare.ca/' },
-                { '@type': 'ListItem', 'position': 2, 'name': 'How Care Starts', 'item': 'https://arcadiahomecare.ca/how-care-starts/' },
-                { '@type': 'ListItem', 'position': 3, 'name': 'Caregiver Matching', 'item': 'https://arcadiahomecare.ca/how-care-starts/matching-caregivers/' },
+                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://www.arcadiahomecare.ca/' },
+                { '@type': 'ListItem', 'position': 2, 'name': 'How Care Starts', 'item': 'https://www.arcadiahomecare.ca/how-care-starts/' },
+                { '@type': 'ListItem', 'position': 3, 'name': 'Caregiver Matching', 'item': 'https://www.arcadiahomecare.ca/how-care-starts/matching-caregivers/' },
               ],
             },
           ]),

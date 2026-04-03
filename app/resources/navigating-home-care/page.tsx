@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'Navigating Home Care in Ontario | Resources for Families | Arcadia',
   description: 'Practical guides for Ontario families making decisions about home care — costs, providers, public vs. private care, PSWs, and how to get started.',
   alternates: {
-    canonical: 'https://arcadiahomecare.ca/resources/navigating-home-care/',
+    canonical: 'https://www.arcadiahomecare.ca/resources/navigating-home-care/',
   },
 }
 
@@ -72,20 +72,20 @@ export default function NavigatingHomeCareHub() {
               '@type': 'CollectionPage',
               name: 'Navigating Home Care in Ontario',
               description: 'Practical guides for Ontario families making decisions about home care.',
-              url: 'https://arcadiahomecare.ca/resources/navigating-home-care/',
+              url: 'https://www.arcadiahomecare.ca/resources/navigating-home-care/',
               publisher: {
                 '@type': 'Organization',
                 name: 'Arcadia Home Care',
-                url: 'https://arcadiahomecare.ca',
+                url: 'https://www.arcadiahomecare.ca',
               },
             },
             {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               itemListElement: [
-                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://arcadiahomecare.ca/' },
-                { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://arcadiahomecare.ca/resources/' },
-                { '@type': 'ListItem', position: 3, name: 'Navigating Home Care', item: 'https://arcadiahomecare.ca/resources/navigating-home-care/' },
+                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.arcadiahomecare.ca/' },
+                { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://www.arcadiahomecare.ca/resources/' },
+                { '@type': 'ListItem', position: 3, name: 'Navigating Home Care', item: 'https://www.arcadiahomecare.ca/resources/navigating-home-care/' },
               ],
             },
           ]),

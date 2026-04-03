@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'Family Caregiver Support Resources | Arcadia Home Care',
   description: 'Guides for Toronto family caregivers navigating burnout, sibling disagreements, emotional strain, and how to share the weight of caring for an aging parent.',
   alternates: {
-    canonical: 'https://arcadiahomecare.ca/resources/family-caregiver-support/',
+    canonical: 'https://www.arcadiahomecare.ca/resources/family-caregiver-support/',
   },
 }
 
@@ -54,20 +54,20 @@ export default function FamilyCaregiverSupportHub() {
               '@type': 'CollectionPage',
               name: 'Family Caregiver Support Resources',
               description: 'Guides for Toronto family caregivers navigating burnout, sibling conflict, and emotional strain.',
-              url: 'https://arcadiahomecare.ca/resources/family-caregiver-support/',
+              url: 'https://www.arcadiahomecare.ca/resources/family-caregiver-support/',
               publisher: {
                 '@type': 'Organization',
                 name: 'Arcadia Home Care',
-                url: 'https://arcadiahomecare.ca',
+                url: 'https://www.arcadiahomecare.ca',
               },
             },
             {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               itemListElement: [
-                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://arcadiahomecare.ca/' },
-                { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://arcadiahomecare.ca/resources/' },
-                { '@type': 'ListItem', position: 3, name: 'Family Caregiver Support', item: 'https://arcadiahomecare.ca/resources/family-caregiver-support/' },
+                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.arcadiahomecare.ca/' },
+                { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://www.arcadiahomecare.ca/resources/' },
+                { '@type': 'ListItem', position: 3, name: 'Family Caregiver Support', item: 'https://www.arcadiahomecare.ca/resources/family-caregiver-support/' },
               ],
             },
           ]),

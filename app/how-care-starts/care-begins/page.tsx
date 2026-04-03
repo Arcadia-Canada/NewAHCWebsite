@@ -14,7 +14,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Care Begins | The First Week of Home Care | Arcadia Home Care Toronto',
   description: 'What to expect when home care begins with Arcadia in Toronto and the GTA. The first visit, the first week, and how Arcadia monitors and adjusts care in the early stages to make sure it is working.',
-  alternates: { canonical: 'https://arcadiahomecare.ca/how-care-starts/care-begins/' },
+  alternates: { canonical: 'https://www.arcadiahomecare.ca/how-care-starts/care-begins/' },
 }
 
 export default function CareBeginsPage() {
@@ -48,9 +48,9 @@ export default function CareBeginsPage() {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               'itemListElement': [
-                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://arcadiahomecare.ca/' },
-                { '@type': 'ListItem', 'position': 2, 'name': 'How Care Starts', 'item': 'https://arcadiahomecare.ca/how-care-starts/' },
-                { '@type': 'ListItem', 'position': 3, 'name': 'Care Begins', 'item': 'https://arcadiahomecare.ca/how-care-starts/care-begins/' },
+                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://www.arcadiahomecare.ca/' },
+                { '@type': 'ListItem', 'position': 2, 'name': 'How Care Starts', 'item': 'https://www.arcadiahomecare.ca/how-care-starts/' },
+                { '@type': 'ListItem', 'position': 3, 'name': 'Care Begins', 'item': 'https://www.arcadiahomecare.ca/how-care-starts/care-begins/' },
               ],
             },
           ]),

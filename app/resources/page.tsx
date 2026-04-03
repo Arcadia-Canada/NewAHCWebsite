@@ -5,7 +5,7 @@ import { colors, fonts, phone, trustItems, arcBtn } from "@/components/arcadia-c
 export const metadata: Metadata = {
   title: "Caregiving & Home Care Resources | Arcadia Home Care",
   description: "Guides and resources for families: dementia and memory care, caregiver support, navigating home care, and brain injury rehabilitation.",
-  alternates: { canonical: "https://arcadiahomecare.ca/resources/" },
+  alternates: { canonical: "https://www.arcadiahomecare.ca/resources/" },
 };
 
 const categories = [
@@ -75,8 +75,8 @@ export default function ResourcesHubPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([
-        { "@context": "https://schema.org", "@type": "CollectionPage", name: "Caregiving & Home Care Resources", url: "https://arcadiahomecare.ca/resources/", publisher: { "@type": "Organization", name: "Arcadia Home Care", url: "https://arcadiahomecare.ca" } },
-        { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: "https://arcadiahomecare.ca/" }, { "@type": "ListItem", position: 2, name: "Resources", item: "https://arcadiahomecare.ca/resources/" }] },
+        { "@context": "https://schema.org", "@type": "CollectionPage", name: "Caregiving & Home Care Resources", url: "https://www.arcadiahomecare.ca/resources/", publisher: { "@type": "Organization", name: "Arcadia Home Care", url: "https://www.arcadiahomecare.ca" } },
+        { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: "https://www.arcadiahomecare.ca/" }, { "@type": "ListItem", position: 2, name: "Resources", item: "https://www.arcadiahomecare.ca/resources/" }] },
       ]) }} />
       <style>{`
         .res-card:hover { box-shadow: 0 16px 48px rgba(0,0,0,0.28); transform: translateY(-4px); }

@@ -14,7 +14,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Light Housekeeping for Seniors | Toronto & GTA | Arcadia Home Care',
   description: 'Light housekeeping support for older adults and individuals with complex needs in Toronto and the GTA. Arcadia helps maintain a clean, safe, and functional home — matched with the personal support and companionship families need.',
-  alternates: { canonical: 'https://arcadiahomecare.ca/our-services/light-housekeeping/' },
+  alternates: { canonical: 'https://www.arcadiahomecare.ca/our-services/light-housekeeping/' },
 }
 
 const faqs = [
@@ -115,9 +115,9 @@ export default function LightHousekeepingPage() {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               'itemListElement': [
-                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://arcadiahomecare.ca/' },
-                { '@type': 'ListItem', 'position': 2, 'name': 'Our Services', 'item': 'https://arcadiahomecare.ca/our-services/' },
-                { '@type': 'ListItem', 'position': 3, 'name': 'Light Housekeeping', 'item': 'https://arcadiahomecare.ca/our-services/light-housekeeping/' },
+                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://www.arcadiahomecare.ca/' },
+                { '@type': 'ListItem', 'position': 2, 'name': 'Our Services', 'item': 'https://www.arcadiahomecare.ca/our-services/' },
+                { '@type': 'ListItem', 'position': 3, 'name': 'Light Housekeeping', 'item': 'https://www.arcadiahomecare.ca/our-services/light-housekeeping/' },
               ],
             },
           ]),

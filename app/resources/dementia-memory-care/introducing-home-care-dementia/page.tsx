@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'How to Introduce Home Care to a Parent with Dementia | Arcadia Home Care',
   description: 'Practical strategies for introducing home care to a parent with dementia who is resistant, fearful, or confused. Written for Toronto families navigating this difficult conversation.',
   alternates: {
-    canonical: 'https://arcadiahomecare.ca/resources/dementia-memory-care/introducing-home-care-dementia/',
+    canonical: 'https://www.arcadiahomecare.ca/resources/dementia-memory-care/introducing-home-care-dementia/',
   },
 }
 
@@ -21,11 +21,11 @@ export default function IntroducingHomeCareArticlePage() {
               '@type': 'Article',
               headline: 'How to Introduce Home Care to a Parent with Dementia',
               description: 'Practical strategies for introducing home care to a parent with dementia who is resistant, fearful, or confused.',
-              url: 'https://arcadiahomecare.ca/resources/dementia-memory-care/introducing-home-care-dementia/',
+              url: 'https://www.arcadiahomecare.ca/resources/dementia-memory-care/introducing-home-care-dementia/',
               publisher: {
                 '@type': 'Organization',
                 name: 'Arcadia Home Care',
-                url: 'https://arcadiahomecare.ca',
+                url: 'https://www.arcadiahomecare.ca',
               },
             },
             {
@@ -70,10 +70,10 @@ export default function IntroducingHomeCareArticlePage() {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               itemListElement: [
-                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://arcadiahomecare.ca/' },
-                { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://arcadiahomecare.ca/resources/' },
-                { '@type': 'ListItem', position: 3, name: 'Dementia & Memory Care', item: 'https://arcadiahomecare.ca/resources/dementia-memory-care/' },
-                { '@type': 'ListItem', position: 4, name: 'Introducing Home Care to a Parent with Dementia', item: 'https://arcadiahomecare.ca/resources/dementia-memory-care/introducing-home-care-dementia/' },
+                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.arcadiahomecare.ca/' },
+                { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://www.arcadiahomecare.ca/resources/' },
+                { '@type': 'ListItem', position: 3, name: 'Dementia & Memory Care', item: 'https://www.arcadiahomecare.ca/resources/dementia-memory-care/' },
+                { '@type': 'ListItem', position: 4, name: 'Introducing Home Care to a Parent with Dementia', item: 'https://www.arcadiahomecare.ca/resources/dementia-memory-care/introducing-home-care-dementia/' },
               ],
             },
           ]),

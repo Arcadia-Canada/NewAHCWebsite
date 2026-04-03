@@ -12,7 +12,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Rehabilitation Support at Home | Toronto & GTA | Arcadia Home Care',
   description: 'Community rehabilitation support for individuals recovering from brain injury, stroke, surgery, work-related injury, or serious illness in Toronto and the GTA. Arcadia\'s trained RSWs work under clinical supervision to help clients rebuild independence at home.',
-  alternates: { canonical: 'https://arcadiahomecare.ca/our-services/rehabilitation-support/' },
+  alternates: { canonical: 'https://www.arcadiahomecare.ca/our-services/rehabilitation-support/' },
 }
 
 const faqs = [
@@ -117,9 +117,9 @@ export default function RehabilitationSupportPage() {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               'itemListElement': [
-                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://arcadiahomecare.ca/' },
-                { '@type': 'ListItem', 'position': 2, 'name': 'Our Services', 'item': 'https://arcadiahomecare.ca/our-services/' },
-                { '@type': 'ListItem', 'position': 3, 'name': 'Rehabilitation Support', 'item': 'https://arcadiahomecare.ca/our-services/rehabilitation-support/' },
+                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://www.arcadiahomecare.ca/' },
+                { '@type': 'ListItem', 'position': 2, 'name': 'Our Services', 'item': 'https://www.arcadiahomecare.ca/our-services/' },
+                { '@type': 'ListItem', 'position': 3, 'name': 'Rehabilitation Support', 'item': 'https://www.arcadiahomecare.ca/our-services/rehabilitation-support/' },
               ],
             },
           ]),

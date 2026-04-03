@@ -12,7 +12,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Care Assessment | How Care Starts | Arcadia Home Care Toronto',
   description: 'What to expect from Arcadia\'s home care assessment in Toronto and the GTA. A qualified member of our team visits the home, assesses needs, and builds the foundation for a care plan that reflects the full picture.',
-  alternates: { canonical: 'https://arcadiahomecare.ca/how-care-starts/care-assessment/' },
+  alternates: { canonical: 'https://www.arcadiahomecare.ca/how-care-starts/care-assessment/' },
 }
 
 export default function CareAssessmentPage() {
@@ -46,9 +46,9 @@ export default function CareAssessmentPage() {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               'itemListElement': [
-                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://arcadiahomecare.ca/' },
-                { '@type': 'ListItem', 'position': 2, 'name': 'How Care Starts', 'item': 'https://arcadiahomecare.ca/how-care-starts/' },
-                { '@type': 'ListItem', 'position': 3, 'name': 'Care Assessment', 'item': 'https://arcadiahomecare.ca/how-care-starts/care-assessment/' },
+                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://www.arcadiahomecare.ca/' },
+                { '@type': 'ListItem', 'position': 2, 'name': 'How Care Starts', 'item': 'https://www.arcadiahomecare.ca/how-care-starts/' },
+                { '@type': 'ListItem', 'position': 3, 'name': 'Care Assessment', 'item': 'https://www.arcadiahomecare.ca/how-care-starts/care-assessment/' },
               ],
             },
           ]),

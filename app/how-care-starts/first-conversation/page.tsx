@@ -12,7 +12,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Book a Free Consultation | How Care Starts | Arcadia Home Care',
   description: 'Book a free consultation with Arcadia Home Care in Toronto and the GTA. No forms, no pressure — just a conversation about your situation and what support might look like. We listen first.',
-  alternates: { canonical: 'https://arcadiahomecare.ca/how-care-starts/first-conversation/' },
+  alternates: { canonical: 'https://www.arcadiahomecare.ca/how-care-starts/first-conversation/' },
 }
 
 export default function FirstConversationPage() {
@@ -46,9 +46,9 @@ export default function FirstConversationPage() {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               'itemListElement': [
-                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://arcadiahomecare.ca/' },
-                { '@type': 'ListItem', 'position': 2, 'name': 'How Care Starts', 'item': 'https://arcadiahomecare.ca/how-care-starts/' },
-                { '@type': 'ListItem', 'position': 3, 'name': 'First Conversation', 'item': 'https://arcadiahomecare.ca/how-care-starts/first-conversation/' },
+                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://www.arcadiahomecare.ca/' },
+                { '@type': 'ListItem', 'position': 2, 'name': 'How Care Starts', 'item': 'https://www.arcadiahomecare.ca/how-care-starts/' },
+                { '@type': 'ListItem', 'position': 3, 'name': 'First Conversation', 'item': 'https://www.arcadiahomecare.ca/how-care-starts/first-conversation/' },
               ],
             },
           ]),

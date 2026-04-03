@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description:
     "Submit a professional referral for home care support in Toronto and the GTA. Arcadia works with discharge planners, social workers, OTs, and physicians.",
   alternates: {
-    canonical: "https://arcadiahomecare.ca/referral-form/",
+    canonical: "https://www.arcadiahomecare.ca/referral-form/",
   },
 };
 

@@ -13,7 +13,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Personal Support & Daily Living | PSW Home Care Toronto | Arcadia Home Care',
   description: 'Personal support and daily living assistance for older adults and individuals with complex needs in Toronto and the GTA. Arcadia\'s trained PSWs provide compassionate, dignified care — matched carefully to each client\'s routines, preferences, and personality.',
-  alternates: { canonical: 'https://arcadiahomecare.ca/our-services/personal-support-daily-living/' },
+  alternates: { canonical: 'https://www.arcadiahomecare.ca/our-services/personal-support-daily-living/' },
 }
 
 const faqs = [
@@ -118,9 +118,9 @@ export default function PersonalSupportDailyLivingPage() {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               'itemListElement': [
-                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://arcadiahomecare.ca/' },
-                { '@type': 'ListItem', 'position': 2, 'name': 'Our Services', 'item': 'https://arcadiahomecare.ca/our-services/' },
-                { '@type': 'ListItem', 'position': 3, 'name': 'Personal Support & Daily Living', 'item': 'https://arcadiahomecare.ca/our-services/personal-support-daily-living/' },
+                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://www.arcadiahomecare.ca/' },
+                { '@type': 'ListItem', 'position': 2, 'name': 'Our Services', 'item': 'https://www.arcadiahomecare.ca/our-services/' },
+                { '@type': 'ListItem', 'position': 3, 'name': 'Personal Support & Daily Living', 'item': 'https://www.arcadiahomecare.ca/our-services/personal-support-daily-living/' },
               ],
             },
           ]),

@@ -15,7 +15,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Downsizing & Transition Support | Senior Moving Help Toronto | Arcadia Home Care',
   description: 'Downsizing and transition support for older adults and families in Toronto and the GTA. Arcadia helps with the practical and emotional work of moving — sorting, decluttering, packing, and supporting the person through one of life\'s most significant transitions.',
-  alternates: { canonical: 'https://arcadiahomecare.ca/our-services/downsizing-transition-support/' },
+  alternates: { canonical: 'https://www.arcadiahomecare.ca/our-services/downsizing-transition-support/' },
 }
 
 const faqs = [
@@ -120,9 +120,9 @@ export default function DownsizingTransitionSupportPage() {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               'itemListElement': [
-                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://arcadiahomecare.ca/' },
-                { '@type': 'ListItem', 'position': 2, 'name': 'Our Services', 'item': 'https://arcadiahomecare.ca/our-services/' },
-                { '@type': 'ListItem', 'position': 3, 'name': 'Downsizing & Transition Support', 'item': 'https://arcadiahomecare.ca/our-services/downsizing-transition-support/' },
+                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://www.arcadiahomecare.ca/' },
+                { '@type': 'ListItem', 'position': 2, 'name': 'Our Services', 'item': 'https://www.arcadiahomecare.ca/our-services/' },
+                { '@type': 'ListItem', 'position': 3, 'name': 'Downsizing & Transition Support', 'item': 'https://www.arcadiahomecare.ca/our-services/downsizing-transition-support/' },
               ],
             },
           ]),

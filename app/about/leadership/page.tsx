@@ -8,7 +8,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Our Leadership Team | Arcadia Home Care | Toronto & GTA',
   description: 'Meet the leadership team behind Arcadia Home Care. Founded in 2005 by Rohit Tamhane, our team brings clinical expertise, operational excellence, and deep compassion to every family we serve.',
-  alternates: { canonical: 'https://arcadiahomecare.ca/about/leadership/' },
+  alternates: { canonical: 'https://www.arcadiahomecare.ca/about/leadership/' },
 }
 
 const team = [

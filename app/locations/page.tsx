@@ -5,7 +5,7 @@ import { colors, fonts, phone, trustItems } from "@/components/arcadia-colors"
 export const metadata: Metadata = {
   title: "Home Care Locations Across the GTA | Arcadia Home Care",
   description: "Arcadia provides specialized in-home care across the Greater Toronto Area — Toronto, North York, Scarborough, Etobicoke — with local caregivers and clinical coordination.",
-  alternates: { canonical: "https://arcadiahomecare.ca/locations/" },
+  alternates: { canonical: "https://www.arcadiahomecare.ca/locations/" },
 }
 
 const locations = [
@@ -20,7 +20,7 @@ export default function LocationsHubPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([
         { "@context": "https://schema.org", "@type": "LocalBusiness", name: "Arcadia Home Care", description: "Specialized in-home care for families across the Greater Toronto Area.", telephone: "+18449770050", areaServed: { "@type": "GeoCircle", geoMidpoint: { "@type": "GeoCoordinates", latitude: 43.6532, longitude: -79.3832 }, geoRadius: "50000" } },
-        { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: "https://arcadiahomecare.ca/" }, { "@type": "ListItem", position: 2, name: "Locations", item: "https://arcadiahomecare.ca/locations/" }] },
+        { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: "https://www.arcadiahomecare.ca/" }, { "@type": "ListItem", position: 2, name: "Locations", item: "https://www.arcadiahomecare.ca/locations/" }] },
       ]) }} />
 
       <main style={{ fontFamily: fonts.body, color: colors.text }}>

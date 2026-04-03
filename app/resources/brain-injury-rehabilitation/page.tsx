@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'Brain Injury & Rehabilitation Resources for Families | Arcadia Home Care',
   description: 'Guides for families navigating life after acquired brain injury, stroke, or rehabilitation in Toronto — recovery at home, cognitive changes, and caregiver support.',
   alternates: {
-    canonical: 'https://arcadiahomecare.ca/resources/brain-injury-rehabilitation/',
+    canonical: 'https://www.arcadiahomecare.ca/resources/brain-injury-rehabilitation/',
   },
 }
 
@@ -60,20 +60,20 @@ export default function BrainInjuryRehabHub() {
               '@type': 'CollectionPage',
               name: 'Brain Injury & Rehabilitation Resources',
               description: 'Guides for families navigating acquired brain injury and rehabilitation at home in Toronto.',
-              url: 'https://arcadiahomecare.ca/resources/brain-injury-rehabilitation/',
+              url: 'https://www.arcadiahomecare.ca/resources/brain-injury-rehabilitation/',
               publisher: {
                 '@type': 'Organization',
                 name: 'Arcadia Home Care',
-                url: 'https://arcadiahomecare.ca',
+                url: 'https://www.arcadiahomecare.ca',
               },
             },
             {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               itemListElement: [
-                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://arcadiahomecare.ca/' },
-                { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://arcadiahomecare.ca/resources/' },
-                { '@type': 'ListItem', position: 3, name: 'Brain Injury & Rehabilitation', item: 'https://arcadiahomecare.ca/resources/brain-injury-rehabilitation/' },
+                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.arcadiahomecare.ca/' },
+                { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://www.arcadiahomecare.ca/resources/' },
+                { '@type': 'ListItem', position: 3, name: 'Brain Injury & Rehabilitation', item: 'https://www.arcadiahomecare.ca/resources/brain-injury-rehabilitation/' },
               ],
             },
           ]),

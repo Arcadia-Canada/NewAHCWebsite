@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { readdirSync, statSync } from "node:fs";
 import path from "node:path";
 
-const siteUrl = "https://arcadiahomecare.ca";
+const siteUrl = "https://www.arcadiahomecare.ca";
 const appDir = path.join(process.cwd(), "app");
 export const dynamic = "force-static";
 

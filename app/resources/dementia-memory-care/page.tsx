@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'Dementia & Memory Care Resources for Families | Arcadia Home Care',
   description: 'Guides and articles to help Toronto families navigate dementia care at home — early signs, behaviour changes, communication strategies, and more.',
   alternates: {
-    canonical: 'https://arcadiahomecare.ca/resources/dementia-memory-care/',
+    canonical: 'https://www.arcadiahomecare.ca/resources/dementia-memory-care/',
   },
 }
 
@@ -60,20 +60,20 @@ export default function DementiaMemoryCareHub() {
               '@type': 'CollectionPage',
               name: 'Dementia & Memory Care Resources',
               description: 'Guides for Toronto families navigating dementia care at home.',
-              url: 'https://arcadiahomecare.ca/resources/dementia-memory-care/',
+              url: 'https://www.arcadiahomecare.ca/resources/dementia-memory-care/',
               publisher: {
                 '@type': 'Organization',
                 name: 'Arcadia Home Care',
-                url: 'https://arcadiahomecare.ca',
+                url: 'https://www.arcadiahomecare.ca',
               },
             },
             {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               itemListElement: [
-                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://arcadiahomecare.ca/' },
-                { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://arcadiahomecare.ca/resources/' },
-                { '@type': 'ListItem', position: 3, name: 'Dementia & Memory Care', item: 'https://arcadiahomecare.ca/resources/dementia-memory-care/' },
+                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.arcadiahomecare.ca/' },
+                { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://www.arcadiahomecare.ca/resources/' },
+                { '@type': 'ListItem', position: 3, name: 'Dementia & Memory Care', item: 'https://www.arcadiahomecare.ca/resources/dementia-memory-care/' },
               ],
             },
           ]),

@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description:
     "Complete Arcadia Home Care pre-hire forms for PSW, RN/RPN, and support roles. Submit your application, skills assessment, and credentials online.",
   alternates: {
-    canonical: "https://arcadiahomecare.ca/pre-hire/",
+    canonical: "https://www.arcadiahomecare.ca/pre-hire/",
   },
 };
 

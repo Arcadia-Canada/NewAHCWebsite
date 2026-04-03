@@ -14,7 +14,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Case Management | Home Care Coordination Toronto | Arcadia Home Care',
   description: 'Care coordination and case management for complex home care situations in Toronto and the GTA. Arcadia helps families navigate the healthcare system, coordinate multiple providers, and build a care plan that actually holds together.',
-  alternates: { canonical: 'https://arcadiahomecare.ca/our-services/case-management/' },
+  alternates: { canonical: 'https://www.arcadiahomecare.ca/our-services/case-management/' },
 }
 
 const faqs = [
@@ -119,9 +119,9 @@ export default function CaseManagementPage() {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               'itemListElement': [
-                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://arcadiahomecare.ca/' },
-                { '@type': 'ListItem', 'position': 2, 'name': 'Our Services', 'item': 'https://arcadiahomecare.ca/our-services/' },
-                { '@type': 'ListItem', 'position': 3, 'name': 'Case Management', 'item': 'https://arcadiahomecare.ca/our-services/case-management/' },
+                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://www.arcadiahomecare.ca/' },
+                { '@type': 'ListItem', 'position': 2, 'name': 'Our Services', 'item': 'https://www.arcadiahomecare.ca/our-services/' },
+                { '@type': 'ListItem', 'position': 3, 'name': 'Case Management', 'item': 'https://www.arcadiahomecare.ca/our-services/case-management/' },
               ],
             },
           ]),

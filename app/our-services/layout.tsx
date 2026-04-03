@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description:
     "View Arcadia's specialized home care services in Toronto and the GTA, including dementia care, ABI support, hospital discharge, respite, and 24-hour care.",
   alternates: {
-    canonical: "https://arcadiahomecare.ca/our-services/",
+    canonical: "https://www.arcadiahomecare.ca/our-services/",
   },
 };
 

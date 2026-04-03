@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description:
     "Explore conditions Arcadia supports at home in Toronto and the GTA, including dementia, stroke recovery, Parkinson's, ABI, frailty, and caregiver burnout.",
   alternates: {
-    canonical: "https://arcadiahomecare.ca/conditions/",
+    canonical: "https://www.arcadiahomecare.ca/conditions/",
   },
 };
 

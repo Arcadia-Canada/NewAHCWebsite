@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'Ongoing Support | How Care Starts | Arcadia Home Care',
   description: 'How Arcadia monitors, adjusts, and improves your loved one\'s care over time — and what ongoing support looks like for families across Toronto.',
   alternates: {
-    canonical: 'https://arcadiahomecare.ca/how-care-starts/ongoing-support/',
+    canonical: 'https://www.arcadiahomecare.ca/how-care-starts/ongoing-support/',
   },
 }
 
@@ -21,20 +21,20 @@ export default function OngoingSupportPage() {
               '@type': 'WebPage',
               name: 'Ongoing Support',
               description: 'How Arcadia monitors, adjusts, and improves your loved one\'s care over time.',
-              url: 'https://arcadiahomecare.ca/how-care-starts/ongoing-support/',
+              url: 'https://www.arcadiahomecare.ca/how-care-starts/ongoing-support/',
               publisher: {
                 '@type': 'Organization',
                 name: 'Arcadia Home Care',
-                url: 'https://arcadiahomecare.ca',
+                url: 'https://www.arcadiahomecare.ca',
               },
             },
             {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               itemListElement: [
-                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://arcadiahomecare.ca/' },
-                { '@type': 'ListItem', position: 2, name: 'How Care Starts', item: 'https://arcadiahomecare.ca/how-care-starts/' },
-                { '@type': 'ListItem', position: 3, name: 'Ongoing Support', item: 'https://arcadiahomecare.ca/how-care-starts/ongoing-support/' },
+                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.arcadiahomecare.ca/' },
+                { '@type': 'ListItem', position: 2, name: 'How Care Starts', item: 'https://www.arcadiahomecare.ca/how-care-starts/' },
+                { '@type': 'ListItem', position: 3, name: 'Ongoing Support', item: 'https://www.arcadiahomecare.ca/how-care-starts/ongoing-support/' },
               ],
             },
           ]),

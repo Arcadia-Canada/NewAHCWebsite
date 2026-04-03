@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'Normal Aging vs. Dementia: What\'s the Difference? | Arcadia Home Care',
   description: 'Not every memory lapse is dementia. Learn the real differences between normal aging and dementia — and which changes in your parent warrant a doctor\'s visit.',
   alternates: {
-    canonical: 'https://arcadiahomecare.ca/resources/dementia-memory-care/normal-aging-vs-dementia/',
+    canonical: 'https://www.arcadiahomecare.ca/resources/dementia-memory-care/normal-aging-vs-dementia/',
   },
 }
 
@@ -21,13 +21,13 @@ export default function NormalAgingVsDementiaPage() {
               '@type': 'Article',
               headline: "Normal Aging vs. Dementia: What's the Difference?",
               description: "Not every memory lapse is dementia. Learn the real differences between normal aging and dementia — and which changes warrant a doctor's visit.",
-              url: 'https://arcadiahomecare.ca/resources/dementia-memory-care/normal-aging-vs-dementia/',
+              url: 'https://www.arcadiahomecare.ca/resources/dementia-memory-care/normal-aging-vs-dementia/',
               datePublished: '2026-03-15',
               dateModified: '2026-03-15',
               publisher: {
                 '@type': 'Organization',
                 name: 'Arcadia Home Care',
-                url: 'https://arcadiahomecare.ca',
+                url: 'https://www.arcadiahomecare.ca',
               },
             },
             {
@@ -72,10 +72,10 @@ export default function NormalAgingVsDementiaPage() {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               itemListElement: [
-                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://arcadiahomecare.ca/' },
-                { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://arcadiahomecare.ca/resources/' },
-                { '@type': 'ListItem', position: 3, name: 'Dementia & Memory Care', item: 'https://arcadiahomecare.ca/resources/dementia-memory-care/' },
-                { '@type': 'ListItem', position: 4, name: "Normal Aging vs. Dementia", item: 'https://arcadiahomecare.ca/resources/dementia-memory-care/normal-aging-vs-dementia/' },
+                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.arcadiahomecare.ca/' },
+                { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://www.arcadiahomecare.ca/resources/' },
+                { '@type': 'ListItem', position: 3, name: 'Dementia & Memory Care', item: 'https://www.arcadiahomecare.ca/resources/dementia-memory-care/' },
+                { '@type': 'ListItem', position: 4, name: "Normal Aging vs. Dementia", item: 'https://www.arcadiahomecare.ca/resources/dementia-memory-care/normal-aging-vs-dementia/' },
               ],
             },
           ]),

@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description:
     "Learn how care starts with Arcadia: consultation, assessment, caregiver matching, funding guidance, and ongoing family support across Toronto and the GTA.",
   alternates: {
-    canonical: "https://arcadiahomecare.ca/how-care-starts/",
+    canonical: "https://www.arcadiahomecare.ca/how-care-starts/",
   },
 };
 

@@ -11,7 +11,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Home Care After Hospital Discharge | Toronto & GTA | Arcadia Home Care',
   description: 'Returning home after a hospital stay requires the right support to be safe and successful. Arcadia helps Toronto and GTA families plan and arrange post-hospital home care — quickly, and with clinical guidance.',
-  alternates: { canonical: 'https://arcadiahomecare.ca/conditions/post-hospital-recovery/' },
+  alternates: { canonical: 'https://www.arcadiahomecare.ca/conditions/post-hospital-recovery/' },
 }
 
 const faqs = [
@@ -64,9 +64,9 @@ export default function PostHospitalRecoveryPage() {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               'itemListElement': [
-                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://arcadiahomecare.ca/' },
-                { '@type': 'ListItem', 'position': 2, 'name': 'Conditions', 'item': 'https://arcadiahomecare.ca/conditions/' },
-                { '@type': 'ListItem', 'position': 3, 'name': 'Post-Hospital Recovery', 'item': 'https://arcadiahomecare.ca/conditions/post-hospital-recovery/' },
+                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://www.arcadiahomecare.ca/' },
+                { '@type': 'ListItem', 'position': 2, 'name': 'Conditions', 'item': 'https://www.arcadiahomecare.ca/conditions/' },
+                { '@type': 'ListItem', 'position': 3, 'name': 'Post-Hospital Recovery', 'item': 'https://www.arcadiahomecare.ca/conditions/post-hospital-recovery/' },
               ],
             },
           ]),

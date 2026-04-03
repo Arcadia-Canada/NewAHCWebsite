@@ -6,7 +6,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Careers in Home Care | Join Our Team | Arcadia Home Care',
   description: 'Build a meaningful career with Arcadia Home Care. We are hiring PSWs, Registered Nurses, and Rehabilitation Support Workers across the GTA. Flexible schedules, competitive pay, ongoing training.',
-  alternates: { canonical: 'https://arcadiahomecare.ca/careers/' },
+  alternates: { canonical: 'https://www.arcadiahomecare.ca/careers/' },
 }
 
 const roles = [

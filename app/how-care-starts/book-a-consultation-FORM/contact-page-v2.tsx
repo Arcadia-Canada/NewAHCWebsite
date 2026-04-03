@@ -13,7 +13,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Book a Free Consultation | Contact Arcadia Home Care Toronto',
   description: 'Book a free home care consultation with Arcadia in Toronto and the GTA. Call us, email us, or fill in the form — we listen first and help you understand your options. No pressure, no obligation.',
-  alternates: { canonical: 'https://arcadiahomecare.ca/contact/' },
+  alternates: { canonical: 'https://www.arcadiahomecare.ca/contact/' },
 }
 
 export default function ContactPage() {
@@ -29,7 +29,7 @@ export default function ContactPage() {
               'name': 'Arcadia Home Care',
               'telephone': '+18449770050',
               'email': 'info@arcadiahomecare.ca',
-              'url': 'https://arcadiahomecare.ca',
+              'url': 'https://www.arcadiahomecare.ca',
               'address': {
                 '@type': 'PostalAddress',
                 'streetAddress': '302 Bay St.',
@@ -50,8 +50,8 @@ export default function ContactPage() {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               'itemListElement': [
-                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://arcadiahomecare.ca/' },
-                { '@type': 'ListItem', 'position': 2, 'name': 'Contact', 'item': 'https://arcadiahomecare.ca/contact/' },
+                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://www.arcadiahomecare.ca/' },
+                { '@type': 'ListItem', 'position': 2, 'name': 'Contact', 'item': 'https://www.arcadiahomecare.ca/contact/' },
               ],
             },
           ]),

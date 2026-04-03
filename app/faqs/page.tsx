@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Answers to common questions about home care costs, caregiver matching, dementia support, hospital discharge planning, and getting started with Arcadia Home Care.",
   alternates: {
-    canonical: "https://arcadiahomecare.ca/faqs/",
+    canonical: "https://www.arcadiahomecare.ca/faqs/",
   },
 };
 

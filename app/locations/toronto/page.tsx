@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Home Care in Toronto | Dementia, ABI & Palliative Care | Arcadia",
   description: "Clinically informed home care across Toronto — dementia care, acquired brain injury, hospital discharge support, palliative care. Serving Toronto families since 2005.",
-  alternates: { canonical: "https://arcadiahomecare.ca/locations/toronto/" },
+  alternates: { canonical: "https://www.arcadiahomecare.ca/locations/toronto/" },
 };
 
 const faqs = [
@@ -38,7 +38,7 @@ export default function TorontoLocationPage() {
               "@type": "LocalBusiness",
               name: "Arcadia Home Care",
               description: "Home care in Toronto — dementia, ABI, palliative care, hospital discharge support.",
-              url: "https://arcadiahomecare.ca",
+              url: "https://www.arcadiahomecare.ca",
               telephone: "+18449770050",
               address: {
                 "@type": "PostalAddress",
@@ -58,9 +58,9 @@ export default function TorontoLocationPage() {
               "@context": "https://schema.org",
               "@type": "BreadcrumbList",
               itemListElement: [
-                { "@type": "ListItem", position: 1, name: "Home", item: "https://arcadiahomecare.ca/" },
-                { "@type": "ListItem", position: 2, name: "Locations", item: "https://arcadiahomecare.ca/locations/" },
-                { "@type": "ListItem", position: 3, name: "Toronto", item: "https://arcadiahomecare.ca/locations/toronto/" },
+                { "@type": "ListItem", position: 1, name: "Home", item: "https://www.arcadiahomecare.ca/" },
+                { "@type": "ListItem", position: 2, name: "Locations", item: "https://www.arcadiahomecare.ca/locations/" },
+                { "@type": "ListItem", position: 3, name: "Toronto", item: "https://www.arcadiahomecare.ca/locations/toronto/" },
               ],
             },
           ]),
