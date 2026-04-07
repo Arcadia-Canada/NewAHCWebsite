@@ -6,13 +6,19 @@
 // Tone: reassuring, practical, no pressure — reduce the barrier to calling
 // Schema: Service + BreadcrumbList
 
+// app/how-care-starts/first-conversation/page.tsx
+
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Book a Free Consultation | How Care Starts | Arcadia Home Care',
-  description: 'Book a free consultation with Arcadia Home Care in Toronto and the GTA. No forms, no pressure — just a conversation about your situation and what support might look like. We listen first.',
-  alternates: { canonical: 'https://www.arcadiahomecare.ca/how-care-starts/first-conversation/' },
+  description:
+    'Book a free consultation with Arcadia Home Care in Toronto and the GTA. No forms, no pressure — just a conversation about your situation and what support might look like. We listen first.',
+  alternates: {
+    canonical:
+      'https://www.arcadiahomecare.ca/how-care-starts/first-conversation/',
+  },
 }
 
 export default function FirstConversationPage() {
@@ -25,30 +31,46 @@ export default function FirstConversationPage() {
             {
               '@context': 'https://schema.org',
               '@type': 'Service',
-              'name': 'Free Home Care Consultation',
-              'provider': {
+              name: 'Free Home Care Consultation',
+              provider: {
                 '@type': 'LocalBusiness',
-                'name': 'Arcadia Home Care',
-                'telephone': '+18449770050',
-                'address': {
+                name: 'Arcadia Home Care',
+                telephone: '+18449770050',
+                address: {
                   '@type': 'PostalAddress',
-                  'streetAddress': '302 Bay St.',
-                  'addressLocality': 'Toronto',
-                  'addressRegion': 'ON',
-                  'postalCode': 'M5H 0B6',
-                  'addressCountry': 'CA',
+                  streetAddress: '302 Bay St.',
+                  addressLocality: 'Toronto',
+                  addressRegion: 'ON',
+                  postalCode: 'M5H 0B6',
+                  addressCountry: 'CA',
                 },
               },
-              'areaServed': 'Toronto, Ontario, Canada',
-              'description': 'Free home care consultation for families and individuals in Toronto and the GTA — a conversation about your situation and what support might look like.',
+              areaServed: 'Toronto, Ontario, Canada',
+              description:
+                'Free home care consultation for families and individuals in Toronto and the GTA — a conversation about your situation and what support might look like.',
             },
             {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
-              'itemListElement': [
-                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://www.arcadiahomecare.ca/' },
-                { '@type': 'ListItem', 'position': 2, 'name': 'How Care Starts', 'item': 'https://www.arcadiahomecare.ca/how-care-starts/' },
-                { '@type': 'ListItem', 'position': 3, 'name': 'First Conversation', 'item': 'https://www.arcadiahomecare.ca/how-care-starts/first-conversation/' },
+              itemListElement: [
+                {
+                  '@type': 'ListItem',
+                  position: 1,
+                  name: 'Home',
+                  item: 'https://www.arcadiahomecare.ca/',
+                },
+                {
+                  '@type': 'ListItem',
+                  position: 2,
+                  name: 'How Care Starts',
+                  item: 'https://www.arcadiahomecare.ca/how-care-starts/',
+                },
+                {
+                  '@type': 'ListItem',
+                  position: 3,
+                  name: 'First Conversation',
+                  item: 'https://www.arcadiahomecare.ca/how-care-starts/first-conversation/',
+                },
               ],
             },
           ]),
@@ -58,7 +80,6 @@ export default function FirstConversationPage() {
       <style>{`
         .page { font-family: 'DM Sans', system-ui, sans-serif; color: #2D2D2D; }
 
-        /* Hero */
         .hero { background: #1C2B3A; padding: 96px 24px 80px; }
         .hero-inner { max-width: 760px; margin: 0 auto; text-align: center; }
         .eyebrow { font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #C8302A; margin-bottom: 14px; }
@@ -70,14 +91,12 @@ export default function FirstConversationPage() {
         .btn-outline { background: transparent; color: #fff; padding: 14px 28px; border-radius: 8px; font-size: 15px; font-weight: 700; text-decoration: none; border: 1.5px solid rgba(255,255,255,0.35); transition: all 0.2s; display: inline-flex; align-items: center; }
         .btn-outline:hover { background: rgba(255,255,255,0.1); }
 
-        /* Breadcrumb */
         .breadcrumb { background: #F7F3EE; border-bottom: 1px solid #E5E0D8; padding: 12px 24px; font-size: 13px; color: #6B7280; }
         .breadcrumb-inner { max-width: 1100px; margin: 0 auto; }
         .breadcrumb a { color: #1C2B3A; text-decoration: none; font-weight: 600; }
         .breadcrumb a:hover { color: #C8302A; }
         .breadcrumb span { margin: 0 8px; }
 
-        /* Body */
         .body-wrap { max-width: 1100px; margin: 0 auto; padding: 72px 24px; display: grid; grid-template-columns: 1fr 320px; gap: 64px; align-items: start; }
         @media (max-width: 900px) { .body-wrap { grid-template-columns: 1fr; } }
 
@@ -87,7 +106,6 @@ export default function FirstConversationPage() {
         .main-content a { color: #C8302A; font-weight: 600; text-decoration: underline; text-decoration-color: rgba(200,48,42,0.3); text-underline-offset: 3px; transition: text-decoration-color 0.15s; }
         .main-content a:hover { text-decoration-color: #C8302A; }
 
-        /* What to expect steps */
         .expect-steps { display: flex; flex-direction: column; gap: 0; margin: 24px 0 32px; }
         .expect-step { display: flex; gap: 20px; padding: 24px 0; border-bottom: 1px solid #E5E0D8; }
         .expect-step:last-child { border-bottom: none; }
@@ -96,7 +114,6 @@ export default function FirstConversationPage() {
         .expect-title { font-size: 15px; font-weight: 700; color: #1C2B3A; margin-bottom: 6px; }
         .expect-body { font-size: 0.9rem; color: #6B7280; line-height: 1.7; }
 
-        /* What you don't need */
         .dont-need { background: #F7F3EE; border: 1px solid #E5E0D8; border-radius: 14px; padding: 28px 32px; margin: 24px 0 32px; }
         .dont-need-title { font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #1C2B3A; margin-bottom: 16px; }
         .dont-list { list-style: none; padding: 0; margin: 0; }
@@ -104,14 +121,12 @@ export default function FirstConversationPage() {
         .dont-list li:last-child { border-bottom: none; }
         .dont-list li::before { content: '✓'; position: absolute; left: 0; top: 8px; font-size: 13px; font-weight: 700; color: #C8302A; }
 
-        /* What to have ready */
         .ready-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 24px 0 32px; }
         @media (max-width: 600px) { .ready-grid { grid-template-columns: 1fr; } }
         .ready-card { background: #FAFAF8; border: 1px solid #E5E0D8; border-radius: 10px; padding: 16px 18px; }
         .ready-card-title { font-size: 14px; font-weight: 700; color: #1C2B3A; margin-bottom: 4px; }
         .ready-card-body { font-size: 0.875rem; color: #6B7280; line-height: 1.6; }
 
-        /* How care starts nav */
         .care-starts-nav { background: #F7F3EE; border: 1px solid #E5E0D8; border-radius: 14px; padding: 28px 32px; margin: 40px 0; }
         .care-starts-title { font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #1C2B3A; margin-bottom: 16px; }
         .care-starts-steps { display: flex; flex-direction: column; gap: 0; }
@@ -125,7 +140,6 @@ export default function FirstConversationPage() {
         .care-step-arrow { margin-left: auto; font-size: 13px; color: #C8302A; opacity: 0; transition: opacity 0.15s; }
         .care-step:hover .care-step-arrow { opacity: 1; }
 
-        /* Sidebar */
         .sidebar { position: sticky; top: 100px; }
         .sidebar-cta { background: #1C2B3A; border-radius: 14px; padding: 28px; text-align: center; margin-bottom: 20px; }
         .sidebar-cta h3 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.3rem; font-weight: 600; color: #fff; margin-bottom: 8px; }
@@ -140,7 +154,6 @@ export default function FirstConversationPage() {
         .sidebar-link:hover { color: #C8302A; }
         .sidebar-link::before { content: '→'; color: #C8302A; font-size: 13px; }
 
-        /* Contact form section */
         .contact-section { background: #F7F3EE; border-top: 1px solid #E5E0D8; padding: 72px 24px; }
         .contact-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
         @media (max-width: 768px) { .contact-inner { grid-template-columns: 1fr; } }
@@ -166,7 +179,6 @@ export default function FirstConversationPage() {
         .form-submit:hover { background: #a82520; }
         .form-note { font-size: 12px; color: #9CA3AF; text-align: center; margin-top: 10px; line-height: 1.5; }
 
-        /* Bottom CTA */
         .bottom-cta { background: #1C2B3A; padding: 80px 24px; text-align: center; }
         .bottom-cta h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(2rem, 4vw, 3rem); font-weight: 600; color: #fff; max-width: 680px; margin: 0 auto 14px; line-height: 1.2; }
         .bottom-cta p { color: rgba(255,255,255,0.65); font-size: 1rem; max-width: 500px; margin: 0 auto 32px; line-height: 1.8; }
@@ -175,8 +187,6 @@ export default function FirstConversationPage() {
       `}</style>
 
       <main className="page">
-
-        {/* Hero */}
         <section className="hero">
           <div className="hero-inner">
             <p className="eyebrow">How Care Starts · Step 1</p>
@@ -190,28 +200,34 @@ export default function FirstConversationPage() {
             <div className="hero-actions">
               <a href="tel:8449770050" className="btn-red">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M2 2.5C2 8.299 5.701 12 11.5 12l.5-2.5-2.5-.5-.5 1c-2-1-3-2-4-4l1-.5L5.5 3 3 2.5z" stroke="#fff" strokeWidth="1.4" strokeLinejoin="round"/>
+                  <path
+                    d="M2 2.5C2 8.299 5.701 12 11.5 12l.5-2.5-2.5-.5-.5 1c-2-1-3-2-4-4l1-.5L5.5 3 3 2.5z"
+                    stroke="#fff"
+                    strokeWidth="1.4"
+                    strokeLinejoin="round"
+                  />
                 </svg>
                 Call (844) 977-0050
               </a>
-              <a href="#consultation-form" className="btn-outline">Request a Callback</a>
+              <a href="#consultation-form" className="btn-outline">
+                Request a Callback
+              </a>
             </div>
           </div>
         </section>
 
-        {/* Breadcrumb */}
         <nav className="breadcrumb" aria-label="Breadcrumb">
           <div className="breadcrumb-inner">
-            <Link href="/">Home</Link><span>›</span>
-            <Link href="/how-care-starts/">How Care Starts</Link><span>›</span>
+            <Link href="/">Home</Link>
+            <span>›</span>
+            <Link href="/how-care-starts/">How Care Starts</Link>
+            <span>›</span>
             First Conversation
           </div>
         </nav>
 
-        {/* Body */}
         <div className="body-wrap">
           <div className="main-content">
-
             <h2>What to expect from the first call</h2>
             <p>
               Many families put off making this call for longer than they should —
@@ -288,10 +304,22 @@ export default function FirstConversationPage() {
 
             <div className="ready-grid">
               {[
-                { title: 'A brief description of the situation', body: 'What has changed recently, what the person can and cannot manage on their own, and what the family is most worried about.' },
-                { title: 'The person\'s approximate age and location', body: 'So we can speak to what is available in your area and what publicly funded options may apply.' },
-                { title: 'Any known medical conditions', body: 'Not a full medical history — just the diagnoses that are most relevant to the care being considered.' },
-                { title: 'A sense of urgency', body: 'Whether this is an immediate need, a planned arrangement, or something you are beginning to think about for the future.' },
+                {
+                  title: 'A brief description of the situation',
+                  body: 'What has changed recently, what the person can and cannot manage on their own, and what the family is most worried about.',
+                },
+                {
+                  title: "The person's approximate age and location",
+                  body: 'So we can speak to what is available in your area and what publicly funded options may apply.',
+                },
+                {
+                  title: 'Any known medical conditions',
+                  body: 'Not a full medical history — just the diagnoses that are most relevant to the care being considered.',
+                },
+                {
+                  title: 'A sense of urgency',
+                  body: 'Whether this is an immediate need, a planned arrangement, or something you are beginning to think about for the future.',
+                },
               ].map((item, i) => (
                 <div key={i} className="ready-card">
                   <div className="ready-card-title">{item.title}</div>
@@ -311,14 +339,48 @@ export default function FirstConversationPage() {
               <div className="care-starts-title">How Care Starts at Arcadia</div>
               <div className="care-starts-steps">
                 {[
-                  { num: '1', label: 'First Conversation', href: '/how-care-starts/first-conversation/', active: true },
-                  { num: '2', label: 'Care Assessment', href: '/how-care-starts/care-assessment/', active: false },
-                  { num: '3', label: 'Your Care Plan', href: '/how-care-starts/', active: false },
-                  { num: '4', label: 'Caregiver Matching', href: '/how-care-starts/matching-caregivers/', active: false },
-                  { num: '5', label: 'Care Begins', href: '/how-care-starts/care-begins/', active: false },
-                  { num: '6', label: 'Ongoing Support', href: '/how-care-starts/', active: false },
+                  {
+                    num: '1',
+                    label: 'First Conversation',
+                    href: '/how-care-starts/first-conversation/',
+                    active: true,
+                  },
+                  {
+                    num: '2',
+                    label: 'Care Assessment',
+                    href: '/how-care-starts/care-assessment/',
+                    active: false,
+                  },
+                  {
+                    num: '3',
+                    label: 'Your Care Plan',
+                    href: '/how-care-starts/',
+                    active: false,
+                  },
+                  {
+                    num: '4',
+                    label: 'Caregiver Matching',
+                    href: '/how-care-starts/matching-caregivers/',
+                    active: false,
+                  },
+                  {
+                    num: '5',
+                    label: 'Care Begins',
+                    href: '/how-care-starts/care-begins/',
+                    active: false,
+                  },
+                  {
+                    num: '6',
+                    label: 'Ongoing Support',
+                    href: '/how-care-starts/',
+                    active: false,
+                  },
                 ].map((step, i) => (
-                  <Link key={i} href={step.href} className={`care-step${step.active ? ' active' : ''}`}>
+                  <Link
+                    key={i}
+                    href={step.href}
+                    className={`care-step${step.active ? ' active' : ''}`}
+                  >
                     <div className="care-step-num">{step.num}</div>
                     <div className="care-step-text">{step.label}</div>
                     <span className="care-step-arrow">→</span>
@@ -351,60 +413,161 @@ export default function FirstConversationPage() {
                 a: 'Yes — use the form below and we will call you at a time that works for you.',
               },
             ].map((faq, i) => (
-              <div key={i} style={{ borderBottom: '1px solid #E5E0D8', padding: '20px 0' }}>
-                <div style={{ fontSize: '1rem', fontWeight: 700, color: '#1C2B3A', marginBottom: '10px', lineHeight: 1.5 }}>{faq.q}</div>
-                <div style={{ fontSize: '0.9375rem', color: '#4B5563', lineHeight: 1.8 }}>{faq.a}</div>
+              <div
+                key={i}
+                style={{ borderBottom: '1px solid #E5E0D8', padding: '20px 0' }}
+              >
+                <div
+                  style={{
+                    fontSize: '1rem',
+                    fontWeight: 700,
+                    color: '#1C2B3A',
+                    marginBottom: '10px',
+                    lineHeight: 1.5,
+                  }}
+                >
+                  {faq.q}
+                </div>
+                <div
+                  style={{
+                    fontSize: '0.9375rem',
+                    color: '#4B5563',
+                    lineHeight: 1.8,
+                  }}
+                >
+                  {faq.a}
+                </div>
               </div>
             ))}
-
           </div>
 
-          {/* Sidebar */}
           <aside className="sidebar">
             <div className="sidebar-cta">
               <h3>Ready to talk?</h3>
-              <p>Call us now — or use the form below to request a callback at a time that suits you.</p>
-              <a href="tel:8449770050" className="sidebar-phone">(844) 977-0050</a>
-              <a href="#consultation-form" className="btn-red-sm">Request a Callback</a>
+              <p>
+                Call us now — or use the form below to request a callback at a
+                time that suits you.
+              </p>
+              <a href="tel:8449770050" className="sidebar-phone">
+                (844) 977-0050
+              </a>
+              <a href="#consultation-form" className="btn-red-sm">
+                Request a Callback
+              </a>
             </div>
 
             <div className="sidebar-card">
               <div className="sidebar-card-title">Next Steps</div>
-              <Link href="/how-care-starts/care-assessment/" className="sidebar-link">Care Assessment</Link>
-              <Link href="/how-care-starts/matching-caregivers/" className="sidebar-link">Caregiver Matching</Link>
-              <Link href="/how-care-starts/" className="sidebar-link">How Care Starts Overview</Link>
+              <Link
+                href="/how-care-starts/care-assessment/"
+                className="sidebar-link"
+              >
+                Care Assessment
+              </Link>
+              <Link
+                href="/how-care-starts/matching-caregivers/"
+                className="sidebar-link"
+              >
+                Caregiver Matching
+              </Link>
+              <Link href="/how-care-starts/" className="sidebar-link">
+                How Care Starts Overview
+              </Link>
             </div>
 
             <div className="sidebar-card">
               <div className="sidebar-card-title">Understand Your Options</div>
-              <Link href="/our-services/" className="sidebar-link">Our Services</Link>
-              <Link href="/conditions/" className="sidebar-link">Conditions We Support</Link>
-              <Link href="/resources/navigating-home-care/" className="sidebar-link">Navigating Home Care Guides</Link>
+              <Link href="/our-services/" className="sidebar-link">
+                Our Services
+              </Link>
+              <Link href="/conditions/" className="sidebar-link">
+                Conditions We Support
+              </Link>
+              <Link
+                href="/resources/navigating-home-care/"
+                className="sidebar-link"
+              >
+                Navigating Home Care Guides
+              </Link>
             </div>
 
             <div className="sidebar-card">
               <div className="sidebar-card-title">Contact Details</div>
-              <div style={{ padding: '10px 0', borderBottom: '1px solid #F0EBE3' }}>
-                <div style={{ fontSize: 12, fontWeight: 700, color: '#6B7280', marginBottom: 3 }}>PHONE</div>
-                <a href="tel:8449770050" style={{ fontSize: 15, fontWeight: 700, color: '#1C2B3A', textDecoration: 'none' }}>(844) 977-0050</a>
+              <div
+                style={{ padding: '10px 0', borderBottom: '1px solid #F0EBE3' }}
+              >
+                <div
+                  style={{
+                    fontSize: 12,
+                    fontWeight: 700,
+                    color: '#6B7280',
+                    marginBottom: 3,
+                  }}
+                >
+                  PHONE
+                </div>
+                <a
+                  href="tel:8449770050"
+                  style={{
+                    fontSize: 15,
+                    fontWeight: 700,
+                    color: '#1C2B3A',
+                    textDecoration: 'none',
+                  }}
+                >
+                  (844) 977-0050
+                </a>
               </div>
-              <div style={{ padding: '10px 0', borderBottom: '1px solid #F0EBE3' }}>
-                <div style={{ fontSize: 12, fontWeight: 700, color: '#6B7280', marginBottom: 3 }}>EMAIL</div>
-                <a href="mailto:info@arcadiahomecare.ca" style={{ fontSize: 14, fontWeight: 600, color: '#1C2B3A', textDecoration: 'none' }}>info@arcadiahomecare.ca</a>
+              <div
+                style={{ padding: '10px 0', borderBottom: '1px solid #F0EBE3' }}
+              >
+                <div
+                  style={{
+                    fontSize: 12,
+                    fontWeight: 700,
+                    color: '#6B7280',
+                    marginBottom: 3,
+                  }}
+                >
+                  EMAIL
+                </div>
+                <a
+                  href="mailto:info@arcadiahomecare.ca"
+                  style={{
+                    fontSize: 14,
+                    fontWeight: 600,
+                    color: '#1C2B3A',
+                    textDecoration: 'none',
+                  }}
+                >
+                  info@arcadiahomecare.ca
+                </a>
               </div>
               <div style={{ padding: '10px 0' }}>
-                <div style={{ fontSize: 12, fontWeight: 700, color: '#6B7280', marginBottom: 3 }}>HOURS</div>
-                <div style={{ fontSize: 14, color: '#4B5563' }}>Mon–Fri, 9:00AM–5:00PM</div>
+                <div
+                  style={{
+                    fontSize: 12,
+                    fontWeight: 700,
+                    color: '#6B7280',
+                    marginBottom: 3,
+                  }}
+                >
+                  HOURS
+                </div>
+                <div style={{ fontSize: 14, color: '#4B5563' }}>
+                  Mon–Fri, 9:00AM–5:00PM
+                </div>
               </div>
             </div>
           </aside>
         </div>
 
-        {/* Contact form section */}
         <section className="contact-section" id="consultation-form">
           <div className="contact-inner">
             <div className="contact-text">
-              <p className="eyebrow" style={{ textAlign: 'left' }}>Get in Touch</p>
+              <p className="eyebrow" style={{ textAlign: 'left' }}>
+                Get in Touch
+              </p>
               <h2>Request a Free Consultation</h2>
               <p>
                 Fill in the form and we will call you back at a time that
@@ -416,7 +579,9 @@ export default function FirstConversationPage() {
                 <span className="contact-detail-icon">📞</span>
                 <div>
                   <div className="contact-detail-label">Call us directly</div>
-                  <a href="tel:8449770050" className="contact-detail-value">(844) 977-0050</a>
+                  <a href="tel:8449770050" className="contact-detail-value">
+                    (844) 977-0050
+                  </a>
                 </div>
               </div>
 
@@ -424,7 +589,12 @@ export default function FirstConversationPage() {
                 <span className="contact-detail-icon">✉️</span>
                 <div>
                   <div className="contact-detail-label">Email</div>
-                  <a href="mailto:info@arcadiahomecare.ca" className="contact-detail-value">info@arcadiahomecare.ca</a>
+                  <a
+                    href="mailto:info@arcadiahomecare.ca"
+                    className="contact-detail-value"
+                  >
+                    info@arcadiahomecare.ca
+                  </a>
                 </div>
               </div>
 
@@ -432,7 +602,12 @@ export default function FirstConversationPage() {
                 <span className="contact-detail-icon">🕐</span>
                 <div>
                   <div className="contact-detail-label">Office hours</div>
-                  <span className="contact-detail-value" style={{ cursor: 'default' }}>Monday–Friday, 9:00AM–5:00PM</span>
+                  <span
+                    className="contact-detail-value"
+                    style={{ cursor: 'default' }}
+                  >
+                    Monday–Friday, 9:00AM–5:00PM
+                  </span>
                 </div>
               </div>
 
@@ -440,50 +615,123 @@ export default function FirstConversationPage() {
                 <span className="contact-detail-icon">📍</span>
                 <div>
                   <div className="contact-detail-label">Address</div>
-                  <span className="contact-detail-value" style={{ cursor: 'default' }}>302 Bay St., Toronto, ON M5H 0B6</span>
+                  <span
+                    className="contact-detail-value"
+                    style={{ cursor: 'default' }}
+                  >
+                    302 Bay St., Toronto, ON M5H 0B6
+                  </span>
                 </div>
               </div>
             </div>
 
             <div className="contact-form">
               <div className="form-title">Book a Free Consultation</div>
-              <div className="form-subtitle">We will call you back within one business day.</div>
+              <div className="form-subtitle">
+                We will call you back within one business day.
+              </div>
 
               <form
                 action="https://api.web3forms.com/submit"
                 method="POST"
               >
-                <input type="hidden" name="access_key" value="3f35a2f5-9c08-4e4c-9a5e-b9a56f24314d" />
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value="3f35a2f5-9c08-4e4c-9a5e-b9a56f24314d"
+                />
+                <input
+                  type="hidden"
+                  name="subject"
+                  value="New consultation request — First Conversation page"
+                />
+                <input
+                  type="hidden"
+                  name="from_name"
+                  value="Arcadia Home Care - First Conversation Form"
+                />
+                <input
+                  type="hidden"
+                  name="redirect"
+                  value="http://localhost:3000/how-care-starts/first-conversation/thank-you/"
+                />
+
+                <input
+                  type="checkbox"
+                  name="botcheck"
+                  style={{ display: 'none' }}
+                  tabIndex={-1}
+                  autoComplete="off"
+                />
+
                 <div className="form-grid">
                   <div className="form-row">
                     <label htmlFor="first-name">First name *</label>
-                    <input type="text" id="first-name" name="first_name" required placeholder="Jane" />
+                    <input
+                      type="text"
+                      id="first-name"
+                      name="first_name"
+                      required
+                      minLength={2}
+                      maxLength={60}
+                      autoComplete="given-name"
+                      placeholder="Jane"
+                    />
                   </div>
                   <div className="form-row">
                     <label htmlFor="last-name">Last name *</label>
-                    <input type="text" id="last-name" name="last_name" required placeholder="Smith" />
+                    <input
+                      type="text"
+                      id="last-name"
+                      name="last_name"
+                      required
+                      minLength={2}
+                      maxLength={60}
+                      autoComplete="family-name"
+                      placeholder="Smith"
+                    />
                   </div>
                 </div>
 
                 <div className="form-row">
                   <label htmlFor="phone">Phone number *</label>
-                  <input type="tel" id="phone" name="phone" required placeholder="(416) 555-0100" />
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    required
+                    autoComplete="tel"
+                    pattern="^[0-9+()\\-\\s]{7,20}$"
+                    title="Please enter a valid phone number."
+                    placeholder="(416) 555-0100"
+                  />
                 </div>
 
                 <div className="form-row">
                   <label htmlFor="email">Email address</label>
-                  <input type="email" id="email" name="email" placeholder="jane@example.com" />
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    maxLength={120}
+                    autoComplete="email"
+                    placeholder="jane@example.com"
+                  />
                 </div>
 
                 <div className="form-row">
-                  <label htmlFor="service">What type of support are you looking for?</label>
-                  <select id="service" name="service">
+                  <label htmlFor="service">
+                    What type of support are you looking for?
+                  </label>
+                  <select id="service" name="service" defaultValue="">
                     <option value="">— Select an option —</option>
-                    <option value="dementia">Dementia & Alzheimer's Care</option>
+                    <option value="dementia">Dementia & Alzheimer&apos;s Care</option>
                     <option value="abi">Acquired Brain Injury Care</option>
                     <option value="palliative">Palliative Home Care</option>
                     <option value="discharge">Hospital Discharge Support</option>
-                    <option value="personal-support">Personal Support & Daily Living</option>
+                    <option value="personal-support">
+                      Personal Support & Daily Living
+                    </option>
                     <option value="companion">Companion Care</option>
                     <option value="respite">Respite Care</option>
                     <option value="overnight">Overnight & 24-Hour Care</option>
@@ -497,15 +745,27 @@ export default function FirstConversationPage() {
 
                 <div className="form-row">
                   <label htmlFor="message">Brief description of the situation</label>
-                  <textarea id="message" name="message" placeholder="Tell us a little about who needs care and what you are looking for..." />
+                  <textarea
+                    id="message"
+                    name="message"
+                    maxLength={1200}
+                    placeholder="Tell us a little about who needs care and what you are looking for..."
+                  />
                 </div>
 
                 <button type="submit" className="form-submit">
                   Request a Callback
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                    <path d="M3 8h10M9 4l4 4-4 4" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path
+                      d="M3 8h10M9 4l4 4-4 4"
+                      stroke="#fff"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
                   </svg>
                 </button>
+
                 <p className="form-note">
                   We respond within one business day. Your information is never shared.
                 </p>
@@ -514,21 +774,27 @@ export default function FirstConversationPage() {
           </div>
         </section>
 
-        {/* Bottom CTA */}
         <section className="bottom-cta">
-          <p className="eyebrow" style={{ textAlign: 'center', color: '#C8302A' }}>No Obligation</p>
+          <p className="eyebrow" style={{ textAlign: 'center', color: '#C8302A' }}>
+            No Obligation
+          </p>
           <h2>The hardest part is usually making the first call.</h2>
           <p>
             Most families feel better after the conversation — not more committed,
             just more informed. That is all the first call needs to be.
           </p>
-          <a href="tel:8449770050" className="bottom-cta-phone">(844) 977-0050</a>
+          <a href="tel:8449770050" className="bottom-cta-phone">
+            (844) 977-0050
+          </a>
           <div className="cta-actions">
-            <a href="#consultation-form" className="btn-red">Request a Callback</a>
-            <Link href="/how-care-starts/" className="btn-outline">See All Steps</Link>
+            <a href="#consultation-form" className="btn-red">
+              Request a Callback
+            </a>
+            <Link href="/how-care-starts/" className="btn-outline">
+              See All Steps
+            </Link>
           </div>
         </section>
-
       </main>
     </>
   )

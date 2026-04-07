@@ -36,9 +36,26 @@ function collectStaticRoutes(currentDir: string, routePrefix = ""): string[] {
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
+
   const uniqueRoutes = [...new Set(collectStaticRoutes(appDir))];
 
-  return uniqueRoutes.map((route) => ({
+  const customRoutes = [
+    "/locations/york-region",
+    "/locations/peel-region",
+    "/locations/durham-region",
+    "/locations/halton-region",
+    "/locations/york-region/markham-home-care",
+    "/locations/york-region/richmond-hill-home-care",
+    "/locations/peel-region/mississauga-home-care",
+    "/conditions/alzheimers-care",
+    "/contact/thank-you",
+    "/how-care-starts/first-conversation/thank-you",
+    "/referral-form/thank-you"
+  ];
+
+  const allRoutes = [...new Set([...uniqueRoutes, ...customRoutes])];
+
+  return allRoutes.map((route) => ({
     url: `${siteUrl}${route === "/" ? "" : route}/`,
     lastModified: now,
     changeFrequency: route === "/" ? "weekly" : "monthly",

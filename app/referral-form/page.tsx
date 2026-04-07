@@ -9,14 +9,69 @@ export const metadata: Metadata = {
   },
 };
 
+type Field = {
+  label: string;
+  name: string;
+  required?: boolean;
+  type?: string;
+  minLength?: number;
+  maxLength?: number;
+  autoComplete?: string;
+  pattern?: string;
+  title?: string;
+};
+
 export default function ReferralFormPage() {
-  const fields: { label: string; required?: boolean; type?: string }[] = [
-    { label: "Referring Professional Name", required: true },
-    { label: "Organization / Hospital", required: true },
-    { label: "Role / Title", required: true },
-    { label: "Phone", required: true, type: "tel" },
-    { label: "Email", required: true, type: "email" },
-    { label: "Patient First Name", required: true },
+  const fields: Field[] = [
+    {
+      label: "Referring Professional Name",
+      name: "referrer_name",
+      required: true,
+      minLength: 2,
+      maxLength: 80,
+      autoComplete: "name",
+    },
+    {
+      label: "Organization / Hospital",
+      name: "organization",
+      required: true,
+      minLength: 2,
+      maxLength: 120,
+      autoComplete: "organization",
+    },
+    {
+      label: "Role / Title",
+      name: "role",
+      required: true,
+      minLength: 2,
+      maxLength: 80,
+      autoComplete: "organization-title",
+    },
+    {
+      label: "Phone",
+      name: "phone",
+      required: true,
+      type: "tel",
+      autoComplete: "tel",
+      pattern: "^[0-9+()\\-\\s]{7,20}$",
+      title: "Please enter a valid phone number.",
+    },
+    {
+      label: "Email",
+      name: "email",
+      required: true,
+      type: "email",
+      autoComplete: "email",
+      maxLength: 120,
+    },
+    {
+      label: "Patient First Name",
+      name: "patient_first_name",
+      required: true,
+      minLength: 2,
+      maxLength: 80,
+      autoComplete: "given-name",
+    },
   ];
 
   return (
@@ -66,15 +121,42 @@ export default function ReferralFormPage() {
         }}
       >
         <form
+          action="https://api.web3forms.com/submit"
+          method="POST"
           style={{
             display: "grid",
             gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
             gap: 16,
           }}
         >
+          <input
+            type="hidden"
+            name="access_key"
+            value="3f35a2f5-9c08-4e4c-9a5e-b9a56f24314d"
+          />
+          <input
+            type="hidden"
+            name="subject"
+            value="New professional referral — Arcadia Home Care"
+          />
+          <input
+            type="hidden"
+            name="redirect"
+            value="http://localhost:3000/referral-form/thank-you/"
+          />
+          <input
+            type="hidden"
+            name="from_name"
+            value="Arcadia Home Care Referral Form"
+          />
+
+          {/* Honeypot for spam protection */}
+          <input type="checkbox" name="botcheck" style={{ display: "none" }} />
+
           {fields.map((field) => (
             <div key={field.label}>
               <label
+                htmlFor={field.name}
                 style={{
                   display: "block",
                   fontSize: 12,
@@ -88,14 +170,22 @@ export default function ReferralFormPage() {
                 {field.label}
               </label>
               <input
+                id={field.name}
+                name={field.name}
                 type={field.type ?? "text"}
                 required={field.required}
+                minLength={field.minLength}
+                maxLength={field.maxLength}
+                autoComplete={field.autoComplete}
+                pattern={field.pattern}
+                title={field.title}
                 style={{
                   width: "100%",
                   padding: "10px 12px",
                   borderRadius: 8,
                   border: "1px solid #E5E0D8",
                   fontSize: 14,
+                  outline: "none",
                 }}
               />
             </div>
@@ -103,6 +193,7 @@ export default function ReferralFormPage() {
 
           <div style={{ gridColumn: "1 / -1" }}>
             <label
+              htmlFor="patient_needs"
               style={{
                 display: "block",
                 fontSize: 12,
@@ -116,8 +207,12 @@ export default function ReferralFormPage() {
               Patient Situation / Needs
             </label>
             <textarea
+              id="patient_needs"
+              name="patient_needs"
               rows={5}
               required
+              minLength={15}
+              maxLength={1200}
               style={{
                 width: "100%",
                 padding: "10px 12px",
@@ -125,12 +220,14 @@ export default function ReferralFormPage() {
                 border: "1px solid #E5E0D8",
                 fontSize: 14,
                 resize: "vertical",
+                outline: "none",
               }}
             />
           </div>
 
           <div style={{ gridColumn: "1 / -1" }}>
             <label
+              htmlFor="urgency"
               style={{
                 display: "block",
                 fontSize: 12,
@@ -144,16 +241,22 @@ export default function ReferralFormPage() {
               Urgency
             </label>
             <select
+              id="urgency"
+              name="urgency"
               required
+              defaultValue=""
               style={{
                 width: "100%",
                 padding: "10px 12px",
                 borderRadius: 8,
                 border: "1px solid #E5E0D8",
                 fontSize: 14,
+                outline: "none",
               }}
             >
-              <option value="">Select urgency</option>
+              <option value="" disabled>
+                Select urgency
+              </option>
               <option value="immediate">Immediate</option>
               <option value="week">Within 1 week</option>
               <option value="planning">Planning ahead</option>
@@ -177,8 +280,7 @@ export default function ReferralFormPage() {
               Submit Referral
             </button>
             <p style={{ fontSize: 12, color: "#9CA3AF", marginTop: 8 }}>
-              Form handling TBD – connect to your chosen email / EMR workflow
-              before go-live.
+              After submission, you will be redirected to a confirmation page.
             </p>
           </div>
         </form>
@@ -206,16 +308,60 @@ export default function ReferralFormPage() {
           Referral Resources
         </p>
         <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
-          <a href="/healthcare-professionals/" style={{ color: "#1C2B3A", textDecoration: "none", border: "1px solid #E5E0D8", borderRadius: 100, padding: "8px 14px", fontSize: 14, fontWeight: 600 }}>
+          <a
+            href="/healthcare-professionals/"
+            style={{
+              color: "#1C2B3A",
+              textDecoration: "none",
+              border: "1px solid #E5E0D8",
+              borderRadius: 100,
+              padding: "8px 14px",
+              fontSize: 14,
+              fontWeight: 600,
+            }}
+          >
             For Professionals
           </a>
-          <a href="/our-services/hospital-discharge-support/" style={{ color: "#1C2B3A", textDecoration: "none", border: "1px solid #E5E0D8", borderRadius: 100, padding: "8px 14px", fontSize: 14, fontWeight: 600 }}>
+          <a
+            href="/our-services/hospital-discharge-support/"
+            style={{
+              color: "#1C2B3A",
+              textDecoration: "none",
+              border: "1px solid #E5E0D8",
+              borderRadius: 100,
+              padding: "8px 14px",
+              fontSize: 14,
+              fontWeight: 600,
+            }}
+          >
             Hospital Discharge Support
           </a>
-          <a href="/our-services/case-management/" style={{ color: "#1C2B3A", textDecoration: "none", border: "1px solid #E5E0D8", borderRadius: 100, padding: "8px 14px", fontSize: 14, fontWeight: 600 }}>
+          <a
+            href="/our-services/case-management/"
+            style={{
+              color: "#1C2B3A",
+              textDecoration: "none",
+              border: "1px solid #E5E0D8",
+              borderRadius: 100,
+              padding: "8px 14px",
+              fontSize: 14,
+              fontWeight: 600,
+            }}
+          >
             Case Management
           </a>
-          <a href="/contact/" style={{ color: "#1C2B3A", textDecoration: "none", border: "1px solid #E5E0D8", borderRadius: 100, padding: "8px 14px", fontSize: 14, fontWeight: 600 }}>
+          <a
+            href="/contact/"
+            style={{
+              color: "#1C2B3A",
+              textDecoration: "none",
+              border: "1px solid #E5E0D8",
+              borderRadius: 100,
+              padding: "8px 14px",
+              fontSize: 14,
+              fontWeight: 600,
+            }}
+          >
             Family Consultation Pathway
           </a>
         </div>
@@ -240,7 +386,14 @@ export default function ReferralFormPage() {
         >
           When To Submit a Referral
         </h2>
-        <p style={{ fontSize: 15, color: "#4B5563", lineHeight: 1.75, marginBottom: 14 }}>
+        <p
+          style={{
+            fontSize: 15,
+            color: "#4B5563",
+            lineHeight: 1.75,
+            marginBottom: 14,
+          }}
+        >
           This pathway is designed for clinicians and care coordinators who
           need dependable home support for medically and socially complex cases.
           We commonly support hospital discharge transitions, progressive
@@ -274,7 +427,15 @@ export default function ReferralFormPage() {
         >
           What Helps Us Triage Efficiently
         </h2>
-        <ul style={{ margin: 0, paddingLeft: 18, color: "#4B5563", lineHeight: 1.9, fontSize: 15 }}>
+        <ul
+          style={{
+            margin: 0,
+            paddingLeft: 18,
+            color: "#4B5563",
+            lineHeight: 1.9,
+            fontSize: 15,
+          }}
+        >
           <li>Primary diagnosis and immediate care concerns</li>
           <li>Required visit cadence (daily, overnight, 24-hour, respite)</li>
           <li>Mobility, transfer, and fall-risk considerations</li>
@@ -285,4 +446,3 @@ export default function ReferralFormPage() {
     </main>
   );
 }
-
