@@ -172,7 +172,7 @@ export default function ContactPage() {
           <input
             type="hidden"
             name="redirect"
-            value="http://localhost:3000/contact/thank-you/"
+            value="https://www.arcadiahomecare.ca/contact/thank-you/"
           />
           <input
             type="hidden"

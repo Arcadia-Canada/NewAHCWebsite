@@ -142,7 +142,7 @@ export default function ReferralFormPage() {
           <input
             type="hidden"
             name="redirect"
-            value="http://localhost:3000/referral-form/thank-you/"
+            value="https://www.arcadiahomecare.ca/referral-form/thank-you/"
           />
           <input
             type="hidden"

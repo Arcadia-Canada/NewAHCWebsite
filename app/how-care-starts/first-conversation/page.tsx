@@ -653,7 +653,7 @@ export default function FirstConversationPage() {
                 <input
                   type="hidden"
                   name="redirect"
-                  value="http://localhost:3000/how-care-starts/first-conversation/thank-you/"
+                  value="https://www.arcadiahomecare.ca/how-care-starts/first-conversation/thank-you/"
                 />
 
                 <input
