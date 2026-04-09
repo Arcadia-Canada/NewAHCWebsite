@@ -2,6 +2,16 @@
 import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'Arcadia Home Care | Toronto & GTA',
+  description:
+    'Compassionate, clinically guided home care in Toronto and the GTA for dementia, recovery, discharge support, and complex aging at home.',
+  alternates: {
+    canonical: "https://www.arcadiahomecare.ca/",
+  },
+};
 
 // ─── DESIGN TOKENS ────────────────────────────────────────────────────────────
 const colors = {
