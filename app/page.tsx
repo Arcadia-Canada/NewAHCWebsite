@@ -714,7 +714,7 @@ export default function Home() {
   }}
 />
     <main>
-      <Hero />
+      <Hero/>
       <DifferenceSection />
       <ServicesSection />
       <ProcessSection />

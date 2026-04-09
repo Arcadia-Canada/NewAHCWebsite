@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-
+import Image from 'next/image'
 const pageUrl =
     'https://www.arcadiahomecare.ca/resources/spring-home-safety-checklist-for-seniors/'
+const featuredImage =
+  'https://www.arcadiahomecare.ca/images/spring-home-safety-checklist-seniors-arcadia-home-care.jpg'
 
 // Update these if your exact Arcadia routes differ.
 const internalLinks = {
@@ -17,26 +19,34 @@ const internalLinks = {
 export const metadata: Metadata = {
     title: 'Spring Home Safety Checklist for Seniors | Arcadia Home Care',
     description:
-        'Use this spring home safety checklist for seniors to spot risks at home, notice signs an aging parent may need support, and take the next step with confidence.',
+      'Use this spring home safety checklist for seniors to spot risks at home, notice signs an aging parent may need support, and take the next step with confidence.',
     alternates: {
-        canonical: pageUrl,
+      canonical: pageUrl,
     },
     openGraph: {
-        title: 'Spring Home Safety Checklist for Seniors',
-        description:
-            'A practical guide to spotting home safety risks, recognizing early changes, and knowing when to seek support for an aging parent.',
-        url: pageUrl,
-        siteName: 'Arcadia Home Care',
-        type: 'article',
+      title: 'Spring Home Safety Checklist for Seniors',
+      description:
+        'A practical guide to spotting home safety risks, recognizing early changes, and knowing when to seek support for an aging parent.',
+      url: pageUrl,
+      siteName: 'Arcadia Home Care',
+      type: 'article',
+      images: [
+        {
+          url: featuredImage,
+          width: 1400,
+          height: 1000,
+          alt: 'Adult daughter reviewing a home safety checklist with her aging parent in a bright living room',
+        },
+      ],
     },
     twitter: {
-        card: 'summary_large_image',
-        title: 'Spring Home Safety Checklist for Seniors',
-        description:
-            'A practical guide to spotting home safety risks, recognizing early changes, and knowing when to seek support for an aging parent.',
+      card: 'summary_large_image',
+      title: 'Spring Home Safety Checklist for Seniors',
+      description:
+        'A practical guide to spotting home safety risks, recognizing early changes, and knowing when to seek support for an aging parent.',
+      images: [featuredImage],
     },
-}
-
+  }
 const signs = [
     {
         title: 'The Home Feels Less Safe',
@@ -156,7 +166,7 @@ function ChecklistGroup({
             <ul>
                 {items.map((item) => (
                     <li key={item}>
-                        <span className="box">□</span>
+                        <span className="box">→</span>
                         <span>{item}</span>
                     </li>
                 ))}
@@ -186,8 +196,7 @@ export default function SpringHomeSafetyChecklistPage() {
                                 name: 'Arcadia Home Care',
                                 url: 'https://www.arcadiahomecare.ca/',
                             },
-                            image:
-                                'https://www.arcadiahomecare.ca/images/spring-home-safety-checklist-seniors-arcadia-home-care.jpg',
+                            image:featuredImage,
                         },
                         {
                             '@context': 'https://schema.org',
@@ -619,6 +628,20 @@ export default function SpringHomeSafetyChecklistPage() {
           font-size: 15px;
           background: transparent;
         }
+          .featured-image-wrap {
+            margin: 0 0 28px;
+            border-radius: 18px;
+            overflow: hidden;
+            background: #F7F3EE;
+            border: 1px solid #E5E0D8;
+            }
+
+            .featured-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            }
       `}</style>
 
             <main className="article-page">
@@ -640,6 +663,16 @@ export default function SpringHomeSafetyChecklistPage() {
 
                 <div className="body">
                     <article className="article">
+                    <div className="featured-image-wrap">
+                    <Image
+                        src="/images/spring-home-safety-checklist-seniors-arcadia-home-care.png"
+                        alt="Adult daughter reviewing a home safety checklist with her aging parent in a bright living room"
+                        width={1400}
+                        height={1000}
+                        className="featured-image"
+                        priority
+                    />
+                    </div>
                         <p className="lead">Spring has a way of making things easier to see.</p>
 
                         <p>

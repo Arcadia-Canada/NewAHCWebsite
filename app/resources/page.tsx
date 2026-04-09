@@ -73,13 +73,81 @@ const categories = [
     label: "Spring Home Safety Checklist for Seniors",
     href: "/resources/spring-home-safety-checklist-for-seniors/",
     description: "Use this spring home safety checklist for seniors to spot risks at home, notice signs an aging parent may need support, and take the next step with confidence.",
-    count: 9,
+    count: 7,
     cardBg: colors.SpringHome,
     icon: (
       <svg width={32} height={32} viewBox="0 0 32 32" fill="none" aria-hidden>
-        <polyline points="2,16 7,16 10,8 14,24 18,12 21,18 25,18 28,16" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-        <path d="M6 23 Q16 18 26 23" stroke="rgba(255,255,255,0.5)" strokeWidth="1.4" strokeDasharray="2 2" strokeLinecap="round"/>
-        <polygon points="25,21 27.5,25 22.5,25" fill="white"/>
+        <path
+          d="M6 14.5L16 6L26 14.5"
+          stroke="white"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M8.5 13.5V25.5H23.5V13.5"
+          stroke="white"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+    
+        <rect
+          x="11"
+          y="14"
+          width="8"
+          height="9"
+          rx="1.5"
+          stroke="white"
+          strokeWidth="1.8"
+        />
+        <path
+          d="M13 12.8H17"
+          stroke="white"
+          strokeWidth="1.8"
+          strokeLinecap="round"
+        />
+    
+        <path
+          d="M12.8 17.2L13.7 18.1L15.2 16.5"
+          stroke="white"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M12.8 20.3L13.7 21.2L15.2 19.6"
+          stroke="white"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M16.7 17.3H18"
+          stroke="white"
+          strokeWidth="1.4"
+          strokeLinecap="round"
+        />
+        <path
+          d="M16.7 20.4H18"
+          stroke="white"
+          strokeWidth="1.4"
+          strokeLinecap="round"
+        />
+    
+        <path
+          d="M22.8 8.8C24.8 8.6 26.2 9.3 26.8 10.8C24.9 11.4 23.3 11.2 22.1 10.2C21.6 9.8 21.4 9.2 21.5 8.6C21.9 8.8 22.3 8.9 22.8 8.8Z"
+          stroke="white"
+          strokeWidth="1.6"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M22.3 10.6C21.9 11.6 21.2 12.5 20.2 13.2"
+          stroke="white"
+          strokeWidth="1.4"
+          strokeLinecap="round"
+        />
       </svg>
     ),
   },
