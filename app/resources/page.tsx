@@ -69,6 +69,20 @@ const categories = [
       </svg>
     ),
   },
+  {
+    label: "Spring Home Safety Checklist for Seniors",
+    href: "/resources/spring-home-safety-checklist-for-seniors/",
+    description: "Use this spring home safety checklist for seniors to spot risks at home, notice signs an aging parent may need support, and take the next step with confidence.",
+    count: 9,
+    cardBg: colors.SpringHome,
+    icon: (
+      <svg width={32} height={32} viewBox="0 0 32 32" fill="none" aria-hidden>
+        <polyline points="2,16 7,16 10,8 14,24 18,12 21,18 25,18 28,16" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M6 23 Q16 18 26 23" stroke="rgba(255,255,255,0.5)" strokeWidth="1.4" strokeDasharray="2 2" strokeLinecap="round"/>
+        <polygon points="25,21 27.5,25 22.5,25" fill="white"/>
+      </svg>
+    ),
+  },
 ];
 
 export default function ResourcesHubPage() {

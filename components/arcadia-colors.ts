@@ -13,6 +13,7 @@ export const colors = {
   clusterCaregiver: "#6B2D4A",
   clusterHomeCare:  "#1A4A3A",
   clusterBrain:     "#1C3A5C",
+  SpringHome:     "#1C5C5C",
 } as const
 
 export const fonts = {
