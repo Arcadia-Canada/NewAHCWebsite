@@ -13,6 +13,9 @@ export const metadata: Metadata = {
   title: "Arcadia Home Care | Specialized Home Care in Toronto & GTA",
   description:
     "Clinical expertise and human compassion in the home. Dementia, brain injury, rehabilitation, and complex aging care. Serving GTA families since 2005.",
+  alternates: {
+    canonical: 'https://www.arcadiahomecare.ca/',
+  },
 };
 
 export default function RootLayout({
