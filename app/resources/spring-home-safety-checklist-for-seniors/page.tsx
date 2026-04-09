@@ -4,7 +4,7 @@ import Image from 'next/image'
 const pageUrl =
     'https://www.arcadiahomecare.ca/resources/spring-home-safety-checklist-for-seniors/'
 const featuredImage =
-  'https://www.arcadiahomecare.ca/images/spring-home-safety-checklist-seniors-arcadia-home-care.jpg'
+  'https://www.arcadiahomecare.ca/images/spring-home-safety-checklist-seniors-arcadia-home-care.png'
 
 // Update these if your exact Arcadia routes differ.
 const internalLinks = {
