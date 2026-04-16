@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import AnimatedHero from '@/components/ui/AnimatedHero';
 import { colors, fonts, phone, trustItems, arcBtn } from "@/components/arcadia-colors";
 
 export const metadata: Metadata = {
@@ -168,21 +169,18 @@ export default function ResourcesHubPage() {
       <main style={{ fontFamily: fonts.body, color: colors.text }}>
 
         {/* Hero */}
-        <section style={{ background: colors.primary, padding: "96px 24px 80px", textAlign: "center" }}>
-          <div style={{ maxWidth: 720, margin: "0 auto" }}>
-            <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: colors.accent, marginBottom: 16 }}>Resources</p>
-            <h1 style={{ fontFamily: fonts.display, fontSize: "clamp(2.6rem, 5.5vw, 4.8rem)", fontWeight: 600, color: colors.white, marginBottom: 20, lineHeight: 1.2 }}>
-              Guides for Families & Caregivers
-            </h1>
-            <p style={{ fontSize: "1.0625rem", color: "rgba(255,255,255,0.85)", lineHeight: 1.7, marginBottom: 32 }}>
-              Practical guides on dementia and memory care, family caregiver support, navigating home care, and brain injury rehabilitation — to help you and your family make informed decisions.
-            </p>
-            <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap" }}>
-              <a href={phone.tel} style={arcBtn.primary}>📞 Call {phone.display}</a>
-              <Link href="/contact/" style={arcBtn.outline}>Book a Free Consultation</Link>
-            </div>
+        <AnimatedHero
+          eyebrow="Resources"
+          title={<>Guides for Families<br />& Caregivers</>}
+          subtitle="Practical guides on dementia and memory care, family caregiver support, navigating home care, and brain injury rehabilitation — to help you and your family make informed decisions."
+          imageSrc="/images/heroes/resources.jpg"
+          imageAlt="Family member researching home care resources"
+        >
+          <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
+            <a href={phone.tel} style={arcBtn.primary}>📞 Call {phone.display}</a>
+            <Link href="/contact/" style={arcBtn.outline}>Book a Free Consultation</Link>
           </div>
-        </section>
+        </AnimatedHero>
 
         {/* Trust strip */}
         <div style={{ background: colors.warm, borderBottom: `1px solid ${colors.border}`, padding: "12px 24px", display: "flex", justifyContent: "center", gap: 40, flexWrap: "wrap" }}>

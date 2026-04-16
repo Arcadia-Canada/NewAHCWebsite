@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import AnimatedHero from '@/components/ui/AnimatedHero'
 
 export const metadata: Metadata = {
   title: 'Professional Referrals | Arcadia Home Care | GTA',
@@ -73,12 +74,6 @@ export default function HealthcareProfessionalsPage() {
       <style>{`
         .pro-page { font-family: 'DM Sans', system-ui, sans-serif; color: #2D2D2D; }
 
-        .pro-hero { background: #1C2B3A; padding: 96px 24px 80px; }
-        .pro-hero-inner { max-width: 760px; margin: 0 auto; }
-        .pro-eyebrow { font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #C8302A; margin-bottom: 14px; }
-        .pro-hero h1 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(2.2rem, 4.5vw, 3.4rem); font-weight: 600; color: #fff; line-height: 1.15; margin-bottom: 20px; }
-        .pro-hero p { font-size: 1.05rem; color: rgba(255,255,255,0.85); line-height: 1.8; margin-bottom: 24px; }
-        .pro-hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
         .btn-red { background: #C8302A; color: #fff; text-decoration: none; padding: 14px 28px; border-radius: 8px; font-size: 15px; font-weight: 700; display: inline-flex; align-items: center; gap: 8px; }
         .btn-outline-light { border: 1.5px solid rgba(255,255,255,0.5); background: transparent; color: #fff; text-decoration: none; padding: 14px 28px; border-radius: 8px; font-size: 15px; font-weight: 700; display: inline-flex; }
 
@@ -146,31 +141,22 @@ export default function HealthcareProfessionalsPage() {
       <main className="pro-page">
 
         {/* Hero */}
-        <section className="pro-hero">
-          <div className="pro-hero-inner">
-            <p className="pro-eyebrow">For Healthcare Professionals</p>
-            <h1>Referring Patients to Arcadia Home Care</h1>
-            <p>
-              Arcadia partners with discharge planners, social workers, Ontario Health atHome coordinators,
-              and specialist teams across Toronto and the GTA to provide seamless transitions from hospital
-              or clinic to home. We respond quickly, communicate clearly, and coordinate around your
-              patient's existing care team.
-            </p>
-            <p style={{ fontSize: '0.9375rem', color: 'rgba(255,255,255,0.7)', lineHeight: 1.75, marginBottom: 24 }}>
-              Arcadia has supported Toronto families with complex home care needs for over two decades —
-              working alongside hospital teams, rehabilitation centres, and community health providers
-              across the GTA.
-            </p>
-            <div className="pro-hero-actions">
-              <a href="tel:+18449770050" className="btn-red" aria-label="Call Arcadia for professional referrals">
-                📞 (844) 977-0050
-              </a>
-              <Link href="/referral-form/" className="btn-outline-light">
-                Submit a Referral →
-              </Link>
-            </div>
+        <AnimatedHero
+          eyebrow="For Healthcare Professionals"
+          title={<>Referring Patients to<br />Arcadia Home Care</>}
+          subtitle="Arcadia partners with discharge planners, social workers, Ontario Health atHome coordinators, and specialist teams across Toronto and the GTA to provide seamless transitions from hospital or clinic to home."
+          imageSrc="/images/heroes/healthcare-professionals.jpg"
+          imageAlt="Healthcare team coordinating patient referral"
+        >
+          <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
+            <a href="tel:+18449770050" className="btn-red" aria-label="Call Arcadia for professional referrals">
+              📞 (844) 977-0050
+            </a>
+            <Link href="/referral-form/" className="btn-outline-light">
+              Submit a Referral →
+            </Link>
           </div>
-        </section>
+        </AnimatedHero>
 
         {/* Trust bar */}
         <div className="pro-trust">

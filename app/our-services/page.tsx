@@ -1,6 +1,7 @@
 'use client'
 
 import { colors, fonts, phone, trustItems, arcBtn, hoverPrimary, hoverOutline } from '@/components/arcadia-colors'
+import AnimatedHero from '@/components/ui/AnimatedHero'
 
 const services = [
   { icon: '🧠', title: "Dementia & Alzheimer's Home Care", desc: 'Safe, familiar support for loved ones living with cognitive decline — in the comfort of their own home.', href: '/our-services/dementia-alzheimers-home-care/', tag: 'Most Requested' },
@@ -22,11 +23,7 @@ export default function OurServicesPage() {
     <>
       <style>{`
         .services-page { font-family: ${fonts.body}; background: ${colors.white}; }
-        .services-hero { background: ${colors.primary}; padding: 72px 24px 64px; text-align: center; }
-        .services-hero-eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: ${colors.accent}; margin-bottom: 14px; }
-        .services-hero h1 { font-family: ${fonts.display}; font-size: clamp(2.2rem, 5vw, 3.8rem); font-weight: 600; color: ${colors.white}; line-height: 1.15; margin-bottom: 16px; }
-        .services-hero p { font-size: 17px; color: rgba(255,255,255,0.65); max-width: 520px; margin: 0 auto 32px; line-height: 1.7; font-weight: 300; }
-        .services-hero-ctas { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+        .services-hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
         .trust-strip { background: ${colors.warm}; border-bottom: 1px solid ${colors.border}; padding: 12px 24px; display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; }
         .trust-item { display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 500; color: ${colors.primary}; }
         .services-grid-section { max-width: 1200px; margin: 0 auto; padding: 72px 24px 96px; }
@@ -59,15 +56,18 @@ export default function OurServicesPage() {
       <div className="services-page">
 
         {/* Hero */}
-        <section className="services-hero">
-          <p className="services-hero-eyebrow">What We Offer</p>
-          <h1>Specialized Care for<br />Complex Situations</h1>
-          <p>Every service is built around clinical understanding — not just availability. We match care to the person, not the other way around.</p>
+        <AnimatedHero
+          eyebrow="What We Offer"
+          title={<>Specialized Care for<br />Complex Situations</>}
+          subtitle="Every service is built around clinical understanding — not just availability. We match care to the person, not the other way around."
+          imageSrc="/images/heroes/our-services.jpg"
+          imageAlt="Caregiver assisting senior with home care services"
+        >
           <div className="services-hero-ctas">
             <a href={phone.tel} style={arcBtn.primary} onMouseOver={hoverPrimary.over} onMouseOut={hoverPrimary.out}>📞 Call {phone.display}</a>
             <a href="/contact" style={arcBtn.outline} onMouseOver={hoverOutline.over} onMouseOut={hoverOutline.out}>Book a Free Consultation</a>
           </div>
-        </section>
+        </AnimatedHero>
 
         {/* Trust strip */}
         <div className="trust-strip">

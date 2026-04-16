@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import { colors, fonts, phone, trustItems } from "@/components/arcadia-colors"
+import AnimatedHero from '@/components/ui/AnimatedHero'
 
 const conditions = [
   { label: "Dementia Care at Home",        slug: "dementia-care-at-home",          icon: "🧠" },
@@ -20,23 +21,18 @@ export default function ConditionsHubPage() {
     <main style={{ fontFamily: fonts.body, color: colors.text }}>
 
       {/* Hero */}
-      <section style={{ background: colors.primary, padding: "96px 24px 80px", textAlign: "center" }}>
-        <div style={{ maxWidth: 720, margin: "0 auto" }}>
-          <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: colors.accent, marginBottom: 16 }}>
-            Conditions We Support
-          </p>
-          <h1 style={{ fontFamily: fonts.display, fontSize: "clamp(2.4rem, 5.5vw, 4.4rem)", fontWeight: 600, color: colors.white, lineHeight: 1.15, marginBottom: 0 }}>
-            Understanding Complex Conditions at Home
-          </h1>
-          <p style={{ fontSize: 17, color: "rgba(255,255,255,0.75)", lineHeight: 1.7, fontWeight: 300, margin: "16px 0 32px" }}>
-            A hub for families navigating dementia, brain injury, stroke recovery, Parkinson&apos;s, palliative illness, and more.
-          </p>
-          <div style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap" }}>
-            <a href={phone.tel} className="arc-btn-primary">📞 Call {phone.display}</a>
-            <Link href="/contact/" className="arc-btn-outline">Book a Free Consultation</Link>
-          </div>
+      <AnimatedHero
+        eyebrow="Conditions We Support"
+        title={<>Understanding Complex<br />Conditions at Home</>}
+        subtitle="A hub for families navigating dementia, brain injury, stroke recovery, Parkinson's, palliative illness, and more."
+        imageSrc="/images/heroes/conditions.jpg"
+        imageAlt="Family member providing comfort during home care"
+      >
+        <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
+          <a href={phone.tel} className="arc-btn-primary">📞 Call {phone.display}</a>
+          <Link href="/contact/" className="arc-btn-outline">Book a Free Consultation</Link>
         </div>
-      </section>
+      </AnimatedHero>
 
       {/* Trust strip */}
       <div style={{ background: colors.warm, borderBottom: `1px solid ${colors.border}`, padding: "12px 24px", display: "flex", justifyContent: "center", gap: 40, flexWrap: "wrap" }}>

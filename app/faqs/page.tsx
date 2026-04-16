@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import AnimatedHero from '@/components/ui/AnimatedHero';
 
 export const metadata: Metadata = {
   title: "Home Care FAQs | Arcadia Home Care | Toronto & GTA",
@@ -99,49 +100,13 @@ export default function FaqPage() {
       />
 
       <main style={{ background: "#FFFFFF" }}>
-        <section
-          style={{
-            background: "#1C2B3A",
-            padding: "96px 24px 72px",
-          }}
-        >
-          <div style={{ maxWidth: 1000, margin: "0 auto" }}>
-            <p
-              style={{
-                fontSize: 12,
-                fontWeight: 700,
-                letterSpacing: "0.1em",
-                textTransform: "uppercase",
-                color: "#C8302A",
-                marginBottom: 14,
-              }}
-            >
-              Frequently Asked Questions
-            </p>
-            <h1
-              style={{
-                fontFamily: "'Cormorant Garamond', Georgia, serif",
-                fontSize: "clamp(2.2rem, 5vw, 3.6rem)",
-                lineHeight: 1.15,
-                color: "#FFFFFF",
-                marginBottom: 16,
-              }}
-            >
-              Clear Answers for Families Exploring Home Care
-            </h1>
-            <p
-              style={{
-                maxWidth: 760,
-                color: "rgba(255,255,255,0.75)",
-                lineHeight: 1.7,
-                fontSize: 16,
-              }}
-            >
-              If your family is navigating dementia, discharge recovery, or
-              caregiver burnout, these are the questions we hear most often.
-            </p>
-          </div>
-        </section>
+        <AnimatedHero
+          eyebrow="Frequently Asked Questions"
+          title={<>Clear Answers for Families<br />Exploring Home Care</>}
+          subtitle="If your family is navigating dementia, discharge recovery, or caregiver burnout, these are the questions we hear most often."
+          imageSrc="/images/heroes/faqs.jpg"
+          imageAlt="Family discussing home care options together"
+        />
 
         <section style={{ padding: "72px 24px 40px" }}>
           <div style={{ maxWidth: 1000, margin: "0 auto" }}>

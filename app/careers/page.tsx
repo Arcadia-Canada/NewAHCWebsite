@@ -2,6 +2,7 @@
 
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import AnimatedHero from '@/components/ui/AnimatedHero'
 
 export const metadata: Metadata = {
   title: 'Careers in Home Care | Join Our Team | Arcadia Home Care',
@@ -127,28 +128,8 @@ export default function CareersPage() {
       <style>{`
         .careers-page { font-family: 'DM Sans', system-ui, sans-serif; color: #2D2D2D; }
 
-        /* Hero */
-        .careers-hero {
-          background: #1C2B3A;
-          padding: 96px 24px 80px;
-          text-align: center;
-        }
-        .careers-hero-eyebrow {
-          font-size: 12px; font-weight: 700; letter-spacing: 0.1em;
-          text-transform: uppercase; color: #C8302A; margin-bottom: 16px;
-        }
-        .careers-hero h1 {
-          font-family: 'Cormorant Garamond', Georgia, serif;
-          font-size: clamp(2.4rem, 5vw, 4rem);
-          font-weight: 600; color: #fff; line-height: 1.1;
-          max-width: 800px; margin: 0 auto 20px;
-        }
-        .careers-hero p {
-          font-size: 1.1rem; color: rgba(255,255,255,0.75);
-          max-width: 600px; margin: 0 auto 36px; line-height: 1.7;
-        }
         .careers-hero-actions {
-          display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;
+          display: flex; gap: 14px; flex-wrap: wrap;
         }
         .btn-red,
         .btn-outline-white {
@@ -395,13 +376,13 @@ export default function CareersPage() {
       <main className="careers-page">
 
         {/* Hero */}
-        <section className="careers-hero">
-          <p className="careers-hero-eyebrow">Join Our Team</p>
-          <h1>Make a Real Difference.<br />Build a Career You're Proud Of.</h1>
-          <p>
-            Arcadia Home Care is always looking for warm, dedicated professionals who believe in
-            the dignity and independence of every person they care for.
-          </p>
+        <AnimatedHero
+          eyebrow="Join Our Team"
+          title={<>Make a Real Difference.<br />Build a Career You&apos;re Proud Of.</>}
+          subtitle="Arcadia Home Care is always looking for warm, dedicated professionals who believe in the dignity and independence of every person they care for."
+          imageSrc="/images/heroes/careers.jpg"
+          imageAlt="Healthcare professional coordinating patient care"
+        >
           <div className="careers-hero-actions">
             <a href="/pre-hire/" className="btn-red">
               Complete Pre-Hire Form
@@ -413,7 +394,7 @@ export default function CareersPage() {
               Call Us — (844) 977-0050
             </a>
           </div>
-        </section>
+        </AnimatedHero>
 
         {/* Quick links bar */}
         <div className="quick-links-bar">
