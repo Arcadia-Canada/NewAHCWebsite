@@ -2,6 +2,8 @@
 import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
+import { FadeIn, StaggerContainer, StaggerItem } from '@/components/ui/MotionWrappers';
 
 // ─── DESIGN TOKENS ────────────────────────────────────────────────────────────
 const colors = {
@@ -103,7 +105,7 @@ function GoogleReviewsWidget() {
     <section style={{ background: colors.warm, padding: '80px 24px', borderTop: `1px solid ${colors.border}` }}>
       <div style={{ maxWidth: 1200, margin: '0 auto' }}>
         {/* Header */}
-        <div style={{ textAlign: 'center', marginBottom: 48 }}>
+        <FadeIn style={{ textAlign: 'center', marginBottom: 48 }}>
           <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: colors.accent, marginBottom: 12 }}>Google Reviews</p>
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 600, color: colors.primary, marginBottom: 16 }}>
             Trusted by GTA Families
@@ -120,43 +122,45 @@ function GoogleReviewsWidget() {
               <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
             </svg>
           </div>
-        </div>
+        </FadeIn>
 
         {/* Review cards */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 20 }} className="reviews-grid-home">
+        <StaggerContainer stagger={0.1} style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 20 }} className="reviews-grid-home">
           {googleReviews.map((review, i) => (
-            <div key={i} style={{ background: colors.white, border: `1px solid ${colors.border}`, borderRadius: 14, padding: '24px', display: 'flex', flexDirection: 'column', gap: 12 }}>
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-                  <div style={{ width: 36, height: 36, borderRadius: '50%', background: colors.primary, display: 'flex', alignItems: 'center', justifyContent: 'center', color: colors.white, fontSize: 14, fontWeight: 700, flexShrink: 0 }}>
-                    {review.name.charAt(0)}
+            <StaggerItem key={i}>
+              <div style={{ background: colors.white, border: `1px solid ${colors.border}`, borderRadius: 14, padding: '24px', display: 'flex', flexDirection: 'column', gap: 12, height: '100%' }}>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                    <div style={{ width: 36, height: 36, borderRadius: '50%', background: colors.primary, display: 'flex', alignItems: 'center', justifyContent: 'center', color: colors.white, fontSize: 14, fontWeight: 700, flexShrink: 0 }}>
+                      {review.name.charAt(0)}
+                    </div>
+                    <div>
+                      <div style={{ fontSize: 14, fontWeight: 700, color: colors.primary }}>{review.name}</div>
+                      <div style={{ fontSize: 11, color: colors.textLight }}>{review.time}</div>
+                    </div>
                   </div>
-                  <div>
-                    <div style={{ fontSize: 14, fontWeight: 700, color: colors.primary }}>{review.name}</div>
-                    <div style={{ fontSize: 11, color: colors.textLight }}>{review.time}</div>
-                  </div>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                    <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                    <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                    <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+                    <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                  </svg>
                 </div>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-                  <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
-                  <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
-                  <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
-                  <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
-                </svg>
+                <StarRating />
+                <p style={{ fontSize: 13.5, color: colors.text, lineHeight: 1.7, fontStyle: 'italic', flex: 1 }}>
+                  &ldquo;{review.text}&rdquo;
+                </p>
               </div>
-              <StarRating />
-              <p style={{ fontSize: 13.5, color: colors.text, lineHeight: 1.7, fontStyle: 'italic', flex: 1 }}>
-                &ldquo;{review.text}&rdquo;
-              </p>
-            </div>
+            </StaggerItem>
           ))}
-        </div>
+        </StaggerContainer>
 
-        <div style={{ textAlign: 'center', marginTop: 36 }}>
+        <FadeIn delay={0.3} style={{ textAlign: 'center', marginTop: 36 }}>
           <a href="https://g.page/r/arcadiahomecare/review" target="_blank" rel="noopener noreferrer"
             style={{ fontSize: 14, fontWeight: 600, color: colors.accent, textDecoration: 'none', borderBottom: `2px solid ${colors.accent}`, paddingBottom: 2 }}>
             See All 38 Reviews on Google →
           </a>
-        </div>
+        </FadeIn>
       </div>
       <style>{`
         @media (max-width: 900px) { .reviews-grid-home { grid-template-columns: repeat(2, 1fr) !important; } }
@@ -172,17 +176,37 @@ function Hero() {
       <div style={{ flex: 1, maxWidth: 1200, margin: '0 auto', padding: '80px 24px 60px', display: 'flex', alignItems: 'center', gap: 60, width: '100%' }} className="hero-grid">
         {/* Text */}
         <div style={{ flex: '1 1 55%' }}>
-          <div style={{ display: 'inline-block', background: 'rgba(200,48,42,0.15)', border: '1px solid rgba(200,48,42,0.3)', borderRadius: 100, padding: '6px 16px', marginBottom: 24 }}>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1, ease: [0.25, 0.1, 0.25, 1] }}
+            style={{ display: 'inline-block', background: 'rgba(200,48,42,0.15)', border: '1px solid rgba(200,48,42,0.3)', borderRadius: 100, padding: '6px 16px', marginBottom: 24 }}
+          >
             <span style={{ color: '#E8867F', fontSize: 12, fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase' }}>Specialized Home Care · Toronto & GTA</span>
-          </div>
-          <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.6rem, 5.5vw, 4.8rem)', fontWeight: 600, lineHeight: 1.12, color: '#fff', marginBottom: 24, letterSpacing: '-0.01em' }}>
+          </motion.div>
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2, ease: [0.25, 0.1, 0.25, 1] }}
+            style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.6rem, 5.5vw, 4.8rem)', fontWeight: 600, lineHeight: 1.12, color: '#fff', marginBottom: 24, letterSpacing: '-0.01em' }}
+          >
             Care That Understands<br />
             <span style={{ color: '#E8867F' }}>What Your Family<br />Is Going Through</span>
-          </h1>
-          <p style={{ fontSize: 18, lineHeight: 1.65, color: 'rgba(255,255,255,0.75)', marginBottom: 36, maxWidth: 540, fontWeight: 300 }}>
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.35, ease: [0.25, 0.1, 0.25, 1] }}
+            style={{ fontSize: 18, lineHeight: 1.65, color: 'rgba(255,255,255,0.75)', marginBottom: 36, maxWidth: 540, fontWeight: 300 }}
+          >
             Arcadia brings clinical expertise and genuine compassion together — guiding families through dementia, brain injury, recovery, and complex aging at home. Serving the GTA since 2005.
-          </p>
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 16 }}>
+          </motion.p>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
+            style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 16 }}
+          >
             <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', alignItems: 'center' }}>
               <a href="tel:8449770050" style={{ background: colors.accent, color: '#fff', padding: '16px 32px', borderRadius: 8, textDecoration: 'none', fontSize: 16, fontWeight: 700, display: 'flex', alignItems: 'center', gap: 8, transition: 'all 0.2s' }}
                 onMouseOver={e => e.currentTarget.style.background = '#a82520'}
@@ -195,7 +219,6 @@ function Hero() {
                 Book a Free Consultation
               </a>
             </div>
-            {/* Static Google rating badge — replaces Elfsight */}
             <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.15)', borderRadius: 100, padding: '8px 16px' }}>
               <StarRating />
               <span style={{ fontSize: 13, color: 'rgba(255,255,255,0.85)', fontWeight: 600 }}>5.0 · 38 Google Reviews</span>
@@ -206,23 +229,35 @@ function Hero() {
                 <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
               </svg>
             </div>
-          </div>
+          </motion.div>
         </div>
 
         {/* Hero image */}
-        <div className="hero-image" style={{ flex: '1 1 40%', position: 'relative', maxWidth: 480 }}>
+        <motion.div
+          className="hero-image"
+          style={{ flex: '1 1 40%', position: 'relative', maxWidth: 480 }}
+          initial={{ opacity: 0, scale: 0.95, x: 40 }}
+          animate={{ opacity: 1, scale: 1, x: 0 }}
+          transition={{ duration: 0.7, delay: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
+        >
           <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', boxShadow: '0 40px 80px rgba(0,0,0,0.4)' }}>
             <Image src="/images/image 43-08b42066-435w.webp" alt="Arcadia caregiver with senior client" width={480} height={520} priority style={{ width: '100%', height: 520, objectFit: 'cover', display: 'block' }} />
             <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, transparent 50%, rgba(28,43,58,0.3))' }} />
           </div>
-          <a href="/referral-form/" style={{ position: 'absolute', bottom: -20, left: -20, background: '#fff', borderRadius: 12, padding: '16px 20px', boxShadow: '0 20px 40px rgba(0,0,0,0.15)', maxWidth: 220, display: 'block', textDecoration: 'none', color: 'inherit', transition: 'box-shadow 0.2s' }}
+          <motion.a
+            href="/referral-form/"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.7, ease: [0.25, 0.1, 0.25, 1] }}
+            style={{ position: 'absolute', bottom: -20, left: -20, background: '#fff', borderRadius: 12, padding: '16px 20px', boxShadow: '0 20px 40px rgba(0,0,0,0.15)', maxWidth: 220, display: 'block', textDecoration: 'none', color: 'inherit', transition: 'box-shadow 0.2s' }}
             onMouseOver={e => { e.currentTarget.style.boxShadow = '0 24px 48px rgba(0,0,0,0.18)'; }}
-            onMouseOut={e => { e.currentTarget.style.boxShadow = '0 20px 40px rgba(0,0,0,0.15)'; }}>
+            onMouseOut={e => { e.currentTarget.style.boxShadow = '0 20px 40px rgba(0,0,0,0.15)'; }}
+          >
             <div style={{ fontSize: 11, fontWeight: 600, color: colors.accent, textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: 4 }}>Referral Ready</div>
             <div style={{ fontSize: 13, color: colors.primary, fontWeight: 500, lineHeight: 1.4 }}>We work with discharge planners, social workers & care teams</div>
             <span style={{ display: 'inline-block', marginTop: 8, fontSize: 12, color: colors.accent, fontWeight: 600 }}>Submit a Referral →</span>
-          </a>
-        </div>
+          </motion.a>
+        </motion.div>
       </div>
       <TrustBar />
     </section>
@@ -238,22 +273,24 @@ function DifferenceSection() {
   return (
     <section style={{ background: colors.surface, padding: '96px 24px' }}>
       <div style={{ maxWidth: 1200, margin: '0 auto' }}>
-        <div style={{ textAlign: 'center', marginBottom: 64 }}>
+        <FadeIn style={{ textAlign: 'center', marginBottom: 64 }}>
           <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: colors.accent, marginBottom: 12 }}>Why Arcadia Is Different</p>
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 600, color: colors.primary, marginBottom: 16 }}>More Than a Caregiver Agency</h2>
           <p style={{ fontSize: 17, color: colors.textLight, maxWidth: 580, margin: '0 auto', lineHeight: 1.65 }}>Most home care agencies focus on staffing. Arcadia approaches care the way a clinical team would — while delivering the warmth families need at home.</p>
-        </div>
-        <div style={{ display: 'flex', gap: 32, flexWrap: 'wrap' }} className="pillar-grid">
+        </FadeIn>
+        <StaggerContainer stagger={0.15} style={{ display: 'flex', gap: 32, flexWrap: 'wrap' }} className="pillar-grid">
           {pillars.map((p, i) => (
-            <div key={i} style={{ flex: '1 1 280px', background: colors.white, borderRadius: 14, padding: '32px', border: `1px solid ${colors.border}`, transition: 'all 0.3s', cursor: 'default' }}
-              onMouseOver={e => { e.currentTarget.style.boxShadow = '0 20px 40px rgba(28,43,58,0.1)'; e.currentTarget.style.transform = 'translateY(-4px)'; }}
-              onMouseOut={e => { e.currentTarget.style.boxShadow = 'none'; e.currentTarget.style.transform = 'translateY(0)'; }}>
-              <div style={{ fontSize: 40, marginBottom: 20 }}>{p.icon}</div>
-              <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 22, fontWeight: 600, color: colors.primary, marginBottom: 12 }}>{p.title}</h3>
-              <p style={{ fontSize: 15, color: colors.textLight, lineHeight: 1.7 }}>{p.body}</p>
-            </div>
+            <StaggerItem key={i} style={{ flex: '1 1 280px' }}>
+              <div style={{ background: colors.white, borderRadius: 14, padding: '32px', border: `1px solid ${colors.border}`, transition: 'all 0.3s', cursor: 'default', height: '100%' }}
+                onMouseOver={e => { e.currentTarget.style.boxShadow = '0 20px 40px rgba(28,43,58,0.1)'; e.currentTarget.style.transform = 'translateY(-4px)'; }}
+                onMouseOut={e => { e.currentTarget.style.boxShadow = 'none'; e.currentTarget.style.transform = 'translateY(0)'; }}>
+                <div style={{ fontSize: 40, marginBottom: 20 }}>{p.icon}</div>
+                <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 22, fontWeight: 600, color: colors.primary, marginBottom: 12 }}>{p.title}</h3>
+                <p style={{ fontSize: 15, color: colors.textLight, lineHeight: 1.7 }}>{p.body}</p>
+              </div>
+            </StaggerItem>
           ))}
-        </div>
+        </StaggerContainer>
       </div>
     </section>
   );
@@ -263,28 +300,30 @@ function ServicesSection() {
   return (
     <section style={{ background: colors.white, padding: '96px 24px' }}>
       <div style={{ maxWidth: 1200, margin: '0 auto' }}>
-        <div style={{ textAlign: 'center', marginBottom: 64 }}>
+        <FadeIn style={{ textAlign: 'center', marginBottom: 64 }}>
           <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: colors.accent, marginBottom: 12 }}>What We Offer</p>
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 600, color: colors.primary, marginBottom: 16 }}>Specialized Care for Complex Situations</h2>
           <p style={{ fontSize: 17, color: colors.textLight, maxWidth: 540, margin: '0 auto', lineHeight: 1.65 }}>Every service is designed around clinical understanding and human connection — not just availability.</p>
-        </div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24 }} className="services-grid">
+        </FadeIn>
+        <StaggerContainer stagger={0.1} style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24 }} className="services-grid">
           {services.map((s, i) => (
-            <a key={i} href={s.href} style={{ textDecoration: 'none' }}>
-              <div style={{ background: colors.surface, borderRadius: 14, padding: '32px 28px', border: `1px solid ${colors.border}`, height: '100%', transition: 'all 0.3s', cursor: 'pointer' }}
-                onMouseOver={e => { e.currentTarget.style.background = colors.primary; e.currentTarget.querySelectorAll('[data-text]').forEach(el => (el as HTMLElement).style.color = '#fff'); e.currentTarget.querySelectorAll('[data-sub]').forEach(el => (el as HTMLElement).style.color = 'rgba(255,255,255,0.65)'); e.currentTarget.querySelectorAll('[data-link]').forEach(el => { (el as HTMLElement).style.color = '#E8867F'; }); }}
-                onMouseOut={e => { e.currentTarget.style.background = colors.surface; e.currentTarget.querySelectorAll('[data-text]').forEach(el => (el as HTMLElement).style.color = colors.primary); e.currentTarget.querySelectorAll('[data-sub]').forEach(el => (el as HTMLElement).style.color = colors.textLight); e.currentTarget.querySelectorAll('[data-link]').forEach(el => { (el as HTMLElement).style.color = colors.accent; }); }}>
-                <span style={{ fontSize: 32, display: 'block', marginBottom: 16 }}>{s.icon}</span>
-                <h3 data-text style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 19, fontWeight: 600, color: colors.primary, marginBottom: 10, lineHeight: 1.3, transition: 'color 0.3s' }}>{s.title}</h3>
-                <p data-sub style={{ fontSize: 14, color: colors.textLight, lineHeight: 1.65, marginBottom: 16, transition: 'color 0.3s' }}>{s.desc}</p>
-                <span data-link style={{ fontSize: 13, fontWeight: 600, color: colors.accent, transition: 'color 0.3s' }}>Learn More →</span>
-              </div>
-            </a>
+            <StaggerItem key={i}>
+              <a href={s.href} style={{ textDecoration: 'none', display: 'block', height: '100%' }}>
+                <div style={{ background: colors.surface, borderRadius: 14, padding: '32px 28px', border: `1px solid ${colors.border}`, height: '100%', transition: 'all 0.3s', cursor: 'pointer' }}
+                  onMouseOver={e => { e.currentTarget.style.background = colors.primary; e.currentTarget.querySelectorAll('[data-text]').forEach(el => (el as HTMLElement).style.color = '#fff'); e.currentTarget.querySelectorAll('[data-sub]').forEach(el => (el as HTMLElement).style.color = 'rgba(255,255,255,0.65)'); e.currentTarget.querySelectorAll('[data-link]').forEach(el => { (el as HTMLElement).style.color = '#E8867F'; }); }}
+                  onMouseOut={e => { e.currentTarget.style.background = colors.surface; e.currentTarget.querySelectorAll('[data-text]').forEach(el => (el as HTMLElement).style.color = colors.primary); e.currentTarget.querySelectorAll('[data-sub]').forEach(el => (el as HTMLElement).style.color = colors.textLight); e.currentTarget.querySelectorAll('[data-link]').forEach(el => { (el as HTMLElement).style.color = colors.accent; }); }}>
+                  <span style={{ fontSize: 32, display: 'block', marginBottom: 16 }}>{s.icon}</span>
+                  <h3 data-text style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 19, fontWeight: 600, color: colors.primary, marginBottom: 10, lineHeight: 1.3, transition: 'color 0.3s' }}>{s.title}</h3>
+                  <p data-sub style={{ fontSize: 14, color: colors.textLight, lineHeight: 1.65, marginBottom: 16, transition: 'color 0.3s' }}>{s.desc}</p>
+                  <span data-link style={{ fontSize: 13, fontWeight: 600, color: colors.accent, transition: 'color 0.3s' }}>Learn More →</span>
+                </div>
+              </a>
+            </StaggerItem>
           ))}
-        </div>
-        <div style={{ textAlign: 'center', marginTop: 40 }}>
+        </StaggerContainer>
+        <FadeIn delay={0.3} style={{ textAlign: 'center', marginTop: 40 }}>
           <a href="/our-services/" style={{ fontSize: 15, fontWeight: 600, color: colors.primary, textDecoration: 'none', borderBottom: `2px solid ${colors.accent}`, paddingBottom: 2 }}>View All 12 Services →</a>
-        </div>
+        </FadeIn>
       </div>
     </section>
   );
@@ -299,31 +338,31 @@ function ProcessSection() {
   return (
     <section style={{ background: colors.warm, padding: '96px 24px' }}>
       <div style={{ maxWidth: 1200, margin: '0 auto' }}>
-        <div style={{ textAlign: 'center', marginBottom: 64 }}>
+        <FadeIn style={{ textAlign: 'center', marginBottom: 64 }}>
           <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: colors.accent, marginBottom: 12 }}>How It Works</p>
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 600, color: colors.primary, marginBottom: 16 }}>Starting Care Is Simpler Than You Think</h2>
           <p style={{ fontSize: 17, color: colors.textLight, maxWidth: 520, margin: '0 auto', lineHeight: 1.65 }}>We've guided hundreds of families through this. Here's how care starts with Arcadia.</p>
-        </div>
-        <div style={{ display: 'flex', gap: 32, alignItems: 'flex-start' }} className="steps-grid">
+        </FadeIn>
+        <StaggerContainer stagger={0.2} style={{ display: 'flex', gap: 32, alignItems: 'flex-start' }} className="steps-grid">
           {steps.map((s, i) => (
-            <div key={i} style={{ flex: '1 1 280px', textAlign: 'center' }}>
+            <StaggerItem key={i} style={{ flex: '1 1 280px', textAlign: 'center' }}>
               <div style={{ position: 'relative', marginBottom: 24 }}>
                 <Image src={s.img} alt={s.title} width={435} height={220} style={{ width: '100%', height: 220, objectFit: 'cover', borderRadius: 12, display: 'block' }} />
                 <div style={{ position: 'absolute', top: -16, left: '50%', transform: 'translateX(-50%)', background: colors.accent, color: '#fff', width: 44, height: 44, borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 700, fontSize: 14, boxShadow: '0 4px 12px rgba(200,48,42,0.4)' }}>{s.num}</div>
               </div>
               <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 21, fontWeight: 600, color: colors.primary, marginBottom: 10 }}>{s.title}</h3>
               <p style={{ fontSize: 14.5, color: colors.textLight, lineHeight: 1.7 }}>{s.body}</p>
-            </div>
+            </StaggerItem>
           ))}
-        </div>
-        <div style={{ textAlign: 'center', marginTop: 56 }}>
+        </StaggerContainer>
+        <FadeIn delay={0.3} style={{ textAlign: 'center', marginTop: 56 }}>
           <a href="tel:8449770050" style={{ display: 'inline-flex', alignItems: 'center', gap: 12, background: colors.primary, color: '#fff', padding: '18px 40px', borderRadius: 8, textDecoration: 'none', fontSize: 17, fontWeight: 700, transition: 'all 0.2s' }}
             onMouseOver={e => e.currentTarget.style.background = '#0f1a26'}
             onMouseOut={e => e.currentTarget.style.background = colors.primary}>
             <span>📞</span> Start the Conversation · (844) 977-0050
           </a>
           <p style={{ marginTop: 12, fontSize: 13, color: colors.textLight }}>No obligation. Just a real conversation about what your family needs.</p>
-        </div>
+        </FadeIn>
       </div>
     </section>
   );
@@ -333,21 +372,27 @@ function ConditionsSection() {
   return (
     <section style={{ background: colors.primary, padding: '80px 24px' }}>
       <div style={{ maxWidth: 1200, margin: '0 auto', textAlign: 'center' }}>
-        <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(200,48,42,0.9)', marginBottom: 12 }}>Conditions We Support</p>
-        <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.8rem, 3.5vw, 2.8rem)', fontWeight: 600, color: '#fff', marginBottom: 16 }}>We Understand Complex Conditions</h2>
-        <p style={{ fontSize: 16, color: 'rgba(255,255,255,0.65)', maxWidth: 520, margin: '0 auto 48px', lineHeight: 1.65 }}>Every care plan starts with understanding your loved one's specific condition, not just their tasks.</p>
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 12, justifyContent: 'center' }} className="conditions-grid">
+        <FadeIn>
+          <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(200,48,42,0.9)', marginBottom: 12 }}>Conditions We Support</p>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.8rem, 3.5vw, 2.8rem)', fontWeight: 600, color: '#fff', marginBottom: 16 }}>We Understand Complex Conditions</h2>
+          <p style={{ fontSize: 16, color: 'rgba(255,255,255,0.65)', maxWidth: 520, margin: '0 auto 48px', lineHeight: 1.65 }}>Every care plan starts with understanding your loved one's specific condition, not just their tasks.</p>
+        </FadeIn>
+        <StaggerContainer stagger={0.07} style={{ display: 'flex', flexWrap: 'wrap', gap: 12, justifyContent: 'center' }} className="conditions-grid">
           {conditions.map(c => (
-            <a key={c.slug} href={`/conditions/${c.slug}/`} style={{ textDecoration: 'none' }}>
-              <div style={{ background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.15)', borderRadius: 100, padding: '10px 22px', color: 'rgba(255,255,255,0.85)', fontSize: 14, fontWeight: 500, transition: 'all 0.2s', cursor: 'pointer' }}
-                onMouseOver={e => { e.currentTarget.style.background = colors.accent; e.currentTarget.style.borderColor = colors.accent; e.currentTarget.style.color = '#fff'; }}
-                onMouseOut={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.08)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.15)'; e.currentTarget.style.color = 'rgba(255,255,255,0.85)'; }}>
-                {c.label}
-              </div>
-            </a>
+            <StaggerItem key={c.slug} direction="none" distance={0}>
+              <a href={`/conditions/${c.slug}/`} style={{ textDecoration: 'none' }}>
+                <div style={{ background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.15)', borderRadius: 100, padding: '10px 22px', color: 'rgba(255,255,255,0.85)', fontSize: 14, fontWeight: 500, transition: 'all 0.2s', cursor: 'pointer' }}
+                  onMouseOver={e => { e.currentTarget.style.background = colors.accent; e.currentTarget.style.borderColor = colors.accent; e.currentTarget.style.color = '#fff'; }}
+                  onMouseOut={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.08)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.15)'; e.currentTarget.style.color = 'rgba(255,255,255,0.85)'; }}>
+                  {c.label}
+                </div>
+              </a>
+            </StaggerItem>
           ))}
-        </div>
-        <a href="/conditions/" style={{ display: 'inline-block', marginTop: 36, fontSize: 14, fontWeight: 600, color: '#E8867F', textDecoration: 'none', borderBottom: '1px solid rgba(200,48,42,0.4)', paddingBottom: 2 }}>View All Conditions →</a>
+        </StaggerContainer>
+        <FadeIn delay={0.4}>
+          <a href="/conditions/" style={{ display: 'inline-block', marginTop: 36, fontSize: 14, fontWeight: 600, color: '#E8867F', textDecoration: 'none', borderBottom: '1px solid rgba(200,48,42,0.4)', paddingBottom: 2 }}>View All Conditions →</a>
+        </FadeIn>
       </div>
     </section>
   );
@@ -362,10 +407,10 @@ function TestimonialsSection() {
   return (
     <section style={{ background: colors.white, padding: '96px 24px' }}>
       <div style={{ maxWidth: 1200, margin: '0 auto' }}>
-        <div style={{ textAlign: 'center', marginBottom: 64 }}>
+        <FadeIn style={{ textAlign: 'center', marginBottom: 64 }}>
           <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: colors.accent, marginBottom: 12 }}>What Families Say</p>
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 600, color: colors.primary }}>Families Across the GTA Trust Arcadia</h2>
-        </div>
+        </FadeIn>
         <div style={{ maxWidth: 820, margin: '0 auto 48px', textAlign: 'center', position: 'relative', minHeight: 180 }}>
           {testimonials.map((t, i) => (
             <div key={i} style={{ position: i === 0 ? 'relative' : 'absolute', top: 0, left: 0, right: 0, opacity: active === i ? 1 : 0, transition: 'opacity 0.8s ease', pointerEvents: active === i ? 'auto' : 'none' }}>
@@ -390,7 +435,7 @@ function ReferralSection() {
   return (
     <section style={{ background: colors.surface, padding: '80px 24px', borderTop: `1px solid ${colors.border}`, borderBottom: `1px solid ${colors.border}` }}>
       <div style={{ maxWidth: 900, margin: '0 auto', display: 'flex', alignItems: 'center', gap: 60, flexWrap: 'wrap' }}>
-        <div style={{ flex: '1 1 300px' }}>
+        <FadeIn direction="left" style={{ flex: '1 1 300px' }}>
           <div style={{ display: 'inline-block', background: 'rgba(200,48,42,0.08)', border: '1px solid rgba(200,48,42,0.2)', borderRadius: 100, padding: '5px 14px', marginBottom: 16 }}>
             <span style={{ color: colors.accent, fontSize: 11, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase' }}>For Referring Professionals</span>
           </div>
@@ -401,16 +446,18 @@ function ReferralSection() {
             onMouseOut={e => e.currentTarget.style.background = colors.primary}>
             Submit a Referral →
           </a>
-        </div>
-        <div style={{ flex: '1 1 280px', background: colors.white, borderRadius: 12, padding: '32px', border: `1px solid ${colors.border}` }}>
-          <h4 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 18, fontWeight: 600, color: colors.primary, marginBottom: 20 }}>We work with:</h4>
-          {['Hospital discharge planners', 'Social workers & case managers', 'Occupational therapists', 'Geriatricians & neurologists', 'Long-term care transition teams', 'Retirement home coordinators'].map(r => (
-            <div key={r} style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 12 }}>
-              <span style={{ color: colors.accent, fontSize: 16, flexShrink: 0 }}>✓</span>
-              <span style={{ fontSize: 14, color: colors.text }}>{r}</span>
-            </div>
-          ))}
-        </div>
+        </FadeIn>
+        <FadeIn direction="right" delay={0.15} style={{ flex: '1 1 280px' }}>
+          <div style={{ background: colors.white, borderRadius: 12, padding: '32px', border: `1px solid ${colors.border}` }}>
+            <h4 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 18, fontWeight: 600, color: colors.primary, marginBottom: 20 }}>We work with:</h4>
+            {['Hospital discharge planners', 'Social workers & case managers', 'Occupational therapists', 'Geriatricians & neurologists', 'Long-term care transition teams', 'Retirement home coordinators'].map(r => (
+              <div key={r} style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 12 }}>
+                <span style={{ color: colors.accent, fontSize: 16, flexShrink: 0 }}>✓</span>
+                <span style={{ fontSize: 14, color: colors.text }}>{r}</span>
+              </div>
+            ))}
+          </div>
+        </FadeIn>
       </div>
     </section>
   );
@@ -420,27 +467,31 @@ function LocationsSection() {
   return (
     <section style={{ background: colors.white, padding: '96px 24px' }}>
       <div style={{ maxWidth: 1200, margin: '0 auto' }}>
-        <div style={{ textAlign: 'center', marginBottom: 56 }}>
+        <FadeIn style={{ textAlign: 'center', marginBottom: 56 }}>
           <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: colors.accent, marginBottom: 12 }}>Where We Serve</p>
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 600, color: colors.primary, marginBottom: 16 }}>Serving Families Across the GTA</h2>
           <p style={{ fontSize: 16, color: colors.textLight, maxWidth: 480, margin: '0 auto', lineHeight: 1.65 }}>From downtown Toronto to Halton Region — local care, regional expertise.</p>
-        </div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: 16 }} className="locations-grid">
+        </FadeIn>
+        <StaggerContainer stagger={0.1} style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: 16 }} className="locations-grid">
           {locations.map((l, i) => (
-            <a key={i} href={l.href} style={{ textDecoration: 'none' }}>
-              <div style={{ background: colors.surface, border: `1px solid ${colors.border}`, borderRadius: 12, padding: '28px 20px', textAlign: 'center', transition: 'all 0.3s' }}
-                onMouseOver={e => { e.currentTarget.style.background = colors.primary; e.currentTarget.querySelectorAll('*').forEach(el => { if ((el as HTMLElement).dataset.title) (el as HTMLElement).style.color = '#fff'; if ((el as HTMLElement).dataset.sub) (el as HTMLElement).style.color = 'rgba(255,255,255,0.6)'; }); }}
-                onMouseOut={e => { e.currentTarget.style.background = colors.surface; e.currentTarget.querySelectorAll('*').forEach(el => { if ((el as HTMLElement).dataset.title) (el as HTMLElement).style.color = colors.primary; if ((el as HTMLElement).dataset.sub) (el as HTMLElement).style.color = colors.textLight; }); }}>
-                <div style={{ fontSize: 28, marginBottom: 10 }}>📍</div>
-                <div data-title style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontWeight: 600, fontSize: 17, color: colors.primary, marginBottom: 6, transition: 'color 0.3s' }}>{l.name}</div>
-                <div data-sub style={{ fontSize: 12, color: colors.textLight, lineHeight: 1.5, transition: 'color 0.3s' }}>{l.sub}</div>
-              </div>
-            </a>
+            <StaggerItem key={i}>
+              <a href={l.href} style={{ textDecoration: 'none', display: 'block' }}>
+                <div style={{ background: colors.surface, border: `1px solid ${colors.border}`, borderRadius: 12, padding: '28px 20px', textAlign: 'center', transition: 'all 0.3s' }}
+                  onMouseOver={e => { e.currentTarget.style.background = colors.primary; e.currentTarget.querySelectorAll('*').forEach(el => { if ((el as HTMLElement).dataset.title) (el as HTMLElement).style.color = '#fff'; if ((el as HTMLElement).dataset.sub) (el as HTMLElement).style.color = 'rgba(255,255,255,0.6)'; }); }}
+                  onMouseOut={e => { e.currentTarget.style.background = colors.surface; e.currentTarget.querySelectorAll('*').forEach(el => { if ((el as HTMLElement).dataset.title) (el as HTMLElement).style.color = colors.primary; if ((el as HTMLElement).dataset.sub) (el as HTMLElement).style.color = colors.textLight; }); }}>
+                  <div style={{ fontSize: 28, marginBottom: 10 }}>📍</div>
+                  <div data-title style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontWeight: 600, fontSize: 17, color: colors.primary, marginBottom: 6, transition: 'color 0.3s' }}>{l.name}</div>
+                  <div data-sub style={{ fontSize: 12, color: colors.textLight, lineHeight: 1.5, transition: 'color 0.3s' }}>{l.sub}</div>
+                </div>
+              </a>
+            </StaggerItem>
           ))}
-        </div>
-        <p style={{ textAlign: 'center', marginTop: 28, fontSize: 13, color: colors.textLight }}>
-          Don&apos;t see your area? <a href="tel:8449770050" style={{ color: colors.accent, fontWeight: 600, textDecoration: 'none' }}>Call us</a> — we may still serve you.
-        </p>
+        </StaggerContainer>
+        <FadeIn delay={0.3} style={{ textAlign: 'center', marginTop: 28 }}>
+          <p style={{ fontSize: 13, color: colors.textLight }}>
+            Don&apos;t see your area? <a href="tel:8449770050" style={{ color: colors.accent, fontWeight: 600, textDecoration: 'none' }}>Call us</a> — we may still serve you.
+          </p>
+        </FadeIn>
       </div>
     </section>
   );
@@ -469,7 +520,7 @@ function CTASection() {
     <section style={{ background: colors.primary, padding: '96px 24px' }}>
       <div style={{ maxWidth: 1100, margin: '0 auto' }}>
         <div style={{ display: 'flex', gap: 80, alignItems: 'flex-start', flexWrap: 'wrap' }} className="cta-grid">
-          <div style={{ flex: '1 1 340px' }}>
+          <FadeIn direction="left" style={{ flex: '1 1 340px' }}>
             <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(200,48,42,0.9)', marginBottom: 12 }}>Get In Touch</p>
             <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 4vw, 3.2rem)', fontWeight: 600, color: '#fff', marginBottom: 20, lineHeight: 1.2 }}>It Starts With One Conversation</h2>
             <p style={{ fontSize: 16, color: 'rgba(255,255,255,0.65)', lineHeight: 1.7, marginBottom: 40 }}>There&apos;s no obligation. Just a real conversation about your family&apos;s situation and how we can help — clinical expertise and genuine care, from the first call.</p>
@@ -496,8 +547,8 @@ function CTASection() {
                 </div>
               </div>
             </div>
-          </div>
-          <div style={{ flex: '1 1 380px', background: 'rgba(255,255,255,0.05)', borderRadius: 16, padding: '40px', border: '1px solid rgba(255,255,255,0.1)' }}>
+          </FadeIn>
+          <FadeIn direction="right" delay={0.15} style={{ flex: '1 1 380px', background: 'rgba(255,255,255,0.05)', borderRadius: 16, padding: '40px', border: '1px solid rgba(255,255,255,0.1)' }}>
             {sent ? (
               <div style={{ textAlign: 'center', padding: '40px 0' }}>
                 <div style={{ fontSize: 48, marginBottom: 16 }}>✅</div>
@@ -537,7 +588,7 @@ function CTASection() {
                 </form>
               </>
             )}
-          </div>
+          </FadeIn>
         </div>
       </div>
     </section>

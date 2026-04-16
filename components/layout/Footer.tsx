@@ -29,37 +29,41 @@ export default function Footer() {
       <style>{`
         @media (max-width: 768px) {
           .footer-dark-section { padding-bottom: 80px; }
+          .footer-grid { grid-template-columns: 1fr 1fr !important; }
+        }
+        @media (max-width: 480px) {
+          .footer-grid { grid-template-columns: 1fr !important; }
         }
       `}</style>
-      {/* Section 1: Logo, tagline, social — 4-column grid for alignment with section 2 */}
+
+      {/* Single dark footer */}
       <div
+        className="footer-dark-section"
         style={{
-          background: "#F7F3EE",
-          borderBottom: "1px solid #E5E0D8",
-          padding: "32px 24px",
+          background: "#111B26",
+          padding: "56px 24px 96px",
+          color: "rgba(255,255,255,0.65)",
         }}
       >
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
           <div
+            className="footer-grid"
             style={{
               display: "grid",
-              gridTemplateColumns: "1.5fr 1.5fr 1.5fr 2fr",
+              gridTemplateColumns: "1.8fr 1.2fr 1.2fr 2fr",
               gap: 48,
+              marginBottom: 48,
             }}
           >
+            {/* Branding column */}
             <div>
-              <img
-                src="/images/arcadia-logo.svg"
-                alt="Arcadia Home Care"
-                style={{ height: 44, marginBottom: 20 }}
-              />
               <p
                 style={{
                   fontSize: 13,
                   lineHeight: 1.7,
                   marginBottom: 24,
                   maxWidth: 220,
-                  color: "#6B7280",
+                  color: "rgba(255,255,255,0.55)",
                 }}
               >
                 Clinical expertise and human compassion, together in the home.
@@ -74,13 +78,14 @@ export default function Footer() {
                     width: 36,
                     height: 36,
                     background: "transparent",
-                    border: "1px solid #D1CBC1",
+                    border: "1px solid rgba(255,255,255,0.2)",
                     borderRadius: "50%",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
-                    color: "#1C2B3A",
+                    color: "rgba(255,255,255,0.7)",
                     textDecoration: "none",
+                    transition: "border-color 0.2s, color 0.2s",
                   }}
                   title="Facebook"
                 >
@@ -96,13 +101,14 @@ export default function Footer() {
                     width: 36,
                     height: 36,
                     background: "transparent",
-                    border: "1px solid #D1CBC1",
+                    border: "1px solid rgba(255,255,255,0.2)",
                     borderRadius: "50%",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
-                    color: "#1C2B3A",
+                    color: "rgba(255,255,255,0.7)",
                     textDecoration: "none",
+                    transition: "border-color 0.2s, color 0.2s",
                   }}
                   title="LinkedIn"
                 >
@@ -118,13 +124,14 @@ export default function Footer() {
                     width: 36,
                     height: 36,
                     background: "transparent",
-                    border: "1px solid #D1CBC1",
+                    border: "1px solid rgba(255,255,255,0.2)",
                     borderRadius: "50%",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
-                    color: "#1C2B3A",
+                    color: "rgba(255,255,255,0.7)",
                     textDecoration: "none",
+                    transition: "border-color 0.2s, color 0.2s",
                   }}
                   title="Instagram"
                 >
@@ -136,31 +143,6 @@ export default function Footer() {
                 </a>
               </div>
             </div>
-            <div />
-            <div />
-            <div />
-          </div>
-        </div>
-      </div>
-
-      {/* Section 2: Four columns + copyright */}
-      <div
-        className="footer-dark-section"
-        style={{
-          background: "#111B26",
-          padding: "56px 24px 96px",
-          color: "rgba(255,255,255,0.65)",
-        }}
-      >
-        <div style={{ maxWidth: 1200, margin: "0 auto" }}>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1.5fr 1.5fr 2fr",
-              gap: 48,
-              marginBottom: 48,
-            }}
-          >
             <div>
               <h4
                 style={{

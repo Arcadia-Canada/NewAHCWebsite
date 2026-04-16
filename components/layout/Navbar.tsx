@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { colors } from "@/components/arcadia-colors";
 
 export default function Navbar() {
@@ -166,66 +167,78 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {open && (
-        <div
-          style={{
-            position: "fixed",
-            inset: 0,
-            zIndex: 99,
-            background: colors.primary,
-            paddingTop: 80,
-            paddingLeft: 24,
-            paddingRight: 24,
-            display: "flex",
-            flexDirection: "column",
-            gap: 8,
-            fontFamily: "'DM Sans', system-ui, sans-serif",
-          }}
-        >
-          {[
-            "Our Services",
-            "Conditions",
-            "How Care Starts",
-            "Resources",
-            "Locations",
-            "About",
-            "Careers",
-            "Contact",
-          ].map((item) => (
-            <a
-              key={item}
-              href={`/${item.toLowerCase().replace(/ /g, "-")}/`}
-              style={{
-                color: "#fff",
-                textDecoration: "none",
-                fontSize: 20,
-                fontWeight: 500,
-                padding: "12px 0",
-                borderBottom: "1px solid rgba(255,255,255,0.08)",
-              }}
-              onClick={() => setOpen(false)}
-            >
-              {item}
-            </a>
-          ))}
-          <a
-            href="tel:8449770050"
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
             style={{
-              marginTop: 24,
-              background: colors.accent,
-              color: "#fff",
-              padding: "16px 24px",
-              borderRadius: 8,
-              textDecoration: "none",
-              fontSize: 18,
-              fontWeight: 700,
-              textAlign: "center",
+              position: "fixed",
+              inset: 0,
+              zIndex: 99,
+              background: colors.primary,
+              paddingTop: 80,
+              paddingLeft: 24,
+              paddingRight: 24,
+              display: "flex",
+              flexDirection: "column",
+              gap: 8,
+              fontFamily: "'DM Sans', system-ui, sans-serif",
             }}
           >
-            Call (844) 977-0050
-          </a>
-        </div>
-      )}
+            {[
+              "Our Services",
+              "Conditions",
+              "How Care Starts",
+              "Resources",
+              "Locations",
+              "About",
+              "Careers",
+              "Contact",
+            ].map((item, i) => (
+              <motion.a
+                key={item}
+                href={`/${item.toLowerCase().replace(/ /g, "-")}/`}
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.3, delay: 0.05 * i, ease: [0.25, 0.1, 0.25, 1] }}
+                style={{
+                  color: "#fff",
+                  textDecoration: "none",
+                  fontSize: 20,
+                  fontWeight: 500,
+                  padding: "12px 0",
+                  borderBottom: "1px solid rgba(255,255,255,0.08)",
+                }}
+                onClick={() => setOpen(false)}
+              >
+                {item}
+              </motion.a>
+            ))}
+            <motion.a
+              href="tel:8449770050"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
+              style={{
+                marginTop: 24,
+                background: colors.accent,
+                color: "#fff",
+                padding: "16px 24px",
+                borderRadius: 8,
+                textDecoration: "none",
+                fontSize: 18,
+                fontWeight: 700,
+                textAlign: "center",
+              }}
+            >
+              Call (844) 977-0050
+            </motion.a>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       <style>{`
         @media (max-width: 768px) {
