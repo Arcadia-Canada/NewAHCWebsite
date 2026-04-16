@@ -173,7 +173,7 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
+            transition={{ duration: 0.3, ease: [0.25, 0.1, 0.25, 1] as const }}
             style={{
               position: "fixed",
               inset: 0,
@@ -203,7 +203,7 @@ export default function Navbar() {
                 href={`/${item.toLowerCase().replace(/ /g, "-")}/`}
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.3, delay: 0.05 * i, ease: [0.25, 0.1, 0.25, 1] }}
+                transition={{ duration: 0.3, delay: 0.05 * i, ease: [0.25, 0.1, 0.25, 1] as const }}
                 style={{
                   color: "#fff",
                   textDecoration: "none",
@@ -221,7 +221,7 @@ export default function Navbar() {
               href="tel:8449770050"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
+              transition={{ duration: 0.4, delay: 0.4, ease: [0.25, 0.1, 0.25, 1] as const }}
               style={{
                 marginTop: 24,
                 background: colors.accent,

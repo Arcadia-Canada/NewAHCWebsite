@@ -4,6 +4,8 @@ import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
 import type { ReactNode } from "react";
 
+const EASE = [0.25, 0.1, 0.25, 1] as const;
+
 interface AnimatedHeroProps {
   eyebrow: string;
   title: ReactNode;
@@ -24,18 +26,7 @@ export default function AnimatedHero({
   overlayCard,
 }: AnimatedHeroProps) {
   const prefersReduced = useReducedMotion();
-  const M = prefersReduced ? "div" : motion.div;
-  const MH1 = prefersReduced ? "h1" : motion.h1;
-  const MP = prefersReduced ? "p" : motion.p;
-
-  const fadeUp = (delay: number) =>
-    prefersReduced
-      ? {}
-      : {
-          initial: { opacity: 0, y: 20 },
-          animate: { opacity: 1, y: 0 },
-          transition: { duration: 0.6, delay, ease: [0.25, 0.1, 0.25, 1] },
-        };
+  const skip = !!prefersReduced;
 
   return (
     <section
@@ -61,8 +52,10 @@ export default function AnimatedHero({
         }}
       >
         <div style={{ flex: "1 1 55%" }}>
-          <M
-            {...fadeUp(0.1)}
+          <motion.div
+            initial={skip ? false : { opacity: 0, y: 20 }}
+            animate={skip ? undefined : { opacity: 1, y: 0 }}
+            transition={skip ? undefined : { duration: 0.6, delay: 0.1, ease: EASE }}
             style={{
               display: "inline-block",
               background: "rgba(200,48,42,0.15)",
@@ -83,10 +76,12 @@ export default function AnimatedHero({
             >
               {eyebrow}
             </span>
-          </M>
+          </motion.div>
 
-          <MH1
-            {...fadeUp(0.2)}
+          <motion.h1
+            initial={skip ? false : { opacity: 0, y: 20 }}
+            animate={skip ? undefined : { opacity: 1, y: 0 }}
+            transition={skip ? undefined : { duration: 0.6, delay: 0.2, ease: EASE }}
             style={{
               fontFamily: "'Cormorant Garamond', Georgia, serif",
               fontSize: "clamp(2.2rem, 5vw, 3.8rem)",
@@ -98,10 +93,12 @@ export default function AnimatedHero({
             }}
           >
             {title}
-          </MH1>
+          </motion.h1>
 
-          <MP
-            {...fadeUp(0.35)}
+          <motion.p
+            initial={skip ? false : { opacity: 0, y: 20 }}
+            animate={skip ? undefined : { opacity: 1, y: 0 }}
+            transition={skip ? undefined : { duration: 0.6, delay: 0.35, ease: EASE }}
             style={{
               fontSize: 18,
               lineHeight: 1.65,
@@ -112,29 +109,25 @@ export default function AnimatedHero({
             }}
           >
             {subtitle}
-          </MP>
+          </motion.p>
 
           {children && (
-            <M {...fadeUp(0.5)}>
+            <motion.div
+              initial={skip ? false : { opacity: 0, y: 20 }}
+              animate={skip ? undefined : { opacity: 1, y: 0 }}
+              transition={skip ? undefined : { duration: 0.6, delay: 0.5, ease: EASE }}
+            >
               {children}
-            </M>
+            </motion.div>
           )}
         </div>
 
-        <M
+        <motion.div
           className="animated-hero-image"
           style={{ flex: "1 1 40%", position: "relative", maxWidth: 480 }}
-          {...(prefersReduced
-            ? {}
-            : {
-                initial: { opacity: 0, scale: 0.95, x: 40 },
-                animate: { opacity: 1, scale: 1, x: 0 },
-                transition: {
-                  duration: 0.7,
-                  delay: 0.3,
-                  ease: [0.25, 0.1, 0.25, 1],
-                },
-              })}
+          initial={skip ? false : { opacity: 0, scale: 0.95, x: 40 }}
+          animate={skip ? undefined : { opacity: 1, scale: 1, x: 0 }}
+          transition={skip ? undefined : { duration: 0.7, delay: 0.3, ease: EASE }}
         >
           <div
             style={{
@@ -167,7 +160,7 @@ export default function AnimatedHero({
             />
           </div>
           {overlayCard}
-        </M>
+        </motion.div>
       </div>
 
       <style>{`

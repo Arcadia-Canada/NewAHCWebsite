@@ -179,7 +179,7 @@ function Hero() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1, ease: [0.25, 0.1, 0.25, 1] }}
+            transition={{ duration: 0.5, delay: 0.1, ease: [0.25, 0.1, 0.25, 1] as const }}
             style={{ display: 'inline-block', background: 'rgba(200,48,42,0.15)', border: '1px solid rgba(200,48,42,0.3)', borderRadius: 100, padding: '6px 16px', marginBottom: 24 }}
           >
             <span style={{ color: '#E8867F', fontSize: 12, fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase' }}>Specialized Home Care · Toronto & GTA</span>
@@ -187,7 +187,7 @@ function Hero() {
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2, ease: [0.25, 0.1, 0.25, 1] }}
+            transition={{ duration: 0.6, delay: 0.2, ease: [0.25, 0.1, 0.25, 1] as const }}
             style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.6rem, 5.5vw, 4.8rem)', fontWeight: 600, lineHeight: 1.12, color: '#fff', marginBottom: 24, letterSpacing: '-0.01em' }}
           >
             Care That Understands<br />
@@ -196,7 +196,7 @@ function Hero() {
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.35, ease: [0.25, 0.1, 0.25, 1] }}
+            transition={{ duration: 0.6, delay: 0.35, ease: [0.25, 0.1, 0.25, 1] as const }}
             style={{ fontSize: 18, lineHeight: 1.65, color: 'rgba(255,255,255,0.75)', marginBottom: 36, maxWidth: 540, fontWeight: 300 }}
           >
             Arcadia brings clinical expertise and genuine compassion together — guiding families through dementia, brain injury, recovery, and complex aging at home. Serving the GTA since 2005.
@@ -204,7 +204,7 @@ function Hero() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
+            transition={{ duration: 0.6, delay: 0.5, ease: [0.25, 0.1, 0.25, 1] as const }}
             style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 16 }}
           >
             <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', alignItems: 'center' }}>
@@ -238,7 +238,7 @@ function Hero() {
           style={{ flex: '1 1 40%', position: 'relative', maxWidth: 480 }}
           initial={{ opacity: 0, scale: 0.95, x: 40 }}
           animate={{ opacity: 1, scale: 1, x: 0 }}
-          transition={{ duration: 0.7, delay: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
+          transition={{ duration: 0.7, delay: 0.3, ease: [0.25, 0.1, 0.25, 1] as const }}
         >
           <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', boxShadow: '0 40px 80px rgba(0,0,0,0.4)' }}>
             <Image src="/images/image 43-08b42066-435w.webp" alt="Arcadia caregiver with senior client" width={480} height={520} priority style={{ width: '100%', height: 520, objectFit: 'cover', display: 'block' }} />
@@ -248,7 +248,7 @@ function Hero() {
             href="/referral-form/"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.7, ease: [0.25, 0.1, 0.25, 1] }}
+            transition={{ duration: 0.5, delay: 0.7, ease: [0.25, 0.1, 0.25, 1] as const }}
             style={{ position: 'absolute', bottom: -20, left: -20, background: '#fff', borderRadius: 12, padding: '16px 20px', boxShadow: '0 20px 40px rgba(0,0,0,0.15)', maxWidth: 220, display: 'block', textDecoration: 'none', color: 'inherit', transition: 'box-shadow 0.2s' }}
             onMouseOver={e => { e.currentTarget.style.boxShadow = '0 24px 48px rgba(0,0,0,0.18)'; }}
             onMouseOut={e => { e.currentTarget.style.boxShadow = '0 20px 40px rgba(0,0,0,0.15)'; }}
