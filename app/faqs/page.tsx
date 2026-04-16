@@ -104,7 +104,7 @@ export default function FaqPage() {
           eyebrow="Frequently Asked Questions"
           title={<>Clear Answers for Families<br />Exploring Home Care</>}
           subtitle="If your family is navigating dementia, discharge recovery, or caregiver burnout, these are the questions we hear most often."
-          imageSrc="/images/heroes/faqs.jpg"
+          imageSrc="/images/heroes/faqs.webp"
           imageAlt="Family discussing home care options together"
         />
 

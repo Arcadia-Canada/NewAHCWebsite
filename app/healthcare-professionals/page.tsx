@@ -145,7 +145,7 @@ export default function HealthcareProfessionalsPage() {
           eyebrow="For Healthcare Professionals"
           title={<>Referring Patients to<br />Arcadia Home Care</>}
           subtitle="Arcadia partners with discharge planners, social workers, Ontario Health atHome coordinators, and specialist teams across Toronto and the GTA to provide seamless transitions from hospital or clinic to home."
-          imageSrc="/images/heroes/healthcare-professionals.jpg"
+          imageSrc="/images/heroes/healthcare-professionals.webp"
           imageAlt="Healthcare team coordinating patient referral"
         >
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>

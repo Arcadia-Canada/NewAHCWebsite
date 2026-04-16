@@ -25,7 +25,7 @@ export default function ConditionsHubPage() {
         eyebrow="Conditions We Support"
         title={<>Understanding Complex<br />Conditions at Home</>}
         subtitle="A hub for families navigating dementia, brain injury, stroke recovery, Parkinson's, palliative illness, and more."
-        imageSrc="/images/heroes/conditions.jpg"
+        imageSrc="/images/heroes/conditions.webp"
         imageAlt="Family member providing comfort during home care"
       >
         <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>

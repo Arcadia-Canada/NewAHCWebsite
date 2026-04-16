@@ -60,7 +60,7 @@ export default function OurServicesPage() {
           eyebrow="What We Offer"
           title={<>Specialized Care for<br />Complex Situations</>}
           subtitle="Every service is built around clinical understanding — not just availability. We match care to the person, not the other way around."
-          imageSrc="/images/heroes/our-services.jpg"
+          imageSrc="/images/heroes/our-services.webp"
           imageAlt="Caregiver assisting senior with home care services"
         >
           <div className="services-hero-ctas">

@@ -173,7 +173,7 @@ export default function ResourcesHubPage() {
           eyebrow="Resources"
           title={<>Guides for Families<br />& Caregivers</>}
           subtitle="Practical guides on dementia and memory care, family caregiver support, navigating home care, and brain injury rehabilitation — to help you and your family make informed decisions."
-          imageSrc="/images/heroes/resources.jpg"
+          imageSrc="/images/heroes/resources.webp"
           imageAlt="Family member researching home care resources"
         >
           <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>

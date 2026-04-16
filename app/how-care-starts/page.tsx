@@ -23,7 +23,7 @@ export default function HowCareStartsHubPage() {
         eyebrow="How Care Starts"
         title={<>Simple Steps to Get<br />the Right Care</>}
         subtitle="From your first call to ongoing support — here is exactly what happens when you reach out to Arcadia."
-        imageSrc="/images/heroes/how-care-starts.jpg"
+        imageSrc="/images/heroes/how-care-starts.webp"
         imageAlt="Care team planning a personalized home care program"
       >
         <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>

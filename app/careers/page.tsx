@@ -380,7 +380,7 @@ export default function CareersPage() {
           eyebrow="Join Our Team"
           title={<>Make a Real Difference.<br />Build a Career You&apos;re Proud Of.</>}
           subtitle="Arcadia Home Care is always looking for warm, dedicated professionals who believe in the dignity and independence of every person they care for."
-          imageSrc="/images/heroes/careers.jpg"
+          imageSrc="/images/heroes/careers.webp"
           imageAlt="Healthcare professional coordinating patient care"
         >
           <div className="careers-hero-actions">

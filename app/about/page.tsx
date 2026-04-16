@@ -77,7 +77,7 @@ export default function AboutPage() {
           eyebrow="Our Caregivers"
           title={<>The Most Critical Part of Our Service Is Our Caregivers.</>}
           subtitle="They are the face of Arcadia. That's why we spend so much care ensuring they are the best they can be — screened rigorously, trained continuously, and matched thoughtfully."
-          imageSrc="/images/heroes/about.jpg"
+          imageSrc="/images/heroes/about.webp"
           imageAlt="Caregiver helping senior with daily activities at home"
         />
 
