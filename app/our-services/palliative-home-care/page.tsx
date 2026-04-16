@@ -10,6 +10,7 @@
 
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import AnimatedHero from '@/components/ui/AnimatedHero'
 
 export const metadata: Metadata = {
   title: 'Palliative Home Care | Toronto & GTA | Arcadia Home Care',
@@ -131,26 +132,11 @@ export default function PalliativeHomeCarePage() {
       <style>{`
         .service-page { font-family: 'DM Sans', system-ui, sans-serif; color: #2D2D2D; }
 
-        /* Hero — slightly quieter than other service pages */
-        .service-hero { background: #1C2B3A; padding: 96px 24px 80px; }
-        .service-hero-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 360px; gap: 64px; align-items: center; }
-        @media (max-width: 900px) { .service-hero-inner { grid-template-columns: 1fr; } }
         .service-eyebrow { font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #C8302A; margin-bottom: 14px; }
-        .service-hero h1 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(2.4rem, 5vw, 3.8rem); font-weight: 600; color: #fff; line-height: 1.15; margin-bottom: 20px; }
-        .service-hero p { font-size: 1.05rem; color: rgba(255,255,255,0.72); line-height: 1.8; margin-bottom: 32px; }
-        .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
         .btn-red { background: #C8302A; color: #fff; padding: 14px 28px; border-radius: 8px; font-size: 15px; font-weight: 700; text-decoration: none; transition: all 0.2s; box-shadow: 0 8px 20px rgba(200,48,42,0.3); display: inline-flex; align-items: center; gap: 8px; }
         .btn-red:hover { background: #a82520; transform: translateY(-2px); }
         .btn-outline { background: transparent; color: #fff; padding: 14px 28px; border-radius: 8px; font-size: 15px; font-weight: 700; text-decoration: none; border: 1.5px solid rgba(255,255,255,0.35); transition: all 0.2s; display: inline-flex; align-items: center; }
         .btn-outline:hover { background: rgba(255,255,255,0.1); }
-
-        .hero-trust { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 14px; padding: 28px; }
-        .trust-item { display: flex; align-items: flex-start; gap: 12px; padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,0.08); }
-        .trust-item:last-child { border-bottom: none; padding-bottom: 0; }
-        .trust-item:first-child { padding-top: 0; }
-        .trust-icon { font-size: 20px; flex-shrink: 0; margin-top: 2px; }
-        .trust-text-title { font-size: 14px; font-weight: 700; color: #fff; margin-bottom: 2px; }
-        .trust-text-body { font-size: 13px; color: rgba(255,255,255,0.55); line-height: 1.5; }
 
         /* Professional banner — quieter cream version for this page */
         .pro-banner { background: #F7F3EE; border-bottom: 1px solid #E5E0D8; padding: 14px 24px; }
@@ -259,46 +245,23 @@ export default function PalliativeHomeCarePage() {
       <main className="service-page">
 
         {/* Hero */}
-        <section className="service-hero">
-          <div className="service-hero-inner">
-            <div>
-              <p className="service-eyebrow">Our Services · Toronto & GTA</p>
-              <h1>Palliative Home Care</h1>
-              <p>
-                When a loved one is living with a serious or life-limiting illness,
-                the care they receive at home matters deeply. Arcadia provides
-                compassionate, clinically coordinated palliative support — filling
-                the gaps in publicly funded hours so your loved one can remain
-                at home with consistent presence, comfort, and dignity.
-              </p>
-              <div className="hero-actions">
-                <a href="tel:8449770050" className="btn-red">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                    <path d="M2 2.5C2 8.299 5.701 12 11.5 12l.5-2.5-2.5-.5-.5 1c-2-1-3-2-4-4l1-.5L5.5 3 3 2.5z" stroke="#fff" strokeWidth="1.4" strokeLinejoin="round"/>
-                  </svg>
-                  Call (844) 977-0050
-                </a>
-                <Link href="/contact/" className="btn-outline">Talk to Our Team</Link>
-              </div>
-            </div>
-            <div className="hero-trust">
-              {[
-                { icon: '🕯️', title: 'Experienced in end-of-life home care', body: 'Our caregivers in palliative situations are selected for experience, temperament, and genuine capacity to be present in this setting.' },
-                { icon: '🔗', title: 'Works alongside your palliative care team', body: 'We follow the comfort plan and communicate with the clinical team — not independently of it.' },
-                { icon: '🌙', title: 'Overnight and 24-hour coverage available', body: 'Consistent presence when it matters most, including through the night and around the clock when needed.' },
-                { icon: '💙', title: 'Support for family caregivers too', body: 'Scheduled respite so family members can rest, attend to their lives, and be present when it counts.' },
-              ].map((item, i) => (
-                <div key={i} className="trust-item">
-                  <span className="trust-icon">{item.icon}</span>
-                  <div>
-                    <div className="trust-text-title">{item.title}</div>
-                    <div className="trust-text-body">{item.body}</div>
-                  </div>
-                </div>
-              ))}
-            </div>
+        <AnimatedHero
+          eyebrow="Our Services · Toronto & GTA"
+          title="Palliative Home Care"
+          subtitle="When a loved one is living with a serious or life-limiting illness, the care they receive at home matters deeply. Arcadia provides compassionate, clinically coordinated palliative support — filling the gaps in publicly funded hours so your loved one can remain at home with consistent presence, comfort, and dignity."
+          imageSrc="/images/services/palliative.webp"
+          imageAlt="Compassionate palliative care support at home"
+        >
+          <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+            <a href="tel:8449770050" className="btn-red">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M2 2.5C2 8.299 5.701 12 11.5 12l.5-2.5-2.5-.5-.5 1c-2-1-3-2-4-4l1-.5L5.5 3 3 2.5z" stroke="#fff" strokeWidth="1.4" strokeLinejoin="round"/>
+              </svg>
+              Call (844) 977-0050
+            </a>
+            <Link href="/contact/" className="btn-outline">Talk to Our Team</Link>
           </div>
-        </section>
+        </AnimatedHero>
 
         {/* Professional banner */}
         <div className="pro-banner">

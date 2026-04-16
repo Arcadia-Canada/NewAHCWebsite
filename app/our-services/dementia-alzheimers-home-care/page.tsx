@@ -9,8 +9,8 @@
 
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import AnimatedHero from '@/components/ui/AnimatedHero'
 import { getServiceImages } from '@/lib/serviceImages'
-import ServiceHeroImage from '@/components/ui/ServiceHeroImage'
 import ServiceMidImage from '@/components/ui/ServiceMidImage'
 
 const images = getServiceImages('dementia-alzheimers')
@@ -135,24 +135,10 @@ export default function DementiaAlzheimersHomeCarePage() {
       <style>{`
         .service-page { font-family: 'DM Sans', system-ui, sans-serif; color: #2D2D2D; }
 
-        /* Hero */
-        .service-hero { background: #1C2B3A; padding: 96px 24px 80px; }
-        .service-hero-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 360px; gap: 64px; align-items: center; }
-        @media (max-width: 900px) { .service-hero-inner { grid-template-columns: 1fr; } }
         .service-eyebrow {
           font-size: 12px; font-weight: 700; letter-spacing: 0.1em;
           text-transform: uppercase; color: #C8302A; margin-bottom: 14px;
         }
-        .service-hero h1 {
-          font-family: 'Cormorant Garamond', Georgia, serif;
-          font-size: clamp(2.4rem, 5vw, 3.8rem);
-          font-weight: 600; color: #fff; line-height: 1.15; margin-bottom: 20px;
-        }
-        .service-hero p {
-          font-size: 1.05rem; color: rgba(255,255,255,0.72);
-          line-height: 1.8; margin-bottom: 32px;
-        }
-        .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
         .btn-red {
           background: #C8302A; color: #fff; padding: 14px 28px;
           border-radius: 8px; font-size: 15px; font-weight: 700;
@@ -169,21 +155,6 @@ export default function DementiaAlzheimersHomeCarePage() {
           display: inline-flex; align-items: center;
         }
         .btn-outline:hover { background: rgba(255,255,255,0.1); }
-
-        /* Trust signals in hero */
-        .hero-trust {
-          background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12);
-          border-radius: 14px; padding: 28px;
-        }
-        .trust-item {
-          display: flex; align-items: flex-start; gap: 12px; padding: 14px 0;
-          border-bottom: 1px solid rgba(255,255,255,0.08);
-        }
-        .trust-item:last-child { border-bottom: none; padding-bottom: 0; }
-        .trust-item:first-child { padding-top: 0; }
-        .trust-icon { font-size: 20px; flex-shrink: 0; margin-top: 2px; }
-        .trust-text-title { font-size: 14px; font-weight: 700; color: #fff; margin-bottom: 2px; }
-        .trust-text-body { font-size: 13px; color: rgba(255,255,255,0.55); line-height: 1.5; }
 
         /* Breadcrumb */
         .breadcrumb {
@@ -339,45 +310,24 @@ export default function DementiaAlzheimersHomeCarePage() {
 
       <main className="service-page">
 
-        {/* Hero with trust panel */}
-        <section className="service-hero">
-          <div className="service-hero-inner">
-            <div>
-              <p className="service-eyebrow">Our Services · Toronto & GTA</p>
-              <h1>Dementia & Alzheimer's Home Care</h1>
-              <p>
-                Arcadia has specialized in dementia and Alzheimer's home care since 2005 —
-                not as one service among many, but as a core clinical focus. We match
-                families with trained, consistent caregivers who understand what this
-                kind of care actually requires.
-              </p>
-              <div className="hero-actions">
-                <a href="tel:8449770050" className="btn-red">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                    <path d="M2 2.5C2 8.299 5.701 12 11.5 12l.5-2.5-2.5-.5-.5 1c-2-1-3-2-4-4l1-.5L5.5 3 3 2.5z" stroke="#fff" strokeWidth="1.4" strokeLinejoin="round"/>
-                  </svg>
-                  Call (844) 977-0050
-                </a>
-                <Link href="/contact/" className="btn-outline">Book a Free Consultation</Link>
-              </div>
-            </div>
-            <div className="hero-trust">
-              {[
-                { icon: '🏠', title: 'Specializing in dementia since 2005', body: 'One of the first home care agencies in the GTA to focus specifically on dementia care.' },
-                { icon: '🩺', title: 'Clinically supervised care', body: 'All care plans reviewed by our Clinical Director. Not a staffing agency.' },
-                { icon: '📞', title: 'Available 7 days a week', body: 'Care available every day. Team reachable when families need to talk.' },
-              ].map((item, i) => (
-                <div key={i} className="trust-item">
-                  <span className="trust-icon">{item.icon}</span>
-                  <div>
-                    <div className="trust-text-title">{item.title}</div>
-                    <div className="trust-text-body">{item.body}</div>
-                  </div>
-                </div>
-              ))}
-            </div>
+        {/* Hero */}
+        <AnimatedHero
+          eyebrow="Our Services · Toronto & GTA"
+          title="Dementia & Alzheimer's Home Care"
+          subtitle="Arcadia has specialized in dementia and Alzheimer's home care since 2005 — not as one service among many, but as a core clinical focus. We match families with trained, consistent caregivers who understand what this kind of care actually requires."
+          imageSrc="/images/services/dementia-alzheimers.webp"
+          imageAlt="Compassionate dementia care support at home"
+        >
+          <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+            <a href="tel:8449770050" className="btn-red">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M2 2.5C2 8.299 5.701 12 11.5 12l.5-2.5-2.5-.5-.5 1c-2-1-3-2-4-4l1-.5L5.5 3 3 2.5z" stroke="#fff" strokeWidth="1.4" strokeLinejoin="round"/>
+              </svg>
+              Call (844) 977-0050
+            </a>
+            <Link href="/contact/" className="btn-outline">Book a Free Consultation</Link>
           </div>
-        </section>
+        </AnimatedHero>
 
         {/* Breadcrumb */}
         <nav className="breadcrumb" aria-label="Breadcrumb">
