@@ -5,6 +5,7 @@
 
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import AnimatedHero from '@/components/ui/AnimatedHero'
 
 export const metadata: Metadata = {
   title: 'Caregiver Burnout Support | Toronto & GTA | Arcadia Home Care',
@@ -70,22 +71,10 @@ export default function CaregiverBurnoutSupportPage() {
       <style>{`
         .condition-page { font-family: 'DM Sans', system-ui, sans-serif; color: #2D2D2D; }
 
-        .condition-hero { background: #1C2B3A; padding: 96px 24px 80px; }
-        .condition-hero-inner { max-width: 800px; margin: 0 auto; }
         .condition-eyebrow {
           font-size: 12px; font-weight: 700; letter-spacing: 0.1em;
           text-transform: uppercase; color: #C8302A; margin-bottom: 14px;
         }
-        .condition-hero h1 {
-          font-family: 'Cormorant Garamond', Georgia, serif;
-          font-size: clamp(2.4rem, 5vw, 3.8rem);
-          font-weight: 600; color: #ffffff; line-height: 1.15; margin-bottom: 20px;
-        }
-        .condition-hero p {
-          font-size: 1.1rem; color: rgba(255,255,255,0.9);
-          line-height: 1.8; max-width: 640px; margin-bottom: 32px;
-        }
-        .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
         .btn-red {
           background: #C8302A; color: #ffffff; padding: 14px 28px;
           border-radius: 8px; font-size: 15px; font-weight: 700;
@@ -255,27 +244,23 @@ export default function CaregiverBurnoutSupportPage() {
 
       <main className="condition-page">
 
-        {/* Hero */}
-        <section className="condition-hero">
-          <div className="condition-hero-inner">
-            <p className="condition-eyebrow">Conditions We Support · Toronto & GTA</p>
-            <h1>Caregiver Burnout Support</h1>
-            <p>
-              If you are exhausted, guilty, or unsure how to ask for help — you are not unusual, and you are not alone in this.
-              Caregiver burnout can affect your own health too. Many caregivers notice they get sick more often, feel more anxious or low, and start carrying the physical effects of prolonged stress.
-              This page is for anyone who is holding it together for someone else and running on empty.
-            </p>
-            <div className="hero-actions">
-              <a href="tel:8449770050" className="btn-red">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M2 2.5C2 8.299 5.701 12 11.5 12l.5-2.5-2.5-.5-.5 1c-2-1-3-2-4-4l1-.5L5.5 3 3 2.5z" stroke="#fff" strokeWidth="1.4" strokeLinejoin="round"/>
-                </svg>
-                Call (844) 977-0050
-              </a>
-              <Link href="/contact/" className="btn-outline">Book a Free Consultation</Link>
-            </div>
+        <AnimatedHero
+          eyebrow="Conditions We Support · Toronto & GTA"
+          title="Caregiver Burnout Support"
+          subtitle="If you are exhausted, guilty, or unsure how to ask for help — you are not unusual, and you are not alone in this. Caregiver burnout can affect your own health too. Many caregivers notice they get sick more often, feel more anxious or low, and start carrying the physical effects of prolonged stress. This page is for anyone who is holding it together for someone else and running on empty."
+          imageSrc="/images/services/respite-care.webp"
+          imageAlt="A younger woman smiles at an older woman at a table, arm around her shoulder and hands clasped together, with a laptop and mug nearby in a bright room"
+        >
+          <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+            <a href="tel:8449770050" className="btn-red">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M2 2.5C2 8.299 5.701 12 11.5 12l.5-2.5-2.5-.5-.5 1c-2-1-3-2-4-4l1-.5L5.5 3 3 2.5z" stroke="#fff" strokeWidth="1.4" strokeLinejoin="round"/>
+              </svg>
+              Call (844) 977-0050
+            </a>
+            <Link href="/contact/" className="btn-outline">Book a Free Consultation</Link>
           </div>
-        </section>
+        </AnimatedHero>
 
         {/* Breadcrumb */}
         <nav className="breadcrumb" aria-label="Breadcrumb">
