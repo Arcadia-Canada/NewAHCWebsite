@@ -316,7 +316,7 @@ export default function DementiaAlzheimersHomeCarePage() {
           title="Dementia & Alzheimer's Home Care"
           subtitle="Arcadia has specialized in dementia and Alzheimer's home care since 2005 — not as one service among many, but as a core clinical focus. We match families with trained, consistent caregivers who understand what this kind of care actually requires."
           imageSrc="/images/services/dementia-alzheimers.webp"
-          imageAlt="Compassionate dementia care support at home"
+          imageAlt="An older adult and a younger woman sit together at a wooden table, smiling as they look at a laptop; she gently assists with a card and notebook nearby in a bright home setting"
         >
           <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
             <a href="tel:8449770050" className="btn-red">

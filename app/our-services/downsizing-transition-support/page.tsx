@@ -236,7 +236,7 @@ export default function DownsizingTransitionSupportPage() {
           title="Downsizing & Transition Support"
           subtitle="Moving from a long-held home is one of the more demanding transitions in an older adult's life — practically demanding and emotionally heavy in equal measure. Arcadia provides hands-on support through the entire process, from the first conversation about what to keep through to settling into a new space."
           imageSrc="/images/services/downsizing-transition.webp"
-          imageAlt="Caregiver helping senior with home transition and downsizing"
+          imageAlt="A woman labels a sealed cardboard moving box with a marker in a bright room with large windows and packing boxes nearby"
         >
           <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
             <a href="tel:8449770050" className="btn-red">

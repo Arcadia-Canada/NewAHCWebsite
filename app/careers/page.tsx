@@ -381,7 +381,7 @@ export default function CareersPage() {
           title={<>Make a Real Difference.<br />Build a Career You&apos;re Proud Of.</>}
           subtitle="Arcadia Home Care is always looking for warm, dedicated professionals who believe in the dignity and independence of every person they care for."
           imageSrc="/images/heroes/careers.webp"
-          imageAlt="Healthcare professional coordinating patient care"
+          imageAlt="Close-up of hands writing on a lined form on a clipboard in a bright room with indoor plants and soft natural light"
         >
           <div className="careers-hero-actions">
             <a href="/pre-hire/" className="btn-red">

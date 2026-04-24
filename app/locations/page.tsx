@@ -32,7 +32,7 @@ export default function LocationsHubPage() {
           title={<>Home Care Across Toronto &<br />the Greater Toronto Area</>}
           subtitle="Arcadia Home Care provides specialized in-home care for families across the Greater Toronto Area — from downtown Toronto to the surrounding suburbs and regions."
           imageSrc="/images/heroes/locations.webp"
-          imageAlt="Senior receiving care in their Toronto home"
+          imageAlt="A woman with grey hair in a bun works at a laptop on a wooden table by a bright window, pen in hand, in a calm home office setting"
         >
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
             <a href={phone.tel} className="arc-btn-primary">📞 Call {phone.display}</a>

@@ -269,7 +269,7 @@ export default function RehabilitationSupportPage() {
           title="Rehabilitation Support at Home"
           subtitle="Recovery from injury or serious illness does not end when inpatient rehabilitation ends. The work of rebuilding independence happens at home, in real environments, with real demands. Arcadia's trained Rehabilitation Support Workers help clients apply and generalize their rehabilitation gains in the community — under clinical supervision and in coordination with the treating team."
           imageSrc="/images/services/rehabilitation.webp"
-          imageAlt="Rehabilitation support worker assisting with recovery exercises at home"
+          imageAlt="A younger man stands beside an older man seated in an armchair, both looking toward a bright window as he gestures supportively in a sunlit living room"
         >
           <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
             <a href="tel:8449770050" className="btn-red">

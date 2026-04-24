@@ -219,7 +219,7 @@ export default function LightHousekeepingPage() {
           title="Light Housekeeping"
           subtitle="A clean, organized home is part of what makes living at home safe, comfortable, and sustainable. Arcadia's light housekeeping support helps older adults and individuals with complex needs maintain a home that works for them, without judgment and without fuss."
           imageSrc="/images/services/light-housekeeping.webp"
-          imageAlt="Caregiver maintaining a clean and comfortable home for seniors"
+          imageAlt="A glass spray bottle, folded cleaning cloth, and small potted plant arranged on a wooden shelf in soft natural light"
         >
           <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
             <a href="tel:8449770050" className="btn-red">

@@ -210,7 +210,7 @@ export default function RespiteCarePage() {
           title="Respite Care for Family Caregivers"
           subtitle="You have been managing a lot, for a long time. Respite care gives you defined, reliable time away — knowing the person you care for is with someone capable, consistent, and well-briefed. Not a pause where you are still mentally on duty. Actual relief."
           imageSrc="/images/services/respite-care.webp"
-          imageAlt="Family caregiver receiving respite support"
+          imageAlt="A younger woman smiles at an older woman at a table, arm around her shoulder and hands clasped together, with a laptop and mug nearby in a bright room"
         >
           <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
             <a href="tel:8449770050" className="btn-red">

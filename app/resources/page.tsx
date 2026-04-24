@@ -174,7 +174,7 @@ export default function ResourcesHubPage() {
           title={<>Guides for Families<br />& Caregivers</>}
           subtitle="Practical guides on dementia and memory care, family caregiver support, navigating home care, and brain injury rehabilitation — to help you and your family make informed decisions."
           imageSrc="/images/heroes/resources.webp"
-          imageAlt="Family member researching home care resources"
+          imageAlt="Three family members in a bright living room smiling at the camera while gathered around a tablet on a wooden table"
         >
           <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
             <a href={phone.tel} style={arcBtn.primary}>📞 Call {phone.display}</a>

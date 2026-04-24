@@ -234,7 +234,7 @@ export default function PersonalSupportDailyLivingPage() {
           title="Personal Support & Daily Living"
           subtitle="The most personal kind of care — bathing, dressing, meals, and the daily routines that keep someone comfortable, safe, and themselves at home. Arcadia's PSWs are carefully matched to each client and trained to provide this care with the consistency and dignity it requires."
           imageSrc="/images/services/personal-support.webp"
-          imageAlt="Personal support worker helping with daily living activities"
+          imageAlt="A support worker arrives with a reusable bag of fresh groceries at an open door while an older adult greets him in a warm home entryway"
         >
           <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
             <a href="tel:8449770050" className="btn-red">

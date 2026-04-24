@@ -26,7 +26,7 @@ export default function ConditionsHubPage() {
         title={<>Understanding Complex<br />Conditions at Home</>}
         subtitle="A hub for families navigating dementia, brain injury, stroke recovery, Parkinson's, palliative illness, and more."
         imageSrc="/images/heroes/conditions.webp"
-        imageAlt="Family member providing comfort during home care"
+        imageAlt="Four diverse teammates outdoors at golden hour, wearing shirts that spell TEAM, smiling with arms around one another"
       >
         <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
           <a href={phone.tel} className="arc-btn-primary">📞 Call {phone.display}</a>

@@ -250,7 +250,7 @@ export default function PalliativeHomeCarePage() {
           title="Palliative Home Care"
           subtitle="When a loved one is living with a serious or life-limiting illness, the care they receive at home matters deeply. Arcadia provides compassionate, clinically coordinated palliative support — filling the gaps in publicly funded hours so your loved one can remain at home with consistent presence, comfort, and dignity."
           imageSrc="/images/services/palliative.webp"
-          imageAlt="Compassionate palliative care support at home"
+          imageAlt="A younger man arrives at an open front door with a bag of groceries as an older man greets him warmly in a bright home entryway"
         >
           <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
             <a href="tel:8449770050" className="btn-red">

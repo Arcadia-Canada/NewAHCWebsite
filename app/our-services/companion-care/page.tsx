@@ -221,7 +221,7 @@ export default function CompanionCarePage() {
           title="Companion Care for Seniors"
           subtitle="Isolation is one of the most serious and least-discussed risks for older adults living at home. Companion care provides consistent, matched human presence — conversation, activities, outings, and the kind of relationship that keeps a person engaged, confident, and genuinely connected to their life."
           imageSrc="/images/services/companion-care.webp"
-          imageAlt="Senior enjoying companionship with caregiver at home"
+          imageAlt="Two younger adults and an older adult gather around a table reading an open book together in a bright, comfortable living room"
         >
           <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
             <a href="tel:8449770050" className="btn-red">

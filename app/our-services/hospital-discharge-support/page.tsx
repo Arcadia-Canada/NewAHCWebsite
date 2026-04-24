@@ -252,7 +252,7 @@ export default function HospitalDischargeSupportPage() {
           title="Hospital Discharge Support"
           subtitle="Hospitals discharge patients when they are medically stable — not necessarily when they are ready to manage at home alone. Arcadia helps families and discharge teams put the right care in place quickly, so the transition home is safe from day one."
           imageSrc="/images/services/hospital-discharge.webp"
-          imageAlt="Patient receiving support during hospital to home transition"
+          imageAlt="A diverse team of nurses and physicians in scrubs and lab coats smiles together in a modern clinical workspace with monitors in the background"
         >
           <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
             <a href="tel:8449770050" className="btn-red">

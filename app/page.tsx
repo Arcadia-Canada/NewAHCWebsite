@@ -241,7 +241,14 @@ function Hero() {
           transition={{ duration: 0.7, delay: 0.3, ease: [0.25, 0.1, 0.25, 1] as const }}
         >
           <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', boxShadow: '0 40px 80px rgba(0,0,0,0.4)' }}>
-            <Image src="/images/image 43-08b42066-435w.webp" alt="Arcadia caregiver with senior client" width={480} height={520} priority style={{ width: '100%', height: 520, objectFit: 'cover', display: 'block' }} />
+            <Image
+              src="/images/heroes/home.webp"
+              alt="A smiling caregiver in blue scrubs with a comforting hand on the shoulder of a seated senior in a bright, home-like setting"
+              width={480}
+              height={520}
+              priority
+              style={{ width: '100%', height: 520, objectFit: 'cover', display: 'block' }}
+            />
             <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, transparent 50%, rgba(28,43,58,0.3))' }} />
           </div>
           <motion.a

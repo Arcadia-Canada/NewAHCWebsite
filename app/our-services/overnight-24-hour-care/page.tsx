@@ -240,7 +240,7 @@ export default function OvernightCare24HourPage() {
           title="Overnight & 24-Hour Home Care"
           subtitle="Some situations require someone to be present through the night. Whether it is a loved one who needs nighttime supervision, or a family caregiver who has not slept properly in weeks, Arcadia provides trained, consistent overnight care — seven days a week, across Toronto and the GTA."
           imageSrc="/images/services/overnight-24-hour.webp"
-          imageAlt="Overnight caregiver providing comfort and safety at home"
+          imageAlt="A caregiver stands behind a seated older adult with a hand on his shoulder, both looking toward a window as the caregiver adjusts the blinds in a warm living room"
         >
           <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
             <a href="tel:8449770050" className="btn-red">

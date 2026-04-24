@@ -78,7 +78,7 @@ export default function AboutPage() {
           title={<>The Most Critical Part of Our Service Is Our Caregivers.</>}
           subtitle="They are the face of Arcadia. That's why we spend so much care ensuring they are the best they can be — screened rigorously, trained continuously, and matched thoughtfully."
           imageSrc="/images/heroes/about.webp"
-          imageAlt="Caregiver helping senior with daily activities at home"
+          imageAlt="Two women at a table in a bright home setting, smiling at each other as a companion rests an arm on the senior’s shoulder and holds her hand, with a laptop and mug nearby"
         />
 
         {/* Trust strip */}

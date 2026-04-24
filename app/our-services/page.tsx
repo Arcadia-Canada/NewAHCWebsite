@@ -61,7 +61,7 @@ export default function OurServicesPage() {
           title={<>Specialized Care for<br />Complex Situations</>}
           subtitle="Every service is built around clinical understanding — not just availability. We match care to the person, not the other way around."
           imageSrc="/images/heroes/our-services.webp"
-          imageAlt="Caregiver assisting senior with home care services"
+          imageAlt="A younger woman and an older man share a warm moment at home; she stands beside his armchair with her hand gently over his on the armrest as he smiles toward the camera"
         >
           <div className="services-hero-ctas">
             <a href={phone.tel} style={arcBtn.primary} onMouseOver={hoverPrimary.over} onMouseOut={hoverPrimary.out}>📞 Call {phone.display}</a>

@@ -253,7 +253,7 @@ export default function CaseManagementPage() {
           title="Case Management & Care Coordination"
           subtitle="Complex care situations rarely fail because the right services do not exist. They often struggle because no one is coordinating the pieces. Arcadia's case management service gives families a single, knowledgeable point of contact who keeps track of how the care plan holds together — and keeps it working as the situation changes."
           imageSrc="/images/services/case-management.webp"
-          imageAlt="Care coordinator reviewing patient care plan"
+          imageAlt="A physician in a white coat with a stethoscope writes on a clipboard while meeting with a patient across a desk in a bright, organized office"
         >
           <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
             <a href="tel:8449770050" className="btn-red">

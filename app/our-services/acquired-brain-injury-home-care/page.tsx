@@ -250,7 +250,7 @@ export default function ABIHomeCarePage() {
           title="Acquired Brain Injury Home Care"
           subtitle="Arcadia has provided specialized ABI home care and community rehabilitation support in Toronto and the GTA for over 16 years. We work alongside rehabilitation teams, case managers, and insurers to support recovery at home — with trained RSWs, clinical supervision, and a care process built around the individual."
           imageSrc="/images/services/acquired-brain-injury.webp"
-          imageAlt="Caregiver providing acquired brain injury rehabilitation support at home"
+          imageAlt="A clinician in a white coat and blue gloves holds a sheet of brain MRI images up for review in a bright medical office"
         >
           <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
             <a href="tel:8449770050" className="btn-red">
