@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "node scripts/sync-vercel-redirects.mjs && next build",
     "start": "next start",
     "lint": "eslint",
+    "vercel:sync": "node scripts/sync-vercel-redirects.mjs",
     "seo:report": "node scripts/seo-report.mjs",
     "nlg:report": "node scripts/nlg-report.mjs",
     "voice:report": "node scripts/voice-search-report.mjs",

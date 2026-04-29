@@ -1,0 +1,506 @@
+[
+  {
+    "source": "/about-us",
+    "destination": "/about/"
+  },
+  {
+    "source": "/about-us/",
+    "destination": "/about/"
+  },
+  {
+    "source": "/acquired-brain-injury-home-care/",
+    "destination": "/our-services/acquired-brain-injury-home-care/"
+  },
+  {
+    "source": "/alzheimers-related-dementia-home-care/",
+    "destination": "/our-services/dementia-alzheimers-home-care/"
+  },
+  {
+    "source": "/avoid-trial-and-error-approach-when-hiring-home-care-agency",
+    "destination": "/"
+  },
+  {
+    "source": "/blog",
+    "destination": "/resources/"
+  },
+  {
+    "source": "/blog/",
+    "destination": "/resources/"
+  },
+  {
+    "source": "/blog/arcadia-palliative-care-benefits",
+    "destination": "/"
+  },
+  {
+    "source": "/blog/benefits-arcadia-home-care-alzheimers-dementia",
+    "destination": "/"
+  },
+  {
+    "source": "/blog/compassionate-care-acquired-brain-injury",
+    "destination": "/"
+  },
+  {
+    "source": "/blog/expert-rehabilitation-support",
+    "destination": "/"
+  },
+  {
+    "source": "/blog/integrating-home-care-into-financial-planning-ontario-advisors",
+    "destination": "/"
+  },
+  {
+    "source": "/blog/page/5/",
+    "destination": "/"
+  },
+  {
+    "source": "/blog/personalized-palliative-care-at-home",
+    "destination": "/"
+  },
+  {
+    "source": "/blog/psw-responsibilities-explained",
+    "destination": "/"
+  },
+  {
+    "source": "/careers/personal-support-worker",
+    "destination": "/careers/"
+  },
+  {
+    "source": "/careers/personal-support-worker/",
+    "destination": "/careers/"
+  },
+  {
+    "source": "/careers/rehabilitation-support-worker",
+    "destination": "/"
+  },
+  {
+    "source": "/case-management/",
+    "destination": "/our-services/case-management/"
+  },
+  {
+    "source": "/category/cognitive-decline/",
+    "destination": "/"
+  },
+  {
+    "source": "/category/planning/",
+    "destination": "/"
+  },
+  {
+    "source": "/comments/feed/",
+    "destination": "/"
+  },
+  {
+    "source": "/conditions/alzheimers-care/",
+    "destination": "/conditions/dementia-care-at-home/"
+  },
+  {
+    "source": "/decluttering-for-downsizing/",
+    "destination": "/"
+  },
+  {
+    "source": "/download-ebook/",
+    "destination": "/"
+  },
+  {
+    "source": "/evaluating-your-parents--care-needs--a-comprehensive-checklist/",
+    "destination": "/"
+  },
+  {
+    "source": "/evaluating-your-parents-care-needs-a-comprehensive-checklist",
+    "destination": "/"
+  },
+  {
+    "source": "/family-funded-home-care/",
+    "destination": "/"
+  },
+  {
+    "source": "/family-ties-managing-conflict-when-caring-for-aging-parents",
+    "destination": "/"
+  },
+  {
+    "source": "/for-professionals/",
+    "destination": "/healthcare-professionals/"
+  },
+  {
+    "source": "/from-caring-to-controlling-avoiding-the-pitfalls-when-dealing-with-aging-parents",
+    "destination": "/"
+  },
+  {
+    "source": "/from-guilt-to-understanding-managing-negative-emotions-in-role-reversal",
+    "destination": "/"
+  },
+  {
+    "source": "/home",
+    "destination": "/"
+  },
+  {
+    "source": "/home/",
+    "destination": "/"
+  },
+  {
+    "source": "/how-care-starts/book-a-consultation/",
+    "destination": "/contact/"
+  },
+  {
+    "source": "/how-care-starts/caregiver-matching/",
+    "destination": "/how-care-starts/matching-caregivers/"
+  },
+  {
+    "source": "/how-care-starts/first-week-of-care/",
+    "destination": "/how-care-starts/care-begins/"
+  },
+  {
+    "source": "/how-care-starts/pricing-funding/",
+    "destination": "/how-care-starts/pricing-and-funding/"
+  },
+  {
+    "source": "/how-to-help-your-parents-remain-socially-active/",
+    "destination": "/"
+  },
+  {
+    "source": "/how-to-manage-difficult-situations-in-aging-parents--a-4-step-guide/",
+    "destination": "/"
+  },
+  {
+    "source": "/how-to-talk-to-elderly-parents-about-home-care",
+    "destination": "/"
+  },
+  {
+    "source": "/how-to-talk-to-elderly-parents-about-home-care/",
+    "destination": "/"
+  },
+  {
+    "source": "/in-home-care-vs-facility-care--making-the-right-choice-for-your-aging-parents/",
+    "destination": "/"
+  },
+  {
+    "source": "/in-home-care-vs-facility-care-making-the-right-choice-for-your-aging-parents",
+    "destination": "/"
+  },
+  {
+    "source": "/legal-eagles-seeking-legal-advice-for-aging-parents-care",
+    "destination": "/"
+  },
+  {
+    "source": "/legal-eagles-seeking-legal-advice-for-aging-parents-care/",
+    "destination": "/"
+  },
+  {
+    "source": "/light-housekeeping/",
+    "destination": "/our-services/light-housekeeping/"
+  },
+  {
+    "source": "/location-map-old",
+    "destination": "/"
+  },
+  {
+    "source": "/location/",
+    "destination": "/"
+  },
+  {
+    "source": "/location/aurora",
+    "destination": "/locations/york-region/"
+  },
+  {
+    "source": "/location/aurora/",
+    "destination": "/locations/york-region/"
+  },
+  {
+    "source": "/location/barrie",
+    "destination": "/"
+  },
+  {
+    "source": "/location/brampton",
+    "destination": "/"
+  },
+  {
+    "source": "/location/brampton/",
+    "destination": "/"
+  },
+  {
+    "source": "/location/guelph",
+    "destination": "/"
+  },
+  {
+    "source": "/location/hamilton",
+    "destination": "/"
+  },
+  {
+    "source": "/location/kitchener",
+    "destination": "/"
+  },
+  {
+    "source": "/location/kitchener/",
+    "destination": "/"
+  },
+  {
+    "source": "/location/london/",
+    "destination": "/"
+  },
+  {
+    "source": "/location/markham",
+    "destination": "/"
+  },
+  {
+    "source": "/location/markham/",
+    "destination": "/"
+  },
+  {
+    "source": "/location/mississauga",
+    "destination": "/"
+  },
+  {
+    "source": "/location/newmarket",
+    "destination": "/locations/york-region/"
+  },
+  {
+    "source": "/location/newmarket/",
+    "destination": "/locations/york-region/"
+  },
+  {
+    "source": "/location/oakville",
+    "destination": "/"
+  },
+  {
+    "source": "/location/oshawa",
+    "destination": "/"
+  },
+  {
+    "source": "/location/ottawa",
+    "destination": "/locations/"
+  },
+  {
+    "source": "/location/ottawa/",
+    "destination": "/locations/"
+  },
+  {
+    "source": "/location/st-catharines",
+    "destination": "/"
+  },
+  {
+    "source": "/location/sudbury",
+    "destination": "/"
+  },
+  {
+    "source": "/location/thunder-bay",
+    "destination": "/"
+  },
+  {
+    "source": "/location/toronto",
+    "destination": "/"
+  },
+  {
+    "source": "/locations/peel-region/mississauga/",
+    "destination": "/locations/peel-region/mississauga-home-care/"
+  },
+  {
+    "source": "/locations/toronto/etobicoke/",
+    "destination": "/locations/toronto/etobicoke-home-care/"
+  },
+  {
+    "source": "/locations/toronto/north-york/",
+    "destination": "/locations/toronto/north-york-home-care/"
+  },
+  {
+    "source": "/locations/toronto/scarborough/",
+    "destination": "/locations/toronto/scarborough-home-care/"
+  },
+  {
+    "source": "/locations/york-region/markham/",
+    "destination": "/locations/york-region/markham-home-care/"
+  },
+  {
+    "source": "/locations/york-region/richmond-hill/",
+    "destination": "/locations/york-region/richmond-hill-home-care/"
+  },
+  {
+    "source": "/our-approach",
+    "destination": "/"
+  },
+  {
+    "source": "/our-caregivers",
+    "destination": "/about/"
+  },
+  {
+    "source": "/our-caregivers/",
+    "destination": "/about/"
+  },
+  {
+    "source": "/our-services/acquire-brain-injury-home-care",
+    "destination": "/our-services/acquired-brain-injury-home-care/"
+  },
+  {
+    "source": "/our-services/alzheimers-related-dementia-home-care",
+    "destination": "/our-services/dementia-alzheimers-home-care/"
+  },
+  {
+    "source": "/our-services/alzheimers-related-dementia-home-care/",
+    "destination": "/our-services/dementia-alzheimers-home-care/"
+  },
+  {
+    "source": "/our-services/decluttering-for-downsizing",
+    "destination": "/"
+  },
+  {
+    "source": "/our-services/decluttering-for-downsizing/",
+    "destination": "/"
+  },
+  {
+    "source": "/Pages/mobile/blog/",
+    "destination": "/"
+  },
+  {
+    "source": "/Pages/mobile/careers/",
+    "destination": "/"
+  },
+  {
+    "source": "/Pages/mobile/careers/personal-support-worker/",
+    "destination": "/"
+  },
+  {
+    "source": "/Pages/mobile/careers/rehabilitation-support-worker/",
+    "destination": "/"
+  },
+  {
+    "source": "/Pages/mobile/evaluating-your-parents-care-needs-a-comprehensive-checklist/",
+    "destination": "/"
+  },
+  {
+    "source": "/Pages/mobile/home/",
+    "destination": "/"
+  },
+  {
+    "source": "/Pages/mobile/our-caregivers/",
+    "destination": "/"
+  },
+  {
+    "source": "/Pages/mobile/our-services/alzheimers-related-dementia-home-care/",
+    "destination": "/our-services/dementia-alzheimers-home-care/"
+  },
+  {
+    "source": "/Pages/mobile/our-services/case-management/",
+    "destination": "/our-services/case-management/"
+  },
+  {
+    "source": "/Pages/mobile/our-services/decluttering-for-downsizing/",
+    "destination": "/"
+  },
+  {
+    "source": "/Pages/mobile/our-services/light-housekeeping/",
+    "destination": "/our-services/light-housekeeping/"
+  },
+  {
+    "source": "/Pages/mobile/successfully-navigating-a-hospital-discharge-a-comprehensive-guide-by-arcadia-home-care/",
+    "destination": "/"
+  },
+  {
+    "source": "/palliative-home-care/",
+    "destination": "/our-services/palliative-home-care/"
+  },
+  {
+    "source": "/personal-support-worker",
+    "destination": "/"
+  },
+  {
+    "source": "/psw-application/",
+    "destination": "/"
+  },
+  {
+    "source": "/rehabilitation-support-worker/",
+    "destination": "/"
+  },
+  {
+    "source": "/rehabilitation-support/",
+    "destination": "/"
+  },
+  {
+    "source": "/resources/family-caregiver-support/caregiver-burnout-warning-signs/",
+    "destination": "/conditions/caregiver-burnout-support/"
+  },
+  {
+    "source": "/resources/family-caregiving-guides/",
+    "destination": "/resources/family-caregiver-support/"
+  },
+  {
+    "source": "/resources/family-caregiving-guides/caring-for-your-loved-one/",
+    "destination": "/resources/family-caregiver-support/"
+  },
+  {
+    "source": "/resources/hospital-discharge-guides/transitioning-home-from-hospital/",
+    "destination": "/resources/navigating-home-care/"
+  },
+  {
+    "source": "/resources/navigating-home-care/questions-before-hiring-home-care/",
+    "destination": "/"
+  },
+  {
+    "source": "/resources/navigating-home-care/when-a-parent-resists-home-care/",
+    "destination": "/resources/navigating-home-care/"
+  },
+  {
+    "source": "/runtime-service-worker.js",
+    "destination": "/"
+  },
+  {
+    "source": "/saying-goodbye-navigating-the-complex-emotions-of-losing-aging-parents",
+    "destination": "/"
+  },
+  {
+    "source": "/site/866b454d/home",
+    "destination": "/"
+  },
+  {
+    "source": "/site/866b454d/training",
+    "destination": "/"
+  },
+  {
+    "source": "/successfully-navigating-a-hospital-discharge--a-comprehensive-guide-by-arcadia-home-care/",
+    "destination": "/"
+  },
+  {
+    "source": "/successfully-navigating-a-hospital-discharge-a-comprehensive-guide-by-arcadia-home-care",
+    "destination": "/"
+  },
+  {
+    "source": "/the-emotional-journey-understanding-the-impact-of-grief-and-loss-when-caring-for-aging-parents",
+    "destination": "/"
+  },
+  {
+    "source": "/the-unspoken-grief-dealing-with-the-decline-of-aging-parents/",
+    "destination": "/"
+  },
+  {
+    "source": "/training",
+    "destination": "/"
+  },
+  {
+    "source": "/understanding-anxietys-impact-on-cognitive-functioning-and-dementia-in-older-adults",
+    "destination": "/"
+  },
+  {
+    "source": "/understanding-the-pricing-and-value-of-in-home-care-services",
+    "destination": "/"
+  },
+  {
+    "source": "/understanding-the-pricing-and-value-of-in-home-care-services/",
+    "destination": "/"
+  },
+  {
+    "source": "/understanding-their-struggles-how-aging-parents-feel-during-role-reversal",
+    "destination": "/"
+  },
+  {
+    "source": "/unlocking-the-future-of-alzheimers-care-transforming-dementia-treatment-for-the-next-generation/",
+    "destination": "/"
+  },
+  {
+    "source": "/why-someone-needs-to-play-the-bad-cop",
+    "destination": "/"
+  },
+  {
+    "source": "/why-someone-needs-to-play-the-bad-cop/",
+    "destination": "/"
+  },
+  {
+    "source": "/wp-content/uploads/2023/07/Referral-Form-4-1.pdf",
+    "destination": "/"
+  }
+]

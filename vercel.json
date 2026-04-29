@@ -1,9 +1,185 @@
 {
+  "buildCommand": "npm run build",
   "redirects": [
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "arcadiahomecare.ca" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "arcadiahomecare.ca"
+        }
+      ],
       "destination": "https://www.arcadiahomecare.ca/:path*",
+      "statusCode": 301
+    },
+    {
+      "source": "/about-us",
+      "destination": "/about/",
+      "statusCode": 301
+    },
+    {
+      "source": "/about-us/",
+      "destination": "/about/",
+      "statusCode": 301
+    },
+    {
+      "source": "/acquired-brain-injury-home-care/",
+      "destination": "/our-services/acquired-brain-injury-home-care/",
+      "statusCode": 301
+    },
+    {
+      "source": "/alzheimers-related-dementia-home-care/",
+      "destination": "/our-services/dementia-alzheimers-home-care/",
+      "statusCode": 301
+    },
+    {
+      "source": "/avoid-trial-and-error-approach-when-hiring-home-care-agency",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog",
+      "destination": "/resources/",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/",
+      "destination": "/resources/",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/arcadia-palliative-care-benefits",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/benefits-arcadia-home-care-alzheimers-dementia",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/compassionate-care-acquired-brain-injury",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/expert-rehabilitation-support",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/integrating-home-care-into-financial-planning-ontario-advisors",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/page/5/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/personalized-palliative-care-at-home",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/psw-responsibilities-explained",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/careers/personal-support-worker",
+      "destination": "/careers/",
+      "statusCode": 301
+    },
+    {
+      "source": "/careers/personal-support-worker/",
+      "destination": "/careers/",
+      "statusCode": 301
+    },
+    {
+      "source": "/careers/rehabilitation-support-worker",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/case-management/",
+      "destination": "/our-services/case-management/",
+      "statusCode": 301
+    },
+    {
+      "source": "/category/cognitive-decline/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/category/planning/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/comments/feed/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/conditions/alzheimers-care/",
+      "destination": "/conditions/dementia-care-at-home/",
+      "statusCode": 301
+    },
+    {
+      "source": "/decluttering-for-downsizing/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/download-ebook/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/evaluating-your-parents--care-needs--a-comprehensive-checklist/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/evaluating-your-parents-care-needs-a-comprehensive-checklist",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/family-funded-home-care/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/family-ties-managing-conflict-when-caring-for-aging-parents",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/for-professionals/",
+      "destination": "/healthcare-professionals/",
+      "statusCode": 301
+    },
+    {
+      "source": "/from-caring-to-controlling-avoiding-the-pitfalls-when-dealing-with-aging-parents",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/from-guilt-to-understanding-managing-negative-emotions-in-role-reversal",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/home",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/",
+      "destination": "/",
       "statusCode": 301
     },
     {
@@ -12,18 +188,348 @@
       "statusCode": 301
     },
     {
-      "source": "/how-care-starts/first-week-of-care/",
-      "destination": "/how-care-starts/care-begins/",
-      "statusCode": 301
-    },
-    {
       "source": "/how-care-starts/caregiver-matching/",
       "destination": "/how-care-starts/matching-caregivers/",
       "statusCode": 301
     },
     {
+      "source": "/how-care-starts/first-week-of-care/",
+      "destination": "/how-care-starts/care-begins/",
+      "statusCode": 301
+    },
+    {
       "source": "/how-care-starts/pricing-funding/",
       "destination": "/how-care-starts/pricing-and-funding/",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-to-help-your-parents-remain-socially-active/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-to-manage-difficult-situations-in-aging-parents--a-4-step-guide/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-to-talk-to-elderly-parents-about-home-care",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-to-talk-to-elderly-parents-about-home-care/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/in-home-care-vs-facility-care--making-the-right-choice-for-your-aging-parents/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/in-home-care-vs-facility-care-making-the-right-choice-for-your-aging-parents",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/legal-eagles-seeking-legal-advice-for-aging-parents-care",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/legal-eagles-seeking-legal-advice-for-aging-parents-care/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/light-housekeeping/",
+      "destination": "/our-services/light-housekeeping/",
+      "statusCode": 301
+    },
+    {
+      "source": "/location-map-old",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/location/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/location/aurora",
+      "destination": "/locations/york-region/",
+      "statusCode": 301
+    },
+    {
+      "source": "/location/aurora/",
+      "destination": "/locations/york-region/",
+      "statusCode": 301
+    },
+    {
+      "source": "/location/barrie",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/location/brampton",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/location/brampton/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/location/guelph",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/location/hamilton",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/location/kitchener",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/location/kitchener/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/location/london/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/location/markham",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/location/markham/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/location/mississauga",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/location/newmarket",
+      "destination": "/locations/york-region/",
+      "statusCode": 301
+    },
+    {
+      "source": "/location/newmarket/",
+      "destination": "/locations/york-region/",
+      "statusCode": 301
+    },
+    {
+      "source": "/location/oakville",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/location/oshawa",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/location/ottawa",
+      "destination": "/locations/",
+      "statusCode": 301
+    },
+    {
+      "source": "/location/ottawa/",
+      "destination": "/locations/",
+      "statusCode": 301
+    },
+    {
+      "source": "/location/st-catharines",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/location/sudbury",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/location/thunder-bay",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/location/toronto",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/locations/peel-region/mississauga/",
+      "destination": "/locations/peel-region/mississauga-home-care/",
+      "statusCode": 301
+    },
+    {
+      "source": "/locations/toronto/etobicoke/",
+      "destination": "/locations/toronto/etobicoke-home-care/",
+      "statusCode": 301
+    },
+    {
+      "source": "/locations/toronto/north-york/",
+      "destination": "/locations/toronto/north-york-home-care/",
+      "statusCode": 301
+    },
+    {
+      "source": "/locations/toronto/scarborough/",
+      "destination": "/locations/toronto/scarborough-home-care/",
+      "statusCode": 301
+    },
+    {
+      "source": "/locations/york-region/markham/",
+      "destination": "/locations/york-region/markham-home-care/",
+      "statusCode": 301
+    },
+    {
+      "source": "/locations/york-region/richmond-hill/",
+      "destination": "/locations/york-region/richmond-hill-home-care/",
+      "statusCode": 301
+    },
+    {
+      "source": "/our-approach",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/our-caregivers",
+      "destination": "/about/",
+      "statusCode": 301
+    },
+    {
+      "source": "/our-caregivers/",
+      "destination": "/about/",
+      "statusCode": 301
+    },
+    {
+      "source": "/our-services/acquire-brain-injury-home-care",
+      "destination": "/our-services/acquired-brain-injury-home-care/",
+      "statusCode": 301
+    },
+    {
+      "source": "/our-services/alzheimers-related-dementia-home-care",
+      "destination": "/our-services/dementia-alzheimers-home-care/",
+      "statusCode": 301
+    },
+    {
+      "source": "/our-services/alzheimers-related-dementia-home-care/",
+      "destination": "/our-services/dementia-alzheimers-home-care/",
+      "statusCode": 301
+    },
+    {
+      "source": "/our-services/decluttering-for-downsizing",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/our-services/decluttering-for-downsizing/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/Pages/mobile/blog/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/Pages/mobile/careers/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/Pages/mobile/careers/personal-support-worker/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/Pages/mobile/careers/rehabilitation-support-worker/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/Pages/mobile/evaluating-your-parents-care-needs-a-comprehensive-checklist/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/Pages/mobile/home/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/Pages/mobile/our-caregivers/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/Pages/mobile/our-services/alzheimers-related-dementia-home-care/",
+      "destination": "/our-services/dementia-alzheimers-home-care/",
+      "statusCode": 301
+    },
+    {
+      "source": "/Pages/mobile/our-services/case-management/",
+      "destination": "/our-services/case-management/",
+      "statusCode": 301
+    },
+    {
+      "source": "/Pages/mobile/our-services/decluttering-for-downsizing/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/Pages/mobile/our-services/light-housekeeping/",
+      "destination": "/our-services/light-housekeeping/",
+      "statusCode": 301
+    },
+    {
+      "source": "/Pages/mobile/successfully-navigating-a-hospital-discharge-a-comprehensive-guide-by-arcadia-home-care/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/palliative-home-care/",
+      "destination": "/our-services/palliative-home-care/",
+      "statusCode": 301
+    },
+    {
+      "source": "/personal-support-worker",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/psw-application/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/rehabilitation-support-worker/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/rehabilitation-support/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/resources/family-caregiver-support/caregiver-burnout-warning-signs/",
+      "destination": "/conditions/caregiver-burnout-support/",
       "statusCode": 301
     },
     {
@@ -42,8 +548,8 @@
       "statusCode": 301
     },
     {
-      "source": "/resources/family-caregiver-support/caregiver-burnout-warning-signs/",
-      "destination": "/conditions/caregiver-burnout-support/",
+      "source": "/resources/navigating-home-care/questions-before-hiring-home-care/",
+      "destination": "/",
       "statusCode": 301
     },
     {
@@ -52,43 +558,88 @@
       "statusCode": 301
     },
     {
-      "source": "/locations/toronto/north-york/",
-      "destination": "/locations/toronto/north-york-home-care/",
+      "source": "/runtime-service-worker.js",
+      "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/locations/toronto/scarborough/",
-      "destination": "/locations/toronto/scarborough-home-care/",
+      "source": "/saying-goodbye-navigating-the-complex-emotions-of-losing-aging-parents",
+      "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/locations/toronto/etobicoke/",
-      "destination": "/locations/toronto/etobicoke-home-care/",
+      "source": "/site/866b454d/home",
+      "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/locations/york-region/markham/",
-      "destination": "/locations/york-region/markham-home-care/",
+      "source": "/site/866b454d/training",
+      "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/locations/york-region/richmond-hill/",
-      "destination": "/locations/york-region/richmond-hill-home-care/",
+      "source": "/successfully-navigating-a-hospital-discharge--a-comprehensive-guide-by-arcadia-home-care/",
+      "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/locations/peel-region/mississauga/",
-      "destination": "/locations/peel-region/mississauga-home-care/",
+      "source": "/successfully-navigating-a-hospital-discharge-a-comprehensive-guide-by-arcadia-home-care",
+      "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/conditions/alzheimers-care/",
-      "destination": "/conditions/dementia-care-at-home/",
+      "source": "/the-emotional-journey-understanding-the-impact-of-grief-and-loss-when-caring-for-aging-parents",
+      "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/for-professionals/",
-      "destination": "/healthcare-professionals/",
+      "source": "/the-unspoken-grief-dealing-with-the-decline-of-aging-parents/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/training",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/understanding-anxietys-impact-on-cognitive-functioning-and-dementia-in-older-adults",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/understanding-the-pricing-and-value-of-in-home-care-services",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/understanding-the-pricing-and-value-of-in-home-care-services/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/understanding-their-struggles-how-aging-parents-feel-during-role-reversal",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/unlocking-the-future-of-alzheimers-care-transforming-dementia-treatment-for-the-next-generation/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/why-someone-needs-to-play-the-bad-cop",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/why-someone-needs-to-play-the-bad-cop/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2023/07/Referral-Form-4-1.pdf",
+      "destination": "/",
       "statusCode": 301
     }
   ]
