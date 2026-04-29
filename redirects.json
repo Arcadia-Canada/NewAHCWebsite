@@ -69,7 +69,7 @@
   },
   {
     "source": "/careers/rehabilitation-support-worker",
-    "destination": "/"
+    "destination": "/careers/"
   },
   {
     "source": "/case-management/",
@@ -105,7 +105,7 @@
   },
   {
     "source": "/evaluating-your-parents-care-needs-a-comprehensive-checklist",
-    "destination": "/"
+    "destination": "/resources/navigating-home-care/"
   },
   {
     "source": "/family-funded-home-care/",
@@ -173,7 +173,7 @@
   },
   {
     "source": "/in-home-care-vs-facility-care-making-the-right-choice-for-your-aging-parents",
-    "destination": "/"
+    "destination": "/resources/navigating-home-care/"
   },
   {
     "source": "/legal-eagles-seeking-legal-advice-for-aging-parents-care",
@@ -313,7 +313,7 @@
   },
   {
     "source": "/our-approach",
-    "destination": "/"
+    "destination": "/how-care-starts/"
   },
   {
     "source": "/our-caregivers",
@@ -337,31 +337,31 @@
   },
   {
     "source": "/our-services/decluttering-for-downsizing",
-    "destination": "/"
+    "destination": "/our-services/downsizing-transition-support/"
   },
   {
     "source": "/our-services/decluttering-for-downsizing/",
-    "destination": "/"
+    "destination": "/our-services/downsizing-transition-support/"
   },
   {
     "source": "/Pages/mobile/blog/",
-    "destination": "/"
+    "destination": "/resources/"
   },
   {
     "source": "/Pages/mobile/careers/",
-    "destination": "/"
+    "destination": "/careers/"
   },
   {
     "source": "/Pages/mobile/careers/personal-support-worker/",
-    "destination": "/"
+    "destination": "/careers/"
   },
   {
     "source": "/Pages/mobile/careers/rehabilitation-support-worker/",
-    "destination": "/"
+    "destination": "/careers/"
   },
   {
     "source": "/Pages/mobile/evaluating-your-parents-care-needs-a-comprehensive-checklist/",
-    "destination": "/"
+    "destination": "/resources/navigating-home-care/"
   },
   {
     "source": "/Pages/mobile/home/",
@@ -369,7 +369,7 @@
   },
   {
     "source": "/Pages/mobile/our-caregivers/",
-    "destination": "/"
+    "destination": "/about/"
   },
   {
     "source": "/Pages/mobile/our-services/alzheimers-related-dementia-home-care/",
@@ -381,7 +381,7 @@
   },
   {
     "source": "/Pages/mobile/our-services/decluttering-for-downsizing/",
-    "destination": "/"
+    "destination": "/our-services/downsizing-transition-support/"
   },
   {
     "source": "/Pages/mobile/our-services/light-housekeeping/",
@@ -389,7 +389,7 @@
   },
   {
     "source": "/Pages/mobile/successfully-navigating-a-hospital-discharge-a-comprehensive-guide-by-arcadia-home-care/",
-    "destination": "/"
+    "destination": "/resources/navigating-home-care/"
   },
   {
     "source": "/palliative-home-care/",
@@ -429,7 +429,7 @@
   },
   {
     "source": "/resources/navigating-home-care/questions-before-hiring-home-care/",
-    "destination": "/"
+    "destination": "/resources/navigating-home-care/"
   },
   {
     "source": "/resources/navigating-home-care/when-a-parent-resists-home-care/",
@@ -441,7 +441,7 @@
   },
   {
     "source": "/saying-goodbye-navigating-the-complex-emotions-of-losing-aging-parents",
-    "destination": "/"
+    "destination": "/resources/family-caregiver-support/"
   },
   {
     "source": "/site/866b454d/home",
@@ -457,7 +457,7 @@
   },
   {
     "source": "/successfully-navigating-a-hospital-discharge-a-comprehensive-guide-by-arcadia-home-care",
-    "destination": "/"
+    "destination": "/resources/navigating-home-care/"
   },
   {
     "source": "/the-emotional-journey-understanding-the-impact-of-grief-and-loss-when-caring-for-aging-parents",

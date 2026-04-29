@@ -99,7 +99,7 @@
     },
     {
       "source": "/careers/rehabilitation-support-worker",
-      "destination": "/",
+      "destination": "/careers/",
       "statusCode": 301
     },
     {
@@ -144,7 +144,7 @@
     },
     {
       "source": "/evaluating-your-parents-care-needs-a-comprehensive-checklist",
-      "destination": "/",
+      "destination": "/resources/navigating-home-care/",
       "statusCode": 301
     },
     {
@@ -229,7 +229,7 @@
     },
     {
       "source": "/in-home-care-vs-facility-care-making-the-right-choice-for-your-aging-parents",
-      "destination": "/",
+      "destination": "/resources/navigating-home-care/",
       "statusCode": 301
     },
     {
@@ -404,7 +404,7 @@
     },
     {
       "source": "/our-approach",
-      "destination": "/",
+      "destination": "/how-care-starts/",
       "statusCode": 301
     },
     {
@@ -434,37 +434,37 @@
     },
     {
       "source": "/our-services/decluttering-for-downsizing",
-      "destination": "/",
+      "destination": "/our-services/downsizing-transition-support/",
       "statusCode": 301
     },
     {
       "source": "/our-services/decluttering-for-downsizing/",
-      "destination": "/",
+      "destination": "/our-services/downsizing-transition-support/",
       "statusCode": 301
     },
     {
       "source": "/Pages/mobile/blog/",
-      "destination": "/",
+      "destination": "/resources/",
       "statusCode": 301
     },
     {
       "source": "/Pages/mobile/careers/",
-      "destination": "/",
+      "destination": "/careers/",
       "statusCode": 301
     },
     {
       "source": "/Pages/mobile/careers/personal-support-worker/",
-      "destination": "/",
+      "destination": "/careers/",
       "statusCode": 301
     },
     {
       "source": "/Pages/mobile/careers/rehabilitation-support-worker/",
-      "destination": "/",
+      "destination": "/careers/",
       "statusCode": 301
     },
     {
       "source": "/Pages/mobile/evaluating-your-parents-care-needs-a-comprehensive-checklist/",
-      "destination": "/",
+      "destination": "/resources/navigating-home-care/",
       "statusCode": 301
     },
     {
@@ -474,7 +474,7 @@
     },
     {
       "source": "/Pages/mobile/our-caregivers/",
-      "destination": "/",
+      "destination": "/about/",
       "statusCode": 301
     },
     {
@@ -489,7 +489,7 @@
     },
     {
       "source": "/Pages/mobile/our-services/decluttering-for-downsizing/",
-      "destination": "/",
+      "destination": "/our-services/downsizing-transition-support/",
       "statusCode": 301
     },
     {
@@ -499,7 +499,7 @@
     },
     {
       "source": "/Pages/mobile/successfully-navigating-a-hospital-discharge-a-comprehensive-guide-by-arcadia-home-care/",
-      "destination": "/",
+      "destination": "/resources/navigating-home-care/",
       "statusCode": 301
     },
     {
@@ -549,7 +549,7 @@
     },
     {
       "source": "/resources/navigating-home-care/questions-before-hiring-home-care/",
-      "destination": "/",
+      "destination": "/resources/navigating-home-care/",
       "statusCode": 301
     },
     {
@@ -564,7 +564,7 @@
     },
     {
       "source": "/saying-goodbye-navigating-the-complex-emotions-of-losing-aging-parents",
-      "destination": "/",
+      "destination": "/resources/family-caregiver-support/",
       "statusCode": 301
     },
     {
@@ -584,7 +584,7 @@
     },
     {
       "source": "/successfully-navigating-a-hospital-discharge-a-comprehensive-guide-by-arcadia-home-care",
-      "destination": "/",
+      "destination": "/resources/navigating-home-care/",
       "statusCode": 301
     },
     {
