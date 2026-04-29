@@ -13,6 +13,66 @@
       "statusCode": 301
     },
     {
+      "source": "/Pages/mobile/blog/",
+      "destination": "/resources/",
+      "statusCode": 301
+    },
+    {
+      "source": "/Pages/mobile/careers/",
+      "destination": "/careers/",
+      "statusCode": 301
+    },
+    {
+      "source": "/Pages/mobile/careers/personal-support-worker/",
+      "destination": "/careers/",
+      "statusCode": 301
+    },
+    {
+      "source": "/Pages/mobile/careers/rehabilitation-support-worker/",
+      "destination": "/careers/",
+      "statusCode": 301
+    },
+    {
+      "source": "/Pages/mobile/evaluating-your-parents-care-needs-a-comprehensive-checklist/",
+      "destination": "/resources/navigating-home-care/",
+      "statusCode": 301
+    },
+    {
+      "source": "/Pages/mobile/home/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/Pages/mobile/our-caregivers/",
+      "destination": "/about/",
+      "statusCode": 301
+    },
+    {
+      "source": "/Pages/mobile/our-services/alzheimers-related-dementia-home-care/",
+      "destination": "/our-services/dementia-alzheimers-home-care/",
+      "statusCode": 301
+    },
+    {
+      "source": "/Pages/mobile/our-services/case-management/",
+      "destination": "/our-services/case-management/",
+      "statusCode": 301
+    },
+    {
+      "source": "/Pages/mobile/our-services/decluttering-for-downsizing/",
+      "destination": "/our-services/downsizing-transition-support/",
+      "statusCode": 301
+    },
+    {
+      "source": "/Pages/mobile/our-services/light-housekeeping/",
+      "destination": "/our-services/light-housekeeping/",
+      "statusCode": 301
+    },
+    {
+      "source": "/Pages/mobile/successfully-navigating-a-hospital-discharge-a-comprehensive-guide-by-arcadia-home-care/",
+      "destination": "/resources/navigating-home-care/",
+      "statusCode": 301
+    },
+    {
       "source": "/about-us",
       "destination": "/about/",
       "statusCode": 301
@@ -68,6 +128,11 @@
       "statusCode": 301
     },
     {
+      "source": "/blog/in-home-dementia-care-ontario-options",
+      "destination": "/resources/dementia-memory-care/",
+      "statusCode": 301
+    },
+    {
       "source": "/blog/integrating-home-care-into-financial-planning-ontario-advisors",
       "destination": "/",
       "statusCode": 301
@@ -88,12 +153,42 @@
       "statusCode": 301
     },
     {
+      "source": "/book-a-consultation",
+      "destination": "/contact/",
+      "statusCode": 301
+    },
+    {
+      "source": "/book-a-consultation/",
+      "destination": "/contact/",
+      "statusCode": 301
+    },
+    {
       "source": "/careers/personal-support-worker",
       "destination": "/careers/",
       "statusCode": 301
     },
     {
       "source": "/careers/personal-support-worker/",
+      "destination": "/careers/",
+      "statusCode": 301
+    },
+    {
+      "source": "/careers/psw-application",
+      "destination": "/careers/",
+      "statusCode": 301
+    },
+    {
+      "source": "/careers/psw-application/",
+      "destination": "/careers/",
+      "statusCode": 301
+    },
+    {
+      "source": "/careers/registered-practical-nurse",
+      "destination": "/careers/",
+      "statusCode": 301
+    },
+    {
+      "source": "/careers/registered-practical-nurse/",
       "destination": "/careers/",
       "statusCode": 301
     },
@@ -115,6 +210,21 @@
     {
       "source": "/category/planning/",
       "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/choosing-an-in-home-care-provider-a-step-by-step-guide",
+      "destination": "/resources/navigating-home-care/",
+      "statusCode": 301
+    },
+    {
+      "source": "/choosing-an-in-home-care-provider-a-step-by-step-guide/",
+      "destination": "/resources/navigating-home-care/",
+      "statusCode": 301
+    },
+    {
+      "source": "/cognitive-decline-no-more-how-lecanemab-the-new-alzheimers-drug-slows-progression/",
+      "destination": "/resources/dementia-memory-care/",
       "statusCode": 301
     },
     {
@@ -213,6 +323,16 @@
       "statusCode": 301
     },
     {
+      "source": "/how-to-manage-difficult-situations-in-aging-parents-a-4-step-guide",
+      "destination": "/resources/family-caregiver-support/",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-to-manage-difficult-situations-in-aging-parents-a-4-step-guide/",
+      "destination": "/resources/family-caregiver-support/",
+      "statusCode": 301
+    },
+    {
       "source": "/how-to-talk-to-elderly-parents-about-home-care",
       "destination": "/",
       "statusCode": 301
@@ -248,8 +368,18 @@
       "statusCode": 301
     },
     {
+      "source": "/location-map",
+      "destination": "/locations/",
+      "statusCode": 301
+    },
+    {
       "source": "/location-map-old",
       "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/location-map/",
+      "destination": "/locations/",
       "statusCode": 301
     },
     {
@@ -433,6 +563,16 @@
       "statusCode": 301
     },
     {
+      "source": "/our-services/care-while-youre-at-the-cottage",
+      "destination": "/our-services/respite-care/",
+      "statusCode": 301
+    },
+    {
+      "source": "/our-services/care-while-youre-at-the-cottage/",
+      "destination": "/our-services/respite-care/",
+      "statusCode": 301
+    },
+    {
       "source": "/our-services/decluttering-for-downsizing",
       "destination": "/our-services/downsizing-transition-support/",
       "statusCode": 301
@@ -443,68 +583,23 @@
       "statusCode": 301
     },
     {
-      "source": "/Pages/mobile/blog/",
-      "destination": "/resources/",
+      "source": "/our-services/family-funded-home-care",
+      "destination": "/our-services/personal-support-daily-living/",
       "statusCode": 301
     },
     {
-      "source": "/Pages/mobile/careers/",
-      "destination": "/careers/",
-      "statusCode": 301
-    },
-    {
-      "source": "/Pages/mobile/careers/personal-support-worker/",
-      "destination": "/careers/",
-      "statusCode": 301
-    },
-    {
-      "source": "/Pages/mobile/careers/rehabilitation-support-worker/",
-      "destination": "/careers/",
-      "statusCode": 301
-    },
-    {
-      "source": "/Pages/mobile/evaluating-your-parents-care-needs-a-comprehensive-checklist/",
-      "destination": "/resources/navigating-home-care/",
-      "statusCode": 301
-    },
-    {
-      "source": "/Pages/mobile/home/",
-      "destination": "/",
-      "statusCode": 301
-    },
-    {
-      "source": "/Pages/mobile/our-caregivers/",
-      "destination": "/about/",
-      "statusCode": 301
-    },
-    {
-      "source": "/Pages/mobile/our-services/alzheimers-related-dementia-home-care/",
-      "destination": "/our-services/dementia-alzheimers-home-care/",
-      "statusCode": 301
-    },
-    {
-      "source": "/Pages/mobile/our-services/case-management/",
-      "destination": "/our-services/case-management/",
-      "statusCode": 301
-    },
-    {
-      "source": "/Pages/mobile/our-services/decluttering-for-downsizing/",
-      "destination": "/our-services/downsizing-transition-support/",
-      "statusCode": 301
-    },
-    {
-      "source": "/Pages/mobile/our-services/light-housekeeping/",
-      "destination": "/our-services/light-housekeeping/",
-      "statusCode": 301
-    },
-    {
-      "source": "/Pages/mobile/successfully-navigating-a-hospital-discharge-a-comprehensive-guide-by-arcadia-home-care/",
-      "destination": "/resources/navigating-home-care/",
+      "source": "/our-services/family-funded-home-care/",
+      "destination": "/our-services/personal-support-daily-living/",
       "statusCode": 301
     },
     {
       "source": "/palliative-home-care/",
       "destination": "/our-services/palliative-home-care/",
+      "statusCode": 301
+    },
+    {
+      "source": "/parents-refuses-to-accept-support-create-a-possibility",
+      "destination": "/resources/family-caregiver-support/",
       "statusCode": 301
     },
     {
@@ -525,6 +620,16 @@
     {
       "source": "/rehabilitation-support/",
       "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/request-care",
+      "destination": "/contact/",
+      "statusCode": 301
+    },
+    {
+      "source": "/request-care/",
+      "destination": "/contact/",
       "statusCode": 301
     },
     {

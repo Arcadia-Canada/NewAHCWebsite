@@ -1,5 +1,53 @@
 [
   {
+    "source": "/Pages/mobile/blog/",
+    "destination": "/resources/"
+  },
+  {
+    "source": "/Pages/mobile/careers/",
+    "destination": "/careers/"
+  },
+  {
+    "source": "/Pages/mobile/careers/personal-support-worker/",
+    "destination": "/careers/"
+  },
+  {
+    "source": "/Pages/mobile/careers/rehabilitation-support-worker/",
+    "destination": "/careers/"
+  },
+  {
+    "source": "/Pages/mobile/evaluating-your-parents-care-needs-a-comprehensive-checklist/",
+    "destination": "/resources/navigating-home-care/"
+  },
+  {
+    "source": "/Pages/mobile/home/",
+    "destination": "/"
+  },
+  {
+    "source": "/Pages/mobile/our-caregivers/",
+    "destination": "/about/"
+  },
+  {
+    "source": "/Pages/mobile/our-services/alzheimers-related-dementia-home-care/",
+    "destination": "/our-services/dementia-alzheimers-home-care/"
+  },
+  {
+    "source": "/Pages/mobile/our-services/case-management/",
+    "destination": "/our-services/case-management/"
+  },
+  {
+    "source": "/Pages/mobile/our-services/decluttering-for-downsizing/",
+    "destination": "/our-services/downsizing-transition-support/"
+  },
+  {
+    "source": "/Pages/mobile/our-services/light-housekeeping/",
+    "destination": "/our-services/light-housekeeping/"
+  },
+  {
+    "source": "/Pages/mobile/successfully-navigating-a-hospital-discharge-a-comprehensive-guide-by-arcadia-home-care/",
+    "destination": "/resources/navigating-home-care/"
+  },
+  {
     "source": "/about-us",
     "destination": "/about/"
   },
@@ -44,6 +92,10 @@
     "destination": "/"
   },
   {
+    "source": "/blog/in-home-dementia-care-ontario-options",
+    "destination": "/resources/dementia-memory-care/"
+  },
+  {
     "source": "/blog/integrating-home-care-into-financial-planning-ontario-advisors",
     "destination": "/"
   },
@@ -60,11 +112,35 @@
     "destination": "/"
   },
   {
+    "source": "/book-a-consultation",
+    "destination": "/contact/"
+  },
+  {
+    "source": "/book-a-consultation/",
+    "destination": "/contact/"
+  },
+  {
     "source": "/careers/personal-support-worker",
     "destination": "/careers/"
   },
   {
     "source": "/careers/personal-support-worker/",
+    "destination": "/careers/"
+  },
+  {
+    "source": "/careers/psw-application",
+    "destination": "/careers/"
+  },
+  {
+    "source": "/careers/psw-application/",
+    "destination": "/careers/"
+  },
+  {
+    "source": "/careers/registered-practical-nurse",
+    "destination": "/careers/"
+  },
+  {
+    "source": "/careers/registered-practical-nurse/",
     "destination": "/careers/"
   },
   {
@@ -82,6 +158,18 @@
   {
     "source": "/category/planning/",
     "destination": "/"
+  },
+  {
+    "source": "/choosing-an-in-home-care-provider-a-step-by-step-guide",
+    "destination": "/resources/navigating-home-care/"
+  },
+  {
+    "source": "/choosing-an-in-home-care-provider-a-step-by-step-guide/",
+    "destination": "/resources/navigating-home-care/"
+  },
+  {
+    "source": "/cognitive-decline-no-more-how-lecanemab-the-new-alzheimers-drug-slows-progression/",
+    "destination": "/resources/dementia-memory-care/"
   },
   {
     "source": "/comments/feed/",
@@ -160,6 +248,14 @@
     "destination": "/"
   },
   {
+    "source": "/how-to-manage-difficult-situations-in-aging-parents-a-4-step-guide",
+    "destination": "/resources/family-caregiver-support/"
+  },
+  {
+    "source": "/how-to-manage-difficult-situations-in-aging-parents-a-4-step-guide/",
+    "destination": "/resources/family-caregiver-support/"
+  },
+  {
     "source": "/how-to-talk-to-elderly-parents-about-home-care",
     "destination": "/"
   },
@@ -188,8 +284,16 @@
     "destination": "/our-services/light-housekeeping/"
   },
   {
+    "source": "/location-map",
+    "destination": "/locations/"
+  },
+  {
     "source": "/location-map-old",
     "destination": "/"
+  },
+  {
+    "source": "/location-map/",
+    "destination": "/locations/"
   },
   {
     "source": "/location/",
@@ -336,6 +440,14 @@
     "destination": "/our-services/dementia-alzheimers-home-care/"
   },
   {
+    "source": "/our-services/care-while-youre-at-the-cottage",
+    "destination": "/our-services/respite-care/"
+  },
+  {
+    "source": "/our-services/care-while-youre-at-the-cottage/",
+    "destination": "/our-services/respite-care/"
+  },
+  {
     "source": "/our-services/decluttering-for-downsizing",
     "destination": "/our-services/downsizing-transition-support/"
   },
@@ -344,56 +456,20 @@
     "destination": "/our-services/downsizing-transition-support/"
   },
   {
-    "source": "/Pages/mobile/blog/",
-    "destination": "/resources/"
+    "source": "/our-services/family-funded-home-care",
+    "destination": "/our-services/personal-support-daily-living/"
   },
   {
-    "source": "/Pages/mobile/careers/",
-    "destination": "/careers/"
-  },
-  {
-    "source": "/Pages/mobile/careers/personal-support-worker/",
-    "destination": "/careers/"
-  },
-  {
-    "source": "/Pages/mobile/careers/rehabilitation-support-worker/",
-    "destination": "/careers/"
-  },
-  {
-    "source": "/Pages/mobile/evaluating-your-parents-care-needs-a-comprehensive-checklist/",
-    "destination": "/resources/navigating-home-care/"
-  },
-  {
-    "source": "/Pages/mobile/home/",
-    "destination": "/"
-  },
-  {
-    "source": "/Pages/mobile/our-caregivers/",
-    "destination": "/about/"
-  },
-  {
-    "source": "/Pages/mobile/our-services/alzheimers-related-dementia-home-care/",
-    "destination": "/our-services/dementia-alzheimers-home-care/"
-  },
-  {
-    "source": "/Pages/mobile/our-services/case-management/",
-    "destination": "/our-services/case-management/"
-  },
-  {
-    "source": "/Pages/mobile/our-services/decluttering-for-downsizing/",
-    "destination": "/our-services/downsizing-transition-support/"
-  },
-  {
-    "source": "/Pages/mobile/our-services/light-housekeeping/",
-    "destination": "/our-services/light-housekeeping/"
-  },
-  {
-    "source": "/Pages/mobile/successfully-navigating-a-hospital-discharge-a-comprehensive-guide-by-arcadia-home-care/",
-    "destination": "/resources/navigating-home-care/"
+    "source": "/our-services/family-funded-home-care/",
+    "destination": "/our-services/personal-support-daily-living/"
   },
   {
     "source": "/palliative-home-care/",
     "destination": "/our-services/palliative-home-care/"
+  },
+  {
+    "source": "/parents-refuses-to-accept-support-create-a-possibility",
+    "destination": "/resources/family-caregiver-support/"
   },
   {
     "source": "/personal-support-worker",
@@ -410,6 +486,14 @@
   {
     "source": "/rehabilitation-support/",
     "destination": "/"
+  },
+  {
+    "source": "/request-care",
+    "destination": "/contact/"
+  },
+  {
+    "source": "/request-care/",
+    "destination": "/contact/"
   },
   {
     "source": "/resources/family-caregiver-support/caregiver-burnout-warning-signs/",
