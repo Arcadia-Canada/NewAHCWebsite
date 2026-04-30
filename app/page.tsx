@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
+import HeroTemplate from '@/components/hero-template';
 
 // ─── DESIGN TOKENS ────────────────────────────────────────────────────────────
 const colors = {
@@ -168,64 +169,57 @@ function GoogleReviewsWidget() {
 
 function Hero() {
   return (
-    <section style={{ background: colors.primary, paddingTop: 72, minHeight: '92vh', display: 'flex', flexDirection: 'column' }}>
-      <div style={{ flex: 1, maxWidth: 1200, margin: '0 auto', padding: '80px 24px 60px', display: 'flex', alignItems: 'center', gap: 60, width: '100%' }} className="hero-grid">
-        {/* Text */}
-        <div style={{ flex: '1 1 55%' }}>
-          <div style={{ display: 'inline-block', background: 'rgba(200,48,42,0.15)', border: '1px solid rgba(200,48,42,0.3)', borderRadius: 100, padding: '6px 16px', marginBottom: 24 }}>
-            <span style={{ color: '#E8867F', fontSize: 12, fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase' }}>Specialized Home Care · Toronto & GTA</span>
-          </div>
-          <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.6rem, 5.5vw, 4.8rem)', fontWeight: 600, lineHeight: 1.12, color: '#fff', marginBottom: 24, letterSpacing: '-0.01em' }}>
-            Care That Understands<br />
-            <span style={{ color: '#E8867F' }}>What Your Family<br />Is Going Through</span>
-          </h1>
-          <p style={{ fontSize: 18, lineHeight: 1.65, color: 'rgba(255,255,255,0.75)', marginBottom: 36, maxWidth: 540, fontWeight: 300 }}>
-            Arcadia brings clinical expertise and genuine compassion together — guiding families through dementia, brain injury, recovery, and complex aging at home. Serving the GTA since 2005.
-          </p>
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 16 }}>
-            <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', alignItems: 'center' }}>
-              <a href="tel:8449770050" style={{ background: colors.accent, color: '#fff', padding: '16px 32px', borderRadius: 8, textDecoration: 'none', fontSize: 16, fontWeight: 700, display: 'flex', alignItems: 'center', gap: 8, transition: 'all 0.2s' }}
-                onMouseOver={e => e.currentTarget.style.background = '#a82520'}
-                onMouseOut={e => e.currentTarget.style.background = colors.accent}>
-                📞 Call (844) 977-0050
-              </a>
-              <a href="/contact/" style={{ background: 'transparent', color: '#fff', padding: '16px 32px', borderRadius: 8, textDecoration: 'none', fontSize: 16, fontWeight: 600, border: '1.5px solid rgba(255,255,255,0.3)', transition: 'all 0.2s' }}
-                onMouseOver={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.08)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.5)'; }}
-                onMouseOut={e => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.3)'; }}>
-                Book a Free Consultation
-              </a>
+    <>
+      <HeroTemplate
+        eyebrow="Specialized Home Care · Toronto & GTA"
+        title={<>Care That Understands<br /><span style={{ color: '#E8867F' }}>What Your Family<br />Is Going Through</span></>}
+        body={
+          <>
+            <p>Arcadia brings clinical expertise and genuine compassion together — guiding families through dementia, brain injury, recovery, and complex aging at home. Serving the GTA since 2005.</p>
+          </>
+        }
+        actions={
+          <>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 16 }}>
+              <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', alignItems: 'center' }}>
+                <a href="tel:8449770050" style={{ background: colors.accent, color: '#fff', padding: '16px 32px', borderRadius: 8, textDecoration: 'none', fontSize: 16, fontWeight: 700, display: 'flex', alignItems: 'center', gap: 8, transition: 'all 0.2s' }}
+                  onMouseOver={e => e.currentTarget.style.background = '#a82520'}
+                  onMouseOut={e => e.currentTarget.style.background = colors.accent}>
+                  📞 Call (844) 977-0050
+                </a>
+                <a href="/contact/" style={{ background: 'transparent', color: '#fff', padding: '16px 32px', borderRadius: 8, textDecoration: 'none', fontSize: 16, fontWeight: 600, border: '1.5px solid rgba(255,255,255,0.3)', transition: 'all 0.2s' }}
+                  onMouseOver={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.08)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.5)'; }}
+                  onMouseOut={e => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.3)'; }}>
+                  Book a Free Consultation
+                </a>
+              </div>
+              <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.15)', borderRadius: 100, padding: '8px 16px' }}>
+                <StarRating />
+                <span style={{ fontSize: 13, color: 'rgba(255,255,255,0.85)', fontWeight: 600 }}>5.0 · 38 Google Reviews</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                  <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                  <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                  <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+                  <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                </svg>
+              </div>
             </div>
-            {/* Static Google rating badge — replaces Elfsight */}
-            <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.15)', borderRadius: 100, padding: '8px 16px' }}>
-              <StarRating />
-              <span style={{ fontSize: 13, color: 'rgba(255,255,255,0.85)', fontWeight: 600 }}>5.0 · 38 Google Reviews</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
-                <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
-                <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
-                <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
-              </svg>
-            </div>
-          </div>
-        </div>
-
-        {/* Hero image */}
-        <div className="hero-image" style={{ flex: '1 1 40%', position: 'relative', maxWidth: 480 }}>
-          <div style={{ position: 'relative', borderRadius: 16, overflow: 'hidden', boxShadow: '0 40px 80px rgba(0,0,0,0.4)' }}>
-            <Image src="/images/image 43-08b42066-435w.webp" alt="Arcadia caregiver with senior client" width={480} height={520} priority style={{ width: '100%', height: 520, objectFit: 'cover', display: 'block' }} />
-            <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, transparent 50%, rgba(28,43,58,0.3))' }} />
-          </div>
-          <a href="/referral-form/" style={{ position: 'absolute', bottom: -20, left: -20, background: '#fff', borderRadius: 12, padding: '16px 20px', boxShadow: '0 20px 40px rgba(0,0,0,0.15)', maxWidth: 220, display: 'block', textDecoration: 'none', color: 'inherit', transition: 'box-shadow 0.2s' }}
+          </>
+        }
+        imageSrc="/images/home-hero-caregiver-senior.png"
+        imageAlt="Arcadia caregiver supporting an older adult at home"
+        mediaBadge={
+          <a href="/referral-form/" style={{ background: '#fff', borderRadius: 12, padding: '16px 20px', boxShadow: '0 20px 40px rgba(0,0,0,0.15)', display: 'block', textDecoration: 'none', color: 'inherit', transition: 'box-shadow 0.2s' }}
             onMouseOver={e => { e.currentTarget.style.boxShadow = '0 24px 48px rgba(0,0,0,0.18)'; }}
             onMouseOut={e => { e.currentTarget.style.boxShadow = '0 20px 40px rgba(0,0,0,0.15)'; }}>
             <div style={{ fontSize: 11, fontWeight: 600, color: colors.accent, textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: 4 }}>Referral Ready</div>
             <div style={{ fontSize: 13, color: colors.primary, fontWeight: 500, lineHeight: 1.4 }}>We work with discharge planners, social workers & care teams</div>
             <span style={{ display: 'inline-block', marginTop: 8, fontSize: 12, color: colors.accent, fontWeight: 600 }}>Submit a Referral →</span>
           </a>
-        </div>
-      </div>
+        }
+      />
       <TrustBar />
-    </section>
+    </>
   );
 }
 

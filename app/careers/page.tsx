@@ -2,6 +2,7 @@
 
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import HeroTemplate from '@/components/hero-template'
 
 export const metadata: Metadata = {
   title: 'Careers in Home Care | Join Our Team | Arcadia Home Care',
@@ -128,28 +129,6 @@ export default function CareersPage() {
         .careers-page { font-family: 'DM Sans', system-ui, sans-serif; color: #2D2D2D; }
 
         /* Hero */
-        .careers-hero {
-          background: #1C2B3A;
-          padding: 96px 24px 80px;
-          text-align: center;
-        }
-        .careers-hero-eyebrow {
-          font-size: 12px; font-weight: 700; letter-spacing: 0.1em;
-          text-transform: uppercase; color: #C8302A; margin-bottom: 16px;
-        }
-        .careers-hero h1 {
-          font-family: 'Cormorant Garamond', Georgia, serif;
-          font-size: clamp(2.4rem, 5vw, 4rem);
-          font-weight: 600; color: #fff; line-height: 1.1;
-          max-width: 800px; margin: 0 auto 20px;
-        }
-        .careers-hero p {
-          font-size: 1.1rem; color: rgba(255,255,255,0.75);
-          max-width: 600px; margin: 0 auto 36px; line-height: 1.7;
-        }
-        .careers-hero-actions {
-          display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;
-        }
         .btn-red,
         .btn-outline-white {
           padding: 14px 26px;
@@ -161,7 +140,7 @@ export default function CareersPage() {
           align-items: center;
           justify-content: center;
           gap: 8px;
-          min-width: 200px;
+          min-width: 184px;
           transition: all 0.2s;
         }
         .btn-red {
@@ -394,26 +373,26 @@ export default function CareersPage() {
 
       <main className="careers-page">
 
-        {/* Hero */}
-        <section className="careers-hero">
-          <p className="careers-hero-eyebrow">Join Our Team</p>
-          <h1>Make a Real Difference.<br />Build a Career You're Proud Of.</h1>
-          <p>
-            Arcadia Home Care is always looking for warm, dedicated professionals who believe in
-            the dignity and independence of every person they care for.
-          </p>
-          <div className="careers-hero-actions">
-            <a href="/pre-hire/" className="btn-red">
-              Complete Pre-Hire Form
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <path d="M3 8h10M9 4l4 4-4 4" stroke="#fff" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-            </a>
-            <a href="tel:8449770050" className="btn-outline-white">
-              Call Us — (844) 977-0050
-            </a>
-          </div>
-        </section>
+        <HeroTemplate
+          eyebrow="Join Our Team"
+          title={<>Make a Real Difference.<br />Build a Career You&apos;re Proud Of.</>}
+          body={<p>Arcadia Home Care is always looking for warm, dedicated professionals who believe in the dignity and independence of every person they care for.</p>}
+          actions={
+            <>
+              <a href="/pre-hire/" className="btn-red">
+                Complete Pre-Hire Form
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M3 8h10M9 4l4 4-4 4" stroke="#fff" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </a>
+              <a href="tel:8449770050" className="btn-outline-white">
+                Call Us — (844) 977-0050
+              </a>
+            </>
+          }
+          imageSrc="/images/careers-hero-caregiver-support.png"
+          imageAlt="Caregiver helping an older adult stand safely at home"
+        />
 
         {/* Quick links bar */}
         <div className="quick-links-bar">

@@ -3,6 +3,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { colors, fonts, trustItems } from '@/components/arcadia-colors'
+import HeroTemplate from '@/components/hero-template'
 
 export const metadata: Metadata = {
   title: 'About Our Caregivers | Arcadia Home Care | GTA',
@@ -43,10 +44,6 @@ export default function AboutPage() {
     <>
       <style>{`
         .about-page { font-family: 'DM Sans', system-ui, sans-serif; color: #2D2D2D; }
-        .about-hero { background: #1C2B3A; padding: 96px 24px 80px; text-align: center; }
-        .about-eyebrow { font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #C8302A; margin-bottom: 16px; }
-        .about-hero h1 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(2.4rem, 5vw, 4rem); font-weight: 600; color: #fff; line-height: 1.15; max-width: 760px; margin: 0 auto 20px; }
-        .about-hero p { font-size: 1.1rem; color: rgba(255,255,255,0.72); max-width: 600px; margin: 0 auto; line-height: 1.75; }
         .intro-eyebrow { font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #C8302A; margin-bottom: 14px; }
         .screening-bg { background: #F7F3EE; border-top: 1px solid #E5E0D8; border-bottom: 1px solid #E5E0D8; }
         .screening-section { max-width: 1200px; margin: 0 auto; padding: 80px 24px; }
@@ -75,12 +72,13 @@ export default function AboutPage() {
 
       <main className="about-page">
 
-        {/* Hero */}
-        <section className="about-hero">
-          <p className="about-eyebrow">Our Caregivers</p>
-          <h1>The Most Critical Part of Our Service Is Our Caregivers.</h1>
-          <p>They are the face of Arcadia. That&apos;s why we spend so much care ensuring they are the best they can be — screened rigorously, trained continuously, and matched thoughtfully.</p>
-        </section>
+        <HeroTemplate
+          eyebrow="Our Caregivers"
+          title={<>The Most Critical Part of Our Service Is Our Caregivers.</>}
+          body={<p style={{ marginBottom: 0 }}>They are the face of Arcadia. That&apos;s why we spend so much care ensuring they are the best they can be — screened rigorously, trained continuously, and matched thoughtfully.</p>}
+          imageSrc="/images/about-hero-caregiver-senior-support.png"
+          imageAlt="Caregiver offering supportive companionship to an older adult at home"
+        />
 
         {/* Trust strip */}
         <div style={{ background: colors.warm, borderBottom: `1px solid ${colors.border}`, padding: '12px 24px', display: 'flex', justifyContent: 'center', gap: 40, flexWrap: 'wrap' }}>

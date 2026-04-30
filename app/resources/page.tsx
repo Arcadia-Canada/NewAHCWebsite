@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { colors, fonts, phone, trustItems, arcBtn } from "@/components/arcadia-colors";
+import HeroTemplate from "@/components/hero-template";
 
 export const metadata: Metadata = {
   title: "Caregiving & Home Care Resources | Arcadia Home Care",
@@ -167,22 +168,19 @@ export default function ResourcesHubPage() {
 
       <main style={{ fontFamily: fonts.body, color: colors.text }}>
 
-        {/* Hero */}
-        <section style={{ background: colors.primary, padding: "96px 24px 80px", textAlign: "center" }}>
-          <div style={{ maxWidth: 720, margin: "0 auto" }}>
-            <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: colors.accent, marginBottom: 16 }}>Resources</p>
-            <h1 style={{ fontFamily: fonts.display, fontSize: "clamp(2.6rem, 5.5vw, 4.8rem)", fontWeight: 600, color: colors.white, marginBottom: 20, lineHeight: 1.2 }}>
-              Guides for Families & Caregivers
-            </h1>
-            <p style={{ fontSize: "1.0625rem", color: "rgba(255,255,255,0.85)", lineHeight: 1.7, marginBottom: 32 }}>
-              Practical guides on dementia and memory care, family caregiver support, navigating home care, and brain injury rehabilitation — to help you and your family make informed decisions.
-            </p>
-            <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap" }}>
+        <HeroTemplate
+          eyebrow="Resources"
+          title={<>Guides for Families & Caregivers</>}
+          body={<p>Practical guides on dementia and memory care, family caregiver support, navigating home care, and brain injury rehabilitation — to help you and your family make informed decisions.</p>}
+          actions={
+            <>
               <a href={phone.tel} style={arcBtn.primary}>📞 Call {phone.display}</a>
               <Link href="/contact/" style={arcBtn.outline}>Book a Free Consultation</Link>
-            </div>
-          </div>
-        </section>
+            </>
+          }
+          imageSrc="/images/resources-hero-family-tablet.png"
+          imageAlt="Family and caregiver reviewing care information together"
+        />
 
         {/* Trust strip */}
         <div style={{ background: colors.warm, borderBottom: `1px solid ${colors.border}`, padding: "12px 24px", display: "flex", justifyContent: "center", gap: 40, flexWrap: "wrap" }}>

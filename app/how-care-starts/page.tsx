@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import { colors, fonts, phone, trustItems } from "@/components/arcadia-colors"
+import HeroTemplate from "@/components/hero-template"
 
 const steps = [
   { num: 1, title: "Book a Free Consultation", description: "A no-obligation call where we listen to your situation and begin to understand what your family needs.", href: "/contact/", icon: "📞" },
@@ -16,25 +17,19 @@ const steps = [
 export default function HowCareStartsHubPage() {
   return (
     <main style={{ fontFamily: fonts.body, color: colors.text }}>
-
-      {/* Hero */}
-      <section style={{ background: colors.primary, padding: "96px 24px 80px", textAlign: "center" }}>
-        <div style={{ maxWidth: 720, margin: "0 auto" }}>
-          <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: colors.accent, marginBottom: 16 }}>
-            How Care Starts
-          </p>
-          <h1 style={{ fontFamily: fonts.display, fontSize: "clamp(2.5rem, 5vw, 3.8rem)", fontWeight: 600, color: colors.white, lineHeight: 1.15, marginBottom: 0 }}>
-            Simple Steps to Get the Right Care
-          </h1>
-          <p style={{ fontSize: 17, color: "rgba(255,255,255,0.75)", lineHeight: 1.7, fontWeight: 300, margin: "16px 0 32px" }}>
-            From your first call to ongoing support — here is exactly what happens when you reach out to Arcadia.
-          </p>
-          <div style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap" }}>
+      <HeroTemplate
+        eyebrow="How Care Starts"
+        title={<>Simple Steps to Get the Right Care</>}
+        body={<p>From your first call to ongoing support — here is exactly what happens when you reach out to Arcadia.</p>}
+        actions={
+          <>
             <a href={phone.tel} className="arc-btn-primary">📞 Call {phone.display}</a>
             <Link href="/contact/" className="arc-btn-outline">Book a Free Consultation</Link>
-          </div>
-        </div>
-      </section>
+          </>
+        }
+        imageSrc="/images/how-care-starts-hero-medication-support.png"
+        imageAlt="Caregiver helping an older adult with medications at home"
+      />
 
       {/* Trust strip */}
       <div style={{ background: colors.warm, borderBottom: `1px solid ${colors.border}`, padding: "12px 24px", display: "flex", justifyContent: "center", gap: 40, flexWrap: "wrap" }}>

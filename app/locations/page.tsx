@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import { colors, fonts, phone, trustItems } from "@/components/arcadia-colors"
+import HeroTemplate from "@/components/hero-template"
 
 export const metadata: Metadata = {
   title: "Home Care Locations Across the GTA | Arcadia Home Care",
@@ -24,26 +25,24 @@ export default function LocationsHubPage() {
       ]) }} />
 
       <main style={{ fontFamily: fonts.body, color: colors.text }}>
-
-        {/* Hero */}
-        <section style={{ background: colors.primary, padding: "96px 24px 80px", textAlign: "center" }}>
-          <div style={{ maxWidth: 720, margin: "0 auto" }}>
-            <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: colors.accent, marginBottom: 16 }}>Locations</p>
-            <h1 style={{ fontFamily: fonts.display, fontSize: "clamp(2.6rem, 5.5vw, 4.8rem)", fontWeight: 600, color: colors.white, marginBottom: 0, lineHeight: 1.2 }}>
-              Home Care Across Toronto & the Greater Toronto Area
-            </h1>
-            <p style={{ fontSize: "1.0625rem", color: "rgba(255,255,255,0.85)", lineHeight: 1.7, margin: "20px 0 16px" }}>
-              Arcadia Home Care provides specialized in-home care for families across the Greater Toronto Area — from downtown Toronto to the surrounding suburbs and regions. Whether your loved one needs dementia care, rehabilitation support, palliative care, or daily living assistance, our caregivers are local to your area and supported by a clinical team that understands the health resources in your community.
-            </p>
-            <p style={{ fontSize: "1rem", color: "rgba(255,255,255,0.8)", lineHeight: 1.7, marginBottom: 32 }}>
-              We work closely with hospitals, discharge planners, and Ontario Health atHome coordinators across the GTA to ensure your loved one&apos;s transition to home care is seamless — no matter where in the region you live.
-            </p>
-            <div style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap" }}>
+        <HeroTemplate
+          eyebrow="Locations"
+          title={<>Home Care Across Toronto & the Greater Toronto Area</>}
+          body={
+            <>
+              <p style={{ marginBottom: 10 }}>Arcadia Home Care provides specialized in-home care for families across the Greater Toronto Area — from downtown Toronto to the surrounding suburbs and regions. Whether your loved one needs dementia care, rehabilitation support, palliative care, or daily living assistance, our caregivers are local to your area and supported by a clinical team that understands the health resources in your community.</p>
+              <p style={{ marginBottom: 0 }}>We work closely with hospitals, discharge planners, and Ontario Health atHome coordinators across the GTA to ensure your loved one&apos;s transition to home care is seamless — no matter where in the region you live.</p>
+            </>
+          }
+          actions={
+            <>
               <a href={phone.tel} className="arc-btn-primary">📞 Call {phone.display}</a>
               <Link href="/contact/" className="arc-btn-outline">Book a Free Consultation</Link>
-            </div>
-          </div>
-        </section>
+            </>
+          }
+          imageSrc="/images/locations-hero-doorstep-greeting.png"
+          imageAlt="Caregiver greeting an older adult at the front door"
+        />
 
         {/* Trust strip */}
         <div style={{ background: colors.warm, borderBottom: `1px solid ${colors.border}`, padding: "12px 24px", display: "flex", justifyContent: "center", gap: 40, flexWrap: "wrap" }}>
