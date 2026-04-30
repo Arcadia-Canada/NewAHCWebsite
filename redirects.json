@@ -1,53 +1,5 @@
 [
   {
-    "source": "/Pages/mobile/blog/",
-    "destination": "/resources/"
-  },
-  {
-    "source": "/Pages/mobile/careers/",
-    "destination": "/careers/"
-  },
-  {
-    "source": "/Pages/mobile/careers/personal-support-worker/",
-    "destination": "/careers/"
-  },
-  {
-    "source": "/Pages/mobile/careers/rehabilitation-support-worker/",
-    "destination": "/careers/"
-  },
-  {
-    "source": "/Pages/mobile/evaluating-your-parents-care-needs-a-comprehensive-checklist/",
-    "destination": "/resources/navigating-home-care/"
-  },
-  {
-    "source": "/Pages/mobile/home/",
-    "destination": "/"
-  },
-  {
-    "source": "/Pages/mobile/our-caregivers/",
-    "destination": "/about/"
-  },
-  {
-    "source": "/Pages/mobile/our-services/alzheimers-related-dementia-home-care/",
-    "destination": "/our-services/dementia-alzheimers-home-care/"
-  },
-  {
-    "source": "/Pages/mobile/our-services/case-management/",
-    "destination": "/our-services/case-management/"
-  },
-  {
-    "source": "/Pages/mobile/our-services/decluttering-for-downsizing/",
-    "destination": "/our-services/downsizing-transition-support/"
-  },
-  {
-    "source": "/Pages/mobile/our-services/light-housekeeping/",
-    "destination": "/our-services/light-housekeeping/"
-  },
-  {
-    "source": "/Pages/mobile/successfully-navigating-a-hospital-discharge-a-comprehensive-guide-by-arcadia-home-care/",
-    "destination": "/resources/navigating-home-care/"
-  },
-  {
     "source": "/about-us",
     "destination": "/about/"
   },
@@ -462,6 +414,62 @@
   {
     "source": "/our-services/family-funded-home-care/",
     "destination": "/our-services/personal-support-daily-living/"
+  },
+  {
+    "source": "/Pages/mobile/blog/",
+    "destination": "/resources/"
+  },
+  {
+    "source": "/Pages/mobile/careers/",
+    "destination": "/careers/"
+  },
+  {
+    "source": "/Pages/mobile/careers/personal-support-worker/",
+    "destination": "/careers/"
+  },
+  {
+    "source": "/Pages/mobile/careers/rehabilitation-support-worker/",
+    "destination": "/careers/"
+  },
+  {
+    "source": "/Pages/mobile/evaluating-your-parents-care-needs-a-comprehensive-checklist/",
+    "destination": "/resources/navigating-home-care/"
+  },
+  {
+    "source": "/Pages/mobile/home/",
+    "destination": "/"
+  },
+  {
+    "source": "/Pages/mobile/home/index.html",
+    "destination": "/"
+  },
+  {
+    "source": "/Pages/mobile/in-home-care-vs-facility-care-making-the-right-choice-for-your-aging-parents/",
+    "destination": "/resources/navigating-home-care/"
+  },
+  {
+    "source": "/Pages/mobile/our-caregivers/",
+    "destination": "/about/"
+  },
+  {
+    "source": "/Pages/mobile/our-services/alzheimers-related-dementia-home-care/",
+    "destination": "/our-services/dementia-alzheimers-home-care/"
+  },
+  {
+    "source": "/Pages/mobile/our-services/case-management/",
+    "destination": "/our-services/case-management/"
+  },
+  {
+    "source": "/Pages/mobile/our-services/decluttering-for-downsizing/",
+    "destination": "/our-services/downsizing-transition-support/"
+  },
+  {
+    "source": "/Pages/mobile/our-services/light-housekeeping/",
+    "destination": "/our-services/light-housekeeping/"
+  },
+  {
+    "source": "/Pages/mobile/successfully-navigating-a-hospital-discharge-a-comprehensive-guide-by-arcadia-home-care/",
+    "destination": "/resources/navigating-home-care/"
   },
   {
     "source": "/palliative-home-care/",

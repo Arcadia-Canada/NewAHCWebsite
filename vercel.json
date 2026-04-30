@@ -13,66 +13,6 @@
       "statusCode": 301
     },
     {
-      "source": "/Pages/mobile/blog/",
-      "destination": "/resources/",
-      "statusCode": 301
-    },
-    {
-      "source": "/Pages/mobile/careers/",
-      "destination": "/careers/",
-      "statusCode": 301
-    },
-    {
-      "source": "/Pages/mobile/careers/personal-support-worker/",
-      "destination": "/careers/",
-      "statusCode": 301
-    },
-    {
-      "source": "/Pages/mobile/careers/rehabilitation-support-worker/",
-      "destination": "/careers/",
-      "statusCode": 301
-    },
-    {
-      "source": "/Pages/mobile/evaluating-your-parents-care-needs-a-comprehensive-checklist/",
-      "destination": "/resources/navigating-home-care/",
-      "statusCode": 301
-    },
-    {
-      "source": "/Pages/mobile/home/",
-      "destination": "/",
-      "statusCode": 301
-    },
-    {
-      "source": "/Pages/mobile/our-caregivers/",
-      "destination": "/about/",
-      "statusCode": 301
-    },
-    {
-      "source": "/Pages/mobile/our-services/alzheimers-related-dementia-home-care/",
-      "destination": "/our-services/dementia-alzheimers-home-care/",
-      "statusCode": 301
-    },
-    {
-      "source": "/Pages/mobile/our-services/case-management/",
-      "destination": "/our-services/case-management/",
-      "statusCode": 301
-    },
-    {
-      "source": "/Pages/mobile/our-services/decluttering-for-downsizing/",
-      "destination": "/our-services/downsizing-transition-support/",
-      "statusCode": 301
-    },
-    {
-      "source": "/Pages/mobile/our-services/light-housekeeping/",
-      "destination": "/our-services/light-housekeeping/",
-      "statusCode": 301
-    },
-    {
-      "source": "/Pages/mobile/successfully-navigating-a-hospital-discharge-a-comprehensive-guide-by-arcadia-home-care/",
-      "destination": "/resources/navigating-home-care/",
-      "statusCode": 301
-    },
-    {
       "source": "/about-us",
       "destination": "/about/",
       "statusCode": 301
@@ -590,6 +530,76 @@
     {
       "source": "/our-services/family-funded-home-care/",
       "destination": "/our-services/personal-support-daily-living/",
+      "statusCode": 301
+    },
+    {
+      "source": "/Pages/mobile/blog/",
+      "destination": "/resources/",
+      "statusCode": 301
+    },
+    {
+      "source": "/Pages/mobile/careers/",
+      "destination": "/careers/",
+      "statusCode": 301
+    },
+    {
+      "source": "/Pages/mobile/careers/personal-support-worker/",
+      "destination": "/careers/",
+      "statusCode": 301
+    },
+    {
+      "source": "/Pages/mobile/careers/rehabilitation-support-worker/",
+      "destination": "/careers/",
+      "statusCode": 301
+    },
+    {
+      "source": "/Pages/mobile/evaluating-your-parents-care-needs-a-comprehensive-checklist/",
+      "destination": "/resources/navigating-home-care/",
+      "statusCode": 301
+    },
+    {
+      "source": "/Pages/mobile/home/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/Pages/mobile/home/index.html",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/Pages/mobile/in-home-care-vs-facility-care-making-the-right-choice-for-your-aging-parents/",
+      "destination": "/resources/navigating-home-care/",
+      "statusCode": 301
+    },
+    {
+      "source": "/Pages/mobile/our-caregivers/",
+      "destination": "/about/",
+      "statusCode": 301
+    },
+    {
+      "source": "/Pages/mobile/our-services/alzheimers-related-dementia-home-care/",
+      "destination": "/our-services/dementia-alzheimers-home-care/",
+      "statusCode": 301
+    },
+    {
+      "source": "/Pages/mobile/our-services/case-management/",
+      "destination": "/our-services/case-management/",
+      "statusCode": 301
+    },
+    {
+      "source": "/Pages/mobile/our-services/decluttering-for-downsizing/",
+      "destination": "/our-services/downsizing-transition-support/",
+      "statusCode": 301
+    },
+    {
+      "source": "/Pages/mobile/our-services/light-housekeeping/",
+      "destination": "/our-services/light-housekeeping/",
+      "statusCode": 301
+    },
+    {
+      "source": "/Pages/mobile/successfully-navigating-a-hospital-discharge-a-comprehensive-guide-by-arcadia-home-care/",
+      "destination": "/resources/navigating-home-care/",
       "statusCode": 301
     },
     {
