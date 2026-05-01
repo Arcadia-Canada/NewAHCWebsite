@@ -45,6 +45,7 @@ Every governance document lives in `docs/` in this repo. Read the relevant file(
 | `docs/05-URL-CONVENTIONS.md` | Choosing a slug or page URL |
 | `docs/06-PUBLISHING-CHECKLIST.md` | Publishing a new blog article |
 | `docs/07-VOICE-AND-TONE.md` | Writing or editing any user-facing copy |
+| `docs/CURSOR-CONTENT-PROMPTS.md` | Copy-paste prompts for Cursor (governance-first article requests) |
 | `docs/EXTERNAL-STRATEGY-REFERENCES.md` | PDFs on OneDrive (SEO operating system, production workflow): when to use them vs this repo |
 
 Plus the article inventory:
