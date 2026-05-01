@@ -150,7 +150,8 @@ export default function Footer() {
                   fontSize: 13,
                   fontWeight: 700,
                   letterSpacing: "0.06em",
-                  textTransform: "uppercase",
+                  textTransform: "uppercase" as const,
+                  marginTop: 0,
                   marginBottom: 20,
                 }}
               >
@@ -181,7 +182,8 @@ export default function Footer() {
                   fontSize: 13,
                   fontWeight: 700,
                   letterSpacing: "0.06em",
-                  textTransform: "uppercase",
+                  textTransform: "uppercase" as const,
+                  marginTop: 0,
                   marginBottom: 20,
                 }}
               >
@@ -212,7 +214,8 @@ export default function Footer() {
                   fontSize: 13,
                   fontWeight: 700,
                   letterSpacing: "0.06em",
-                  textTransform: "uppercase",
+                  textTransform: "uppercase" as const,
+                  marginTop: 0,
                   marginBottom: 20,
                 }}
               >

@@ -29,7 +29,7 @@ These 11 articles are the production priority. The pillar (P) is published. The 
 | #     | Article                                                                      | Cluster    | Status        | URL (when live)                                                |
 | ----- | ---------------------------------------------------------------------------- | ---------- | ------------- | -------------------------------------------------------------- |
 | **P** | When the Person You Love Needs More Help Than You Can Give                   | Navigating | **Published** | `/resources/navigating-home-care/when-parent-needs-more-help/` |
-| 1     | The Conversation You Keep Putting Off                                        | Caregiver  | Net New       | —                                                              |
+| 1     | The Conversation You Keep Putting Off                                        | Caregiver  | **Published** | `/resources/family-caregiver-support/talking-to-parent-about-care/` |
 | 2     | When Siblings Disagree About Care                                            | Caregiver  | Coming Soon   | —                                                              |
 | 3     | What No One Tells You About the First Week                                   | Navigating | Net New       | —                                                              |
 | 4     | How to Know When It Is Time *(replaces "Signs Your Parent Needs Home Care")* | Navigating | Coming Soon   | —                                                              |

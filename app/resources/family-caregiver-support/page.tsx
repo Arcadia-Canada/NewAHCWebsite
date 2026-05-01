@@ -11,6 +11,12 @@ export const metadata: Metadata = {
 
 const articles = [
   {
+    title: 'The Conversation You Keep Putting Off',
+    href: '/resources/family-caregiver-support/talking-to-parent-about-care/',
+    description: 'The talk about driving, finances, or accepting help — the one you keep meaning to have but somehow never quite start. A guide for families in Toronto and the GTA.',
+    status: 'live',
+  },
+  {
     title: 'Caregiver Burnout: Warning Signs and What to Do',
     href: '/resources/family-caregiver-support/caregiver-burnout-warning-signs/',
     description: "How to recognize when you've passed your limit — and what options exist before you reach a crisis point.",
