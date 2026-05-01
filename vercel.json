@@ -643,11 +643,6 @@
       "statusCode": 301
     },
     {
-      "source": "/resources/family-caregiver-support/caregiver-burnout-warning-signs/",
-      "destination": "/conditions/caregiver-burnout-support/",
-      "statusCode": 301
-    },
-    {
       "source": "/resources/family-caregiving-guides/",
       "destination": "/resources/family-caregiver-support/",
       "statusCode": 301

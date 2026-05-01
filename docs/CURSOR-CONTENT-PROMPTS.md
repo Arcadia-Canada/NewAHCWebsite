@@ -7,7 +7,7 @@ Copy any block below into Cursor chat when you want the assistant to follow Arca
 ## Standard article request (default compliance)
 
 ```
-Following AI-CONTEXT.md and docs/: write [ARTICLE TITLE] for the [CLUSTER NAME] cluster. Read docs/02-CONTENT-CLUSTERS.md, docs/AUTHORITY-MAP.md, docs/07-VOICE-AND-TONE.md, docs/03-INTERNAL-LINKING-RULES.md, docs/05-URL-CONVENTIONS.md, and docs/04-SCHEMA-STANDARDS.md. Propose internal links only to URLs that are live on arcadiahomecare.ca. If the topic is not in AUTHORITY-MAP or conflicts with another entry, say so before drafting. If any element of your draft (slug, URL, schema, link, voice) conflicts with what the governance docs specify, flag the conflict and propose the governance-compliant version before continuing.
+Following AI-CONTEXT.md and docs/: write [ARTICLE TITLE] for the [CLUSTER NAME] cluster. Read docs/CLUSTER-LINK-MAP.md, docs/02-CONTENT-CLUSTERS.md, docs/AUTHORITY-MAP.md, docs/07-VOICE-AND-TONE.md, docs/03-INTERNAL-LINKING-RULES.md, docs/05-URL-CONVENTIONS.md, and docs/04-SCHEMA-STANDARDS.md. Use CLUSTER-LINK-MAP.md to verify the cluster structure, linking targets, and pre-draft checklist before writing. Propose internal links only to URLs that are live on arcadiahomecare.ca. If the topic is not in AUTHORITY-MAP or conflicts with another entry, say so before drafting. If any element of your draft (slug, URL, schema, link, voice) conflicts with what the governance docs specify, flag the conflict and propose the governance-compliant version before continuing.
 ```
 
 **How to use:** Replace `[ARTICLE TITLE]` and `[CLUSTER NAME]` (for example `Navigating Home Care` or `Family Caregiver Support`), then paste into Cursor.
@@ -19,7 +19,7 @@ Following AI-CONTEXT.md and docs/: write [ARTICLE TITLE] for the [CLUSTER NAME] 
 ## Shorter version
 
 ```
-Per AI-CONTEXT and docs/: draft [TITLE] for cluster [NAME]. Check AUTHORITY-MAP, use Arcadia voice, live URLs only for internal links. Flag any conflict between my request and the governance docs before drafting.
+Per AI-CONTEXT and docs/: draft [TITLE] for cluster [NAME]. Check CLUSTER-LINK-MAP and AUTHORITY-MAP, use Arcadia voice, live URLs only for internal links. Flag any conflict between my request and the governance docs before drafting.
 ```
 
 ---
@@ -27,7 +27,7 @@ Per AI-CONTEXT and docs/: draft [TITLE] for cluster [NAME]. Check AUTHORITY-MAP,
 ## After you publish (update inventory)
 
 ```
-The article [TITLE] is now live at [FULL URL]. Update docs/AUTHORITY-MAP.md to Published and add that URL. Note any doc conflicts with the live site.
+The article [TITLE] is now live at [FULL URL]. Update docs/AUTHORITY-MAP.md to Published and add that URL. Update docs/CLUSTER-LINK-MAP.md: move the article to "Published articles" in its cluster section, add its outbound links, update counts, and update the Master Prompt table if applicable. Note any doc conflicts with the live site.
 ```
 
 ---
@@ -81,4 +81,4 @@ Per AI-CONTEXT.md (the live site is canonical): I think docs/[FILE NAME] may be 
 
 ## Last updated
 
-May 2026 — added conflict-flagging clause to the standard prompt and added prompts for editing, internal linking, quarterly review, schema updates, and stale-doc detection.
+May 2026 — added `CLUSTER-LINK-MAP.md` reference to standard and shorter prompts. Added conflict-flagging clause and prompts for editing, internal linking, quarterly review, schema updates, and stale-doc detection.

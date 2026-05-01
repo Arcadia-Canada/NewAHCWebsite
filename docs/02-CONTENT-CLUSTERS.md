@@ -10,7 +10,7 @@ For the article-by-article inventory with status, action, and notes, see `AUTHOR
 **URL:** `/resources/dementia-memory-care/`
 **Primary service:** `/our-services/dementia-alzheimers-home-care/`
 **Primary condition:** `/conditions/dementia-care-at-home/`
-**Article count:** 14 (3 published, 2 Coming Soon, 9 net new)
+**Article count:** 16 (3 published, 3 Coming Soon, 10 net new)
 
 Covers: dementia signs, behaviour changes, communication, safety, sleep, nutrition, hospital discharge for dementia, and 24-hour support thresholds.
 
@@ -36,7 +36,7 @@ The pillar article — **"When the Person You Love Needs More Help Than You Can 
 **URL:** `/resources/family-caregiver-support/`
 **Primary service:** `/our-services/respite-care/`
 **Primary condition:** `/conditions/caregiver-burnout-support/`
-**Article count:** 17 (1 published, 3 Coming Soon, 13 net new)
+**Article count:** 18 (2 published, 4 Coming Soon, 12 net new)
 
 Covers: caregiver burnout, sibling disagreements, work-caregiving balance, the weight of caregiving, guilt, family meetings, GTA caregiver resources.
 
@@ -96,7 +96,7 @@ See `03-INTERNAL-LINKING-RULES.md` for the full linking model.
 | # | Article | Cluster | Status |
 |---|---------|---------|--------|
 | P | When the Person You Love Needs More Help | Navigating | **Published** (pillar) |
-| 1 | The Conversation You Keep Putting Off | Caregiver | Net New |
+| 1 | The Conversation You Keep Putting Off | Caregiver | **Published** |
 | 2 | When Siblings Disagree About Care | Caregiver | Coming Soon |
 | 3 | What No One Tells You About the First Week | Navigating | Net New |
 | 4 | How to Know When It Is Time *(replaces "Signs Your Parent Needs Home Care")* | Navigating | Coming Soon |

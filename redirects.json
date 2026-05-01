@@ -504,10 +504,6 @@
     "destination": "/contact/"
   },
   {
-    "source": "/resources/family-caregiver-support/caregiver-burnout-warning-signs/",
-    "destination": "/conditions/caregiver-burnout-support/"
-  },
-  {
     "source": "/resources/family-caregiving-guides/",
     "destination": "/resources/family-caregiver-support/"
   },
