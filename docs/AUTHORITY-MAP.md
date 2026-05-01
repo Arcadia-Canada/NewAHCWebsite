@@ -3,7 +3,7 @@
 The complete article inventory across all five clusters. **This file is the live status tracker.** Every time an article publishes, change its status here from `Net New` or `Coming Soon` → `Published`, and add the live URL.
 
 Total inventory: **98 unique articles** across 5 clusters.
-Last updated: April 2026
+Last updated: May 2026 (pillar page ships with next deploy; re-verify live URL after publish)
 
 ---
 
@@ -110,7 +110,7 @@ These 11 articles are the production priority. The pillar (P) is published. The 
 | 6 | Questions to Ask Before Hiring Home Care | Coming Soon | Replace | — |
 | 7 | How Much Does Home Care Cost in Ontario? | Coming Soon | Replace | GTA-specific. Owns "home care cost Ontario" keyword. |
 | 8 | What Does a PSW Actually Do? | Coming Soon | Replace | Role explainer. |
-| 9 | **PILLAR: When the Person You Love Needs More Help** | **Published** | — | `/resources/navigating-home-care/when-parent-needs-more-help/` |
+| 9 | **PILLAR: When the Person You Love Needs More Help** | **Published** | Skip | `/resources/navigating-home-care/when-parent-needs-more-help/` |
 | 10 | What Good Care Actually Looks Like | Coming Soon | Replace | Master prompt Art. 6. |
 | 11 | Navigating the System When It Wasn't Built for You | Net New | Write | Master prompt Art. 7. |
 | 12 | What Trust Actually Means When Handing Over Responsibility | Net New | Write | Master prompt Art. 10. |
