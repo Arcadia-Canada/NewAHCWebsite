@@ -45,6 +45,7 @@ Every governance document lives in `docs/` in this repo. Read the relevant file(
 | `docs/05-URL-CONVENTIONS.md` | Choosing a slug or page URL |
 | `docs/06-PUBLISHING-CHECKLIST.md` | Publishing a new blog article |
 | `docs/07-VOICE-AND-TONE.md` | Writing or editing any user-facing copy |
+| `docs/EXTERNAL-STRATEGY-REFERENCES.md` | PDFs on OneDrive (SEO operating system, production workflow): when to use them vs this repo |
 
 Plus the article inventory:
 
@@ -62,7 +63,8 @@ Plus the article inventory:
 3. Read `docs/07-VOICE-AND-TONE.md` to apply Arcadia's editorial voice.
 4. Read `docs/03-INTERNAL-LINKING-RULES.md` for required and optional internal links.
 5. Read `docs/04-SCHEMA-STANDARDS.md` for required JSON-LD blocks.
-6. Produce the article using the same structure as the published pillar at `/resources/navigating-home-care/when-parent-needs-more-help/`.
+6. For keyword ownership, Coming Soon policy at scale, calendar gates, or technical checklist details not fully in `docs/`, follow `docs/EXTERNAL-STRATEGY-REFERENCES.md` and use the PDFs it names (when the site owner provides or opens them).
+7. Produce the article using the same structure as the published pillar at `/resources/navigating-home-care/when-parent-needs-more-help/`.
 
 ### "Update internal links across the site"
 
@@ -79,7 +81,8 @@ Plus the article inventory:
 ### "Publish a new blog article"
 
 1. Use `docs/06-PUBLISHING-CHECKLIST.md` as the step-by-step.
-2. Do not skip phases.
+2. Optionally align batch or cadence expectations with `docs/EXTERNAL-STRATEGY-REFERENCES.md` (Content Production System PDF on OneDrive).
+3. Do not skip phases.
 
 ### "Create a new cluster, section, or URL pattern"
 
@@ -116,4 +119,4 @@ The docs serve the site, not the other way around.
 
 ## Last updated
 
-May 2026 — governance pack added to the website repository (`AI-CONTEXT.md` + `docs/`). Update this section whenever any file in `docs/` changes meaningfully.
+May 2026 — governance pack added to the website repository (`AI-CONTEXT.md` + `docs/`). External PDF references documented in `docs/EXTERNAL-STRATEGY-REFERENCES.md`. Update this section whenever any file in `docs/` changes meaningfully.

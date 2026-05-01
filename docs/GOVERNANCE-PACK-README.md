@@ -14,6 +14,7 @@ NewAHCWebsite/   (this repo)
 ├── .cursorrules                      ← Tells Cursor to read AI-CONTEXT + docs/ before new content.
 └── docs/
     ├── GOVERNANCE-PACK-README.md     ← Human overview (this file)
+    ├── EXTERNAL-STRATEGY-REFERENCES.md ← PDFs on OneDrive: when to use vs this repo
     ├── 01-SITE-ARCHITECTURE.md       ← The 6 site sections + URL patterns
     ├── 02-CONTENT-CLUSTERS.md        ← The 5 clusters + rules for new articles
     ├── 03-INTERNAL-LINKING-RULES.md  ← How pages link to each other
@@ -28,7 +29,7 @@ NewAHCWebsite/   (this repo)
 
 ## What to do with these files (the answer to your actual question)
 
-**Ensure all 10 files are in your website's Git repo** (this project).
+**Ensure all 11 files are in your website's Git repo** (this project).
 
 Yes — every single one. Here's where they go:
 
@@ -52,6 +53,7 @@ NewAHCWebsite/
 ├── .cursorrules
 ├── docs/
 │   ├── GOVERNANCE-PACK-README.md
+│   ├── EXTERNAL-STRATEGY-REFERENCES.md
 │   ├── 01-SITE-ARCHITECTURE.md
 │   ├── 02-CONTENT-CLUSTERS.md
 │   ├── 03-INTERNAL-LINKING-RULES.md
@@ -177,6 +179,7 @@ Confirm these files exist in the repo:
 
 - [ ] `AI-CONTEXT.md` (root of repo)
 - [ ] `docs/GOVERNANCE-PACK-README.md`
+- [ ] `docs/EXTERNAL-STRATEGY-REFERENCES.md`
 - [ ] `docs/01-SITE-ARCHITECTURE.md`
 - [ ] `docs/02-CONTENT-CLUSTERS.md`
 - [ ] `docs/03-INTERNAL-LINKING-RULES.md`

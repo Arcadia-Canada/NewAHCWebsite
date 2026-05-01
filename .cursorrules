@@ -12,7 +12,7 @@ Before **creating, editing, or publishing** website content — including resour
 2. Read the relevant files under **`docs/`** listed in `AI-CONTEXT.md` for that task. For a **new article**, treat these as the usual minimum: `docs/02-CONTENT-CLUSTERS.md`, `docs/AUTHORITY-MAP.md`, `docs/07-VOICE-AND-TONE.md`, `docs/03-INTERNAL-LINKING-RULES.md`, `docs/05-URL-CONVENTIONS.md`, `docs/04-SCHEMA-STANDARDS.md`, and `docs/06-PUBLISHING-CHECKLIST.md`.
 3. If docs conflict with what is **live** on arcadiahomecare.ca, follow **`AI-CONTEXT.md`**: the live site wins; flag doc updates instead of forcing the site to match stale docs.
 
-Project overview for humans and tools: **`docs/GOVERNANCE-PACK-README.md`**.
+For **keyword ownership**, **Coming Soon policy at scale**, **calendar / performance gates**, or **technical checklist** details not fully covered in `docs/`, read **`docs/EXTERNAL-STRATEGY-REFERENCES.md`** and use the Arcadia PDFs it names when the owner provides them.
 
 ---
 
