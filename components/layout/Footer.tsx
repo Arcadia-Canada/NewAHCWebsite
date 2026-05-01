@@ -31,24 +31,6 @@ export default function Footer() {
           .footer-dark-section { padding-bottom: 80px; }
         }
       `}</style>
-      {/* Section 1: Logo on cream band (reads clearly per design system) */}
-      <div
-        style={{
-          background: "#F7F3EE",
-          borderBottom: "1px solid #E5E0D8",
-          padding: "32px 24px",
-        }}
-      >
-        <div style={{ maxWidth: 1200, margin: "0 auto" }}>
-          <img
-            src="/images/arcadia-logo.svg"
-            alt="Arcadia Home Care"
-            style={{ height: 44, display: "block" }}
-          />
-        </div>
-      </div>
-
-      {/* Section 2: Tagline + social, link columns, copyright */}
       <div
         className="footer-dark-section"
         style={{
