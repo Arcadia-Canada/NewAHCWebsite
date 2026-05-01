@@ -1,6 +1,6 @@
 # 02 — Content Clusters
 
-The five resource clusters and the rules that govern them. Total inventory: **98 unique articles** across 5 clusters.
+The five resource clusters and the rules that govern them. Total inventory: **101 unique articles** across 5 clusters.
 
 For the article-by-article inventory with status, action, and notes, see `AUTHORITY-MAP.md`.
 

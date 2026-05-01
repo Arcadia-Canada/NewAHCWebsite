@@ -60,7 +60,7 @@ Every internal link on the site should serve this flow. Authority moves from edu
 - Services: `/our-services/personal-support-daily-living/`, `/our-services/case-management/`
 - Cross-cluster: `/resources/family-caregiver-support/caregiver-burnout-warning-signs/` (burnout article)
 - Sibling: `/resources/navigating-home-care/when-parent-needs-more-help/` (pillar)
-- Decision: `/how-care-starts/`, `/how-care-starts/meeting-your-care-team/`
+- Decision: `/how-care-starts/`, `/how-care-starts/matching-caregivers/`
 - Conversion: `/contact/`
 
 **Pillar outbound links:**
@@ -90,10 +90,10 @@ Every internal link on the site should serve this flow. Authority moves from edu
 | **Cluster URL** | `/resources/family-caregiver-support/` |
 | **Primary service** | `/our-services/respite-care/` |
 | **Primary condition** | `/conditions/caregiver-burnout-support/` |
-| **Total articles** | 17 |
+| **Total articles** | 18 |
 | **Published** | 2 |
 | **Coming Soon stubs on cluster page** | 4 |
-| **Net New** | 11 |
+| **Net New** | 12 |
 
 **Published articles:**
 
@@ -134,10 +134,10 @@ Every internal link on the site should serve this flow. Authority moves from edu
 | **Cluster URL** | `/resources/dementia-memory-care/` |
 | **Primary service** | `/our-services/dementia-alzheimers-home-care/` |
 | **Primary condition** | `/conditions/dementia-care-at-home/` |
-| **Total articles** | 14 |
+| **Total articles** | 16 |
 | **Published** | 3 |
 | **Coming Soon stubs on cluster page** | 3 |
-| **Net New** | 8 |
+| **Net New** | 10 |
 
 **Published articles:**
 
@@ -284,8 +284,13 @@ These 11 articles are the production priority. They share an emotional, trust-le
 |------|-----|
 | How Care Starts | `/how-care-starts/` |
 | First Conversation | `/how-care-starts/first-conversation/` |
-| Building Your Care Plan | `/how-care-starts/building-your-care-plan/` |
-| Meeting Your Care Team | `/how-care-starts/meeting-your-care-team/` |
+| Care Assessment | `/how-care-starts/care-assessment/` |
+| Matching Caregivers | `/how-care-starts/matching-caregivers/` |
+| Care Begins | `/how-care-starts/care-begins/` |
+| Your Care Plan | `/how-care-starts/your-care-plan/` |
+| Pricing and Funding | `/how-care-starts/pricing-and-funding/` |
+| Referral Process | `/how-care-starts/referral-process/` |
+| Ongoing Support | `/how-care-starts/ongoing-support/` |
 
 ---
 
@@ -326,12 +331,18 @@ When a new cluster page is created:
 
 ---
 
-## Known discrepancies (flagged May 2026)
+## Known discrepancies (audited May 2026)
 
 These conflicts between the AUTHORITY-MAP and the live codebase were identified during the creation of this file. The live site is canonical per `AI-CONTEXT.md`.
 
-1. **Dementia #2 in AUTHORITY-MAP:** "How to Talk to a Parent About Memory Loss" is listed as Published but does not exist as a page. The actual published articles are *Early Signs*, *Normal Aging vs. Dementia*, and *Introducing Home Care for Dementia*.
-2. **Dementia Coming Soon count:** AUTHORITY-MAP says 2 stubs. The cluster page actually has 3 stubs (including "Late Stage Dementia" which is not in the AUTHORITY-MAP).
+1. ~~**Dementia #2 in AUTHORITY-MAP:** RESOLVED — phantom entry removed. AUTHORITY-MAP now correctly lists the 3 published dementia articles.~~
+2. ~~**Dementia Coming Soon count:** RESOLVED — AUTHORITY-MAP now correctly shows 3 stubs matching the cluster page.~~
 3. ~~**Caregiver Burnout redirect:** RESOLVED — standalone article now published at `/resources/family-caregiver-support/caregiver-burnout-warning-signs/`. Redirect removed.~~
-4. **Family Caregiver Coming Soon count:** AUTHORITY-MAP says 3 stubs. The cluster page has 4 stubs (including "How Families Can Share Care Responsibilities" and "Emotional Impact of Caregiving").
-5. **Article #1 status in cluster table:** The Conversation You Keep Putting Off is Published in the Master Prompt table but still listed as Net New in the Family Caregiver cluster table (row 7).
+4. ~~**Family Caregiver Coming Soon count:** RESOLVED — AUTHORITY-MAP now correctly shows 4 stubs matching the cluster page.~~
+5. ~~**Article #1 status in cluster table:** RESOLVED — Article #1 is now Published in both the Master Prompt table and the Family Caregiver cluster table.~~
+
+### Active issues (May 2026 resync)
+
+6. **Coming Soon stubs have no standalone pages.** All 15 "Coming Soon" entries exist only as grayed-out cards on cluster pages with `pointer-events: none`. None have their own `page.tsx`. The AUTHORITY-MAP definition "Stub page exists" is technically inaccurate — a more precise description is "Listed on cluster page but no standalone page." Two Navigating stubs (`questions-before-hiring-home-care`, `when-a-parent-resists-home-care`) additionally have redirects in `vercel.json` pointing back to the cluster page.
+7. **Orphan article.** `/resources/spring-home-safety-checklist-for-seniors/` exists as a standalone page but is not listed in any cluster in the AUTHORITY-MAP. It sits directly under `/resources/` rather than inside a cluster path.
+8. **Alzheimer's condition page redirect conflict.** `/conditions/alzheimers-care/` has both a standalone `page.tsx` AND a redirect in `vercel.json` to `/conditions/dementia-care-at-home/`. The redirect overrides the page, making it unreachable. Resolve by removing either the redirect or the standalone page.

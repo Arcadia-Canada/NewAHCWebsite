@@ -13,7 +13,7 @@ Last updated: May 2026 (Article #6 published)
 | Status            | Meaning               | Action                           |
 | ----------------- | --------------------- | -------------------------------- |
 | **Published**     | Live on site          | Skip — do not duplicate          |
-| **Coming Soon**   | Stub page exists      | Replace stub with full article   |
+| **Coming Soon**   | Listed on cluster page (no standalone page exists — grayed-out card only) | Replace with full article |
 | **Net New**       | No page exists        | Write fresh                      |
 | **Differentiate** | Adjacent topic exists | Angle differently before writing |
 | **Conflict**      | Overlaps another page | Merge or skip                    |
@@ -114,11 +114,11 @@ These 11 articles are the production priority. The pillar (P) is published. The 
 | #   | Article                                                    | Status        | Action        | Notes                                                          |
 | --- | ---------------------------------------------------------- | ------------- | ------------- | -------------------------------------------------------------- |
 | 1   | Signs Your Parent Needs Home Care                          | Coming Soon   | Replace       | Master prompt Art. 4 governs.                                  |
-| 2   | When a Parent Resists Home Care                            | Coming Soon   | Replace       | Includes dementia-specific refusal.                            |
+| 2   | When a Parent Resists Home Care                            | Coming Soon   | Replace       | Includes dementia-specific refusal. ⚠️ URL currently redirects to cluster page in vercel.json — remove redirect before publishing. |
 | 3   | How to Choose a Home Care Provider in Ontario              | Coming Soon   | Replace       | Master prompt Art. 6 related.                                  |
 | 4   | Private vs. Public Home Care in Ontario                    | Coming Soon   | Replace       | OHIP vs. private.                                              |
 | 5   | Understanding Ontario Health atHome                        | Coming Soon   | Replace       | OHIP-funded care.                                              |
-| 6   | Questions to Ask Before Hiring Home Care                   | Coming Soon   | Replace       | —                                                              |
+| 6   | Questions to Ask Before Hiring Home Care                   | Coming Soon   | Replace       | ⚠️ URL currently redirects to cluster page in vercel.json — remove redirect before publishing. |
 | 7   | How Much Does Home Care Cost in Ontario?                   | Coming Soon   | Replace       | GTA-specific. Owns "home care cost Ontario" keyword.           |
 | 8   | What Does a PSW Actually Do?                               | Coming Soon   | Replace       | Role explainer.                                                |
 | 9   | **PILLAR: When the Person You Love Needs More Help**       | **Published** | Skip          | `/resources/navigating-home-care/when-parent-needs-more-help/` |
@@ -218,6 +218,14 @@ These 11 articles are the production priority. The pillar (P) is published. The 
 | Clean Net New, ready to write | 72                                      |
 | **Total**                     | **101**                                 |
 
+
+---
+
+## Orphan pages (not in any cluster)
+
+| Page | URL | Notes |
+|------|-----|-------|
+| Spring Home Safety Checklist for Seniors | `/resources/spring-home-safety-checklist-for-seniors/` | Standalone page under `/resources/`, not assigned to any cluster. Consider assigning to Navigating Home Care or keeping as a seasonal standalone. |
 
 ---
 

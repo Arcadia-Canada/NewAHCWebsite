@@ -554,7 +554,7 @@ export default function RecognizingQualityHomeCare() {
 
             <p>
               When you are ready to take the next step, a{' '}
-              <Link href="/how-care-starts/meeting-your-care-team/">conversation with a care
+              <Link href="/how-care-starts/matching-caregivers/">conversation with a care
               team</Link> can help you understand what kind of support would make the most
               difference and what quality would look like in your specific situation.
             </p>
@@ -652,8 +652,8 @@ export default function RecognizingQualityHomeCare() {
               <Link href="/our-services/case-management/" className="sidebar-link">
                 Case management
               </Link>
-              <Link href="/how-care-starts/meeting-your-care-team/" className="sidebar-link">
-                Meeting your care team
+              <Link href="/how-care-starts/matching-caregivers/" className="sidebar-link">
+                Caregiver matching
               </Link>
             </div>
 

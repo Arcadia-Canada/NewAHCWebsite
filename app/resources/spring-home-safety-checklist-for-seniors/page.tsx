@@ -983,18 +983,6 @@ export default function SpringHomeSafetyChecklistPage() {
                             </div>
                         </div>
 
-                        <div className="sidebar-card">
-                            <div className="sidebar-title">Page Notes</div>
-                            <p>
-                                Featured image alt text: Adult daughter reviewing a home safety
-                                checklist with her aging parent in a bright living room.
-                            </p>
-                            <p>
-                                Suggested file name:
-                                <br />
-                                spring-home-safety-checklist-seniors-arcadia-home-care.jpg
-                            </p>
-                        </div>
                     </aside>
                 </div>
 
