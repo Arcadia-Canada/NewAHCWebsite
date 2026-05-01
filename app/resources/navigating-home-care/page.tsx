@@ -11,6 +11,13 @@ export const metadata: Metadata = {
 
 const articles = [
   {
+    title: 'When the Person You Love Needs More Help Than You Can Give',
+    href: '/resources/navigating-home-care/when-parent-needs-more-help/',
+    description:
+      'The emotional starting point for GTA families: naming the moment home care may be needed, understanding Ontario\'s system, and what support can look like — without pressure.',
+    status: 'live' as const,
+  },
+  {
     title: 'Signs Your Parent Needs Home Care',
     href: '/resources/navigating-home-care/signs-parent-needs-home-care/',
     description: 'A practical checklist of physical, cognitive, and emotional signs that indicate a parent may need more support at home.',
