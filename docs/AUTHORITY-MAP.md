@@ -3,7 +3,7 @@
 The complete article inventory across all five clusters. **This file is the live status tracker.** Every time an article publishes, change its status here from `Net New` or `Coming Soon` → `Published`, and add the live URL.
 
 Total inventory: **101 unique articles** across 5 clusters.
-Last updated: May 2026
+Last updated: May 2026 (Article #6 published)
 
 ---
 
@@ -34,7 +34,7 @@ These 11 articles are the production priority. The pillar (P) is published. The 
 | 3     | What No One Tells You About the First Week                                   | Navigating | Net New       | —                                                                   |
 | 4     | How to Know When It Is Time *(replaces "Signs Your Parent Needs Home Care")* | Navigating | Coming Soon   | —                                                                   |
 | 5     | The Weight You Are Carrying                                                  | Caregiver  | Net New       | —                                                                   |
-| 6     | What Good Care Actually Looks Like                                           | Navigating | Coming Soon   | —                                                                   |
+| 6     | What Good Care Actually Looks Like                                           | Navigating | **Published** | `/resources/navigating-home-care/recognizing-quality-home-care/`     |
 | 7     | Navigating the System                                                        | Navigating | Net New       | —                                                                   |
 | 8     | The Guilt of Getting Help                                                    | Caregiver  | Net New       | —                                                                   |
 | 9     | When the Situation Changes Overnight                                         | Navigating | Net New       | —                                                                   |
@@ -122,7 +122,7 @@ These 11 articles are the production priority. The pillar (P) is published. The 
 | 7   | How Much Does Home Care Cost in Ontario?                   | Coming Soon   | Replace       | GTA-specific. Owns "home care cost Ontario" keyword.           |
 | 8   | What Does a PSW Actually Do?                               | Coming Soon   | Replace       | Role explainer.                                                |
 | 9   | **PILLAR: When the Person You Love Needs More Help**       | **Published** | Skip          | `/resources/navigating-home-care/when-parent-needs-more-help/` |
-| 10  | What Good Care Actually Looks Like                         | Coming Soon   | Replace       | Master prompt Art. 6.                                          |
+| 10  | What Good Care Actually Looks Like                         | **Published** | Skip          | Live at `/resources/navigating-home-care/recognizing-quality-home-care/`. Master prompt Art. 6. |
 | 11  | Navigating the System When It Wasn't Built for You         | Net New       | Write         | Master prompt Art. 7.                                          |
 | 12  | What Trust Actually Means When Handing Over Responsibility | Net New       | Write         | Master prompt Art. 10.                                         |
 | 13  | What No One Tells You About the First Week of Home Care    | Net New       | Write         | Master prompt Art. 3.                                          |
@@ -158,26 +158,26 @@ These 11 articles are the production priority. The pillar (P) is published. The 
 **Primary condition:** `/conditions/caregiver-burnout-support/`
 
 
-| #   | Article                                          | Status        | Action          | Notes                                                                                                                                                                                                                          |
-| --- | ------------------------------------------------ | ------------- | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 1   | The Conversation You Keep Putting Off            | **Published** | Skip            | Live at `/resources/family-caregiver-support/talking-to-parent-about-care/`. Master prompt Art. 1.                                                                                                                             |
-| 2   | Caregiver Burnout: Warning Signs and What to Do  | **Published** | Skip            | Live at `/resources/family-caregiver-support/caregiver-burnout-warning-signs/`. H1: "The Exhaustion You Have Stopped Noticing." Redirect removed.                                                                             |
-| 3   | When Siblings Disagree About a Parent's Care     | Coming Soon   | Replace         | Stub at `/resources/family-caregiver-support/siblings-disagree-parent-care/`. Master prompt Art. 2.                                                                                                                            |
-| 4   | Balancing Work and Caregiving                    | Coming Soon   | Replace         | Stub at `/resources/family-caregiver-support/balancing-work-and-caregiving/`.                                                                                                                                                  |
-| 5   | The Emotional Impact of Caring for Aging Parents | Coming Soon   | Replace         | Stub at `/resources/family-caregiver-support/emotional-impact-caregiving/`.                                                                                                                                                    |
-| 6   | How Families Can Share Care Responsibilities     | Coming Soon   | Replace         | Stub at `/resources/family-caregiver-support/sharing-care-responsibilities/`.                                                                                                                                                  |
-| 7   | The Weight You Are Carrying and Why It Matters   | Net New       | Write           | Master prompt Art. 5. Emotional companion to burnout.                                                                                                                                                                          |
-| 8   | The Guilt of Getting Help                        | Net New       | Write           | Master prompt Art. 8. No live equivalent.                                                                                                                                                                                      |
-| 9   | Preparing for Decline Conversations              | Net New       | Write           | Pre-crisis planning. Differentiate from Art. 1.                                                                                                                                                                                |
-| 10  | How Families Make Care Decisions                 | Net New       | Write           | —                                                                                                                                                                                                                              |
-| 11  | Helping a Parent Accept Help                     | Net New       | Differentiate   | Overlaps with master prompt Art. 1 and "When a Parent Resists."                                                                                                                                                                |
-| 12  | Managing Stress While Caring for Parents         | Net New       | Differentiate   | Overlaps with #2 — angle for daily stress, not clinical burnout.                                                                                                                                                               |
-| 13  | Caregiving and Mental Health                     | Net New       | Write           | —                                                                                                                                                                                                                              |
-| 14  | Supporting a Spouse with Dementia                | Net New       | Write           | Different reader persona — voice adjustment needed.                                                                                                                                                                            |
-| 15  | When Family Caregiving Becomes Too Much          | Net New       | Write           | Practical "when to transition" article.                                                                                                                                                                                        |
-| 16  | Caregiver Support Resources in Toronto           | Net New       | Write           | GTA-specific. High local SEO.                                                                                                                                                                                                  |
-| 17  | How to Prepare for Future Care Needs             | Net New       | Write           | —                                                                                                                                                                                                                              |
-| 18  | Planning Family Meetings Around Care             | Net New       | Write           | Financial Impact of Caregiving also reassigned here.                                                                                                                                                                           |
+| #   | Article                                          | Status        | Action        | Notes                                                                                                                                             |
+| --- | ------------------------------------------------ | ------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | The Conversation You Keep Putting Off            | **Published** | Skip          | Live at `/resources/family-caregiver-support/talking-to-parent-about-care/`. Master prompt Art. 1.                                                |
+| 2   | Caregiver Burnout: Warning Signs and What to Do  | **Published** | Skip          | Live at `/resources/family-caregiver-support/caregiver-burnout-warning-signs/`. H1: "The Exhaustion You Have Stopped Noticing." Redirect removed. |
+| 3   | When Siblings Disagree About a Parent's Care     | Coming Soon   | Replace       | Stub at `/resources/family-caregiver-support/siblings-disagree-parent-care/`. Master prompt Art. 2.                                               |
+| 4   | Balancing Work and Caregiving                    | Coming Soon   | Replace       | Stub at `/resources/family-caregiver-support/balancing-work-and-caregiving/`.                                                                     |
+| 5   | The Emotional Impact of Caring for Aging Parents | Coming Soon   | Replace       | Stub at `/resources/family-caregiver-support/emotional-impact-caregiving/`.                                                                       |
+| 6   | How Families Can Share Care Responsibilities     | Coming Soon   | Replace       | Stub at `/resources/family-caregiver-support/sharing-care-responsibilities/`.                                                                     |
+| 7   | The Weight You Are Carrying and Why It Matters   | Net New       | Write         | Master prompt Art. 5. Emotional companion to burnout.                                                                                             |
+| 8   | The Guilt of Getting Help                        | Net New       | Write         | Master prompt Art. 8. No live equivalent.                                                                                                         |
+| 9   | Preparing for Decline Conversations              | Net New       | Write         | Pre-crisis planning. Differentiate from Art. 1.                                                                                                   |
+| 10  | How Families Make Care Decisions                 | Net New       | Write         | —                                                                                                                                                 |
+| 11  | Helping a Parent Accept Help                     | Net New       | Differentiate | Overlaps with master prompt Art. 1 and "When a Parent Resists."                                                                                   |
+| 12  | Managing Stress While Caring for Parents         | Net New       | Differentiate | Overlaps with #2 — angle for daily stress, not clinical burnout.                                                                                  |
+| 13  | Caregiving and Mental Health                     | Net New       | Write         | —                                                                                                                                                 |
+| 14  | Supporting a Spouse with Dementia                | Net New       | Write         | Different reader persona — voice adjustment needed.                                                                                               |
+| 15  | When Family Caregiving Becomes Too Much          | Net New       | Write         | Practical "when to transition" article.                                                                                                           |
+| 16  | Caregiver Support Resources in Toronto           | Net New       | Write         | GTA-specific. High local SEO.                                                                                                                     |
+| 17  | How to Prepare for Future Care Needs             | Net New       | Write         | —                                                                                                                                                 |
+| 18  | Planning Family Meetings Around Care             | Net New       | Write         | Financial Impact of Caregiving also reassigned here.                                                                                              |
 
 
 ---
@@ -212,8 +212,8 @@ These 11 articles are the production priority. The pillar (P) is published. The 
 
 | Status                        | Count                                   |
 | ----------------------------- | --------------------------------------- |
-| Published                     | 6 (3 dementia + 2 caregiver + 1 pillar) |
-| Coming Soon stubs to replace  | 15                                      |
+| Published                     | 7 (3 dementia + 2 caregiver + 1 pillar + 1 navigating) |
+| Coming Soon stubs to replace  | 14                                      |
 | Requiring differentiation     | 8                                       |
 | Clean Net New, ready to write | 72                                      |
 | **Total**                     | **101**                                 |

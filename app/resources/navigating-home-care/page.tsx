@@ -18,6 +18,13 @@ const articles = [
     status: 'live' as const,
   },
   {
+    title: 'What Good Care Actually Looks Like',
+    href: '/resources/navigating-home-care/recognizing-quality-home-care/',
+    description:
+      'Not the brochure version. What quality home care actually looks and feels like once it is in your parent\u2019s home \u2014 the signs care is working, what to watch for, and what families should expect.',
+    status: 'live' as const,
+  },
+  {
     title: 'Signs Your Parent Needs Home Care',
     href: '/resources/navigating-home-care/signs-parent-needs-home-care/',
     description: 'A practical checklist of physical, cognitive, and emotional signs that indicate a parent may need more support at home.',

@@ -26,7 +26,7 @@ Covers: TBI recovery, cognitive rehab, brain injury fatigue, family adjustment, 
 **URL:** `/resources/navigating-home-care/`
 **Primary service:** `/our-services/case-management/` + multiple
 **Primary conditions:** Multiple
-**Article count:** 34 (1 published pillar, 8 Coming Soon, 25 net new)
+**Article count:** 34 (2 published, 8 Coming Soon, 24 net new)
 
 Covers: signs a parent needs care, choosing providers, public vs. private care, Ontario Health atHome, costs, PSW roles, the pillar emotional anchor, and redistributed Aging at Home topics.
 
@@ -101,7 +101,7 @@ See `03-INTERNAL-LINKING-RULES.md` for the full linking model.
 | 3 | What No One Tells You About the First Week | Navigating | Net New |
 | 4 | How to Know When It Is Time *(replaces "Signs Your Parent Needs Home Care")* | Navigating | Coming Soon |
 | 5 | The Weight You Are Carrying | Caregiver | Net New |
-| 6 | What Good Care Actually Looks Like | Navigating | Coming Soon |
+| 6 | What Good Care Actually Looks Like | Navigating | **Published** |
 | 7 | Navigating the System | Navigating | Net New |
 | 8 | The Guilt of Getting Help | Caregiver | Net New |
 | 9 | When the Situation Changes Overnight | Navigating | Net New |

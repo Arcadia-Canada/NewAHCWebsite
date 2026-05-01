@@ -44,15 +44,24 @@ Every internal link on the site should serve this flow. Authority moves from edu
 | **Primary services** | `/our-services/case-management/` + multiple |
 | **Primary conditions** | Multiple (no single primary) |
 | **Total articles** | 34 |
-| **Published** | 1 (pillar) |
+| **Published** | 2 (pillar + 1 article) |
 | **Coming Soon stubs on cluster page** | 8 |
-| **Net New** | 25 |
+| **Net New** | 24 |
 
 **Published articles:**
 
 | Article | URL | Role |
 |---------|-----|------|
 | When the Person You Love Needs More Help Than You Can Give | `/resources/navigating-home-care/when-parent-needs-more-help/` | **PILLAR** |
+| What Good Care Actually Looks Like | `/resources/navigating-home-care/recognizing-quality-home-care/` | Master Prompt #6 |
+
+**Article #6 outbound links:**
+- Cluster: `/resources/navigating-home-care/`
+- Services: `/our-services/personal-support-daily-living/`, `/our-services/case-management/`
+- Cross-cluster: `/resources/family-caregiver-support/caregiver-burnout-warning-signs/` (burnout article)
+- Sibling: `/resources/navigating-home-care/when-parent-needs-more-help/` (pillar)
+- Decision: `/how-care-starts/`, `/how-care-starts/meeting-your-care-team/`
+- Conversion: `/contact/`
 
 **Pillar outbound links:**
 - Cluster: `/resources/navigating-home-care/`
@@ -186,7 +195,7 @@ These 11 articles are the production priority. They share an emotional, trust-le
 | 3 | What No One Tells You About the First Week | Navigating | Net New | -- |
 | 4 | How to Know When It Is Time | Navigating | Coming Soon | -- |
 | 5 | The Weight You Are Carrying | Caregiver | Net New | -- |
-| 6 | What Good Care Actually Looks Like | Navigating | Coming Soon | -- |
+| 6 | What Good Care Actually Looks Like | Navigating | **Published** | `/resources/navigating-home-care/recognizing-quality-home-care/` |
 | 7 | Navigating the System | Navigating | Net New | -- |
 | 8 | The Guilt of Getting Help | Caregiver | Net New | -- |
 | 9 | When the Situation Changes Overnight | Navigating | Net New | -- |
