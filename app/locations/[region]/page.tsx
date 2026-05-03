@@ -45,7 +45,7 @@ const colors = {
 };
 
 const trustItems = [
-  { icon: "⭐", text: "5.0 Rating" },
+  { icon: "⭐", text: "4.9 Rating" },
   { icon: "🏠", text: "Since 2005" },
   { icon: "🩺", text: "Clinical Care" },
   { icon: "📞", text: "7 Days" },

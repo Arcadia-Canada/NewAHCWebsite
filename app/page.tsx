@@ -93,9 +93,9 @@ function GoogleReviewsWidget() {
             Trusted by GTA Families
           </h2>
           <div style={{ display: 'inline-flex', alignItems: 'center', gap: 12, background: colors.white, border: `1px solid ${colors.border}`, borderRadius: 100, padding: '10px 24px' }}>
-            <span style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 28, fontWeight: 700, color: colors.primary }}>5.0</span>
+            <span style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 28, fontWeight: 700, color: colors.primary }}>4.9</span>
             <StarRating />
-            <span style={{ fontSize: 13, color: colors.textLight, fontWeight: 500 }}>38 Google Reviews</span>
+            <span style={{ fontSize: 13, color: colors.textLight, fontWeight: 500 }}>41 Google Reviews</span>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
               <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
               <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
@@ -136,7 +136,7 @@ function GoogleReviewsWidget() {
         <div style={{ textAlign: 'center', marginTop: 36 }}>
           <a href="https://g.page/r/arcadiahomecare/review" target="_blank" rel="noopener noreferrer"
             style={{ fontSize: 14, fontWeight: 600, color: colors.accent, textDecoration: 'none', borderBottom: `2px solid ${colors.accent}`, paddingBottom: 2 }}>
-            See All 38 Reviews on Google &rarr;
+            See All 41 Reviews on Google &rarr;
           </a>
         </div>
       </div>
@@ -165,7 +165,7 @@ function Hero() {
             </div>
             <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.15)', borderRadius: 100, padding: '8px 16px' }}>
               <StarRating />
-              <span style={{ fontSize: 13, color: 'rgba(255,255,255,0.85)', fontWeight: 600 }}>5.0 {String.fromCharCode(0xB7)} 38 Google Reviews</span>
+              <span style={{ fontSize: 13, color: 'rgba(255,255,255,0.85)', fontWeight: 600 }}>4.9 {String.fromCharCode(0xB7)} 41 Google Reviews</span>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
                 <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
                 <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
@@ -455,8 +455,8 @@ export default function Home() {
         ],
         aggregateRating: {
           '@type': 'AggregateRating',
-          ratingValue: '5.0',
-          reviewCount: '38',
+          ratingValue: '4.9',
+          reviewCount: '41',
         },
         review: [
           {
