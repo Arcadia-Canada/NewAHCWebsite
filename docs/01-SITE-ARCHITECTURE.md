@@ -8,7 +8,7 @@ The Arcadia Home Care website uses **six distinct section types**. They are not 
 |---------|-------------|------|
 | **Resources** (knowledge clusters) | `/resources/[cluster-slug]/[article-slug]/` | Educational articles grouped by topic. All SEO content lives here. 5 clusters (4 live, 1 planned). |
 | **Services** | `/our-services/[service-slug]/` | 12 service pages. Conversion-focused. Not content pillars. Not interchangeable with resource articles. |
-| **Conditions** | `/conditions/[condition-slug]/` | 9 condition pages. Education + trust + route to service. Sit between Resources and Services in the authority chain. |
+| **Conditions** | `/conditions/[condition-slug]/` | 8 condition pages. Education + trust + route to service. Sit between Resources and Services in the authority chain. |
 | **Locations** | `/locations/[region-slug]/` | 5 regional pages (Toronto, York, Peel, Durham, Halton). Local SEO. |
 | **How Care Starts** | `/how-care-starts/` | Journey/process pages. Reduces uncertainty. Not a content cluster. |
 | **Contact / Consultation** | `/contact/` | Conversion endpoint. Every authority chain leads here. |
@@ -71,12 +71,11 @@ The 12 service pages currently on the site (verified live):
 
 ## Live condition URLs
 
-All 9 condition pages are live:
+All 8 condition pages are live (Alzheimer's merged into Dementia):
 
 | Condition | URL |
 |-----------|-----|
-| Dementia Care at Home | `/conditions/dementia-care-at-home/` |
-| Alzheimer's Care | `/conditions/alzheimers-care/` |
+| Dementia & Alzheimer's Care | `/conditions/dementia-care-at-home/` |
 | Stroke Recovery | `/conditions/stroke-recovery/` |
 | Parkinson's Support | `/conditions/parkinsons-support/` |
 | Acquired Brain Injury Support | `/conditions/acquired-brain-injury-support/` |

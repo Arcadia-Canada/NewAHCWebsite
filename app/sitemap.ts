@@ -47,7 +47,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/locations/york-region/markham-home-care",
     "/locations/york-region/richmond-hill-home-care",
     "/locations/peel-region/mississauga-home-care",
-    "/conditions/alzheimers-care",
     "/contact/thank-you",
     "/how-care-starts/first-conversation/thank-you",
     "/referral-form/thank-you"

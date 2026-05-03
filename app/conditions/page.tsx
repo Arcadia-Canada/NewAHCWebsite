@@ -5,8 +5,7 @@ import { colors, fonts, phone, trustItems } from "@/components/arcadia-colors"
 import HeroTemplate from "@/components/hero-template"
 
 const conditions = [
-  { label: "Dementia Care at Home",        slug: "dementia-care-at-home",          icon: "🧠" },
-  { label: "Alzheimer's Care",             slug: "alzheimers-care",                icon: "💜" },
+  { label: "Dementia & Alzheimer's Care",   slug: "dementia-care-at-home",          icon: "🧠" },
   { label: "Stroke Recovery",              slug: "stroke-recovery",                icon: "🫀" },
   { label: "Parkinson's Support",          slug: "parkinsons-support",             icon: "🌹" },
   { label: "Acquired Brain Injury",        slug: "acquired-brain-injury-support",  icon: "🧩" },

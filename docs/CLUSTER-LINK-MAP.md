@@ -5,7 +5,7 @@ The structural map of all five content clusters, their linking targets, and the 
 For the article-by-article inventory (status, action, notes), see `AUTHORITY-MAP.md`.
 For linking rules (anchor text, dedup, Coming Soon policy), see `03-INTERNAL-LINKING-RULES.md`.
 
-Last updated: May 2026
+Last updated: May 3, 2026 (Brain Injury Coming Soon stubs documented; counts corrected)
 
 ---
 
@@ -161,12 +161,20 @@ Every internal link on the site should serve this flow. Authority moves from edu
 | **Cluster URL** | `/resources/brain-injury-rehabilitation/` |
 | **Primary service** | `/our-services/acquired-brain-injury-home-care/` |
 | **Primary condition** | `/conditions/acquired-brain-injury-support/` |
-| **Total articles** | 19 |
+| **Total articles** | 20 |
 | **Published** | 0 |
-| **Coming Soon stubs** | 0 |
-| **Net New** | 19 |
+| **Coming Soon stubs on cluster page** | 6 |
+| **Net New** | 14 |
 
-No published articles yet. Cluster hub page exists.
+No published articles yet. Cluster hub page exists with 6 Coming Soon stubs.
+
+**Coming Soon stubs (do NOT link to these — all created 2026-03-22, deadline 2026-05-21):**
+- `/resources/brain-injury-rehabilitation/life-after-brain-injury/`
+- `/resources/brain-injury-rehabilitation/stroke-recovery-at-home/`
+- `/resources/brain-injury-rehabilitation/cognitive-emotional-changes-brain-injury/`
+- `/resources/brain-injury-rehabilitation/returning-home-after-rehab/`
+- `/resources/brain-injury-rehabilitation/rehabilitation-support-worker/`
+- `/resources/brain-injury-rehabilitation/mobility-support-after-surgery/`
 
 ---
 
@@ -268,8 +276,7 @@ These 11 articles are the production priority. They share an emotional, trust-le
 
 | Condition | URL |
 |-----------|-----|
-| Dementia Care at Home | `/conditions/dementia-care-at-home/` |
-| Alzheimer's Care | `/conditions/alzheimers-care/` |
+| Dementia & Alzheimer's Care | `/conditions/dementia-care-at-home/` |
 | Stroke Recovery | `/conditions/stroke-recovery/` |
 | Parkinson's Support | `/conditions/parkinsons-support/` |
 | Acquired Brain Injury Support | `/conditions/acquired-brain-injury-support/` |
@@ -345,4 +352,4 @@ These conflicts between the AUTHORITY-MAP and the live codebase were identified 
 
 6. **Coming Soon stubs have no standalone pages.** All 15 "Coming Soon" entries exist only as grayed-out cards on cluster pages with `pointer-events: none`. None have their own `page.tsx`. The AUTHORITY-MAP definition "Stub page exists" is technically inaccurate — a more precise description is "Listed on cluster page but no standalone page." Two Navigating stubs (`questions-before-hiring-home-care`, `when-a-parent-resists-home-care`) additionally have redirects in `vercel.json` pointing back to the cluster page.
 7. **Orphan article.** `/resources/spring-home-safety-checklist-for-seniors/` exists as a standalone page but is not listed in any cluster in the AUTHORITY-MAP. It sits directly under `/resources/` rather than inside a cluster path.
-8. **Alzheimer's condition page redirect conflict.** `/conditions/alzheimers-care/` has both a standalone `page.tsx` AND a redirect in `vercel.json` to `/conditions/dementia-care-at-home/`. The redirect overrides the page, making it unreachable. Resolve by removing either the redirect or the standalone page.
+8. **Alzheimer's condition page redirect conflict.** RESOLVED — standalone `page.tsx` deleted; `/conditions/alzheimers-care/` now 301-redirects to `/conditions/dementia-care-at-home/` as intended. Alzheimer's content lives as a subsection of the Dementia pillar page.

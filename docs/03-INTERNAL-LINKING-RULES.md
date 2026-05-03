@@ -31,7 +31,7 @@ The five cluster pages must include:
 
 ### Condition pages
 
-Each of the 9 condition pages must include:
+Each of the 8 condition pages must include:
 
 - ✅ A link to the **primary service page** for that condition
 - ✅ Links to **2–3 educational articles** that support the condition
