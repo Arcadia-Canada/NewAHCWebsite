@@ -64,10 +64,10 @@ const locations = [
 // ─── COMPONENTS ───────────────────────────────────────────────────────────────
 
 const TRUST_BAR_ITEMS = [
-  { icon: '⭐', text: '5.0 Google Rating · 38 Reviews', isRating: true },
-  { icon: '🏠', text: 'GTA Families Since 2005', isRating: false },
-  { icon: '🩺', text: 'Clinical Care at Home', isRating: false },
-  { icon: '📞', text: 'Available 7 Days a Week', isRating: false },
+  { icon: '\u2B50', text: '5.0 Google Rating \u00B7 38 Reviews', isRating: true },
+  { icon: '\uD83C\uDFE0', text: 'GTA Families Since 2005', isRating: false },
+  { icon: '\uD83E\uDE7A', text: 'Clinical Care at Home', isRating: false },
+  { icon: '\uD83D\uDCDE', text: 'Available 7 Days a Week', isRating: false },
 ];
 
 function TrustBar() {
@@ -171,11 +171,11 @@ function Hero() {
   return (
     <>
       <HeroTemplate
-        eyebrow="Specialized Home Care · Toronto & GTA"
+        eyebrow={`Specialized Home Care ${String.fromCharCode(0xB7)} Toronto & GTA`}
         title={<>Care That Understands<br /><span style={{ color: '#E8867F' }}>What Your Family<br />Is Going Through</span></>}
         body={
           <>
-            <p>Arcadia brings clinical expertise and genuine compassion together — guiding families through dementia, brain injury, recovery, and complex aging at home. Serving the GTA since 2005.</p>
+            <p>Arcadia brings clinical expertise and genuine compassion together &mdash; guiding families through dementia, brain injury, recovery, and complex aging at home. Serving the GTA since 2005.</p>
           </>
         }
         actions={
@@ -185,7 +185,7 @@ function Hero() {
                 <a href="tel:8449770050" style={{ background: colors.accent, color: '#fff', padding: '16px 32px', borderRadius: 8, textDecoration: 'none', fontSize: 16, fontWeight: 700, display: 'flex', alignItems: 'center', gap: 8, transition: 'all 0.2s' }}
                   onMouseOver={e => e.currentTarget.style.background = '#a82520'}
                   onMouseOut={e => e.currentTarget.style.background = colors.accent}>
-                  📞 Call (844) 977-0050
+                  {String.fromCodePoint(0x1F4DE)} Call (844) 977-0050
                 </a>
                 <a href="/contact/" style={{ background: 'transparent', color: '#fff', padding: '16px 32px', borderRadius: 8, textDecoration: 'none', fontSize: 16, fontWeight: 600, border: '1.5px solid rgba(255,255,255,0.3)', transition: 'all 0.2s' }}
                   onMouseOver={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.08)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.5)'; }}
@@ -195,7 +195,7 @@ function Hero() {
               </div>
               <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.15)', borderRadius: 100, padding: '8px 16px' }}>
                 <StarRating />
-                <span style={{ fontSize: 13, color: 'rgba(255,255,255,0.85)', fontWeight: 600 }}>5.0 · 38 Google Reviews</span>
+                <span style={{ fontSize: 13, color: 'rgba(255,255,255,0.85)', fontWeight: 600 }}>5.0 {String.fromCharCode(0xB7)} 38 Google Reviews</span>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
                   <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
                   <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
@@ -235,7 +235,7 @@ function DifferenceSection() {
         <div style={{ textAlign: 'center', marginBottom: 64 }}>
           <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: colors.accent, marginBottom: 12 }}>Why Arcadia Is Different</p>
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 600, color: colors.primary, marginBottom: 16 }}>More Than a Caregiver Agency</h2>
-          <p style={{ fontSize: 17, color: colors.textLight, maxWidth: 580, margin: '0 auto', lineHeight: 1.65 }}>Most home care agencies focus on staffing. Arcadia approaches care the way a clinical team would — while delivering the warmth families need at home.</p>
+          <p style={{ fontSize: 17, color: colors.textLight, maxWidth: 580, margin: '0 auto', lineHeight: 1.65 }}>Most home care agencies focus on staffing. Arcadia approaches care the way a clinical team would &mdash; while delivering the warmth families need at home.</p>
         </div>
         <div style={{ display: 'flex', gap: 32, flexWrap: 'wrap' }} className="pillar-grid">
           {pillars.map((p, i) => (
@@ -260,7 +260,7 @@ function ServicesSection() {
         <div style={{ textAlign: 'center', marginBottom: 64 }}>
           <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: colors.accent, marginBottom: 12 }}>What We Offer</p>
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 600, color: colors.primary, marginBottom: 16 }}>Specialized Care for Complex Situations</h2>
-          <p style={{ fontSize: 17, color: colors.textLight, maxWidth: 540, margin: '0 auto', lineHeight: 1.65 }}>Every service is designed around clinical understanding and human connection — not just availability.</p>
+          <p style={{ fontSize: 17, color: colors.textLight, maxWidth: 540, margin: '0 auto', lineHeight: 1.65 }}>Every service is designed around clinical understanding and human connection &mdash; not just availability.</p>
         </div>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24 }} className="services-grid">
           {services.map((s, i) => (
@@ -314,7 +314,7 @@ function ProcessSection() {
           <a href="tel:8449770050" style={{ display: 'inline-flex', alignItems: 'center', gap: 12, background: colors.primary, color: '#fff', padding: '18px 40px', borderRadius: 8, textDecoration: 'none', fontSize: 17, fontWeight: 700, transition: 'all 0.2s' }}
             onMouseOver={e => e.currentTarget.style.background = '#0f1a26'}
             onMouseOut={e => e.currentTarget.style.background = colors.primary}>
-            <span>📞</span> Start the Conversation · (844) 977-0050
+            <span>{String.fromCodePoint(0x1F4DE)}</span> Start the Conversation {String.fromCharCode(0xB7)} (844) 977-0050
           </a>
           <p style={{ marginTop: 12, fontSize: 13, color: colors.textLight }}>No obligation. Just a real conversation about what your family needs.</p>
         </div>
@@ -417,7 +417,7 @@ function LocationsSection() {
         <div style={{ textAlign: 'center', marginBottom: 56 }}>
           <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: colors.accent, marginBottom: 12 }}>Where We Serve</p>
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 600, color: colors.primary, marginBottom: 16 }}>Serving Families Across the GTA</h2>
-          <p style={{ fontSize: 16, color: colors.textLight, maxWidth: 480, margin: '0 auto', lineHeight: 1.65 }}>From downtown Toronto to Halton Region — local care, regional expertise.</p>
+          <p style={{ fontSize: 16, color: colors.textLight, maxWidth: 480, margin: '0 auto', lineHeight: 1.65 }}>From downtown Toronto to Halton Region &mdash; local care, regional expertise.</p>
         </div>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: 16 }} className="locations-grid">
           {locations.map((l, i) => (
@@ -425,7 +425,7 @@ function LocationsSection() {
               <div style={{ background: colors.surface, border: `1px solid ${colors.border}`, borderRadius: 12, padding: '28px 20px', textAlign: 'center', transition: 'all 0.3s' }}
                 onMouseOver={e => { e.currentTarget.style.background = colors.primary; e.currentTarget.querySelectorAll('*').forEach(el => { if ((el as HTMLElement).dataset.title) (el as HTMLElement).style.color = '#fff'; if ((el as HTMLElement).dataset.sub) (el as HTMLElement).style.color = 'rgba(255,255,255,0.6)'; }); }}
                 onMouseOut={e => { e.currentTarget.style.background = colors.surface; e.currentTarget.querySelectorAll('*').forEach(el => { if ((el as HTMLElement).dataset.title) (el as HTMLElement).style.color = colors.primary; if ((el as HTMLElement).dataset.sub) (el as HTMLElement).style.color = colors.textLight; }); }}>
-                <div style={{ fontSize: 28, marginBottom: 10 }}>📍</div>
+                <div style={{ fontSize: 28, marginBottom: 10 }}>{String.fromCodePoint(0x1F4CD)}</div>
                 <div data-title style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontWeight: 600, fontSize: 17, color: colors.primary, marginBottom: 6, transition: 'color 0.3s' }}>{l.name}</div>
                 <div data-sub style={{ fontSize: 12, color: colors.textLight, lineHeight: 1.5, transition: 'color 0.3s' }}>{l.sub}</div>
               </div>
@@ -433,7 +433,7 @@ function LocationsSection() {
           ))}
         </div>
         <p style={{ textAlign: 'center', marginTop: 28, fontSize: 13, color: colors.textLight }}>
-          Don&apos;t see your area? <a href="tel:8449770050" style={{ color: colors.accent, fontWeight: 600, textDecoration: 'none' }}>Call us</a> — we may still serve you.
+          Don&apos;t see your area? <a href="tel:8449770050" style={{ color: colors.accent, fontWeight: 600, textDecoration: 'none' }}>Call us</a> &mdash; we may still serve you.
         </p>
       </div>
     </section>
@@ -466,27 +466,27 @@ function CTASection() {
           <div style={{ flex: '1 1 340px' }}>
             <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(200,48,42,0.9)', marginBottom: 12 }}>Get In Touch</p>
             <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 4vw, 3.2rem)', fontWeight: 600, color: '#fff', marginBottom: 20, lineHeight: 1.2 }}>It Starts With One Conversation</h2>
-            <p style={{ fontSize: 16, color: 'rgba(255,255,255,0.65)', lineHeight: 1.7, marginBottom: 40 }}>There&apos;s no obligation. Just a real conversation about your family&apos;s situation and how we can help — clinical expertise and genuine care, from the first call.</p>
+            <p style={{ fontSize: 16, color: 'rgba(255,255,255,0.65)', lineHeight: 1.7, marginBottom: 40 }}>There&apos;s no obligation. Just a real conversation about your family&apos;s situation and how we can help &mdash; clinical expertise and genuine care, from the first call.</p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
               <a href="tel:8449770050" style={{ display: 'flex', alignItems: 'center', gap: 16, textDecoration: 'none' }}>
-                <div style={{ width: 48, height: 48, background: colors.accent, borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 20, flexShrink: 0 }}>📞</div>
+                <div style={{ width: 48, height: 48, background: colors.accent, borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 20, flexShrink: 0 }}>{String.fromCodePoint(0x1F4DE)}</div>
                 <div>
                   <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.5)', textTransform: 'uppercase', letterSpacing: '0.08em', fontWeight: 600 }}>Call Us</div>
                   <div style={{ fontSize: 22, fontWeight: 700, color: '#fff' }}>(844) 977-0050</div>
                 </div>
               </a>
               <a href="mailto:info@arcadiahomecare.ca" style={{ display: 'flex', alignItems: 'center', gap: 16, textDecoration: 'none' }}>
-                <div style={{ width: 48, height: 48, background: 'rgba(255,255,255,0.08)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 20, flexShrink: 0 }}>✉️</div>
+                <div style={{ width: 48, height: 48, background: 'rgba(255,255,255,0.08)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 20, flexShrink: 0 }}>{String.fromCodePoint(0x2709, 0xFE0F)}</div>
                 <div>
                   <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.5)', textTransform: 'uppercase', letterSpacing: '0.08em', fontWeight: 600 }}>Email</div>
                   <div style={{ fontSize: 15, color: 'rgba(255,255,255,0.85)' }}>info@arcadiahomecare.ca</div>
                 </div>
               </a>
               <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
-                <div style={{ width: 48, height: 48, background: 'rgba(255,255,255,0.08)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 20, flexShrink: 0 }}>🕐</div>
+                <div style={{ width: 48, height: 48, background: 'rgba(255,255,255,0.08)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 20, flexShrink: 0 }}>{String.fromCodePoint(0x1F550)}</div>
                 <div>
                   <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.5)', textTransform: 'uppercase', letterSpacing: '0.08em', fontWeight: 600 }}>Hours</div>
-                  <div style={{ fontSize: 15, color: 'rgba(255,255,255,0.85)' }}>Mon–Fri, 9:00AM – 5:00PM</div>
+                  <div style={{ fontSize: 15, color: 'rgba(255,255,255,0.85)' }}>Mon&ndash;Fri, 9:00AM &ndash; 5:00PM</div>
                 </div>
               </div>
             </div>
@@ -494,7 +494,7 @@ function CTASection() {
           <div style={{ flex: '1 1 380px', background: 'rgba(255,255,255,0.05)', borderRadius: 16, padding: '40px', border: '1px solid rgba(255,255,255,0.1)' }}>
             {sent ? (
               <div style={{ textAlign: 'center', padding: '40px 0' }}>
-                <div style={{ fontSize: 48, marginBottom: 16 }}>✅</div>
+                <div style={{ fontSize: 48, marginBottom: 16 }}>{String.fromCodePoint(0x2705)}</div>
                 <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 24, color: '#fff', marginBottom: 12 }}>Thank you!</h3>
                 <p style={{ color: 'rgba(255,255,255,0.65)', fontSize: 15, lineHeight: 1.65 }}>We&apos;ll be in touch shortly. If your matter is urgent, please call us at (844) 977-0050.</p>
               </div>
