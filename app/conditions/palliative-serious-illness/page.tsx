@@ -598,7 +598,7 @@ export default function PalliativeSeriousIllnessPage() {
                 { type: 'Service', title: 'Overnight & 24-Hour Care', href: '/our-services/overnight-24-hour-care/' },
                 { type: 'Condition', title: 'Caregiver Burnout Support', href: '/conditions/caregiver-burnout-support/' },
                 { type: 'Condition', title: 'Post-Hospital Recovery', href: '/conditions/post-hospital-recovery/' },
-                { type: 'Resource', title: 'Family Caregiver Support Guides', href: '/resources/family-caregiving-guides/' },
+                { type: 'Resource', title: 'Family Caregiver Support Guides', href: '/resources/family-caregiver-support/' },
               ].map((item, i) => (
                 <Link key={i} href={item.href} className="related-card">
                   <div className="related-card-type">{item.type}</div>

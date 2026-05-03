@@ -144,7 +144,7 @@ export default function YourCarePlanPage() {
               Your Care Plan
             </span>
             <span className="step-nav-sep">›</span>
-            <Link href="/how-care-starts/caregiver-matching/" className="step-nav-item">
+            <Link href="/how-care-starts/matching-caregivers/" className="step-nav-item">
               <span className="step-nav-dot" />
               Caregiver Matching
             </Link>
@@ -304,7 +304,7 @@ export default function YourCarePlanPage() {
               <Link href="/how-care-starts/care-assessment/" className="step-nav-btn">
                 ← Care Assessment
               </Link>
-              <Link href="/how-care-starts/caregiver-matching/" className="step-nav-btn next">
+              <Link href="/how-care-starts/matching-caregivers/" className="step-nav-btn next">
                 Caregiver Matching →
               </Link>
             </div>
@@ -334,7 +334,7 @@ export default function YourCarePlanPage() {
                 <span className="sidebar-step-dot active" />
                 Your Care Plan
               </span>
-              <Link href="/how-care-starts/caregiver-matching/" className="sidebar-step">
+              <Link href="/how-care-starts/matching-caregivers/" className="sidebar-step">
                 <span className="sidebar-step-dot" />
                 Caregiver Matching
               </Link>

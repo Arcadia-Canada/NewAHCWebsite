@@ -307,12 +307,11 @@ export default function EarlySignsOfDementiaArticlePage() {
               for more information.
             </p>
             <p>
-              You can also read more about what to do when resistance is the primary challenge in our
-              related article:{' '}
-              <Link href="/resources/navigating-home-care/when-a-parent-resists-home-care/">
-                When a Parent Resists Home Care
-              </Link>
-              .
+              You can also explore our{' '}
+              <Link href="/resources/navigating-home-care/">
+                navigating home care guides
+              </Link>{' '}
+              for more on what to do when resistance is the primary challenge.
             </p>
 
             {/* Next-step link */}
@@ -376,8 +375,8 @@ export default function EarlySignsOfDementiaArticlePage() {
               <Link href="/resources/dementia-memory-care/early-signs-of-dementia-in-a-parent/" className="related-link">
                 Early Signs of Dementia in a Parent
               </Link>
-              <Link href="/resources/navigating-home-care/when-a-parent-resists-home-care/" className="related-link">
-                When a Parent Resists Home Care
+              <Link href="/resources/navigating-home-care/" className="related-link">
+                Navigating Home Care Guides
               </Link>
               <Link href="/conditions/dementia-care-at-home/" className="related-link">
                 Dementia Care at Home — What to Expect

@@ -410,12 +410,12 @@ export default function ParkinsonsSupportPage() {
             <p>
               Arcadia provides Parkinson's home care support across{' '}
               <Link href="/locations/toronto/">Toronto</Link>,{' '}
-              <Link href="/locations/toronto/north-york/">North York</Link>,{' '}
-              <Link href="/locations/toronto/scarborough/">Scarborough</Link>,{' '}
-              <Link href="/locations/toronto/etobicoke/">Etobicoke</Link>,{' '}
-              <Link href="/locations/york-region/markham/">Markham</Link>,{' '}
-              <Link href="/locations/york-region/richmond-hill/">Richmond Hill</Link>, and{' '}
-              <Link href="/locations/peel-region/mississauga/">Mississauga</Link>.
+              <Link href="/locations/toronto/north-york-home-care/">North York</Link>,{' '}
+              <Link href="/locations/toronto/scarborough-home-care/">Scarborough</Link>,{' '}
+              <Link href="/locations/toronto/etobicoke-home-care/">Etobicoke</Link>,{' '}
+              <Link href="/locations/york-region/markham-home-care/">Markham</Link>,{' '}
+              <Link href="/locations/york-region/richmond-hill-home-care/">Richmond Hill</Link>, and{' '}
+              <Link href="/locations/peel-region/mississauga-home-care/">Mississauga</Link>.
               We work alongside the treating neurologist, family physician, and
               any allied health professionals involved in the person's care.
             </p>
@@ -468,11 +468,11 @@ export default function ParkinsonsSupportPage() {
             <div className="sidebar-card">
               <div className="sidebar-card-title">Serving Your Area</div>
               <Link href="/locations/toronto/" className="sidebar-link">Toronto</Link>
-              <Link href="/locations/toronto/north-york/" className="sidebar-link">North York</Link>
-              <Link href="/locations/toronto/scarborough/" className="sidebar-link">Scarborough</Link>
-              <Link href="/locations/toronto/etobicoke/" className="sidebar-link">Etobicoke</Link>
-              <Link href="/locations/york-region/markham/" className="sidebar-link">Markham</Link>
-              <Link href="/locations/peel-region/mississauga/" className="sidebar-link">Mississauga</Link>
+              <Link href="/locations/toronto/north-york-home-care/" className="sidebar-link">North York</Link>
+              <Link href="/locations/toronto/scarborough-home-care/" className="sidebar-link">Scarborough</Link>
+              <Link href="/locations/toronto/etobicoke-home-care/" className="sidebar-link">Etobicoke</Link>
+              <Link href="/locations/york-region/markham-home-care/" className="sidebar-link">Markham</Link>
+              <Link href="/locations/peel-region/mississauga-home-care/" className="sidebar-link">Mississauga</Link>
             </div>
           </aside>
         </div>

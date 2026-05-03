@@ -617,7 +617,7 @@ export default function PostHospitalRecoveryPage() {
                 { type: 'Service', title: 'Rehabilitation Support', href: '/our-services/rehabilitation-support/' },
                 { type: 'Condition', title: 'Stroke Recovery at Home', href: '/conditions/stroke-recovery/' },
                 { type: 'Condition', title: 'Frailty & Fall Prevention', href: '/conditions/frailty-fall-prevention/' },
-                { type: 'Resource', title: 'Navigating a Hospital Discharge: A Guide for Families', href: '/resources/hospital-discharge-guides/transitioning-home-from-hospital/' },
+                { type: 'Resource', title: 'Navigating Home Care Guides', href: '/resources/navigating-home-care/' },
               ].map((item, i) => (
                 <Link key={i} href={item.href} className="related-card">
                   <div className="related-card-type">{item.type}</div>

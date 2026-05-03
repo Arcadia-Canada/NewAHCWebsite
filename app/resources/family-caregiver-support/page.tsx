@@ -195,10 +195,10 @@ export default function FamilyCaregiverSupportHub() {
               <p style={{ fontSize: '0.95rem', color: '#4B5563', lineHeight: 1.8, margin: 0 }}>
                 <strong style={{ color: '#1C2B3A' }}>When a parent resists help:</strong> One of the most
                 common challenges family caregivers face. Our article{' '}
-                <Link href="/resources/navigating-home-care/when-a-parent-resists-home-care/" style={{ color: '#C8302A', fontWeight: 600 }}>
-                  When a Parent Resists Home Care
+                <Link href="/resources/navigating-home-care/" style={{ color: '#C8302A', fontWeight: 600 }}>
+                  navigating home care guides
                 </Link>{' '}
-                covers this in depth — including dementia-specific refusal.
+                cover this in depth — including dementia-specific refusal.
               </p>
             </div>
           </div>

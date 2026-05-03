@@ -369,7 +369,7 @@ export default function CompanionCarePage() {
               <Link href="/our-services/dementia-alzheimers-home-care/">dementia care</Link>{' '}
               but are not sure their parent is ready, companion care is often the right
               place to start. Families navigating these questions may also find our{' '}
-              <a href="/resources/family-caregiving-guides/caring-for-your-loved-one/" style={{ color: '#C8302A', fontWeight: 600, textDecoration: 'underline' }}>family caregiver support guides</a>
+              <a href="/resources/family-caregiver-support/" style={{ color: '#C8302A', fontWeight: 600, textDecoration: 'underline' }}>family caregiver support guides</a>
               {' '}useful. Our team can help you think through the path forward.
             </p>
 
@@ -456,7 +456,7 @@ export default function CompanionCarePage() {
                 { type: 'Service', title: 'Personal Support & Daily Living', href: '/our-services/personal-support-daily-living/' },
                 { type: 'Service', title: 'Respite Care', href: '/our-services/respite-care/' },
                 { type: 'Condition', title: 'Caregiver Burnout Support', href: '/conditions/caregiver-burnout-support/' },
-                { type: 'Resource', title: 'Family Caregiver Support Guides', href: '/resources/family-caregiving-guides/' },
+                { type: 'Resource', title: 'Family Caregiver Support Guides', href: '/resources/family-caregiver-support/' },
               ].map((item, i) => (
                 <Link key={i} href={item.href} className="related-card">
                   <div className="related-card-type">{item.type}</div>

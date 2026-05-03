@@ -61,7 +61,7 @@ export default function OurServicesPage() {
           actions={
             <>
               <a href={phone.tel} style={arcBtn.primary} onMouseOver={hoverPrimary.over} onMouseOut={hoverPrimary.out}>📞 Call {phone.display}</a>
-              <a href="/contact" style={arcBtn.outline} onMouseOver={hoverOutline.over} onMouseOut={hoverOutline.out}>Book a Free Consultation</a>
+              <a href="/contact/" style={arcBtn.outline} onMouseOver={hoverOutline.over} onMouseOut={hoverOutline.out}>Book a Free Consultation</a>
             </>
           }
           imageSrc="/images/our-services-hero-caregiver-senior.png"
@@ -119,14 +119,14 @@ export default function OurServicesPage() {
           <p>One conversation is all it takes. We&apos;ll help you understand what your loved one needs and how Arcadia can help.</p>
           <div style={{ display: 'flex', gap: 14, justifyContent: 'center', flexWrap: 'wrap' }}>
             <a href={phone.tel} style={arcBtn.primary} onMouseOver={hoverPrimary.over} onMouseOut={hoverPrimary.out}>📞 Call {phone.display}</a>
-            <a href="/contact" style={arcBtn.outline} onMouseOver={hoverOutline.over} onMouseOut={hoverOutline.out}>Book a Free Consultation</a>
+            <a href="/contact/" style={arcBtn.outline} onMouseOver={hoverOutline.over} onMouseOut={hoverOutline.out}>Book a Free Consultation</a>
           </div>
         </section>
 
         {/* Referral strip */}
         <div className="referral-strip">
           <p><strong>Referring a patient?</strong> We work closely with discharge planners, social workers, and specialist teams across the GTA.</p>
-          <a href="/referral-form">Submit a Professional Referral →</a>
+          <a href="/referral-form/">Submit a Professional Referral →</a>
         </div>
 
       </div>

@@ -145,7 +145,7 @@ export default function OngoingSupportPage() {
               Your Care Plan
             </Link>
             <span className="step-nav-sep">›</span>
-            <Link href="/how-care-starts/caregiver-matching/" className="step-nav-item">
+            <Link href="/how-care-starts/matching-caregivers/" className="step-nav-item">
               <span className="step-nav-dot done" />
               Caregiver Matching
             </Link>
@@ -307,7 +307,7 @@ export default function OngoingSupportPage() {
                 <span className="sidebar-step-dot done" />
                 Your Care Plan
               </Link>
-              <Link href="/how-care-starts/caregiver-matching/" className="sidebar-step done">
+              <Link href="/how-care-starts/matching-caregivers/" className="sidebar-step done">
                 <span className="sidebar-step-dot done" />
                 Caregiver Matching
               </Link>
