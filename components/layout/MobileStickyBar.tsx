@@ -97,12 +97,6 @@ export default function MobileStickyBar() {
           </span>
         </a>
       </div>
-      <style>{`
-        .mobile-sticky-bar { display: none; }
-        @media (max-width: 768px) {
-          .mobile-sticky-bar { display: flex; }
-        }
-      `}</style>
     </>
   );
 }

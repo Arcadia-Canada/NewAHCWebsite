@@ -1,5 +1,3 @@
-@import "tailwindcss";
-
 :root {
   --background: #ffffff;
   --foreground: #2D2D2D;
@@ -7,14 +5,11 @@
   --color-accent: #C8302A;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-}
-
 body {
   background: var(--background);
   color: #2D2D2D;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   font-family: var(--font-dm-sans), system-ui, sans-serif;
   margin: 0;
   padding: 0;
@@ -149,6 +144,158 @@ a.loc-region-btn-red:hover,
   .services-grid { grid-template-columns: 1fr !important; }
   .locations-grid { grid-template-columns: 1fr !important; }
 }
+
+/* ---------------------------------------------------
+   Homepage hover effects (CSS-only, replaces JS handlers)
+--------------------------------------------------- */
+
+/* Pillar cards */
+.hp-pillar-card {
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.hp-pillar-card:hover {
+  box-shadow: 0 20px 40px rgba(28,43,58,0.1);
+  transform: translateY(-4px);
+}
+
+/* Service cards */
+.hp-service-card {
+  transition: background 0.3s;
+}
+.hp-service-card:hover {
+  background: #1C2B3A !important;
+}
+.hp-service-card .hp-service-title,
+.hp-service-card .hp-service-desc,
+.hp-service-card .hp-service-link {
+  transition: color 0.3s;
+}
+.hp-service-card:hover .hp-service-title {
+  color: #ffffff;
+}
+.hp-service-card:hover .hp-service-desc {
+  color: rgba(255,255,255,0.65);
+}
+.hp-service-card:hover .hp-service-link {
+  color: #E8867F;
+}
+
+/* Condition pills */
+.hp-condition-pill {
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+.hp-condition-pill:hover {
+  background: #C8302A !important;
+  border-color: #C8302A !important;
+  color: #ffffff !important;
+}
+
+/* Location tiles */
+.hp-location-tile {
+  transition: background 0.3s;
+}
+.hp-location-tile:hover {
+  background: #1C2B3A !important;
+}
+.hp-location-tile .hp-loc-title,
+.hp-location-tile .hp-loc-sub {
+  transition: color 0.3s;
+}
+.hp-location-tile:hover .hp-loc-title {
+  color: #ffffff;
+}
+.hp-location-tile:hover .hp-loc-sub {
+  color: rgba(255,255,255,0.6);
+}
+
+/* Referral button */
+.hp-referral-btn {
+  transition: background 0.2s;
+}
+.hp-referral-btn:hover {
+  background: #0f1a26 !important;
+}
+
+/* Process CTA button */
+.hp-process-cta {
+  transition: background 0.2s;
+}
+.hp-process-cta:hover {
+  background: #0f1a26 !important;
+}
+
+/* Hero call button */
+.hp-hero-call:hover {
+  background: #a82520 !important;
+}
+
+/* Hero consult button */
+.hp-hero-consult:hover {
+  background: rgba(255,255,255,0.08) !important;
+  border-color: rgba(255,255,255,0.5) !important;
+}
+
+/* Hero referral badge */
+.hp-hero-badge:hover {
+  box-shadow: 0 24px 48px rgba(0,0,0,0.18);
+}
+
+/* CTA form inputs & button */
+.hp-cta-input:focus {
+  border-color: #C8302A !important;
+}
+.hp-cta-submit {
+  transition: background 0.2s;
+}
+.hp-cta-submit:hover {
+  background: #a82520 !important;
+}
+
+/* Google reviews responsive */
+@media (max-width: 900px) {
+  .reviews-grid-home { grid-template-columns: repeat(2, 1fr) !important; }
+}
+@media (max-width: 560px) {
+  .reviews-grid-home { grid-template-columns: 1fr !important; }
+}
+
+/* ---------------------------------------------------
+   Navbar hover effects + mobile breakpoint
+--------------------------------------------------- */
+
+.nav-link {
+  transition: color 0.2s;
+}
+.nav-link:hover {
+  color: #C8302A !important;
+}
+
+.nav-phone-btn {
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+.nav-phone-btn:hover {
+  background: #C8302A !important;
+  border-color: #C8302A !important;
+  color: #ffffff !important;
+}
+
+.nav-consult-btn {
+  transition: background 0.2s;
+}
+.nav-consult-btn:hover {
+  background: #a82520 !important;
+}
+
+@media (max-width: 768px) {
+  .desktop-nav { display: none !important; }
+  .mobile-menu-btn { display: block !important; }
+  .nav-inner { height: 56px !important; padding: 0 16px !important; }
+  .nav-logo { height: 34px !important; width: auto !important; }
+  .mobile-sticky-bar { display: flex !important; }
+}
+
+/* Mobile sticky bar (hidden by default, shown on mobile) */
+.mobile-sticky-bar { display: none; }
 
 /* ---------------------------------------------------
    Arcadia Standard Buttons

@@ -46,7 +46,9 @@ export default function Navbar() {
               className="nav-logo"
               src="/images/arcadia-logo.svg"
               alt="Arcadia Home Care"
-              style={{ height: 40, width: "auto", flexShrink: 0 }}
+              width={105}
+              height={40}
+              style={{ flexShrink: 0 }}
             />
           </a>
 
@@ -73,18 +75,12 @@ export default function Navbar() {
               <a
                 key={item}
                 href={`/${item.toLowerCase().replace(/ /g, "-")}/`}
+                className="nav-link"
                 style={{
                   color: "#1C2B3A",
                   textDecoration: "none",
-                  transition: "color 0.2s",
                   whiteSpace: "nowrap",
                 }}
-                onMouseOver={(e) =>
-                  ((e.target as HTMLAnchorElement).style.color = "#C8302A")
-                }
-                onMouseOut={(e) =>
-                  ((e.target as HTMLAnchorElement).style.color = "#1C2B3A")
-                }
               >
                 {item}
               </a>
@@ -97,6 +93,7 @@ export default function Navbar() {
           >
             <a
               href="tel:8449770050"
+              className="nav-phone-btn"
               style={{
                 color: "#C8302A",
                 textDecoration: "none",
@@ -106,25 +103,15 @@ export default function Navbar() {
                 border: "1px solid rgba(200,48,42,0.3)",
                 padding: "8px 16px",
                 borderRadius: 6,
-                transition: "all 0.2s",
                 whiteSpace: "nowrap",
                 flexShrink: 0,
-              }}
-              onMouseOver={(e) => {
-                e.currentTarget.style.background = colors.accent;
-                e.currentTarget.style.borderColor = colors.accent;
-                e.currentTarget.style.color = "#fff";
-              }}
-              onMouseOut={(e) => {
-                e.currentTarget.style.background = "rgba(200,48,42,0.08)";
-                e.currentTarget.style.borderColor = "rgba(200,48,42,0.3)";
-                e.currentTarget.style.color = "#C8302A";
               }}
             >
               📞 (844) 977-0050
             </a>
             <a
               href="/contact/"
+              className="nav-consult-btn"
               style={{
                 background: colors.accent,
                 color: "#fff",
@@ -133,14 +120,7 @@ export default function Navbar() {
                 textDecoration: "none",
                 fontSize: 14,
                 fontWeight: 600,
-                transition: "all 0.2s",
               }}
-              onMouseOver={(e) =>
-                (e.currentTarget.style.background = "#a82520")
-              }
-              onMouseOut={(e) =>
-                (e.currentTarget.style.background = colors.accent)
-              }
             >
               Book a Consultation
             </a>
@@ -227,14 +207,6 @@ export default function Navbar() {
         </div>
       )}
 
-      <style>{`
-        @media (max-width: 768px) {
-          .desktop-nav { display: none !important; }
-          .mobile-menu-btn { display: block !important; }
-          .nav-inner { height: 56px !important; padding: 0 16px !important; }
-          .nav-logo { height: 34px !important; }
-        }
-      `}</style>
     </>
   );
 }

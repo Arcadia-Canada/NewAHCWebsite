@@ -1,8 +1,24 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
+import { Cormorant_Garamond, DM_Sans } from "next/font/google";
 import "./globals.css";
 import SiteLayout from "@/components/layout/SiteLayout";
-import AccessibilityWidget from "@/components/ui/AccessibilityWidget";
+import LazyAccessibilityWidget from "@/components/ui/LazyAccessibilityWidget";
+
+const cormorant = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+  style: ["normal", "italic"],
+  display: "swap",
+  variable: "--font-cormorant",
+});
+
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
+  variable: "--font-dm-sans",
+});
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -24,13 +40,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className="antialiased">
+    <html lang="en" className={`${cormorant.variable} ${dmSans.variable}`}>
+      <head>
+        <link
+          rel="preload"
+          href="/images/home-hero-caregiver-senior.png"
+          as="image"
+        />
+      </head>
+      <body>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-XY1HL4D6TT"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
-        <Script id="gtag-init" strategy="afterInteractive">
+        <Script id="gtag-init" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -38,7 +61,7 @@ export default function RootLayout({
             gtag('config', 'G-XY1HL4D6TT');
           `}
         </Script>
-        <Script id="facebook-pixel" strategy="afterInteractive">
+        <Script id="facebook-pixel" strategy="lazyOnload">
           {`
             !function(f,b,e,v,n,t,s)
             {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -53,7 +76,7 @@ export default function RootLayout({
           `}
         </Script>
         <SiteLayout>{children}</SiteLayout>
-        <AccessibilityWidget />
+        <LazyAccessibilityWidget />
       </body>
     </html>
   );
