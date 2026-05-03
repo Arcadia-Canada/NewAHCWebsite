@@ -92,7 +92,7 @@ function GoogleReviewsWidget() {
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 600, color: colors.primary, marginBottom: 16 }}>
             Trusted by GTA Families
           </h2>
-          <div style={{ display: 'inline-flex', alignItems: 'center', gap: 12, background: colors.white, border: `1px solid ${colors.border}`, borderRadius: 100, padding: '10px 24px' }}>
+          <a href="https://www.google.com/search?q=arcadia+home+care+toronto" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: 12, background: colors.white, border: `1px solid ${colors.border}`, borderRadius: 100, padding: '10px 24px', textDecoration: 'none', transition: 'box-shadow 0.2s' }}>
             <span style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 28, fontWeight: 700, color: colors.primary }}>4.9</span>
             <StarRating />
             <span style={{ fontSize: 13, color: colors.textLight, fontWeight: 500 }}>41 Google Reviews</span>
@@ -102,7 +102,7 @@ function GoogleReviewsWidget() {
               <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
               <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
             </svg>
-          </div>
+          </a>
         </div>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 20 }} className="reviews-grid-home">
@@ -134,7 +134,7 @@ function GoogleReviewsWidget() {
         </div>
 
         <div style={{ textAlign: 'center', marginTop: 36 }}>
-          <a href="https://g.page/r/arcadiahomecare/review" target="_blank" rel="noopener noreferrer"
+          <a href="https://www.google.com/search?q=arcadia+home+care+toronto" target="_blank" rel="noopener noreferrer"
             style={{ fontSize: 14, fontWeight: 600, color: colors.accent, textDecoration: 'none', borderBottom: `2px solid ${colors.accent}`, paddingBottom: 2 }}>
             See All 41 Reviews on Google &rarr;
           </a>
@@ -163,7 +163,7 @@ function Hero() {
                 Book a Free Consultation
               </a>
             </div>
-            <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.15)', borderRadius: 100, padding: '8px 16px' }}>
+            <a href="https://www.google.com/search?q=arcadia+home+care+toronto" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.15)', borderRadius: 100, padding: '8px 16px', textDecoration: 'none', transition: 'background 0.2s, border-color 0.2s' }}>
               <StarRating />
               <span style={{ fontSize: 13, color: 'rgba(255,255,255,0.85)', fontWeight: 600 }}>4.9 {String.fromCharCode(0xB7)} 41 Google Reviews</span>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
@@ -172,7 +172,7 @@ function Hero() {
                 <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
                 <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
               </svg>
-            </div>
+            </a>
           </div>
         }
         imageSrc="/images/home-hero-caregiver-senior.png"
