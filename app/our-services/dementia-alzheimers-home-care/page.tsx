@@ -9,11 +9,6 @@
 
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { getServiceImages } from '@/lib/serviceImages'
-import ServiceHeroImage from '@/components/ui/ServiceHeroImage'
-import ServiceMidImage from '@/components/ui/ServiceMidImage'
-
-const images = getServiceImages('dementia-alzheimers')
 
 export const metadata: Metadata = {
   title: "Dementia & Alzheimer's Home Care Toronto | Arcadia Home Care",
@@ -510,8 +505,6 @@ export default function DementiaAlzheimersHomeCarePage() {
                 </div>
               ))}
             </div>
-
-            <ServiceMidImage src={images.midImage} alt={images.midAlt} />
 
             <h2>Dementia and Alzheimer's home care across Toronto and the GTA</h2>
             <p>
