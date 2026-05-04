@@ -177,13 +177,6 @@ function Hero() {
         }
         imageSrc="/images/home-hero-caregiver-senior.png"
         imageAlt="Arcadia caregiver supporting an older adult at home"
-        mediaBadge={
-          <a href="/referral-form/" className="hp-hero-badge" style={{ background: '#fff', borderRadius: 12, padding: '16px 20px', boxShadow: '0 20px 40px rgba(0,0,0,0.15)', display: 'block', textDecoration: 'none', color: 'inherit', transition: 'box-shadow 0.2s' }}>
-            <div style={{ fontSize: 11, fontWeight: 600, color: colors.accent, textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: 4 }}>Referral Ready</div>
-            <div style={{ fontSize: 13, color: colors.primary, fontWeight: 500, lineHeight: 1.4 }}>We work with discharge planners, social workers & care teams</div>
-            <span style={{ display: 'inline-block', marginTop: 8, fontSize: 12, color: colors.accent, fontWeight: 600 }}>Submit a Referral &rarr;</span>
-          </a>
-        }
       />
       <TrustBar />
     </>
