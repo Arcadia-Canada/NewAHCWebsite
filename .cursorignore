@@ -1,0 +1,125 @@
+# =================================================================
+# .cursorignore — context exclusions for AI tools
+# =================================================================
+# Files matched here are excluded from Cursor's default workspace
+# indexing. They become on-demand-only — readable when explicitly
+# requested in a prompt, but invisible during routine context-building.
+#
+# This keeps token consumption focused on the governance docs that
+# actually matter for the task at hand.
+#
+# Last updated: May 2026
+# =================================================================
+
+
+# -----------------------------------------------------------------
+# Per-article social assets
+# -----------------------------------------------------------------
+# Briefs and kits are reference material for the social media
+# manager — not inputs for blog generation. They are only relevant
+# when generating social assets for a NEW published article, in
+# which case the prompt explicitly references them.
+#
+# Excluding them prevents bloat: 8+ briefs + 8+ kits would
+# otherwise pull ~64,000 tokens of context that has zero relevance
+# to writing a different article.
+
+social/briefs/
+social/kits/
+
+
+# -----------------------------------------------------------------
+# Past article HTML files
+# -----------------------------------------------------------------
+# Articles that have already been published do not need to be
+# re-read for new article generation. The authority map already
+# tracks them by URL. If a specific past article is needed as a
+# voice or structural reference, name it in the prompt explicitly.
+
+*-PROD.html
+*-DEV.html
+
+
+# -----------------------------------------------------------------
+# Strategy PDFs (OneDrive-hosted, not in repo)
+# -----------------------------------------------------------------
+# Strategy PDFs are referenced via docs/EXTERNAL-STRATEGY-REFERENCES.md.
+# They should not be read directly. The .md file tells AI when each
+# PDF is relevant; opening the PDFs blindly is wasteful.
+
+*.pdf
+
+
+# -----------------------------------------------------------------
+# Build artefacts and dependencies
+# -----------------------------------------------------------------
+
+.next/
+out/
+node_modules/
+.vercel/
+dist/
+build/
+.cache/
+
+
+# -----------------------------------------------------------------
+# Lock files and binary assets
+# -----------------------------------------------------------------
+
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+*.lock
+
+# Images — reference by filename in prompts when needed
+public/images/
+public/icons/
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.webp
+*.svg
+*.ico
+
+
+# -----------------------------------------------------------------
+# Local development files
+# -----------------------------------------------------------------
+
+.env
+.env.local
+.env.*.local
+.DS_Store
+.idea/
+.vscode/
+*.log
+
+
+# -----------------------------------------------------------------
+# Git and CI metadata
+# -----------------------------------------------------------------
+
+.git/
+.github/workflows/
+
+
+# =================================================================
+# What is NOT excluded (and why)
+# =================================================================
+#
+# - AI-CONTEXT.md          ← root context, must be read first
+# - .cursorrules           ← directs Cursor's behaviour
+# - docs/                  ← all governance files, read per task
+# - social/README.md       ← explains the folder structure
+# - social/_TEMPLATE-*.md  ← read on-demand by social-asset prompts
+# - app/                   ← live page.tsx files, read for cluster hub edits
+# - sitemap.ts             ← read for sitemap updates
+# - vercel.json            ← read for redirect work
+# - redirects.json         ← read for redirect work
+#
+# These remain in default context because they are referenced
+# by the standard prompts and required for routine governance work.
+#
+# =================================================================
