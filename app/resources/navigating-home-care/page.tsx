@@ -7,6 +7,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.arcadiahomecare.ca/resources/navigating-home-care/',
   },
+  openGraph: {
+    title: 'How to Navigate Home Care in Ontario',
+    description: 'Practical guides for Ontario families making decisions about home care — costs, providers, public vs. private care, PSWs, and how to get started.',
+    url: 'https://www.arcadiahomecare.ca/resources/navigating-home-care/',
+    type: 'website',
+    locale: 'en_CA',
+    siteName: 'Arcadia Home Care',
+  },
 }
 
 const articles = [
@@ -102,6 +110,53 @@ export default function NavigatingHomeCareHub() {
                 { '@type': 'ListItem', position: 3, name: 'Navigating Home Care', item: 'https://www.arcadiahomecare.ca/resources/navigating-home-care/' },
               ],
             },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'HomeHealthCare',
+              '@id': 'https://www.arcadiahomecare.ca/#organization',
+              name: 'Arcadia Home Care',
+              alternateName: 'Arcadia',
+              url: 'https://www.arcadiahomecare.ca/',
+              logo: 'https://www.arcadiahomecare.ca/images/arcadia-logo.svg',
+              description:
+                'Specialized home care for seniors and families across Toronto and the Greater Toronto Area, including dementia and Alzheimer\'s care, acquired brain injury support, rehabilitation, hospital discharge support, palliative care, and case management. Serving GTA families since 2005.',
+              foundingDate: '2005',
+              telephone: '+1-844-977-0050',
+              email: 'info@arcadiahomecare.ca',
+              medicalSpecialty: 'Geriatric',
+              address: {
+                '@type': 'PostalAddress',
+                streetAddress: '302 Bay Street',
+                addressLocality: 'Toronto',
+                addressRegion: 'ON',
+                postalCode: 'M5H 0B6',
+                addressCountry: 'CA',
+              },
+              geo: { '@type': 'GeoCoordinates', latitude: 43.6494, longitude: -79.3795 },
+              openingHoursSpecification: [
+                {
+                  '@type': 'OpeningHoursSpecification',
+                  dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+                  opens: '09:00',
+                  closes: '17:00',
+                },
+              ],
+              areaServed: [
+                { '@type': 'City', name: 'Toronto' },
+                { '@type': 'AdministrativeArea', name: 'York Region' },
+                { '@type': 'AdministrativeArea', name: 'Peel Region' },
+                { '@type': 'AdministrativeArea', name: 'Durham Region' },
+                { '@type': 'AdministrativeArea', name: 'Halton Region' },
+                { '@type': 'AdministrativeArea', name: 'Greater Toronto Area' },
+              ],
+              aggregateRating: {
+                '@type': 'AggregateRating',
+                ratingValue: '4.9',
+                reviewCount: '41',
+                bestRating: '5',
+                worstRating: '1',
+              },
+            },
           ]),
         }}
       />
@@ -123,6 +178,16 @@ export default function NavigatingHomeCareHub() {
 
         .hub-articles-label { font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #C8302A; margin-bottom: 20px; }
         .hub-articles h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(1.5rem, 2.5vw, 2rem); font-weight: 600; color: #1C2B3A; margin-bottom: 28px; }
+
+        .pillar-featured { background: linear-gradient(135deg, #FAF6F0 0%, #F0E8DC 100%); border: 1px solid #E5D9C5; border-radius: 14px; padding: 36px 36px 32px; margin-bottom: 40px; position: relative; }
+        .pillar-featured::before { content: ''; position: absolute; top: 0; left: 28px; right: 28px; height: 3px; background: #C8302A; border-radius: 0 0 3px 3px; }
+        .pillar-eyebrow { font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #C8302A; margin-bottom: 16px; }
+        .pillar-featured h3 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(1.6rem, 3vw, 2.1rem); font-weight: 600; line-height: 1.2; margin-bottom: 16px; }
+        .pillar-featured h3 a { color: #1C2B3A; text-decoration: none; }
+        .pillar-featured h3 a:hover { color: #C8302A; }
+        .pillar-featured p { font-size: 1rem; color: #4B5563; line-height: 1.75; margin-bottom: 20px; }
+        .pillar-cta { display: inline-flex; align-items: center; gap: 6px; color: #C8302A; font-size: 14px; font-weight: 700; text-decoration: none; }
+        .pillar-cta:hover { gap: 10px; transition: gap 0.2s; }
 
         .article-card { border: 1px solid #E5E0D8; border-radius: 12px; padding: 24px 28px; margin-bottom: 16px; background: #FAFAF8; transition: border-color 0.2s, box-shadow 0.2s; }
         .article-card:hover { border-color: #C8302A; box-shadow: 0 4px 16px rgba(200,48,42,0.08); }
@@ -191,10 +256,31 @@ export default function NavigatingHomeCareHub() {
             </div>
 
             <div className="hub-articles">
-              <p className="hub-articles-label">Articles in this collection</p>
+              <p className="hub-articles-label">Start here</p>
+
+              <div className="pillar-featured">
+                <p className="pillar-eyebrow">The Pillar Article</p>
+                <h3>
+                  <Link href="/resources/navigating-home-care/when-parent-needs-more-help/">
+                    When the Person You Love Needs More Help Than You Can Give
+                  </Link>
+                </h3>
+                <p>
+                  The emotional starting point for GTA families. Not a sales pitch — an honest look at the
+                  moment when adjusting quietly has stopped being enough. If you read one article in this
+                  collection, read this one.
+                </p>
+                <Link href="/resources/navigating-home-care/when-parent-needs-more-help/" className="pillar-cta">
+                  Read the pillar →
+                </Link>
+              </div>
+
+              <p className="hub-articles-label" style={{ marginTop: 40 }}>Articles in this collection</p>
               <h2>Home Care Decision Guides</h2>
 
-              {articles.map((article) => (
+              {articles
+                .filter((article) => article.href !== '/resources/navigating-home-care/when-parent-needs-more-help/')
+                .map((article) => (
                 <div key={article.href} className={`article-card${article.status === 'coming' ? ' coming' : ''}`}>
                   <div className="article-card-title">
                     {article.status === 'live' ? (
