@@ -228,8 +228,8 @@ const organizationSchema = {
   ],
   aggregateRating: {
     '@type': 'AggregateRating',
-    ratingValue: '5.0',
-    reviewCount: '38',
+    ratingValue: '4.9',
+    reviewCount: '41',
     bestRating: '5',
     worstRating: '1',
   },

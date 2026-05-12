@@ -7,6 +7,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.arcadiahomecare.ca/resources/family-caregiver-support/',
   },
+  openGraph: {
+    title: 'Support for Family Caregivers in Toronto',
+    description: 'Guides for Toronto family caregivers navigating burnout, sibling disagreements, emotional strain, and how to share the weight of caring for an aging parent.',
+    url: 'https://www.arcadiahomecare.ca/resources/family-caregiver-support/',
+    type: 'website',
+    locale: 'en_CA',
+    siteName: 'Arcadia Home Care',
+  },
 }
 
 const articles = [
@@ -17,9 +25,9 @@ const articles = [
     status: 'live',
   },
   {
-    title: 'Caregiver Burnout: Warning Signs and What to Do',
+    title: 'The Exhaustion You Have Stopped Noticing',
     href: '/resources/family-caregiver-support/caregiver-burnout-warning-signs/',
-    description: "How to recognize when you've passed your limit — and what options exist before you reach a crisis point.",
+    description: "You have been tired for so long that tired has become your baseline. An honest look at caregiver burnout — what it actually feels like from the inside, and what structurally changes things.",
     status: 'live',
   },
   {
@@ -75,6 +83,53 @@ export default function FamilyCaregiverSupportHub() {
                 { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://www.arcadiahomecare.ca/resources/' },
                 { '@type': 'ListItem', position: 3, name: 'Family Caregiver Support', item: 'https://www.arcadiahomecare.ca/resources/family-caregiver-support/' },
               ],
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'HomeHealthCare',
+              '@id': 'https://www.arcadiahomecare.ca/#organization',
+              name: 'Arcadia Home Care',
+              alternateName: 'Arcadia',
+              url: 'https://www.arcadiahomecare.ca/',
+              logo: 'https://www.arcadiahomecare.ca/images/arcadia-logo.svg',
+              description:
+                'Specialized home care for seniors and families across Toronto and the Greater Toronto Area, including dementia and Alzheimer\'s care, acquired brain injury support, rehabilitation, hospital discharge support, palliative care, and case management. Serving GTA families since 2005.',
+              foundingDate: '2005',
+              telephone: '+1-844-977-0050',
+              email: 'info@arcadiahomecare.ca',
+              medicalSpecialty: 'Geriatric',
+              address: {
+                '@type': 'PostalAddress',
+                streetAddress: '302 Bay Street',
+                addressLocality: 'Toronto',
+                addressRegion: 'ON',
+                postalCode: 'M5H 0B6',
+                addressCountry: 'CA',
+              },
+              geo: { '@type': 'GeoCoordinates', latitude: 43.6494, longitude: -79.3795 },
+              openingHoursSpecification: [
+                {
+                  '@type': 'OpeningHoursSpecification',
+                  dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+                  opens: '09:00',
+                  closes: '17:00',
+                },
+              ],
+              areaServed: [
+                { '@type': 'City', name: 'Toronto' },
+                { '@type': 'AdministrativeArea', name: 'York Region' },
+                { '@type': 'AdministrativeArea', name: 'Peel Region' },
+                { '@type': 'AdministrativeArea', name: 'Durham Region' },
+                { '@type': 'AdministrativeArea', name: 'Halton Region' },
+                { '@type': 'AdministrativeArea', name: 'Greater Toronto Area' },
+              ],
+              aggregateRating: {
+                '@type': 'AggregateRating',
+                ratingValue: '4.9',
+                reviewCount: '41',
+                bestRating: '5',
+                worstRating: '1',
+              },
             },
           ]),
         }}
