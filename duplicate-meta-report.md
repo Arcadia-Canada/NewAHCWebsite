@@ -1,8 +1,0 @@
-# Duplicate Meta Description Report
-
-Generated: 2026-04-01T08:16:45.004Z
-
-- Pages scanned: 58
-- Duplicate description groups: 0
-
-No duplicate `metadata.description` values found across `app/**/page.tsx`.
