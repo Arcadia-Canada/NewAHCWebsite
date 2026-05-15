@@ -66,7 +66,7 @@ Last updated: May 3, 2026
 
 ---
 
-## Coming Soon stubs — planned keyword targets (21 stubs)
+## Coming Soon stubs — planned keyword targets (15 stubs)
 
 These keywords are reserved. No other page should target them.
 
@@ -100,7 +100,7 @@ These keywords are reserved. No other page should target them.
 | Communication Strategies for Dementia | communication strategies dementia |
 | Late Stage Dementia: What Families Need to Know | late stage dementia what to expect |
 
-### Brain Injury & Rehabilitation (6 stubs)
+### Brain Injury & Rehabilitation (planned — Net New; not listed on hub until published)
 
 | Article | Primary Keyword |
 |---------|-----------------|

@@ -18,7 +18,7 @@ Covers: dementia signs, behaviour changes, communication, safety, sleep, nutriti
 **URL:** `/resources/brain-injury-rehabilitation/`
 **Primary service:** `/our-services/acquired-brain-injury-home-care/`
 **Primary condition:** `/conditions/acquired-brain-injury-support/`
-**Article count:** 20 (0 published, 6 Coming Soon, 14 net new)
+**Article count:** 20 (0 published, 20 net new)
 
 Covers: TBI recovery, cognitive rehab, brain injury fatigue, family adjustment, community reintegration, recovery timelines.
 
@@ -73,7 +73,7 @@ Coming Soon stubs must be filled within **60 days** of being created or removed/
 
 **Date tracking is mandatory.** Every Coming Soon stub must have a `Stub created` date and a `Deadline` (created + 60 days) recorded in `AUTHORITY-MAP.md` — both in the cluster table row and in the consolidated **Coming Soon deadline tracker** section. When a new stub is added to a cluster hub page, the AUTHORITY-MAP must be updated in the same commit.
 
-**Current batch:** All 21 stubs were created 2026-03-22. Deadline: **2026-05-21**. See `AUTHORITY-MAP.md > Coming Soon deadline tracker` for the full list.
+**Current batch:** All 15 stubs were created 2026-03-22. Deadline: **2026-05-21**. See `AUTHORITY-MAP.md > Coming Soon deadline tracker` for the full list.
 
 ## What does NOT belong in a resource cluster
 

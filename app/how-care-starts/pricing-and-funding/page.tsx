@@ -1,4 +1,4 @@
-// app/how-care-starts/pricing-funding/page.tsx
+// app/how-care-starts/pricing-and-funding/page.tsx
 // Decision-stage page — pricing and funding information
 // Target keyword: "home care cost ontario" / "how much does home care cost toronto"
 // Persona: family trying to understand what care will cost before committing —
@@ -13,7 +13,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Home Care Pricing & Funding in Ontario | Arcadia Home Care Toronto',
   description: 'How much does home care cost in Ontario? What does Ontario Health atHome cover? Plain answers to the questions families ask about home care pricing, public funding, and private care costs in Toronto and the GTA.',
-  alternates: { canonical: 'https://www.arcadiahomecare.ca/how-care-starts/pricing-funding/' },
+  alternates: { canonical: 'https://www.arcadiahomecare.ca/how-care-starts/pricing-and-funding/' },
 }
 
 export default function PricingFundingPage() {
@@ -59,7 +59,7 @@ export default function PricingFundingPage() {
               'itemListElement': [
                 { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://www.arcadiahomecare.ca/' },
                 { '@type': 'ListItem', 'position': 2, 'name': 'How Care Starts', 'item': 'https://www.arcadiahomecare.ca/how-care-starts/' },
-                { '@type': 'ListItem', 'position': 3, 'name': 'Pricing & Funding', 'item': 'https://www.arcadiahomecare.ca/how-care-starts/pricing-funding/' },
+                { '@type': 'ListItem', 'position': 3, 'name': 'Pricing & Funding', 'item': 'https://www.arcadiahomecare.ca/how-care-starts/pricing-and-funding/' },
               ],
             },
           ]),

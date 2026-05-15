@@ -9,45 +9,6 @@ export const metadata: Metadata = {
   },
 }
 
-const articles = [
-  {
-    title: 'Life After Acquired Brain Injury: A Family Guide',
-    href: '/resources/brain-injury-rehabilitation/life-after-brain-injury/',
-    description: 'A comprehensive overview of what ABI means for families — changes to expect, how to adapt, and how to find the right home support.',
-    status: 'coming',
-  },
-  {
-    title: 'Stroke Recovery at Home: What to Expect',
-    href: '/resources/brain-injury-rehabilitation/stroke-recovery-at-home/',
-    description: 'A practical guide to recovering at home after a stroke — daily routines, safety, therapy coordination, and what progress typically looks like.',
-    status: 'coming',
-  },
-  {
-    title: 'Cognitive and Emotional Changes After Brain Injury',
-    href: '/resources/brain-injury-rehabilitation/cognitive-emotional-changes-brain-injury/',
-    description: 'How ABI affects thinking, memory, personality, and emotional regulation — and how families can respond with understanding and structure.',
-    status: 'coming',
-  },
-  {
-    title: 'Returning Home After Rehabilitation',
-    href: '/resources/brain-injury-rehabilitation/returning-home-after-rehab/',
-    description: "The transition from inpatient rehabilitation to home care is one of the most critical moments in recovery. Here's how to prepare.",
-    status: 'coming',
-  },
-  {
-    title: 'What Does a Rehabilitation Support Worker Do?',
-    href: '/resources/brain-injury-rehabilitation/rehabilitation-support-worker/',
-    description: "A plain-language guide to the role of a rehab support worker — how they differ from PSWs, what they're trained for, and when you need one.",
-    status: 'coming',
-  },
-  {
-    title: 'Mobility Support After Surgery or Illness',
-    href: '/resources/brain-injury-rehabilitation/mobility-support-after-surgery/',
-    description: 'How in-home mobility support works, what it includes, and how it connects with physiotherapy and occupational therapy in Toronto.',
-    status: 'coming',
-  },
-]
-
 export default function BrainInjuryRehabHub() {
   return (
     <>
@@ -98,15 +59,9 @@ export default function BrainInjuryRehabHub() {
         .hub-articles-label { font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #C8302A; margin-bottom: 20px; }
         .hub-articles h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(1.5rem, 2.5vw, 2rem); font-weight: 600; color: #1C2B3A; margin-bottom: 28px; }
 
-        .article-card { border: 1px solid #E5E0D8; border-radius: 12px; padding: 24px 28px; margin-bottom: 16px; background: #FAFAF8; transition: border-color 0.2s, box-shadow 0.2s; }
-        .article-card:hover { border-color: #C8302A; box-shadow: 0 4px 16px rgba(200,48,42,0.08); }
-        .article-card.coming { opacity: 0.55; pointer-events: none; }
-        .article-card-title { font-size: 1rem; font-weight: 700; color: #1C2B3A; margin-bottom: 6px; display: flex; align-items: center; gap: 10px; }
-        .article-card-title a { color: #1C2B3A; text-decoration: none; }
-        .article-card-title a:hover { color: #C8302A; }
-        .badge-coming { font-size: 10px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; background: #F0EBE3; color: #9B8E7E; padding: 3px 8px; border-radius: 20px; }
-        .article-card p { font-size: 0.9rem; color: #6B7280; line-height: 1.7; margin: 0; }
-        .article-card-arrow { display: inline-flex; align-items: center; gap: 4px; color: #C8302A; font-size: 13px; font-weight: 700; margin-top: 10px; text-decoration: none; }
+        .articles-placeholder { border: 1px solid #E5E0D8; border-radius: 12px; padding: 24px 28px; background: #FAFAF8; }
+        .articles-placeholder p { font-size: 1rem; color: #4B5563; line-height: 1.85; margin: 0; }
+        .articles-placeholder a { color: #C8302A; font-weight: 600; text-decoration: underline; text-decoration-color: rgba(200,48,42,0.3); text-underline-offset: 3px; }
 
         .referral-hook { margin-top: 32px; padding: 20px 24px; background: #EEF2F7; border-radius: 10px; font-size: 0.9rem; color: #4B5563; line-height: 1.7; }
         .referral-hook a { color: #C8302A; font-weight: 600; text-decoration: underline; text-decoration-color: rgba(200,48,42,0.3); }
@@ -158,7 +113,7 @@ export default function BrainInjuryRehabHub() {
               <p>
                 Toronto families have access to some of Canada's strongest rehabilitation hospitals — UHN,
                 Sunnybrook, Baycrest — but the support often drops off sharply once a patient leaves inpatient
-                care. These guides are designed to help you bridge that gap.
+                care. Future articles in this collection will focus on bridging that gap between hospital and home.
               </p>
               <p>
                 For an overview of how Arcadia supports ABI recovery, visit our{' '}
@@ -174,24 +129,15 @@ export default function BrainInjuryRehabHub() {
               <p className="hub-articles-label">Articles in this collection</p>
               <h2>Brain Injury & Rehabilitation Guides</h2>
 
-              {articles.map((article) => (
-                <div key={article.href} className={`article-card${article.status === 'coming' ? ' coming' : ''}`}>
-                  <div className="article-card-title">
-                    {article.status === 'live' ? (
-                      <Link href={article.href}>{article.title}</Link>
-                    ) : (
-                      <span>{article.title}</span>
-                    )}
-                    {article.status === 'coming' && <span className="badge-coming">Coming soon</span>}
-                  </div>
-                  <p>{article.description}</p>
-                  {article.status === 'live' && (
-                    <Link href={article.href} className="article-card-arrow">
-                      Read article →
-                    </Link>
-                  )}
-                </div>
-              ))}
+              <div className="articles-placeholder">
+                <p>
+                  In-depth articles for this cluster are on the roadmap. For now, start with the{' '}
+                  <Link href="/conditions/acquired-brain-injury-support/">acquired brain injury overview</Link>,{' '}
+                  <Link href="/our-services/acquired-brain-injury-home-care/">ABI home care</Link>, and{' '}
+                  <Link href="/our-services/rehabilitation-support/">rehabilitation support</Link> — or{' '}
+                  <Link href="/contact/">contact us</Link> if you are preparing for discharge.
+                </p>
+              </div>
             </div>
 
             {/* Referral hook — clinical cluster */}

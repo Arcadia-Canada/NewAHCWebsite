@@ -5,7 +5,7 @@ The structural map of all five content clusters, their linking targets, and the 
 For the article-by-article inventory (status, action, notes), see `AUTHORITY-MAP.md`.
 For linking rules (anchor text, dedup, Coming Soon policy), see `03-INTERNAL-LINKING-RULES.md`.
 
-Last updated: May 3, 2026 (Brain Injury Coming Soon stubs documented; counts corrected)
+Last updated: May 15, 2026 (Brain Injury hub: no Coming Soon cards; planned URLs documented as Net New)
 
 ---
 
@@ -163,12 +163,12 @@ Every internal link on the site should serve this flow. Authority moves from edu
 | **Primary condition** | `/conditions/acquired-brain-injury-support/` |
 | **Total articles** | 20 |
 | **Published** | 0 |
-| **Coming Soon stubs on cluster page** | 6 |
-| **Net New** | 14 |
+| **Coming Soon stubs on cluster page** | 0 |
+| **Net New** | 20 |
 
-No published articles yet. Cluster hub page exists with 6 Coming Soon stubs.
+No published articles yet. Cluster hub page lists no Coming Soon cards (six planned topics remain **Net New** in `AUTHORITY-MAP.md` until published).
 
-**Coming Soon stubs (do NOT link to these — all created 2026-03-22, deadline 2026-05-21):**
+**Planned article URLs (not live — use `<!-- FUTURE-LINK -->` until pages exist):**
 - `/resources/brain-injury-rehabilitation/life-after-brain-injury/`
 - `/resources/brain-injury-rehabilitation/stroke-recovery-at-home/`
 - `/resources/brain-injury-rehabilitation/cognitive-emotional-changes-brain-injury/`

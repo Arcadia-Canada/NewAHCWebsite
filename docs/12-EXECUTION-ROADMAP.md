@@ -2,7 +2,7 @@
 
 The sprint-level plan for content production, ordered by urgency and dependency. This doc answers: **"What do I build next, in what order, and why?"**
 
-Last updated: May 3, 2026
+Last updated: May 15, 2026
 
 ---
 
@@ -11,11 +11,11 @@ Last updated: May 3, 2026
 | Metric | Count |
 |--------|-------|
 | Published articles | 7 |
-| Coming Soon stubs (deadline 2026-05-21) | 21 |
-| Net New (ready to write) | 66 |
+| Coming Soon stubs (deadline 2026-05-21) | 15 |
+| Net New (ready to write) | 72 |
 | Requiring differentiation | 8 |
 | Live clusters | 4 of 5 |
-| Days until Coming Soon deadline | **18** |
+| Days until Coming Soon deadline | **6** |
 
 ---
 
@@ -25,13 +25,13 @@ Last updated: May 3, 2026
 
 ### Decision framework
 
-Not all 21 stubs can realistically be filled in 18 days. Triage using this priority:
+Not all 15 stubs can realistically be filled before the deadline. Triage using this priority:
 
 | Priority | Criteria | Action |
 |----------|----------|--------|
 | **P1 — Fill** | Master Prompt articles + high-search-volume stubs | Write full article |
 | **P2 — Fill if possible** | Stubs in clusters with live articles (Dementia, Caregiver, Navigating) | Write if time allows |
-| **P3 — Remove** | Stubs in zero-article clusters (Brain Injury) or low-priority topics | Remove from hub page, keep in AUTHORITY-MAP as Net New |
+| **P3 — Remove** | Low-priority topics unlikely to ship by deadline | Remove from hub page, keep in AUTHORITY-MAP as Net New (Brain Injury hub cards removed May 2026) |
 
 ### P1 — Must fill (6 articles)
 
@@ -57,7 +57,7 @@ These are either Master Prompt priority articles or own high-value keywords:
 | 11 | Signs Your Parent Needs Home Care | Navigating |
 | 12 | When a Parent Resists Home Care | Navigating |
 
-### P3 — Remove by May 21 if not filled (9 stubs)
+### P3 — Remove by May 21 if not filled (4 stubs)
 
 | # | Article | Cluster | Reason |
 |---|---------|---------|--------|
@@ -65,7 +65,6 @@ These are either Master Prompt priority articles or own high-value keywords:
 | 14 | Private vs. Public Home Care in Ontario | Navigating | Can wait |
 | 15 | Understanding Ontario Health atHome | Navigating | Can wait |
 | 16 | Questions to Ask Before Hiring Home Care | Navigating | ⚠️ Also has a redirect to remove |
-| 17–21 | All 6 Brain Injury stubs | Brain Injury | Zero live articles in cluster — stubs with no anchor content damage trust more than an empty hub |
 
 **To remove a stub:** Delete the entry from the `articles` array in the cluster hub `page.tsx`. Keep the entry in AUTHORITY-MAP but change status back to `Net New`. Do NOT delete the redirect if one exists.
 
@@ -75,7 +74,7 @@ These are either Master Prompt priority articles or own high-value keywords:
 |------|-------|--------|
 | Week 1 | May 5–9 | Write P1 articles #1–3 |
 | Week 2 | May 12–16 | Write P1 articles #4–6 + start P2 if ahead |
-| Week 3 | May 19–21 | Finish P2 articles. Remove all unfilled P3 stubs. Update AUTHORITY-MAP. Resubmit sitemap to GSC. |
+| Week 3 | May 19–21 | Finish P2 articles. Remove any unfilled P3 stubs (Navigating 13–16). Update AUTHORITY-MAP. Resubmit sitemap to GSC. |
 
 ---
 

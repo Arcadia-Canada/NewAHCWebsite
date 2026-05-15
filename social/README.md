@@ -63,14 +63,14 @@ This means the social media manager can find the right brief and kit from the ar
 
 ## How files get created
 
-When a new article publishes, **both files must be created in the same workflow.** This is now Phase 8 of `docs/06-PUBLISHING-CHECKLIST.md`. Specifically:
+When a new article publishes, **both files must be created** — this is **Phase 9** (a hard gate) in `docs/06-PUBLISHING-CHECKLIST.md`. Specifically:
 
 1. The kit is generated from the kit template (`_TEMPLATE-KIT-PROMPT.md` is the Cursor prompt).
 2. The brief is generated from the brief template (`_TEMPLATE-BRIEF.md` is the starter).
-3. Both files land in this folder before the article is considered "published-and-distributed."
-4. The social media manager is sent both files, plus the live URL.
+3. Both files land in this folder before the publish workflow is considered complete (same day as go-live or immediately after).
+4. Optionally send the social media manager both files plus the live URL (see checklist Phase 8 note).
 
-Article is not "done" until both files exist.
+The article is not **governance-complete** until both files exist — see `.cursorrules` and `docs/06-PUBLISHING-CHECKLIST.md`.
 
 ## How to update an existing article's social assets
 

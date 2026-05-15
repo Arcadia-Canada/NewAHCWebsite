@@ -64,7 +64,7 @@ Before generating: read the live article URL to extract the actual H1, lead para
 Read docs/07-VOICE-AND-TONE.md for the voice rules.
 ```
 
-**How to use:** Replace `[ARTICLE TITLE]`, `[LIVE URL]`, and `[slug]`. Run this after Phase 9 of the publishing checklist.
+**How to use:** Replace `[ARTICLE TITLE]`, `[LIVE URL]`, and `[slug]`. Run this to complete **Phase 9** of `docs/06-PUBLISHING-CHECKLIST.md` (social brief + kit — a hard gate).
 
 ---
 

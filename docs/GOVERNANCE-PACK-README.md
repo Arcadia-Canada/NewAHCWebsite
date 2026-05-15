@@ -125,25 +125,25 @@ If you decide to add a new cluster, change a URL pattern, or add a new section:
 
 ## What the social media person needs
 
-The social media person doesn't need any of these files. They need:
+They do **not** need the full governance pack. Point them at:
 
-- The live URL of each article
-- 2–3 pull quotes per article (already marked in the HTML as `<p class="pull">`)
-- The two title variants (long emotional + short scannable)
+- **`social/briefs/BRIEF-[slug].md`** — strategy (read once when the article goes live)
+- **`social/kits/KIT-[slug].docx`** — copy-paste captions for the distribution window
+- The **live article URL**
 
-This is documented in the `SOCIAL-MEDIA-BRIEF.md` that comes with each article's upload pack. You don't need to teach the social media person about clusters, schema, or governance.
+Those files are produced in **Phase 9** of `docs/06-PUBLISHING-CHECKLIST.md`. See `social/README.md` for the brief-vs-kit split. They do not need clusters, schema, or URL conventions unless they ask.
 
 ---
 
 ## What if you change platforms?
 
-If Arcadia's site moves from one platform to another (WordPress → Webflow, or Webflow → custom Next.js, etc.):
+Arcadia’s live site is **Next.js 16 on Vercel** — `docs/06-PUBLISHING-CHECKLIST.md` is written for that stack (see **Platform-specific notes** at the bottom of that file).
 
-- This entire governance pack moves with you, unchanged.
-- Only `06-PUBLISHING-CHECKLIST.md` needs updating to reflect the new platform's workflow.
-- All the strategic content (architecture, clusters, voice, schema, URLs, authority map) is platform-independent.
+If the site ever moves to another stack (e.g. a CMS):
 
-This is part of why the docs work — they describe **what** and **why**, not **how**. The "how" lives in the publishing checklist, which is the only thing that's platform-specific.
+- Most of this governance pack stays the same (architecture, clusters, voice, schema, URLs, authority map).
+- **`docs/06-PUBLISHING-CHECKLIST.md`** must be updated so Phases 1–5 (build, deploy, QA) match the new “how.”
+- **Hard gates** (Phases 6, 7, 9) stay conceptually the same even if file paths change — cluster visibility, inventory truth, and social brief+kit still must not be skipped.
 
 ---
 

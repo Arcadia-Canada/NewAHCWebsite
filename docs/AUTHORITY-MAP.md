@@ -3,7 +3,7 @@
 The complete article inventory across all five clusters. **This file is the live status tracker.** Every time an article publishes, change its status here from `Net New` or `Coming Soon` → `Published`, and add the live URL.
 
 Total inventory: **101 unique articles** across 5 clusters.
-Last updated: May 3, 2026 (Brain Injury stubs synced from codebase; Coming Soon deadline tracker added)
+Last updated: May 15, 2026 (Brain Injury cluster hub: Coming Soon cards removed; six topics → Net New in map)
 
 ---
 
@@ -81,12 +81,12 @@ These 11 articles are the production priority. The pillar (P) is published. The 
 
 | #   | Article                                           | Status      | Action  | Notes                             |
 | --- | ------------------------------------------------- | ----------- | ------- | --------------------------------- |
-| 1   | Life After Acquired Brain Injury: A Family Guide  | Coming Soon | Replace | Stub created 2026-03-22. Deadline 2026-05-21. `/resources/brain-injury-rehabilitation/life-after-brain-injury/` |
-| 2   | Stroke Recovery at Home: What to Expect           | Coming Soon | Replace | Stub created 2026-03-22. Deadline 2026-05-21. `/resources/brain-injury-rehabilitation/stroke-recovery-at-home/` |
-| 3   | Cognitive and Emotional Changes After Brain Injury | Coming Soon | Replace | Stub created 2026-03-22. Deadline 2026-05-21. `/resources/brain-injury-rehabilitation/cognitive-emotional-changes-brain-injury/` |
-| 4   | Returning Home After Rehabilitation               | Coming Soon | Replace | Stub created 2026-03-22. Deadline 2026-05-21. `/resources/brain-injury-rehabilitation/returning-home-after-rehab/` |
-| 5   | What Does a Rehabilitation Support Worker Do?     | Coming Soon | Replace | Stub created 2026-03-22. Deadline 2026-05-21. `/resources/brain-injury-rehabilitation/rehabilitation-support-worker/` |
-| 6   | Mobility Support After Surgery or Illness         | Coming Soon | Replace | Stub created 2026-03-22. Deadline 2026-05-21. `/resources/brain-injury-rehabilitation/mobility-support-after-surgery/` |
+| 1   | Life After Acquired Brain Injury: A Family Guide  | Net New | Write | Planned URL `/resources/brain-injury-rehabilitation/life-after-brain-injury/`. Removed from cluster hub May 2026 (was Coming Soon card only). |
+| 2   | Stroke Recovery at Home: What to Expect           | Net New | Write | Planned URL `/resources/brain-injury-rehabilitation/stroke-recovery-at-home/`. Removed from cluster hub May 2026. |
+| 3   | Cognitive and Emotional Changes After Brain Injury | Net New | Write | Planned URL `/resources/brain-injury-rehabilitation/cognitive-emotional-changes-brain-injury/`. Removed from cluster hub May 2026. |
+| 4   | Returning Home After Rehabilitation               | Net New | Write | Planned URL `/resources/brain-injury-rehabilitation/returning-home-after-rehab/`. Removed from cluster hub May 2026. |
+| 5   | What Does a Rehabilitation Support Worker Do?     | Net New | Write | Planned URL `/resources/brain-injury-rehabilitation/rehabilitation-support-worker/`. Removed from cluster hub May 2026. |
+| 6   | Mobility Support After Surgery or Illness         | Net New | Write | Planned URL `/resources/brain-injury-rehabilitation/mobility-support-after-surgery/`. Removed from cluster hub May 2026. |
 | 7   | Brain Injury Fatigue Explained                    | Net New     | Write   | High search volume.               |
 | 8   | Helping Brain Injury Patients Regain Independence | Net New     | Write   | —                                 |
 | 9   | Family Adjustment After Brain Injury              | Net New     | Write   | —                                 |
@@ -214,9 +214,9 @@ These 11 articles are the production priority. The pillar (P) is published. The 
 | Status                        | Count                                   |
 | ----------------------------- | --------------------------------------- |
 | Published                     | 7 (3 dementia + 2 caregiver + 1 pillar + 1 navigating) |
-| Coming Soon stubs to replace  | 21 (3 dementia + 4 caregiver + 8 navigating + 6 brain injury) |
+| Coming Soon stubs to replace  | 15 (3 dementia + 4 caregiver + 8 navigating) |
 | Requiring differentiation     | 8                                       |
-| Clean Net New, ready to write | 66                                      |
+| Clean Net New, ready to write | 72                                      |
 | **Total**                     | **102**                                 |
 
 
@@ -251,14 +251,10 @@ All stubs created **2026-03-22**. Per `02-CONTENT-CLUSTERS.md` governance: stubs
 | 13 | Managing Behaviour Changes in Dementia | Dementia | `/resources/dementia-memory-care/managing-dementia-behaviour-changes/` | 2026-05-21 |
 | 14 | Communication Strategies for Dementia | Dementia | `/resources/dementia-memory-care/communication-strategies-dementia/` | 2026-05-21 |
 | 15 | Late Stage Dementia: What Families Need to Know | Dementia | `/resources/dementia-memory-care/late-stage-dementia/` | 2026-05-21 |
-| 16 | Life After Acquired Brain Injury: A Family Guide | Brain Injury | `/resources/brain-injury-rehabilitation/life-after-brain-injury/` | 2026-05-21 |
-| 17 | Stroke Recovery at Home: What to Expect | Brain Injury | `/resources/brain-injury-rehabilitation/stroke-recovery-at-home/` | 2026-05-21 |
-| 18 | Cognitive and Emotional Changes After Brain Injury | Brain Injury | `/resources/brain-injury-rehabilitation/cognitive-emotional-changes-brain-injury/` | 2026-05-21 |
-| 19 | Returning Home After Rehabilitation | Brain Injury | `/resources/brain-injury-rehabilitation/returning-home-after-rehab/` | 2026-05-21 |
-| 20 | What Does a Rehabilitation Support Worker Do? | Brain Injury | `/resources/brain-injury-rehabilitation/rehabilitation-support-worker/` | 2026-05-21 |
-| 21 | Mobility Support After Surgery or Illness | Brain Injury | `/resources/brain-injury-rehabilitation/mobility-support-after-surgery/` | 2026-05-21 |
 
-**Action required by 2026-05-21:** Every stub above must either be replaced with a full article or removed from the cluster page and `noindex`ed. Unfilled stubs past deadline signal thin content to Google and erode domain trust.
+**Brain Injury (rows formerly 16–21):** Removed from this tracker May 2026 — those six topics were hub-only Coming Soon cards (no `page.tsx`). They are **Net New** in the Brain Injury cluster table above; publish when ready.
+
+**Action required by 2026-05-21:** Every remaining stub above must either be replaced with a full article or removed from its cluster page (and `noindex`ed if a thin URL existed). Unfilled stubs past deadline signal thin content to Google and erode domain trust.
 
 ---
 

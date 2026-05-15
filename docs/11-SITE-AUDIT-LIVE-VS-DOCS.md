@@ -200,7 +200,7 @@ For each doc in `/docs/`, check:
 | `03-INTERNAL-LINKING-RULES.md` | Does the condition page count match? |
 | `04-SCHEMA-STANDARDS.md` | Does the org schema match live values (rating, reviews, phone)? |
 | `05-URL-CONVENTIONS.md` | Any new URL patterns not documented? |
-| `06-PUBLISHING-CHECKLIST.md` | Is the platform section filled in? |
+| `06-PUBLISHING-CHECKLIST.md` | Platform section filled for Vercel + Next.js? Hard gates (Phases 6, 7, 9) clearly marked? Social = Phase 9 brief+kit? |
 | `07-VOICE-AND-TONE.md` | Still accurate to brand voice? |
 | `AUTHORITY-MAP.md` | Last updated date is recent? All published articles marked? |
 | `CLUSTER-LINK-MAP.md` | Counts match AUTHORITY-MAP? Issues section current? |
