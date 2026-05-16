@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'What No One Tells You About the First Week of Home Care',
     description:
-      'You made the decision. The caregiver started Monday. And now the first week is harder than you expected — and nobody prepared you for this part.',
+      'You made the decision. The caregiver started Monday. And now the first week is harder than you expected, and nobody prepared you for this part.',
     url: CANONICAL,
     type: 'article',
     locale: 'en_CA',
@@ -27,7 +27,7 @@ const articleSchema = {
   headline: 'What No One Tells You About the First Week of Home Care',
   alternativeHeadline: 'The Home Care Adjustment Period: What Families Can Expect',
   description:
-    'A guide for GTA families navigating the first week of home care — the awkward adjustment period, what a parent may be feeling, how to read the signals, and what to say to the agency early.',
+    'A guide for GTA families navigating the first week of home care: the awkward adjustment period, what a parent may be feeling, how to read the signals, and what to say to the agency early.',
   image: [
     'https://www.arcadiahomecare.ca/images/first-week-home-care-hero-1x1.jpg',
     'https://www.arcadiahomecare.ca/images/first-week-home-care-hero-4x3.jpg',
@@ -105,7 +105,7 @@ const faqSchema = {
       name: 'How long does it take to adjust to home care?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Most families find that the adjustment settles within two to four weeks. The first week is almost always the hardest — for your parent, for the caregiver, and often for you. By the third or fourth visit, routines start to form and the relationship becomes less transactional. If things are still feeling genuinely difficult at the four-week mark, that is worth raising with the agency — but one week of awkwardness is not a signal that anything is wrong.',
+        text: 'Most families find that the adjustment settles within two to four weeks. The first week is almost always the hardest, for your parent, for the caregiver, and often for you. By the third or fourth visit, routines start to form and the relationship becomes less transactional. If things are still feeling genuinely difficult at the four-week mark, that is worth raising with the agency. One week of awkwardness is not a signal that anything is wrong.',
       },
     },
     {
@@ -113,7 +113,7 @@ const faqSchema = {
       name: 'What if my parent refuses to cooperate with the caregiver?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Resistance in the first week is common, especially if your parent did not fully choose this arrangement. The most useful thing is not to push harder but to give the relationship a little space to develop. Let the caregiver take the lead. Most experienced caregivers have navigated resistance before — they know that building trust takes time. If refusal is complete and your parent will not let the caregiver in at all, call the agency early rather than waiting it out. A different caregiver or a different approach to the introduction may help.',
+        text: 'Resistance in the first week is common, especially if your parent did not fully choose this arrangement. The most useful thing is not to push harder but to give the relationship a little space to develop. Let the caregiver take the lead. Most experienced caregivers have navigated resistance before. They know that building trust takes time. If refusal is complete and your parent will not let the caregiver in at all, call the agency early rather than waiting it out. A different caregiver or a different approach to the introduction may help.',
       },
     },
     {
@@ -121,7 +121,7 @@ const faqSchema = {
       name: 'Is it normal for the first week of home care to feel awkward?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. Entirely normal. A stranger is entering your parent\'s home, learning their routines, and performing intimate tasks — all while your parent is adjusting to a new reality about their own needs. Awkwardness is the expected state. It does not mean care is failing. It means the relationship has not had time to form yet.',
+        text: 'Yes. Entirely normal. A stranger is entering your parent\'s home, learning their routines, and performing intimate tasks, all while your parent is adjusting to a new reality about their own needs. Awkwardness is the expected state. It does not mean care is failing. It means the relationship has not had time to form yet.',
       },
     },
     {
@@ -129,7 +129,7 @@ const faqSchema = {
       name: 'Should I be there for the first visit?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Being there for the first visit — or the first few — can help with introductions and reduces anxiety for everyone. But staying for the entire visit can make it harder for the relationship to form between your parent and the caregiver. Try to make the introduction, handle any handoff of information, and then step away. If your parent has dementia or severe anxiety, staying longer is sensible. For most situations, a warm introduction followed by leaving is the right balance.',
+        text: 'Being there for the first visit, or the first few, can help with introductions and reduces anxiety for everyone. But staying for the entire visit can make it harder for the relationship to form between your parent and the caregiver. Try to make the introduction, handle any handoff of information, and then step away. If your parent has dementia or severe anxiety, staying longer is sensible. For most situations, a warm introduction followed by leaving is the right balance.',
       },
     },
     {
@@ -145,7 +145,7 @@ const faqSchema = {
       name: 'How do I know if a caregiver is a good fit?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Watch for whether your parent becomes slightly less resistant over successive visits — not immediately comfortable, but less guarded. A good caregiver will find small ways to connect: a consistent greeting, a remembered detail, a patient approach to tasks your parent finds difficult. Red flags are different from awkwardness: a caregiver who is dismissive, who rushes through tasks visibly, who does not communicate with the agency when problems arise, or whose visits leave your parent more distressed than they were before.',
+        text: 'Watch for whether your parent becomes slightly less resistant over successive visits: not immediately comfortable, but less guarded. A good caregiver will find small ways to connect: a consistent greeting, a remembered detail, a patient approach to tasks your parent finds difficult. Red flags are different from awkwardness: a caregiver who is dismissive, who rushes through tasks visibly, who does not communicate with the agency when problems arise, or whose visits leave your parent more distressed than they were before.',
       },
     },
     {
@@ -161,7 +161,7 @@ const faqSchema = {
       name: 'When should I give feedback to the home care agency?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Early. The first week is exactly when feedback is most actionable. Agencies expect to hear from families during the adjustment period — it is not a complaint, it is information. If a caregiver is not a good fit, it is better to know in week one than week six. If something about the routine is not working, say so. A good agency will welcome the conversation and adjust accordingly.',
+        text: 'Early. The first week is exactly when feedback is most actionable. Agencies expect to hear from families during the adjustment period. It is not a complaint; it is information. If a caregiver is not a good fit, it is better to know in week one than week six. If something about the routine is not working, say so. A good agency will welcome the conversation and adjust accordingly.',
       },
     },
   ],
@@ -333,7 +333,7 @@ export default function FirstWeekHomeCare() {
             <h1>What No One Tells You About the First Week of Home Care</h1>
             <p className="article-summary">
               You made the decision. The caregiver started Monday. And now you are in the part that
-              nobody prepared you for — the adjustment period that is harder, stranger, and more
+              nobody prepared you for: the adjustment period that is harder, stranger, and more
               uncertain than anything you imagined when you were still deciding.
             </p>
             <div className="article-byline">
@@ -351,11 +351,11 @@ export default function FirstWeekHomeCare() {
             <aside className="key-takeaways" aria-labelledby="kt-heading">
               <h2 id="kt-heading">Key takeaways</h2>
               <ul>
-                <li>The first week of home care is almost universally awkward — for your parent, for the caregiver, and often for you. This is normal, not a sign that anything is wrong.</li>
-                <li>Your parent may be reluctant, guarded, or cooler than usual with the caregiver. This is an adjustment response — not a verdict on whether the decision was right.</li>
+                <li>The first week of home care is almost universally awkward, for your parent, for the caregiver, and often for you. This is normal, not a sign that anything is wrong.</li>
+                <li>Your parent may be reluctant, guarded, or cooler than usual with the caregiver. This is an adjustment response, not a verdict on whether the decision was right.</li>
                 <li>The caregiver is also adjusting: learning your parent&apos;s routines, preferences, and personality from scratch. That takes more than one visit.</li>
                 <li>Being present for the introduction helps. Hovering for every visit makes it harder for the relationship to form.</li>
-                <li>Feedback to the agency should come early — the first week is exactly when it is most useful. Don&apos;t wait three weeks with a growing concern.</li>
+                <li>Feedback to the agency should come early. The first week is exactly when it is most useful. Don&apos;t wait three weeks with a growing concern.</li>
               </ul>
             </aside>
 
@@ -369,22 +369,22 @@ export default function FirstWeekHomeCare() {
             </p>
 
             <p>
-              The first week of home care is its own thing — distinct from the research phase, from the
+              The first week of home care is its own thing, distinct from the research phase, from the
               planning, from the conversation you had with your parent to get here. It is the part families
               are least prepared for, and the part that most often makes them wonder, quietly, whether they
               made the right call.
             </p>
 
             <p className="pull-quote">
-              The first week of home care is not a verdict. It is the beginning of an adjustment — and
+              The first week of home care is not a verdict. It is the beginning of an adjustment, and
               almost every family finds it harder than they expected.
             </p>
 
             <h2>The first day is not representative</h2>
 
             <p>
-              Whatever happens on the first day — the awkward silences, your parent&apos;s cool reception,
-              the caregiver who is visibly still learning the layout of the house — take it with a particular
+              Whatever happens on the first day (the awkward silences, your parent&apos;s cool reception,
+              the caregiver who is visibly still learning the layout of the house), take it with a particular
               lightness. First days are performances. Everyone is on unusual behaviour.
             </p>
 
@@ -422,7 +422,7 @@ export default function FirstWeekHomeCare() {
 
             <p>
               <strong>A change in self-image.</strong> Needing help with personal care is a significant
-              shift in how your parent sees themselves — particularly if they have been independent their
+              shift in how your parent sees themselves, particularly if they have been independent their
               entire adult life.
             </p>
 
@@ -436,7 +436,7 @@ export default function FirstWeekHomeCare() {
             <p>
               Possibly, underneath the resistance: relief. Carefully hidden, but there. The weight of
               managing alone may have been heavier than your parent admitted. The arrival of reliable
-              support — even if unwanted in the abstract — often brings quiet relief once the initial
+              support, even if unwanted in the abstract, often brings quiet relief once the initial
               strangeness passes.
             </p>
 
@@ -455,14 +455,14 @@ export default function FirstWeekHomeCare() {
             </p>
 
             <p>
-              Good caregivers know this. They know the first week is about observation as much as service —
+              Good caregivers know this. They know the first week is about observation as much as service:
               learning the household, reading the person, figuring out what approach works. They are not
               failing when things are awkward. They are gathering the information they need to do the job well.
             </p>
 
             <p>
-              A notes sheet from you, prepared in advance, helps significantly. Not a formal document —
-              a page of useful specifics:
+              A notes sheet from you, prepared in advance, helps significantly. Not a formal document,
+              but a page of useful specifics:
             </p>
 
             <div className="notes-box">
@@ -474,7 +474,7 @@ export default function FirstWeekHomeCare() {
                 <li>What your parent does and does not like about being helped</li>
                 <li>Topics that are sensitive or should be avoided</li>
                 <li>Where things are kept (medications, cleaning supplies, spare towels)</li>
-                <li>Who to call if something comes up — and when</li>
+                <li>Who to call if something comes up, and when</li>
               </ul>
             </div>
 
@@ -487,7 +487,7 @@ export default function FirstWeekHomeCare() {
 
             <p>
               Most families find it helpful to be present for the first visit or two. The introduction
-              matters — your parent is more likely to give the caregiver a fair start if you are there
+              matters: your parent is more likely to give the caregiver a fair start if you are there
               to smooth it. And practically, it gives you a chance to show the caregiver around, hand
               over the notes, and answer any immediate questions.
             </p>
@@ -497,8 +497,8 @@ export default function FirstWeekHomeCare() {
             </p>
 
             <p>
-              When you hover over every visit — checking in by phone mid-session, dropping by unexpectedly,
-              asking for a debrief the moment the caregiver leaves — you slow the relationship down. Your
+              When you hover over every visit (checking in by phone mid-session, dropping by unexpectedly,
+              asking for a debrief the moment the caregiver leaves), you slow the relationship down. Your
               parent takes their cues from you. If you treat each visit as something that needs monitoring,
               your parent will too.
             </p>
@@ -518,9 +518,9 @@ export default function FirstWeekHomeCare() {
             </p>
 
             <p>
-              If things are still genuinely difficult at the four-week mark — your parent is consistently
+              If things are still genuinely difficult at the four-week mark (your parent is consistently
               distressed, the caregiver is not completing expected tasks, communication with the agency is
-              difficult — that is worth raising. Not as a complaint, but as information. Four weeks is
+              difficult), that is worth raising. Not as a complaint, but as information. Four weeks is
               long enough to know whether the fit is working.
             </p>
 
@@ -549,7 +549,7 @@ export default function FirstWeekHomeCare() {
 
             <p>
               If you are unsure which category something falls into, describe it specifically to the agency
-              and ask directly. A good agency will help you distinguish between the two — and will not be
+              and ask directly. A good agency will help you distinguish between the two, and will not be
               defensive about the question.
             </p>
 
@@ -557,7 +557,7 @@ export default function FirstWeekHomeCare() {
 
             <p>
               The first week is exactly when feedback is most useful to an agency. Not because it is a
-              complaint, but because the first week is when adjustments are easiest to make — before
+              complaint, but because the first week is when adjustments are easiest to make, before
               patterns have formed, before your parent has settled into a particular dynamic with a
               caregiver who may not be the right fit.
             </p>
@@ -573,7 +573,7 @@ export default function FirstWeekHomeCare() {
               <Link href="/resources/navigating-home-care/recognizing-quality-home-care/">
                 quality home care actually looks like once it is running
               </Link>{' '}
-              is worth knowing before the first week starts — so you have a reference point for what
+              is worth knowing before the first week starts, so you have a reference point for what
               you are working toward. And if you are still in the research stage,{' '}
               <Link href="/resources/navigating-home-care/when-parent-needs-more-help/">
                 the pillar article in this series
@@ -586,7 +586,7 @@ export default function FirstWeekHomeCare() {
             <div className="mid-cta" id="consultation">
               <h2>Starting care with Arcadia</h2>
               <p>
-                Arcadia takes the first week seriously — which is why we assign a dedicated care coordinator
+                Arcadia takes the first week seriously, which is why we assign a dedicated care coordinator
                 who stays in contact with your family through the adjustment period, not just at intake.
                 If you are considering home care for a parent in Toronto or the GTA, a free consultation
                 is the right place to start.
@@ -601,22 +601,22 @@ export default function FirstWeekHomeCare() {
 
               <div className="faq-item">
                 <div className="faq-q">How long does it take to adjust to home care?</div>
-                <div className="faq-a">Most families find that the adjustment settles within two to four weeks. The first week is almost always the hardest — for your parent, for the caregiver, and often for you. By the third or fourth visit, routines start to form and the relationship becomes less transactional. If things are still feeling genuinely difficult at the four-week mark, that is worth raising with the agency — but one week of awkwardness is not a signal that anything is wrong.</div>
+                <div className="faq-a">Most families find that the adjustment settles within two to four weeks. The first week is almost always the hardest, for your parent, for the caregiver, and often for you. By the third or fourth visit, routines start to form and the relationship becomes less transactional. If things are still feeling genuinely difficult at the four-week mark, that is worth raising with the agency. One week of awkwardness is not a signal that anything is wrong.</div>
               </div>
 
               <div className="faq-item">
                 <div className="faq-q">What if my parent refuses to cooperate with the caregiver?</div>
-                <div className="faq-a">Resistance in the first week is common, especially if your parent did not fully choose this arrangement. The most useful thing is not to push harder but to give the relationship a little space to develop. Let the caregiver take the lead. Most experienced caregivers have navigated resistance before — they know that building trust takes time. If refusal is complete and your parent will not let the caregiver in at all, call the agency early rather than waiting it out. A different caregiver or a different approach to the introduction may help.</div>
+                <div className="faq-a">Resistance in the first week is common, especially if your parent did not fully choose this arrangement. The most useful thing is not to push harder but to give the relationship a little space to develop. Let the caregiver take the lead. Most experienced caregivers have navigated resistance before. They know that building trust takes time. If refusal is complete and your parent will not let the caregiver in at all, call the agency early rather than waiting it out. A different caregiver or a different approach to the introduction may help.</div>
               </div>
 
               <div className="faq-item">
                 <div className="faq-q">Is it normal for the first week of home care to feel awkward?</div>
-                <div className="faq-a">Yes. Entirely normal. A stranger is entering your parent&apos;s home, learning their routines, and performing intimate tasks — all while your parent is adjusting to a new reality about their own needs. Awkwardness is the expected state. It does not mean care is failing. It means the relationship has not had time to form yet.</div>
+                <div className="faq-a">Yes. Entirely normal. A stranger is entering your parent&apos;s home, learning their routines, and performing intimate tasks, all while your parent is adjusting to a new reality about their own needs. Awkwardness is the expected state. It does not mean care is failing. It means the relationship has not had time to form yet.</div>
               </div>
 
               <div className="faq-item">
                 <div className="faq-q">Should I be there for the first visit?</div>
-                <div className="faq-a">Being there for the first visit — or the first few — can help with introductions and reduces anxiety for everyone. But staying for the entire visit can make it harder for the relationship to form between your parent and the caregiver. Try to make the introduction, handle any handoff of information, and then step away. If your parent has dementia or severe anxiety, staying longer is sensible. For most situations, a warm introduction followed by leaving is the right balance.</div>
+                <div className="faq-a">Being there for the first visit, or the first few, can help with introductions and reduces anxiety for everyone. But staying for the entire visit can make it harder for the relationship to form between your parent and the caregiver. Try to make the introduction, handle any handoff of information, and then step away. If your parent has dementia or severe anxiety, staying longer is sensible. For most situations, a warm introduction followed by leaving is the right balance.</div>
               </div>
 
               <div className="faq-item">
@@ -626,7 +626,7 @@ export default function FirstWeekHomeCare() {
 
               <div className="faq-item">
                 <div className="faq-q">How do I know if a caregiver is a good fit?</div>
-                <div className="faq-a">Watch for whether your parent becomes slightly less resistant over successive visits — not immediately comfortable, but less guarded. A good caregiver will find small ways to connect: a consistent greeting, a remembered detail, a patient approach to tasks your parent finds difficult. Red flags are different from awkwardness: a caregiver who is dismissive, who rushes through tasks visibly, who does not communicate with the agency when problems arise, or whose visits leave your parent more distressed than they were before.</div>
+                <div className="faq-a">Watch for whether your parent becomes slightly less resistant over successive visits: not immediately comfortable, but less guarded. A good caregiver will find small ways to connect: a consistent greeting, a remembered detail, a patient approach to tasks your parent finds difficult. Red flags are different from awkwardness: a caregiver who is dismissive, who rushes through tasks visibly, who does not communicate with the agency when problems arise, or whose visits leave your parent more distressed than they were before.</div>
               </div>
 
               <div className="faq-item">
@@ -636,7 +636,7 @@ export default function FirstWeekHomeCare() {
 
               <div className="faq-item">
                 <div className="faq-q">When should I give feedback to the home care agency?</div>
-                <div className="faq-a">Early. The first week is exactly when feedback is most actionable. Agencies expect to hear from families during the adjustment period — it is not a complaint, it is information. If a caregiver is not a good fit, it is better to know in week one than week six. If something about the routine is not working, say so. A good agency will welcome the conversation and adjust accordingly.</div>
+                <div className="faq-a">Early. The first week is exactly when feedback is most actionable. Agencies expect to hear from families during the adjustment period. It is not a complaint; it is information. If a caregiver is not a good fit, it is better to know in week one than week six. If something about the routine is not working, say so. A good agency will welcome the conversation and adjust accordingly.</div>
               </div>
             </div>
 
@@ -649,7 +649,7 @@ export default function FirstWeekHomeCare() {
                 What good care actually looks like
               </Link>
               <Link href="/resources/family-caregiver-support/caregiver-burnout-warning-signs/" className="related-link">
-                The exhaustion you have stopped noticing — caregiver burnout
+                The exhaustion you have stopped noticing: caregiver burnout
               </Link>
               <Link href="/resources/family-caregiver-support/siblings-disagree-parent-care/" className="related-link">
                 When siblings disagree about a parent&apos;s care
@@ -663,7 +663,7 @@ export default function FirstWeekHomeCare() {
           <aside className="article-sidebar">
             <div className="sidebar-cta">
               <h3>Starting care in Toronto?</h3>
-              <p>We stay in contact through the adjustment period — not just at intake.</p>
+              <p>We stay in contact through the adjustment period, not just at intake.</p>
               <a href="tel:8449770050" className="sidebar-phone">(844) 977-0050</a>
               <Link href="/contact/" className="btn-red-sm">Book a Free Consultation</Link>
             </div>

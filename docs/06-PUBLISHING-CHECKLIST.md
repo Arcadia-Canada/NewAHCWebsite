@@ -34,6 +34,8 @@ These match `.cursorrules`. If any of them is skipped, the article is **not** �
 
 ✅ **1.3** — Read the page in the editor once end-to-end. Fix obvious typos, broken JSX, or schema copy that does not match visible FAQ text.
 
+✅ **1.4** — Search the article file for em dashes (`—`). Per `docs/07-VOICE-AND-TONE.md`, replace every instance in body copy, metadata, Open Graph text, and FAQ/schema strings before publish.
+
 ### Legacy / optional — archived HTML drafts
 
 Some older articles were drafted as `[slug]-PROD.html` / `[slug]-DEV.html`. Those files are **not** the publishing path for new Next.js articles; they may be used only as personal archives or if explicitly named as a reference. Do not treat them as the source of truth once the article exists in `app/`.

@@ -52,7 +52,7 @@ For ANY content task (writing, editing, reviewing an article):
 
 ## Standard behaviour expectations
 
-- **Voice fidelity is non-negotiable.** Every article and caption must follow `docs/07-VOICE-AND-TONE.md`. If a draft drifts into corporate, clinical, chirpy, salesy, or generic-AI tone, scrap and restart. Editing AI-slop is harder than rewriting.
+- **Voice fidelity is non-negotiable.** Every article and caption must follow `docs/07-VOICE-AND-TONE.md`. If a draft drifts into corporate, clinical, chirpy, salesy, or generic-AI tone, scrap and restart. Editing AI-slop is harder than rewriting. **No em dashes (`—`) in articles.** See the em-dash rule in `07-VOICE-AND-TONE.md`.
 
 - **URLs are permanent.** Pick the URL once, per `docs/05-URL-CONVENTIONS.md`. Slug rules are not flexible. If a slug needs to change after publish, a 301 redirect is required (see `docs/06-PUBLISHING-CHECKLIST.md`).
 

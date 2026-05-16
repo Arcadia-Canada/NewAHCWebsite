@@ -20,6 +20,8 @@ Do NOT read /social/ — per-article briefs and kits are not relevant to generat
 Do NOT read past *-PROD.html or *-DEV.html files unless I explicitly name one as a voice reference. The authority map tracks published articles; reading their HTML is not needed for new article generation.
 
 Propose internal links only to URLs that are live on arcadiahomecare.ca. If the topic is not in AUTHORITY-MAP or conflicts with another entry, say so before drafting. If any element of your draft (slug, URL, schema, link, voice) conflicts with what the governance docs specify, flag the conflict and propose the governance-compliant version before continuing.
+
+Do not use em dashes (—) anywhere in the draft. Per docs/07-VOICE-AND-TONE.md, use commas, periods, colons, or parentheses instead.
 ```
 
 **How to use:** Replace `[ARTICLE TITLE]` and `[CLUSTER NAME]` (for example `Navigating Home Care` or `Family Caregiver Support`), then paste into Cursor.

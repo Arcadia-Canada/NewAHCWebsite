@@ -105,6 +105,8 @@ A one-word paragraph is not a typo. It's a beat.
 
 ❌ "In today's world, taking care of aging parents has never been more important. Whether you're dealing with dementia, mobility issues, or just need a little extra help, home care services can make all the difference."
 
+Heavy use of em dashes (`—`) between clauses is the same problem. It is a common LLM tic. Rewrite with commas, periods, colons, or parentheses instead.
+
 ### Not listicle
 
 ❌ "5 Signs Your Parent Needs Home Care RIGHT NOW (#3 will surprise you)"
@@ -135,9 +137,21 @@ If a draft drifts into any of the above, scrap and restart. Editing AI-slop tone
 - Spell out numbers under ten in body text ("a few hours a week," "four mornings")
 - Use digits for ages, statistics, and times ("a 72-year-old," "10 minutes," "5.0 stars")
 
-### Em dashes
+### Em dashes (do not use)
 
-Use em dashes (—) not double hyphens or en dashes for sentence-level breaks. They give the prose breathing room.
+**Do not use em dashes (`—`) in resource articles, metadata, FAQ copy, or CTAs.**
+
+They read as generic AI prose. Families notice the pattern; search snippets and schema text should not rely on them either.
+
+**Use instead:**
+- A comma for a light pause or appositive (`…harder than you expected, and nobody prepared you…`)
+- A period for a full stop between thoughts (`…worth raising with the agency. One week of awkwardness…`)
+- A colon before a list or explanation (`…the first week of home care: the awkward adjustment period…`)
+- Parentheses for a brief aside (`…whatever happens on the first day (the awkward silences, your parent's cool reception)…`)
+
+**Before publish:** search the draft for `—` and replace every instance. No exceptions for "style" breaks in body copy, Open Graph descriptions, or FAQ schema answers.
+
+If you need a dash in running text, use a hyphen only for compound modifiers (`day-to-day`, `follow-up`), not as sentence punctuation.
 
 ### Italics
 
