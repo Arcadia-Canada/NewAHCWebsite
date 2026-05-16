@@ -5,7 +5,7 @@ The structural map of all five content clusters, their linking targets, and the 
 For the article-by-article inventory (status, action, notes), see `AUTHORITY-MAP.md`.
 For linking rules (anchor text, dedup, Coming Soon policy), see `03-INTERNAL-LINKING-RULES.md`.
 
-Last updated: May 16, 2026 (Published Art. 2: When Siblings Disagree About a Parent's Care)
+Last updated: May 16, 2026 (Published Art. 3: What No One Tells You About the First Week of Home Care)
 
 ---
 
@@ -44,7 +44,7 @@ Every internal link on the site should serve this flow. Authority moves from edu
 | **Primary services** | `/our-services/case-management/` + multiple |
 | **Primary conditions** | Multiple (no single primary) |
 | **Total articles** | 34 |
-| **Published** | 2 (pillar + 1 article) |
+| **Published** | 3 (pillar + 2 articles) |
 | **Coming Soon stubs on cluster page** | 8 |
 | **Net New** | 24 |
 
@@ -54,6 +54,15 @@ Every internal link on the site should serve this flow. Authority moves from edu
 |---------|-----|------|
 | When the Person You Love Needs More Help Than You Can Give | `/resources/navigating-home-care/when-parent-needs-more-help/` | **PILLAR** |
 | What Good Care Actually Looks Like | `/resources/navigating-home-care/recognizing-quality-home-care/` | Master Prompt #6 |
+| What No One Tells You About the First Week of Home Care | `/resources/navigating-home-care/what-no-one-tells-you-first-week-home-care/` | Master Prompt #3 |
+
+**Art. 3 (first week) outbound links:**
+- Cluster: `/resources/navigating-home-care/`
+- Services: `/our-services/case-management/`, `/our-services/respite-care/`
+- Cross-cluster: `/resources/family-caregiver-support/caregiver-burnout-warning-signs/`, `/resources/family-caregiver-support/siblings-disagree-parent-care/`, `/resources/family-caregiver-support/`
+- Sibling: `/resources/navigating-home-care/when-parent-needs-more-help/` (pillar), `/resources/navigating-home-care/recognizing-quality-home-care/`
+- Decision: `/how-care-starts/`, `/how-care-starts/matching-caregivers/`
+- Conversion: `/contact/`
 
 **Article #6 outbound links:**
 - Cluster: `/resources/navigating-home-care/`
@@ -209,7 +218,7 @@ These 11 articles are the production priority. They share an emotional, trust-le
 | **P** | When the Person You Love Needs More Help | Navigating | **Published** | `/resources/navigating-home-care/when-parent-needs-more-help/` |
 | 1 | The Conversation You Keep Putting Off | Caregiver | **Published** | `/resources/family-caregiver-support/talking-to-parent-about-care/` |
 | 2 | When Siblings Disagree About Care | Caregiver | **Published** | `/resources/family-caregiver-support/siblings-disagree-parent-care/` |
-| 3 | What No One Tells You About the First Week | Navigating | Net New | -- |
+| 3 | What No One Tells You About the First Week | Navigating | **Published** | `/resources/navigating-home-care/what-no-one-tells-you-first-week-home-care/` |
 | 4 | How to Know When It Is Time | Navigating | Coming Soon | -- |
 | 5 | The Weight You Are Carrying | Caregiver | Net New | -- |
 | 6 | What Good Care Actually Looks Like | Navigating | **Published** | `/resources/navigating-home-care/recognizing-quality-home-care/` |
