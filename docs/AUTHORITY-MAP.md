@@ -3,7 +3,7 @@
 The complete article inventory across all five clusters. **This file is the live status tracker.** Every time an article publishes, change its status here from `Net New` or `Coming Soon` → `Published`, and add the live URL.
 
 Total inventory: **101 unique articles** across 5 clusters.
-Last updated: May 15, 2026 (Brain Injury cluster hub: Coming Soon cards removed; six topics → Net New in map)
+Last updated: May 16, 2026 (Published Art. 2: When Siblings Disagree About a Parent's Care)
 
 ---
 
@@ -30,7 +30,7 @@ These 11 articles are the production priority. The pillar (P) is published. The 
 | ----- | ---------------------------------------------------------------------------- | ---------- | ------------- | ------------------------------------------------------------------- |
 | **P** | When the Person You Love Needs More Help Than You Can Give                   | Navigating | **Published** | `/resources/navigating-home-care/when-parent-needs-more-help/`      |
 | 1     | The Conversation You Keep Putting Off                                        | Caregiver  | **Published** | `/resources/family-caregiver-support/talking-to-parent-about-care/` |
-| 2     | When Siblings Disagree About Care                                            | Caregiver  | Coming Soon   | —                                                                   |
+| 2     | When Siblings Disagree About Care                                            | Caregiver  | **Published** | `/resources/family-caregiver-support/siblings-disagree-parent-care/` |
 | 3     | What No One Tells You About the First Week                                   | Navigating | Net New       | —                                                                   |
 | 4     | How to Know When It Is Time *(replaces "Signs Your Parent Needs Home Care")* | Navigating | Coming Soon   | —                                                                   |
 | 5     | The Weight You Are Carrying                                                  | Caregiver  | Net New       | —                                                                   |
@@ -163,7 +163,7 @@ These 11 articles are the production priority. The pillar (P) is published. The 
 | --- | ------------------------------------------------ | ------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1   | The Conversation You Keep Putting Off            | **Published** | Skip          | Live at `/resources/family-caregiver-support/talking-to-parent-about-care/`. Master prompt Art. 1.                                                |
 | 2   | Caregiver Burnout: Warning Signs and What to Do  | **Published** | Skip          | Live at `/resources/family-caregiver-support/caregiver-burnout-warning-signs/`. H1: "The Exhaustion You Have Stopped Noticing." Redirect removed. |
-| 3   | When Siblings Disagree About a Parent's Care     | Coming Soon   | Replace       | Stub created 2026-03-22. Deadline 2026-05-21. `/resources/family-caregiver-support/siblings-disagree-parent-care/`. Master prompt Art. 2. |
+| 3   | When Siblings Disagree About a Parent's Care     | **Published** | Skip          | Live at `/resources/family-caregiver-support/siblings-disagree-parent-care/`. Master prompt Art. 2. Published 2026-05-16. |
 | 4   | Balancing Work and Caregiving                    | Coming Soon   | Replace       | Stub created 2026-03-22. Deadline 2026-05-21. `/resources/family-caregiver-support/balancing-work-and-caregiving/`. |
 | 5   | The Emotional Impact of Caring for Aging Parents | Coming Soon   | Replace       | Stub created 2026-03-22. Deadline 2026-05-21. `/resources/family-caregiver-support/emotional-impact-caregiving/`. |
 | 6   | How Families Can Share Care Responsibilities     | Coming Soon   | Replace       | Stub created 2026-03-22. Deadline 2026-05-21. `/resources/family-caregiver-support/sharing-care-responsibilities/`. |
@@ -244,7 +244,7 @@ All stubs created **2026-03-22**. Per `02-CONTENT-CLUSTERS.md` governance: stubs
 | 6 | Questions to Ask Before Hiring Home Care | Navigating | `/resources/navigating-home-care/questions-before-hiring-home-care/` | 2026-05-21 |
 | 7 | How Much Does Home Care Cost in Ontario? | Navigating | `/resources/navigating-home-care/home-care-cost-ontario/` | 2026-05-21 |
 | 8 | What Does a PSW Actually Do? | Navigating | `/resources/navigating-home-care/what-does-a-psw-do/` | 2026-05-21 |
-| 9 | When Siblings Disagree About a Parent's Care | Caregiver | `/resources/family-caregiver-support/siblings-disagree-parent-care/` | 2026-05-21 |
+| ~~9~~ | ~~When Siblings Disagree About a Parent's Care~~ | ~~Caregiver~~ | ~~`/resources/family-caregiver-support/siblings-disagree-parent-care/`~~ | ~~2026-05-21~~ — **Published 2026-05-16** |
 | 10 | Balancing Work and Caregiving | Caregiver | `/resources/family-caregiver-support/balancing-work-and-caregiving/` | 2026-05-21 |
 | 11 | The Emotional Impact of Caring for Aging Parents | Caregiver | `/resources/family-caregiver-support/emotional-impact-caregiving/` | 2026-05-21 |
 | 12 | How Families Can Share Care Responsibilities | Caregiver | `/resources/family-caregiver-support/sharing-care-responsibilities/` | 2026-05-21 |

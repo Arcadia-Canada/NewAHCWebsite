@@ -5,7 +5,7 @@ The structural map of all five content clusters, their linking targets, and the 
 For the article-by-article inventory (status, action, notes), see `AUTHORITY-MAP.md`.
 For linking rules (anchor text, dedup, Coming Soon policy), see `03-INTERNAL-LINKING-RULES.md`.
 
-Last updated: May 15, 2026 (Brain Injury hub: no Coming Soon cards; planned URLs documented as Net New)
+Last updated: May 16, 2026 (Published Art. 2: When Siblings Disagree About a Parent's Care)
 
 ---
 
@@ -91,8 +91,8 @@ Every internal link on the site should serve this flow. Authority moves from edu
 | **Primary service** | `/our-services/respite-care/` |
 | **Primary condition** | `/conditions/caregiver-burnout-support/` |
 | **Total articles** | 18 |
-| **Published** | 2 |
-| **Coming Soon stubs on cluster page** | 4 |
+| **Published** | 3 |
+| **Coming Soon stubs on cluster page** | 3 |
 | **Net New** | 12 |
 
 **Published articles:**
@@ -101,6 +101,7 @@ Every internal link on the site should serve this flow. Authority moves from edu
 |---------|-----|------|
 | The Conversation You Keep Putting Off | `/resources/family-caregiver-support/talking-to-parent-about-care/` | Master Prompt #1 |
 | The Exhaustion You Have Stopped Noticing | `/resources/family-caregiver-support/caregiver-burnout-warning-signs/` | Caregiver Burnout article |
+| When Siblings Disagree About a Parent's Care | `/resources/family-caregiver-support/siblings-disagree-parent-care/` | Master Prompt #2 |
 
 **Article #1 outbound links:**
 - Cluster: `/resources/family-caregiver-support/`
@@ -108,6 +109,15 @@ Every internal link on the site should serve this flow. Authority moves from edu
 - Conditions: `/conditions/caregiver-burnout-support/`, `/conditions/dementia-care-at-home/`
 - Cross-cluster: `/resources/navigating-home-care/when-parent-needs-more-help/` (pillar)
 - Decision: `/how-care-starts/`, `/how-care-starts/first-conversation/`
+- Conversion: `/contact/`
+
+**Art. 2 (siblings) outbound links:**
+- Cluster: `/resources/family-caregiver-support/`
+- Services: `/our-services/respite-care/`, `/our-services/case-management/`
+- Conditions: `/conditions/caregiver-burnout-support/`, `/conditions/dementia-care-at-home/`
+- Cross-cluster: `/resources/navigating-home-care/when-parent-needs-more-help/` (pillar)
+- Sibling: `/resources/family-caregiver-support/caregiver-burnout-warning-signs/`, `/resources/family-caregiver-support/talking-to-parent-about-care/`
+- Decision: `/how-care-starts/`
 - Conversion: `/contact/`
 
 **Burnout article outbound links:**
@@ -121,7 +131,6 @@ Every internal link on the site should serve this flow. Authority moves from edu
 
 **Coming Soon stubs (do NOT link to these):**
 - `/resources/family-caregiver-support/balancing-work-and-caregiving/`
-- `/resources/family-caregiver-support/siblings-disagree-parent-care/`
 - `/resources/family-caregiver-support/emotional-impact-caregiving/`
 - `/resources/family-caregiver-support/sharing-care-responsibilities/`
 
@@ -199,7 +208,7 @@ These 11 articles are the production priority. They share an emotional, trust-le
 |---|---------|---------|--------|-----|
 | **P** | When the Person You Love Needs More Help | Navigating | **Published** | `/resources/navigating-home-care/when-parent-needs-more-help/` |
 | 1 | The Conversation You Keep Putting Off | Caregiver | **Published** | `/resources/family-caregiver-support/talking-to-parent-about-care/` |
-| 2 | When Siblings Disagree About Care | Caregiver | Coming Soon | -- |
+| 2 | When Siblings Disagree About Care | Caregiver | **Published** | `/resources/family-caregiver-support/siblings-disagree-parent-care/` |
 | 3 | What No One Tells You About the First Week | Navigating | Net New | -- |
 | 4 | How to Know When It Is Time | Navigating | Coming Soon | -- |
 | 5 | The Weight You Are Carrying | Caregiver | Net New | -- |

@@ -40,7 +40,7 @@ const articles = [
     title: "When Siblings Disagree About a Parent's Care",
     href: '/resources/family-caregiver-support/siblings-disagree-parent-care/',
     description: 'Why family conflict around caregiving is common — and how to move forward without damaging relationships.',
-    status: 'coming',
+    status: 'live',
   },
   {
     title: 'The Emotional Impact of Caring for Aging Parents',
