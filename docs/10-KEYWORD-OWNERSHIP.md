@@ -52,7 +52,7 @@ Last updated: May 3, 2026
 
 ---
 
-## Published resource articles (7 articles — informational)
+## Published resource articles (9 articles — informational)
 
 | Article | URL | Primary Keyword | Owned By |
 |---------|-----|-----------------|----------|
@@ -64,6 +64,7 @@ Last updated: May 3, 2026
 | The Conversation You Keep Putting Off | `/resources/family-caregiver-support/talking-to-parent-about-care/` | talking to parent about home care | Caregiver cluster |
 | Caregiver Burnout: Warning Signs | `/resources/family-caregiver-support/caregiver-burnout-warning-signs/` | caregiver burnout warning signs | Caregiver cluster |
 | When Siblings Disagree About a Parent's Care | `/resources/family-caregiver-support/siblings-disagree-parent-care/` | siblings disagree about parent care | Caregiver cluster |
+| What No One Tells You About the First Week of Home Care | `/resources/navigating-home-care/what-no-one-tells-you-first-week-home-care/` | what to expect first week of home care | Navigating cluster |
 
 ---
 

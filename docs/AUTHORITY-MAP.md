@@ -3,7 +3,7 @@
 The complete article inventory across all five clusters. **This file is the live status tracker.** Every time an article publishes, change its status here from `Net New` or `Coming Soon` → `Published`, and add the live URL.
 
 Total inventory: **101 unique articles** across 5 clusters.
-Last updated: May 16, 2026 (Published Art. 2: When Siblings Disagree About a Parent's Care)
+Last updated: May 16, 2026 (Published Art. 3: What No One Tells You About the First Week of Home Care)
 
 ---
 
@@ -31,7 +31,7 @@ These 11 articles are the production priority. The pillar (P) is published. The 
 | **P** | When the Person You Love Needs More Help Than You Can Give                   | Navigating | **Published** | `/resources/navigating-home-care/when-parent-needs-more-help/`      |
 | 1     | The Conversation You Keep Putting Off                                        | Caregiver  | **Published** | `/resources/family-caregiver-support/talking-to-parent-about-care/` |
 | 2     | When Siblings Disagree About Care                                            | Caregiver  | **Published** | `/resources/family-caregiver-support/siblings-disagree-parent-care/` |
-| 3     | What No One Tells You About the First Week                                   | Navigating | Net New       | —                                                                   |
+| 3     | What No One Tells You About the First Week                                   | Navigating | **Published** | `/resources/navigating-home-care/what-no-one-tells-you-first-week-home-care/` |
 | 4     | How to Know When It Is Time *(replaces "Signs Your Parent Needs Home Care")* | Navigating | Coming Soon   | —                                                                   |
 | 5     | The Weight You Are Carrying                                                  | Caregiver  | Net New       | —                                                                   |
 | 6     | What Good Care Actually Looks Like                                           | Navigating | **Published** | `/resources/navigating-home-care/recognizing-quality-home-care/`     |
@@ -126,7 +126,7 @@ These 11 articles are the production priority. The pillar (P) is published. The 
 | 10  | What Good Care Actually Looks Like                         | **Published** | Skip          | Live at `/resources/navigating-home-care/recognizing-quality-home-care/`. Master prompt Art. 6. |
 | 11  | Navigating the System When It Wasn't Built for You         | Net New       | Write         | Master prompt Art. 7.                                          |
 | 12  | What Trust Actually Means When Handing Over Responsibility | Net New       | Write         | Master prompt Art. 10.                                         |
-| 13  | What No One Tells You About the First Week of Home Care    | Net New       | Write         | Master prompt Art. 3.                                          |
+| 13  | What No One Tells You About the First Week of Home Care    | **Published** | Skip          | Live at `/resources/navigating-home-care/what-no-one-tells-you-first-week-home-care/`. Master prompt Art. 3. Published 2026-05-16. |
 | 14  | When the Situation Changes Overnight                       | Net New       | Write         | Master prompt Art. 9. Acute crisis.                            |
 | 15  | Helping Aging Parents Stay Independent                     | Net New       | Write         | —                                                              |
 | 16  | Preventing Falls at Home                                   | Net New       | Differentiate | Condition page exists — must add unique value.                 |
@@ -213,7 +213,7 @@ These 11 articles are the production priority. The pillar (P) is published. The 
 
 | Status                        | Count                                   |
 | ----------------------------- | --------------------------------------- |
-| Published                     | 7 (3 dementia + 2 caregiver + 1 pillar + 1 navigating) |
+| Published                     | 9 (3 dementia + 3 caregiver + 1 pillar + 2 navigating) |
 | Coming Soon stubs to replace  | 15 (3 dementia + 4 caregiver + 8 navigating) |
 | Requiring differentiation     | 8                                       |
 | Clean Net New, ready to write | 72                                      |

@@ -33,6 +33,13 @@ const articles = [
     status: 'live' as const,
   },
   {
+    title: 'What No One Tells You About the First Week of Home Care',
+    href: '/resources/navigating-home-care/what-no-one-tells-you-first-week-home-care/',
+    description:
+      'The adjustment period nobody prepares you for \u2014 what your parent is feeling, what the caregiver is navigating, and how to tell the difference between a rough start and a real problem.',
+    status: 'live' as const,
+  },
+  {
     title: 'Signs Your Parent Needs Home Care',
     href: '/resources/navigating-home-care/signs-parent-needs-home-care/',
     description: 'A practical checklist of physical, cognitive, and emotional signs that indicate a parent may need more support at home.',
