@@ -8,12 +8,12 @@ const PUBLISHED = '2026-05-16T09:00:00-04:00'
 export const metadata: Metadata = {
   title: 'When Siblings Disagree About a Parent\'s Care | Arcadia',
   description:
-    'Family conflict over a parent\'s care is common — and it rarely means anyone is wrong. A guide for adult children in Toronto and the GTA navigating sibling disagreements about aging parents.',
+    'Family conflict over a parent\'s care is common, and it rarely means anyone is wrong. A guide for adult children in Toronto and the GTA navigating sibling disagreements about aging parents.',
   alternates: { canonical: CANONICAL },
   openGraph: {
     title: 'When Siblings Disagree About a Parent\'s Care',
     description:
-      'The group chat goes quiet. Someone is doing more. Someone thinks less is needed. A guide for families in Toronto and the GTA on why siblings disagree about a parent\'s care — and how to move forward.',
+      'The group chat goes quiet. Someone is doing more. Someone thinks less is needed. A guide for families in Toronto and the GTA on why siblings disagree about a parent\'s care, and how to move forward.',
     url: CANONICAL,
     type: 'article',
     locale: 'en_CA',
@@ -105,7 +105,7 @@ const faqSchema = {
       name: 'Why do siblings disagree about a parent\'s care?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Siblings often disagree because they are working from different information. The sibling who lives nearby sees what is happening day to day. The sibling who lives far away sees the parent at their best — during visits, when everyone is on good behaviour. Distance does not mean indifference, but it does mean a different picture. Add in old family dynamics, different risk tolerances, and the stress of watching a parent decline, and disagreement is almost inevitable.',
+        text: 'Siblings often disagree because they are working from different information. The sibling who lives nearby sees what is happening day to day. The sibling who lives far away sees the parent at their best during visits, when everyone is on good behaviour. Distance does not mean indifference, but it does mean a different picture. Add in old family dynamics, different risk tolerances, and the stress of watching a parent decline, and disagreement is almost inevitable.',
       },
     },
     {
@@ -113,7 +113,7 @@ const faqSchema = {
       name: 'What do you do when a sibling is not helping with a parent\'s care?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Start with a specific, concrete request rather than a general complaint. "I need you to take Mum to her Thursday appointments" is easier to say yes to than "I need you to help more." Some siblings are absent because they don\'t know what is needed, not because they don\'t care. Others genuinely cannot help more — geography, work, their own health. A family meeting, ideally with a care manager or social worker present, can help redistribute tasks based on what each person can actually do.',
+        text: 'Start with a specific, concrete request rather than a general complaint. "I need you to take Mum to her Thursday appointments" is easier to say yes to than "I need you to help more." Some siblings are absent because they don\'t know what is needed, not because they don\'t care. Others genuinely cannot help more, whether because of geography, work, or their own health. A family meeting, ideally with a care manager or social worker present, can help redistribute tasks based on what each person can actually do.',
       },
     },
     {
@@ -121,7 +121,7 @@ const faqSchema = {
       name: 'How do you have a family meeting about a parent\'s care?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Choose a time when no one is in crisis. Set an agenda in advance so no one is ambushed. Keep the focus on your parent\'s needs, not on who has done more or less. Video call works if siblings are in different cities — the goal is a shared picture, not a face-to-face confrontation. If the conversation regularly derails, a professional facilitator (a geriatric care manager, social worker, or family therapist) can hold the structure so the family can focus on the decisions.',
+        text: 'Choose a time when no one is in crisis. Set an agenda in advance so no one is ambushed. Keep the focus on your parent\'s needs, not on who has done more or less. Video call works if siblings are in different cities. The goal is a shared picture, not a face-to-face confrontation. If the conversation regularly derails, a professional facilitator (a geriatric care manager, social worker, or family therapist) can hold the structure so the family can focus on the decisions.',
       },
     },
     {
@@ -129,7 +129,7 @@ const faqSchema = {
       name: 'What if siblings disagree about whether a parent needs help at all?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'This is the most common form of sibling conflict — one person sees decline, another sees the parent they have always known. The most useful move is to shift the conversation from opinion to observation. Instead of "Dad needs help," try "I noticed last month he missed three medication doses and the fridge was empty twice." Specific observations are harder to dismiss than general concern. A doctor\'s assessment, or a professional home care consultation, can also provide a shared factual baseline that is not tied to any one sibling\'s perspective.',
+        text: 'This is the most common form of sibling conflict: one person sees decline, another sees the parent they have always known. The most useful move is to shift the conversation from opinion to observation. Instead of "Dad needs help," try "I noticed last month he missed three medication doses and the fridge was empty twice." Specific observations are harder to dismiss than general concern. A doctor\'s assessment, or a professional home care consultation, can also provide a shared factual baseline that is not tied to any one sibling\'s perspective.',
       },
     },
     {
@@ -137,7 +137,7 @@ const faqSchema = {
       name: 'How do you handle a sibling who is making all the decisions alone?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'If one sibling is the primary caregiver, they will inevitably make more day-to-day decisions — that is the nature of being the one who is there. The problem arises when major decisions (care arrangements, finances, medical choices) are made without consultation. Address this directly and early: agree on which decisions require family input and which can be made unilaterally. A shared document or a simple group chat for updates can reduce the sense of being kept out of the loop.',
+        text: 'If one sibling is the primary caregiver, they will inevitably make more day-to-day decisions. That is the nature of being the one who is there. The problem arises when major decisions (care arrangements, finances, medical choices) are made without consultation. Address this directly and early: agree on which decisions require family input and which can be made unilaterally. A shared document or a simple group chat for updates can reduce the sense of being kept out of the loop.',
       },
     },
     {
@@ -145,7 +145,7 @@ const faqSchema = {
       name: 'What role can a professional play in resolving sibling conflict over care?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'A geriatric care manager or social worker can do something family members cannot: provide a neutral, professional assessment of what your parent actually needs. That shared baseline — not any one sibling\'s account — often resolves disagreements about the level of care required. They can also facilitate family meetings, help distribute responsibilities fairly, and take the emotional weight of certain decisions off the family entirely. In Toronto and the GTA, Arcadia\'s care management team can lead this process.',
+        text: 'A geriatric care manager or social worker can do something family members cannot: provide a neutral, professional assessment of what your parent actually needs. That shared baseline, not any one sibling\'s account, often resolves disagreements about the level of care required. They can also facilitate family meetings, help distribute responsibilities fairly, and take the emotional weight of certain decisions off the family entirely. In Toronto and the GTA, Arcadia\'s care management team can lead this process.',
       },
     },
     {
@@ -153,7 +153,7 @@ const faqSchema = {
       name: 'Is it normal to feel resentment toward a sibling during caregiving?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. Resentment is one of the most common — and least-talked-about — experiences among family caregivers. If you are carrying more of the load, resentment is not a character flaw. It is the predictable result of an imbalanced situation. The goal is not to suppress it but to use it as information: what specifically is missing, and what would a more sustainable arrangement look like? That question is more productive than the resentment itself.',
+        text: 'Yes. Resentment is one of the most common, and least-talked-about, experiences among family caregivers. If you are carrying more of the load, resentment is not a character flaw. It is the predictable result of an imbalanced situation. The goal is not to suppress it but to use it as information: what specifically is missing, and what would a more sustainable arrangement look like? That question is more productive than the resentment itself.',
       },
     },
     {
@@ -161,7 +161,7 @@ const faqSchema = {
       name: 'When should a family bring in professional home care to reduce sibling conflict?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'When the care load is the source of the conflict — when disagreements are really about who is doing too much and who is not doing enough — professional home care can change the equation. A consistent, qualified caregiver in the home reduces the burden on the primary family caregiver and gives the whole family a shared reference point for the level of care being provided. It does not resolve underlying relationship dynamics, but it takes the daily grind out of the conflict.',
+        text: 'When the care load is the source of the conflict, and disagreements are really about who is doing too much and who is not doing enough, professional home care can change the equation. A consistent, qualified caregiver in the home reduces the burden on the primary family caregiver and gives the whole family a shared reference point for the level of care being provided. It does not resolve underlying relationship dynamics, but it takes the daily grind out of the conflict.',
       },
     },
   ],
@@ -328,7 +328,7 @@ export default function SiblingsDisagreeParentCarePage() {
             <h1>When Siblings Disagree About a Parent&apos;s Care</h1>
             <p className="article-summary">
               The group chat has gone quiet. Someone is driving to appointments every week. Someone else
-              thinks things are fine. You are all looking at the same parent and seeing something different —
+              thinks things are fine. You are all looking at the same parent and seeing something different,
               and the gap between those pictures is starting to cost something.
             </p>
             <div className="article-byline">
@@ -346,21 +346,21 @@ export default function SiblingsDisagreeParentCarePage() {
             <aside className="key-takeaways" aria-labelledby="kt-heading">
               <h2 id="kt-heading">Key takeaways</h2>
               <ul>
-                <li>Sibling conflict over a parent&apos;s care is almost universal — and it rarely means anyone is selfish or wrong. It usually means siblings are working from genuinely different information.</li>
+                <li>Sibling conflict over a parent&apos;s care is almost universal, and it rarely means anyone is selfish or wrong. It usually means siblings are working from genuinely different information.</li>
                 <li>The sibling who lives nearby sees decline in real time. The sibling who visits sees the parent at their best. Distance creates different pictures, not different values.</li>
-                <li>The most common source of resentment is imbalance — one person carries the daily weight while others offer opinions from a distance. Naming the imbalance specifically is more productive than holding it as a grievance.</li>
+                <li>The most common source of resentment is imbalance: one person carries the daily weight while others offer opinions from a distance. Naming the imbalance specifically is more productive than holding it as a grievance.</li>
                 <li>Shifting from opinion to observation moves the conversation. &quot;I think Dad needs help&quot; is easy to dispute. &quot;He missed his medication three times last month&quot; is not.</li>
-                <li>A professional assessment — a doctor&apos;s evaluation, a home care consultation — gives families a shared factual baseline that is not tied to any one sibling&apos;s account.</li>
+                <li>A professional assessment (a doctor&apos;s evaluation or a home care consultation) gives families a shared factual baseline that is not tied to any one sibling&apos;s account.</li>
               </ul>
             </aside>
 
             <p>You are not imagining it.</p>
 
             <p>
-              The tension that has settled over your family since your parent&apos;s needs started to change — the
-              way certain conversations get avoided, the way someone always seems to be doing more than everyone
-              else, the way a phone call about Mum or Dad can shift into something that feels like a much older
-              argument — that is real. And you are far from alone in it.
+              The tension that has settled over your family since your parent&apos;s needs started to change is
+              real: the way certain conversations get avoided, the way someone always seems to be doing more
+              than everyone else, the way a phone call about Mum or Dad can shift into something that feels like
+              a much older argument. You are far from alone in it.
             </p>
 
             <p>
@@ -386,8 +386,8 @@ export default function SiblingsDisagreeParentCarePage() {
             <p>
               The sibling who flies in for a long weekend sees something different. They see your parent
               energised by the visit, buoyed by having everyone together. They see someone who is a little
-              slower, maybe, but essentially fine. They fly home with a picture that is accurate — for that
-              particular weekend — and genuinely cannot reconcile it with what the nearby sibling has been
+              slower, maybe, but essentially fine. They fly home with a picture that is accurate for that
+              particular weekend, and genuinely cannot reconcile it with what the nearby sibling has been
               describing.
             </p>
 
@@ -412,8 +412,8 @@ export default function SiblingsDisagreeParentCarePage() {
 
             <p>
               This is the most common pattern, and the one that produces the most lasting resentment. One
-              sibling — usually the one who lives closest, or the one who has historically been the
-              &quot;responsible one&quot; — absorbs the day-to-day care. Appointments, pharmacy runs, the
+              sibling, usually the one who lives closest, or the one who has historically been the
+              &quot;responsible one,&quot; absorbs the day-to-day care. Appointments, pharmacy runs, the
               phone call at 7am when something goes wrong. The others contribute when asked, or when they visit,
               but the weight is uneven.
             </p>
@@ -429,7 +429,7 @@ export default function SiblingsDisagreeParentCarePage() {
               If this is your situation, the most useful thing is not to have a conversation about fairness in
               the abstract. It is to have a specific conversation about what needs to happen, who can do what,
               and what support from outside the family would reduce the pressure on everyone.{' '}
-              <Link href="/our-services/respite-care/">Respite care</Link> is one structural option — a
+              <Link href="/our-services/respite-care/">Respite care</Link> is one structural option: a
               consistent, qualified caregiver in the home who takes the daily weight off the primary family
               caregiver without requiring anyone else in the family to step up.
             </p>
@@ -443,7 +443,7 @@ export default function SiblingsDisagreeParentCarePage() {
             </p>
 
             <p>
-              The instinct to argue your case — to convince them — is understandable. It is also usually
+              The instinct to argue your case, to convince them, is understandable. It is also usually
               unproductive. Opinion cannot be adjudicated. Observation can.
             </p>
 
@@ -466,7 +466,7 @@ export default function SiblingsDisagreeParentCarePage() {
             <h3>One person is making all the decisions</h3>
 
             <p>
-              When one sibling is the primary caregiver, they make more of the day-to-day decisions — that
+              When one sibling is the primary caregiver, they make more of the day-to-day decisions. That
               is inevitable. The friction begins when major decisions happen without consultation: a change
               in care arrangements, a conversation with the doctor about next steps, a financial decision
               that affects everyone.
@@ -475,14 +475,14 @@ export default function SiblingsDisagreeParentCarePage() {
             <p>
               If you are the one being left out, name it directly and early, before it accumulates into
               a confrontation. &quot;I would like to be included when decisions are made about Mum&apos;s
-              care — not to second-guess you, but because I want to understand what is happening.&quot; That
+              care, not to second-guess you, but because I want to understand what is happening.&quot; That
               framing is less likely to land as accusation.
             </p>
 
             <p>
-              If you are the primary caregiver who has been making decisions alone — partly because you are
+              If you are the primary caregiver who has been making decisions alone, partly because you are
               the one who is there, partly because coordinating with siblings takes more energy than just
-              handling it — consider a simple shared document or group chat that keeps everyone updated
+              handling it, consider a simple shared document or group chat that keeps everyone updated
               without requiring a family meeting every time something changes.
             </p>
 
@@ -495,14 +495,14 @@ export default function SiblingsDisagreeParentCarePage() {
             <p>
               <strong>Involving your parent as an arbiter.</strong> &quot;Dad said he wants me to be in
               charge.&quot; &quot;Mum told me she doesn&apos;t want to move.&quot; Your parent&apos;s wishes
-              matter enormously — but using them as leverage in sibling disputes puts them in the middle of
+              matter enormously, but using them as leverage in sibling disputes puts them in the middle of
               something that is not really about them. Keep them informed and involved in decisions about their
               own care. Do not recruit them as allies.
             </p>
 
             <p>
-              <strong>Relitigating the past.</strong> Old grievances — who got more, who sacrificed more, who
-              was always the favourite — have a way of surfacing when the pressure of a parent&apos;s decline
+              <strong>Relitigating the past.</strong> Old grievances (who got more, who sacrificed more, who
+              was always the favourite) have a way of surfacing when the pressure of a parent&apos;s decline
               creates enough stress. They are real. They are also not the subject of the conversation that
               needs to happen right now. If the past is genuinely getting in the way, that is work for a
               therapist, not a family meeting about care coordination.
@@ -510,7 +510,7 @@ export default function SiblingsDisagreeParentCarePage() {
 
             <p>
               <strong>Waiting for a crisis to force alignment.</strong> Families often delay the difficult
-              conversation about care until something happens — a fall, a hospitalisation, a call from a
+              conversation about care until something happens: a fall, a hospitalisation, a call from a
               neighbour. At that point, everyone is frightened, decisions need to be made quickly, and the
               conditions for a calm and productive conversation are at their worst. The time to work out the
               disagreements is before the crisis, not inside it.
@@ -524,7 +524,7 @@ export default function SiblingsDisagreeParentCarePage() {
             <h2>What a family meeting can actually accomplish</h2>
 
             <p>
-              A formal family meeting — even a video call — does something that scattered conversations cannot:
+              A formal family meeting, even a video call, does something that scattered conversations cannot:
               it creates a shared moment where everyone is working from the same information at the same time.
             </p>
 
@@ -546,8 +546,8 @@ export default function SiblingsDisagreeParentCarePage() {
             <h2>When you are the one carrying the most</h2>
 
             <p>
-              If you are the primary caregiver — the one who shows up every week, who fields the calls, who
-              has reorganised your life around your parent&apos;s needs — this section is for you.
+              If you are the primary caregiver, the one who shows up every week, who fields the calls, who
+              has reorganised your life around your parent&apos;s needs, this section is for you.
             </p>
 
             <p>
@@ -557,7 +557,7 @@ export default function SiblingsDisagreeParentCarePage() {
 
             <p>
               What helps is not suppressing the resentment or performing equanimity you do not feel. It is
-              addressing the imbalance directly — and accepting that professional care support is a legitimate
+              addressing the imbalance directly, and accepting that professional care support is a legitimate
               part of the solution, not a sign that your family has failed. You do not have to carry this alone,
               and the fact that you have been carrying it alone does not mean you have to keep doing so.
             </p>
@@ -568,12 +568,12 @@ export default function SiblingsDisagreeParentCarePage() {
                 signs of caregiver burnout
               </Link>{' '}
               are worth knowing. Not because you need another thing to worry about, but because recognising
-              the pattern early — before it becomes a crisis — is what gives you options.
+              the pattern early, before it becomes a crisis, is what gives you options.
             </p>
 
             <p>
               The broader question of what happens when a parent needs more support than the family can
-              provide — how to name it, how to act on it — is what the{' '}
+              provide. How to name it, how to act on it, is what the{' '}
               <Link href="/resources/navigating-home-care/when-parent-needs-more-help/">
                 pillar article in our Navigating Home Care series
               </Link>{' '}
@@ -590,7 +590,7 @@ export default function SiblingsDisagreeParentCarePage() {
             <p>
               When there is a qualified caregiver in the home on a consistent schedule, the daily weight shifts
               off the primary family caregiver. The sibling who visits gets a more accurate picture of the
-              level of support actually needed. The family has a shared reference point — the care plan — rather
+              level of support actually needed. The family has a shared reference point (the care plan) rather
               than competing subjective accounts. Decisions about increasing or adjusting support become
               conversations about the care plan, not arguments between siblings.
             </p>
@@ -598,7 +598,7 @@ export default function SiblingsDisagreeParentCarePage() {
             <p>
               This does not resolve every family conflict. Old dynamics do not disappear because a PSW is
               coming on Tuesdays. But it changes the conditions. When the daily grind is no longer the source
-              of resentment, many families find that the conflict was never really about the care — it was
+              of resentment, many families find that the conflict was never really about the care. It was
               about the exhaustion of one person carrying too much, without acknowledgement, for too long.
             </p>
 
@@ -608,7 +608,7 @@ export default function SiblingsDisagreeParentCarePage() {
               <h2>If your family is stuck</h2>
               <p>
                 Arcadia works with families across Toronto and the GTA who are navigating exactly this. A
-                free consultation is not a commitment — it is a conversation about what your parent needs and
+                free consultation is not a commitment. It is a conversation about what your parent needs and
                 what would make the situation more manageable for everyone. We have had this conversation
                 with hundreds of families. We can help you find a path forward.
               </p>
@@ -622,42 +622,42 @@ export default function SiblingsDisagreeParentCarePage() {
 
               <div className="faq-item">
                 <div className="faq-q">Why do siblings disagree about a parent&apos;s care?</div>
-                <div className="faq-a">Siblings often disagree because they are working from different information. The sibling who lives nearby sees what is happening day to day. The sibling who lives far away sees the parent at their best — during visits, when everyone is on good behaviour. Distance does not mean indifference, but it does mean a different picture. Add in old family dynamics, different risk tolerances, and the stress of watching a parent decline, and disagreement is almost inevitable.</div>
+                <div className="faq-a">Siblings often disagree because they are working from different information. The sibling who lives nearby sees what is happening day to day. The sibling who lives far away sees the parent at their best during visits, when everyone is on good behaviour. Distance does not mean indifference, but it does mean a different picture. Add in old family dynamics, different risk tolerances, and the stress of watching a parent decline, and disagreement is almost inevitable.</div>
               </div>
 
               <div className="faq-item">
                 <div className="faq-q">What do you do when a sibling is not helping with a parent&apos;s care?</div>
-                <div className="faq-a">Start with a specific, concrete request rather than a general complaint. &quot;I need you to take Mum to her Thursday appointments&quot; is easier to say yes to than &quot;I need you to help more.&quot; Some siblings are absent because they don&apos;t know what is needed, not because they don&apos;t care. Others genuinely cannot help more — geography, work, their own health. A family meeting, ideally with a care manager or social worker present, can help redistribute tasks based on what each person can actually do.</div>
+                <div className="faq-a">Start with a specific, concrete request rather than a general complaint. &quot;I need you to take Mum to her Thursday appointments&quot; is easier to say yes to than &quot;I need you to help more.&quot; Some siblings are absent because they don&apos;t know what is needed, not because they don&apos;t care. Others genuinely cannot help more, whether because of geography, work, or their own health. A family meeting, ideally with a care manager or social worker present, can help redistribute tasks based on what each person can actually do.</div>
               </div>
 
               <div className="faq-item">
                 <div className="faq-q">How do you have a family meeting about a parent&apos;s care?</div>
-                <div className="faq-a">Choose a time when no one is in crisis. Set an agenda in advance so no one is ambushed. Keep the focus on your parent&apos;s needs, not on who has done more or less. Video call works if siblings are in different cities — the goal is a shared picture, not a face-to-face confrontation. If the conversation regularly derails, a professional facilitator (a geriatric care manager, social worker, or family therapist) can hold the structure so the family can focus on the decisions.</div>
+                <div className="faq-a">Choose a time when no one is in crisis. Set an agenda in advance so no one is ambushed. Keep the focus on your parent&apos;s needs, not on who has done more or less. Video call works if siblings are in different cities. The goal is a shared picture, not a face-to-face confrontation. If the conversation regularly derails, a professional facilitator (a geriatric care manager, social worker, or family therapist) can hold the structure so the family can focus on the decisions.</div>
               </div>
 
               <div className="faq-item">
                 <div className="faq-q">What if siblings disagree about whether a parent needs help at all?</div>
-                <div className="faq-a">This is the most common form of sibling conflict — one person sees decline, another sees the parent they have always known. The most useful move is to shift the conversation from opinion to observation. Instead of &quot;Dad needs help,&quot; try &quot;I noticed last month he missed three medication doses and the fridge was empty twice.&quot; Specific observations are harder to dismiss than general concern. A doctor&apos;s assessment, or a professional home care consultation, can also provide a shared factual baseline that is not tied to any one sibling&apos;s perspective.</div>
+                <div className="faq-a">This is the most common form of sibling conflict: one person sees decline, another sees the parent they have always known. The most useful move is to shift the conversation from opinion to observation. Instead of &quot;Dad needs help,&quot; try &quot;I noticed last month he missed three medication doses and the fridge was empty twice.&quot; Specific observations are harder to dismiss than general concern. A doctor&apos;s assessment, or a professional home care consultation, can also provide a shared factual baseline that is not tied to any one sibling&apos;s perspective.</div>
               </div>
 
               <div className="faq-item">
                 <div className="faq-q">How do you handle a sibling who is making all the decisions alone?</div>
-                <div className="faq-a">If one sibling is the primary caregiver, they will inevitably make more day-to-day decisions — that is the nature of being the one who is there. The problem arises when major decisions (care arrangements, finances, medical choices) are made without consultation. Address this directly and early: agree on which decisions require family input and which can be made unilaterally. A shared document or a simple group chat for updates can reduce the sense of being kept out of the loop.</div>
+                <div className="faq-a">If one sibling is the primary caregiver, they will inevitably make more day-to-day decisions. That is the nature of being the one who is there. The problem arises when major decisions (care arrangements, finances, medical choices) are made without consultation. Address this directly and early: agree on which decisions require family input and which can be made unilaterally. A shared document or a simple group chat for updates can reduce the sense of being kept out of the loop.</div>
               </div>
 
               <div className="faq-item">
                 <div className="faq-q">What role can a professional play in resolving sibling conflict over care?</div>
-                <div className="faq-a">A geriatric care manager or social worker can do something family members cannot: provide a neutral, professional assessment of what your parent actually needs. That shared baseline — not any one sibling&apos;s account — often resolves disagreements about the level of care required. They can also facilitate family meetings, help distribute responsibilities fairly, and take the emotional weight of certain decisions off the family entirely. In Toronto and the GTA, Arcadia&apos;s care management team can lead this process.</div>
+                <div className="faq-a">A geriatric care manager or social worker can do something family members cannot: provide a neutral, professional assessment of what your parent actually needs. That shared baseline, not any one sibling&apos;s account, often resolves disagreements about the level of care required. They can also facilitate family meetings, help distribute responsibilities fairly, and take the emotional weight of certain decisions off the family entirely. In Toronto and the GTA, Arcadia&apos;s care management team can lead this process.</div>
               </div>
 
               <div className="faq-item">
                 <div className="faq-q">Is it normal to feel resentment toward a sibling during caregiving?</div>
-                <div className="faq-a">Yes. Resentment is one of the most common — and least-talked-about — experiences among family caregivers. If you are carrying more of the load, resentment is not a character flaw. It is the predictable result of an imbalanced situation. The goal is not to suppress it but to use it as information: what specifically is missing, and what would a more sustainable arrangement look like? That question is more productive than the resentment itself.</div>
+                <div className="faq-a">Yes. Resentment is one of the most common, and least-talked-about, experiences among family caregivers. If you are carrying more of the load, resentment is not a character flaw. It is the predictable result of an imbalanced situation. The goal is not to suppress it but to use it as information: what specifically is missing, and what would a more sustainable arrangement look like? That question is more productive than the resentment itself.</div>
               </div>
 
               <div className="faq-item">
                 <div className="faq-q">When should a family bring in professional home care to reduce sibling conflict?</div>
-                <div className="faq-a">When the care load is the source of the conflict — when disagreements are really about who is doing too much and who is not doing enough — professional home care can change the equation. A consistent, qualified caregiver in the home reduces the burden on the primary family caregiver and gives the whole family a shared reference point for the level of care being provided. It does not resolve underlying relationship dynamics, but it takes the daily grind out of the conflict.</div>
+                <div className="faq-a">When the care load is the source of the conflict, and disagreements are really about who is doing too much and who is not doing enough, professional home care can change the equation. A consistent, qualified caregiver in the home reduces the burden on the primary family caregiver and gives the whole family a shared reference point for the level of care being provided. It does not resolve underlying relationship dynamics, but it takes the daily grind out of the conflict.</div>
               </div>
             </div>
 
@@ -667,7 +667,7 @@ export default function SiblingsDisagreeParentCarePage() {
                 When the person you love needs more help than you can give
               </Link>
               <Link href="/resources/family-caregiver-support/caregiver-burnout-warning-signs/" className="related-link">
-                The exhaustion you have stopped noticing — caregiver burnout
+                The exhaustion you have stopped noticing: caregiver burnout
               </Link>
               <Link href="/resources/family-caregiver-support/talking-to-parent-about-care/" className="related-link">
                 The conversation you keep putting off
@@ -684,7 +684,7 @@ export default function SiblingsDisagreeParentCarePage() {
           <aside className="article-sidebar">
             <div className="sidebar-cta">
               <h3>Family stuck on next steps?</h3>
-              <p>We help GTA families find a path forward — no pressure, no obligation.</p>
+              <p>We help GTA families find a path forward. No pressure, no obligation.</p>
               <a href="tel:8449770050" className="sidebar-phone">(844) 977-0050</a>
               <Link href="/contact/" className="btn-red-sm">Book a Free Consultation</Link>
             </div>
@@ -717,7 +717,7 @@ export default function SiblingsDisagreeParentCarePage() {
         <section className="article-bottom-cta">
           <h2>You do not have to resolve this alone</h2>
           <p>
-            Arcadia helps GTA families find care arrangements that work — and takes the daily weight off
+            Arcadia helps GTA families find care arrangements that work, and takes the daily weight off
             the people who have been carrying it longest. Call us or book a free consultation.
           </p>
           <a href="tel:8449770050" className="article-bottom-cta-phone">(844) 977-0050</a>
