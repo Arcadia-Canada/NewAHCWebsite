@@ -3,7 +3,7 @@
 The complete article inventory across all five clusters. **This file is the live status tracker.** Every time an article publishes, change its status here from `Net New` or `Coming Soon` → `Published`, and add the live URL.
 
 Total inventory: **101 unique articles** across 5 clusters.
-Last updated: May 22, 2026 (Published MP #5: The Weight You Are Carrying)
+Last updated: May 22, 2026 (Published: How Much Does Home Care Cost in Ontario)
 
 ---
 
@@ -120,7 +120,7 @@ These 11 articles are the production priority. The pillar (P) is published. The 
 | 4   | Private vs. Public Home Care in Ontario                    | Coming Soon   | Replace       | Stub created 2026-03-22. Deadline 2026-05-21. OHIP vs. private. |
 | 5   | Understanding Ontario Health atHome                        | Coming Soon   | Replace       | Stub created 2026-03-22. Deadline 2026-05-21. OHIP-funded care. |
 | 6   | Questions to Ask Before Hiring Home Care                   | Coming Soon   | Replace       | Stub created 2026-03-22. Deadline 2026-05-21. ⚠️ URL redirects to cluster page — remove redirect before publishing. |
-| 7   | How Much Does Home Care Cost in Ontario?                   | Coming Soon   | Replace       | Stub created 2026-03-22. Deadline 2026-05-21. GTA-specific. Owns "home care cost Ontario" keyword. |
+| 7   | How Much Does Home Care Cost in Ontario?                   | **Published** | Skip          | Live at `/resources/navigating-home-care/home-care-cost-ontario/`. Published 2026-05-22. Owns "home care cost Ontario" keyword. |
 | 8   | What Does a PSW Actually Do?                               | Coming Soon   | Replace       | Stub created 2026-03-22. Deadline 2026-05-21. Role explainer. |
 | 9   | **PILLAR: When the Person You Love Needs More Help**       | **Published** | Skip          | `/resources/navigating-home-care/when-parent-needs-more-help/` |
 | 10  | What Good Care Actually Looks Like                         | **Published** | Skip          | Live at `/resources/navigating-home-care/recognizing-quality-home-care/`. Master prompt Art. 6. |
@@ -213,8 +213,8 @@ These 11 articles are the production priority. The pillar (P) is published. The 
 
 | Status                        | Count                                   |
 | ----------------------------- | --------------------------------------- |
-| Published                     | 9 (3 dementia + 3 caregiver + 1 pillar + 2 navigating) |
-| Coming Soon stubs to replace  | 15 (3 dementia + 4 caregiver + 8 navigating) |
+| Published                     | 10 (3 dementia + 3 caregiver + 1 pillar + 3 navigating) |
+| Coming Soon stubs to replace  | 14 (3 dementia + 4 caregiver + 7 navigating) |
 | Requiring differentiation     | 8                                       |
 | Clean Net New, ready to write | 72                                      |
 | **Total**                     | **102**                                 |
@@ -242,7 +242,7 @@ All stubs created **2026-03-22**. Per `02-CONTENT-CLUSTERS.md` governance: stubs
 | 4 | Private vs. Public Home Care in Ontario | Navigating | `/resources/navigating-home-care/private-vs-public-home-care-ontario/` | 2026-05-21 |
 | 5 | Understanding Ontario Health atHome | Navigating | `/resources/navigating-home-care/ontario-health-athome-funded-care/` | 2026-05-21 |
 | 6 | Questions to Ask Before Hiring Home Care | Navigating | `/resources/navigating-home-care/questions-before-hiring-home-care/` | 2026-05-21 |
-| 7 | How Much Does Home Care Cost in Ontario? | Navigating | `/resources/navigating-home-care/home-care-cost-ontario/` | 2026-05-21 |
+| ~~7~~ | ~~How Much Does Home Care Cost in Ontario?~~ | ~~Navigating~~ | ~~`/resources/navigating-home-care/home-care-cost-ontario/`~~ | ~~2026-05-21~~ — **Published 2026-05-22** |
 | 8 | What Does a PSW Actually Do? | Navigating | `/resources/navigating-home-care/what-does-a-psw-do/` | 2026-05-21 |
 | ~~9~~ | ~~When Siblings Disagree About a Parent's Care~~ | ~~Caregiver~~ | ~~`/resources/family-caregiver-support/siblings-disagree-parent-care/`~~ | ~~2026-05-21~~ — **Published 2026-05-16** |
 | 10 | Balancing Work and Caregiving | Caregiver | `/resources/family-caregiver-support/balancing-work-and-caregiving/` | 2026-05-21 |

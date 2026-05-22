@@ -79,7 +79,7 @@ const articles = [
     title: 'How Much Does Home Care Cost in Ontario?',
     href: '/resources/navigating-home-care/home-care-cost-ontario/',
     description: 'A transparent breakdown of private home care pricing in the GTA, what affects cost, and what to budget for different levels of care.',
-    status: 'coming',
+    status: 'live' as const,
   },
   {
     title: 'What Does a PSW Actually Do?',
