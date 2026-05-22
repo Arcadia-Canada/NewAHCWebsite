@@ -40,10 +40,10 @@ const articles = [
     status: 'live' as const,
   },
   {
-    title: 'Signs Your Parent Needs Home Care',
+    title: 'How to Know When It Is Time',
     href: '/resources/navigating-home-care/signs-parent-needs-home-care/',
-    description: 'A practical checklist of physical, cognitive, and emotional signs that indicate a parent may need more support at home.',
-    status: 'coming',
+    description: 'Most families arrive at home care through accumulation, not a single clear moment. How to recognize the pattern, trust what you are seeing, and take the next step.',
+    status: 'live' as const,
   },
   {
     title: 'When a Parent Resists Home Care',

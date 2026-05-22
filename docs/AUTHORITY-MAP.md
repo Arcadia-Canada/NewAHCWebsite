@@ -3,7 +3,7 @@
 The complete article inventory across all five clusters. **This file is the live status tracker.** Every time an article publishes, change its status here from `Net New` or `Coming Soon` → `Published`, and add the live URL.
 
 Total inventory: **101 unique articles** across 5 clusters.
-Last updated: May 16, 2026 (Published Art. 3: What No One Tells You About the First Week of Home Care)
+Last updated: May 22, 2026 (Published MP #4: How to Know When It Is Time)
 
 ---
 
@@ -32,7 +32,7 @@ These 11 articles are the production priority. The pillar (P) is published. The 
 | 1     | The Conversation You Keep Putting Off                                        | Caregiver  | **Published** | `/resources/family-caregiver-support/talking-to-parent-about-care/` |
 | 2     | When Siblings Disagree About Care                                            | Caregiver  | **Published** | `/resources/family-caregiver-support/siblings-disagree-parent-care/` |
 | 3     | What No One Tells You About the First Week                                   | Navigating | **Published** | `/resources/navigating-home-care/what-no-one-tells-you-first-week-home-care/` |
-| 4     | How to Know When It Is Time *(replaces "Signs Your Parent Needs Home Care")* | Navigating | Coming Soon   | —                                                                   |
+| 4     | How to Know When It Is Time *(replaces "Signs Your Parent Needs Home Care")* | Navigating | **Published** | `/resources/navigating-home-care/signs-parent-needs-home-care/`  |
 | 5     | The Weight You Are Carrying                                                  | Caregiver  | Net New       | —                                                                   |
 | 6     | What Good Care Actually Looks Like                                           | Navigating | **Published** | `/resources/navigating-home-care/recognizing-quality-home-care/`     |
 | 7     | Navigating the System                                                        | Navigating | Net New       | —                                                                   |
@@ -114,7 +114,7 @@ These 11 articles are the production priority. The pillar (P) is published. The 
 
 | #   | Article                                                    | Status        | Action        | Notes                                                          |
 | --- | ---------------------------------------------------------- | ------------- | ------------- | -------------------------------------------------------------- |
-| 1   | Signs Your Parent Needs Home Care                          | Coming Soon   | Replace       | Stub created 2026-03-22. Deadline 2026-05-21. Master prompt Art. 4 governs. |
+| 1   | Signs Your Parent Needs Home Care                          | **Published** | Skip          | Live at `/resources/navigating-home-care/signs-parent-needs-home-care/`. Published 2026-05-22. Master Prompt Art. 4 (H1: *How to Know When It Is Time*). |
 | 2   | When a Parent Resists Home Care                            | Coming Soon   | Replace       | Stub created 2026-03-22. Deadline 2026-05-21. ⚠️ URL redirects to cluster page — remove redirect before publishing. |
 | 3   | How to Choose a Home Care Provider in Ontario              | Coming Soon   | Replace       | Stub created 2026-03-22. Deadline 2026-05-21. Master prompt Art. 6 related. |
 | 4   | Private vs. Public Home Care in Ontario                    | Coming Soon   | Replace       | Stub created 2026-03-22. Deadline 2026-05-21. OHIP vs. private. |
