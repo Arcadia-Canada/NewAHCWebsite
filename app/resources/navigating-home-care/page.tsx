@@ -85,7 +85,7 @@ const articles = [
     title: 'What Does a PSW Actually Do?',
     href: '/resources/navigating-home-care/what-does-a-psw-do/',
     description: "A plain-language guide to the role of a Personal Support Worker — what they're trained for, what they can and can't do, and what to expect.",
-    status: 'coming',
+    status: 'live' as const,
   },
 ]
 
