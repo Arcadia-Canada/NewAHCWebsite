@@ -54,6 +54,12 @@ const articles = [
     description: 'A guide to dividing tasks fairly among family members, including those who live far away.',
     status: 'coming',
   },
+  {
+    title: 'The Weight You Are Carrying',
+    href: '/resources/family-caregiver-support/weight-of-caregiving/',
+    description: 'Not burnout. Not yet. But something heavier than it used to be. What the weight of caregiving actually costs, and what structurally changes things.',
+    status: 'live',
+  },
 ]
 
 export default function FamilyCaregiverSupportHub() {

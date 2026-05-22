@@ -3,7 +3,7 @@
 The complete article inventory across all five clusters. **This file is the live status tracker.** Every time an article publishes, change its status here from `Net New` or `Coming Soon` → `Published`, and add the live URL.
 
 Total inventory: **101 unique articles** across 5 clusters.
-Last updated: May 22, 2026 (Published MP #4: How to Know When It Is Time)
+Last updated: May 22, 2026 (Published MP #5: The Weight You Are Carrying)
 
 ---
 
@@ -33,7 +33,7 @@ These 11 articles are the production priority. The pillar (P) is published. The 
 | 2     | When Siblings Disagree About Care                                            | Caregiver  | **Published** | `/resources/family-caregiver-support/siblings-disagree-parent-care/` |
 | 3     | What No One Tells You About the First Week                                   | Navigating | **Published** | `/resources/navigating-home-care/what-no-one-tells-you-first-week-home-care/` |
 | 4     | How to Know When It Is Time *(replaces "Signs Your Parent Needs Home Care")* | Navigating | **Published** | `/resources/navigating-home-care/signs-parent-needs-home-care/`  |
-| 5     | The Weight You Are Carrying                                                  | Caregiver  | Net New       | —                                                                   |
+| 5     | The Weight You Are Carrying                                                  | Caregiver  | **Published** | `/resources/family-caregiver-support/weight-of-caregiving/`     |
 | 6     | What Good Care Actually Looks Like                                           | Navigating | **Published** | `/resources/navigating-home-care/recognizing-quality-home-care/`     |
 | 7     | Navigating the System                                                        | Navigating | Net New       | —                                                                   |
 | 8     | The Guilt of Getting Help                                                    | Caregiver  | Net New       | —                                                                   |
@@ -167,7 +167,7 @@ These 11 articles are the production priority. The pillar (P) is published. The 
 | 4   | Balancing Work and Caregiving                    | Coming Soon   | Replace       | Stub created 2026-03-22. Deadline 2026-05-21. `/resources/family-caregiver-support/balancing-work-and-caregiving/`. |
 | 5   | The Emotional Impact of Caring for Aging Parents | Coming Soon   | Replace       | Stub created 2026-03-22. Deadline 2026-05-21. `/resources/family-caregiver-support/emotional-impact-caregiving/`. |
 | 6   | How Families Can Share Care Responsibilities     | Coming Soon   | Replace       | Stub created 2026-03-22. Deadline 2026-05-21. `/resources/family-caregiver-support/sharing-care-responsibilities/`. |
-| 7   | The Weight You Are Carrying and Why It Matters   | Net New       | Write         | Master prompt Art. 5. Emotional companion to burnout.                                                                                             |
+| 7   | The Weight You Are Carrying and Why It Matters   | **Published** | Skip          | Live at `/resources/family-caregiver-support/weight-of-caregiving/`. Published 2026-05-22. Master Prompt Art. 5. |
 | 8   | The Guilt of Getting Help                        | Net New       | Write         | Master prompt Art. 8. No live equivalent.                                                                                                         |
 | 9   | Preparing for Decline Conversations              | Net New       | Write         | Pre-crisis planning. Differentiate from Art. 1.                                                                                                   |
 | 10  | How Families Make Care Decisions                 | Net New       | Write         | —                                                                                                                                                 |
