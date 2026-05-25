@@ -224,6 +224,29 @@ a.loc-region-btn-red:hover,
   background: #0f1a26 !important;
 }
 
+/* Homepage hero actions: left on desktop, centered on mobile (matches arc-hero-template 980px) */
+.hp-hero-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+}
+.hp-hero-actions-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+@media (max-width: 980px) {
+  .hp-hero-actions {
+    align-items: center;
+  }
+  .hp-hero-actions-buttons {
+    justify-content: center;
+  }
+}
+
 /* Hero call button */
 .hp-hero-call:hover {
   background: #a82520 !important;

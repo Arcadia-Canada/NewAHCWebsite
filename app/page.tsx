@@ -154,8 +154,8 @@ function Hero() {
             <p>Arcadia brings clinical expertise and genuine compassion together &mdash; guiding families through dementia, brain injury, recovery, and complex aging at home. Serving the GTA since 2005.</p>
         }
         actions={
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 16 }}>
-            <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', alignItems: 'center' }}>
+          <div className="hp-hero-actions">
+            <div className="hp-hero-actions-buttons">
               <a href="tel:8449770050" className="hp-hero-call" style={{ background: colors.accent, color: '#fff', padding: '16px 32px', borderRadius: 8, textDecoration: 'none', fontSize: 16, fontWeight: 700, display: 'flex', alignItems: 'center', gap: 8, transition: 'background 0.2s' }}>
                 {String.fromCodePoint(0x1F4DE)} Call (844) 977-0050
               </a>
