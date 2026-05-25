@@ -2,26 +2,32 @@
 
 The sprint-level plan for content production, ordered by urgency and dependency. This doc answers: **"What do I build next, in what order, and why?"**
 
-Last updated: May 15, 2026
+**Week-by-week dates and slugs:** [`docs/PUBLISHING-CALENDAR.md`](./PUBLISHING-CALENDAR.md) — use that file for *when* to publish. Use this file for *why* phases exist and dependency gates.
+
+Last updated: May 25, 2026
 
 ---
 
 ## Current state snapshot
 
+*Counts from `docs/AUTHORITY-MAP.md` (May 25, 2026).*
+
 | Metric | Count |
 |--------|-------|
-| Published articles | 7 |
-| Coming Soon stubs (deadline 2026-05-21) | 15 |
-| Net New (ready to write) | 72 |
+| Published articles | 11 |
+| Coming Soon stubs on cluster hubs | 0 |
+| Net New (ready to write) | 83 |
 | Requiring differentiation | 8 |
 | Live clusters | 4 of 5 |
-| Days until Coming Soon deadline | **6** |
+| Master Prompt remaining | 4 (#7–10) |
 
 ---
 
-## Phase 1: Coming Soon Emergency (NOW — May 21, 2026)
+## Phase 1: Coming Soon Emergency — COMPLETED (May 2026)
 
-**Goal:** Eliminate all thin content before the 60-day deadline. Every Coming Soon stub must either become a full article or be removed from the cluster page.
+**Status:** Closed. Hub gray cards removed May 25, 2026; 11 topics reverted to Net New in AUTHORITY-MAP. Four May articles published (signs, weight, cost, PSW). Historical triage below.
+
+**Goal (original):** Eliminate all thin content before the 60-day deadline. Every Coming Soon stub must either become a full article or be removed from the cluster page.
 
 ### Decision framework
 
@@ -78,20 +84,18 @@ These are either Master Prompt priority articles or own high-value keywords:
 
 ---
 
-## Phase 2: Master Prompt Completion (May 22 — June 30, 2026)
+## Phase 2: Master Prompt Completion (June 2026)
 
-**Goal:** Publish the remaining 6 Master Prompt articles. These form the emotional backbone of the site — the trust-building narrative arc across Navigating and Caregiver clusters.
+**Goal:** Publish the remaining 4 Master Prompt articles (#7–10). MP #1–6 and pillar are live. These form the emotional backbone of the site — the trust-building narrative arc across Navigating and Caregiver clusters.
 
-| Order | Article | Cluster | AUTHORITY-MAP # |
-|-------|---------|---------|-----------------|
-| 1 | What No One Tells You About the First Week | Navigating | MP #3 |
-| 2 | The Weight You Are Carrying | Caregiver | MP #5 |
-| 3 | Navigating the System | Navigating | MP #7 |
-| 4 | The Guilt of Getting Help | Caregiver | MP #8 |
-| 5 | When the Situation Changes Overnight | Navigating | MP #9 |
-| 6 | What Trust Actually Means | Navigating | MP #10 |
+| Order | Article | Cluster | AUTHORITY-MAP # | Calendar |
+|-------|---------|---------|-----------------|----------|
+| 1 | Navigating the System | Navigating | MP #7 | Jun 3, 2026 |
+| 2 | The Guilt of Getting Help | Caregiver | MP #8 | Jun 10, 2026 |
+| 3 | When the Situation Changes Overnight | Navigating | MP #9 | Jun 17, 2026 |
+| 4 | What Trust Actually Means | Navigating | MP #10 | Jun 24, 2026 |
 
-**Pace:** 1 article per week = done by early July.
+**Pace:** 1 article per week — see [`PUBLISHING-CALENDAR.md`](./PUBLISHING-CALENDAR.md) Phase A.
 
 **Voice:** These are emotional pillars, not keyword articles. Follow `07-VOICE-AND-TONE.md` exactly. Lead with empathy, follow with expertise.
 
@@ -99,15 +103,21 @@ These are either Master Prompt priority articles or own high-value keywords:
 1. Update AUTHORITY-MAP status → Published
 2. Add internal links from 2–3 existing articles
 3. Submit URL to GSC
-4. Update Coming Soon deadline tracker (remove filled entry)
+4. Update `PUBLISHING-CALENDAR.md` Published log
 
 ---
 
-## Phase 3: Cluster Depth (July — August 2026)
+## Phase 2b: Former hub topics (July — September 2026)
+
+**Goal:** Publish the 11 articles that were removed from cluster hub Coming Soon cards. Scheduled in [`PUBLISHING-CALENDAR.md`](./PUBLISHING-CALENDAR.md) Phase B (navigating → caregiver → dementia).
+
+---
+
+## Phase 3: Cluster Depth (September 2026 — February 2027)
 
 **Goal:** Build out the three strongest clusters to 8–10 published articles each. This is the threshold where Google starts treating a cluster as topically authoritative.
 
-### Dementia & Memory Care (target: 10 published, currently 3)
+### Dementia & Memory Care (target: 10 published, currently 3 live + 3 in Phase 2b calendar)
 
 Write 7 Net New articles. Priority order:
 1. How to Keep Someone with Dementia Safe at Home (#7)
@@ -120,7 +130,7 @@ Write 7 Net New articles. Priority order:
 
 Skip #9 (Stages of Alzheimer's) and #13 (Home Safety Checklist for Dementia) until differentiation is resolved — see `10-KEYWORD-OWNERSHIP.md`.
 
-### Navigating Home Care (target: 10 published, currently 2)
+### Navigating Home Care (target: 10 published, currently 7 live + 5 in Phase 2b calendar)
 
 Write 8 Net New articles after P1/P2 stubs are filled. Priority:
 1. Navigating the System (#11 — also MP #7, may be done in Phase 2)
@@ -132,7 +142,7 @@ Write 8 Net New articles after P1/P2 stubs are filled. Priority:
 7. Companionship and Senior Isolation (#22)
 8. How to Create a Care Plan for Parents (#32)
 
-### Family Caregiver Support (target: 8 published, currently 2)
+### Family Caregiver Support (target: 8 published, currently 4 live + 3 in Phase 2b calendar)
 
 Write 6 Net New articles after P2 stubs are filled. Priority:
 1. The Weight You Are Carrying (#7 — also MP #5, may be done in Phase 2)
@@ -161,11 +171,11 @@ Write 6 Net New articles after P2 stubs are filled. Priority:
 3. Long-Term Care vs. Home Care: Costs Compared (#2) — comparison
 4. Insurance Coverage for Home Care in Ontario (#4) — practical
 
-**Pace:** 1 article per week = hub + 4 articles in 5 weeks.
+**Pace:** 1 article per week = hub + 4 articles in 5 weeks. Dates in [`PUBLISHING-CALENDAR.md`](./PUBLISHING-CALENDAR.md) Phase E (assign when prerequisites are scheduled).
 
 ---
 
-## Phase 5: Brain Injury & Scale (November 2026 — Q1 2027)
+## Phase 5: Brain Injury & Scale (March 2027+ per calendar)
 
 **Goal:** Build Brain Injury cluster from 0 to 6+ published articles. Begin filling long-tail articles across all clusters.
 
@@ -190,8 +200,9 @@ Before moving to the next phase, confirm:
 
 | Gate | Condition |
 |------|-----------|
-| Phase 1 → 2 | All Coming Soon stubs either filled or removed. Zero thin content on live site. |
-| Phase 2 → 3 | All 11 Master Prompt articles published. Narrative arc complete. |
+| Phase 1 → 2 | ✅ Zero Coming Soon cards on hubs (May 2026). |
+| Phase 2 → 2b | MP #7–10 published. Narrative arc complete. |
+| Phase 2b → 3 | 11 former hub topics published. |
 | Phase 3 → 4 | At least 2 clusters have 8+ published articles. Internal linking mesh is strong. |
 | Phase 4 → 5 | Cost of Care hub is live with 4+ articles. No new Coming Soon stubs created without content ready. |
 
@@ -200,8 +211,8 @@ Before moving to the next phase, confirm:
 ## Operational rules
 
 1. **One article at a time.** Don't start a new article until the previous one is published, links are added, AUTHORITY-MAP is updated, and GSC is submitted.
-2. **No new Coming Soon stubs.** Until every existing stub is filled, do not create new ones. Add articles as Net New in AUTHORITY-MAP and publish directly.
-3. **Weekly audit.** Every Monday, check: Are any stubs approaching deadline? Is AUTHORITY-MAP up to date? Are there broken links?
+2. **No new Coming Soon stubs.** Publish directly from Net New; add hub cards only when the article is live (`status: 'live'`).
+3. **Weekly audit.** Every Monday, check: Is this week's slot in `PUBLISHING-CALENDAR.md` still accurate? Is AUTHORITY-MAP up to date? Are there broken links?
 4. **Keyword check before writing.** Before starting any article, check `10-KEYWORD-OWNERSHIP.md` to confirm no other page owns the same keyword.
 5. **Publish checklist every time.** Use `06-PUBLISHING-CHECKLIST.md` for every article. No exceptions.
 
@@ -209,15 +220,14 @@ Before moving to the next phase, confirm:
 
 ## Calendar summary
 
-| Month | Phase | Target Output |
-|-------|-------|---------------|
-| May 2026 | Phase 1 | 6–12 articles (fill stubs) + remove unfilled stubs |
-| June 2026 | Phase 2 | 6 Master Prompt articles |
-| July 2026 | Phase 3a | 4 Dementia articles |
-| August 2026 | Phase 3b | 4 Navigating + 3 Caregiver articles |
-| September 2026 | Phase 4 | Cost of Care hub + 2 seed articles |
-| October 2026 | Phase 4 | 2 more Cost of Care articles |
-| Nov–Dec 2026 | Phase 5 | 6 Brain Injury articles |
-| Q1 2027 | Phase 5 | Long-tail + differentiation backlog |
+**Do not maintain duplicate week tables here.** Use [`docs/PUBLISHING-CALENDAR.md`](./PUBLISHING-CALENDAR.md):
 
-**Total by end of 2026:** ~40 published articles (up from 7 today).
+| Phase | Calendar section | Approx. span |
+|-------|------------------|--------------|
+| A | Master Prompt #7–10 | Jun 2026 |
+| B | 11 former hub topics | Jul–Sep 2026 |
+| C | Cluster depth | Sep 2026 – Feb 2027 |
+| D | Brain Injury seed | Mar–May 2027 |
+| E | Cost of Care (after hub build) | Jun 2027+ |
+
+**Target by end of 2026:** ~26 published articles (11 today + 15 from Phases A–B in calendar).

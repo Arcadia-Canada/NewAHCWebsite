@@ -44,6 +44,7 @@ Every governance document lives in `docs/` in this repo. Read the relevant file(
 | `docs/04-SCHEMA-STANDARDS.md` | Generating JSON-LD or page metadata |
 | `docs/05-URL-CONVENTIONS.md` | Choosing a slug or page URL |
 | `docs/06-PUBLISHING-CHECKLIST.md` | Publishing a new blog article |
+| `docs/PUBLISHING-CALENDAR.md` | Which article to write next and weekly publish dates |
 | `docs/07-VOICE-AND-TONE.md` | Writing or editing any user-facing copy |
 | `docs/CURSOR-CONTENT-PROMPTS.md` | Copy-paste prompts for Cursor (governance-first article requests) |
 | `docs/EXTERNAL-STRATEGY-REFERENCES.md` | PDFs on OneDrive (SEO operating system, production workflow): when to use them vs this repo |
@@ -54,6 +55,8 @@ Plus the structural and inventory files:
 |------|---------|
 | `docs/CLUSTER-LINK-MAP.md` | The 5-cluster structure, linking flow, published article state, service/condition targets, and pre-draft checklist. **Read before writing any article.** |
 | `docs/AUTHORITY-MAP.md` | The 101-article inventory: status, action, links per article |
+| `docs/PUBLISHING-CALENDAR.md` | Week-by-week publish schedule (phases, dates, slugs); update when articles ship |
+| `docs/12-EXECUTION-ROADMAP.md` | Phase-level strategy (why and dependencies); dates live in the calendar |
 | `docs/GOVERNANCE-PACK-README.md` | Overview of the pack (humans); optional for AI |
 
 ## How AI should approach common tasks
@@ -62,12 +65,13 @@ Plus the structural and inventory files:
 
 1. Read `docs/CLUSTER-LINK-MAP.md` to understand the cluster structure, linking flow, published articles, and run the pre-draft checklist.
 2. Read `docs/02-CONTENT-CLUSTERS.md` to confirm which cluster it belongs to.
-3. Read `docs/AUTHORITY-MAP.md` to find the article entry — check status (Net New, Coming Soon, Differentiate) and any linking notes.
-4. Read `docs/07-VOICE-AND-TONE.md` to apply Arcadia's editorial voice.
-5. Read `docs/03-INTERNAL-LINKING-RULES.md` for required and optional internal links.
-6. Read `docs/04-SCHEMA-STANDARDS.md` for required JSON-LD blocks.
-7. For keyword ownership, Coming Soon policy at scale, calendar gates, or technical checklist details not fully in `docs/`, follow `docs/EXTERNAL-STRATEGY-REFERENCES.md` and use the PDFs it names (when the site owner provides or opens them).
-8. Produce the article using the same structure as the published pillar at `/resources/navigating-home-care/when-parent-needs-more-help/`.
+3. Read `docs/PUBLISHING-CALENDAR.md` for the next scheduled article (or confirm with the site owner if the calendar was skipped).
+4. Read `docs/AUTHORITY-MAP.md` to find the article entry — check status (Net New, Coming Soon, Differentiate) and any linking notes.
+5. Read `docs/07-VOICE-AND-TONE.md` to apply Arcadia's editorial voice.
+6. Read `docs/03-INTERNAL-LINKING-RULES.md` for required and optional internal links.
+7. Read `docs/04-SCHEMA-STANDARDS.md` for required JSON-LD blocks.
+8. For keyword ownership, Coming Soon policy at scale, calendar gates, or technical checklist details not fully in `docs/`, follow `docs/EXTERNAL-STRATEGY-REFERENCES.md` and use the PDFs it names (when the site owner provides or opens them).
+9. Produce the article using the same structure as the published pillar at `/resources/navigating-home-care/when-parent-needs-more-help/`.
 
 ### "Update internal links across the site"
 
@@ -84,8 +88,15 @@ Plus the structural and inventory files:
 ### "Publish a new blog article"
 
 1. Use `docs/06-PUBLISHING-CHECKLIST.md` as the step-by-step.
-2. Optionally align batch or cadence expectations with `docs/EXTERNAL-STRATEGY-REFERENCES.md` (Content Production System PDF on OneDrive).
-3. Do not skip phases.
+2. After publish, update `docs/PUBLISHING-CALENDAR.md` (Published log) and `docs/AUTHORITY-MAP.md` (status + URL).
+3. Optionally align batch or cadence expectations with `docs/EXTERNAL-STRATEGY-REFERENCES.md` (Content Production System PDF on OneDrive).
+4. Do not skip phases.
+
+### "What should we publish next?"
+
+1. Read `docs/PUBLISHING-CALENDAR.md` — **Quick reference — next 4 weeks** and the active phase table.
+2. Cross-check `docs/AUTHORITY-MAP.md` so the article is still Net New (not already Published).
+3. For phase rationale and dependencies, read `docs/12-EXECUTION-ROADMAP.md`.
 
 ### "Create a new cluster, section, or URL pattern"
 
@@ -122,4 +133,4 @@ The docs serve the site, not the other way around.
 
 ## Last updated
 
-May 2026 — governance pack added to the website repository (`AI-CONTEXT.md` + `docs/`). External PDF references documented in `docs/EXTERNAL-STRATEGY-REFERENCES.md`. Update this section whenever any file in `docs/` changes meaningfully.
+May 2026 — governance pack added to the website repository (`AI-CONTEXT.md` + `docs/`). External PDF references documented in `docs/EXTERNAL-STRATEGY-REFERENCES.md`. `docs/PUBLISHING-CALENDAR.md` added as the week-by-week schedule (roadmap stays phase-level). Update this section whenever any file in `docs/` changes meaningfully.

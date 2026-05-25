@@ -101,10 +101,11 @@ These keywords are reserved. No other page should target them.
 | Communication Strategies for Dementia | communication strategies dementia |
 | Late Stage Dementia: What Families Need to Know | late stage dementia what to expect |
 
-### Brain Injury & Rehabilitation (planned — Net New; not listed on hub until published)
+### Brain Injury & Rehabilitation
 
 | Article | Primary Keyword |
 |---------|-----------------|
+| Brain Injury Behaviour Changes: A Family Guide (interactive) | brain injury behaviour changes |
 | Life After Acquired Brain Injury: A Family Guide | life after brain injury family guide |
 | Stroke Recovery at Home: What to Expect | stroke recovery at home what to expect |
 | Cognitive and Emotional Changes After Brain Injury | cognitive changes after brain injury |
@@ -120,6 +121,7 @@ These entries in the AUTHORITY-MAP are flagged as "Differentiate" because they r
 
 | Planned Article | Conflicts With | Resolution Needed |
 |-----------------|---------------|-------------------|
+| Family Adjustment After Brain Injury (BI #9) | Brain Injury Behaviour Changes (#14, published) | #14 = behaviour types, brain basis, response strategies. #9 = emotional/relational family adjustment only. Do not merge. |
 | Stages of Alzheimer's and What to Expect (Dementia #9) | Late Stage Dementia stub (#6) | Differentiate: #9 covers full progression, #6 covers final stages only |
 | Preventing Falls at Home (Navigating #16) | `/conditions/frailty-fall-prevention/` condition page | Article must add unique value beyond condition page (e.g., practical checklist vs. clinical overview) |
 | Home Safety for Seniors (Navigating #17) | Spring Home Safety Checklist (orphan article) | Merge or differentiate — both cover home safety |

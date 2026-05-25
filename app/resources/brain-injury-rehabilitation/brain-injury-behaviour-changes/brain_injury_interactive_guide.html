@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Document title set by Next.js page metadata -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --arcadia-navy: #1C2B3A;
+            --arcadia-accent: #C8302A;
+            --arcadia-body: #4B5563;
+            --arcadia-ink: #2D2D2D;
+            --arcadia-cream: #FAFAF8;
+            --arcadia-warm: #F7F3EE;
+            --arcadia-border: #E5E0D8;
+            --arcadia-muted-bg: #EEF2F7;
+            --color-background-primary: #ffffff;
+            --color-background-secondary: var(--arcadia-cream);
+            --color-background-tertiary: var(--arcadia-warm);
+            --color-background-info: var(--arcadia-warm);
+            --color-text-primary: var(--arcadia-navy);
+            --color-text-secondary: var(--arcadia-body);
+            --color-text-info: var(--arcadia-accent);
+            --color-border-tertiary: var(--arcadia-border);
+            --color-border-secondary: #D4CEC4;
+            --border-radius-md: 8px;
+            --border-radius-lg: 12px;
+            --fs-base: 1.0625rem;
+            --fs-sm: 1rem;
+            --fs-lg: 1.25rem;
+            --fs-xl: clamp(1.35rem, 2.5vw, 1.75rem);
+            --lh-body: 1.85;
+            --lh-tight: 1.5;
+        }
+        
+        .arcadia-interactive-guide .container,
+        .container {
+            font-family: 'DM Sans', system-ui, sans-serif;
+            font-size: var(--fs-base);
+            line-height: var(--lh-body);
+            color: var(--arcadia-body);
+            max-width: 100%;
+            margin: 0;
+            background: #fff;
+            border: 1px solid var(--arcadia-border);
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+        }
+        
+        .tabs {
+            display: flex;
+            gap: 4px;
+            padding: 0 2rem;
+            border-bottom: 0.5px solid var(--color-border-tertiary);
+            background: var(--color-background-primary);
+            flex-wrap: wrap;
+        }
+        
+        .tab-btn {
+            padding: 14px 18px;
+            background: none;
+            border: none;
+            font-size: var(--fs-base);
+            font-weight: 600;
+            cursor: pointer;
+            color: var(--color-text-secondary);
+            border-bottom: 3px solid transparent;
+            transition: all 0.2s;
+        }
+        
+        .tab-btn:hover {
+            color: var(--arcadia-navy);
+        }
+        
+        .tab-btn.active {
+            color: var(--arcadia-accent);
+            border-bottom-color: var(--arcadia-accent);
+        }
+        
+        .tab-content {
+            display: none;
+            padding: 2rem 2rem 2.5rem;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .section {
+            margin-bottom: 2rem;
+        }
+        
+        .section h2 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: var(--fs-xl);
+            font-weight: 600;
+            margin: 0 0 1rem;
+            line-height: 1.25;
+            color: var(--arcadia-navy);
+        }
+        
+        .section h3 {
+            font-size: var(--fs-lg);
+            font-weight: 600;
+            margin: 1.5rem 0 0.75rem;
+            line-height: var(--lh-tight);
+            color: var(--arcadia-navy);
+        }
+        
+        .section p,
+        .section .lead-muted {
+            margin: 0 0 0.85rem;
+            font-size: var(--fs-base);
+            line-height: var(--lh-body);
+        }
+        
+        .section .lead-muted {
+            color: var(--color-text-secondary);
+        }
+        
+        .visual-block {
+            background: var(--arcadia-cream);
+            border: 1px solid var(--arcadia-border);
+            border-radius: var(--border-radius-lg);
+            padding: 1.75rem 1.5rem;
+            margin: 1.75rem 0;
+            overflow: hidden;
+        }
+        
+        .visual-block-toolkit {
+            padding: 1.5rem 1.25rem 1.35rem;
+        }
+        
+        @media (max-width: 639px) {
+            .visual-block-toolkit {
+                padding: 1.25rem 1rem 1.15rem;
+            }
+        }
+        
+        .visual-title {
+            font-family: 'DM Sans', system-ui, sans-serif;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--arcadia-accent);
+            margin-bottom: 1.25rem;
+        }
+        
+        .recovery-timeline-steps {
+            display: grid;
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+            gap: 1rem 0.75rem;
+            list-style: none;
+            padding: 0;
+            margin: 0.5rem 0 0;
+            position: relative;
+        }
+        
+        .recovery-timeline-steps::before {
+            content: '';
+            position: absolute;
+            top: 9px;
+            left: 8%;
+            right: 8%;
+            height: 3px;
+            background: var(--arcadia-border);
+            z-index: 0;
+        }
+        
+        .recovery-step {
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            padding: 0 0.25rem;
+        }
+        
+        .recovery-step-dot {
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            box-shadow: 0 0 0 4px var(--arcadia-cream);
+            border: 2px solid #fff;
+        }
+        
+        .recovery-step-period {
+            display: block;
+            font-size: var(--fs-sm);
+            font-weight: 600;
+            color: var(--arcadia-body);
+            margin-bottom: 0.4rem;
+        }
+        
+        .recovery-step-phase {
+            display: block;
+            font-size: var(--fs-lg);
+            font-weight: 700;
+            color: var(--arcadia-navy);
+            margin-bottom: 0.35rem;
+        }
+        
+        .recovery-step-detail {
+            display: block;
+            font-size: var(--fs-base);
+            line-height: var(--lh-tight);
+            color: var(--arcadia-body);
+        }
+        
+        .recovery-timeline-note {
+            text-align: center;
+            font-size: var(--fs-base);
+            font-style: italic;
+            line-height: var(--lh-body);
+            color: var(--color-text-secondary);
+            margin: 1.5rem 0 0;
+            padding-top: 1.25rem;
+            border-top: 1px dashed var(--color-border-tertiary);
+        }
+        
+        .behavior-card {
+            background: var(--color-background-secondary);
+            border: 0.5px solid var(--color-border-tertiary);
+            border-radius: var(--border-radius-lg);
+            padding: 1.25rem 1.35rem;
+            margin-bottom: 0.85rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .behavior-card:hover {
+            background: var(--color-background-tertiary);
+            border-color: var(--color-border-secondary);
+        }
+        
+        .behavior-card.selected {
+            border-color: var(--arcadia-accent);
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(28, 43, 58, 0.08);
+        }
+        
+        .behavior-title {
+            font-weight: 600;
+            font-size: var(--fs-lg);
+            margin-bottom: 0.35rem;
+            line-height: var(--lh-tight);
+            color: var(--arcadia-navy);
+        }
+        
+        .behavior-lobe {
+            font-size: var(--fs-sm);
+            color: var(--color-text-secondary);
+            margin-bottom: 0.5rem;
+            font-style: italic;
+        }
+        
+        .expand-icon {
+            font-size: var(--fs-sm);
+            font-weight: 600;
+            color: var(--arcadia-accent);
+        }
+        
+        .strategy-detail {
+            background: var(--color-background-primary);
+            border: 0.5px solid var(--color-border-tertiary);
+            border-radius: var(--border-radius-lg);
+            padding: 1.5rem 1.65rem;
+            margin-top: 1rem;
+        }
+        
+        .strategy-detail p {
+            font-size: var(--fs-base);
+            line-height: var(--lh-body);
+        }
+        
+        .strategy-detail h3 {
+            margin-top: 0;
+        }
+        
+        .strategy-list {
+            margin: 0.75rem 0 0.75rem 1.5rem;
+            padding: 0;
+        }
+        
+        .strategy-list li {
+            margin-bottom: 0.65rem;
+            font-size: var(--fs-base);
+            line-height: var(--lh-body);
+        }
+        
+        .callout {
+            background: var(--arcadia-warm);
+            border-left: 4px solid var(--arcadia-accent);
+            padding: 1.25rem 1.5rem;
+            border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0;
+            margin: 1.25rem 0;
+        }
+        
+        .callout p {
+            color: var(--arcadia-body);
+        }
+        
+        .callout p {
+            margin: 0;
+            font-size: var(--fs-base);
+            line-height: var(--lh-body);
+        }
+        
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        
+        @media (max-width: 900px) {
+            .recovery-timeline-steps {
+                grid-template-columns: 1fr;
+                gap: 1.25rem;
+            }
+            
+            .recovery-timeline-steps::before {
+                display: none;
+            }
+            
+            .recovery-step {
+                text-align: left;
+                display: grid;
+                grid-template-columns: 16px 1fr;
+                grid-template-rows: auto auto auto;
+                column-gap: 1rem;
+                row-gap: 0.2rem;
+                align-items: start;
+            }
+            
+            .recovery-step-dot {
+                grid-row: 1 / span 3;
+                margin: 0.35rem 0 0;
+            }
+            
+            .recovery-step-period,
+            .recovery-step-phase,
+            .recovery-step-detail {
+                text-align: left;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            
+            .tab-content {
+                padding: 1.25rem 1rem 1.75rem;
+            }
+            
+            .tabs {
+                padding: 0 1rem;
+            }
+        }
+        
+        .card {
+            background: var(--color-background-secondary);
+            border: 0.5px solid var(--color-border-tertiary);
+            border-radius: var(--border-radius-lg);
+            padding: 1rem;
+        }
+        
+        .card h4 {
+            margin: 0 0 0.65rem;
+            font-size: var(--fs-lg);
+            font-weight: 600;
+        }
+        
+        .card p {
+            margin: 0 0 0.55rem;
+            font-size: var(--fs-base);
+            line-height: var(--lh-tight);
+            color: var(--color-text-primary);
+        }
+        
+        .lobe-button {
+            display: inline-block;
+            margin: 0.5rem 0.5rem 0.5rem 0;
+            padding: 12px 18px;
+            background: var(--color-background-secondary);
+            border: 0.5px solid var(--color-border-tertiary);
+            border-radius: var(--border-radius-md);
+            cursor: pointer;
+            font-size: var(--fs-base);
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+        
+        .lobe-button:hover {
+            background: var(--color-background-tertiary);
+            border-color: var(--color-border-secondary);
+        }
+        
+        .lobe-button.active {
+            background: var(--arcadia-navy);
+            color: #fff;
+            border-color: var(--arcadia-navy);
+        }
+        
+        .lobe-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 12px;
+            margin-bottom: 1.5rem;
+        }
+        
+        .lobe-chip {
+            background: #fff;
+            border: 1px solid var(--arcadia-border);
+            border-radius: var(--border-radius-md);
+            padding: 14px 12px;
+            text-align: center;
+        }
+        
+        .lobe-chip strong {
+            display: block;
+            font-size: var(--fs-base);
+            color: var(--arcadia-navy);
+            margin-bottom: 6px;
+        }
+        
+        .lobe-chip span {
+            display: block;
+            font-size: var(--fs-sm);
+            color: var(--arcadia-body);
+            line-height: var(--lh-tight);
+        }
+        
+        .injury-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .injury-list li {
+            position: relative;
+            padding: 10px 0 10px 1.25rem;
+            font-size: var(--fs-base);
+            line-height: var(--lh-body);
+            color: var(--arcadia-body);
+            border-bottom: 1px solid var(--arcadia-border);
+        }
+        
+        .injury-list li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 1.1rem;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--arcadia-accent);
+        }
+        
+        .injury-list li:last-child {
+            border-bottom: none;
+        }
+        
+        /* Daily Recovery Toolkit — scoped layout (max 2 columns, no overflow) */
+        .daily-toolkit {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+            width: 100%;
+        }
+        
+        @media (min-width: 640px) {
+            .daily-toolkit {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+        
+        .daily-toolkit-item {
+            min-width: 0;
+            background: #fff;
+            border: 1px solid var(--arcadia-border);
+            border-radius: var(--border-radius-lg);
+            padding: 1.15rem 1.25rem 1.1rem;
+            border-left: 4px solid var(--arcadia-navy);
+        }
+        
+        .daily-toolkit-item:nth-child(4n+1) { border-left-color: var(--arcadia-accent); }
+        .daily-toolkit-item:nth-child(4n+2) { border-left-color: var(--arcadia-navy); }
+        .daily-toolkit-item:nth-child(4n+3) { border-left-color: #6B7280; }
+        .daily-toolkit-item:nth-child(4n) { border-left-color: var(--arcadia-navy); }
+        
+        .container .daily-toolkit-item h4 {
+            font-family: 'DM Sans', system-ui, sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 1.35;
+            color: var(--arcadia-navy);
+            margin: 0 0 0.6rem;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            white-space: normal;
+        }
+        
+        .daily-toolkit-item ul {
+            margin: 0;
+            padding: 0 0 0 1.15rem;
+            list-style: disc;
+        }
+        
+        .daily-toolkit-item li {
+            font-size: 0.9375rem;
+            line-height: 1.55;
+            color: var(--arcadia-body);
+            margin-bottom: 0.3rem;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+        
+        .daily-toolkit-item li:last-child {
+            margin-bottom: 0;
+        }
+        
+        .daily-toolkit-footnote {
+            margin: 1.25rem 0 0;
+            padding-top: 1rem;
+            border-top: 1px dashed var(--arcadia-border);
+            font-size: 0.9375rem;
+            font-style: italic;
+            line-height: 1.65;
+            color: var(--arcadia-body);
+            text-align: left;
+        }
+        
+        .pathway-visual {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            flex-wrap: wrap;
+            padding: 1rem 0;
+        }
+        
+        .pathway-stage {
+            flex: 1;
+            min-width: 100px;
+            text-align: center;
+            padding: 1rem;
+            background: #fff;
+            border: 1px solid var(--arcadia-border);
+            border-radius: var(--border-radius-md);
+        }
+        
+        .pathway-stage strong {
+            display: block;
+            font-size: var(--fs-lg);
+            color: var(--arcadia-navy);
+            margin-bottom: 0.35rem;
+        }
+        
+        .pathway-stage span {
+            font-size: var(--fs-sm);
+            color: var(--arcadia-body);
+        }
+        
+        .pathway-arrow {
+            font-size: 1.5rem;
+            color: var(--arcadia-accent);
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+        
+        .pathway-caption {
+            text-align: center;
+            margin-top: 1.25rem;
+            font-size: var(--fs-base);
+            color: var(--arcadia-body);
+        }
+        
+        .pathway-caption em {
+            display: block;
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 1.15rem;
+            font-style: italic;
+            color: var(--arcadia-navy);
+            margin-bottom: 0.35rem;
+        }
+        
+        .card-dont {
+            border-left: 4px solid var(--arcadia-accent) !important;
+        }
+        
+        .card-dont h4 {
+            color: var(--arcadia-accent) !important;
+        }
+        
+        .card-do {
+            border-left: 4px solid var(--arcadia-navy) !important;
+        }
+        
+        .card-do h4 {
+            color: var(--arcadia-navy) !important;
+        }
+        
+        .guide-disclaimer {
+            background: var(--arcadia-muted-bg);
+            padding: 1.25rem 1.5rem;
+            border-top: 1px solid var(--arcadia-border);
+            font-size: var(--fs-sm);
+            line-height: var(--lh-body);
+            color: var(--arcadia-body);
+            text-align: center;
+        }
+        
+        .guide-disclaimer strong {
+            color: var(--arcadia-navy);
+        }
+        
+        @media (max-width: 768px) {
+            .pathway-visual {
+                flex-direction: column;
+            }
+            .pathway-arrow {
+                transform: rotate(90deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="tabs">
+        <button class="tab-btn active" onclick="switchTab('survivors')">For Survivors</button>
+        <button class="tab-btn" onclick="switchTab('caregivers')">For Caregivers</button>
+        <button class="tab-btn" onclick="switchTab('understanding')">Brain Basics</button>
+        <button class="tab-btn" onclick="switchTab('resources')">Resources & Tools</button>
+    </div>
+
+    <!-- SURVIVORS TAB -->
+    <div id="survivors" class="tab-content active">
+        <div class="section">
+            <h2>What You're Experiencing</h2>
+            <p>A brain injury changes how you process the world. Some changes are immediately obvious; others develop over days or weeks as your brain heals. This guide helps you understand what's happening and practical ways to adapt.</p>
+            <p>Recovery isn't linear. Some days feel better than others. This is normal and expected.</p>
+        </div>
+
+        <div class="visual-block">
+            <div class="visual-title">Your Recovery Journey</div>
+            <ol class="recovery-timeline-steps" aria-label="Recovery phases after brain injury">
+                <li class="recovery-step">
+                    <span class="recovery-step-dot" style="background:#C8302A" aria-hidden="true"></span>
+                    <span class="recovery-step-period">Days 1–7</span>
+                    <span class="recovery-step-phase">Acute</span>
+                    <span class="recovery-step-detail">Rest & stability</span>
+                </li>
+                <li class="recovery-step">
+                    <span class="recovery-step-dot" style="background:#1C2B3A" aria-hidden="true"></span>
+                    <span class="recovery-step-period">Weeks 1–4</span>
+                    <span class="recovery-step-phase">Early</span>
+                    <span class="recovery-step-detail">Gentle activity</span>
+                </li>
+                <li class="recovery-step">
+                    <span class="recovery-step-dot" style="background:#6B7280" aria-hidden="true"></span>
+                    <span class="recovery-step-period">Weeks 2–12</span>
+                    <span class="recovery-step-phase">Active</span>
+                    <span class="recovery-step-detail">Gradual increases</span>
+                </li>
+                <li class="recovery-step">
+                    <span class="recovery-step-dot" style="background:#1C2B3A" aria-hidden="true"></span>
+                    <span class="recovery-step-period">Months 3+</span>
+                    <span class="recovery-step-phase">Ongoing</span>
+                    <span class="recovery-step-detail">New normal</span>
+                </li>
+                <li class="recovery-step">
+                    <span class="recovery-step-dot" style="background:#C8302A" aria-hidden="true"></span>
+                    <span class="recovery-step-period">6 months+</span>
+                    <span class="recovery-step-phase">Long-term</span>
+                    <span class="recovery-step-detail">Adaptation</span>
+                </li>
+            </ol>
+            <p class="recovery-timeline-note">Progress isn't linear. Ups and downs are normal.</p>
+        </div>
+
+        <div class="section">
+            <h2>Behaviours & What's Behind Them</h2>
+            <p class="lead-muted" style="margin-bottom: 1rem;">Click on a behaviour you're experiencing to understand its source and practical strategies.</p>
+            
+            <div id="survivor-behaviors"></div>
+            <div id="strategy-detail" style="display: none; margin-top: 1rem;">
+                <div id="strategy-content"></div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Moving Forward</h2>
+            <p><strong>Give yourself permission to recover at your own pace.</strong> Healing is not about speed; it's about steady progress. Some symptoms fade in weeks; others take months. That's okay.</p>
+            <ul class="strategy-list">
+                <li><strong>Track patterns:</strong> Notice which times of day you feel clearest. Schedule important activities then.</li>
+                <li><strong>Build rest into your routine:</strong> Recovery requires energy. Rest isn't laziness; it's healing.</li>
+                <li><strong>Stay connected:</strong> Tell trusted people what you're experiencing. Isolation makes recovery harder.</li>
+                <li><strong>Return to activities gradually:</strong> Work with your doctor to pace your return to work, school, or hobbies.</li>
+                <li><strong>Seek support when needed:</strong> Therapists, counselors, and support groups can help you process changes and build coping strategies.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- CAREGIVERS TAB -->
+    <div id="caregivers" class="tab-content">
+        <div class="section">
+            <h2>What You Need to Know</h2>
+            <p>Brain injury affects the whole person—and the whole family. Your loved one may look fine on the outside, but their brain is working hard to heal. Behavioural changes are neurological, not personal. Understanding this shifts the dynamic from frustration to compassion.</p>
+        </div>
+
+        <div class="visual-block">
+            <div class="visual-title">Brain Regions & Their Functions</div>
+            <div class="lobe-grid">
+                <div class="lobe-chip"><strong>Frontal</strong><span>Personality, impulse control</span></div>
+                <div class="lobe-chip"><strong>Parietal</strong><span>Touch, body awareness</span></div>
+                <div class="lobe-chip"><strong>Occipital</strong><span>Vision, colour processing</span></div>
+                <div class="lobe-chip"><strong>Temporal</strong><span>Memory, hearing</span></div>
+                <div class="lobe-chip"><strong>Cerebellum</strong><span>Balance, coordination</span></div>
+            </div>
+            <p style="font-weight: 600; color: var(--arcadia-navy); margin-bottom: 0.75rem;">When injury happens:</p>
+            <ul class="injury-list">
+                <li><strong>Frontal</strong> — personality changes, mood swings, poor judgment</li>
+                <li><strong>Parietal</strong> — numbness, balance difficulty, spatial confusion</li>
+                <li><strong>Occipital</strong> — vision loss, hallucinations, colour blindness</li>
+                <li><strong>Temporal</strong> — memory loss, language problems, seizures</li>
+                <li><strong>Cerebellum</strong> — clumsiness, slurred speech, tremors</li>
+            </ul>
+            <p class="recovery-timeline-note" style="border: none; padding-top: 0.75rem; margin-top: 0.5rem;">Location of injury determines which abilities change.</p>
+        </div>
+
+        <div class="callout">
+            <p><strong>Key insight:</strong> Behavioural changes are not choices—they're symptoms of where the injury occurred. A person with frontal lobe damage isn't being rude; their ability to self-monitor and regulate emotion is impaired.</p>
+        </div>
+
+        <div class="section">
+            <h2>Common Behaviours & How to Respond</h2>
+            <p class="lead-muted" style="margin-bottom: 1rem;">Click on each behaviour to see what's happening neurologically and how to support your loved one.</p>
+            
+            <div id="caregiver-behaviors"></div>
+            <div id="caregiver-strategy-detail" style="display: none; margin-top: 1rem;">
+                <div id="caregiver-strategy-content"></div>
+            </div>
+        </div>
+
+        <div class="visual-block">
+            <div class="visual-title">Communication Dos & Don'ts</div>
+            <div class="grid-2">
+                <div class="card card-dont">
+                    <h4>What doesn't work</h4>
+                    <p>✗ Arguing or reasoning</p>
+                    <p>✗ Taking it personally</p>
+                    <p>✗ Punishing behaviours</p>
+                    <p>✗ Expecting them to remember</p>
+                </div>
+                <div class="card card-do">
+                    <h4>What does work</h4>
+                    <p>✓ Stay calm & patient</p>
+                    <p>✓ Remember it's the injury</p>
+                    <p>✓ Remove triggers</p>
+                    <p>✓ Create routine & structure</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>When to Seek Professional Support</h2>
+            <p>Not every change requires a specialist, but certain situations benefit from expert guidance:</p>
+            <ul class="strategy-list">
+                <li><strong>Behavioural outbursts that are unsafe</strong> — A neuropsychologist or psychiatrist can assess medication needs and coping strategies.</li>
+                <li><strong>Severe memory loss affecting daily function</strong> — Occupational therapy and cognitive rehabilitation can help build compensatory strategies.</li>
+                <li><strong>Significant personality changes</strong> — A psychotherapist experienced in brain injury can help both of you adjust.</li>
+                <li><strong>Your own caregiver burnout</strong> — Support groups and respite care (including professional in-home support) are essential.</li>
+            </ul>
+        </div>
+
+        <div class="callout">
+            <p><strong>Remember:</strong> Professional in-home care can be transformative. Trained caregivers understand brain injury, recognize behavioral patterns, and provide both physical support and emotional stability. This isn't a sign of failure—it's a necessary tool for sustainable recovery.</p>
+        </div>
+
+        <div class="section">
+            <h2>Protecting Your Own Wellbeing</h2>
+            <ul class="strategy-list">
+                <li><strong>Set realistic expectations:</strong> Recovery is slow. Celebrate small wins.</li>
+                <li><strong>Create boundaries:</strong> You cannot control their recovery, only your response.</li>
+                <li><strong>Seek respite regularly:</strong> Time away is not selfish; it's necessary.</li>
+                <li><strong>Connect with other caregivers:</strong> People who've walked this path understand in ways others cannot.</li>
+                <li><strong>Talk to a therapist:</strong> Caregiver stress deserves professional support.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- BRAIN BASICS TAB -->
+    <div id="understanding" class="tab-content">
+        <div class="section">
+            <h2>How the Brain Works (Simply)</h2>
+            <p>Your brain is made of billions of cells called neurons. These cells form networks that control everything—how you think, feel, move, and behave. When injury damages these networks, the effects depend entirely on where the damage is.</p>
+            <p class="lead-muted">This is why no two brain injuries are alike. The location and severity of damage determine which abilities change.</p>
+        </div>
+
+        <div class="visual-block">
+            <div class="visual-title">Healing & Hope: Neural Pathways Rewiring</div>
+            <div class="pathway-visual" role="img" aria-label="Brain injury to recovery pathway">
+                <div class="pathway-stage">
+                    <strong>Injury</strong>
+                    <span>Disrupted pathways</span>
+                </div>
+                <span class="pathway-arrow" aria-hidden="true">→</span>
+                <div class="pathway-stage">
+                    <strong>Healing</strong>
+                    <span>Rest & therapy</span>
+                </div>
+                <span class="pathway-arrow" aria-hidden="true">→</span>
+                <div class="pathway-stage">
+                    <strong>Recovery</strong>
+                    <span>New pathways form</span>
+                </div>
+            </div>
+            <p class="pathway-caption">
+                <em>Your brain is rewiring itself every day</em>
+                Rest, therapy, and consistent support accelerate healing.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Understanding Brain Regions</h2>
+            <p>Click on each region to learn about its function and what happens when it's injured:</p>
+            
+            <div style="margin-bottom: 1rem;">
+                <button class="lobe-button" onclick="selectLobe('frontal')">Frontal Lobe</button>
+                <button class="lobe-button" onclick="selectLobe('temporal')">Temporal Lobe</button>
+                <button class="lobe-button" onclick="selectLobe('parietal')">Parietal Lobe</button>
+                <button class="lobe-button" onclick="selectLobe('occipital')">Occipital Lobe</button>
+                <button class="lobe-button" onclick="selectLobe('cerebellum')">Cerebellum</button>
+            </div>
+            
+            <div id="lobe-info"></div>
+        </div>
+
+        <div class="callout">
+            <p><strong>Critical point:</strong> The brain can heal and build new pathways. With time, targeted therapy, and consistent support, many functions improve. Recovery takes time, but improvement is possible.</p>
+        </div>
+    </div>
+
+    <!-- RESOURCES TAB -->
+    <div id="resources" class="tab-content">
+        <div class="section">
+            <h2>Self-Care Strategies</h2>
+            <p>Recovery requires protecting your energy and creating structure. These strategies help you manage symptoms while your brain heals:</p>
+        </div>
+
+        <div class="visual-block visual-block-toolkit">
+            <div class="visual-title">Daily Recovery Toolkit</div>
+            <div class="daily-toolkit" role="list">
+                <article class="daily-toolkit-item" role="listitem">
+                    <h4>Sleep &amp; Rest</h4>
+                    <ul>
+                        <li>8–10 hours nightly</li>
+                        <li>Consistent schedule</li>
+                        <li>Dark, cool room</li>
+                    </ul>
+                </article>
+                <article class="daily-toolkit-item" role="listitem">
+                    <h4>Gentle Movement</h4>
+                    <ul>
+                        <li>Short walks</li>
+                        <li>Light stretching</li>
+                        <li>Avoid overexertion</li>
+                    </ul>
+                </article>
+                <article class="daily-toolkit-item" role="listitem">
+                    <h4>Nutrition</h4>
+                    <ul>
+                        <li>Regular meals</li>
+                        <li>Stay hydrated</li>
+                        <li>Avoid alcohol</li>
+                    </ul>
+                </article>
+                <article class="daily-toolkit-item" role="listitem">
+                    <h4>Sensory Care</h4>
+                    <ul>
+                        <li>Quiet environments</li>
+                        <li>Limit screens</li>
+                        <li>Sunglasses if needed</li>
+                    </ul>
+                </article>
+                <article class="daily-toolkit-item" role="listitem">
+                    <h4>Tracking</h4>
+                    <ul>
+                        <li>Log symptoms</li>
+                        <li>Note patterns</li>
+                        <li>Share with doctor</li>
+                    </ul>
+                </article>
+                <article class="daily-toolkit-item" role="listitem">
+                    <h4>Pacing</h4>
+                    <ul>
+                        <li>Work 20 min, rest 10 min</li>
+                        <li>Adjust as needed</li>
+                    </ul>
+                </article>
+                <article class="daily-toolkit-item" role="listitem">
+                    <h4>Connection</h4>
+                    <ul>
+                        <li>Tell trusted people</li>
+                        <li>Join support groups</li>
+                        <li>Don't isolate</li>
+                    </ul>
+                </article>
+                <article class="daily-toolkit-item" role="listitem">
+                    <h4>Flexibility</h4>
+                    <ul>
+                        <li>Some days are harder</li>
+                        <li>Adjust expectations</li>
+                        <li>Progress still counts</li>
+                    </ul>
+                </article>
+            </div>
+            <p class="daily-toolkit-footnote">Pick 2–3 strategies that feel sustainable. Consistency matters more than perfection.</p>
+        </div>
+
+        <div class="section">
+            <h2>Support Resources</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h4>When You Need Help</h4>
+                    <p><strong>Neuropsychologist:</strong> For cognitive rehabilitation and behavioral assessment</p>
+                    <p><strong>Occupational Therapist:</strong> For daily living skills and adaptive strategies</p>
+                    <p><strong>Psychotherapist:</strong> For emotional adjustment and coping</p>
+                    <p><strong>Peer Support Groups:</strong> Connect with others on the same journey</p>
+                </div>
+                <div class="card">
+                    <h4>Crisis Support</h4>
+                    <p><strong>Red flag symptoms:</strong> Severe headache, loss of consciousness, seizures, slurred speech</p>
+                    <p><strong>What to do:</strong> Go to emergency room immediately</p>
+                    <p><strong>Suicidal thoughts:</strong> Call 988 (Suicide & Crisis Lifeline)</p>
+                    <p><strong>If overwhelmed:</strong> Tell someone. Reach out to your doctor or therapist.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Questions to Ask Your Doctor</h2>
+            <ul class="strategy-list">
+                <li>What warning signs should prompt me to seek emergency care?</li>
+                <li>What can I expect in my recovery? What's realistic for my situation?</li>
+                <li>Do I need diagnostic imaging or further testing?</li>
+                <li>What strategies help me manage my specific symptoms?</li>
+                <li>When can I return to work/school/sports? How do I pace the return?</li>
+                <li>Would I benefit from a referral to a specialist or therapist?</li>
+                <li>Are there medications that might help?</li>
+                <li>What resources exist for support—both for me and my family?</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="guide-disclaimer">
+        <p><strong>This guide is for educational purposes only and does not replace medical advice.</strong> Always consult with your healthcare provider about symptoms and treatment.</p>
+    </div>
+</div>
+
+<script>
+// All behavior data
+const survivorBehaviors = {
+    irritability: {
+        title: 'Irritability or Mood Swings',
+        lobe: 'Frontal & Temporal Lobes',
+        explanation: 'Your frontal and temporal lobes regulate emotion. When damaged, emotion regulation breaks down. You might feel intense anger at small triggers, or swing between moods without warning.',
+        strategies: [
+            'Recognize triggers: What situations make it worse? Fatigue? Stress? Loud environments?',
+            'Take breaks before you reach your limit. Remove yourself early.',
+            'Give yourself a phrase: "My brain is healing. This will pass."',
+            'Use grounding techniques: 5-4-3-2-1 (name 5 things you see, 4 you touch, 3 you hear, 2 you smell, 1 you taste).',
+            'Physical activity helps regulate mood—even a short walk matters.',
+            'Protect your sleep. Fatigue amplifies irritability dramatically.',
+            'Talk to your doctor if it\'s interfering with relationships or safety.'
+        ]
+    },
+    memory: {
+        title: 'Memory Problems or Confusion',
+        lobe: 'Temporal & Parietal Lobes',
+        explanation: 'Your temporal lobe stores and retrieves memories. Damage makes it hard to form new memories or recall recent events. You might repeat questions or feel lost even in familiar places.',
+        strategies: [
+            'Write everything down immediately. Keep a notebook with you.',
+            'Use a phone calendar with reminders for appointments and tasks.',
+            'Label items clearly: medicine containers, drawers, rooms.',
+            'Create a routine and stick to it. Predictability compensates for memory loss.',
+            'Ask people to give you information in writing when possible.',
+            'Don\'t pretend to remember something you don\'t. It\'s okay to say "I don\'t remember that."',
+            'Break information into smaller pieces. Too much at once won\'t stick.'
+        ]
+    },
+    impulsivity: {
+        title: 'Impulsive Decisions or Loss of Filter',
+        lobe: 'Frontal Lobe',
+        explanation: 'Your frontal lobe checks impulses and thinks before you act. When it\'s damaged, you might say things you regret, make risky financial decisions, or act without considering consequences.',
+        strategies: [
+            'Pause before major decisions. If it can wait 24 hours, sleep on it.',
+            'Talk it through with someone you trust first.',
+            'Remove temptation when possible: uninstall shopping apps, limit access to credit cards.',
+            'Use a script for situations where you struggle: "Let me think about that" instead of reacting immediately.',
+            'Notice your impulse patterns. Are there certain times or situations that trigger them?',
+            'Ask people close to you for gentle feedback. "Hey, that comment wasn\'t like you."',
+            'Be kind to yourself. You\'re not being stupid—your brain isn\'t finished healing.'
+        ]
+    },
+    fatigue: {
+        title: 'Extreme Fatigue or Difficulty Concentrating',
+        lobe: 'Frontal Lobe & General Brain Recovery',
+        explanation: 'The brain heals at the cellular level. This process demands enormous energy. Even simple tasks feel exhausting. Concentration is nearly impossible because your brain is working overtime just to function.',
+        strategies: [
+            'Stop expecting pre-injury productivity. Recovery requires rest.',
+            'Build in breaks throughout the day. Work 20 minutes, rest 10. Adjust the ratio as healing progresses.',
+            'Prioritize ruthlessly. Do the most important things when you\'re freshest.',
+            'Avoid unnecessary stimulation: limit screen time, choose quiet environments.',
+            'Sleep is healing. Aim for 8-10 hours and keep a consistent schedule.',
+            'Gentle movement (walking, stretching) helps energy levels—intense exercise can backfire.',
+            'Track your energy patterns. You might have good hours and bad hours.'
+        ]
+    },
+    balance: {
+        title: 'Balance Issues or Clumsiness',
+        lobe: 'Cerebellum & Motor Cortex',
+        explanation: 'Your cerebellum coordinates movement and balance. Damage here makes everyday movements feel uncoordinated. You might feel dizzy, trip easily, or have trouble with fine motor tasks.',
+        strategies: [
+            'Slow down. Rushing increases falls. Give yourself extra time.',
+            'Remove tripping hazards from your home: throw rugs, clutter, loose cords.',
+            'Hold onto walls, counters, or furniture when moving around.',
+            'Avoid heights or uneven surfaces until you\'ve regained stability.',
+            'Practice balance exercises on a flat, safe surface (your doctor can suggest specific ones).',
+            'Use assistive devices without shame: walkers, canes, grab bars—they\'re tools for safety.',
+            'Wear supportive, non-slip shoes.',
+            'Vision helps with balance. Avoid dark environments.'
+        ]
+    },
+    social: {
+        title: 'Difficulty with Social Situations',
+        lobe: 'Frontal Lobe & Parietal Lobe',
+        explanation: 'The frontal lobe and parts of the parietal lobe read social cues and manage social behavior. Damage here makes it hard to understand unwritten rules, read facial expressions, or manage conversation.',
+        strategies: [
+            'Start with one-on-one time instead of group settings.',
+            'Tell people: "I\'m working on this. If I miss something, tell me."',
+            'Prepare for social situations: know who\'s going, what to expect.',
+            'Give yourself an exit strategy. It\'s okay to leave if you get overwhelmed.',
+            'Stick to familiar topics rather than current events or complex debates.',
+            'Notice patterns: Are certain people or settings harder? Avoid them while healing.',
+            'Practice in low-stakes situations: chat with a cashier, neighbor—build confidence.',
+            'Remember: You\'re not losing yourself. You\'re in a healing process. This can improve.'
+        ]
+    },
+    headaches: {
+        title: 'Headaches or Sensitivity to Light/Sound',
+        lobe: 'Multiple regions (pain processing, sensory lobes)',
+        explanation: 'Brain injury often causes persistent headaches and sensory sensitivities. Bright lights or loud sounds can trigger severe pain or disorientation. These aren\'t imaginary—they\'re real neurological symptoms.',
+        strategies: [
+            'Keep a headache log: note triggers, timing, severity, what helped.',
+            'Use sunglasses and keep environments dimly lit when possible.',
+            'Wear earplugs or noise-canceling headphones in loud places.',
+            'Avoid fluorescent lighting—use soft, warm lighting at home.',
+            'Take breaks from screens regularly. Blue light filters may help.',
+            'Stay hydrated. Dehydration makes headaches worse.',
+            'Ask your doctor about pain management options—don\'t suffer in silence.',
+            'Identify your personal triggers and plan to avoid or manage them.'
+        ]
+    },
+    sleep: {
+        title: 'Sleep Problems (Too Much, Too Little, or Fragmented)',
+        lobe: 'Frontal Lobe & Brain Stem Injury',
+        explanation: 'Brain injury disrupts normal sleep-wake cycles. You might sleep 12+ hours and still feel exhausted, or struggle to fall asleep despite being exhausted. Both are common neurological effects.',
+        strategies: [
+            'Keep a consistent sleep schedule: same bedtime, same wake time, even weekends.',
+            'Make your bedroom dark, cool, and quiet. Blackout curtains are your friend.',
+            'Avoid screens one hour before bed. The blue light disrupts sleep.',
+            'No caffeine after early afternoon. It disrupts injured brains more.',
+            'Establish a relaxing bedtime routine: reading, gentle stretching, meditation.',
+            'If you can\'t sleep after 20 minutes, get up and do something calm elsewhere.',
+            'Daytime naps should be short (20-30 min max) and before 3pm.',
+            'Tell your doctor if sleep problems persist—medication may help.'
+        ]
+    },
+    anxiety: {
+        title: 'Feeling Overwhelmed or Anxious',
+        lobe: 'Frontal & Limbic System',
+        explanation: 'After brain injury, your nervous system is hypersensitive. Situations that felt manageable before now feel overwhelming. You might experience panic attacks or constant low-level anxiety.',
+        strategies: [
+            'Reduce stimulation. Small spaces, gentle people, quiet environments help.',
+            'Practice deep breathing: 4 counts in, hold 4, exhale 4. Repeat 5 times.',
+            'Say no more than yes. You\'re healing. Protecting your energy comes first.',
+            'Create a "calm kit": items that soothe you (soft blanket, calming music, journal).',
+            'Learn your anxiety triggers and plan ways to avoid or manage them.',
+            'Connect with others going through similar experiences. You\'re not alone.',
+            'Therapy (especially anxiety-focused) can teach you specific coping tools.',
+            'If anxiety becomes paralyzing, tell your doctor—treatment options exist.'
+        ]
+    },
+    appetite: {
+        title: 'Changes in Taste, Smell, or Appetite',
+        lobe: 'Temporal Lobe & Olfactory Regions',
+        explanation: 'Brain injury can damage the sensory processing areas. Food might taste different, smells might be overpowering, or you might lose appetite entirely despite your body needing fuel for healing.',
+        strategies: [
+            'Eat nutritious foods you actually enjoy, even if they\'re not "ideal".',
+            'Small, frequent meals are better than large ones if appetite is low.',
+            'Smoothies, soups, and soft foods are easier if eating feels difficult.',
+            'Don\'t force yourself. Nourishment should feel supportive, not punitive.',
+            'Ensure adequate protein and healthy fats for brain healing.',
+            'Stay hydrated. Dehydration makes fatigue and headaches worse.',
+            'Avoid harsh smells if you\'re sensitive. Ventilate your space well.',
+            'Know that taste and smell changes often improve with time as your brain heals.'
+        ]
+    }
+};
+
+const caregiverBehaviors = {
+    anger: {
+        title: 'Sudden Anger or Frustration',
+        lobe: 'Frontal Lobe Injury',
+        explanation: 'Frontal lobe injury damages the brain\'s ability to regulate emotion and impulse control. What looks like "bad behavior" is actually a symptom of brain damage. They\'re not choosing to be angry; their brain can\'t stop the reaction.',
+        strategies: [
+            '<strong>Stay calm:</strong> Your calm is contagious. If you react with anger, it escalates theirs.',
+            '<strong>Don\'t take it personally:</strong> The anger isn\'t really about you. It\'s their injury speaking.',
+            '<strong>Remove triggers:</strong> Learn what sets them off. Noise? Fatigue? Certain topics? Minimize those.',
+            '<strong>Give them space:</strong> Sometimes the kindest thing is to leave the room and let them cool down.',
+            '<strong>Avoid reasoning during anger:</strong> The angry brain can\'t hear logic. Wait until they\'re calm.',
+            '<strong>Validate without agreement:</strong> "I see you\'re frustrated" is different from "You\'re right to yell."',
+            '<strong>Create a signal:</strong> Work with them on a gesture that means "I need a break."',
+            '<strong>Protect yourself:</strong> If there\'s physical danger, step back or leave. Their safety and yours matter most.'
+        ]
+    },
+    repetitive: {
+        title: 'Repetitive Questions or Conversations',
+        lobe: 'Memory & Executive Function Injury',
+        explanation: 'Memory damage means they don\'t store the conversation. They\'re not asking to annoy you—they genuinely forgot you answered five minutes ago. Repetition feels new to them every time.',
+        strategies: [
+            '<strong>Answer patiently every time:</strong> From their perspective, it\'s the first time they\'ve asked.',
+            '<strong>Write it down:</strong> Point them to a note: "I answered this earlier. See the note on the board."',
+            '<strong>Use a log:</strong> Keep a daily log of what you told them so you don\'t contradict yourself.',
+            '<strong>Shorten answers:</strong> Long explanations won\'t stick anyway. Keep it brief.',
+            '<strong>Redirect after answering:</strong> Give the answer, then change the subject to something engaging.',
+            '<strong>Manage your frustration:</strong> This is one of the hardest caregiver experiences. Seek support. Your frustration is valid, but it\'s not their fault.',
+            '<strong>Take breaks:</strong> If you\'re about to lose patience, step away. Come back when you\'re ready.',
+            '<strong>Ask for help:</strong> Professional caregivers can share this burden.'
+        ]
+    },
+    withdrawn: {
+        title: 'Withdrawn or Depressed Mood',
+        lobe: 'Frontal & Temporal Lobe Changes',
+        explanation: 'Brain injury causes real neurological changes in mood regulation. They\'re not being lazy or ungrateful. Depression after brain injury is medical, not motivational.',
+        strategies: [
+            '<strong>Recognize it\'s not personality:</strong> Their withdrawal is a symptom, not a choice.',
+            '<strong>Invite without pressure:</strong> "I\'m going for a walk. Would you like to come?" Accept a no without judgment.',
+            '<strong>Gentle physical activity:</strong> Short walks, light stretching. Movement helps depression more than sitting.',
+            '<strong>Maintain routine:</strong> Regular meals, sleep, activity give structure and stability.',
+            '<strong>Social connection:</strong> Brief interactions with people they trust help more than isolation.',
+            '<strong>Talk to their doctor:</strong> Medication can help. This isn\'t something willpower can fix.',
+            '<strong>Validate their feelings:</strong> "This is hard. It\'s okay to feel sad." doesn\'t dismiss it as weakness.',
+            '<strong>Your presence matters:</strong> Sometimes just being there is enough. You don\'t need to fix it.'
+        ]
+    },
+    disinhibited: {
+        title: 'Inappropriate Comments or Behavior',
+        lobe: 'Frontal Lobe Injury',
+        explanation: 'The frontal lobe monitors behavior and stops us from saying or doing inappropriate things. When it\'s damaged, this filter is broken. They don\'t realize they\'re being inappropriate.',
+        strategies: [
+            '<strong>Address it privately:</strong> Public correction increases shame and defensiveness. Pull them aside.',
+            '<strong>Be specific and calm:</strong> "You made a comment about her weight. That hurt her feelings" is clearer than "You were rude."',
+            '<strong>Don\'t lecture:</strong> The frontal lobe damage means long explanations won\'t change future behavior. Keep it brief.',
+            '<strong>Anticipate and redirect:</strong> If certain topics trigger inappropriate comments, avoid those topics.',
+            '<strong>Set a signal:</strong> A private gesture that means "not appropriate" can help them self-correct over time.',
+            '<strong>Manage their access:</strong> Less stimulation and fewer trigger situations = fewer incidents.',
+            '<strong>Protect others:</strong> If they make others uncomfortable, limit group situations until they improve.',
+            '<strong>Remember they\'re learning:</strong> They\'re relearning social rules. It\'s like teaching a child, not punishing an adult.'
+        ]
+    },
+    denial: {
+        title: 'Denial of Problems or Lack of Awareness',
+        lobe: 'Frontal Lobe Injury',
+        explanation: 'Damage to self-awareness regions means they genuinely don\'t see that anything is wrong. They\'re not lying or being difficult. Their brain literally can\'t perceive the changes.',
+        strategies: [
+            '<strong>Don\'t argue about it:</strong> "You have a problem" vs. "I see things differently" will never work.',
+            '<strong>Focus on behavior, not awareness:</strong> Instead of "You\'re angry," say "When you yell, it scares me."',
+            '<strong>Let consequences teach:</strong> If they\'re aware enough to learn, real consequences (natural not punitive) help more than arguments.',
+            '<strong>Work around it:</strong> Since they don\'t see the problem, set up systems that compensate: reminders, written schedules, structured environments.',
+            '<strong>Be patient:</strong> Awareness can develop over time as they heal. Don\'t force it.',
+            '<strong>Protect them from risky decisions:</strong> If they don\'t see danger, you may need to make or approve decisions.',
+            '<strong>Involve their doctor:</strong> Sometimes medication helps with awareness. Other times, they need external structure permanently.',
+            '<strong>This is neurological, not defiance:</strong> It\'s frustrating, but it\'s not personal.'
+        ]
+    },
+    dependency: {
+        title: 'Increased Dependency & Loss of Initiative',
+        lobe: 'Frontal Lobe Injury',
+        explanation: 'Executive function—the ability to plan, start tasks, and make decisions—lives in the frontal lobe. Damage here means they can\'t start things without being told, and simple decisions feel overwhelming.',
+        strategies: [
+            '<strong>Give clear, specific instructions:</strong> "Eat breakfast" is too vague. "There\'s cereal and a bowl on the table. Pour cereal, add milk, eat it." is concrete.',
+            '<strong>Structure their day:</strong> A printed schedule removes the need for them to decide what\'s next.',
+            '<strong>Offer two choices, not open-ended:</strong> "Do you want to walk or sit outside?" is easier than "What do you want to do?"',
+            '<strong>Cue and reinforce:</strong> "It\'s lunchtime. Let\'s eat." Repeated gentle reminders help them internalize routine.',
+            '<strong>Break tasks into steps:</strong> Don\'t say "get ready for bed." Say: "Step 1: Go to the bathroom. Step 2: Brush your teeth. Step 3: Put on pajamas."',
+            '<strong>Celebrate independence moments:</strong> When they do something unprompted, notice it: "I saw you put your plate away!"',
+            '<strong>Prepare for the long term:</strong> Some people need structure and cueing indefinitely. That\'s not failure. Professional in-home care provides this reliably.',
+            '<strong>This isn\'t laziness:</strong> Their brain literally cannot generate initiative. Structure is the solution.'
+        ]
+    }
+};
+
+const lobeInfo = {
+    frontal: {
+        name: 'Frontal Lobe',
+        functions: 'Personality, decision-making, impulse control, movement, speech production',
+        damage: 'Personality changes, poor judgment, impulsivity, loss of emotional control, inability to start tasks, depression, irritability'
+    },
+    temporal: {
+        name: 'Temporal Lobe',
+        functions: 'Memory formation, language comprehension, emotion processing, hearing',
+        damage: 'Memory loss (especially recent), difficulty understanding language, behavioral changes, emotional swings, loss of hearing or sense of balance'
+    },
+    parietal: {
+        name: 'Parietal Lobe',
+        functions: 'Touch sensation, spatial awareness, body awareness, sensory processing',
+        damage: 'Numbness, inability to feel temperature, trouble recognizing objects, difficulty with balance or fine motor control'
+    },
+    occipital: {
+        name: 'Occipital Lobe',
+        functions: 'Vision and color processing',
+        damage: 'Vision loss, hallucinations, difficulty recognizing what they see, sensitivity to light'
+    },
+    cerebellum: {
+        name: 'Cerebellum',
+        functions: 'Coordination, balance, muscle control, movement refinement',
+        damage: 'Clumsiness, poor balance, slurred speech, tremors, difficulty with fine motor tasks, dizziness'
+    }
+};
+
+// Tab switching
+function switchTab(tabName) {
+    document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+    document.getElementById(tabName).classList.add('active');
+    event.target.classList.add('active');
+}
+
+// Behavior card toggling
+function toggleBehavior(element, behaviorId, isSurvivor) {
+    const wasSelected = element.classList.contains('selected');
+    
+    // Clear all selections in this section
+    const container = isSurvivor ? 'survivor-behaviors' : 'caregiver-behaviors';
+    document.getElementById(container).querySelectorAll('.behavior-card').forEach(card => {
+        card.classList.remove('selected');
+    });
+    
+    const detailId = isSurvivor ? 'strategy-detail' : 'caregiver-strategy-detail';
+    const contentId = isSurvivor ? 'strategy-content' : 'caregiver-strategy-content';
+    
+    if (wasSelected) {
+        document.getElementById(detailId).style.display = 'none';
+    } else {
+        element.classList.add('selected');
+        
+        const behaviors = isSurvivor ? survivorBehaviors : caregiverBehaviors;
+        const content = behaviors[behaviorId];
+        
+        if (content) {
+            let html = '<div class="strategy-detail">';
+            html += `<h3>${content.title}</h3>`;
+            html += `<p style="margin-bottom: 1rem;">${content.explanation}</p>`;
+            html += '<strong style="display: block; margin-bottom: 0.75rem;">Practical strategies:</strong>';
+            html += '<ul class="strategy-list">';
+            content.strategies.forEach(strategy => {
+                html += `<li>${strategy}</li>`;
+            });
+            html += '</ul></div>';
+            
+            document.getElementById(contentId).innerHTML = html;
+            document.getElementById(detailId).style.display = 'block';
+        }
+    }
+}
+
+// Lobe selection
+function selectLobe(lobe) {
+    document.querySelectorAll('.lobe-button').forEach(btn => btn.classList.remove('active'));
+    event.target.classList.add('active');
+    
+    const info = lobeInfo[lobe];
+    let html = '<div class="strategy-detail">';
+    html += `<h3>${info.name}</h3>`;
+    html += `<p><strong>Normal functions:</strong> ${info.functions}</p>`;
+    html += `<p><strong>When injured:</strong> ${info.damage}</p>`;
+    html += '</div>';
+    
+    document.getElementById('lobe-info').innerHTML = html;
+}
+
+// Initialize behaviors
+function initializeBehaviors() {
+    const survivorContainer = document.getElementById('survivor-behaviors');
+    const caregiverContainer = document.getElementById('caregiver-behaviors');
+    
+    // Survivor behaviors
+    Object.keys(survivorBehaviors).forEach(id => {
+        const behavior = survivorBehaviors[id];
+        const card = document.createElement('div');
+        card.className = 'behavior-card';
+        card.onclick = () => toggleBehavior(card, id, true);
+        card.innerHTML = `
+            <div class="behavior-title">${behavior.title}</div>
+            <div class="behavior-lobe">${behavior.lobe}</div>
+            <div class="expand-icon">▼ See strategies</div>
+        `;
+        survivorContainer.appendChild(card);
+    });
+    
+    // Caregiver behaviors
+    Object.keys(caregiverBehaviors).forEach(id => {
+        const behavior = caregiverBehaviors[id];
+        const card = document.createElement('div');
+        card.className = 'behavior-card';
+        card.onclick = () => toggleBehavior(card, id, false);
+        card.innerHTML = `
+            <div class="behavior-title">${behavior.title}</div>
+            <div class="behavior-lobe">${behavior.lobe}</div>
+            <div class="expand-icon">▼ See response strategies</div>
+        `;
+        caregiverContainer.appendChild(card);
+    });
+}
+
+// Initialize on load
+document.addEventListener('DOMContentLoaded', initializeBehaviors);
+</script>
+
+</body>
+</html>

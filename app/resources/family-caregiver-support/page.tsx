@@ -31,28 +31,10 @@ const articles = [
     status: 'live',
   },
   {
-    title: 'Balancing Work and Caregiving for an Aging Parent',
-    href: '/resources/family-caregiver-support/balancing-work-and-caregiving/',
-    description: 'Practical strategies for adult children managing jobs, families, and a parent who needs increasing support.',
-    status: 'coming',
-  },
-  {
     title: "When Siblings Disagree About a Parent's Care",
     href: '/resources/family-caregiver-support/siblings-disagree-parent-care/',
     description: 'Why family conflict around caregiving is common, and how to move forward without damaging relationships.',
     status: 'live',
-  },
-  {
-    title: 'The Emotional Impact of Caring for Aging Parents',
-    href: '/resources/family-caregiver-support/emotional-impact-caregiving/',
-    description: 'Grief, guilt, resentment, love: the emotional complexity of caregiving and how to hold it all.',
-    status: 'coming',
-  },
-  {
-    title: 'How Families Can Share Care Responsibilities',
-    href: '/resources/family-caregiver-support/sharing-care-responsibilities/',
-    description: 'A guide to dividing tasks fairly among family members, including those who live far away.',
-    status: 'coming',
   },
   {
     title: 'The Weight You Are Carrying',

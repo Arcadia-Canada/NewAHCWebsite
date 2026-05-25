@@ -3,7 +3,7 @@
 The complete article inventory across all five clusters. **This file is the live status tracker.** Every time an article publishes, change its status here from `Net New` or `Coming Soon` → `Published`, and add the live URL.
 
 Total inventory: **101 unique articles** across 5 clusters.
-Last updated: May 22, 2026 (Published: What Does a PSW Actually Do?)
+Last updated: May 25, 2026 (BI interactive behaviour guide published; #9/#14 differentiation flagged)
 
 ---
 
@@ -55,9 +55,9 @@ These 11 articles are the production priority. The pillar (P) is published. The 
 | 1   | Early Signs of Dementia in a Parent                  | Published   | Skip          | Live at `/resources/dementia-memory-care/early-signs-of-dementia-in-a-parent/`. |
 | 2   | Normal Aging vs. Dementia: What's the Difference?    | Published   | Skip          | Live at `/resources/dementia-memory-care/normal-aging-vs-dementia/`.            |
 | 3   | How to Introduce Home Care to a Parent with Dementia | Published   | Skip          | Live at `/resources/dementia-memory-care/introducing-home-care-dementia/`.      |
-| 4   | Managing Behaviour Changes in Dementia               | Coming Soon | Replace       | Stub created 2026-03-22. Deadline 2026-05-21. `/resources/dementia-memory-care/managing-dementia-behaviour-changes/`. |
-| 5   | Communication Strategies for Dementia                | Coming Soon | Replace       | Stub created 2026-03-22. Deadline 2026-05-21. `/resources/dementia-memory-care/communication-strategies-dementia/`.   |
-| 6   | Late Stage Dementia: What Families Need to Know      | Coming Soon | Replace       | Stub created 2026-03-22. Deadline 2026-05-21. `/resources/dementia-memory-care/late-stage-dementia/`.                 |
+| 4   | Managing Behaviour Changes in Dementia               | Net New     | Write         | Planned URL `/resources/dementia-memory-care/managing-dementia-behaviour-changes/`. Removed from cluster hub May 2026. |
+| 5   | Communication Strategies for Dementia                | Net New     | Write         | Planned URL `/resources/dementia-memory-care/communication-strategies-dementia/`. Removed from cluster hub May 2026. |
+| 6   | Late Stage Dementia: What Families Need to Know      | Net New     | Write         | Planned URL `/resources/dementia-memory-care/late-stage-dementia/`. Removed from cluster hub May 2026. |
 | 7   | How to Keep Someone with Dementia Safe at Home       | Net New     | Write         | Evergreen safety.                                                               |
 | 8   | When Should Someone with Dementia Stop Driving?      | Net New     | Write         | High volume. Sensitive.                                                         |
 | 9   | Stages of Alzheimer's and What to Expect             | Net New     | Differentiate | Avoid overlap with "Late Stage Dementia" stub (#6).                             |
@@ -89,12 +89,12 @@ These 11 articles are the production priority. The pillar (P) is published. The 
 | 6   | Mobility Support After Surgery or Illness         | Net New | Write | Planned URL `/resources/brain-injury-rehabilitation/mobility-support-after-surgery/`. Removed from cluster hub May 2026. |
 | 7   | Brain Injury Fatigue Explained                    | Net New     | Write   | High search volume.               |
 | 8   | Helping Brain Injury Patients Regain Independence | Net New     | Write   | —                                 |
-| 9   | Family Adjustment After Brain Injury              | Net New     | Write   | —                                 |
+| 9   | Family Adjustment After Brain Injury              | Net New     | Differentiate | ⚠️ vs #14: emotional/relational adjustment only — not behaviour mechanics. See `09-CLUSTER-INTEGRITY-RULES.md`. |
 | 10  | Home Safety After Neurological Injury             | Net New     | Write   | —                                 |
 | 11  | Supporting Emotional Changes After Brain Injury   | Net New     | Write   | —                                 |
 | 12  | Community Reintegration After Brain Injury        | Net New     | Write   | Merged with Social Reintegration. |
 | 13  | Memory Problems After Brain Injury                | Net New     | Write   | —                                 |
-| 14  | Brain Injury and Behaviour Changes                | Net New     | Write   | —                                 |
+| 14  | Brain Injury Behaviour Changes: A Family Guide (interactive) | **Published** | Skip | Live `/resources/brain-injury-rehabilitation/brain-injury-behaviour-changes/`. Primary: brain injury behaviour changes / managing behaviours after brain injury. Slug `brain-injury-behaviour-changes`. Behaviour-focused (what/why/how to respond). ⚠️ Differentiate from #9 before writing adjustment article. Phase 9 social TBD. |
 | 15  | Supporting Speech Recovery at Home                | Net New     | Write   | —                                 |
 | 16  | Helping Brain Injury Patients Return to Work      | Net New     | Write   | —                                 |
 | 17  | How Families Navigate Long-Term Recovery          | Net New     | Write   | —                                 |
@@ -115,11 +115,11 @@ These 11 articles are the production priority. The pillar (P) is published. The 
 | #   | Article                                                    | Status        | Action        | Notes                                                          |
 | --- | ---------------------------------------------------------- | ------------- | ------------- | -------------------------------------------------------------- |
 | 1   | Signs Your Parent Needs Home Care                          | **Published** | Skip          | Live at `/resources/navigating-home-care/signs-parent-needs-home-care/`. Published 2026-05-22. Master Prompt Art. 4 (H1: *How to Know When It Is Time*). |
-| 2   | When a Parent Resists Home Care                            | Coming Soon   | Replace       | Stub created 2026-03-22. Deadline 2026-05-21. ⚠️ URL redirects to cluster page — remove redirect before publishing. |
-| 3   | How to Choose a Home Care Provider in Ontario              | Coming Soon   | Replace       | Stub created 2026-03-22. Deadline 2026-05-21. Master prompt Art. 6 related. |
-| 4   | Private vs. Public Home Care in Ontario                    | Coming Soon   | Replace       | Stub created 2026-03-22. Deadline 2026-05-21. OHIP vs. private. |
-| 5   | Understanding Ontario Health atHome                        | Coming Soon   | Replace       | Stub created 2026-03-22. Deadline 2026-05-21. OHIP-funded care. |
-| 6   | Questions to Ask Before Hiring Home Care                   | Coming Soon   | Replace       | Stub created 2026-03-22. Deadline 2026-05-21. ⚠️ URL redirects to cluster page — remove redirect before publishing. |
+| 2   | When a Parent Resists Home Care                            | Net New       | Write         | Planned URL `/resources/navigating-home-care/when-a-parent-resists-home-care/`. Removed from cluster hub May 2026. ⚠️ Remove redirect before publishing. |
+| 3   | How to Choose a Home Care Provider in Ontario              | Net New       | Write         | Planned URL `/resources/navigating-home-care/choosing-home-care-provider-ontario/`. Removed from cluster hub May 2026. |
+| 4   | Private vs. Public Home Care in Ontario                    | Net New       | Write         | Planned URL `/resources/navigating-home-care/private-vs-public-home-care-ontario/`. Removed from cluster hub May 2026. |
+| 5   | Understanding Ontario Health atHome                        | Net New       | Write         | Planned URL `/resources/navigating-home-care/ontario-health-athome-funded-care/`. Removed from cluster hub May 2026. |
+| 6   | Questions to Ask Before Hiring Home Care                   | Net New       | Write         | Planned URL `/resources/navigating-home-care/questions-before-hiring-home-care/`. Removed from cluster hub May 2026. ⚠️ Remove redirect before publishing. |
 | 7   | How Much Does Home Care Cost in Ontario?                   | **Published** | Skip          | Live at `/resources/navigating-home-care/home-care-cost-ontario/`. Published 2026-05-22. Owns "home care cost Ontario" keyword. |
 | 8   | What Does a PSW Actually Do?                               | **Published** | Skip          | Live at `/resources/navigating-home-care/what-does-a-psw-do/`. Published 2026-05-22. Role explainer. |
 | 9   | **PILLAR: When the Person You Love Needs More Help**       | **Published** | Skip          | `/resources/navigating-home-care/when-parent-needs-more-help/` |
@@ -164,9 +164,9 @@ These 11 articles are the production priority. The pillar (P) is published. The 
 | 1   | The Conversation You Keep Putting Off            | **Published** | Skip          | Live at `/resources/family-caregiver-support/talking-to-parent-about-care/`. Master prompt Art. 1.                                                |
 | 2   | Caregiver Burnout: Warning Signs and What to Do  | **Published** | Skip          | Live at `/resources/family-caregiver-support/caregiver-burnout-warning-signs/`. H1: "The Exhaustion You Have Stopped Noticing." Redirect removed. |
 | 3   | When Siblings Disagree About a Parent's Care     | **Published** | Skip          | Live at `/resources/family-caregiver-support/siblings-disagree-parent-care/`. Master prompt Art. 2. Published 2026-05-16. |
-| 4   | Balancing Work and Caregiving                    | Coming Soon   | Replace       | Stub created 2026-03-22. Deadline 2026-05-21. `/resources/family-caregiver-support/balancing-work-and-caregiving/`. |
-| 5   | The Emotional Impact of Caring for Aging Parents | Coming Soon   | Replace       | Stub created 2026-03-22. Deadline 2026-05-21. `/resources/family-caregiver-support/emotional-impact-caregiving/`. |
-| 6   | How Families Can Share Care Responsibilities     | Coming Soon   | Replace       | Stub created 2026-03-22. Deadline 2026-05-21. `/resources/family-caregiver-support/sharing-care-responsibilities/`. |
+| 4   | Balancing Work and Caregiving                    | Net New       | Write         | Planned URL `/resources/family-caregiver-support/balancing-work-and-caregiving/`. Removed from cluster hub May 2026. |
+| 5   | The Emotional Impact of Caring for Aging Parents | Net New       | Write         | Planned URL `/resources/family-caregiver-support/emotional-impact-caregiving/`. Removed from cluster hub May 2026. |
+| 6   | How Families Can Share Care Responsibilities     | Net New       | Write         | Planned URL `/resources/family-caregiver-support/sharing-care-responsibilities/`. Removed from cluster hub May 2026. |
 | 7   | The Weight You Are Carrying and Why It Matters   | **Published** | Skip          | Live at `/resources/family-caregiver-support/weight-of-caregiving/`. Published 2026-05-22. Master Prompt Art. 5. |
 | 8   | The Guilt of Getting Help                        | Net New       | Write         | Master prompt Art. 8. No live equivalent.                                                                                                         |
 | 9   | Preparing for Decline Conversations              | Net New       | Write         | Pre-crisis planning. Differentiate from Art. 1.                                                                                                   |
@@ -213,10 +213,10 @@ These 11 articles are the production priority. The pillar (P) is published. The 
 
 | Status                        | Count                                   |
 | ----------------------------- | --------------------------------------- |
-| Published                     | 11 (3 dementia + 3 caregiver + 1 pillar + 4 navigating) |
-| Coming Soon stubs to replace  | 13 (3 dementia + 4 caregiver + 6 navigating) |
-| Requiring differentiation     | 8                                       |
-| Clean Net New, ready to write | 72                                      |
+| Published                     | 12 (3 dementia + 3 caregiver + 1 pillar + 4 navigating + 1 brain injury) |
+| Coming Soon stubs on hubs     | 0 (11 removed from hubs May 2026; now Net New below) |
+| Requiring differentiation     | 9 (includes BI #9 vs #14)                 |
+| Clean Net New, ready to write | 82                                      |
 | **Total**                     | **102**                                 |
 
 
@@ -230,31 +230,13 @@ These 11 articles are the production priority. The pillar (P) is published. The 
 
 ---
 
-## Coming Soon deadline tracker
+## Coming Soon deadline tracker (historical)
 
-All stubs created **2026-03-22**. Per `02-CONTENT-CLUSTERS.md` governance: stubs must be filled within 60 days or removed/`noindex`ed. **Deadline: 2026-05-21.**
+**May 25, 2026:** All remaining Coming Soon hub cards removed from Dementia, Family Caregiver Support, and Navigating Home Care cluster pages. Those 11 topics are **Net New** in the cluster tables above (no gray cards on site). Publish when ready; add each back to the hub `articles` array as `status: 'live'` when the article ships.
 
-| # | Stub | Cluster | URL | Deadline |
-|---|------|---------|-----|----------|
-| 1 | Signs Your Parent Needs Home Care | Navigating | `/resources/navigating-home-care/signs-parent-needs-home-care/` | 2026-05-21 |
-| 2 | When a Parent Resists Home Care | Navigating | `/resources/navigating-home-care/when-a-parent-resists-home-care/` | 2026-05-21 |
-| 3 | How to Choose a Home Care Provider in Ontario | Navigating | `/resources/navigating-home-care/choosing-home-care-provider-ontario/` | 2026-05-21 |
-| 4 | Private vs. Public Home Care in Ontario | Navigating | `/resources/navigating-home-care/private-vs-public-home-care-ontario/` | 2026-05-21 |
-| 5 | Understanding Ontario Health atHome | Navigating | `/resources/navigating-home-care/ontario-health-athome-funded-care/` | 2026-05-21 |
-| 6 | Questions to Ask Before Hiring Home Care | Navigating | `/resources/navigating-home-care/questions-before-hiring-home-care/` | 2026-05-21 |
-| ~~7~~ | ~~How Much Does Home Care Cost in Ontario?~~ | ~~Navigating~~ | ~~`/resources/navigating-home-care/home-care-cost-ontario/`~~ | ~~2026-05-21~~ — **Published 2026-05-22** |
-| ~~8~~ | ~~What Does a PSW Actually Do?~~ | ~~Navigating~~ | ~~`/resources/navigating-home-care/what-does-a-psw-do/`~~ | ~~2026-05-21~~ — **Published 2026-05-22** |
-| ~~9~~ | ~~When Siblings Disagree About a Parent's Care~~ | ~~Caregiver~~ | ~~`/resources/family-caregiver-support/siblings-disagree-parent-care/`~~ | ~~2026-05-21~~ — **Published 2026-05-16** |
-| 10 | Balancing Work and Caregiving | Caregiver | `/resources/family-caregiver-support/balancing-work-and-caregiving/` | 2026-05-21 |
-| 11 | The Emotional Impact of Caring for Aging Parents | Caregiver | `/resources/family-caregiver-support/emotional-impact-caregiving/` | 2026-05-21 |
-| 12 | How Families Can Share Care Responsibilities | Caregiver | `/resources/family-caregiver-support/sharing-care-responsibilities/` | 2026-05-21 |
-| 13 | Managing Behaviour Changes in Dementia | Dementia | `/resources/dementia-memory-care/managing-dementia-behaviour-changes/` | 2026-05-21 |
-| 14 | Communication Strategies for Dementia | Dementia | `/resources/dementia-memory-care/communication-strategies-dementia/` | 2026-05-21 |
-| 15 | Late Stage Dementia: What Families Need to Know | Dementia | `/resources/dementia-memory-care/late-stage-dementia/` | 2026-05-21 |
+Previously published from this tracker: Signs Your Parent Needs Home Care (2026-05-22), home care cost, PSW, siblings disagree.
 
-**Brain Injury (rows formerly 16–21):** Removed from this tracker May 2026 — those six topics were hub-only Coming Soon cards (no `page.tsx`). They are **Net New** in the Brain Injury cluster table above; publish when ready.
-
-**Action required by 2026-05-21:** Every remaining stub above must either be replaced with a full article or removed from its cluster page (and `noindex`ed if a thin URL existed). Unfilled stubs past deadline signal thin content to Google and erode domain trust.
+**Brain Injury:** Six hub-only cards removed May 2026 (no `page.tsx`); topics remain **Net New** in the Brain Injury cluster table.
 
 ---
 

@@ -180,11 +180,12 @@ Every internal link on the site should serve this flow. Authority moves from edu
 | **Primary service** | `/our-services/acquired-brain-injury-home-care/` |
 | **Primary condition** | `/conditions/acquired-brain-injury-support/` |
 | **Total articles** | 20 |
-| **Published** | 0 |
+| **Published** | 1 |
 | **Coming Soon stubs on cluster page** | 0 |
-| **Net New** | 20 |
+| **Net New** | 19 |
 
-No published articles yet. Cluster hub page lists no Coming Soon cards (six planned topics remain **Net New** in `AUTHORITY-MAP.md` until published).
+**Published:**
+- `/resources/brain-injury-rehabilitation/brain-injury-behaviour-changes/` — interactive behaviour guide (AUTHORITY-MAP #14)
 
 **Planned article URLs (not live — use `<!-- FUTURE-LINK -->` until pages exist):**
 - `/resources/brain-injury-rehabilitation/life-after-brain-injury/`

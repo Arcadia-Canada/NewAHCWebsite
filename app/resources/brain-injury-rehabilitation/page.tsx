@@ -1,6 +1,16 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
+const articles = [
+  {
+    title: 'Brain Injury Behaviour Changes: A Family Guide',
+    href: '/resources/brain-injury-rehabilitation/brain-injury-behaviour-changes/',
+    description:
+      'Interactive guide: what behaviour changes mean after ABI or stroke, why they happen, and practical ways families can respond at home.',
+    status: 'live' as const,
+  },
+]
+
 export const metadata: Metadata = {
   title: 'Brain Injury Resources for Families | Arcadia',
   description: 'Guides for families navigating life after acquired brain injury, stroke, or rehabilitation in Toronto — recovery at home, cognitive changes, and caregiver support.',
@@ -59,6 +69,14 @@ export default function BrainInjuryRehabHub() {
         .hub-articles-label { font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #C8302A; margin-bottom: 20px; }
         .hub-articles h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(1.5rem, 2.5vw, 2rem); font-weight: 600; color: #1C2B3A; margin-bottom: 28px; }
 
+        .article-card { border: 1px solid #E5E0D8; border-radius: 12px; padding: 24px 28px; margin-bottom: 16px; background: #fff; transition: border-color 0.15s; }
+        .article-card:hover { border-color: #C8302A; }
+        .article-card-title { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.25rem; font-weight: 600; margin-bottom: 8px; }
+        .article-card-title a { color: #1C2B3A; text-decoration: none; }
+        .article-card-title a:hover { color: #C8302A; }
+        .article-card p { font-size: 0.95rem; color: #4B5563; line-height: 1.75; margin: 0 0 12px; }
+        .article-card-arrow { font-size: 13px; font-weight: 700; color: #C8302A; text-decoration: none; }
+        .article-card-arrow:hover { text-decoration: underline; }
         .articles-placeholder { border: 1px solid #E5E0D8; border-radius: 12px; padding: 24px 28px; background: #FAFAF8; }
         .articles-placeholder p { font-size: 1rem; color: #4B5563; line-height: 1.85; margin: 0; }
         .articles-placeholder a { color: #C8302A; font-weight: 600; text-decoration: underline; text-decoration-color: rgba(200,48,42,0.3); text-underline-offset: 3px; }
@@ -129,9 +147,21 @@ export default function BrainInjuryRehabHub() {
               <p className="hub-articles-label">Articles in this collection</p>
               <h2>Brain Injury & Rehabilitation Guides</h2>
 
-              <div className="articles-placeholder">
+              {articles.map((article) => (
+                <div key={article.href} className="article-card">
+                  <div className="article-card-title">
+                    <Link href={article.href}>{article.title}</Link>
+                  </div>
+                  <p>{article.description}</p>
+                  <Link href={article.href} className="article-card-arrow">
+                    Open interactive guide →
+                  </Link>
+                </div>
+              ))}
+
+              <div className="articles-placeholder" style={{ marginTop: 24 }}>
                 <p>
-                  In-depth articles for this cluster are on the roadmap. For now, start with the{' '}
+                  More guides for this cluster are on the roadmap. For now, explore our{' '}
                   <Link href="/conditions/acquired-brain-injury-support/">acquired brain injury overview</Link>,{' '}
                   <Link href="/our-services/acquired-brain-injury-home-care/">ABI home care</Link>, and{' '}
                   <Link href="/our-services/rehabilitation-support/">rehabilitation support</Link> — or{' '}

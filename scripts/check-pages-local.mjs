@@ -66,6 +66,7 @@ const PATHS = [
   "/referral-form/",
   "/resources/",
   "/resources/brain-injury-rehabilitation/",
+  "/resources/brain-injury-rehabilitation/brain-injury-behaviour-changes/",
   "/resources/dementia-memory-care/",
   "/resources/dementia-memory-care/early-signs-of-dementia-in-a-parent/",
   "/resources/dementia-memory-care/introducing-home-care-dementia/",
