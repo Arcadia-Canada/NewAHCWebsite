@@ -21,13 +21,13 @@ const articles = [
   {
     title: 'The Conversation You Keep Putting Off',
     href: '/resources/family-caregiver-support/talking-to-parent-about-care/',
-    description: 'The talk about driving, finances, or accepting help — the one you keep meaning to have but somehow never quite start. A guide for families in Toronto and the GTA.',
+    description: 'The talk about driving, finances, or accepting help: the one you keep meaning to have but somehow never quite start. A guide for families in Toronto and the GTA.',
     status: 'live',
   },
   {
     title: 'The Exhaustion You Have Stopped Noticing',
     href: '/resources/family-caregiver-support/caregiver-burnout-warning-signs/',
-    description: "You have been tired for so long that tired has become your baseline. An honest look at caregiver burnout — what it actually feels like from the inside, and what structurally changes things.",
+    description: "You have been tired for so long that tired has become your baseline. An honest look at caregiver burnout: what it actually feels like from the inside, and what structurally changes things.",
     status: 'live',
   },
   {
@@ -39,13 +39,13 @@ const articles = [
   {
     title: "When Siblings Disagree About a Parent's Care",
     href: '/resources/family-caregiver-support/siblings-disagree-parent-care/',
-    description: 'Why family conflict around caregiving is common — and how to move forward without damaging relationships.',
+    description: 'Why family conflict around caregiving is common, and how to move forward without damaging relationships.',
     status: 'live',
   },
   {
     title: 'The Emotional Impact of Caring for Aging Parents',
     href: '/resources/family-caregiver-support/emotional-impact-caregiving/',
-    description: 'Grief, guilt, resentment, love — the emotional complexity of caregiving and how to hold it all.',
+    description: 'Grief, guilt, resentment, love: the emotional complexity of caregiving and how to hold it all.',
     status: 'coming',
   },
   {
@@ -194,10 +194,10 @@ export default function FamilyCaregiverSupportHub() {
       <main className="hub-page">
         <section className="hub-hero">
           <div className="hub-hero-inner">
-            <p className="hub-eyebrow">Resource Centre — Family Caregiver Support</p>
+            <p className="hub-eyebrow">Resource Centre: Family Caregiver Support</p>
             <h1>Support for Family Caregivers in Toronto</h1>
             <p>
-              Caring for an aging parent is one of the most meaningful things you can do — and one of the most
+              Caring for an aging parent is one of the most meaningful things you can do, and one of the most
               exhausting. These guides are written for adult children in the GTA who are managing their parent's
               care, often while balancing work, their own families, and their own emotional limits.
             </p>
@@ -209,13 +209,13 @@ export default function FamilyCaregiverSupportHub() {
             <div className="hub-intro">
               <p>
                 Family caregiving in Canada is often invisible labour. An estimated 8 million Canadians provide
-                unpaid care to a family member — and the majority of that weight falls on adult children,
+                unpaid care to a family member, and the majority of that weight falls on adult children,
                 particularly daughters. In Toronto's fast-paced, expensive environment, the pressure is acute.
               </p>
               <p>
                 Burnout is not a personal failure. It's a predictable outcome when the demands of caregiving
                 exceed the support available. These guides are here to help you recognize when you're
-                approaching your limit — and to lay out your options before a crisis forces the decision.
+                approaching your limit, and to lay out your options before a crisis forces the decision.
               </p>
               <p>
                 If respite or regular support would help right now, explore{' '}
@@ -259,7 +259,7 @@ export default function FamilyCaregiverSupportHub() {
                 <Link href="/resources/navigating-home-care/" style={{ color: '#C8302A', fontWeight: 600 }}>
                   navigating home care guides
                 </Link>{' '}
-                cover this in depth — including dementia-specific refusal.
+                cover this in depth, including dementia-specific refusal.
               </p>
             </div>
           </div>
@@ -267,7 +267,7 @@ export default function FamilyCaregiverSupportHub() {
           <aside className="hub-sidebar">
             <div className="sidebar-cta">
               <h3>Feeling overwhelmed?</h3>
-              <p>Talk to our team about respite options. No obligation — we listen first.</p>
+              <p>Talk to our team about respite options. No obligation. We listen first.</p>
               <a href="tel:8449770050" className="sidebar-phone">(844) 977-0050</a>
               <Link href="/contact/" className="btn-red-sm">Book a Free Consultation</Link>
             </div>
@@ -292,7 +292,7 @@ export default function FamilyCaregiverSupportHub() {
         <section className="hub-bottom-cta">
           <h2>You Don't Have to Carry This Alone</h2>
           <p>
-            Arcadia works alongside family caregivers across Toronto — providing the regular support that makes
+            Arcadia works alongside family caregivers across Toronto, providing the regular support that makes
             it possible to show up for your parent without losing yourself.
           </p>
           <a href="tel:8449770050" className="hub-bottom-cta-phone">(844) 977-0050</a>

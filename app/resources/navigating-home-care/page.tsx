@@ -3,13 +3,13 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Ontario Home Care Resources | Arcadia Home Care',
-  description: 'Practical guides for Ontario families making decisions about home care — costs, providers, public vs. private care, PSWs, and how to get started.',
+  description: 'Practical guides for Ontario families making decisions about home care: costs, providers, public vs. private care, PSWs, and how to get started.',
   alternates: {
     canonical: 'https://www.arcadiahomecare.ca/resources/navigating-home-care/',
   },
   openGraph: {
     title: 'How to Navigate Home Care in Ontario',
-    description: 'Practical guides for Ontario families making decisions about home care — costs, providers, public vs. private care, PSWs, and how to get started.',
+    description: 'Practical guides for Ontario families making decisions about home care: costs, providers, public vs. private care, PSWs, and how to get started.',
     url: 'https://www.arcadiahomecare.ca/resources/navigating-home-care/',
     type: 'website',
     locale: 'en_CA',
@@ -22,21 +22,21 @@ const articles = [
     title: 'When the Person You Love Needs More Help Than You Can Give',
     href: '/resources/navigating-home-care/when-parent-needs-more-help/',
     description:
-      'The emotional starting point for GTA families: naming the moment home care may be needed, understanding Ontario\'s system, and what support can look like — without pressure.',
+      'The emotional starting point for GTA families: naming the moment home care may be needed, understanding Ontario\'s system, and what support can look like, without pressure.',
     status: 'live' as const,
   },
   {
     title: 'What Good Care Actually Looks Like',
     href: '/resources/navigating-home-care/recognizing-quality-home-care/',
     description:
-      'Not the brochure version. What quality home care actually looks and feels like once it is in your parent\u2019s home \u2014 the signs care is working, what to watch for, and what families should expect.',
+      "Not the brochure version. What quality home care actually looks and feels like once it is in your parent's home: the signs care is working, what to watch for, and what families should expect.",
     status: 'live' as const,
   },
   {
     title: 'What No One Tells You About the First Week of Home Care',
     href: '/resources/navigating-home-care/what-no-one-tells-you-first-week-home-care/',
     description:
-      'The adjustment period nobody prepares you for \u2014 what your parent is feeling, what the caregiver is navigating, and how to tell the difference between a rough start and a real problem.',
+      'The adjustment period nobody prepares you for: what your parent is feeling, what the caregiver is navigating, and how to tell the difference between a rough start and a real problem.',
     status: 'live' as const,
   },
   {
@@ -48,19 +48,19 @@ const articles = [
   {
     title: 'When a Parent Resists Home Care',
     href: '/resources/navigating-home-care/when-a-parent-resists-home-care/',
-    description: 'Why parents refuse help — and how to have conversations that reduce resistance without damaging trust. Includes dementia-specific guidance.',
+    description: 'Why parents refuse help, and how to have conversations that reduce resistance without damaging trust. Includes dementia-specific guidance.',
     status: 'coming',
   },
   {
     title: 'How to Choose a Home Care Provider in Ontario',
     href: '/resources/navigating-home-care/choosing-home-care-provider-ontario/',
-    description: 'What separates strong home care agencies from weak ones — questions to ask, red flags to watch for, and how to compare your options.',
+    description: 'What separates strong home care agencies from weak ones: questions to ask, red flags to watch for, and how to compare your options.',
     status: 'coming',
   },
   {
     title: 'Private vs. Public Home Care in Ontario',
     href: '/resources/navigating-home-care/private-vs-public-home-care-ontario/',
-    description: 'A clear breakdown of the differences between Ontario Health atHome (publicly funded) and private home care — and how most families use both.',
+    description: 'A clear breakdown of the differences between Ontario Health atHome (publicly funded) and private home care, and how most families use both.',
     status: 'coming',
   },
   {
@@ -72,7 +72,7 @@ const articles = [
   {
     title: 'Questions to Ask Before Hiring Home Care',
     href: '/resources/navigating-home-care/questions-before-hiring-home-care/',
-    description: 'Twenty questions that separate the right agency from the wrong one — covering caregivers, communication, continuity, and cost.',
+    description: 'Twenty questions that separate the right agency from the wrong one, covering caregivers, communication, continuity, and cost.',
     status: 'coming',
   },
   {
@@ -84,7 +84,7 @@ const articles = [
   {
     title: 'What Does a PSW Actually Do?',
     href: '/resources/navigating-home-care/what-does-a-psw-do/',
-    description: "A plain-language guide to the role of a Personal Support Worker — what they're trained for, what they can and can't do, and what to expect.",
+    description: "A plain-language guide to the role of a Personal Support Worker: what they're trained for, what they can and can't do, and what to expect.",
     status: 'live' as const,
   },
 ]
@@ -231,11 +231,11 @@ export default function NavigatingHomeCareHub() {
       <main className="hub-page">
         <section className="hub-hero">
           <div className="hub-hero-inner">
-            <p className="hub-eyebrow">Resource Centre — Navigating Home Care</p>
+            <p className="hub-eyebrow">Resource Centre: Navigating Home Care</p>
             <h1>How to Navigate Home Care in Ontario</h1>
             <p>
-              If you're trying to understand how home care works in Ontario — what it costs, how to find the
-              right provider, what public funding covers, and how to get a resistant parent on board — these
+              If you're trying to understand how home care works in Ontario (what it costs, how to find the
+              right provider, what public funding covers, and how to get a resistant parent on board), these
               guides are for you. Written for GTA families making decisions, often for the first time.
             </p>
           </div>
@@ -250,7 +250,7 @@ export default function NavigatingHomeCareHub() {
                 how it works before you need it urgently is a significant advantage.
               </p>
               <p>
-                These articles cover the most common questions families bring to Arcadia — from "how do I know
+                These articles cover the most common questions families bring to Arcadia, from "how do I know
                 it's time?" to "what will this actually cost?" We've written them to be direct, Ontario-specific,
                 and useful at any stage of the decision.
               </p>
@@ -273,7 +273,7 @@ export default function NavigatingHomeCareHub() {
                   </Link>
                 </h3>
                 <p>
-                  The emotional starting point for GTA families. Not a sales pitch — an honest look at the
+                  The emotional starting point for GTA families. Not a sales pitch. An honest look at the
                   moment when adjusting quietly has stopped being enough. If you read one article in this
                   collection, read this one.
                 </p>
@@ -313,8 +313,8 @@ export default function NavigatingHomeCareHub() {
                 our team directly.{' '}
                 <Link href="/how-care-starts/first-conversation/" style={{ color: '#C8302A', fontWeight: 600 }}>
                   Here's what our first conversation looks like
-                </Link>{' '}
-                — no pressure, no commitment, just a chance to understand your options.
+                </Link>
+                . No pressure, no commitment, just a chance to understand your options.
               </p>
             </div>
           </div>
@@ -322,7 +322,7 @@ export default function NavigatingHomeCareHub() {
           <aside className="hub-sidebar">
             <div className="sidebar-cta">
               <h3>Have a question?</h3>
-              <p>Our team will answer it honestly — whether or not you hire us.</p>
+              <p>Our team will answer it honestly, whether or not you hire us.</p>
               <a href="tel:8449770050" className="sidebar-phone">(844) 977-0050</a>
               <Link href="/contact/" className="btn-red-sm">Book a Free Consultation</Link>
             </div>
@@ -348,7 +348,7 @@ export default function NavigatingHomeCareHub() {
           <h2>Ready to Talk to Someone Who Knows the System?</h2>
           <p>
             Arcadia has been navigating Ontario's home care landscape with Toronto families since 2005.
-            Call us or book a free consultation — we'll help you understand your options clearly.
+            Call us or book a free consultation, and we'll help you understand your options clearly.
           </p>
           <a href="tel:8449770050" className="hub-bottom-cta-phone">(844) 977-0050</a>
           <div className="cta-buttons">
