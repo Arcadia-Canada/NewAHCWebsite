@@ -11,7 +11,8 @@ export default function MobileStickyBar() {
           right: 0,
           zIndex: 99,
           background: colors.primary,
-          borderTop: `2px solid ${colors.accent}`,
+          borderTop: "1px solid rgba(255,255,255,0.12)",
+          boxShadow: "0 -4px 24px rgba(0,0,0,0.35)",
           display: "flex",
           fontFamily: "'DM Sans', system-ui, sans-serif",
         }}

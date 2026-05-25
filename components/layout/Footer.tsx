@@ -80,45 +80,141 @@ function FooterSocialLinks({ className }: { className: string }) {
 
 export default function Footer() {
   return (
-    <footer
-      style={{
-        fontFamily: "'DM Sans', system-ui, sans-serif",
-      }}
-    >
+    <footer className="site-footer" style={{ fontFamily: "'DM Sans', system-ui, sans-serif" }}>
       <style>{`
-        .footer-main-grid {
+        .site-footer .footer-main-grid {
           display: grid;
           grid-template-columns: minmax(200px, 1.35fr) minmax(140px, 1fr) minmax(140px, 1fr) minmax(220px, 1.35fr);
           gap: 40px 32px;
           margin-bottom: 48px;
           align-items: start;
         }
-        @media (max-width: 900px) {
-          .footer-main-grid {
-            grid-template-columns: 1fr 1fr;
-          }
+        .site-footer .footer-heading {
+          color: #fff;
+          font-size: 13px;
+          font-weight: 700;
+          letter-spacing: 0.06em;
+          text-transform: uppercase;
+          margin: 0 0 20px;
         }
-        @media (max-width: 560px) {
-          .footer-main-grid {
-            grid-template-columns: 1fr;
-          }
+        .site-footer .footer-link {
+          display: block;
+          color: rgba(255,255,255,0.92);
+          text-decoration: none;
+          font-size: 14px;
+          margin-bottom: 10px;
+          transition: color 0.2s;
         }
-        .footer-social-desktop {
+        .site-footer .footer-link:hover {
+          color: #E8867F;
+        }
+        .site-footer .footer-intro {
+          font-size: 14px;
+          line-height: 1.7;
+          margin: 0;
+          color: rgba(255,255,255,0.82);
+        }
+        .site-footer .footer-social-desktop {
           display: flex;
           gap: 12px;
+          margin-top: 20px;
         }
-        .footer-social-mobile {
+        .site-footer .footer-social-mobile {
           display: none;
           gap: 12px;
           margin-top: 16px;
         }
+        .site-footer .footer-consult-btn {
+          display: inline-block;
+          margin-top: 20px;
+          background: ${colors.accent};
+          color: #fff;
+          padding: 12px 22px;
+          border-radius: 8px;
+          text-decoration: none;
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 1.3;
+          border: none;
+          box-sizing: border-box;
+        }
+        .site-footer .footer-legal {
+          border-top: 1px solid rgba(255,255,255,0.1);
+          padding-top: 24px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 12px;
+        }
+        .site-footer .footer-legal p,
+        .site-footer .footer-legal a {
+          font-size: 13px;
+          color: rgba(255,255,255,0.75);
+          margin: 0;
+        }
+        .site-footer .footer-legal a {
+          text-decoration: none;
+        }
+        @media (max-width: 900px) {
+          .site-footer .footer-main-grid {
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-bottom: 32px;
+          }
+          .site-footer .footer-panel {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 12px;
+            padding: 22px 20px;
+          }
+          .site-footer .footer-panel-intro {
+            grid-column: 1 / -1;
+          }
+        }
         @media (max-width: 768px) {
-          .footer-dark-section { padding-bottom: 80px; }
-          .footer-social-desktop {
+          .site-footer .footer-dark-section {
+            padding-bottom: calc(88px + env(safe-area-inset-bottom, 0px));
+          }
+          .site-footer .footer-main-grid {
+            grid-template-columns: 1fr;
+            gap: 16px;
+          }
+          .site-footer .footer-panel-intro {
+            grid-column: auto;
+          }
+          .site-footer .footer-panel-contact {
+            text-align: center;
+          }
+          .site-footer .footer-social-desktop {
             display: none;
           }
-          .footer-social-mobile {
+          .site-footer .footer-social-mobile {
             display: flex;
+            justify-content: center;
+          }
+          .site-footer .footer-consult-btn {
+            display: block;
+            width: 100%;
+            max-width: 320px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            text-align: center;
+          }
+          .site-footer .footer-legal {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            border-top-color: rgba(255,255,255,0.1);
+          }
+        }
+        @media (min-width: 769px) {
+          .site-footer .footer-panel {
+            background: transparent;
+            border: none;
+            border-radius: 0;
+            padding: 0;
           }
         }
       `}</style>
@@ -132,15 +228,8 @@ export default function Footer() {
       >
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
           <div className="footer-main-grid">
-            <div>
-              <p
-                style={{
-                  fontSize: 14,
-                  lineHeight: 1.7,
-                  margin: "0 0 20px",
-                  color: "rgba(255,255,255,0.82)",
-                }}
-              >
+            <div className="footer-panel footer-panel-intro">
+              <p className="footer-intro">
                 Clinical expertise and human compassion, together in the home.
                 <br />
                 Serving GTA families since 2005.
@@ -148,84 +237,26 @@ export default function Footer() {
               <FooterSocialLinks className="footer-social-desktop" />
             </div>
 
-            <div>
-              <h4
-                style={{
-                  color: "#fff",
-                  fontSize: 13,
-                  fontWeight: 700,
-                  letterSpacing: "0.06em",
-                  textTransform: "uppercase" as const,
-                  marginTop: 0,
-                  marginBottom: 20,
-                }}
-              >
-                Our Services
-              </h4>
+            <div className="footer-panel">
+              <h4 className="footer-heading">Our Services</h4>
               {serviceLinks.map(([label, href]) => (
-                <a
-                  key={label}
-                  href={href}
-                  style={{
-                    display: "block",
-                    color: "rgba(255,255,255,0.92)",
-                    textDecoration: "none",
-                    fontSize: 14,
-                    marginBottom: 10,
-                    transition: "color 0.2s",
-                  }}
-                >
+                <a key={label} href={href} className="footer-link">
                   {label}
                 </a>
               ))}
             </div>
 
-            <div>
-              <h4
-                style={{
-                  color: "#fff",
-                  fontSize: 13,
-                  fontWeight: 700,
-                  letterSpacing: "0.06em",
-                  textTransform: "uppercase" as const,
-                  marginTop: 0,
-                  marginBottom: 20,
-                }}
-              >
-                Arcadia
-              </h4>
+            <div className="footer-panel">
+              <h4 className="footer-heading">Arcadia</h4>
               {companyLinks.map(([label, href]) => (
-                <a
-                  key={label}
-                  href={href}
-                  style={{
-                    display: "block",
-                    color: "rgba(255,255,255,0.92)",
-                    textDecoration: "none",
-                    fontSize: 14,
-                    marginBottom: 10,
-                    transition: "color 0.2s",
-                  }}
-                >
+                <a key={label} href={href} className="footer-link">
                   {label}
                 </a>
               ))}
             </div>
 
-            <div>
-              <h4
-                style={{
-                  color: "#fff",
-                  fontSize: 13,
-                  fontWeight: 700,
-                  letterSpacing: "0.06em",
-                  textTransform: "uppercase" as const,
-                  marginTop: 0,
-                  marginBottom: 20,
-                }}
-              >
-                Contact
-              </h4>
+            <div className="footer-panel footer-panel-contact">
+              <h4 className="footer-heading">Contact</h4>
               <div style={{ marginBottom: 14 }}>
                 <a
                   href="tel:8449770050"
@@ -245,11 +276,8 @@ export default function Footer() {
               <div style={{ marginBottom: 14 }}>
                 <a
                   href="mailto:info@arcadiahomecare.ca"
-                  style={{
-                    color: "rgba(255,255,255,0.92)",
-                    textDecoration: "none",
-                    fontSize: 14,
-                  }}
+                  className="footer-link"
+                  style={{ marginBottom: 0 }}
                 >
                   info@arcadiahomecare.ca
                 </a>
@@ -257,50 +285,16 @@ export default function Footer() {
               <div style={{ fontSize: 13, lineHeight: 1.6, color: "rgba(255,255,255,0.65)" }}>
                 302 Bay Street, Toronto, Ontario M5H 0B6
               </div>
-              <a
-                href="/contact/"
-                style={{
-                  display: "inline-block",
-                  marginTop: 20,
-                  background: colors.accent,
-                  color: "#fff",
-                  padding: "10px 20px",
-                  borderRadius: 6,
-                  textDecoration: "none",
-                  fontSize: 13,
-                  fontWeight: 700,
-                }}
-              >
+              <a href="/contact/" className="footer-consult-btn">
                 Book a Consultation
               </a>
               <FooterSocialLinks className="footer-social-mobile" />
             </div>
           </div>
 
-          <div
-            style={{
-              borderTop: "1px solid rgba(255,255,255,0.08)",
-              paddingTop: 24,
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
-              flexWrap: "wrap",
-              gap: 12,
-            }}
-          >
-            <p style={{ fontSize: 13, color: "#ffffff" }}>
-              © 2026 Arcadia Home Care. All Rights Reserved.
-            </p>
-            <a
-              href="/privacy-policy/"
-              style={{
-                fontSize: 13,
-                color: "#ffffff",
-                textDecoration: "none",
-              }}
-            >
-              Privacy Policy
-            </a>
+          <div className="footer-legal">
+            <p>© 2026 Arcadia Home Care. All Rights Reserved.</p>
+            <a href="/privacy-policy/">Privacy Policy</a>
           </div>
         </div>
       </div>
