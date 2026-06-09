@@ -13,7 +13,7 @@ Following AI-CONTEXT.md and docs/: write [ARTICLE TITLE] for the [CLUSTER NAME] 
 
 Read in full: docs/02-CONTENT-CLUSTERS.md, docs/07-VOICE-AND-TONE.md, docs/AUTHORITY-MAP.md, docs/03-INTERNAL-LINKING-RULES.md.
 
-Reference as needed: docs/05-URL-CONVENTIONS.md (for slug), docs/04-SCHEMA-STANDARDS.md (for schema blocks), docs/CLUSTER-LINK-MAP.md (for cluster-specific structure).
+Reference as needed: docs/05-URL-CONVENTIONS.md (for slug), docs/04-SCHEMA-STANDARDS.md (for schema blocks), docs/CLUSTERLINKMAP.md (for cluster-specific structure).
 
 Do NOT read /social/ — per-article briefs and kits are not relevant to generating a new article. They are read only by the social-asset prompt below.
 
@@ -37,7 +37,7 @@ Do not use em dashes (—) anywhere in the draft. Per docs/07-VOICE-AND-TONE.md,
 ## Shorter version
 
 ```
-Per AI-CONTEXT and docs/: draft [TITLE] for cluster [NAME]. Read 02-CONTENT-CLUSTERS, 07-VOICE-AND-TONE, AUTHORITY-MAP, 03-INTERNAL-LINKING-RULES in full. Reference 05-URL-CONVENTIONS, 04-SCHEMA-STANDARDS, CLUSTER-LINK-MAP as needed. Skip /social/ entirely. Use Arcadia voice, live URLs only for internal links. Flag any conflict between my request and governance before drafting.
+Per AI-CONTEXT and docs/: draft [TITLE] for cluster [NAME]. Read 02-CONTENT-CLUSTERS, 07-VOICE-AND-TONE, AUTHORITY-MAP, 03-INTERNAL-LINKING-RULES in full. Reference 05-URL-CONVENTIONS, 04-SCHEMA-STANDARDS, CLUSTERLINKMAP as needed. Skip /social/ entirely. Use Arcadia voice, live URLs only for internal links. Do not use em dashes (—) anywhere in the draft. Flag any conflict before drafting.
 ```
 
 ---
@@ -73,7 +73,7 @@ Read docs/07-VOICE-AND-TONE.md for the voice rules.
 ## After you publish (update inventory)
 
 ```
-The article [TITLE] is now live at [FULL URL]. Update docs/AUTHORITY-MAP.md to Published and add that URL. Update docs/CLUSTER-LINK-MAP.md: move the article to "Published articles" in its cluster section, add its outbound links, update counts, and update the Master Prompt table if applicable. Update docs/10-KEYWORD-OWNERSHIP.md: move the keyword entry to "Published resource articles." Note any doc conflicts with the live site.
+The article [TITLE] is now live at [FULL URL]. Update docs/AUTHORITY-MAP.md to Published and add that URL. Update docs/CLUSTERLINKMAP.md: move the article to "Published articles" in its cluster section, add its outbound links, update counts, and update the Master Prompt table if applicable. Update docs/10-KEYWORD-OWNERSHIP.md: move the keyword entry to "Published resource articles." Note any doc conflicts with the live site.
 ```
 
 ---

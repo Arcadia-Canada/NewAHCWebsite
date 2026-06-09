@@ -218,7 +218,7 @@ const articles = [
 - [ ] Add cluster URL to footer navigation
 - [ ] Add to `app/sitemap.ts`
 - [ ] Update `02-CONTENT-CLUSTERS.md` status from PLANNED to LIVE
-- [ ] Update `CLUSTER-LINK-MAP.md` with the new cluster section
+- [ ] Update `CLUSTERLINKMAP.md` with the new cluster section
 
 ---
 

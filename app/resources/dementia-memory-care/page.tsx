@@ -28,24 +28,6 @@ const articles = [
     description: "Practical strategies for families navigating a parent's resistance, fear, or confusion about accepting help.",
     status: 'live',
   },
-  {
-    title: 'Managing Behaviour Changes in Dementia',
-    href: '/resources/dementia-memory-care/managing-dementia-behaviour-changes/',
-    description: 'How to understand and respond to aggression, sundowning, wandering, and other behavioural shifts.',
-    status: 'coming',
-  },
-  {
-    title: 'Communication Strategies for Dementia',
-    href: '/resources/dementia-memory-care/communication-strategies-dementia/',
-    description: 'What to say, how to say it, and what to avoid — a guide to connecting with a parent who has dementia.',
-    status: 'coming',
-  },
-  {
-    title: 'Late Stage Dementia: What Families Need to Know',
-    href: '/resources/dementia-memory-care/late-stage-dementia/',
-    description: 'An honest, compassionate overview of what to expect in the final stages and how to plan for comfort.',
-    status: 'coming',
-  },
 ]
 
 export default function DementiaMemoryCareHub() {

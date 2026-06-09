@@ -46,36 +46,6 @@ const articles = [
     status: 'live' as const,
   },
   {
-    title: 'When a Parent Resists Home Care',
-    href: '/resources/navigating-home-care/when-a-parent-resists-home-care/',
-    description: 'Why parents refuse help, and how to have conversations that reduce resistance without damaging trust. Includes dementia-specific guidance.',
-    status: 'coming',
-  },
-  {
-    title: 'How to Choose a Home Care Provider in Ontario',
-    href: '/resources/navigating-home-care/choosing-home-care-provider-ontario/',
-    description: 'What separates strong home care agencies from weak ones: questions to ask, red flags to watch for, and how to compare your options.',
-    status: 'coming',
-  },
-  {
-    title: 'Private vs. Public Home Care in Ontario',
-    href: '/resources/navigating-home-care/private-vs-public-home-care-ontario/',
-    description: 'A clear breakdown of the differences between Ontario Health atHome (publicly funded) and private home care, and how most families use both.',
-    status: 'coming',
-  },
-  {
-    title: 'Understanding Ontario Health atHome (OHIP-Funded Care)',
-    href: '/resources/navigating-home-care/ontario-health-athome-funded-care/',
-    description: 'How the publicly funded system works, what it covers, its limitations, and how to access it as a Toronto family.',
-    status: 'coming',
-  },
-  {
-    title: 'Questions to Ask Before Hiring Home Care',
-    href: '/resources/navigating-home-care/questions-before-hiring-home-care/',
-    description: 'Twenty questions that separate the right agency from the wrong one, covering caregivers, communication, continuity, and cost.',
-    status: 'coming',
-  },
-  {
     title: 'How Much Does Home Care Cost in Ontario?',
     href: '/resources/navigating-home-care/home-care-cost-ontario/',
     description: 'A transparent breakdown of private home care pricing in the GTA, what affects cost, and what to budget for different levels of care.',
@@ -85,6 +55,12 @@ const articles = [
     title: 'What Does a PSW Actually Do?',
     href: '/resources/navigating-home-care/what-does-a-psw-do/',
     description: "A plain-language guide to the role of a Personal Support Worker: what they're trained for, what they can and can't do, and what to expect.",
+    status: 'live' as const,
+  },
+  {
+    title: 'Spring Home Safety Checklist for Seniors',
+    href: '/resources/spring-home-safety-checklist-for-seniors/',
+    description: 'A practical room-by-room checklist for spotting safety risks at home, noticing early signs an aging parent may need more support, and knowing the next step.',
     status: 'live' as const,
   },
 ]

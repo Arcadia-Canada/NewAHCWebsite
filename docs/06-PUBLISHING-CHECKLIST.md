@@ -116,7 +116,7 @@ Keep governance and the live site in sync in **one commit** when practical.
 
 ✅ **7.1** — **`docs/AUTHORITY-MAP.md`** — Set status to **Published**, add the live URL, remove or adjust Coming Soon tracker rows if applicable.
 
-✅ **7.2** — **`docs/CLUSTER-LINK-MAP.md`** — Move the article to Published in its cluster, outbound links, counts, Master Prompt table if needed.
+✅ **7.2** — **`docs/CLUSTERLINKMAP.md`** — Move the article to Published in its cluster, outbound links, counts, Master Prompt table if needed.
 
 ✅ **7.3** — **`docs/10-KEYWORD-OWNERSHIP.md`** — Move keyword rows to the published section when this article owns that keyword.
 

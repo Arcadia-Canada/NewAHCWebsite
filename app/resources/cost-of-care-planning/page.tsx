@@ -2,49 +2,30 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Family Caregiver Support Resources | Arcadia Home Care',
-  description: 'Guides for Toronto family caregivers navigating burnout, sibling disagreements, emotional strain, and how to share the weight of caring for an aging parent.',
+  title: 'Cost of Home Care & Financial Planning | Arcadia Home Care',
+  description: 'Guides to help Toronto families understand what home care costs, how to pay for it, and how to plan financially for a parent\'s long-term care needs.',
   alternates: {
-    canonical: 'https://www.arcadiahomecare.ca/resources/family-caregiver-support/',
+    canonical: 'https://www.arcadiahomecare.ca/resources/cost-of-care-planning/',
   },
   openGraph: {
-    title: 'Support for Family Caregivers in Toronto',
-    description: 'Guides for Toronto family caregivers navigating burnout, sibling disagreements, emotional strain, and how to share the weight of caring for an aging parent.',
-    url: 'https://www.arcadiahomecare.ca/resources/family-caregiver-support/',
+    title: 'Cost of Care & Financial Planning | Arcadia Home Care',
+    description: 'Clear, honest guides on home care costs, insurance, government programs, and financial planning for Toronto families.',
+    url: 'https://www.arcadiahomecare.ca/resources/cost-of-care-planning/',
     type: 'website',
     locale: 'en_CA',
     siteName: 'Arcadia Home Care',
   },
 }
 
-const articles = [
-  {
-    title: 'The Conversation You Keep Putting Off',
-    href: '/resources/family-caregiver-support/talking-to-parent-about-care/',
-    description: 'The talk about driving, finances, or accepting help: the one you keep meaning to have but somehow never quite start. A guide for families in Toronto and the GTA.',
-    status: 'live',
-  },
-  {
-    title: 'The Exhaustion You Have Stopped Noticing',
-    href: '/resources/family-caregiver-support/caregiver-burnout-warning-signs/',
-    description: "You have been tired for so long that tired has become your baseline. An honest look at caregiver burnout: what it actually feels like from the inside, and what structurally changes things.",
-    status: 'live',
-  },
-  {
-    title: "When Siblings Disagree About a Parent's Care",
-    href: '/resources/family-caregiver-support/siblings-disagree-parent-care/',
-    description: 'Why family conflict around caregiving is common, and how to move forward without damaging relationships.',
-    status: 'live',
-  },
-  {
-    title: 'The Weight You Are Carrying',
-    href: '/resources/family-caregiver-support/weight-of-caregiving/',
-    description: 'Not burnout. Not yet. But something heavier than it used to be. What the weight of caregiving actually costs, and what structurally changes things.',
-    status: 'live',
-  },
+const articles: { title: string; href: string; description: string; status: 'live' | 'coming' }[] = [
+  // Articles will be added here as they are published.
+  // Planned topics: average home care costs in Toronto, long-term care vs. home care costs,
+  // how families pay for home care, insurance coverage, financial planning for aging parents,
+  // government programs for Ontario seniors, tax credits for caregiving, and more.
+  // See docs/AUTHORITY-MAP.md — Cost of Care & Planning cluster for the full list.
 ]
 
-export default function FamilyCaregiverSupportHub() {
+export default function CostOfCarePlanningHub() {
   return (
     <>
       <script
@@ -54,9 +35,9 @@ export default function FamilyCaregiverSupportHub() {
             {
               '@context': 'https://schema.org',
               '@type': 'CollectionPage',
-              name: 'Family Caregiver Support Resources',
-              description: 'Guides for Toronto family caregivers navigating burnout, sibling conflict, and emotional strain.',
-              url: 'https://www.arcadiahomecare.ca/resources/family-caregiver-support/',
+              name: 'Cost of Care & Financial Planning',
+              description: 'Guides for Toronto families on home care costs, insurance, and financial planning.',
+              url: 'https://www.arcadiahomecare.ca/resources/cost-of-care-planning/',
               publisher: {
                 '@type': 'Organization',
                 name: 'Arcadia Home Care',
@@ -69,55 +50,8 @@ export default function FamilyCaregiverSupportHub() {
               itemListElement: [
                 { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.arcadiahomecare.ca/' },
                 { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://www.arcadiahomecare.ca/resources/' },
-                { '@type': 'ListItem', position: 3, name: 'Family Caregiver Support', item: 'https://www.arcadiahomecare.ca/resources/family-caregiver-support/' },
+                { '@type': 'ListItem', position: 3, name: 'Cost of Care & Planning', item: 'https://www.arcadiahomecare.ca/resources/cost-of-care-planning/' },
               ],
-            },
-            {
-              '@context': 'https://schema.org',
-              '@type': 'HomeHealthCare',
-              '@id': 'https://www.arcadiahomecare.ca/#organization',
-              name: 'Arcadia Home Care',
-              alternateName: 'Arcadia',
-              url: 'https://www.arcadiahomecare.ca/',
-              logo: 'https://www.arcadiahomecare.ca/images/arcadia-logo.svg',
-              description:
-                'Specialized home care for seniors and families across Toronto and the Greater Toronto Area, including dementia and Alzheimer\'s care, acquired brain injury support, rehabilitation, hospital discharge support, palliative care, and case management. Serving GTA families since 2005.',
-              foundingDate: '2005',
-              telephone: '+1-844-977-0050',
-              email: 'info@arcadiahomecare.ca',
-              medicalSpecialty: 'Geriatric',
-              address: {
-                '@type': 'PostalAddress',
-                streetAddress: '302 Bay Street',
-                addressLocality: 'Toronto',
-                addressRegion: 'ON',
-                postalCode: 'M5H 0B6',
-                addressCountry: 'CA',
-              },
-              geo: { '@type': 'GeoCoordinates', latitude: 43.6494, longitude: -79.3795 },
-              openingHoursSpecification: [
-                {
-                  '@type': 'OpeningHoursSpecification',
-                  dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-                  opens: '09:00',
-                  closes: '17:00',
-                },
-              ],
-              areaServed: [
-                { '@type': 'City', name: 'Toronto' },
-                { '@type': 'AdministrativeArea', name: 'York Region' },
-                { '@type': 'AdministrativeArea', name: 'Peel Region' },
-                { '@type': 'AdministrativeArea', name: 'Durham Region' },
-                { '@type': 'AdministrativeArea', name: 'Halton Region' },
-                { '@type': 'AdministrativeArea', name: 'Greater Toronto Area' },
-              ],
-              aggregateRating: {
-                '@type': 'AggregateRating',
-                ratingValue: '4.9',
-                reviewCount: '41',
-                bestRating: '5',
-                worstRating: '1',
-              },
             },
           ]),
         }}
@@ -150,6 +84,11 @@ export default function FamilyCaregiverSupportHub() {
         .badge-coming { font-size: 10px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; background: #F0EBE3; color: #9B8E7E; padding: 3px 8px; border-radius: 20px; }
         .article-card p { font-size: 0.9rem; color: #6B7280; line-height: 1.7; margin: 0; }
         .article-card-arrow { display: inline-flex; align-items: center; gap: 4px; color: #C8302A; font-size: 13px; font-weight: 700; margin-top: 10px; text-decoration: none; }
+        .article-card-arrow:hover { gap: 8px; }
+
+        .hub-placeholder { border: 2px dashed #E5E0D8; border-radius: 12px; padding: 48px 32px; text-align: center; background: #FAFAF8; }
+        .hub-placeholder p { font-size: 0.95rem; color: #9B8E7E; line-height: 1.7; margin: 0 0 16px; }
+        .hub-placeholder a { color: #C8302A; font-weight: 600; text-decoration: none; }
 
         .hub-sidebar { position: sticky; top: 100px; }
         .sidebar-card { background: #FAFAF8; border: 1px solid #E5E0D8; border-radius: 14px; padding: 28px; margin-bottom: 20px; }
@@ -176,12 +115,12 @@ export default function FamilyCaregiverSupportHub() {
       <main className="hub-page">
         <section className="hub-hero">
           <div className="hub-hero-inner">
-            <p className="hub-eyebrow">Resource Centre: Family Caregiver Support</p>
-            <h1>Support for Family Caregivers in Toronto</h1>
+            <p className="hub-eyebrow">Resource Centre: Cost of Care & Planning</p>
+            <h1>Understanding What Home Care Costs in Ontario</h1>
             <p>
-              Caring for an aging parent is one of the most meaningful things you can do, and one of the most
-              exhausting. These guides are written for adult children in the GTA who are managing their parent's
-              care, often while balancing work, their own families, and their own emotional limits.
+              Most families come to the cost conversation late, after a crisis has already forced a decision.
+              These guides are designed to help you understand pricing, funding options, and financial planning
+              before you need to act under pressure.
             </p>
           </div>
         </section>
@@ -190,31 +129,28 @@ export default function FamilyCaregiverSupportHub() {
           <div>
             <div className="hub-intro">
               <p>
-                Family caregiving in Canada is often invisible labour. An estimated 8 million Canadians provide
-                unpaid care to a family member, and the majority of that weight falls on adult children,
-                particularly daughters. In Toronto's fast-paced, expensive environment, the pressure is acute.
+                Private home care in Ontario is funded entirely by families. Understanding what drives cost, how
+                to estimate how many hours you will need, and what government programs may offset some expenses
+                is essential planning — not a detail you sort out after care begins.
               </p>
               <p>
-                Burnout is not a personal failure. It's a predictable outcome when the demands of caregiving
-                exceed the support available. These guides are here to help you recognize when you're
-                approaching your limit, and to lay out your options before a crisis forces the decision.
+                These guides cover real numbers, honest comparisons, and the questions families most often wish
+                they had asked sooner. They are written for GTA families making decisions, many for the first time.
               </p>
               <p>
-                If respite or regular support would help right now, explore{' '}
-                <Link href="/our-services/respite-care/">Arcadia's respite care service</Link> or read more
-                about{' '}
-                <Link href="/conditions/caregiver-burnout-support/">
-                  caregiver burnout and how to find support
-                </Link>
-                .
+                Already looking at costs? Read{' '}
+                <Link href="/resources/navigating-home-care/home-care-cost-ontario/">
+                  How Much Does Home Care Cost in Ontario?
+                </Link>{' '}
+                for a transparent breakdown of private home care pricing in the GTA.
               </p>
             </div>
 
             <div className="hub-articles">
               <p className="hub-articles-label">Articles in this collection</p>
-              <h2>Family Caregiver Support Guides</h2>
+              <h2>Cost of Care Guides</h2>
 
-              {articles.map((article) => (
+              {articles.length > 0 ? articles.map((article) => (
                 <div key={article.href} className={`article-card${article.status === 'coming' ? ' coming' : ''}`}>
                   <div className="article-card-title">
                     {article.status === 'live' ? (
@@ -231,56 +167,68 @@ export default function FamilyCaregiverSupportHub() {
                     </Link>
                   )}
                 </div>
-              ))}
+              )) : (
+                <div className="hub-placeholder">
+                  <p>
+                    Articles in this collection are being prepared. In the meantime, start with our
+                    existing cost guide:
+                  </p>
+                  <Link href="/resources/navigating-home-care/home-care-cost-ontario/">
+                    How Much Does Home Care Cost in Ontario? →
+                  </Link>
+                </div>
+              )}
             </div>
 
             <div style={{ marginTop: 48, padding: '32px', background: '#F7F3EE', borderRadius: 12, borderLeft: '4px solid #C8302A' }}>
               <p style={{ fontSize: '0.95rem', color: '#4B5563', lineHeight: 1.8, margin: 0 }}>
-                <strong style={{ color: '#1C2B3A' }}>When a parent resists help:</strong> One of the most
-                common challenges family caregivers face. Our article{' '}
-                <Link href="/resources/navigating-home-care/" style={{ color: '#C8302A', fontWeight: 600 }}>
-                  navigating home care guides
-                </Link>{' '}
-                cover this in depth, including dementia-specific refusal.
+                <strong style={{ color: '#1C2B3A' }}>Want a cost estimate for your situation?</strong>{' '}
+                Every family&apos;s needs are different. Call us or book a free consultation and we will give
+                you a clear picture of what care would cost for your parent&apos;s specific situation — no
+                pressure, no commitment.{' '}
+                <Link href="/how-care-starts/" style={{ color: '#C8302A', fontWeight: 600 }}>
+                  See how our first conversation works.
+                </Link>
               </p>
             </div>
           </div>
 
           <aside className="hub-sidebar">
             <div className="sidebar-cta">
-              <h3>Feeling overwhelmed?</h3>
-              <p>Talk to our team about respite options. No obligation. We listen first.</p>
+              <h3>Get a cost estimate</h3>
+              <p>We will walk you through what care would actually cost for your situation.</p>
               <a href="tel:8449770050" className="sidebar-phone">(844) 977-0050</a>
               <Link href="/contact/" className="btn-red-sm">Book a Free Consultation</Link>
             </div>
 
             <div className="sidebar-card">
-              <div className="sidebar-card-title">Related Pages</div>
-              <Link href="/conditions/caregiver-burnout-support/" className="sidebar-link">Caregiver Burnout Support</Link>
-              <Link href="/our-services/respite-care/" className="sidebar-link">Respite Care</Link>
-              <Link href="/our-services/companion-care/" className="sidebar-link">Companion Care</Link>
+              <div className="sidebar-card-title">Related Resources</div>
+              <Link href="/resources/navigating-home-care/home-care-cost-ontario/" className="sidebar-link">Home Care Costs in Ontario</Link>
+              <Link href="/resources/navigating-home-care/what-does-a-psw-do/" className="sidebar-link">What Does a PSW Actually Do?</Link>
               <Link href="/how-care-starts/" className="sidebar-link">How Care Starts</Link>
+              <Link href="/our-services/case-management/" className="sidebar-link">Case Management Service</Link>
             </div>
 
             <div className="sidebar-card">
               <div className="sidebar-card-title">Other Resource Clusters</div>
-              <Link href="/resources/dementia-memory-care/" className="sidebar-link">Dementia & Memory Care</Link>
               <Link href="/resources/navigating-home-care/" className="sidebar-link">Navigating Home Care</Link>
+              <Link href="/resources/family-caregiver-support/" className="sidebar-link">Family Caregiver Support</Link>
+              <Link href="/resources/dementia-memory-care/" className="sidebar-link">Dementia & Memory Care</Link>
               <Link href="/resources/brain-injury-rehabilitation/" className="sidebar-link">Brain Injury & Rehab</Link>
             </div>
           </aside>
         </div>
 
         <section className="hub-bottom-cta">
-          <h2>You Don't Have to Carry This Alone</h2>
+          <h2>Not Sure What Care Will Cost You?</h2>
           <p>
-            Arcadia works alongside family caregivers across Toronto, providing the regular support that makes
-            it possible to show up for your parent without losing yourself.
+            Arcadia has supported GTA families through the full range of care decisions since 2005. Call us and
+            we will give you a straight answer on costs, funding options, and what makes sense for your situation.
           </p>
           <a href="tel:8449770050" className="hub-bottom-cta-phone">(844) 977-0050</a>
           <div className="cta-buttons">
             <Link href="/contact/" className="btn-red">Book a Free Consultation</Link>
-            <Link href="/our-services/respite-care/" className="btn-outline">Explore Respite Care</Link>
+            <Link href="/resources/navigating-home-care/home-care-cost-ontario/" className="btn-outline">Read the Cost Guide</Link>
           </div>
         </section>
       </main>

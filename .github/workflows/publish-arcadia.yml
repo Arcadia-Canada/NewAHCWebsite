@@ -1,0 +1,247 @@
+name: Publish Arcadia Article
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'app/resources/**/*.tsx'
+      - 'docs/**/*.md'
+      - 'public/**'
+
+jobs:
+  deploy-to-vercel:
+    runs-on: ubuntu-latest
+    name: Deploy to Vercel
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Deploy to Vercel
+        uses: vercel/action@v28
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+          vercel-args: '--prod'
+
+      - name: Get deployment URL
+        id: vercel
+        run: |
+          # Vercel deployment outputs URL to env
+          echo "deployment_url=https://arcadiahomecare.ca" >> $GITHUB_OUTPUT
+
+      - name: Extract article info
+        id: article
+        run: |
+          # Find the changed article file
+          CHANGED_FILES=$(git diff origin/main..HEAD --name-only | grep 'app/resources/.*page.tsx' || echo "")
+          
+          if [ -n "$CHANGED_FILES" ]; then
+            ARTICLE_PATH=$(echo "$CHANGED_FILES" | head -1)
+            SLUG=$(echo "$ARTICLE_PATH" | sed 's/.*\[\(.*\)\]\/\[\(.*\)\]\/.*/\2/')
+            echo "article_slug=$SLUG" >> $GITHUB_OUTPUT
+            echo "article_path=$ARTICLE_PATH" >> $GITHUB_OUTPUT
+            echo "Article detected: $SLUG"
+          fi
+
+      - name: Set up Node for social kit generation
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generate social kit (BRIEF)
+        id: generate-brief
+        env:
+          ARTICLE_SLUG: ${{ steps.article.outputs.article_slug }}
+          DEPLOYMENT_URL: ${{ steps.vercel.outputs.deployment_url }}
+        run: |
+          # Create social/briefs directory if it doesn't exist
+          mkdir -p social/briefs
+          
+          # Generate BRIEF file with timestamp
+          cat > social/briefs/BRIEF-${ARTICLE_SLUG}.md << 'EOF'
+          # Social Kit BRIEF: ${{ steps.article.outputs.article_slug }}
+          
+          **Generated:** $(date -u +%Y-%m-%d)
+          **Article URL:** ${{ steps.vercel.outputs.deployment_url }}/resources/[cluster]/${{ steps.article.outputs.article_slug }}/
+          
+          ## Strategy (A0-A4)
+          
+          ### A0: Goal
+          Drive traffic to article + capture family contact info via consultation CTA
+          
+          ### A1: Audience
+          Adult children (40s-60s) searching for parent care solutions
+          
+          ### A2: Entry Point
+          Family burden, guilt, uncertainty → permission to get help
+          
+          ### A3: Key Reframe
+          Clear process beats perfect information
+          
+          ### A4: Call-to-Action
+          "Book a free 15-minute consultation" (not "Learn More")
+          
+          ## Schedule
+          
+          - **Day 1:** Post on Facebook (family audience)
+          - **Day 3:** Post on LinkedIn (advisor repurposing)
+          - **Day 7:** Email to subscriber list
+          - **Day 14:** Retarget on Facebook (conversion audience)
+          
+          ## Metrics
+          
+          - CTR target: 2-3% on paid
+          - CPC target: $0.80-1.20
+          - Conversion: 5-8% click-to-consultation booking
+          
+          ## Voice Rules for This Article
+          
+          - Lead with emotional truth (not clinical facts)
+          - Validate burden before prescribing
+          - Give permission (it's okay to ask for help)
+          - No "in today's world" or "your loved one"
+          - CTA: "Book a consultation" (not "Learn More")
+          EOF
+          
+          echo "brief_generated=true" >> $GITHUB_OUTPUT
+
+      - name: Generate social kit (KIT)
+        id: generate-kit
+        env:
+          ARTICLE_SLUG: ${{ steps.article.outputs.article_slug }}
+          DEPLOYMENT_URL: ${{ steps.vercel.outputs.deployment_url }}
+        run: |
+          # Create social/kits directory if it doesn't exist
+          mkdir -p social/kits
+          
+          # Generate KIT file
+          cat > social/kits/KIT-${ARTICLE_SLUG}.md << 'EOF'
+          # Social Kit: ${{ steps.article.outputs.article_slug }}
+          
+          **Generated:** $(date -u +%Y-%m-%d)
+          **Article URL:** ${{ steps.vercel.outputs.deployment_url }}/resources/[cluster]/${{ steps.article.outputs.article_slug }}/
+          
+          ---
+          
+          ## Facebook Posts
+          
+          ### Post 1 (Day 1 - Organic)
+          **Character count:** 150 words | **Image:** Hero section screenshot
+          
+          [Pull quote from article + link]
+          
+          ### Post 2 (Day 3 - Paid)
+          **Character count:** 100 words | **CTA:** "Book a Consultation"
+          
+          [Emotional hook + link]
+          
+          ---
+          
+          ## LinkedIn Posts
+          
+          ### Post 1 (Day 3 - Advisor)
+          **Audience:** Advisors, wealth managers
+          
+          [Professional angle + link]
+          
+          ---
+          
+          ## Email
+          
+          ### Subject Line
+          [Generated from article headline]
+          
+          ### Body
+          [Lead + link + CTA]
+          
+          ---
+          
+          ## Notes
+          
+          - Images: Use hero image from article page
+          - Links: Direct to article URL
+          - CTA: Always "Book a Consultation"
+          - Hashtags: #ElderCare #FamilyCare #HomeHealth
+          EOF
+          
+          echo "kit_generated=true" >> $GITHUB_OUTPUT
+
+      - name: Commit social kit files
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          
+          git add social/briefs/ social/kits/
+          
+          if git diff --cached --quiet; then
+            echo "No social kit files to commit"
+          else
+            git commit -m "docs: auto-generate social kit for ${{ steps.article.outputs.article_slug }}
+
+Generated by GitHub Actions post-deployment.
+BRIEF: Strategy and schedule
+KIT: Execution copy for each platform"
+            git push origin main
+          fi
+
+      - name: Post Slack notification
+        uses: slackapi/slack-github-action@v1
+        with:
+          webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
+          payload: |
+            {
+              "text": "🚀 Arcadia Article Published",
+              "blocks": [
+                {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": "*Arcadia Home Care Article Published*\n\n*Article:* ${{ steps.article.outputs.article_slug }}\n*URL:* ${{ steps.vercel.outputs.deployment_url }}\n*Status:* ✅ Live"
+                  }
+                },
+                {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": "*Social Kit Generated*\n\nBRIEF: Strategy, schedule, metrics\nKIT: Copy for Facebook, LinkedIn, Email\n\nFiles: `social/briefs/BRIEF-${{ steps.article.outputs.article_slug }}.md` and `social/kits/KIT-${{ steps.article.outputs.article_slug }}.md`"
+                  }
+                },
+                {
+                  "type": "actions",
+                  "elements": [
+                    {
+                      "type": "button",
+                      "text": {
+                        "type": "plain_text",
+                        "text": "View Article"
+                      },
+                      "url": "${{ steps.vercel.outputs.deployment_url }}"
+                    },
+                    {
+                      "type": "button",
+                      "text": {
+                        "type": "plain_text",
+                        "text": "View BRIEF"
+                      },
+                      "url": "https://github.com/${{ github.repository }}/blob/main/social/briefs/BRIEF-${{ steps.article.outputs.article_slug }}.md"
+                    }
+                  ]
+                }
+              ]
+            }
+
+      - name: Create GitHub deployment
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.repos.createDeployment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: context.ref,
+              environment: 'production',
+              description: 'Article: ${{ steps.article.outputs.article_slug }}',
+              auto_merge: false
+            })

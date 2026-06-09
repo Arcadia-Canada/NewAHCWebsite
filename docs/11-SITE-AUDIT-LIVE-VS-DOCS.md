@@ -65,7 +65,7 @@ Every file should correspond to either a cluster hub page or an article entry in
 
 Compare counts across three docs that all track them:
 
-| Cluster | AUTHORITY-MAP count | 02-CONTENT-CLUSTERS count | CLUSTER-LINK-MAP count | Match? |
+| Cluster | AUTHORITY-MAP count | 02-CONTENT-CLUSTERS count | CLUSTERLINKMAP count | Match? |
 |---------|--------------------:|-------------------------:|-----------------------:|--------|
 | Dementia | | | | |
 | Brain Injury | | | | |
@@ -203,7 +203,7 @@ For each doc in `/docs/`, check:
 | `06-PUBLISHING-CHECKLIST.md` | Platform section filled for Vercel + Next.js? Hard gates (Phases 6, 7, 9) clearly marked? Social = Phase 9 brief+kit? |
 | `07-VOICE-AND-TONE.md` | Still accurate to brand voice? |
 | `AUTHORITY-MAP.md` | Last updated date is recent? All published articles marked? |
-| `CLUSTER-LINK-MAP.md` | Counts match AUTHORITY-MAP? Issues section current? |
+| `CLUSTERLINKMAP.md` | Counts match AUTHORITY-MAP? Issues section current? |
 | `10-KEYWORD-OWNERSHIP.md` | All published articles have keyword entries? |
 | `12-EXECUTION-ROADMAP.md` | Current phase still accurate? |
 | `.cursorrules` | Rating, review count, conditions list, services list all current? |

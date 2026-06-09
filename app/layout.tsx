@@ -40,7 +40,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${cormorant.variable} ${dmSans.variable}`}>
+    <html lang="en-CA" className={`${cormorant.variable} ${dmSans.variable}`}>
       <head>
         <link
           rel="preload"

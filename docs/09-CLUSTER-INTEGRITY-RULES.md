@@ -161,4 +161,4 @@ Avoid growing one cluster to 15 published articles while another has zero. Dispr
 - [ ] All "Differentiate" entries in AUTHORITY-MAP have resolution notes
 - [ ] Coming Soon stubs with passed deadlines have been filled or removed
 - [ ] `02-CONTENT-CLUSTERS.md` article counts match `AUTHORITY-MAP.md` counts
-- [ ] `CLUSTER-LINK-MAP.md` published/stub/net-new counts match reality
+- [ ] `CLUSTERLINKMAP.md` published/stub/net-new counts match reality

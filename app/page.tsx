@@ -15,12 +15,12 @@ const colors = {
 };
 
 const services = [
-  { icon: '\uD83E\uDDE0', title: 'Dementia & Alzheimer\'s Home Care', desc: 'Safe, familiar support for loved ones living with cognitive decline \u2014 in their own home.', href: '/our-services/dementia-alzheimers-home-care/' },
-  { icon: '\u26A1', title: 'Acquired Brain Injury Care', desc: 'Coordinated with your clinical team to support recovery and rebuilding independence.', href: '/our-services/acquired-brain-injury-home-care/' },
-  { icon: '\uD83D\uDCC8', title: 'Rehabilitation Support', desc: 'Goal-oriented home care that works alongside your OT, PT, and specialist team.', href: '/our-services/rehabilitation-support/' },
-  { icon: '\uD83C\uDFE5', title: 'Hospital Discharge Support', desc: 'A safe, supported transition from hospital to home \u2014 coordinated from day one.', href: '/our-services/hospital-discharge-support/' },
+  { icon: '\uD83E\uDDE0', title: 'Dementia & Alzheimer\'s Home Care', desc: 'Safe, familiar support for people living with cognitive decline, in their own home.', href: '/our-services/dementia-alzheimers-home-care/' },
+  { icon: '\uD83E\uDE7B', title: 'Acquired Brain Injury Care', desc: 'Coordinated with your clinical team to support recovery and rebuilding independence.', href: '/our-services/acquired-brain-injury-home-care/' },
+  { icon: '\uD83D\uDCAA', title: 'Rehabilitation Support', desc: 'Goal-oriented home care that works alongside your OT, PT, and specialist team.', href: '/our-services/rehabilitation-support/' },
+  { icon: '\uD83C\uDFE5', title: 'Hospital Discharge Support', desc: 'A safe, supported transition from hospital to home, coordinated from day one.', href: '/our-services/hospital-discharge-support/' },
   { icon: '\uD83D\uDC99', title: 'Palliative Home Care', desc: 'Comfort-focused care that preserves dignity and supports the whole family.', href: '/our-services/palliative-home-care/' },
-  { icon: '\uD83D\uDCCB', title: 'Case Management', desc: 'Coordinated oversight and planning so your loved one\'s care stays consistent and well-organized.', href: '/our-services/case-management/' },
+  { icon: '\uD83D\uDCCB', title: 'Case Management', desc: 'Coordinated oversight and planning so care stays consistent, well-organized, and responsive as needs change.', href: '/our-services/case-management/' },
 ];
 
 const conditions: { label: string; slug: string }[] = [
@@ -34,14 +34,6 @@ const conditions: { label: string; slug: string }[] = [
   { label: 'Caregiver Burnout', slug: 'caregiver-burnout-support' },
 ];
 
-const googleReviews = [
-  { name: 'Janet Cuddy', rating: 5, text: 'I often needed to cover a shift with very short notice, or on the weekend, and I was always met with a helpful, positive response. They were a lifesaver. The PSWs assigned to my mother were marvellous \u2014 skilled, kind and dependable.', time: '1 month ago' },
-  { name: 'Jennifer Kim', rating: 5, text: 'Their communication is outstanding \u2014 whenever I send an inquiry, they respond incredibly quickly. I\'ve honestly never worked with a business that gets back to clients this fast. Highly recommended!', time: '3 months ago' },
-  { name: 'Alice Gomes', rating: 5, text: 'Through a 5+ year battle with dementia, the one thing that remained constant was the care and support provided by the team from Arcadia. Expectations were consistently exceeded. I would, without hesitation, recommend Arcadia.', time: '2 years ago' },
-  { name: 'Dyan Tan', rating: 5, text: 'I\'ve been working with Arcadia Home Care for almost 10 years now. The people are genuinely good people who treat their clients as family. What I really love is the culture of respect, compassion and the feeling of HOME and FAMILY!', time: '3 months ago' },
-  { name: 'Ross Hendin', rating: 5, text: 'We\'ve been trusting Arcadia for years with many of Allevio Healthcare\'s patients, and have always received great feedback. Thanks for taking such good care of our seniors!', time: '3 years ago' },
-  { name: 'Julie Duffy', rating: 5, text: 'Arcadia Home Care was a life saver in a very difficult situation with an elderly family member. I can\'t thank them enough for their care, compassion and support.', time: '2 years ago' },
-];
 
 const locations = [
   { name: 'Toronto', sub: 'North York \u00B7 Scarborough \u00B7 Etobicoke', href: '/locations/toronto/' },
@@ -83,67 +75,6 @@ function TrustBar() {
   );
 }
 
-function GoogleReviewsWidget() {
-  return (
-    <section style={{ background: colors.warm, padding: '80px 24px', borderTop: `1px solid ${colors.border}` }}>
-      <div style={{ maxWidth: 1200, margin: '0 auto' }}>
-        <div style={{ textAlign: 'center', marginBottom: 48 }}>
-          <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: colors.accent, marginBottom: 12 }}>Google Reviews</p>
-          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 600, color: colors.primary, marginBottom: 16 }}>
-            Trusted by GTA Families
-          </h2>
-          <a href="https://www.google.com/search?q=arcadia+home+care+toronto" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: 12, background: colors.white, border: `1px solid ${colors.border}`, borderRadius: 100, padding: '10px 24px', textDecoration: 'none', transition: 'box-shadow 0.2s' }}>
-            <span style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 28, fontWeight: 700, color: colors.primary }}>4.9</span>
-            <StarRating />
-            <span style={{ fontSize: 13, color: colors.textLight, fontWeight: 500 }}>41 Google Reviews</span>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-              <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
-              <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
-              <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
-              <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
-            </svg>
-          </a>
-        </div>
-
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 20 }} className="reviews-grid-home">
-          {googleReviews.map((review, i) => (
-            <div key={i} style={{ background: colors.white, border: `1px solid ${colors.border}`, borderRadius: 14, padding: '24px', display: 'flex', flexDirection: 'column', gap: 12 }}>
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-                  <div style={{ width: 36, height: 36, borderRadius: '50%', background: colors.primary, display: 'flex', alignItems: 'center', justifyContent: 'center', color: colors.white, fontSize: 14, fontWeight: 700, flexShrink: 0 }}>
-                    {review.name.charAt(0)}
-                  </div>
-                  <div>
-                    <div style={{ fontSize: 14, fontWeight: 700, color: colors.primary }}>{review.name}</div>
-                    <div style={{ fontSize: 11, color: colors.textLight }}>{review.time}</div>
-                  </div>
-                </div>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-                  <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
-                  <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
-                  <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
-                  <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
-                </svg>
-              </div>
-              <StarRating />
-              <p style={{ fontSize: 13.5, color: colors.text, lineHeight: 1.7, fontStyle: 'italic', flex: 1 }}>
-                &ldquo;{review.text}&rdquo;
-              </p>
-            </div>
-          ))}
-        </div>
-
-        <div style={{ textAlign: 'center', marginTop: 36 }}>
-          <a href="https://www.google.com/search?q=arcadia+home+care+toronto" target="_blank" rel="noopener noreferrer"
-            style={{ fontSize: 14, fontWeight: 600, color: colors.accent, textDecoration: 'none', borderBottom: `2px solid ${colors.accent}`, paddingBottom: 2 }}>
-            See All 41 Reviews on Google &rarr;
-          </a>
-        </div>
-      </div>
-    </section>
-  );
-}
-
 function Hero() {
   return (
     <>
@@ -151,7 +82,7 @@ function Hero() {
         eyebrow={`Specialized Home Care ${String.fromCharCode(0xB7)} Toronto & GTA`}
         title={<>Care That Understands<br /><span style={{ color: '#E8867F' }}>What Your Family<br />Is Going Through</span></>}
         body={
-            <p>Arcadia brings clinical expertise and genuine compassion together &mdash; guiding families through dementia, brain injury, recovery, and complex aging at home. Serving the GTA since 2005.</p>
+            <p>Arcadia brings clinical expertise and genuine compassion to families navigating dementia, brain injury, recovery, and complex aging at home. Serving the GTA since 2005.</p>
         }
         actions={
           <div className="hp-hero-actions">
@@ -163,6 +94,9 @@ function Hero() {
                 Book a Free Consultation
               </a>
             </div>
+            <a href="/resources/" style={{ fontSize: 14, color: 'rgba(255,255,255,0.65)', textDecoration: 'none', fontWeight: 500, display: 'inline-block', marginTop: 8, transition: 'color 0.2s' }}>
+              Not sure where to start? Read our guides for families &rarr;
+            </a>
             <a href="https://www.google.com/search?q=arcadia+home+care+toronto" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.15)', borderRadius: 100, padding: '8px 16px', textDecoration: 'none', transition: 'background 0.2s, border-color 0.2s' }}>
               <StarRating />
               <span style={{ fontSize: 13, color: 'rgba(255,255,255,0.85)', fontWeight: 600 }}>4.9 {String.fromCharCode(0xB7)} 41 Google Reviews</span>
@@ -185,9 +119,9 @@ function Hero() {
 
 function DifferenceSection() {
   const pillars = [
-    { icon: '\uD83E\uDE7A', title: 'Clinical Insight', body: 'We understand dementia, acquired brain injury, rehabilitation, and complex aging. Our care is guided by clinical knowledge \u2014 not just caregiver availability.' },
+    { icon: '\uD83E\uDE7A', title: 'Clinical Insight', body: 'We understand dementia, acquired brain injury, rehabilitation, and complex aging. Our care is guided by clinical knowledge, not just caregiver availability.' },
     { icon: '\uD83E\uDDED', title: 'Guided Care', body: 'From first call to first week of care, we walk with your family every step. No confusion. No handoffs. Just clear, consistent support.' },
-    { icon: '\uD83E\uDD1D', title: 'Human Dignity', body: 'We match caregivers to the person \u2014 their routines, their preferences, their personality. Because dignity is in every detail of daily life.' },
+    { icon: '\uD83E\uDD1D', title: 'Human Dignity', body: 'We match caregivers to the person: their routines, their preferences, their personality. Because dignity is in every detail of daily life.' },
   ];
   return (
     <section style={{ background: colors.surface, padding: '96px 24px' }}>
@@ -195,7 +129,7 @@ function DifferenceSection() {
         <div style={{ textAlign: 'center', marginBottom: 64 }}>
           <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: colors.accent, marginBottom: 12 }}>Why Arcadia Is Different</p>
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 600, color: colors.primary, marginBottom: 16 }}>More Than a Caregiver Agency</h2>
-          <p style={{ fontSize: 17, color: colors.textLight, maxWidth: 580, margin: '0 auto', lineHeight: 1.65 }}>Most home care agencies focus on staffing. Arcadia approaches care the way a clinical team would &mdash; while delivering the warmth families need at home.</p>
+          <p style={{ fontSize: 17, color: colors.textLight, maxWidth: 580, margin: '0 auto', lineHeight: 1.65 }}>Most home care agencies focus on staffing. Arcadia approaches care the way a clinical team would, while delivering the warmth families need at home.</p>
         </div>
         <div style={{ display: 'flex', gap: 32, flexWrap: 'wrap' }} className="pillar-grid">
           {pillars.map((p, i) => (
@@ -218,7 +152,7 @@ function ServicesSection() {
         <div style={{ textAlign: 'center', marginBottom: 64 }}>
           <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: colors.accent, marginBottom: 12 }}>What We Offer</p>
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 600, color: colors.primary, marginBottom: 16 }}>Specialized Care for Complex Situations</h2>
-          <p style={{ fontSize: 17, color: colors.textLight, maxWidth: 540, margin: '0 auto', lineHeight: 1.65 }}>Every service is designed around clinical understanding and human connection &mdash; not just availability.</p>
+          <p style={{ fontSize: 17, color: colors.textLight, maxWidth: 540, margin: '0 auto', lineHeight: 1.65 }}>Every service is designed around clinical understanding and human connection, not just availability.</p>
         </div>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24 }} className="services-grid">
           {services.map((s, i) => (
@@ -242,9 +176,9 @@ function ServicesSection() {
 
 function ProcessSection() {
   const steps = [
-    { num: '01', title: 'One Conversation', body: 'Call or book online. We listen first. No pressure, no complex forms \u2014 just a real conversation about your loved one\'s situation.', img: '/images/image 41-435w.webp' },
-    { num: '02', title: 'A Personalized Plan', body: 'We assess your loved one\'s needs and carefully match them with caregivers chosen for both their clinical skills and their personality.', img: '/images/image 77-435w.webp' },
-    { num: '03', title: 'Care Begins', body: 'We coordinate everything \u2014 including publicly funded options and insurance \u2014 so your family can exhale and focus on what matters.', img: '/images/pexels-anna-shvets-5257342-scaled-640w.webp' },
+    { num: '01', title: 'One Conversation', body: 'Call or book online. We listen first. No pressure, no complex forms. Just a real conversation about your family\'s situation.', img: '/images/image 41-435w.webp' },
+    { num: '02', title: 'A Personalized Plan', body: 'We assess the situation and carefully match a caregiver chosen for both their clinical skills and their personality.', img: '/images/image 77-435w.webp' },
+    { num: '03', title: 'Care Begins', body: 'We coordinate everything, including publicly funded options and insurance, so your family can exhale and focus on what matters.', img: '/images/pexels-anna-shvets-5257342-scaled-640w.webp' },
   ];
   return (
     <section style={{ background: colors.warm, padding: '96px 24px' }}>
@@ -283,7 +217,7 @@ function ConditionsSection() {
       <div style={{ maxWidth: 1200, margin: '0 auto', textAlign: 'center' }}>
         <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(200,48,42,0.9)', marginBottom: 12 }}>Conditions We Support</p>
         <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.8rem, 3.5vw, 2.8rem)', fontWeight: 600, color: '#fff', marginBottom: 16 }}>We Understand Complex Conditions</h2>
-        <p style={{ fontSize: 16, color: 'rgba(255,255,255,0.65)', maxWidth: 520, margin: '0 auto 48px', lineHeight: 1.65 }}>Every care plan starts with understanding your loved one&apos;s specific condition, not just their tasks.</p>
+        <p style={{ fontSize: 16, color: 'rgba(255,255,255,0.65)', maxWidth: 520, margin: '0 auto 48px', lineHeight: 1.65 }}>Every care plan starts with understanding the person&apos;s specific condition, not just their tasks.</p>
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: 12, justifyContent: 'center' }} className="conditions-grid">
           {conditions.map(c => (
             <a key={c.slug} href={`/conditions/${c.slug}/`} style={{ textDecoration: 'none' }}>
@@ -334,7 +268,7 @@ function LocationsSection() {
         <div style={{ textAlign: 'center', marginBottom: 56 }}>
           <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: colors.accent, marginBottom: 12 }}>Where We Serve</p>
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 600, color: colors.primary, marginBottom: 16 }}>Serving Families Across the GTA</h2>
-          <p style={{ fontSize: 16, color: colors.textLight, maxWidth: 480, margin: '0 auto', lineHeight: 1.65 }}>From downtown Toronto to Halton Region &mdash; local care, regional expertise.</p>
+          <p style={{ fontSize: 16, color: colors.textLight, maxWidth: 480, margin: '0 auto', lineHeight: 1.65 }}>From downtown Toronto to Halton Region: local care, regional expertise.</p>
         </div>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: 16 }} className="locations-grid">
           {locations.map((l, i) => (
@@ -348,7 +282,7 @@ function LocationsSection() {
           ))}
         </div>
         <p style={{ textAlign: 'center', marginTop: 28, fontSize: 13, color: colors.textLight }}>
-          Don&apos;t see your area? <a href="tel:8449770050" style={{ color: colors.accent, fontWeight: 600, textDecoration: 'none' }}>Call us</a> &mdash; we may still serve you.
+          Don&apos;t see your area? <a href="tel:8449770050" style={{ color: colors.accent, fontWeight: 600, textDecoration: 'none' }}>Call us</a>. We may still serve you.
         </p>
       </div>
     </section>
@@ -363,7 +297,7 @@ function CTASection() {
           <div style={{ flex: '1 1 340px' }}>
             <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(200,48,42,0.9)', marginBottom: 12 }}>Get In Touch</p>
             <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 4vw, 3.2rem)', fontWeight: 600, color: '#fff', marginBottom: 20, lineHeight: 1.2 }}>It Starts With One Conversation</h2>
-            <p style={{ fontSize: 16, color: 'rgba(255,255,255,0.65)', lineHeight: 1.7, marginBottom: 40 }}>There&apos;s no obligation. Just a real conversation about your family&apos;s situation and how we can help &mdash; clinical expertise and genuine care, from the first call.</p>
+            <p style={{ fontSize: 16, color: 'rgba(255,255,255,0.65)', lineHeight: 1.7, marginBottom: 40 }}>There&apos;s no obligation. Just a real conversation about your family&apos;s situation and how we can help. Clinical expertise and genuine care, from the first call.</p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
               <a href="tel:8449770050" style={{ display: 'flex', alignItems: 'center', gap: 16, textDecoration: 'none' }}>
                 <div style={{ width: 48, height: 48, background: colors.accent, borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 20, flexShrink: 0 }}>{String.fromCodePoint(0x1F4DE)}</div>
@@ -420,7 +354,7 @@ export default function Home() {
         email: 'info@arcadiahomecare.ca',
         image: 'https://www.arcadiahomecare.ca/images/arcadia-logo.svg',
         description:
-          "At Arcadia Home Care, we provide compassionate, clinically guided in-home care to support families through aging, illness, and recovery. Our services include dementia and Alzheimer's care, acquired brain injury support, rehabilitation assistance, hospital discharge coordination, and palliative care, along with personal support for daily living, companion care, respite care, overnight and 24-hour care, case management, light housekeeping, and downsizing and transition support. Each care plan is tailored to individual needs, with caregivers thoughtfully matched based on skill and personality, ensuring comfort, dignity, and consistent support for your loved one every step of the way.",
+          "At Arcadia Home Care, we provide compassionate, clinically guided in-home care to support families through aging, illness, and recovery. Our services include dementia and Alzheimer's care, acquired brain injury support, rehabilitation assistance, hospital discharge coordination, and palliative care, along with personal support for daily living, companion care, respite care, overnight and 24-hour care, case management, light housekeeping, and downsizing and transition support. Each care plan is tailored to individual needs, with caregivers thoughtfully matched based on skill and personality, ensuring comfort, dignity, and consistent support at every step.",
         address: {
           '@type': 'PostalAddress',
           streetAddress: '302 Bay Street',
@@ -461,7 +395,7 @@ export default function Home() {
               bestRating: '5',
             },
             reviewBody:
-              'I often needed to cover a shift with very short notice, or on the weekend, and I was always met with a helpful, positive response. They were a lifesaver. The PSWs assigned to my mother were marvellous \u2014 skilled, kind and dependable.',
+              'I often needed to cover a shift with very short notice, or on the weekend, and I was always met with a helpful, positive response. They were a lifesaver. The PSWs assigned to my mother were marvellous: skilled, kind and dependable.',
           },
           {
             '@type': 'Review',
@@ -472,7 +406,7 @@ export default function Home() {
               bestRating: '5',
             },
             reviewBody:
-              "Their communication is outstanding \u2014 whenever I send an inquiry, they respond incredibly quickly. I've honestly never worked with a business that gets back to clients this fast. Highly recommended!",
+              "Their communication is outstanding. Whenever I send an inquiry, they respond incredibly quickly. I've honestly never worked with a business that gets back to clients this fast. Highly recommended!",
           },
           {
             '@type': 'Review',
@@ -506,7 +440,7 @@ export default function Home() {
                 name: "Dementia & Alzheimer's Home Care",
                 url: 'https://www.arcadiahomecare.ca/our-services/dementia-alzheimers-home-care/',
                 description:
-                  'Safe, familiar support for loved ones living with cognitive decline in their own home.',
+                  'Safe, familiar support for people living with cognitive decline in their own home.',
               },
             },
             {
@@ -556,7 +490,7 @@ export default function Home() {
                 name: 'Case Management',
                 url: 'https://www.arcadiahomecare.ca/our-services/case-management/',
                 description:
-                  "Coordinated oversight and planning so a loved one's care stays consistent and well-organized.",
+                  "Coordinated oversight and planning so care stays consistent, well-organized, and responsive as needs change.",
               },
             },
           ],
@@ -572,7 +506,6 @@ export default function Home() {
       <ProcessSection />
       <ConditionsSection />
       <TestimonialsCarousel />
-      <GoogleReviewsWidget />
       <ReferralSection />
       <LocationsSection />
       <CTASection />

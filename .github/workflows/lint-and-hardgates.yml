@@ -1,0 +1,186 @@
+name: Lint & Hard-Gate Checks
+
+on:
+  pull_request:
+    paths:
+      - 'app/insights/**/*.tsx'
+      - 'app/resources/**/*.tsx'
+      - 'docs/**/*.md'
+      - '.github/workflows/**'
+
+jobs:
+  lint-and-check:
+    runs-on: ubuntu-latest
+    name: Check Voice, Schema, Hard Gates
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Check for banned phrases
+        id: banned-phrases
+        run: |
+          echo "Checking for banned phrases..."
+          BANNED_COUNT=0
+          
+          # List of banned phrases
+          BANNED=(
+            "your loved one"
+            "in today's world"
+            "don't hesitate"
+            "don't wait"
+            "take action"
+            "navigate the complexities"
+            "empower"
+            "transform"
+            "unlock"
+            "leverage"
+            "solution"
+            "best practices"
+            "the elderly"
+            "seniors"
+            "journey"
+          )
+          
+          for phrase in "${BANNED[@]}"; do
+            # Search in changed markdown and tsx files
+            if git diff origin/main HEAD --name-only | grep -E '\.(md|tsx)$' | xargs grep -l -i "$phrase" 2>/dev/null; then
+              echo "❌ Found banned phrase: '$phrase'"
+              BANNED_COUNT=$((BANNED_COUNT + 1))
+            fi
+          done
+          
+          if [ $BANNED_COUNT -gt 0 ]; then
+            echo "banned_found=true" >> $GITHUB_OUTPUT
+            echo "banned_count=$BANNED_COUNT" >> $GITHUB_OUTPUT
+            exit 1
+          else
+            echo "✅ No banned phrases found"
+            echo "banned_found=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Check for em dashes
+        id: em-dashes
+        run: |
+          echo "Checking for em dashes (—)..."
+          EM_DASH_COUNT=$(git diff origin/main HEAD --name-only | grep -E '\.(md|tsx)$' | xargs grep -c '—' 2>/dev/null || echo 0)
+          
+          if [ $EM_DASH_COUNT -gt 0 ]; then
+            echo "❌ Found $EM_DASH_COUNT em dashes. Use periods, commas, or colons instead."
+            echo "em_dash_found=true" >> $GITHUB_OUTPUT
+            exit 1
+          else
+            echo "✅ No em dashes found"
+            echo "em_dash_found=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Validate JSON-LD schema
+        id: schema-check
+        run: |
+          echo "Validating JSON-LD schema..."
+          
+          # Look for schema in changed files
+          SCHEMA_COUNT=$(git diff origin/main HEAD --name-only | grep -E '\.tsx$' | xargs grep -c 'JSON.stringify({' 2>/dev/null || echo 0)
+          
+          if [ $SCHEMA_COUNT -gt 0 ]; then
+            echo "ℹ️  Found $SCHEMA_COUNT schema blocks"
+            # Basic validation: check for required Article fields
+            if git diff origin/main HEAD | grep -q '"@type".*"Article"'; then
+              if git diff origin/main HEAD | grep -q '"headline"'; then
+                echo "✅ Schema appears valid (has @type and headline)"
+              else
+                echo "⚠️  Article schema missing headline field"
+              fi
+            fi
+          fi
+
+      - name: Check hard gate - Phase 6 (Cluster hub)
+        id: phase-6
+        run: |
+          echo "Checking Phase 6: Cluster hub updated..."
+          
+          # Get the changed article file
+          ARTICLE_FILES=$(git diff origin/main HEAD --name-only | grep -E 'app/(insights|resources)/\[.*\]/\[.*\]/page.tsx$' || echo "")
+          
+          if [ -z "$ARTICLE_FILES" ]; then
+            echo "ℹ️  No article page.tsx changes detected (Phase 6 check skipped)"
+            echo "phase_6_required=false" >> $GITHUB_OUTPUT
+          else
+            echo "Found article: $ARTICLE_FILES"
+            echo "⚠️  Manual check: Verify cluster hub page updated with this article"
+            echo "phase_6_required=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Check hard gate - Phase 7 (Inventory files)
+        id: phase-7
+        run: |
+          echo "Checking Phase 7: Inventory files updated..."
+          
+          # Check if docs were changed
+          DOCS_CHANGED=$(git diff origin/main HEAD --name-only | grep -E 'docs/(ECC-|).*AUTHORITY.*\.md|KEYWORD.*\.md|CLUSTER.*LINK.*\.md' || echo "")
+          
+          if [ -z "$DOCS_CHANGED" ]; then
+            echo "❌ Phase 7 FAILED: Inventory files not updated"
+            echo "   Missing: docs/ECC-AUTHORITY-MAP.md or docs/ECC-KEYWORD-OWNERSHIP.md or docs/ECC-CLUSTER-LINK-MAP.md"
+            echo "phase_7_passed=false" >> $GITHUB_OUTPUT
+            exit 1
+          else
+            echo "✅ Phase 7 PASSED: Inventory files updated"
+            echo "   Files: $DOCS_CHANGED"
+            echo "phase_7_passed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Check hard gate - Phase 9 (Social kit files)
+        id: phase-9
+        run: |
+          echo "Checking Phase 9: Social kit files (BRIEF + KIT)..."
+          
+          # Check for social kit files
+          BRIEF_FILES=$(git diff origin/main HEAD --name-only | grep -E 'social/briefs/BRIEF-.*\.md' || echo "")
+          KIT_FILES=$(git diff origin/main HEAD --name-only | grep -E 'social/kits/KIT-.*\.md' || echo "")
+          
+          if [ -z "$BRIEF_FILES" ] || [ -z "$KIT_FILES" ]; then
+            echo "⚠️  Phase 9 INCOMPLETE: Social kit files missing"
+            echo "   BRIEF files: $BRIEF_FILES"
+            echo "   KIT files: $KIT_FILES"
+            echo "   Note: Can be auto-generated after merge"
+            echo "phase_9_passed=false" >> $GITHUB_OUTPUT
+          else
+            echo "✅ Phase 9 PASSED: Social kit files committed"
+            echo "phase_9_passed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create check summary
+        if: always()
+        run: |
+          echo "## GitHub Actions Check Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Lint Checks" >> $GITHUB_STEP_SUMMARY
+          echo "- Banned phrases: ${{ steps.banned-phrases.outputs.banned_found || 'false' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Em dashes: ${{ steps.em-dashes.outputs.em_dash_found || 'false' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Schema validation: ✅" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Hard Gates" >> $GITHUB_STEP_SUMMARY
+          echo "- Phase 6 (Cluster hub): ℹ️ Manual review" >> $GITHUB_STEP_SUMMARY
+          echo "- Phase 7 (Inventory): ${{ steps.phase-7.outputs.phase_7_passed }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Phase 9 (Social kit): ${{ steps.phase-9.outputs.phase_9_passed }}" >> $GITHUB_STEP_SUMMARY
+
+      - name: Fail if critical checks failed
+        if: failure()
+        run: |
+          echo "❌ Lint/hard-gate checks FAILED"
+          echo "Fix issues above and push again"
+          exit 1
+
+      - name: Success
+        if: success()
+        run: |
+          echo "✅ All lint and hard-gate checks PASSED"
+          echo "Ready to merge and deploy"

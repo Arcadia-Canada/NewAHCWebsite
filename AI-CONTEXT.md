@@ -52,7 +52,7 @@ Plus the structural and inventory files:
 
 | File | Purpose |
 |------|---------|
-| `docs/CLUSTER-LINK-MAP.md` | The 5-cluster structure, linking flow, published article state, service/condition targets, and pre-draft checklist. **Read before writing any article.** |
+| `docs/CLUSTERLINKMAP.md` | The 5-cluster structure, linking flow, published article state, service/condition targets, and pre-draft checklist. **Read before writing any article.** |
 | `docs/AUTHORITY-MAP.md` | The 101-article inventory: status, action, links per article |
 | `docs/GOVERNANCE-PACK-README.md` | Overview of the pack (humans); optional for AI |
 
@@ -60,7 +60,7 @@ Plus the structural and inventory files:
 
 ### "Write a new blog article"
 
-1. Read `docs/CLUSTER-LINK-MAP.md` to understand the cluster structure, linking flow, published articles, and run the pre-draft checklist.
+1. Read `docs/CLUSTERLINKMAP.md` to understand the cluster structure, linking flow, published articles, and run the pre-draft checklist.
 2. Read `docs/02-CONTENT-CLUSTERS.md` to confirm which cluster it belongs to.
 3. Read `docs/AUTHORITY-MAP.md` to find the article entry — check status (Net New, Coming Soon, Differentiate) and any linking notes.
 4. Read `docs/07-VOICE-AND-TONE.md` to apply Arcadia's editorial voice.
