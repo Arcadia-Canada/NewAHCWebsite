@@ -504,6 +504,22 @@ export default function SignsParentNeedsHomeCare() {
                 </Link>
               </nav>
 
+              <div className="mid-cta" style={{ marginTop: 40 }}>
+                <h2 style={{ fontSize: '1.1rem' }}>Not quite at the home care stage yet?</h2>
+                <p>
+                  If your parent is still managing independently but showing early signs of balance or strength
+                  decline, they may be in the proactive exercise window. Our sister service{' '}
+                  <a href="https://arcadiarehab.ca" target="_blank" rel="noopener noreferrer" style={{ color: '#C8302A', fontWeight: 600 }}>
+                    Arcadia Rehab
+                  </a>{' '}
+                  provides in-home programs through Rehabilitation Support Therapists — designed to preserve
+                  independence before daily living support becomes necessary.
+                </p>
+                <a href="https://arcadiarehab.ca/blog/signs-parent-needs-rehab-support/" target="_blank" rel="noopener noreferrer" className="btn-red" style={{ fontSize: 14, padding: '10px 20px' }}>
+                  10 Signs Your Parent Needs Rehab Support
+                </a>
+              </div>
+
             </article>
           </div>
 

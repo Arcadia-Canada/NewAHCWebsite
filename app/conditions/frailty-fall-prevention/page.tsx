@@ -424,7 +424,7 @@ export default function FrailtyFallPreventionPage() {
                 },
                 {
                   title: 'Strength and mobility maintenance',
-                  body: 'Supporting prescribed exercise programs — from physiotherapy or occupational therapy — and encouraging regular movement throughout the day. Deconditioning happens quickly in older adults and accelerates fall risk.',
+                  body: 'Supporting prescribed exercise programs — from physiotherapy or occupational therapy — and encouraging regular movement throughout the day. Deconditioning happens quickly in older adults and accelerates fall risk. For seniors who are still active but want structured proactive exercise, our sister service Arcadia Rehab provides in-home programs through Rehabilitation Support Therapists.',
                 },
                 {
                   title: 'Home safety and environment',
@@ -594,6 +594,16 @@ export default function FrailtyFallPreventionPage() {
             </div>
 
             <div className="sidebar-card">
+              <div className="sidebar-card-title">Still in the proactive stage?</div>
+              <p style={{ fontSize: '0.875rem', color: '#4B5563', lineHeight: 1.65, margin: '0 0 12px' }}>
+                If your parent can still exercise independently, Arcadia Rehab offers in-home strength and balance programs through Rehabilitation Support Therapists — before daily living support is needed.
+              </p>
+              <a href="https://arcadiarehab.ca/fall-prevention/" className="sidebar-link" target="_blank" rel="noopener noreferrer" style={{ borderBottom: 'none' }}>
+                Arcadia Rehab — Fall Prevention Exercise
+              </a>
+            </div>
+
+            <div className="sidebar-card">
               <div className="sidebar-card-title">Serving Your Area</div>
               <Link href="/locations/toronto/" className="sidebar-link">Toronto</Link>
               <Link href="/locations/toronto/north-york-home-care/" className="sidebar-link">North York</Link>
@@ -616,6 +626,8 @@ export default function FrailtyFallPreventionPage() {
                 { type: 'Service', title: 'Companion Care', href: '/our-services/companion-care/' },
                 { type: 'Condition', title: 'Post-Hospital Recovery', href: '/conditions/post-hospital-recovery/' },
                 { type: 'Resource', title: 'Navigating Home Care Guides', href: '/resources/' },
+                { type: 'Sister Service', title: 'Proactive Exercise Programs — Arcadia Rehab', href: 'https://arcadiarehab.ca/fall-prevention/' },
+                { type: 'Sister Service', title: 'Balance Exercises for Seniors', href: 'https://arcadiarehab.ca/blog/balance-exercises-seniors/' },
               ].map((item, i) => (
                 <Link key={i} href={item.href} className="related-card">
                   <div className="related-card-type">{item.type}</div>

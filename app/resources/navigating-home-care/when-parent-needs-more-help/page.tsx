@@ -816,6 +816,12 @@ export default function WhenParentNeedsMoreHelpPage() {
               <Link href="/locations/toronto/" className="related-link">
                 Home care in Toronto
               </Link>
+              <a href="https://arcadiarehab.ca/blog/signs-parent-needs-rehab-support/" target="_blank" rel="noopener noreferrer" className="related-link">
+                Is your parent still in the proactive exercise window? — Arcadia Rehab
+              </a>
+              <a href="https://arcadiarehab.ca/blog/proactive-vs-reactive-care/" target="_blank" rel="noopener noreferrer" className="related-link">
+                Proactive vs. reactive care: the cost of waiting
+              </a>
             </div>
           </article>
 
@@ -852,6 +858,16 @@ export default function WhenParentNeedsMoreHelpPage() {
               <Link href="/conditions/post-hospital-recovery/" className="sidebar-link">
                 Post-hospital recovery
               </Link>
+            </div>
+
+            <div className="sidebar-card">
+              <div className="sidebar-card-title">Still in the proactive stage?</div>
+              <p style={{ fontSize: '0.875rem', color: '#4B5563', lineHeight: 1.65, margin: '0 0 12px' }}>
+                If your parent can still exercise but needs guidance staying strong and independent, Arcadia Rehab provides in-home programs through Rehabilitation Support Therapists.
+              </p>
+              <a href="https://arcadiarehab.ca" target="_blank" rel="noopener noreferrer" className="sidebar-link" style={{ borderBottom: 'none' }}>
+                arcadiarehab.ca
+              </a>
             </div>
           </aside>
         </div>
