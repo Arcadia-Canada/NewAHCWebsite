@@ -23,6 +23,7 @@ NewAHCWebsite/   (this repo)
     ├── 05-URL-CONVENTIONS.md         ← Slug rules and URL patterns
     ├── 06-PUBLISHING-CHECKLIST.md    ← Step-by-step publish workflow
     ├── 07-VOICE-AND-TONE.md          ← Editorial voice — the actual asset
+    ├── 11-SISTER-SITE-KEYWORD-BOUNDARIES.md ← Cross-domain rules with arcadiarehab.ca
     └── AUTHORITY-MAP.md              ← The 102-article inventory + status tracker + Coming Soon deadline tracker
 ```
 
