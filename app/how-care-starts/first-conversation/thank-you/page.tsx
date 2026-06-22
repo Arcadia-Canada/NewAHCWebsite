@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import GAFormEvent from '@/components/GAFormEvent'
 
 export const metadata: Metadata = {
   title: 'Thank You | First Conversation | Arcadia Home Care',
@@ -14,6 +15,7 @@ export const metadata: Metadata = {
 export default function FirstConversationThankYouPage() {
   return (
     <>
+      <GAFormEvent formName="first_conversation" />
       <style>{`
         .page { font-family: 'DM Sans', system-ui, sans-serif; color: #2D2D2D; }
 

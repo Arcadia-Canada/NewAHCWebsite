@@ -25,7 +25,12 @@ export default function CTAForm() {
       body: payload,
       headers: { Accept: 'application/json' },
     })
-    if (res.ok) setSent(true)
+    if (res.ok) {
+      setSent(true)
+      if (typeof window !== 'undefined' && typeof (window as { gtag?: Function }).gtag === 'function') {
+        ;(window as { gtag?: Function }).gtag!('event', 'generate_lead', { form_name: 'homepage_cta' })
+      }
+    }
   }
 
   if (sent) {

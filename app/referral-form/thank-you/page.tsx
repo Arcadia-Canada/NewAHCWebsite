@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import GAFormEvent from "@/components/GAFormEvent";
 
 export const metadata: Metadata = {
   title: "Referral Thank You | Arcadia Home Care",
@@ -11,6 +12,8 @@ export const metadata: Metadata = {
 
 export default function ReferralThankYouPage() {
   return (
+    <>
+    <GAFormEvent formName="referral" />
     <main
       style={{
         padding: "120px 24px 80px",
@@ -245,5 +248,6 @@ export default function ReferralThankYouPage() {
       </section>
 
     </main>
+    </>
   );
 }
