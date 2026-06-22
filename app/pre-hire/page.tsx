@@ -17,8 +17,8 @@ const forms = [
     url: 'https://eu.makeforms.co/ege77rp',
     icon: (
       <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-        <rect x="6" y="4" width="20" height="24" rx="3" stroke="#C8302A" strokeWidth="1.8"/>
-        <path d="M11 11h10M11 16h10M11 21h6" stroke="#C8302A" strokeWidth="1.8" strokeLinecap="round"/>
+        <rect x="6" y="4" width="20" height="24" rx="3" stroke="var(--color-accent)" strokeWidth="1.8"/>
+        <path d="M11 11h10M11 16h10M11 21h6" stroke="var(--color-accent)" strokeWidth="1.8" strokeLinecap="round"/>
       </svg>
     ),
   },
@@ -32,8 +32,8 @@ const forms = [
     url: 'https://eu.makeforms.co/7skme9w',
     icon: (
       <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-        <circle cx="16" cy="10" r="5" stroke="#C8302A" strokeWidth="1.8"/>
-        <path d="M5 28c0-6.075 4.925-11 11-11s11 4.925 11 11" stroke="#C8302A" strokeWidth="1.8" strokeLinecap="round"/>
+        <circle cx="16" cy="10" r="5" stroke="var(--color-accent)" strokeWidth="1.8"/>
+        <path d="M5 28c0-6.075 4.925-11 11-11s11 4.925 11 11" stroke="var(--color-accent)" strokeWidth="1.8" strokeLinecap="round"/>
       </svg>
     ),
   },
@@ -47,8 +47,8 @@ const forms = [
     url: 'https://eu.makeforms.co/lp1ysc9',
     icon: (
       <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-        <rect x="13" y="4" width="6" height="24" rx="3" stroke="#C8302A" strokeWidth="1.8"/>
-        <rect x="4" y="13" width="24" height="6" rx="3" stroke="#C8302A" strokeWidth="1.8"/>
+        <rect x="13" y="4" width="6" height="24" rx="3" stroke="var(--color-accent)" strokeWidth="1.8"/>
+        <rect x="4" y="13" width="24" height="6" rx="3" stroke="var(--color-accent)" strokeWidth="1.8"/>
       </svg>
     ),
   },
@@ -62,9 +62,9 @@ const forms = [
     url: 'https://eu.makeforms.co/2i9kxxv',
     icon: (
       <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-        <path d="M16 20V8M16 8l-4 4M16 8l4 4" stroke="#C8302A" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
-        <path d="M8 24h16" stroke="#C8302A" strokeWidth="1.8" strokeLinecap="round"/>
-        <rect x="4" y="4" width="24" height="24" rx="4" stroke="#C8302A" strokeWidth="1.8" opacity="0.2"/>
+        <path d="M16 20V8M16 8l-4 4M16 8l4 4" stroke="var(--color-accent)" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M8 24h16" stroke="var(--color-accent)" strokeWidth="1.8" strokeLinecap="round"/>
+        <rect x="4" y="4" width="24" height="24" rx="4" stroke="var(--color-accent)" strokeWidth="1.8" opacity="0.2"/>
       </svg>
     ),
   },

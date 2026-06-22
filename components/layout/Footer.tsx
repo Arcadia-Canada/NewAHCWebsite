@@ -221,7 +221,7 @@ export default function Footer() {
       <div
         className="footer-dark-section"
         style={{
-          background: "#111B26",
+          background: "var(--color-primary-dark)",
           padding: "56px 24px 96px",
           color: "rgba(255,255,255,0.65)",
         }}

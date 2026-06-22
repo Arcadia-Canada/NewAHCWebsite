@@ -22,7 +22,7 @@ const initialsStyle: React.CSSProperties = {
   alignItems: "center",
   justifyContent: "center",
   margin: "0 auto",
-  background: "#1C2B3A",
+  background: "var(--color-primary)",
   fontFamily: "'Cormorant Garamond', Georgia, serif",
   fontSize: "4rem",
   fontWeight: 600,

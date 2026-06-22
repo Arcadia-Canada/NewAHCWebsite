@@ -29,7 +29,7 @@ export default function ContactPage() {
               fontWeight: 700,
               letterSpacing: "0.1em",
               textTransform: "uppercase",
-              color: "#C8302A",
+              color: "var(--color-accent)",
               marginBottom: 12,
             }}
           >
@@ -40,13 +40,13 @@ export default function ContactPage() {
               fontFamily: "'Cormorant Garamond', Georgia, serif",
               fontSize: "clamp(2.2rem, 4vw, 3.4rem)",
               fontWeight: 600,
-              color: "#1C2B3A",
+              color: "var(--color-primary)",
               marginBottom: 12,
             }}
           >
             Book a Free Consultation
           </h1>
-          <p style={{ fontSize: 16, color: "#6B7280", lineHeight: 1.7 }}>
+          <p style={{ fontSize: 16, color: "var(--color-text-light)", lineHeight: 1.7 }}>
             There&apos;s no obligation. Just a real conversation about your
             family&apos;s situation and how Arcadia can help.
           </p>
@@ -59,7 +59,7 @@ export default function ContactPage() {
                 fontSize: 12,
                 textTransform: "uppercase",
                 letterSpacing: "0.08em",
-                color: "#6B7280",
+                color: "var(--color-text-light)",
                 marginBottom: 4,
               }}
             >
@@ -70,7 +70,7 @@ export default function ContactPage() {
               style={{
                 fontSize: 20,
                 fontWeight: 700,
-                color: "#C8302A",
+                color: "var(--color-accent)",
                 textDecoration: "none",
               }}
             >
@@ -83,7 +83,7 @@ export default function ContactPage() {
                 fontSize: 12,
                 textTransform: "uppercase",
                 letterSpacing: "0.08em",
-                color: "#6B7280",
+                color: "var(--color-text-light)",
                 marginBottom: 4,
               }}
             >
@@ -91,7 +91,7 @@ export default function ContactPage() {
             </div>
             <a
               href="mailto:info@arcadiahomecare.ca"
-              style={{ fontSize: 15, color: "#1C2B3A", textDecoration: "none" }}
+              style={{ fontSize: 15, color: "var(--color-primary)", textDecoration: "none" }}
             >
               info@arcadiahomecare.ca
             </a>
@@ -102,13 +102,13 @@ export default function ContactPage() {
                 fontSize: 12,
                 textTransform: "uppercase",
                 letterSpacing: "0.08em",
-                color: "#6B7280",
+                color: "var(--color-text-light)",
                 marginBottom: 4,
               }}
             >
               Hours
             </div>
-            <p style={{ fontSize: 15, color: "#4B5563" }}>
+            <p style={{ fontSize: 15, color: "var(--color-text-muted)" }}>
               Mon–Fri, 9:00AM–5:00PM
             </p>
           </div>
@@ -118,13 +118,13 @@ export default function ContactPage() {
                 fontSize: 12,
                 textTransform: "uppercase",
                 letterSpacing: "0.08em",
-                color: "#6B7280",
+                color: "var(--color-text-light)",
                 marginBottom: 4,
               }}
             >
               Address
             </div>
-            <p style={{ fontSize: 15, color: "#4B5563", lineHeight: 1.6 }}>
+            <p style={{ fontSize: 15, color: "var(--color-text-muted)", lineHeight: 1.6 }}>
               302 Bay Street, Toronto, Ontario M5H 0B6
             </p>
           </div>
@@ -136,7 +136,7 @@ export default function ContactPage() {
           borderRadius: 16,
           border: "1px solid #E5E0D8",
           padding: 24,
-          background: "#FAFAF8",
+          background: "var(--color-surface)",
         }}
       >
         <h2
@@ -144,13 +144,13 @@ export default function ContactPage() {
             fontFamily: "'Cormorant Garamond', Georgia, serif",
             fontSize: 22,
             fontWeight: 600,
-            color: "#1C2B3A",
+            color: "var(--color-primary)",
             marginBottom: 16,
           }}
         >
           Consultation Form
         </h2>
-        <p style={{ fontSize: 14, color: "#6B7280", marginBottom: 16 }}>
+        <p style={{ fontSize: 14, color: "var(--color-text-light)", marginBottom: 16 }}>
           Fill out this short form and someone from Arcadia will call you back.
         </p>
 
@@ -191,7 +191,7 @@ export default function ContactPage() {
                 fontWeight: 600,
                 textTransform: "uppercase",
                 letterSpacing: "0.06em",
-                color: "#6B7280",
+                color: "var(--color-text-light)",
                 marginBottom: 6,
               }}
             >
@@ -224,7 +224,7 @@ export default function ContactPage() {
                 fontWeight: 600,
                 textTransform: "uppercase",
                 letterSpacing: "0.06em",
-                color: "#6B7280",
+                color: "var(--color-text-light)",
                 marginBottom: 6,
               }}
             >
@@ -257,7 +257,7 @@ export default function ContactPage() {
                 fontWeight: 600,
                 textTransform: "uppercase",
                 letterSpacing: "0.06em",
-                color: "#6B7280",
+                color: "var(--color-text-light)",
                 marginBottom: 6,
               }}
             >
@@ -289,7 +289,7 @@ export default function ContactPage() {
                 fontWeight: 600,
                 textTransform: "uppercase",
                 letterSpacing: "0.06em",
-                color: "#6B7280",
+                color: "var(--color-text-light)",
                 marginBottom: 6,
               }}
             >
@@ -327,7 +327,7 @@ export default function ContactPage() {
               padding: "12px 18px",
               borderRadius: 8,
               border: "none",
-              background: "#C8302A",
+              background: "var(--color-accent)",
               color: "#FFFFFF",
               fontSize: 15,
               fontWeight: 600,
@@ -355,7 +355,7 @@ export default function ContactPage() {
             fontWeight: 700,
             letterSpacing: "0.1em",
             textTransform: "uppercase",
-            color: "#C8302A",
+            color: "var(--color-accent)",
             marginBottom: 12,
           }}
         >
@@ -365,7 +365,7 @@ export default function ContactPage() {
           style={{
             fontFamily: "'Cormorant Garamond', Georgia, serif",
             fontSize: "clamp(1.5rem, 3vw, 2rem)",
-            color: "#1C2B3A",
+            color: "var(--color-primary)",
             marginBottom: 10,
           }}
         >
@@ -375,7 +375,7 @@ export default function ContactPage() {
           <a
             href="/our-services/"
             style={{
-              color: "#1C2B3A",
+              color: "var(--color-primary)",
               textDecoration: "none",
               border: "1px solid #E5E0D8",
               borderRadius: 100,
@@ -389,7 +389,7 @@ export default function ContactPage() {
           <a
             href="/conditions/"
             style={{
-              color: "#1C2B3A",
+              color: "var(--color-primary)",
               textDecoration: "none",
               border: "1px solid #E5E0D8",
               borderRadius: 100,
@@ -403,7 +403,7 @@ export default function ContactPage() {
           <a
             href="/how-care-starts/"
             style={{
-              color: "#1C2B3A",
+              color: "var(--color-primary)",
               textDecoration: "none",
               border: "1px solid #E5E0D8",
               borderRadius: 100,
@@ -417,7 +417,7 @@ export default function ContactPage() {
           <a
             href="/faqs/"
             style={{
-              color: "#1C2B3A",
+              color: "var(--color-primary)",
               textDecoration: "none",
               border: "1px solid #E5E0D8",
               borderRadius: 100,
@@ -437,7 +437,7 @@ export default function ContactPage() {
           marginTop: 8,
           borderRadius: 16,
           border: "1px solid #E5E0D8",
-          background: "#FAFAF8",
+          background: "var(--color-surface)",
           padding: 24,
         }}
       >
@@ -445,7 +445,7 @@ export default function ContactPage() {
           style={{
             fontFamily: "'Cormorant Garamond', Georgia, serif",
             fontSize: "clamp(1.5rem, 3vw, 2rem)",
-            color: "#1C2B3A",
+            color: "var(--color-primary)",
             marginBottom: 10,
           }}
         >
@@ -454,7 +454,7 @@ export default function ContactPage() {
         <p
           style={{
             fontSize: 15,
-            color: "#4B5563",
+            color: "var(--color-text-muted)",
             lineHeight: 1.75,
             marginBottom: 14,
           }}
@@ -464,7 +464,7 @@ export default function ContactPage() {
           and what your family is carrying right now. From there, we explain
           realistic care options and a practical next step.
         </p>
-        <p style={{ fontSize: 15, color: "#4B5563", lineHeight: 1.75 }}>
+        <p style={{ fontSize: 15, color: "var(--color-text-muted)", lineHeight: 1.75 }}>
           If you are facing an urgent transition, such as a recent diagnosis or
           a hospital discharge, tell us what timeline you are working with. We
           can often move quickly while still matching care thoughtfully.
@@ -485,7 +485,7 @@ export default function ContactPage() {
           style={{
             fontFamily: "'Cormorant Garamond', Georgia, serif",
             fontSize: "clamp(1.5rem, 3vw, 2rem)",
-            color: "#1C2B3A",
+            color: "var(--color-primary)",
             marginBottom: 10,
           }}
         >
@@ -495,7 +495,7 @@ export default function ContactPage() {
           style={{
             margin: 0,
             paddingLeft: 18,
-            color: "#4B5563",
+            color: "var(--color-text-muted)",
             lineHeight: 1.9,
             fontSize: 15,
           }}

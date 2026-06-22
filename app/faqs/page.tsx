@@ -101,7 +101,7 @@ export default function FaqPage() {
       <main style={{ background: "#FFFFFF" }}>
         <section
           style={{
-            background: "#1C2B3A",
+            background: "var(--color-primary)",
             padding: "96px 24px 72px",
           }}
         >
@@ -112,7 +112,7 @@ export default function FaqPage() {
                 fontWeight: 700,
                 letterSpacing: "0.1em",
                 textTransform: "uppercase",
-                color: "#C8302A",
+                color: "var(--color-accent)",
                 marginBottom: 14,
               }}
             >
@@ -151,7 +151,7 @@ export default function FaqPage() {
                 style={{
                   border: "1px solid #E5E0D8",
                   borderRadius: 14,
-                  background: "#FAFAF8",
+                  background: "var(--color-surface)",
                   padding: "24px 24px 20px",
                   marginBottom: 16,
                 }}
@@ -160,13 +160,13 @@ export default function FaqPage() {
                   style={{
                     fontFamily: "'Cormorant Garamond', Georgia, serif",
                     fontSize: "clamp(1.35rem, 2.6vw, 1.8rem)",
-                    color: "#1C2B3A",
+                    color: "var(--color-primary)",
                     marginBottom: 10,
                   }}
                 >
                   {faq.q}
                 </h2>
-                <p style={{ color: "#4B5563", lineHeight: 1.75, fontSize: 15 }}>
+                <p style={{ color: "var(--color-text-muted)", lineHeight: 1.75, fontSize: 15 }}>
                   {faq.a}
                 </p>
               </article>
@@ -179,7 +179,7 @@ export default function FaqPage() {
             style={{
               maxWidth: 1000,
               margin: "0 auto",
-              background: "#1C2B3A",
+              background: "var(--color-primary)",
               borderRadius: 14,
               padding: "30px 24px",
             }}
@@ -190,7 +190,7 @@ export default function FaqPage() {
                 fontWeight: 700,
                 letterSpacing: "0.1em",
                 textTransform: "uppercase",
-                color: "#C8302A",
+                color: "var(--color-accent)",
                 marginBottom: 12,
               }}
             >
@@ -221,7 +221,7 @@ export default function FaqPage() {
               <a
                 href="tel:8449770050"
                 style={{
-                  background: "#C8302A",
+                  background: "var(--color-accent)",
                   color: "#FFFFFF",
                   textDecoration: "none",
                   padding: "12px 20px",

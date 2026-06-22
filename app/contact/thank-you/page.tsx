@@ -20,14 +20,14 @@ export default function ContactThankYouPage() {
     const headingStyle = {
         fontFamily: "'Cormorant Garamond', Georgia, serif",
         fontSize: 28,
-        color: "#1C2B3A",
+        color: "var(--color-primary)",
         margin: "0 0 12px",
         lineHeight: 1.2,
     };
 
     const textStyle = {
         fontSize: 15,
-        color: "#4B5563",
+        color: "var(--color-text-muted)",
         lineHeight: 1.8,
         margin: 0,
     };
@@ -44,7 +44,7 @@ export default function ContactThankYouPage() {
                 style={{
                     borderRadius: 16,
                     border: "1px solid #E5E0D8",
-                    background: "#FAFAF8",
+                    background: "var(--color-surface)",
                     padding: "32px 24px",
                     textAlign: "center",
                 }}
@@ -55,7 +55,7 @@ export default function ContactThankYouPage() {
                         fontWeight: 700,
                         letterSpacing: "0.1em",
                         textTransform: "uppercase",
-                        color: "#C8302A",
+                        color: "var(--color-accent)",
                         margin: "0 0 12px",
                     }}
                 >
@@ -67,7 +67,7 @@ export default function ContactThankYouPage() {
                         fontFamily: "'Cormorant Garamond', Georgia, serif",
                         fontSize: "clamp(2.2rem, 4vw, 3.4rem)",
                         fontWeight: 600,
-                        color: "#1C2B3A",
+                        color: "var(--color-primary)",
                         margin: "0 0 14px",
                         lineHeight: 1.1,
                     }}
@@ -126,7 +126,7 @@ export default function ContactThankYouPage() {
                             display: "inline-block",
                             padding: "12px 18px",
                             borderRadius: 8,
-                            background: "#C8302A",
+                            background: "var(--color-accent)",
                             color: "#FFFFFF",
                             fontSize: 15,
                             fontWeight: 600,
@@ -144,7 +144,7 @@ export default function ContactThankYouPage() {
                             borderRadius: 8,
                             border: "1px solid #E5E0D8",
                             background: "#FFFFFF",
-                            color: "#1C2B3A",
+                            color: "var(--color-primary)",
                             fontSize: 15,
                             fontWeight: 600,
                             textDecoration: "none",
@@ -207,7 +207,7 @@ export default function ContactThankYouPage() {
                         <h3
                             style={{
                                 fontSize: 18,
-                                color: "#1C2B3A",
+                                color: "var(--color-primary)",
                                 margin: "0 0 8px",
                                 lineHeight: 1.4,
                             }}
@@ -224,7 +224,7 @@ export default function ContactThankYouPage() {
                         <h3
                             style={{
                                 fontSize: 18,
-                                color: "#1C2B3A",
+                                color: "var(--color-primary)",
                                 margin: "0 0 8px",
                                 lineHeight: 1.4,
                             }}

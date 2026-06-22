@@ -126,7 +126,7 @@ export default function TorontoLocationPage() {
               We&apos;ve been serving Toronto families since 2005, and our caregivers are supported by a team that understands the city&apos;s health system, its hospitals, and the specific pressures Toronto families face when caring for a loved one at home.
             </p>
             <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
-              <a href="tel:+18449770050" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "#C8302A", color: "#fff", padding: "14px 28px", borderRadius: 8, fontSize: 15, fontWeight: 700, textDecoration: "none" }}>📞 Call (844) 977-0050</a>
+              <a href="tel:+18449770050" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "var(--color-accent)", color: "#fff", padding: "14px 28px", borderRadius: 8, fontSize: 15, fontWeight: 700, textDecoration: "none" }}>📞 Call (844) 977-0050</a>
               <Link href="/contact/" style={{ display: "inline-flex", padding: "14px 28px", borderRadius: 8, border: "1.5px solid rgba(255,255,255,0.5)", color: "#fff", textDecoration: "none", fontSize: 15, fontWeight: 700 }}>Book a Free Consultation</Link>
             </div>
           </div>

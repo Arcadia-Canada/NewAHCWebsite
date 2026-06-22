@@ -89,7 +89,7 @@ export default function ReferralFormPage() {
             fontWeight: 700,
             letterSpacing: "0.1em",
             textTransform: "uppercase",
-            color: "#C8302A",
+            color: "var(--color-accent)",
             marginBottom: 12,
           }}
         >
@@ -100,13 +100,13 @@ export default function ReferralFormPage() {
             fontFamily: "'Cormorant Garamond', Georgia, serif",
             fontSize: "clamp(2.2rem, 4vw, 3.4rem)",
             fontWeight: 600,
-            color: "#1C2B3A",
+            color: "var(--color-primary)",
             marginBottom: 12,
           }}
         >
           Submit a Professional Referral
         </h1>
-        <p style={{ fontSize: 15, color: "#6B7280", lineHeight: 1.7 }}>
+        <p style={{ fontSize: 15, color: "var(--color-text-light)", lineHeight: 1.7 }}>
           A dedicated, clinically oriented pathway for discharge planners,
           social workers, OTs, and physicians to refer complex cases.
         </p>
@@ -117,7 +117,7 @@ export default function ReferralFormPage() {
           borderRadius: 16,
           border: "1px solid #E5E0D8",
           padding: 24,
-          background: "#FAFAF8",
+          background: "var(--color-surface)",
         }}
       >
         <form
@@ -163,7 +163,7 @@ export default function ReferralFormPage() {
                   fontWeight: 600,
                   textTransform: "uppercase",
                   letterSpacing: "0.06em",
-                  color: "#6B7280",
+                  color: "var(--color-text-light)",
                   marginBottom: 6,
                 }}
               >
@@ -200,7 +200,7 @@ export default function ReferralFormPage() {
                 fontWeight: 600,
                 textTransform: "uppercase",
                 letterSpacing: "0.06em",
-                color: "#6B7280",
+                color: "var(--color-text-light)",
                 marginBottom: 6,
               }}
             >
@@ -234,7 +234,7 @@ export default function ReferralFormPage() {
                 fontWeight: 600,
                 textTransform: "uppercase",
                 letterSpacing: "0.06em",
-                color: "#6B7280",
+                color: "var(--color-text-light)",
                 marginBottom: 6,
               }}
             >
@@ -270,7 +270,7 @@ export default function ReferralFormPage() {
                 padding: "12px 18px",
                 borderRadius: 8,
                 border: "none",
-                background: "#1C2B3A",
+                background: "var(--color-primary)",
                 color: "#FFFFFF",
                 fontSize: 15,
                 fontWeight: 600,
@@ -301,7 +301,7 @@ export default function ReferralFormPage() {
             fontWeight: 700,
             letterSpacing: "0.1em",
             textTransform: "uppercase",
-            color: "#C8302A",
+            color: "var(--color-accent)",
             marginBottom: 12,
           }}
         >
@@ -311,7 +311,7 @@ export default function ReferralFormPage() {
           <a
             href="/healthcare-professionals/"
             style={{
-              color: "#1C2B3A",
+              color: "var(--color-primary)",
               textDecoration: "none",
               border: "1px solid #E5E0D8",
               borderRadius: 100,
@@ -325,7 +325,7 @@ export default function ReferralFormPage() {
           <a
             href="/our-services/hospital-discharge-support/"
             style={{
-              color: "#1C2B3A",
+              color: "var(--color-primary)",
               textDecoration: "none",
               border: "1px solid #E5E0D8",
               borderRadius: 100,
@@ -339,7 +339,7 @@ export default function ReferralFormPage() {
           <a
             href="/our-services/case-management/"
             style={{
-              color: "#1C2B3A",
+              color: "var(--color-primary)",
               textDecoration: "none",
               border: "1px solid #E5E0D8",
               borderRadius: 100,
@@ -353,7 +353,7 @@ export default function ReferralFormPage() {
           <a
             href="/contact/"
             style={{
-              color: "#1C2B3A",
+              color: "var(--color-primary)",
               textDecoration: "none",
               border: "1px solid #E5E0D8",
               borderRadius: 100,
@@ -372,7 +372,7 @@ export default function ReferralFormPage() {
           marginTop: 16,
           borderRadius: 16,
           border: "1px solid #E5E0D8",
-          background: "#FAFAF8",
+          background: "var(--color-surface)",
           padding: 24,
         }}
       >
@@ -380,7 +380,7 @@ export default function ReferralFormPage() {
           style={{
             fontFamily: "'Cormorant Garamond', Georgia, serif",
             fontSize: "clamp(1.5rem, 3vw, 2rem)",
-            color: "#1C2B3A",
+            color: "var(--color-primary)",
             marginBottom: 10,
           }}
         >
@@ -389,7 +389,7 @@ export default function ReferralFormPage() {
         <p
           style={{
             fontSize: 15,
-            color: "#4B5563",
+            color: "var(--color-text-muted)",
             lineHeight: 1.75,
             marginBottom: 14,
           }}
@@ -400,7 +400,7 @@ export default function ReferralFormPage() {
           cognitive decline, fall-risk scenarios, and families experiencing
           rapid caregiver strain.
         </p>
-        <p style={{ fontSize: 15, color: "#4B5563", lineHeight: 1.75 }}>
+        <p style={{ fontSize: 15, color: "var(--color-text-muted)", lineHeight: 1.75 }}>
           If the situation is time-sensitive, include expected discharge date,
           current mobility status, medication considerations, and who will be
           the primary family contact. These details help us coordinate quickly
@@ -421,7 +421,7 @@ export default function ReferralFormPage() {
           style={{
             fontFamily: "'Cormorant Garamond', Georgia, serif",
             fontSize: "clamp(1.5rem, 3vw, 2rem)",
-            color: "#1C2B3A",
+            color: "var(--color-primary)",
             marginBottom: 10,
           }}
         >
@@ -431,7 +431,7 @@ export default function ReferralFormPage() {
           style={{
             margin: 0,
             paddingLeft: 18,
-            color: "#4B5563",
+            color: "var(--color-text-muted)",
             lineHeight: 1.9,
             fontSize: 15,
           }}

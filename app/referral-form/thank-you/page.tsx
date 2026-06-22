@@ -23,7 +23,7 @@ export default function ReferralThankYouPage() {
         style={{
           borderRadius: 20,
           border: "1px solid #E5E0D8",
-          background: "#FAFAF8",
+          background: "var(--color-surface)",
           padding: "36px 28px",
           textAlign: "center",
         }}
@@ -34,7 +34,7 @@ export default function ReferralThankYouPage() {
             fontWeight: 700,
             letterSpacing: "0.1em",
             textTransform: "uppercase",
-            color: "#C8302A",
+            color: "var(--color-accent)",
             marginBottom: 12,
           }}
         >
@@ -46,7 +46,7 @@ export default function ReferralThankYouPage() {
             fontFamily: "'Cormorant Garamond', Georgia, serif",
             fontSize: "clamp(2.2rem, 4vw, 3.4rem)",
             fontWeight: 600,
-            color: "#1C2B3A",
+            color: "var(--color-primary)",
             marginBottom: 14,
           }}
         >
@@ -56,7 +56,7 @@ export default function ReferralThankYouPage() {
         <p
           style={{
             fontSize: 15,
-            color: "#4B5563",
+            color: "var(--color-text-muted)",
             lineHeight: 1.8,
             maxWidth: 700,
             margin: "0 auto 18px",
@@ -70,7 +70,7 @@ export default function ReferralThankYouPage() {
         <p
           style={{
             fontSize: 15,
-            color: "#4B5563",
+            color: "var(--color-text-muted)",
             lineHeight: 1.8,
             maxWidth: 700,
             margin: "0 auto 24px",
@@ -96,7 +96,7 @@ export default function ReferralThankYouPage() {
               padding: "12px 18px",
               borderRadius: 8,
               border: "none",
-              background: "#1C2B3A",
+              background: "var(--color-primary)",
               color: "#FFFFFF",
               fontSize: 15,
               fontWeight: 600,
@@ -114,7 +114,7 @@ export default function ReferralThankYouPage() {
               borderRadius: 8,
               border: "1px solid #E5E0D8",
               background: "#FFFFFF",
-              color: "#1C2B3A",
+              color: "var(--color-primary)",
               fontSize: 15,
               fontWeight: 600,
               textDecoration: "none",
@@ -146,13 +146,13 @@ export default function ReferralThankYouPage() {
             style={{
               fontFamily: "'Cormorant Garamond', Georgia, serif",
               fontSize: 28,
-              color: "#1C2B3A",
+              color: "var(--color-primary)",
               marginBottom: 10,
             }}
           >
             What happens next
           </h2>
-          <p style={{ fontSize: 15, color: "#4B5563", lineHeight: 1.75 }}>
+          <p style={{ fontSize: 15, color: "var(--color-text-muted)", lineHeight: 1.75 }}>
             We review referral information, determine urgency, and identify the
             most appropriate support pathway for the patient and family. Our care
             coordination team ensures a smooth transition from hospital to home
@@ -172,13 +172,13 @@ export default function ReferralThankYouPage() {
             style={{
               fontFamily: "'Cormorant Garamond', Georgia, serif",
               fontSize: 28,
-              color: "#1C2B3A",
+              color: "var(--color-primary)",
               marginBottom: 10,
             }}
           >
             Helpful follow-up details
           </h2>
-          <p style={{ fontSize: 15, color: "#4B5563", lineHeight: 1.75 }}>
+          <p style={{ fontSize: 15, color: "var(--color-text-muted)", lineHeight: 1.75 }}>
             If needed, you may also share discharge date, mobility status,
             medication considerations, and the primary family contact to support
             faster triage and better care planning.
@@ -188,10 +188,10 @@ export default function ReferralThankYouPage() {
 
       {/* NEW SEO CONTENT */}
       <section style={{ marginTop: 30 }}>
-        <h2 style={{ fontSize: 26, marginBottom: 10, color: "#1C2B3A" }}>
+        <h2 style={{ fontSize: 26, marginBottom: 10, color: "var(--color-primary)" }}>
           About Our Home Care Services
         </h2>
-        <p style={{ fontSize: 15, lineHeight: 1.8, color: "#4B5563" }}>
+        <p style={{ fontSize: 15, lineHeight: 1.8, color: "var(--color-text-muted)" }}>
           Arcadia Home Care provides personalized in-home care services designed
           to support individuals and families during recovery, aging, or ongoing
           health challenges. Our services include senior care, post-hospital
@@ -200,7 +200,7 @@ export default function ReferralThankYouPage() {
           ensure each care plan is tailored to the specific needs of the patient.
         </p>
 
-        <p style={{ fontSize: 15, lineHeight: 1.8, color: "#4B5563", marginTop: 10 }}>
+        <p style={{ fontSize: 15, lineHeight: 1.8, color: "var(--color-text-muted)", marginTop: 10 }}>
           Whether the referral is for short-term recovery or long-term care, our
           team focuses on delivering compassionate, reliable, and professional
           support that improves quality of life and ensures safety at home.
@@ -208,10 +208,10 @@ export default function ReferralThankYouPage() {
       </section>
 
       <section style={{ marginTop: 24 }}>
-        <h2 style={{ fontSize: 26, marginBottom: 10, color: "#1C2B3A" }}>
+        <h2 style={{ fontSize: 26, marginBottom: 10, color: "var(--color-primary)" }}>
           Who We Support
         </h2>
-        <p style={{ fontSize: 15, lineHeight: 1.8, color: "#4B5563" }}>
+        <p style={{ fontSize: 15, lineHeight: 1.8, color: "var(--color-text-muted)" }}>
           We support seniors, individuals recovering from surgery or illness,
           and families who need dependable in-home care solutions. Our team also
           works with hospitals, discharge planners, and healthcare providers to
@@ -221,24 +221,24 @@ export default function ReferralThankYouPage() {
       </section>
 
       <section style={{ marginTop: 24 }}>
-        <h2 style={{ fontSize: 26, marginBottom: 10, color: "#1C2B3A" }}>
+        <h2 style={{ fontSize: 26, marginBottom: 10, color: "var(--color-primary)" }}>
           Frequently Asked Questions
         </h2>
 
         <p style={{ fontWeight: 600 }}>How quickly will someone follow up?</p>
-        <p style={{ fontSize: 15, color: "#4B5563", marginBottom: 10 }}>
+        <p style={{ fontSize: 15, color: "var(--color-text-muted)", marginBottom: 10 }}>
           Most referrals are reviewed within a few hours, and our team typically
           follows up the same day or next business day depending on urgency.
         </p>
 
         <p style={{ fontWeight: 600 }}>What if the situation is urgent?</p>
-        <p style={{ fontSize: 15, color: "#4B5563", marginBottom: 10 }}>
+        <p style={{ fontSize: 15, color: "var(--color-text-muted)", marginBottom: 10 }}>
           For urgent care needs, we recommend calling directly to ensure immediate
           coordination with our care team.
         </p>
 
         <p style={{ fontWeight: 600 }}>What services are available?</p>
-        <p style={{ fontSize: 15, color: "#4B5563" }}>
+        <p style={{ fontSize: 15, color: "var(--color-text-muted)" }}>
           We offer a wide range of home care services including personal care,
           companionship, specialized dementia care, and post-discharge support.
         </p>

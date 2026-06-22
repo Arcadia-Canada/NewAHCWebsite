@@ -18,8 +18,8 @@ const roles = [
     external: false,
     icon: (
       <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-        <circle cx="14" cy="9" r="5" stroke="#C8302A" strokeWidth="1.8"/>
-        <path d="M4 24c0-5.523 4.477-10 10-10s10 4.477 10 10" stroke="#C8302A" strokeWidth="1.8" strokeLinecap="round"/>
+        <circle cx="14" cy="9" r="5" stroke="var(--color-accent)" strokeWidth="1.8"/>
+        <path d="M4 24c0-5.523 4.477-10 10-10s10 4.477 10 10" stroke="var(--color-accent)" strokeWidth="1.8" strokeLinecap="round"/>
       </svg>
     ),
     tag: 'Most In Demand',
@@ -44,8 +44,8 @@ const roles = [
     external: false,
     icon: (
       <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-        <rect x="11" y="3" width="6" height="22" rx="3" stroke="#C8302A" strokeWidth="1.8"/>
-        <rect x="3" y="11" width="22" height="6" rx="3" stroke="#C8302A" strokeWidth="1.8"/>
+        <rect x="11" y="3" width="6" height="22" rx="3" stroke="var(--color-accent)" strokeWidth="1.8"/>
+        <rect x="3" y="11" width="22" height="6" rx="3" stroke="var(--color-accent)" strokeWidth="1.8"/>
       </svg>
     ),
     tag: 'Clinical Role',
@@ -71,10 +71,10 @@ const roles = [
     external: false,
     icon: (
       <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-        <path d="M8 20l4-8 4 8" stroke="#C8302A" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
-        <path d="M9.5 17h5" stroke="#C8302A" strokeWidth="1.8" strokeLinecap="round"/>
-        <circle cx="20" cy="8" r="3" stroke="#C8302A" strokeWidth="1.8"/>
-        <path d="M20 11v6" stroke="#C8302A" strokeWidth="1.8" strokeLinecap="round"/>
+        <path d="M8 20l4-8 4 8" stroke="var(--color-accent)" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M9.5 17h5" stroke="var(--color-accent)" strokeWidth="1.8" strokeLinecap="round"/>
+        <circle cx="20" cy="8" r="3" stroke="var(--color-accent)" strokeWidth="1.8"/>
+        <path d="M20 11v6" stroke="var(--color-accent)" strokeWidth="1.8" strokeLinecap="round"/>
       </svg>
     ),
     tag: 'Specialist Role',

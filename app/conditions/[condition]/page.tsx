@@ -33,7 +33,7 @@ export default async function ConditionPage({ params }: ConditionPageProps) {
             fontWeight: 700,
             letterSpacing: "0.1em",
             textTransform: "uppercase",
-            color: "#C8302A",
+            color: "var(--color-accent)",
             marginBottom: 12,
           }}
         >
@@ -44,13 +44,13 @@ export default async function ConditionPage({ params }: ConditionPageProps) {
             fontFamily: "'Cormorant Garamond', Georgia, serif",
             fontSize: "clamp(2rem, 3.4vw, 3.1rem)",
             fontWeight: 600,
-            color: "#1C2B3A",
+            color: "var(--color-primary)",
             marginBottom: 12,
           }}
         >
           {title}
         </h1>
-        <p style={{ fontSize: 16, color: "#6B7280", lineHeight: 1.7 }}>
+        <p style={{ fontSize: 16, color: "var(--color-text-light)", lineHeight: 1.7 }}>
           This page follows the Arcadia condition template — ready for clear,
           empathetic explanations of the condition and how home care helps.
         </p>
@@ -62,13 +62,13 @@ export default async function ConditionPage({ params }: ConditionPageProps) {
             fontFamily: "'Cormorant Garamond', Georgia, serif",
             fontSize: 24,
             fontWeight: 600,
-            color: "#1C2B3A",
+            color: "var(--color-primary)",
             marginBottom: 12,
           }}
         >
           Understanding {title} at Home
         </h2>
-        <p style={{ fontSize: 15, color: "#4B5563", lineHeight: 1.8 }}>
+        <p style={{ fontSize: 15, color: "var(--color-text-muted)", lineHeight: 1.8 }}>
           Replace this placeholder with a clinically grounded but accessible
           overview of what this condition looks like at home — in language
           families can recognize.
@@ -81,13 +81,13 @@ export default async function ConditionPage({ params }: ConditionPageProps) {
             fontFamily: "'Cormorant Garamond', Georgia, serif",
             fontSize: 24,
             fontWeight: 600,
-            color: "#1C2B3A",
+            color: "var(--color-primary)",
             marginBottom: 12,
           }}
         >
           How Home Care Helps
         </h2>
-        <p style={{ fontSize: 15, color: "#4B5563", lineHeight: 1.8 }}>
+        <p style={{ fontSize: 15, color: "var(--color-text-muted)", lineHeight: 1.8 }}>
           Outline the specific ways Arcadia caregivers support safety, routines,
           and dignity for someone living with this condition — and how the team
           works alongside the clinical providers.
@@ -100,13 +100,13 @@ export default async function ConditionPage({ params }: ConditionPageProps) {
             fontFamily: "'Cormorant Garamond', Georgia, serif",
             fontSize: 24,
             fontWeight: 600,
-            color: "#1C2B3A",
+            color: "var(--color-primary)",
             marginBottom: 12,
           }}
         >
           Our Approach to {title} Care
         </h2>
-        <p style={{ fontSize: 15, color: "#4B5563", lineHeight: 1.8 }}>
+        <p style={{ fontSize: 15, color: "var(--color-text-muted)", lineHeight: 1.8 }}>
           Use this section for Arcadia&apos;s philosophy of care, training, and
           coordination model for this condition.
         </p>
@@ -118,13 +118,13 @@ export default async function ConditionPage({ params }: ConditionPageProps) {
             fontFamily: "'Cormorant Garamond', Georgia, serif",
             fontSize: 22,
             fontWeight: 600,
-            color: "#1C2B3A",
+            color: "var(--color-primary)",
             marginBottom: 12,
           }}
         >
           Related Services &amp; Guides
         </h2>
-        <p style={{ fontSize: 15, color: "#4B5563", lineHeight: 1.8 }}>
+        <p style={{ fontSize: 15, color: "var(--color-text-muted)", lineHeight: 1.8 }}>
           Placeholder to link to the most relevant Arcadia services and family
           guides for this condition.
         </p>
@@ -136,13 +136,13 @@ export default async function ConditionPage({ params }: ConditionPageProps) {
             fontFamily: "'Cormorant Garamond', Georgia, serif",
             fontSize: 22,
             fontWeight: 600,
-            color: "#1C2B3A",
+            color: "var(--color-primary)",
             marginBottom: 12,
           }}
         >
           Frequently Asked Questions
         </h2>
-        <ul style={{ paddingLeft: 20, fontSize: 15, color: "#4B5563", lineHeight: 1.8 }}>
+        <ul style={{ paddingLeft: 20, fontSize: 15, color: "var(--color-text-muted)", lineHeight: 1.8 }}>
           <li>Example FAQ question about this condition and home care.</li>
           <li>Example FAQ about caregiver roles, safety, and oversight.</li>
           <li>Example FAQ about funding, hours, or coordination.</li>
@@ -161,13 +161,13 @@ export default async function ConditionPage({ params }: ConditionPageProps) {
             fontFamily: "'Cormorant Garamond', Georgia, serif",
             fontSize: 24,
             fontWeight: 600,
-            color: "#1C2B3A",
+            color: "var(--color-primary)",
             marginBottom: 12,
           }}
         >
           Talk to Us About {title}
         </h2>
-        <p style={{ fontSize: 15, color: "#4B5563", lineHeight: 1.8, marginBottom: 12 }}>
+        <p style={{ fontSize: 15, color: "var(--color-text-muted)", lineHeight: 1.8, marginBottom: 12 }}>
           Close with a CTA that reassures families they don&apos;t have to
           navigate this condition alone.
         </p>
@@ -177,7 +177,7 @@ export default async function ConditionPage({ params }: ConditionPageProps) {
             display: "inline-block",
             padding: "12px 22px",
             borderRadius: 8,
-            background: "#C8302A",
+            background: "var(--color-accent)",
             color: "#FFFFFF",
             fontSize: 15,
             fontWeight: 600,

@@ -77,7 +77,7 @@ export default function Navbar() {
                 href={`/${item.toLowerCase().replace(/ /g, "-")}/`}
                 className="nav-link"
                 style={{
-                  color: "#1C2B3A",
+                  color: "var(--color-primary)",
                   textDecoration: "none",
                   whiteSpace: "nowrap",
                 }}
@@ -95,7 +95,7 @@ export default function Navbar() {
               href="tel:8449770050"
               className="nav-phone-btn"
               style={{
-                color: "#C8302A",
+                color: "var(--color-accent)",
                 textDecoration: "none",
                 fontSize: 15,
                 fontWeight: 600,
@@ -134,7 +134,7 @@ export default function Navbar() {
               background: "none",
               border: "none",
               cursor: "pointer",
-              color: "#1C2B3A",
+              color: "var(--color-primary)",
               fontSize: 24,
               padding: 8,
               display: "none",

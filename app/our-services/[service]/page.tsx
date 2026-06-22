@@ -37,7 +37,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
             fontWeight: 700,
             letterSpacing: "0.1em",
             textTransform: "uppercase",
-            color: "#C8302A",
+            color: "var(--color-accent)",
             marginBottom: 12,
           }}
         >
@@ -48,13 +48,13 @@ export default async function ServicePage({ params }: ServicePageProps) {
             fontFamily: "'Cormorant Garamond', Georgia, serif",
             fontSize: "clamp(2rem, 3.4vw, 3rem)",
             fontWeight: 600,
-            color: "#1C2B3A",
+            color: "var(--color-primary)",
             marginBottom: 12,
           }}
         >
           {title}
         </h1>
-        <p style={{ fontSize: 16, color: "#6B7280", lineHeight: 1.7 }}>
+        <p style={{ fontSize: 16, color: "var(--color-text-light)", lineHeight: 1.7 }}>
           This page follows the Arcadia service template — ready for detailed
           copy about what this service involves, who it is right for, and what
           families can expect.
@@ -67,13 +67,13 @@ export default async function ServicePage({ params }: ServicePageProps) {
             fontFamily: "'Cormorant Garamond', Georgia, serif",
             fontSize: 24,
             fontWeight: 600,
-            color: "#1C2B3A",
+            color: "var(--color-primary)",
             marginBottom: 12,
           }}
         >
           What This Service Involves
         </h2>
-        <p style={{ fontSize: 15, color: "#4B5563", lineHeight: 1.8 }}>
+        <p style={{ fontSize: 15, color: "var(--color-text-muted)", lineHeight: 1.8 }}>
           Replace this placeholder with 2–3 paragraphs describing how Arcadia
           delivers this specific service in the home — grounded in both clinical
           understanding and human dignity.
@@ -86,13 +86,13 @@ export default async function ServicePage({ params }: ServicePageProps) {
             fontFamily: "'Cormorant Garamond', Georgia, serif",
             fontSize: 24,
             fontWeight: 600,
-            color: "#1C2B3A",
+            color: "var(--color-primary)",
             marginBottom: 12,
           }}
         >
           Who It&apos;s Right For
         </h2>
-        <p style={{ fontSize: 15, color: "#4B5563", lineHeight: 1.8 }}>
+        <p style={{ fontSize: 15, color: "var(--color-text-muted)", lineHeight: 1.8 }}>
           Use this section to outline the situations, diagnoses, or turning
           points where this service is especially helpful.
         </p>
@@ -104,13 +104,13 @@ export default async function ServicePage({ params }: ServicePageProps) {
             fontFamily: "'Cormorant Garamond', Georgia, serif",
             fontSize: 24,
             fontWeight: 600,
-            color: "#1C2B3A",
+            color: "var(--color-primary)",
             marginBottom: 12,
           }}
         >
           What to Expect
         </h2>
-        <ol style={{ paddingLeft: 20, fontSize: 15, color: "#4B5563", lineHeight: 1.8 }}>
+        <ol style={{ paddingLeft: 20, fontSize: 15, color: "var(--color-text-muted)", lineHeight: 1.8 }}>
           <li>Short description of the first conversation and assessment.</li>
           <li>Short description of how caregivers are matched and care begins.</li>
           <li>Short description of ongoing communication and care reviews.</li>

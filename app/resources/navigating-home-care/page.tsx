@@ -258,21 +258,14 @@ export default function NavigatingHomeCareHub() {
               {articles
                 .filter((article) => article.href !== '/resources/navigating-home-care/when-parent-needs-more-help/')
                 .map((article) => (
-                <div key={article.href} className={`article-card${article.status === 'coming' ? ' coming' : ''}`}>
+                <div key={article.href} className="article-card">
                   <div className="article-card-title">
-                    {article.status === 'live' ? (
-                      <Link href={article.href}>{article.title}</Link>
-                    ) : (
-                      <span>{article.title}</span>
-                    )}
-                    {article.status === 'coming' && <span className="badge-coming">Coming soon</span>}
+                    <Link href={article.href}>{article.title}</Link>
                   </div>
                   <p>{article.description}</p>
-                  {article.status === 'live' && (
-                    <Link href={article.href} className="article-card-arrow">
-                      Read article →
-                    </Link>
-                  )}
+                  <Link href={article.href} className="article-card-arrow">
+                    Read article →
+                  </Link>
                 </div>
               ))}
             </div>
