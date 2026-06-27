@@ -1,5 +1,21 @@
 # 10 — Keyword Ownership Map
 
+> **⚠️ STOP — CHECK THE MASTER SHEET FIRST**
+> 
+> This file is a local mirror only. The live source of truth
+> for keyword reservations across all Arcadia sites is the
+> Google Sheet:
+> 
+> **[Arcadia Content Governance — Master](https://docs.google.com/spreadsheets/d/1EcU9frKxc9TxdCIKbc5u9peX9vS5udsb29Kf_1uyosk/edit?usp=sharing)**
+> 
+> Before scheduling any new article:
+> 1. Check the "Reserved Keywords" tab for conflicts
+> 2. Add your keyword there BEFORE drafting
+> 3. Then update this local file to match
+>
+> **Rule: No article gets a planned date until its keyword
+> is in the Master Sheet's Reserved Keywords tab.**
+
 Every target keyword must be owned by exactly **one page**. Two pages competing for the same keyword cannibalize each other and both lose. This doc is the single source of truth for which page owns which keyword.
 
 Last updated: May 3, 2026
