@@ -42,3 +42,6 @@ next-env.d.ts
 # cursor / local IDE state
 .cursor/
 config.bat
+
+# generated repo-inventory cache
+docs/.cache/
