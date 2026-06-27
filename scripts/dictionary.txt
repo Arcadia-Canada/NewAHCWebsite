@@ -1,0 +1,59 @@
+# Arcadia Home Care — custom spell-check dictionary
+# One word per line. Case-insensitive. Lines starting with # are ignored.
+# Add any word the system dictionary flags incorrectly.
+
+# Brand names
+Arcadia
+arcadiahomecare
+
+# Healthcare / sector terminology
+PSW
+PSWs
+GTA
+ABI
+atHome
+caregiving
+caregiver
+caregivers
+eldercare
+homecare
+dementia
+alzheimers
+Alzheimer
+palliative
+rehab
+rehabilitation
+neurological
+anoxia
+dysregulation
+
+# Ontario / government terms
+OHIP
+UHN
+Sunnybrook
+Baycrest
+ontario
+
+# Typography / web
+Cormorant
+Garamond
+clamp
+rgba
+rem
+
+# Common proper nouns
+Toronto
+
+# Common words the system dict misses
+website
+baseline
+earliest
+establishes
+planning
+progresses
+reflexes
+timeline
+
+# Canadian English variants
+behaviour
+behavioural
