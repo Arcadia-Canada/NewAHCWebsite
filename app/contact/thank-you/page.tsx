@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import GAFormEvent from "@/components/GAFormEvent";
 
 export const metadata: Metadata = {
     title: "Contact Us Thank You | Arcadia Home Care",
@@ -33,6 +34,8 @@ export default function ContactThankYouPage() {
     };
 
     return (
+        <>
+        <GAFormEvent formName="contact" />
         <main
             style={{
                 padding: "100px 20px 60px",
@@ -239,5 +242,6 @@ export default function ContactThankYouPage() {
                 </div>
             </section>
         </main>
+        </>
     );
 }
