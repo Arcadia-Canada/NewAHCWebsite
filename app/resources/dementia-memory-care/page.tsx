@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Dementia & Memory Care Resources for Families | Arcadia Home Care',
-  description: 'Guides and articles to help Toronto families navigate dementia care at home — early signs, behaviour changes, communication strategies, and more.',
+  description: 'Guides and articles to help Toronto families navigate dementia care at home — early signs, what to expect at each stage, and how to find the right support.',
   alternates: {
     canonical: 'https://www.arcadiahomecare.ca/resources/dementia-memory-care/',
   },
@@ -160,21 +160,14 @@ export default function DementiaMemoryCareHub() {
               <h2>Dementia & Memory Care Guides</h2>
 
               {articles.map((article) => (
-                <div key={article.href} className={`article-card${article.status === 'coming' ? ' coming' : ''}`}>
+                <div key={article.href} className="article-card">
                   <div className="article-card-title">
-                    {article.status === 'live' ? (
-                      <Link href={article.href}>{article.title}</Link>
-                    ) : (
-                      <span>{article.title}</span>
-                    )}
-                    {article.status === 'coming' && <span className="badge-coming">Coming soon</span>}
+                    <Link href={article.href}>{article.title}</Link>
                   </div>
                   <p>{article.description}</p>
-                  {article.status === 'live' && (
-                    <Link href={article.href} className="article-card-arrow">
-                      Read article →
-                    </Link>
-                  )}
+                  <Link href={article.href} className="article-card-arrow">
+                    Read article →
+                  </Link>
                 </div>
               ))}
             </div>
