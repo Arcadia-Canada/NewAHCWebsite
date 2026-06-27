@@ -13,7 +13,8 @@
     "voice:report": "node scripts/voice-search-report.mjs",
     "content:intel": "node scripts/ai-content-intelligence-report.mjs",
     "indexability:report": "node scripts/indexability-report.mjs",
-    "crawl:4xx": "node scripts/4xx-report.mjs"
+    "crawl:4xx": "node scripts/4xx-report.mjs",
+    "validate": "node scripts/validate-article.mjs"
   },
   "dependencies": {
     "next": "16.1.6",
