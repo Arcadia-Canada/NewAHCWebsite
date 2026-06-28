@@ -251,7 +251,7 @@ function ReferralSection() {
           <h4 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 18, fontWeight: 600, color: colors.primary, marginBottom: 20 }}>We work with:</h4>
           {['Hospital discharge planners', 'Social workers & case managers', 'Occupational therapists', 'Geriatricians & neurologists', 'Long-term care transition teams', 'Retirement home coordinators'].map(r => (
             <div key={r} style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 12 }}>
-              <span style={{ color: colors.accent, fontSize: 16, flexShrink: 0 }}>&check;</span>
+              <span style={{ color: colors.accent, fontSize: 16, flexShrink: 0 }}>&#10003;</span>
               <span style={{ fontSize: 14, color: colors.text }}>{r}</span>
             </div>
           ))}
