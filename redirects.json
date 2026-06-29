@@ -516,6 +516,14 @@
     "destination": "/resources/navigating-home-care/"
   },
   {
+    "source": "/resources/navigating-home-care/questions-before-hiring-home-care/",
+    "destination": "/resources/navigating-home-care/"
+  },
+  {
+    "source": "/resources/navigating-home-care/when-a-parent-resists-home-care/",
+    "destination": "/resources/navigating-home-care/"
+  },
+  {
     "source": "/runtime-service-worker.js",
     "destination": "/"
   },
