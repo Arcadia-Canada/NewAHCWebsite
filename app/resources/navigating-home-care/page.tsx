@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
 }
 
-const articles = [
+const articles: { title: string; href: string; description: string; status: 'live' | 'coming' }[] = [
   {
     title: 'When the Person You Love Needs More Help Than You Can Give',
     href: '/resources/navigating-home-care/when-parent-needs-more-help/',
