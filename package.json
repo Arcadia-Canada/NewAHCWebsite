@@ -15,7 +15,8 @@
     "indexability:report": "node scripts/indexability-report.mjs",
     "crawl:4xx": "node scripts/4xx-report.mjs",
     "validate": "node scripts/validate-article.mjs",
-    "sync": "node scripts/sync-from-sheet.mjs"
+    "sync": "node scripts/sync-from-sheet.mjs",
+    "sync:registry": "node scripts/sync-registry.mjs"
   },
   "dependencies": {
     "next": "16.1.6",

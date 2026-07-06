@@ -2,47 +2,73 @@
 
 Copy any block below into Cursor chat when you want the assistant to follow Arcadia governance (`AI-CONTEXT.md` and `docs/`).
 
-Last updated: May 2026 — tightened the doc-reading list, added explicit `/social/` exclusion to prevent token bloat.
+Last updated: 2026-07-06 — integrated master prompt workflow with brief-approval checkpoint, added reframe-sourcing and UTM rules to social kit prompt, added pre-run reservation check, tightened doc-reading list.
 
 ---
 
-## Standard article request (default compliance)
+## Master prompt article run (PRIMARY WORKFLOW)
 
 ```
-Following AI-CONTEXT.md and docs/: write [ARTICLE TITLE] for the [CLUSTER NAME] cluster.
+Following AI-CONTEXT.md and docs/: produce the full article package for the variables below using docs/CONTENT-PRODUCTION-ENGINE-MASTER-PROMPT.md as the governing process.
 
-Read in full: docs/02-CONTENT-CLUSTERS.md, docs/07-VOICE-AND-TONE.md, docs/AUTHORITY-MAP.md, docs/03-INTERNAL-LINKING-RULES.md.
+Read in full: docs/CONTENT-PRODUCTION-ENGINE-MASTER-PROMPT.md, docs/02-CONTENT-CLUSTERS.md, docs/07-VOICE-AND-TONE.md, docs/AUTHORITY-MAP.md, docs/03-INTERNAL-LINKING-RULES.md.
+Reference as needed: docs/05-URL-CONVENTIONS.md, docs/04-SCHEMA-STANDARDS.md, docs/CLUSTERLINKMAP.md.
+Do NOT read /social/ or any *-PROD.html / *-DEV.html files.
 
-Reference as needed: docs/05-URL-CONVENTIONS.md (for slug), docs/04-SCHEMA-STANDARDS.md (for schema blocks), docs/CLUSTERLINKMAP.md (for cluster-specific structure).
+**TWO-PHASE OUTPUT:**
+Phase 1: Produce the Content Brief (Part 2 of master prompt) and STOP. Do not draft anything until I approve the brief.
+Phase 2: After I approve, produce the full remaining output contract (Draft through Final QA checklist, output items 5–14 from the master prompt).
 
-Do NOT read /social/ — per-article briefs and kits are not relevant to generating a new article. They are read only by the social-asset prompt below.
+Hard rules — non-negotiable:
+- No invented facts, statistics, case studies, testimonials, or quotes. Use [STAT NEEDED] and [REVIEW] flags instead.
+- No differentiation claims unless I supplied [COMPETITOR_ANGLE] in the variables. If empty, write "none supplied" and proceed without differentiators.
+- No em dashes (—) anywhere in the draft. Use commas, periods, colons, or parentheses instead.
+- Propose internal links only to URLs live on arcadiahomecare.ca.
+- If anything conflicts with governance docs (keyword owner, cluster, URL, voice, schema), flag before drafting and propose the governance-compliant version.
+- Clinical/legal/financial claims must cite sources or carry [REVIEW] flags. No hedged claims without hedge language ("may," "often," "in many cases").
 
-Do NOT read past *-PROD.html or *-DEV.html files unless I explicitly name one as a voice reference. The authority map tracks published articles; reading their HTML is not needed for new article generation.
-
-Propose internal links only to URLs that are live on arcadiahomecare.ca. If the topic is not in AUTHORITY-MAP or conflicts with another entry, say so before drafting. If any element of your draft (slug, URL, schema, link, voice) conflicts with what the governance docs specify, flag the conflict and propose the governance-compliant version before continuing.
-
-Do not use em dashes (—) anywhere in the draft. Per docs/07-VOICE-AND-TONE.md, use commas, periods, colons, or parentheses instead.
+RUNTIME VARIABLES (fill before pasting):
+[SITE]                HC | REHAB | ECC
+[COMPANY_NAME]        Arcadia Home Care | Arcadia Rehab | Eldercare Concierge
+[SERVICE]             
+[TARGET_AUDIENCE]     
+[AWARENESS_LEVEL]     Unaware | Problem-aware | Solution-aware | Product-aware
+[LOCATION]            Toronto / GTA / Ontario
+[PRIMARY_KEYWORD]     (verify reserved in Sheet first — Step 1 prerequisite)
+[SECONDARY_KEYWORDS]  
+[SEARCH_INTENT]       Informational | Evaluative | Navigational | Transactional
+[FUNNEL_STAGE]        Awareness | Consideration | Decision
+[PAGE_ROLE]           Resource Article | Condition Page | Service Page | Cluster Hub | Journey | Lead Magnet
+[LIVE_CLUSTER]        (existing approved cluster — no article creates a new cluster)
+[EMOTIONAL_ENTRY]     
+[KEY_REFRAME]         
+[PRIMARY_CONVERSION]  
+[SECONDARY_CONVERSION]
+[CTA_STYLE]           Thought-close | Soft | Moderate | Direct
+[INTERNAL_LINKS]      (parent cluster hub + siblings + one service/condition page, from CLUSTERLINKMAP)
+[COMPETITOR_ANGLE]    (leave empty if undefined; model will not invent)
+[REQUIRED_SOURCES]    (acceptable authorities for this topic)
+[CLINICAL_REVIEWER]   (name of office reviewer — will be recorded in Sheet col O at sign-off)
+[UTM_CAMPAIGN]        (campaign slug for derivatives)
 ```
 
-**How to use:** Replace `[ARTICLE TITLE]` and `[CLUSTER NAME]` (for example `Navigating Home Care` or `Family Caregiver Support`), then paste into Cursor.
+**How to use:** Fill the RUNTIME VARIABLES block from the governance Sheet + your strategy notes. Paste the entire block. Cursor will produce the brief first; you review and approve before Phase 2 draft.
 
-**Why the doc list is tightened:** The previous version named 7 docs to read in full. Most blog work only needs 4 in full plus 3 as references. The new structure cuts ~30% of context cost without losing governance fidelity.
-
-**Why the `/social/` exclusion matters:** Without it, Cursor may index brief and kit files (~64,000 tokens) that have zero relevance to writing a different article. The `.cursorignore` file at the repo root also enforces this, but stating it explicitly in the prompt prevents the AI from going hunting.
-
-**Why the conflict-flagging clause matters:** Without it, an AI assistant may silently "resolve" a conflict between your request and the docs by following your request and overriding the docs. The clause forces the AI to surface every disagreement for your decision before drafting.
+**Why the brief-approval checkpoint:** In one-pass chat, streaming the brief → draft → audit is efficient. In Cursor, a faulty brief wastes a full article's token budget. Approving the brief first is your cheapest quality gate and prevents direction shifts mid-draft.
 
 ---
 
-## Shorter version
+## Pre-run reservation and conflict check
 
 ```
-Per AI-CONTEXT and docs/: draft [TITLE] for cluster [NAME]. Read 02-CONTENT-CLUSTERS, 07-VOICE-AND-TONE, AUTHORITY-MAP, 03-INTERNAL-LINKING-RULES in full. Reference 05-URL-CONVENTIONS, 04-SCHEMA-STANDARDS, CLUSTERLINKMAP as needed. Skip /social/ entirely. Use Arcadia voice, live URLs only for internal links. Do not use em dashes (—) anywhere in the draft. Flag any conflict before drafting.
+Before I draft [ARTICLE TITLE] targeting [PRIMARY KEYWORD]: check the local docs for conflicts. Search docs/10-KEYWORD-OWNERSHIP.md, docs/AUTHORITY-MAP.md, and docs/CLUSTERLINKMAP.md for any existing article or planned topic that targets or overlaps [PRIMARY KEYWORD]. Also check docs/CLUSTERLINKMAP.md to confirm [LIVE_CLUSTER] is an approved existing cluster (no Net New clusters). Report only — do not draft. I will verify the Governance Master Sheet separately and then run the master prompt article workflow.
 ```
+
+**How to use:** Run this before the master prompt article run above. It catches gaps between your Sheet reservation and what the local docs already know about. Keep this manual oversight; Cursor checking local docs is your second line after your Sheet verification.
 
 ---
 
-## Generate social media kit and brief (run after publishing)
+## Generate social media kit and brief (after publishing)
 
 ```
 Per AI-CONTEXT.md and docs/: generate the social media kit and strategy brief for [ARTICLE TITLE] at [LIVE URL].
@@ -61,12 +87,17 @@ Required output:
 
 Required A2 structure: three reframes, each in three platform-tuned versions (Facebook, LinkedIn, Instagram). 9 A2 captions total per kit.
 
-Before generating: read the live article URL to extract the actual H1, lead paragraph, pull quotes, and key reframe — do not invent material the article does not contain. Confirm the article is in docs/AUTHORITY-MAP.md with status Published. If not, flag and stop.
+**Critical rules for social captions:**
+- Captions must be sourced exclusively from the article's reframes, emotional framing, and practical guidance — NEVER from clinical claims, statistics, medical guidance, or hedged health statements, even paraphrased. Social compression strips context and turns hedged claims into fear-bait.
+- Every link in every caption carries UTMs: utm_source={platform}&utm_medium=social&utm_campaign=[UTM_CAMPAIGN]&utm_content=[slug]. CTA register must match the article's funnel stage (Awareness → thought-close/checklist; Consideration → consultation; Decision → direct).
+- Platform voice: Facebook = warm and relatable; LinkedIn = professional and practice-relevant (advisor-facing for ECC); Instagram = visual-first, short-form, personal story angle.
 
-Read docs/07-VOICE-AND-TONE.md for the voice rules.
+Before generating: read the live article URL to extract the actual H1, lead paragraph, pull quotes, and key reframe — do not invent material the article does not contain. Confirm the article is in docs/AUTHORITY-MAP.md with status Published. If not, flag and stop. Read docs/07-VOICE-AND-TONE.md for the voice rules.
 ```
 
-**How to use:** Replace `[ARTICLE TITLE]`, `[LIVE URL]`, and `[slug]`. Run this to complete **Phase 9** of `docs/06-PUBLISHING-CHECKLIST.md` (social brief + kit — a hard gate).
+**How to use:** Replace `[ARTICLE TITLE]`, `[LIVE URL]`, `[slug]`, and `[UTM_CAMPAIGN]`. Run this to complete **Phase 9** of `docs/06-PUBLISHING-CHECKLIST.md` (social brief + kit — a hard gate).
+
+**Why the reframe-only rule matters:** Adult children weighing eldercare decisions respond to agency and reframing, not threat. Clinical claims in social captions, even hedged and sourced, function as fear-framing when isolated from the article's full context and reassurance. This rule isn't just compliance — it's correct persuasion psychology for your audience. Fear reduces help-seeking; reframes enable decision-making.
 
 ---
 
@@ -123,7 +154,7 @@ Per AI-CONTEXT.md (the live site is canonical): I think docs/[FILE NAME] may be 
 ## Cluster hub drift check (run quarterly)
 
 ```
-Per docs/AUTHORITY-MAP.md and AUTHORITY-MAP-DRIFT-AUDIT.md: fetch each of the 4 live cluster hub pages on arcadiahomecare.ca. Extract every published article displayed on each hub. Cross-reference against AUTHORITY-MAP.md status Published entries. Report any article that is Published in the map but missing from its cluster hub, OR displayed on a hub but missing from the map.
+Per docs/AUTHORITY-MAP.md: fetch each of the 5 live cluster hub pages on arcadiahomecare.ca. Extract every published article displayed on each hub. Cross-reference against AUTHORITY-MAP.md status Published entries. Report any article that is Published in the map but missing from its cluster hub, OR displayed on a hub but missing from the map.
 
 Do not edit any files. Report findings only. I will decide which fixes to apply.
 ```
@@ -137,6 +168,17 @@ Do not edit any files. Report findings only. I will decide which fixes to apply.
 
 ---
 
+## Installation checklist
+
+Before using these prompts regularly:
+
+1. Add `docs/CONTENT-PRODUCTION-ENGINE-MASTER-PROMPT.md` to the HC repo and commit.
+2. Add this line to `AI-CONTEXT.md`: "All article generation follows docs/CONTENT-PRODUCTION-ENGINE-MASTER-PROMPT.md; its output contract supersedes ad-hoc drafting."
+3. Create `docs/CURSOR-CONTENT-PROMPTS.md` in each of HC, Rehab, and ECC repos with site-specific URL substitutions (don't share one file across repos).
+4. Run a production readiness test: use the master prompt article run on 3–5 topics spanning different clusters/intents. Score each output on the self-audit rubric. Do not mark the system as production-ready until outputs are consistent.
+
+---
+
 ## Last updated
 
-May 2026 — tightened the doc-reading list to 4 full reads + 3 references for blog generation. Added explicit `/social/` exclusion and HTML draft exclusion to prevent token bloat. Added prompts for social asset generation, post-publish inventory updates, and cluster hub drift checks. The conflict-flagging clause remains the most important safeguard — without it, governance erodes silently.
+2026-07-06 — Integrated master-prompt runner as primary workflow with brief-approval checkpoint. Added pre-run reservation check for local doc conflicts. Updated social kit prompt with reframe-sourcing rule and UTM mandate. Clarified that social captions from fear-based claims reduce help-seeking in adult-children caregivers; reframes enable decisions. Kept conflict-flagging, after-publish inventory, quarterly review, schema updates, and drift checks unchanged — all sound.
