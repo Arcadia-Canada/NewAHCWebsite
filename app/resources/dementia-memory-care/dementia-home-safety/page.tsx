@@ -129,7 +129,7 @@ export default function DementiaHomeSafetyArticlePage() {
                 { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.arcadiahomecare.ca/' },
                 { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://www.arcadiahomecare.ca/resources/' },
                 { '@type': 'ListItem', position: 3, name: 'Dementia & Memory Care', item: 'https://www.arcadiahomecare.ca/resources/dementia-memory-care/' },
-                { '@type': 'ListItem', position: 4, name: 'Dementia Home Safety' },
+                { '@type': 'ListItem', position: 4, name: 'Dementia Home Safety', item: CANONICAL },
               ],
             },
             {
@@ -137,12 +137,15 @@ export default function DementiaHomeSafetyArticlePage() {
               '@type': 'HomeHealthCare',
               '@id': 'https://www.arcadiahomecare.ca/#organization',
               name: 'Arcadia Home Care',
+              alternateName: 'Arcadia',
               url: 'https://www.arcadiahomecare.ca/',
               logo: 'https://www.arcadiahomecare.ca/images/arcadia-logo.svg',
               description:
                 'Specialized home care for seniors and families across Toronto and the Greater Toronto Area, including dementia and Alzheimer\'s care, acquired brain injury support, rehabilitation, hospital discharge support, palliative care, and case management. Serving GTA families since 2005.',
+              foundingDate: '2005',
               telephone: '+1-844-977-0050',
               email: 'info@arcadiahomecare.ca',
+              medicalSpecialty: 'Geriatric',
               address: {
                 '@type': 'PostalAddress',
                 streetAddress: '302 Bay Street',
@@ -151,6 +154,15 @@ export default function DementiaHomeSafetyArticlePage() {
                 postalCode: 'M5H 0B6',
                 addressCountry: 'CA',
               },
+              geo: { '@type': 'GeoCoordinates', latitude: 43.6494, longitude: -79.3795 },
+              openingHoursSpecification: [
+                {
+                  '@type': 'OpeningHoursSpecification',
+                  dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+                  opens: '09:00',
+                  closes: '17:00',
+                },
+              ],
               areaServed: [
                 { '@type': 'City', name: 'Toronto' },
                 { '@type': 'AdministrativeArea', name: 'York Region' },
@@ -159,6 +171,13 @@ export default function DementiaHomeSafetyArticlePage() {
                 { '@type': 'AdministrativeArea', name: 'Halton Region' },
                 { '@type': 'AdministrativeArea', name: 'Greater Toronto Area' },
               ],
+              aggregateRating: {
+                '@type': 'AggregateRating',
+                ratingValue: '4.9',
+                reviewCount: '41',
+                bestRating: '5',
+                worstRating: '1',
+              },
             },
           ]),
         }}
@@ -166,89 +185,95 @@ export default function DementiaHomeSafetyArticlePage() {
 
       <style>{`
         .article-page { font-family: 'DM Sans', system-ui, sans-serif; color: #2D2D2D; }
-        .breadcrumb { max-width: 780px; margin: 0 auto; padding: 20px 24px 0; font-size: 13px; color: #6B7280; }
-        .breadcrumb a { color: #6B7280; text-decoration: none; }
-        .breadcrumb a:hover { color: #C8302A; }
-        .breadcrumb span { margin: 0 6px; }
+        .article-hero { background: #1C2B3A; padding: 96px 24px 72px; }
+        .article-hero-inner { max-width: 760px; margin: 0 auto; }
+        .article-eyebrow { font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #C8302A; margin-bottom: 14px; }
+        .article-hero h1 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(2rem, 4.5vw, 3.2rem); font-weight: 600; color: #fff; line-height: 1.2; margin-bottom: 20px; }
+        .article-hero .article-summary { font-size: 1.125rem; color: rgba(255,255,255,0.9); line-height: 1.8; font-style: italic; margin: 0 0 18px; }
+        .article-hero p { font-size: 1.05rem; color: rgba(255,255,255,0.85); line-height: 1.8; margin: 0; }
 
-        .article-hero { max-width: 780px; margin: 0 auto; padding: 48px 24px 40px; }
-        .article-hero h1 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(2rem, 4vw, 2.8rem); font-weight: 600; color: #1C2B3A; line-height: 1.2; margin-bottom: 20px; }
-        .article-hero .article-summary { font-size: 1.05rem; color: #4B5563; line-height: 1.85; margin-bottom: 0; }
-
-        .article-body { max-width: 1100px; margin: 0 auto; padding: 0 24px 80px; display: grid; grid-template-columns: 1fr 300px; gap: 64px; align-items: start; }
+        .article-body { max-width: 1100px; margin: 0 auto; padding: 72px 24px; display: grid; grid-template-columns: 1fr 300px; gap: 64px; align-items: start; }
         @media (max-width: 900px) { .article-body { grid-template-columns: 1fr; } }
 
-        .article-content { max-width: 700px; }
-        .article-content h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.6rem; font-weight: 600; color: #1C2B3A; margin: 48px 0 16px; line-height: 1.25; }
+        .key-takeaways { background: #F7F3EE; border-left: 4px solid #C8302A; border-radius: 0 8px 8px 0; padding: 24px 28px; margin: 0 0 36px; }
+        .key-takeaways h2 { font-family: 'DM Sans', system-ui, sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #C8302A; margin: 0 0 14px; }
+        .article-content .key-takeaways ul { list-style: none; margin: 0; padding-left: 0; }
+        .article-content .key-takeaways li { border-bottom: none; padding: 0 0 0 22px; position: relative; margin-bottom: 12px; font-size: 0.9625rem; color: #4B5563; line-height: 1.6; }
+        .article-content .key-takeaways li:last-child { margin-bottom: 0; }
+        .article-content .key-takeaways li::before { content: ''; position: absolute; left: 0; top: 9px; width: 7px; height: 7px; border-radius: 50%; background: #C8302A; }
+
+        .article-content h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(1.5rem, 2.5vw, 2rem); font-weight: 600; color: #1C2B3A; margin: 48px 0 16px; line-height: 1.25; }
+        .article-content h2:first-child { margin-top: 0; }
         .article-content h3 { font-size: 1.05rem; font-weight: 700; color: #1C2B3A; margin: 32px 0 10px; }
-        .article-content p { font-size: 0.975rem; color: #374151; line-height: 1.85; margin-bottom: 18px; }
+        .article-content p { font-size: 1rem; color: #4B5563; line-height: 1.85; margin-bottom: 18px; }
         .article-content a { color: #C8302A; font-weight: 600; text-decoration: underline; text-decoration-color: rgba(200,48,42,0.3); text-underline-offset: 3px; }
+        .article-content a:hover { text-decoration-color: #C8302A; }
         .article-content ul { margin: 0 0 18px 20px; padding: 0; }
-        .article-content li { font-size: 0.975rem; color: #374151; line-height: 1.85; margin-bottom: 8px; }
+        .article-content li { font-size: 1rem; color: #4B5563; line-height: 1.85; margin-bottom: 8px; }
 
-        .key-takeaways { background: #F7F3EE; border-radius: 12px; padding: 28px 32px; margin-bottom: 40px; border-left: 4px solid #C8302A; }
-        .key-takeaways h2 { font-size: 0.85rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #C8302A; margin: 0 0 14px; font-family: 'DM Sans', system-ui, sans-serif; }
-        .article-content .key-takeaways ul { margin: 0; padding: 0; list-style: none; }
-        .article-content .key-takeaways li { padding-left: 18px; position: relative; margin-bottom: 10px; }
-        .article-content .key-takeaways li::before { content: ''; position: absolute; left: 0; top: 10px; width: 6px; height: 6px; border-radius: 50%; background: #C8302A; }
+        .article-content .pull { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.25rem; line-height: 1.5; font-style: italic; color: #1C2B3A; border-left: 4px solid #C8302A; padding: 4px 0 4px 20px; margin: 28px 0; }
 
-        .article-content .pull { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.35rem; font-weight: 500; color: #1C2B3A; line-height: 1.5; border-left: 3px solid #C8302A; padding-left: 20px; margin: 36px 0; font-style: italic; }
+        .section-divider { text-align: center; color: #C8302A; letter-spacing: 0.5em; font-size: 1rem; margin: 48px 0 32px; }
 
-        .section-divider { text-align: center; margin: 48px 0; font-size: 1.2rem; color: #C8302A; letter-spacing: 8px; }
+        .faq-section { margin-top: 56px; }
+        .faq-eyebrow { font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #C8302A; margin-bottom: 12px; }
+        .faq-section h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(1.5rem, 2.5vw, 2rem); font-weight: 600; color: #1C2B3A; margin-bottom: 28px; }
+        .faq-item { border-bottom: 1px solid #E5E0D8; padding: 20px 0; }
+        .faq-q { font-size: 1rem; font-weight: 700; color: #1C2B3A; margin-bottom: 10px; line-height: 1.5; }
+        .faq-a { font-size: 0.9375rem; color: #4B5563; line-height: 1.8; }
 
-        .faq-section { margin-top: 48px; border-top: 1px solid #E5E0D8; padding-top: 40px; }
-        .faq-section h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.5rem; font-weight: 600; color: #1C2B3A; margin-bottom: 24px; }
-        .faq-item { margin-bottom: 24px; }
-        .faq-item h3 { font-size: 1rem; font-weight: 700; color: #1C2B3A; margin-bottom: 8px; }
-        .faq-item p { font-size: 0.95rem; color: #374151; line-height: 1.8; margin: 0; }
+        .related-links { margin-top: 48px; padding-top: 40px; border-top: 1px solid #E5E0D8; }
+        .related-links h3 { font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #C8302A; margin-bottom: 16px; }
+        .related-link { display: flex; align-items: center; gap: 8px; color: #1C2B3A; text-decoration: none; font-size: 14px; font-weight: 600; padding: 10px 0; border-bottom: 1px solid #F0EBE3; }
+        .related-link:last-child { border-bottom: none; }
+        .related-link::before { content: '\u2192'; color: #C8302A; }
+        .related-link:hover { color: #C8302A; }
 
         .article-sidebar { position: sticky; top: 100px; }
-        .sidebar-cta { background: #1C2B3A; border-radius: 14px; padding: 28px; text-align: center; margin-bottom: 20px; }
+        .sidebar-card { background: #FAFAF8; border: 1px solid #E5E0D8; border-radius: 14px; padding: 28px; margin-bottom: 20px; }
+        .sidebar-card-title { font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #C8302A; margin-bottom: 16px; }
+        .sidebar-link { display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; color: #1C2B3A; text-decoration: none; padding: 10px 0; border-bottom: 1px solid #F0EBE3; transition: color 0.15s; }
+        .sidebar-link:last-child { border-bottom: none; }
+        .sidebar-link:hover { color: #C8302A; }
+        .sidebar-link::before { content: '\u2192'; color: #C8302A; font-size: 13px; }
+        .sidebar-cta { background: #1C2B3A; border-radius: 14px; padding: 28px; text-align: center; }
         .sidebar-cta h3 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.3rem; font-weight: 600; color: #fff; margin-bottom: 8px; }
         .sidebar-cta p { font-size: 0.875rem; color: rgba(255,255,255,0.7); margin-bottom: 16px; line-height: 1.65; }
         .sidebar-phone { font-size: 1.2rem; font-weight: 700; color: #C8302A; text-decoration: none; display: block; margin-bottom: 12px; }
-        .sidebar-related { background: #FAFAF8; border: 1px solid #E5E0D8; border-radius: 14px; padding: 28px; }
-        .sidebar-related-title { font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #C8302A; margin-bottom: 16px; }
-        .sidebar-related a { display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; color: #1C2B3A; text-decoration: none; padding: 10px 0; border-bottom: 1px solid #F0EBE3; transition: color 0.15s; }
-        .sidebar-related a:last-child { border-bottom: none; }
-        .sidebar-related a:hover { color: #C8302A; }
-        .sidebar-related a::before { content: '\\2192'; color: #C8302A; font-size: 13px; }
-
-        .related-links { max-width: 780px; margin: 0 auto; padding: 0 24px 48px; border-top: 1px solid #E5E0D8; padding-top: 32px; }
-        .related-links h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.3rem; font-weight: 600; color: #1C2B3A; margin-bottom: 16px; }
-        .related-links ul { list-style: none; margin: 0; padding: 0; }
-        .related-links li { margin-bottom: 10px; }
-        .related-links a { color: #C8302A; font-weight: 600; text-decoration: underline; text-decoration-color: rgba(200,48,42,0.3); text-underline-offset: 3px; font-size: 0.95rem; }
+        .btn-red-sm { background: #C8302A; color: #fff; padding: 11px 20px; border-radius: 8px; font-size: 13px; font-weight: 700; text-decoration: none; display: block; text-align: center; }
 
         .article-bottom-cta { background: #1C2B3A; padding: 80px 24px; text-align: center; }
-        .article-bottom-cta h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 600; color: #fff; max-width: 600px; margin: 0 auto 14px; line-height: 1.25; }
+        .article-bottom-cta h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 600; color: #fff; max-width: 640px; margin: 0 auto 14px; line-height: 1.2; }
         .article-bottom-cta p { color: rgba(255,255,255,0.85); font-size: 1rem; max-width: 480px; margin: 0 auto 32px; line-height: 1.75; }
-        .article-bottom-cta .cta-phone { font-size: 2rem; font-weight: 700; color: #C8302A; text-decoration: none; display: block; margin-bottom: 20px; }
-        .btn-red { background: #C8302A; color: #fff; text-decoration: none; padding: 14px 28px; border-radius: 8px; font-size: 15px; font-weight: 700; display: inline-block; }
-        .btn-red-sm { background: #C8302A; color: #fff; padding: 11px 20px; border-radius: 8px; font-size: 13px; font-weight: 700; text-decoration: none; display: block; text-align: center; }
+        .article-bottom-cta-phone { font-size: 2rem; font-weight: 700; color: #C8302A; text-decoration: none; display: block; margin-bottom: 20px; }
+        .cta-buttons { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+        .btn-red { background: #C8302A; color: #fff; text-decoration: none; padding: 14px 28px; border-radius: 8px; font-size: 15px; font-weight: 700; }
+        .btn-outline { border: 1.5px solid rgba(255,255,255,0.5); background: transparent; color: #fff; text-decoration: none; padding: 14px 28px; border-radius: 8px; font-size: 15px; font-weight: 700; }
       `}</style>
 
-      <article className="article-page">
-        <nav className="breadcrumb">
-          <Link href="/">Home</Link><span>/</span>
-          <Link href="/resources/">Resources</Link><span>/</span>
-          <Link href="/resources/dementia-memory-care/">Dementia & Memory Care</Link><span>/</span>
-          <span>Dementia Home Safety</span>
-        </nav>
+      <main className="article-page">
+        {/* Hero */}
+        <section className="article-hero">
+          <div className="article-hero-inner">
+            <p className="article-eyebrow">For families navigating dementia care in Toronto</p>
+            <h1>How to Keep Someone with Dementia Safe at Home</h1>
+            <p className="article-summary">
+              You have probably already started doing safety checks without calling them that.
+              Scanning the kitchen before you leave. Checking whether the front door is locked.
+              Quietly moving the pills to a spot your parent will not accidentally double-dose from.
+            </p>
+            <p>
+              This guide is a practical, room-by-room approach to making the home itself safer, so the
+              small adjustments you are already making can become a system rather than a set of worries.
+            </p>
+          </div>
+        </section>
 
-        <header className="article-hero">
-          <h1>How to Keep Someone with Dementia Safe at Home</h1>
-          <p className="article-summary">
-            You have probably already started doing safety checks without calling them that.
-            Scanning the kitchen before you leave. Checking whether the front door is locked.
-            Quietly moving the pills to a spot your parent will not accidentally double-dose from.
-            This article is a practical guide to making the home itself safer, room by room, so the
-            small adjustments you are already making can become a system rather than a set of worries.
-          </p>
-        </header>
-
+        {/* Body */}
         <div className="article-body">
-          <div className="article-content">
+          <article className="article-content">
+
+            {/* Key Takeaways */}
             <div className="key-takeaways">
               <h2>Key Takeaways</h2>
               <ul>
@@ -332,8 +357,8 @@ export default function DementiaHomeSafetyArticlePage() {
             <ul>
               <li>Install door chime alarms on all exterior doors. A simple magnetic sensor costs under $30 and alerts you every time a door opens.</li>
               <li>Camouflage exit doors. Painting a door the same colour as the wall, or hanging a curtain over it, can reduce the impulse to leave.</li>
-              <li>Keep coats, shoes, and keys away from door areas. Removing the cues that signal "going outside" can be surprisingly effective.</li>
-              <li>Register your parent with <a href="https://www.medicalert.ca/safelyhome" target="_blank" rel="noopener noreferrer">MedicAlert Safely Home</a> and notify your local police division that a person with dementia lives at the address.</li>
+              <li>Keep coats, shoes, and keys away from door areas. Removing the cues that signal &quot;going outside&quot; can be surprisingly effective.</li>
+              <li>Search for &quot;wandering alert registry&quot; or &quot;dementia ID bracelet program&quot; in your area. In Canada, MedicAlert Safely Home and Project Lifesaver are two established options. Your local Alzheimer Society chapter or police division can point you to the programs available in your community.</li>
             </ul>
 
             <p className="pull">
@@ -384,43 +409,102 @@ export default function DementiaHomeSafetyArticlePage() {
               understand what level of support matches the current situation.
             </p>
 
-            <div className="section-divider">&#183; &#183; &#183;</div>
+            {/* Visual divider */}
+            <div className="section-divider" aria-hidden="true">&middot; &middot; &middot;</div>
 
+            <p>You are not expected to make the home perfectly safe overnight. Start with the highest-risk areas and work outward. If you are unsure where to begin, <Link href="/how-care-starts/">learn how care starts at Arcadia</Link>, or call us to talk through what you are seeing. No obligation, no pressure.</p>
+
+            <p><Link href="/contact/">Book a free consultation</Link> &middot; <a href="tel:8449770050">(844) 977-0050</a></p>
+
+            {/* FAQ */}
             <div className="faq-section">
-              <h2>Frequently Asked Questions</h2>
+              <p className="faq-eyebrow">Frequently Asked Questions</p>
+              <h2>Questions families ask about dementia home safety</h2>
 
               <div className="faq-item">
-                <h3>What are the biggest safety risks for someone with dementia living at home?</h3>
-                <p>The most common risks include wandering (especially at night or in unfamiliar emotional states), falls due to impaired spatial awareness, kitchen hazards like leaving the stove on, medication errors such as double-dosing or skipping doses, and bathroom injuries from wet surfaces or scalding water. These risks tend to increase as the condition progresses, but many can be reduced significantly with simple environmental changes.</p>
+                <div className="faq-q">What are the biggest safety risks for someone with dementia living at home?</div>
+                <div className="faq-a">
+                  The most common risks include wandering (especially at night or in unfamiliar emotional states),
+                  falls due to impaired spatial awareness, kitchen hazards like leaving the stove on, medication
+                  errors such as double-dosing or skipping doses, and bathroom injuries from wet surfaces or
+                  scalding water. These risks tend to increase as the condition progresses, but many can be
+                  reduced significantly with simple environmental changes.
+                </div>
               </div>
 
               <div className="faq-item">
-                <h3>How do I prevent my parent with dementia from wandering?</h3>
-                <p>Start with door alarms or chime sensors that alert you when an exterior door opens. Camouflage exit doors with curtains or paint them to match the surrounding wall. Keep shoes and coats out of sight near exits. For nighttime wandering, motion-sensor lights in hallways can reduce disorientation without fully waking the person. A MedicAlert Safely Home bracelet registered with your local police service provides a safety net if your parent does leave the house.</p>
+                <div className="faq-q">How do I prevent my parent with dementia from wandering?</div>
+                <div className="faq-a">
+                  Start with door alarms or chime sensors that alert you when an exterior door opens.
+                  Camouflage exit doors with curtains or paint them to match the surrounding wall. Keep shoes
+                  and coats out of sight near exits. For nighttime wandering, motion-sensor lights in hallways
+                  can reduce disorientation without fully waking the person. A MedicAlert Safely Home bracelet
+                  registered with your local police service provides a safety net if your parent does leave
+                  the house.
+                </div>
               </div>
 
               <div className="faq-item">
-                <h3>Should I lock the doors to keep my parent from leaving?</h3>
-                <p>This is a judgment call that depends on the stage of the condition, the layout of your home, and fire safety. Deadbolts that require a key from inside can prevent wandering but also prevent escape in an emergency. Many families find a middle path: door alarms plus a secured backyard or enclosed porch where the person can move freely without accessing the street.</p>
+                <div className="faq-q">Should I lock the doors to keep my parent from leaving?</div>
+                <div className="faq-a">
+                  This is a judgment call that depends on the stage of the condition, the layout of your home,
+                  and fire safety. Deadbolts that require a key from inside can prevent wandering but also
+                  prevent escape in an emergency. Many families find a middle path: door alarms plus a secured
+                  backyard or enclosed porch where the person can move freely without accessing the street.
+                </div>
               </div>
 
               <div className="faq-item">
-                <h3>When should I consider bringing in professional help for safety reasons?</h3>
-                <p>Consider professional support when your parent has had a fall or near-miss that could have caused injury, when wandering incidents are becoming more frequent, when you are losing sleep due to nighttime safety concerns, or when the daily monitoring required is affecting your own health or work. A care assessment can help identify which hours of the day carry the most risk and whether a few hours of professional support could address the gap.</p>
+                <div className="faq-q">When should I consider bringing in professional help for safety reasons?</div>
+                <div className="faq-a">
+                  Consider professional support when your parent has had a fall or near-miss that could have
+                  caused injury, when wandering incidents are becoming more frequent, when you are losing sleep
+                  due to nighttime safety concerns, or when the daily monitoring required is affecting your own
+                  health or work. A care assessment can help identify which hours of the day carry the most risk
+                  and whether a few hours of professional support could address the gap.
+                </div>
               </div>
 
               <div className="faq-item">
-                <h3>What home modifications help someone with dementia?</h3>
-                <p>The most effective modifications include grab bars in bathrooms, non-slip mats on all hard floors, stove-top auto shut-off devices, thermostatic mixing valves to prevent scalding, improved lighting (especially at night), removal of area rugs and trip hazards, contrasting colours on stairs and doorframes to aid spatial perception, and simplified layouts that reduce confusion. Many of these are inexpensive and can be installed in a day.</p>
+                <div className="faq-q">What home modifications help someone with dementia?</div>
+                <div className="faq-a">
+                  The most effective modifications include grab bars in bathrooms, non-slip mats on all hard
+                  floors, stove-top auto shut-off devices, thermostatic mixing valves to prevent scalding,
+                  improved lighting (especially at night), removal of area rugs and trip hazards, contrasting
+                  colours on stairs and doorframes to aid spatial perception, and simplified layouts that reduce
+                  confusion. Many of these are inexpensive and can be installed in a day.
+                </div>
               </div>
 
               <div className="faq-item">
-                <h3>Does Ontario have programs that help with home safety modifications for dementia?</h3>
-                <p>Ontario Health atHome (formerly the LHIN/CCAC system) may provide occupational therapy assessments that include home safety recommendations. Some municipalities offer seniors home modification grants. The Alzheimer Society of your region can also direct you to local resources. Eligibility and availability vary, so starting the conversation with your parent&apos;s care coordinator or family physician is the best first step.</p>
+                <div className="faq-q">Does Ontario have programs that help with home safety modifications for dementia?</div>
+                <div className="faq-a">
+                  Ontario Health atHome (formerly the LHIN/CCAC system) may provide occupational therapy
+                  assessments that include home safety recommendations. Some municipalities offer seniors home
+                  modification grants. The Alzheimer Society of your region can also direct you to local
+                  resources. Eligibility and availability vary, so starting the conversation with your
+                  parent&apos;s care coordinator or family physician is the best first step.
+                </div>
               </div>
             </div>
-          </div>
 
+            {/* Related Links */}
+            <div className="related-links">
+              <h3>You may also find helpful</h3>
+              <Link href="/resources/dementia-memory-care/early-signs-of-dementia-in-a-parent/" className="related-link">
+                Early Signs of Dementia in a Parent
+              </Link>
+              <Link href="/resources/dementia-memory-care/normal-aging-vs-dementia/" className="related-link">
+                Normal Aging vs. Dementia: What&#39;s the Difference?
+              </Link>
+              <Link href="/resources/dementia-memory-care/introducing-home-care-dementia/" className="related-link">
+                How to Introduce Home Care to a Parent with Dementia
+              </Link>
+            </div>
+
+          </article>
+
+          {/* Sidebar */}
           <aside className="article-sidebar">
             <div className="sidebar-cta">
               <h3>Need help with safety at home?</h3>
@@ -429,36 +513,37 @@ export default function DementiaHomeSafetyArticlePage() {
               <Link href="/contact/" className="btn-red-sm">Book a Free Consultation</Link>
             </div>
 
-            <div className="sidebar-related">
-              <div className="sidebar-related-title">Related reading</div>
-              <Link href="/resources/dementia-memory-care/">Dementia & Memory Care Hub</Link>
-              <Link href="/resources/dementia-memory-care/early-signs-of-dementia-in-a-parent/">Early Signs of Dementia</Link>
-              <Link href="/conditions/dementia-care-at-home/">Dementia Care at Home</Link>
-              <Link href="/our-services/dementia-alzheimers-home-care/">Dementia Home Care Service</Link>
+            <div className="sidebar-card">
+              <div className="sidebar-card-title">Related Pages</div>
+              <Link href="/conditions/dementia-care-at-home/" className="sidebar-link">Dementia Care at Home</Link>
+              <Link href="/our-services/dementia-alzheimers-home-care/" className="sidebar-link">Dementia Home Care Service</Link>
+              <Link href="/how-care-starts/" className="sidebar-link">How Care Starts</Link>
+              <Link href="/locations/toronto/" className="sidebar-link">Care in Toronto</Link>
+            </div>
+
+            <div className="sidebar-card">
+              <div className="sidebar-card-title">More in This Series</div>
+              <Link href="/resources/dementia-memory-care/" className="sidebar-link">All Dementia Articles</Link>
+              <Link href="/resources/dementia-memory-care/early-signs-of-dementia-in-a-parent/" className="sidebar-link">Early Signs of Dementia</Link>
+              <Link href="/resources/dementia-memory-care/introducing-home-care-dementia/" className="sidebar-link">Introducing Home Care</Link>
             </div>
           </aside>
         </div>
 
-        <section className="related-links">
-          <h2>Continue Reading</h2>
-          <ul>
-            <li><Link href="/resources/dementia-memory-care/normal-aging-vs-dementia/">Normal Aging vs. Dementia: What is the Difference?</Link></li>
-            <li><Link href="/resources/dementia-memory-care/introducing-home-care-dementia/">How to Introduce Home Care to a Parent with Dementia</Link></li>
-            <li><Link href="/conditions/frailty-fall-prevention/">Frailty and Fall Prevention</Link></li>
-            <li><Link href="/how-care-starts/">How Care Starts at Arcadia</Link></li>
-          </ul>
-        </section>
-
+        {/* Bottom CTA */}
         <section className="article-bottom-cta">
           <h2>You Should Not Have to Monitor Everything Alone</h2>
           <p>
             If the safety concerns are keeping you up at night, a conversation with our team can help you
             understand what support looks like for your situation. No pressure. No obligation.
           </p>
-          <a href="tel:8449770050" className="cta-phone">(844) 977-0050</a>
-          <Link href="/contact/" className="btn-red">Book a Free Consultation</Link>
+          <a href="tel:8449770050" className="article-bottom-cta-phone">(844) 977-0050</a>
+          <div className="cta-buttons">
+            <Link href="/contact/" className="btn-red">Book a Free Consultation</Link>
+            <Link href="/our-services/dementia-alzheimers-home-care/" className="btn-outline">Our Dementia Care Service</Link>
+          </div>
         </section>
-      </article>
+      </main>
     </>
   )
 }
