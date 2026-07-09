@@ -57,3 +57,18 @@ timeline
 # Canadian English variants
 behaviour
 behavioural
+colour
+colours
+neighbour
+
+# Common words the validator flags
+backyard
+coordinator
+deadbolts
+fridge
+knives
+nightlights
+misses
+
+# Proper nouns (products / brands)
+MedicAlert

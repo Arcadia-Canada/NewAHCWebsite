@@ -28,6 +28,12 @@ const articles = [
     description: "Practical strategies for families navigating a parent's resistance, fear, or confusion about accepting help.",
     status: 'live',
   },
+  {
+    title: 'How to Keep Someone with Dementia Safe at Home',
+    href: '/resources/dementia-memory-care/dementia-home-safety/',
+    description: 'Room-by-room safety strategies for families caring for a parent with dementia: wandering prevention, kitchen hazards, bathroom modifications, and knowing when to bring in support.',
+    status: 'live',
+  },
 ]
 
 export default function DementiaMemoryCareHub() {
