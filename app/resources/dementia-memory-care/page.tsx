@@ -34,6 +34,12 @@ const articles = [
     description: 'Room-by-room safety strategies for families caring for a parent with dementia: wandering prevention, kitchen hazards, bathroom modifications, and knowing when to bring in support.',
     status: 'live',
   },
+  {
+    title: 'When Should Someone with Dementia Stop Driving?',
+    href: '/resources/dementia-memory-care/dementia-when-to-stop-driving/',
+    description: 'How to recognize when driving is no longer safe, how to have the conversation, what to do if a parent refuses, and practical transportation alternatives for Toronto families.',
+    status: 'live',
+  },
 ]
 
 export default function DementiaMemoryCareHub() {
