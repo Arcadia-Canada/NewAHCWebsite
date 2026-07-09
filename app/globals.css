@@ -26,7 +26,6 @@ h1, h2, h3, h4 {
    Does not affect nav, buttons, or utility text.
 --------------------------------------------------- */
 
-.article-content p,
 .hub-intro p,
 .pro-content p,
 .care-plan-content p {
@@ -35,7 +34,6 @@ h1, h2, h3, h4 {
   margin-bottom: 1.4em;
 }
 
-.article-content h2,
 .hub-articles h2,
 .pro-content h2,
 .care-plan-content h2 {
@@ -43,12 +41,73 @@ h1, h2, h3, h4 {
   margin-bottom: 18px;
 }
 
+/* ---------------------------------------------------
+   Article Template
+   Shared styles for all resource articles.
+   Individual articles should NOT redeclare these
+   in inline <style> blocks.
+--------------------------------------------------- */
+
+.article-page {
+  font-family: var(--font-dm-sans), system-ui, sans-serif;
+  color: #2D2D2D;
+}
+
+.article-hero {
+  background: #1C2B3A;
+  padding: 96px 24px 72px;
+  position: relative;
+  overflow: hidden;
+}
+
+.article-hero-inner {
+  max-width: 760px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.article-eyebrow {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #C8302A;
+  margin-bottom: 14px;
+}
+
+.article-hero h1 {
+  font-family: var(--font-cormorant), Georgia, serif;
+  font-size: clamp(2rem, 4.5vw, 3.2rem);
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.article-hero .article-summary {
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.8;
+  font-style: italic;
+  margin: 0 0 18px;
+}
+
+.article-hero p {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.8;
+  margin: 0;
+}
+
 .article-body {
   max-width: 1100px;
   margin: 0 auto;
+  padding: 72px 24px;
   display: grid;
   grid-template-columns: 1fr 300px;
   gap: 64px;
+  align-items: start;
 }
 
 @media (max-width: 900px) {
@@ -58,11 +117,340 @@ h1, h2, h3, h4 {
   }
 }
 
+.article-content h2 {
+  font-family: var(--font-cormorant), Georgia, serif;
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  font-weight: 600;
+  color: #1C2B3A;
+  margin: 48px 0 16px;
+  line-height: 1.25;
+}
+
+.article-content h2:first-child {
+  margin-top: 0;
+}
+
+.article-content h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1C2B3A;
+  margin: 32px 0 10px;
+}
+
+.article-content p {
+  font-size: 1rem;
+  color: #4B5563;
+  line-height: 1.85;
+  margin-bottom: 18px;
+}
+
+.article-content a {
+  color: #C8302A;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: rgba(200, 48, 42, 0.3);
+  text-underline-offset: 3px;
+}
+
+.article-content a:hover {
+  text-decoration-color: #C8302A;
+}
+
+.article-content ul {
+  margin: 0 0 18px 20px;
+  padding: 0;
+}
+
+.article-content li {
+  font-size: 1rem;
+  color: #4B5563;
+  line-height: 1.85;
+  margin-bottom: 8px;
+}
+
+.key-takeaways {
+  background: #F7F3EE;
+  border-left: 4px solid #C8302A;
+  border-radius: 0 8px 8px 0;
+  padding: 24px 28px;
+  margin: 0 0 36px;
+}
+
+.key-takeaways h2 {
+  font-family: var(--font-dm-sans), system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #C8302A;
+  margin: 0 0 14px;
+}
+
+.article-content .key-takeaways ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.article-content .key-takeaways li {
+  border-bottom: none;
+  padding: 0 0 0 22px;
+  position: relative;
+  margin-bottom: 12px;
+  font-size: 0.9625rem;
+  color: #4B5563;
+  line-height: 1.6;
+}
+
+.article-content .key-takeaways li:last-child {
+  margin-bottom: 0;
+}
+
+.article-content .key-takeaways li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #C8302A;
+}
+
+.article-content .pull {
+  font-family: var(--font-cormorant), Georgia, serif;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  font-style: italic;
+  color: #1C2B3A;
+  border-left: 4px solid #C8302A;
+  padding: 4px 0 4px 20px;
+  margin: 28px 0;
+}
+
+.section-divider {
+  text-align: center;
+  color: #C8302A;
+  letter-spacing: 0.5em;
+  font-size: 1rem;
+  margin: 48px 0 32px;
+}
+
+.faq-section {
+  margin-top: 56px;
+}
+
+.faq-eyebrow {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #C8302A;
+  margin-bottom: 12px;
+}
+
+.faq-section h2 {
+  font-family: var(--font-cormorant), Georgia, serif;
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  font-weight: 600;
+  color: #1C2B3A;
+  margin-bottom: 28px;
+}
+
+.faq-item {
+  border-bottom: 1px solid #E5E0D8;
+  padding: 20px 0;
+}
+
+.faq-q {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1C2B3A;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.faq-a {
+  font-size: 0.9375rem;
+  color: #4B5563;
+  line-height: 1.8;
+}
+
+.article-content .related-links {
+  margin-top: 48px;
+  padding-top: 40px;
+  border-top: 1px solid #E5E0D8;
+}
+
+.article-content .related-links h3 {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #C8302A;
+  margin-bottom: 16px;
+}
+
+.related-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #1C2B3A;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 0;
+  border-bottom: 1px solid #F0EBE3;
+}
+
+.related-link:last-child {
+  border-bottom: none;
+}
+
+.related-link::before {
+  content: "\2192";
+  color: #C8302A;
+}
+
+.related-link:hover {
+  color: #C8302A;
+}
+
+.article-sidebar {
+  position: sticky;
+  top: 100px;
+}
+
+.sidebar-card {
+  background: #FAFAF8;
+  border: 1px solid #E5E0D8;
+  border-radius: 14px;
+  padding: 28px;
+  margin-bottom: 20px;
+}
+
+.sidebar-card-title {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #C8302A;
+  margin-bottom: 16px;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1C2B3A;
+  text-decoration: none;
+  padding: 10px 0;
+  border-bottom: 1px solid #F0EBE3;
+  transition: color 0.15s;
+}
+
+.sidebar-link:last-child {
+  border-bottom: none;
+}
+
+.sidebar-link:hover {
+  color: #C8302A;
+}
+
+.sidebar-link::before {
+  content: "\2192";
+  color: #C8302A;
+  font-size: 13px;
+}
+
+.sidebar-cta {
+  background: #1C2B3A;
+  border-radius: 14px;
+  padding: 28px;
+  text-align: center;
+}
+
+.sidebar-cta h3 {
+  font-family: var(--font-cormorant), Georgia, serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.sidebar-cta p {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 16px;
+  line-height: 1.65;
+}
+
+.sidebar-phone {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #C8302A;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.article-bottom-cta {
+  background: #1C2B3A;
+  padding: 80px 24px;
+  text-align: center;
+}
+
+.article-bottom-cta h2 {
+  font-family: var(--font-cormorant), Georgia, serif;
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  font-weight: 600;
+  color: #fff;
+  max-width: 640px;
+  margin: 0 auto 14px;
+  line-height: 1.2;
+}
+
+.article-bottom-cta p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1rem;
+  max-width: 480px;
+  margin: 0 auto 32px;
+  line-height: 1.75;
+}
+
+.article-bottom-cta-phone {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #C8302A;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-outline {
+  border: 1.5px solid rgba(255, 255, 255, 0.5);
+  background: transparent;
+  color: #fff;
+  text-decoration: none;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
 /* ---------------------------------------------------
    Hero Depth
 --------------------------------------------------- */
 
-.article-hero,
 .loc-hero,
 .pro-hero,
 .care-plan-hero,
@@ -88,7 +476,6 @@ h1, h2, h3, h4 {
   z-index: 0;
 }
 
-.article-hero-inner,
 .loc-hero-inner,
 .pro-hero-inner,
 .care-plan-hero-inner,

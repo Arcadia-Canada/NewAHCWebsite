@@ -106,27 +106,43 @@ Follow this component order (matches all published articles):
 
 ```
 <script type="application/ld+json"> (all schema blocks)
-<style> (article-specific CSS if needed)
-<article class="article-page">
-  <nav class="breadcrumb">
-  <header>
-    <p class="article-summary"> (lead paragraph — referenced by speakable)
-  </header>
+<main class="article-page">
+  <section class="article-hero">
+    <div class="article-hero-inner">
+      <p class="article-eyebrow">
+      <h1>
+      <p class="article-summary"> (lead paragraph — referenced by speakable)
+      <p> (secondary intro paragraph)
+    </div>
+  </section>
   <div class="article-body">
-    <div class="article-content">
+    <article class="article-content">
       <div class="key-takeaways"> (referenced by speakable)
       <h2> sections (article body)
+      <div class="section-divider"> (visual break before CTA)
+      <p> (soft CTA close — link to /contact/ and phone)
       <div class="faq-section"> (if applicable)
-      <div class="next-step"> (CTA to /how-care-starts/ or /contact/)
-    </div>
+      <div class="related-links"> (3-4 related articles)
+    </article>
     <aside class="article-sidebar">
       <div class="sidebar-cta"> (call CTA)
-      <div class="sidebar-related"> (related links)
+      <div class="sidebar-card"> (Related Pages)
+      <div class="sidebar-card"> (More in This Series)
     </aside>
   </div>
-  <section class="related-links"> (3-4 related articles/pages)
-</article>
+  <section class="article-bottom-cta"> (full-width dark CTA)
+</main>
 ```
+
+### 4a. Styling: use globals.css, not inline styles
+
+All article template CSS lives in `globals.css` under the "Article Template" section. New articles should **NOT** include a `<style>` block. They inherit all visual formatting from globals automatically.
+
+Fonts are referenced via CSS variables set in `layout.tsx`:
+- `var(--font-dm-sans)` — body text
+- `var(--font-cormorant)` — headings, pull quotes, hero h1
+
+If an article needs a truly unique style (rare), use a page-specific class name scoped under `.article-page` to avoid polluting the global namespace.
 
 ### 5. CSS classes to preserve
 
