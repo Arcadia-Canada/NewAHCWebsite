@@ -1,109 +1,30 @@
 # =================================================================
 # .cursorrules — workspace AI behaviour for arcadiahomecare.ca
 # =================================================================
-# Read by Cursor (and Claude in Cursor) at the start of every chat
-# session. Sets defaults so individual prompts can be shorter and
-# context use stays focused.
-#
-# Last updated: May 2026
-# =================================================================
 
+## Read this first
 
-## Project context
+AI-CONTEXT.md at the repo root is your master orientation file.
+Read it before any task. It points to all governance docs in /docs/.
 
-This is the Arcadia Home Care website (arcadiahomecare.ca) — a Next.js 16 static site for a Toronto/GTA home care provider, deployed on Vercel.
+## Key rules
 
-The repo contains both the live site code (in `app/`) and a governance pack (in `docs/` and `social/`). The governance pack is non-trivial — read it before making content decisions.
+1. **Keyword gate (HARD):** Before drafting ANY article, confirm the target keyword is reserved to HC in docs/CROSS-SITE-KEYWORD-REGISTRY.md. If owned by Rehab or ECC, STOP.
 
+2. **Voice:** Read docs/07-VOICE-AND-TONE.md. No em dashes in body copy. No corporate voice. Direct address only ("you," "your parent"). Warm, actionable, intelligent.
 
-## Order of authority
+3. **URLs:** Follow docs/05-URL-CONVENTIONS.md and docs/AUTHORITY-MAP.md for cluster and slug.
 
-1. **The live site** at `arcadiahomecare.ca` is canonical for URLs, navigation, page contents, and what actually exists.
-2. **`AI-CONTEXT.md`** at the repo root is the master orientation file.
-3. **`docs/`** contains the governance rules — architecture, voice, schema, URL conventions, the article inventory.
-4. **PDFs** referenced via `docs/EXTERNAL-STRATEGY-REFERENCES.md` are strategy references — read only when the docs do not cover the topic.
+4. **Publishing:** Follow docs/06-PUBLISHING-CHECKLIST.md. Three hard gates: Phase 6 (cluster hub), Phase 7 (AUTHORITY-MAP), Phase 9 (social brief + kit).
 
-If the live site disagrees with the docs: **the live site wins.** Update the docs to match.
+5. **Social:** Use the prompt in docs/CURSOR-CONTENT-PROMPTS.md ("Generate social media kit and brief"). Output: social/briefs/BRIEF-[slug].md + social/kits/KIT-[slug].docx.
 
+6. **Links:** Never link to Coming Soon stubs or broken URLs. Only live pages.
 
-## Required reading before content work
+## When stuck
 
-For ANY content task (writing, editing, reviewing an article):
+1. Check AI-CONTEXT.md for the answer.
+2. Then check the specific docs/ file referenced there.
+3. If it contradicts the live site, trust the live site and flag the doc for update.
 
-1. Read `AI-CONTEXT.md` at the root.
-2. Read the specific docs named in the task's prompt — do not assume; read what is named.
-3. Honour the conflict-flagging clause: if the request conflicts with what the governance docs specify, flag the conflict before proceeding.
-
-
-## Folder roles — what to read, what to skip
-
-| Folder | Read by default? | Notes |
-|---|---|---|
-| `AI-CONTEXT.md` (root) | YES | Always. First read. |
-| `docs/` | On-demand per prompt | Read only the docs named in the prompt. Do not blanket-read all 14 files. |
-| `social/README.md` | When prompted | Explains the brief-vs-kit separation. |
-| `social/_TEMPLATE-*.md` | When generating new social assets | Template files for new article briefs and kits. |
-| `social/briefs/` | NO — see .cursorignore | Per-article strategy docs. Read only the specific BRIEF-[slug].md named in the prompt. |
-| `social/kits/` | NO — see .cursorignore | Per-article execution docs. Read only the specific KIT-[slug].docx named in the prompt. |
-| `app/` | When editing live pages | Read the specific `page.tsx` named in the task. |
-| `*-PROD.html`, `*-DEV.html` | NO — see .cursorignore | Past article drafts. Not relevant to new article work. |
-| `*.pdf` | NO — see .cursorignore | Read only when explicitly named. |
-
-
-## Standard behaviour expectations
-
-- **Voice fidelity is non-negotiable.** Every article and caption must follow `docs/07-VOICE-AND-TONE.md`. If a draft drifts into corporate, clinical, chirpy, salesy, or generic-AI tone, scrap and restart. Editing AI-slop is harder than rewriting. **No em dashes (`—`) in articles.** See the em-dash rule in `07-VOICE-AND-TONE.md`.
-
-- **URLs are permanent.** Pick the URL once, per `docs/05-URL-CONVENTIONS.md`. Slug rules are not flexible. If a slug needs to change after publish, a 301 redirect is required (see `docs/06-PUBLISHING-CHECKLIST.md`).
-
-- **No links to Coming Soon stubs.** Verify every internal link target returns HTTP 200 before committing. Use `<!-- FUTURE-LINK: /path/ -->` HTML comments for content not yet live.
-
-- **Never invent inventory.** Before writing about a topic, check `docs/AUTHORITY-MAP.md` and `docs/10-KEYWORD-OWNERSHIP.md`. If the topic is not tracked, flag it. Do not silently create new entries without confirming.
-
-- **Never read past briefs and kits to write a new article.** They are not voice samples — they are derived from the article. Reading them creates feedback loops where new articles imitate kits instead of being original. Stick to the source docs.
-
-
-## Hard gates from `docs/06-PUBLISHING-CHECKLIST.md`
-
-When publishing a new article, three steps cannot be skipped:
-
-1. **Phase 6 — Update the cluster hub** (`app/resources/[cluster]/page.tsx`). Without this, the article is invisible to readers landing on the cluster.
-2. **Phase 7 — Update the authority map**. Without this, future AI work operates on stale information.
-3. **Phase 9 — Generate `BRIEF-[slug].md` and `KIT-[slug].docx`** in `/social/`. Without this, social distribution drifts from the article's voice.
-
-If any of these are skipped, the article is not "done publishing." The May 2026 drift audit found three articles where this happened. Don't extend the pattern.
-
-
-## Pre-defined prompts
-
-For specific tasks, use the prompts in `docs/CURSOR-CONTENT-PROMPTS.md`. Each is pre-tightened for token efficiency and includes the conflict-flagging clause. Don't rewrite the standard prompts inline — use them as-is.
-
-
-## When in doubt
-
-Ask before doing. Especially for:
-
-- Creating a new cluster (architectural decision)
-- Changing a URL after publish (link equity)
-- Reproducing copyrighted material from external sources (legal)
-- Adding a new section type to the site (architectural decision)
-- Disabling auto-schema or schema injection (schema integrity)
-- Removing a redirect (link equity)
-- Editing the voice doc itself (the voice IS the asset)
-
-
-## Last updated
-
-May 2026 — initial version. Created alongside `.cursorignore` and the updated `docs/CURSOR-CONTENT-PROMPTS.md` to enforce token-efficient governance reads.
-
-
-## HARD GATE — Cross-site keyword registry (added 2026-07-06)
-
-Before drafting, scheduling, or outlining ANY article on this site:
-
-1. Read `docs/CROSS-SITE-KEYWORD-REGISTRY.md`.
-2. Confirm the target keyword is reserved to THIS site in that file.
-3. If the keyword is owned by another Arcadia site (HC / Rehab / ECC), or appears in the HARD BLOCKS table, or is unlisted: **STOP. Do not draft. Flag the conflict and wait for the keyword to be reserved in the Master Sheet.**
-4. If the registry's "Generated" date is more than 7 days old, tell the user to run `npm run sync:registry` before trusting it.
-
-This gate supersedes any softer keyword-check language elsewhere in this file or in docs/. "Differentiate by framing" is NOT an escape hatch — if the query cluster is owned elsewhere, the topic is owned elsewhere.
+Last updated: July 8, 2026.
