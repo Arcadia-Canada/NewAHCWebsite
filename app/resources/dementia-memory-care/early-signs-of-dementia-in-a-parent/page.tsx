@@ -4,17 +4,17 @@ import Link from 'next/link'
 const CANONICAL =
   'https://www.arcadiahomecare.ca/resources/dementia-memory-care/early-signs-of-dementia-in-a-parent/'
 const PUBLISHED = '2026-03-22T09:00:00-04:00'
-const MODIFIED = '2026-06-27T12:00:00-04:00'
+const MODIFIED = '2026-07-20T12:00:00-04:00'
 
 export const metadata: Metadata = {
   title: 'Early Signs of Dementia in a Parent | Arcadia Home Care',
   description:
-    'How to recognize early signs of dementia in a parent: memory changes, executive function decline, personality shifts, and when to talk to a doctor. Written for Toronto families.',
+    'How to recognize early signs of dementia in a parent: memory changes, executive function decline, personality shifts, language problems, and when to talk to a doctor. Written for Toronto families.',
   alternates: { canonical: CANONICAL },
   openGraph: {
-    title: 'The Changes You Are Starting to Notice in Your Parent',
+    title: 'Early Signs of Dementia in a Parent',
     description:
-      'How to recognize early signs of dementia in a parent: memory changes, executive function decline, personality shifts, and when to talk to a doctor. Written for Toronto families.',
+      'How to recognize early signs of dementia in a parent: memory changes, executive function decline, personality shifts, language problems, and when to talk to a doctor. Written for Toronto families.',
     url: CANONICAL,
     type: 'article',
     locale: 'en_CA',
@@ -35,7 +35,7 @@ export default function EarlySignsOfDementiaArticlePage() {
               headline: 'Early Signs of Dementia in a Parent',
               alternativeHeadline: 'The Changes You Are Starting to Notice in Your Parent',
               description:
-                'How to recognize early signs of dementia in a parent: memory changes, executive function decline, personality shifts, and when to talk to a doctor. Written for Toronto families.',
+                'How to recognize early signs of dementia in a parent: memory changes, executive function decline, personality shifts, language problems, and when to talk to a doctor. Written for Toronto families.',
               datePublished: PUBLISHED,
               dateModified: MODIFIED,
               author: {
@@ -54,7 +54,7 @@ export default function EarlySignsOfDementiaArticlePage() {
               mainEntityOfPage: { '@type': 'WebPage', '@id': CANONICAL },
               articleSection: 'Dementia & Memory Care',
               keywords:
-                'early signs of dementia, dementia symptoms in parents, cognitive decline in aging parents, when to see a doctor for dementia, executive function decline, personality changes dementia, memory loss vs normal aging, dementia diagnosis Toronto',
+                'early signs of dementia in a parent, early signs of dementia, dementia symptoms in parents, cognitive decline in aging parents, when to see a doctor for dementia, executive function decline, personality changes dementia, memory loss vs normal aging, dementia diagnosis Toronto',
               inLanguage: 'en-CA',
               audience: {
                 '@type': 'Audience',
@@ -65,7 +65,7 @@ export default function EarlySignsOfDementiaArticlePage() {
                 '@type': 'SpeakableSpecification',
                 cssSelector: ['.article-summary', '.key-takeaways', 'h1'],
               },
-              wordCount: 1500,
+              wordCount: 1750,
               isAccessibleForFree: true,
             },
             {
@@ -77,7 +77,7 @@ export default function EarlySignsOfDementiaArticlePage() {
                   name: 'What are the earliest signs of dementia in a parent?',
                   acceptedAnswer: {
                     '@type': 'Answer',
-                    text: 'The most common early signs include repeating questions or stories within a short period, difficulty managing tasks that involve multiple steps (like cooking or paying bills), word-finding problems that go beyond the occasional blank, personality changes such as increased suspicion or withdrawal, and confusion about time or familiar places. These patterns tend to be persistent rather than occasional, and they represent a change from how your parent used to function.',
+                    text: 'The most common early signs include repeating questions or stories within a short period, difficulty managing multi-step tasks such as cooking or paying bills, word-finding problems that go beyond the occasional blank, personality changes such as increased suspicion or withdrawal, and confusion about time or familiar places. These patterns tend to be persistent rather than occasional, and they represent a change from how your parent used to function.',
                   },
                 },
                 {
@@ -85,7 +85,7 @@ export default function EarlySignsOfDementiaArticlePage() {
                   name: 'How can I tell the difference between normal aging and early dementia?',
                   acceptedAnswer: {
                     '@type': 'Answer',
-                    text: 'Normal aging slows recall but does not erase it. You might forget a name but remember it later. Early dementia tends to erase the memory entirely, so the person does not recognize that something was forgotten. Executive function decline (trouble planning, organizing, or completing familiar tasks) is another key differentiator. Our full guide to normal aging vs. dementia covers this in detail.',
+                    text: 'Normal aging slows recall but does not erase it. You might forget a name but remember it later. Early dementia tends to erase the memory entirely, so the person does not recognize that something was forgotten. Trouble planning, organizing, or completing familiar tasks is another key differentiator. Our guide to normal aging vs. dementia covers this comparison in detail.',
                   },
                 },
                 {
@@ -93,7 +93,7 @@ export default function EarlySignsOfDementiaArticlePage() {
                   name: 'Should I tell my parent I think something is wrong?',
                   acceptedAnswer: {
                     '@type': 'Answer',
-                    text: 'This depends on the situation and your relationship. Some parents respond well to a direct, caring conversation. Others become defensive or anxious. A common approach is to frame it around a routine checkup rather than a concern: "The doctor suggested a memory screen as part of your annual checkup" removes the implication that something is wrong while still getting the assessment done.',
+                    text: 'This depends on the situation and your relationship. Some parents respond well to a direct, caring conversation. Others become defensive or anxious. A common approach is to frame it around a routine checkup rather than a concern: suggesting a memory screen as part of an annual checkup removes some of the implication that something is wrong while still getting the assessment done.',
                   },
                 },
                 {
@@ -109,7 +109,7 @@ export default function EarlySignsOfDementiaArticlePage() {
                   name: 'Can early-stage dementia be treated?',
                   acceptedAnswer: {
                     '@type': 'Answer',
-                    text: 'There is no cure for most forms of dementia, but early detection opens options that are not available later. Certain medications can help manage symptoms in some cases. More importantly, early awareness allows families to plan legal, financial, and care arrangements while the person can still participate in those decisions.',
+                    text: 'There is no cure for most forms of dementia, but early detection opens options that are not available later. Certain medications may help manage symptoms in some cases. More importantly, early awareness allows families to plan legal, financial, and care arrangements while the person can still participate in those decisions.',
                   },
                 },
                 {
@@ -117,7 +117,7 @@ export default function EarlySignsOfDementiaArticlePage() {
                   name: 'My parent seems fine most of the time. Should I still be concerned?',
                   acceptedAnswer: {
                     '@type': 'Answer',
-                    text: 'Early dementia often shows up inconsistently. A parent may have clear, sharp days followed by noticeable lapses. This inconsistency is itself a pattern worth watching. If you are noticing moments that concern you, even if they are not constant, it is reasonable to mention them to a doctor. You do not need to wait until the pattern is unmistakable.',
+                    text: 'Early dementia often shows up inconsistently. A parent may have clear, sharp days followed by noticeable lapses. That inconsistency is itself a pattern worth watching. If you are noticing moments that concern you, even if they are not constant, it is reasonable to mention them to a doctor. You do not need to wait until the pattern is unmistakable.',
                   },
                 },
               ],
@@ -128,7 +128,12 @@ export default function EarlySignsOfDementiaArticlePage() {
               itemListElement: [
                 { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.arcadiahomecare.ca/' },
                 { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://www.arcadiahomecare.ca/resources/' },
-                { '@type': 'ListItem', position: 3, name: 'Dementia & Memory Care', item: 'https://www.arcadiahomecare.ca/resources/dementia-memory-care/' },
+                {
+                  '@type': 'ListItem',
+                  position: 3,
+                  name: 'Dementia & Memory Care',
+                  item: 'https://www.arcadiahomecare.ca/resources/dementia-memory-care/',
+                },
                 { '@type': 'ListItem', position: 4, name: 'Early Signs of Dementia in a Parent', item: CANONICAL },
               ],
             },
@@ -183,73 +188,7 @@ export default function EarlySignsOfDementiaArticlePage() {
         }}
       />
 
-      <style>{`
-        .article-page { font-family: 'DM Sans', system-ui, sans-serif; color: #2D2D2D; }
-        .article-hero { background: #1C2B3A; padding: 96px 24px 72px; }
-        .article-hero-inner { max-width: 760px; margin: 0 auto; }
-        .article-eyebrow { font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #C8302A; margin-bottom: 14px; }
-        .article-hero h1 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(2rem, 4.5vw, 3.2rem); font-weight: 600; color: #fff; line-height: 1.2; margin-bottom: 20px; }
-        .article-hero .article-summary { font-size: 1.125rem; color: rgba(255,255,255,0.9); line-height: 1.8; font-style: italic; margin: 0 0 18px; }
-        .article-hero p { font-size: 1.05rem; color: rgba(255,255,255,0.85); line-height: 1.8; margin: 0; }
-
-        .article-body { max-width: 1100px; margin: 0 auto; padding: 72px 24px; display: grid; grid-template-columns: 1fr 300px; gap: 64px; align-items: start; }
-        @media (max-width: 900px) { .article-body { grid-template-columns: 1fr; } }
-
-        .key-takeaways { background: #F7F3EE; border-left: 4px solid #C8302A; border-radius: 0 8px 8px 0; padding: 24px 28px; margin: 0 0 36px; }
-        .key-takeaways h2 { font-family: 'DM Sans', system-ui, sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #C8302A; margin: 0 0 14px; }
-        .article-content .key-takeaways ul { list-style: none; margin: 0; padding-left: 0; }
-        .article-content .key-takeaways li { border-bottom: none; padding: 0 0 0 22px; position: relative; margin-bottom: 12px; font-size: 0.9625rem; color: #4B5563; line-height: 1.6; }
-        .article-content .key-takeaways li:last-child { margin-bottom: 0; }
-        .article-content .key-takeaways li::before { content: ''; position: absolute; left: 0; top: 9px; width: 7px; height: 7px; border-radius: 50%; background: #C8302A; }
-
-        .article-content h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(1.5rem, 2.5vw, 2rem); font-weight: 600; color: #1C2B3A; margin: 48px 0 16px; line-height: 1.25; }
-        .article-content h2:first-child { margin-top: 0; }
-        .article-content p { font-size: 1rem; color: #4B5563; line-height: 1.85; margin-bottom: 18px; }
-        .article-content a { color: #C8302A; font-weight: 600; text-decoration: underline; text-decoration-color: rgba(200,48,42,0.3); text-underline-offset: 3px; }
-        .article-content a:hover { text-decoration-color: #C8302A; }
-
-        .article-content .pull { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.25rem; line-height: 1.5; font-style: italic; color: #1C2B3A; border-left: 4px solid #C8302A; padding: 4px 0 4px 20px; margin: 28px 0; }
-
-        .section-divider { text-align: center; color: #C8302A; letter-spacing: 0.5em; font-size: 1rem; margin: 48px 0 32px; }
-
-        .faq-section { margin-top: 56px; }
-        .faq-eyebrow { font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #C8302A; margin-bottom: 12px; }
-        .faq-section h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(1.5rem, 2.5vw, 2rem); font-weight: 600; color: #1C2B3A; margin-bottom: 28px; }
-        .faq-item { border-bottom: 1px solid #E5E0D8; padding: 20px 0; }
-        .faq-q { font-size: 1rem; font-weight: 700; color: #1C2B3A; margin-bottom: 10px; line-height: 1.5; }
-        .faq-a { font-size: 0.9375rem; color: #4B5563; line-height: 1.8; }
-
-        .related-links { margin-top: 48px; padding-top: 40px; border-top: 1px solid #E5E0D8; }
-        .related-links h3 { font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #C8302A; margin-bottom: 16px; }
-        .related-link { display: flex; align-items: center; gap: 8px; color: #1C2B3A; text-decoration: none; font-size: 14px; font-weight: 600; padding: 10px 0; border-bottom: 1px solid #F0EBE3; }
-        .related-link:last-child { border-bottom: none; }
-        .related-link::before { content: '→'; color: #C8302A; }
-        .related-link:hover { color: #C8302A; }
-
-        .article-sidebar { position: sticky; top: 100px; }
-        .sidebar-card { background: #FAFAF8; border: 1px solid #E5E0D8; border-radius: 14px; padding: 28px; margin-bottom: 20px; }
-        .sidebar-card-title { font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #C8302A; margin-bottom: 16px; }
-        .sidebar-link { display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; color: #1C2B3A; text-decoration: none; padding: 10px 0; border-bottom: 1px solid #F0EBE3; transition: color 0.15s; }
-        .sidebar-link:last-child { border-bottom: none; }
-        .sidebar-link:hover { color: #C8302A; }
-        .sidebar-link::before { content: '→'; color: #C8302A; font-size: 13px; }
-        .sidebar-cta { background: #1C2B3A; border-radius: 14px; padding: 28px; text-align: center; }
-        .sidebar-cta h3 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.3rem; font-weight: 600; color: #fff; margin-bottom: 8px; }
-        .sidebar-cta p { font-size: 0.875rem; color: rgba(255,255,255,0.7); margin-bottom: 16px; line-height: 1.65; }
-        .sidebar-phone { font-size: 1.2rem; font-weight: 700; color: #C8302A; text-decoration: none; display: block; margin-bottom: 12px; }
-        .btn-red-sm { background: #C8302A; color: #fff; padding: 11px 20px; border-radius: 8px; font-size: 13px; font-weight: 700; text-decoration: none; display: block; text-align: center; }
-
-        .article-bottom-cta { background: #1C2B3A; padding: 80px 24px; text-align: center; }
-        .article-bottom-cta h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 600; color: #fff; max-width: 640px; margin: 0 auto 14px; line-height: 1.2; }
-        .article-bottom-cta p { color: rgba(255,255,255,0.85); font-size: 1rem; max-width: 480px; margin: 0 auto 32px; line-height: 1.75; }
-        .article-bottom-cta-phone { font-size: 2rem; font-weight: 700; color: #C8302A; text-decoration: none; display: block; margin-bottom: 20px; }
-        .cta-buttons { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
-        .btn-red { background: #C8302A; color: #fff; text-decoration: none; padding: 14px 28px; border-radius: 8px; font-size: 15px; font-weight: 700; }
-        .btn-outline { border: 1.5px solid rgba(255,255,255,0.5); background: transparent; color: #fff; text-decoration: none; padding: 14px 28px; border-radius: 8px; font-size: 15px; font-weight: 700; }
-      `}</style>
-
       <main className="article-page">
-        {/* Hero */}
         <section className="article-hero">
           <div className="article-hero-inner">
             <p className="article-eyebrow">For families navigating dementia care in Toronto</p>
@@ -261,92 +200,270 @@ export default function EarlySignsOfDementiaArticlePage() {
               whether this is normal aging or something else, and you are not sure you want to find out.
             </p>
             <p>
-              This guide is for that moment. It covers the early signs that something beyond normal aging may
-              be happening, what to watch for, and what to do when you are ready to take the next step.
+              This guide names the early signs families notice most often, how those signs differ from
+              ordinary aging, and what to do when you are ready for the next step. It is not a diagnosis. It
+              is a clearer picture of what you are already seeing.
             </p>
           </div>
         </section>
 
-        {/* Body */}
         <div className="article-body">
           <article className="article-content">
-
-            {/* Key Takeaways */}
             <div className="key-takeaways">
               <h2>Key Takeaways</h2>
               <ul>
-                <li>Repeating questions, forgetting recent conversations, and losing track of familiar tasks can be early signs of dementia, not just normal aging.</li>
-                <li>Executive function decline (difficulty planning, managing finances, following a recipe) often appears before memory loss becomes obvious.</li>
-                <li>Personality and behavioural changes, including withdrawal, suspicion, or uncharacteristic irritability, are among the most overlooked early indicators.</li>
-                <li>Normal aging causes slower recall. Dementia causes lost recall. The distinction matters and a doctor can help you tell the difference.</li>
-                <li>You do not need a diagnosis to start paying closer attention. Noticing is the first step, not the last.</li>
+                <li>
+                  Repeating questions, forgetting recent conversations, and losing track of familiar tasks can
+                  be early signs of dementia, not just normal aging.
+                </li>
+                <li>
+                  Trouble with planning, paying bills, cooking, or other multi-step tasks often appears before
+                  classic memory loss becomes obvious.
+                </li>
+                <li>
+                  Personality and behavioural changes, including withdrawal, suspicion, or uncharacteristic
+                  irritability, are among the most overlooked early indicators.
+                </li>
+                <li>
+                  Normal aging causes slower recall. Early dementia more often causes lost recall. The
+                  distinction matters, and a doctor can help you tell the difference.
+                </li>
+                <li>
+                  You do not need a diagnosis to start paying closer attention. Noticing is the first step, not
+                  the last.
+                </li>
               </ul>
             </div>
 
-            <h2>The changes that are not just aging</h2>
+            <h2>What &quot;early signs&quot; actually look like</h2>
 
-            <p>Some cognitive changes are expected as a person gets older. Slower recall, the occasional misplaced word, walking into a room and forgetting why. Those are frustrating, but they are normal.</p>
+            <p>
+              Some cognitive changes are expected as a person gets older. Slower recall. The occasional
+              misplaced word. Walking into a room and forgetting why. Those are frustrating, but they are
+              often normal.
+            </p>
 
-            <p>What follows is different. These are the patterns that families describe to us most often when they look back and say, <em>&quot;I think it started about a year ago.&quot;</em></p>
+            <p>
+              Early dementia looks different because it disrupts function, not just speed. The patterns below
+              are the ones families describe most often when they look back and say,{' '}
+              <em>&quot;I think it started about a year ago.&quot;</em> None of them proves dementia on its own.
+              What matters is persistence, change from baseline, and whether daily life is getting harder.
+            </p>
 
-            <p><strong>Memory changes that disrupt daily life.</strong> Not forgetting where you put the car keys. Forgetting what car keys are for. Not misremembering a detail from last week. Having no memory of the conversation at all. The difference between normal forgetfulness and early dementia is whether the forgotten thing comes back. In normal aging, it usually does. In early dementia, it does not, because the memory was never fully formed.</p>
+            <p className="pull">
+              You are not looking for one dramatic incident. You are looking for a pattern your parent did not
+              used to have.
+            </p>
 
-            <p>Watch for: repeating the same question multiple times in one visit. Forgetting appointments that were confirmed that morning. Relying on notes, labels, or reminders for things that used to be automatic.</p>
+            <h2>Memory changes that disrupt daily life</h2>
 
-            <p className="pull">The difference between normal forgetfulness and early dementia is whether the forgotten thing comes back.</p>
+            <p>
+              Not forgetting where you put the car keys. Forgetting what car keys are for. Not misremembering
+              a detail from last week. Having no memory of the conversation at all.
+            </p>
 
-            <p><strong>Executive function decline.</strong> This is the one families miss most often, because it does not look like a &quot;memory problem.&quot; Executive function is the ability to plan, organize, sequence, and manage complexity. When it starts to erode, the signs show up in tasks that require multiple steps.</p>
+            <p>
+              The practical difference between normal forgetfulness and an early dementia pattern is whether
+              the forgotten thing comes back. In normal aging, it often does. In early dementia, it often does
+              not, because the memory was never fully formed.
+            </p>
 
-            <p>A parent who always managed the household finances starts making errors or missing payments. A recipe that has been made dozens of times suddenly becomes confusing. Driving in familiar areas becomes hesitant or erratic, not because of vision or reflexes, but because the decision-making layer is less reliable.</p>
+            <p>Watch for:</p>
+            <ul>
+              <li>Repeating the same question multiple times in one visit</li>
+              <li>Forgetting appointments that were confirmed that morning</li>
+              <li>Relying on notes, labels, or reminders for things that used to be automatic</li>
+              <li>Losing track of recent conversations with you, a sibling, or a close friend</li>
+            </ul>
 
-            <p>These changes often appear before the classic memory symptoms. Families sometimes attribute them to stress, distraction, or &quot;just getting older.&quot; They are worth paying attention to.</p>
+            <p className="pull">
+              The difference between normal forgetfulness and early dementia is whether the forgotten thing
+              comes back.
+            </p>
 
-            <p><strong>Language and communication changes.</strong> Difficulty finding the right word is common in normal aging. In early dementia, the pattern is more persistent. Your parent may stop mid-sentence, unable to retrieve a word they use regularly. They may substitute a wrong but related word (&quot;the thing you cook with&quot; instead of &quot;stove&quot;) or lose the thread of a conversation more easily than before.</p>
+            <h2>Trouble with planning and everyday tasks</h2>
 
-            <p>Some people compensate by talking less. A parent who was always talkative becoming noticeably quieter may not be choosing silence. They may be avoiding situations where language failures feel embarrassing.</p>
+            <p>
+              This is the sign families miss most often, because it does not look like a &quot;memory
+              problem.&quot; Planning, organizing, sequencing, and managing complexity can erode before
+              someone starts forgetting names. The signs show up in tasks that require multiple steps.
+            </p>
 
-            <p><strong>Personality and behavioural shifts.</strong> These are often the hardest to name, because personality is not a test you can score. But when a parent&#39;s temperament changes, families feel it before they can explain it.</p>
+            <p>
+              A parent who always managed the household finances starts making errors or missing payments. A
+              recipe made dozens of times suddenly becomes confusing. Driving in familiar areas becomes
+              hesitant or erratic, not because of vision or reflexes alone, but because the decision-making
+              layer is less reliable.
+            </p>
 
-            <p>A parent who was easygoing becomes suspicious or accusatory. A social person withdraws from activities they used to enjoy. Apathy settles in, not sadness exactly, but a loss of interest that is hard to explain.</p>
+            <p>
+              Families sometimes attribute these changes to stress, distraction, or &quot;just getting
+              older.&quot; They are worth paying attention to, especially when the person used to handle that
+              task easily.
+            </p>
 
-            <p className="pull">When a parent&#39;s temperament changes, families feel it before they can explain it.</p>
+            <h2>Language and communication changes</h2>
 
-            <p>Irritability, anxiety, and mood swings that seem out of proportion to the situation can also be early indicators, particularly if the person has no history of mood difficulties.</p>
+            <p>
+              Difficulty finding the right word is common in normal aging. In early dementia, the pattern is
+              more persistent. Your parent may stop mid-sentence, unable to retrieve a word they use regularly.
+              They may substitute a related phrase (&quot;the thing you cook with&quot; instead of
+              &quot;stove&quot;) or lose the thread of a conversation more easily than before.
+            </p>
 
-            <p><strong>Confusion about time, place, or familiar surroundings.</strong> Getting lost on the way home from a familiar shop. Losing track of what day or season it is. Arriving somewhere and not remembering how they got there or why they came. These spatial and temporal changes often prompt the first serious conversation, because they are hard to explain away.</p>
+            <p>
+              Some people compensate by talking less. A parent who was always talkative becoming noticeably
+              quieter may not be choosing silence. They may be avoiding situations where language failures feel
+              embarrassing.
+            </p>
+
+            <h2>Personality and behavioural shifts</h2>
+
+            <p>
+              These are often the hardest to name, because personality is not a test you can score. But when a
+              parent&apos;s temperament changes, families feel it before they can explain it.
+            </p>
+
+            <p>
+              A parent who was easygoing becomes suspicious or accusatory. A social person withdraws from
+              activities they used to enjoy. Apathy settles in: not sadness exactly, but a loss of interest
+              that is hard to explain. Irritability, anxiety, and mood swings that seem out of proportion can
+              also be early indicators, particularly if the person has no history of mood difficulties.
+            </p>
+
+            <p className="pull">
+              When a parent&apos;s temperament changes, families feel it before they can explain it.
+            </p>
+
+            <h2>Confusion about time, place, or familiar surroundings</h2>
+
+            <p>
+              Getting lost on the way home from a familiar shop. Losing track of what day or season it is.
+              Arriving somewhere and not remembering how they got there or why they came. These spatial and
+              temporal changes often prompt the first serious conversation, because they are hard to explain
+              away.
+            </p>
+
+            <p>
+              If driving is already part of what you are worried about, our guide on{' '}
+              <Link href="/resources/dementia-memory-care/dementia-when-to-stop-driving/">
+                when someone with dementia should stop driving
+              </Link>{' '}
+              walks through that decision separately. If safety inside the house is what keeps you up at night,
+              start with{' '}
+              <Link href="/resources/dementia-memory-care/dementia-home-safety/">
+                how to keep someone with dementia safe at home
+              </Link>
+              .
+            </p>
+
+            <h2>Normal aging vs. early dementia: the line that matters</h2>
+
+            <p>
+              Normal aging slows recall. Early dementia more often erases it. A person who forgets a name and
+              retrieves it later is usually in a different place than a person who has no sense that the
+              conversation happened.
+            </p>
+
+            <p>
+              Function is the other divider. Occasional slips that do not change independence are one thing.
+              Persistent trouble with bills, meals, medications, or getting around familiar places is another.
+              If you want the side-by-side comparison in more detail, read{' '}
+              <Link href="/resources/dementia-memory-care/normal-aging-vs-dementia/">
+                normal aging vs. dementia
+              </Link>
+              .
+            </p>
 
             <h2>When to talk to a doctor</h2>
 
-            <p>You do not need to be certain before making an appointment. In fact, waiting for certainty is one of the most common reasons families delay.</p>
+            <p>
+              You do not need to be certain before making an appointment. Waiting for certainty is one of the
+              most common reasons families delay.
+            </p>
 
-            <p>A family physician or geriatrician can run a cognitive screen. It is a short, structured conversation, not an invasive procedure. The screen does not diagnose dementia on its own, but it establishes a baseline and helps determine whether further assessment is warranted.</p>
+            <p>
+              A family physician can run a cognitive screen. It is a short, structured conversation, not an
+              invasive procedure. The screen does not diagnose dementia on its own, but it establishes a
+              baseline and helps determine whether further assessment is warranted. Geriatricians and
+              neurologists handle more detailed workups when needed. In Toronto, referral wait times vary, so
+              starting earlier usually gives you more options.
+            </p>
 
-            <p>If you are unsure whether what you are seeing is normal aging or something more, our <Link href="/resources/dementia-memory-care/normal-aging-vs-dementia/">guide to normal aging vs. dementia</Link> walks through the comparison in detail.</p>
+            <p>What to bring:</p>
+            <ul>
+              <li>Specific examples of changes you have observed, not general impressions</li>
+              <li>A rough timeline of when you first noticed them</li>
+              <li>Any family history of dementia or cognitive decline</li>
+              <li>A list of current medications and recent health changes</li>
+            </ul>
 
-            <p>What to bring to the appointment: specific examples of changes you have observed (not general impressions), a rough timeline of when you first noticed them, and any family history of dementia or cognitive decline. The more concrete your examples, the more useful the conversation will be.</p>
+            <p>
+              The more concrete your examples, the more useful the conversation will be. If you are also
+              bracing for how to raise this with your parent,{' '}
+              <Link href="/resources/family-caregiver-support/talking-to-parent-about-care/">
+                the conversation you keep putting off
+              </Link>{' '}
+              may help you find language that does not put them on the defensive.
+            </p>
 
             <h2>What a diagnosis changes, and what it does not</h2>
 
-            <p>If the assessment leads to a diagnosis, the word &quot;dementia&quot; can feel like the ground shifting. It is worth knowing what the diagnosis actually means in practical terms.</p>
+            <p>
+              If the assessment leads to a diagnosis, the word &quot;dementia&quot; can feel like the ground
+              shifting. It is worth knowing what the diagnosis actually means in practical terms.
+            </p>
 
-            <p>It does not mean your parent needs full-time care tomorrow. Many people with early-stage dementia continue to live independently for months or years with the right support structure. What changes is the planning horizon. Decisions about legal authority, financial management, and future care preferences are easier to make now, while your parent can still participate in them.</p>
+            <p>
+              It does not mean your parent needs full-time care tomorrow. Many people with early-stage dementia
+              continue to live independently for months or years with the right support structure. What changes
+              is the planning horizon. Decisions about legal authority, financial management, and future care
+              preferences are easier to make now, while your parent can still participate in them.
+            </p>
 
             <p className="pull">Noticing is not a failure. It is the beginning of being able to help.</p>
 
-            <p>It also means you can start thinking about what kind of support might help, not in a crisis, but from a position of clarity. If and when the time comes to <Link href="/resources/dementia-memory-care/introducing-home-care-dementia/">introduce home care to a parent with dementia</Link>, having noticed early gives you more options and more time.</p>
+            <p>
+              It also means you can start thinking about what kind of support might help, not in a crisis, but
+              from a position of clarity. If and when the time comes to{' '}
+              <Link href="/resources/dementia-memory-care/introducing-home-care-dementia/">
+                introduce home care to a parent with dementia
+              </Link>
+              , having noticed early gives you more options and more time.
+            </p>
 
-            <p>For families in Toronto and the GTA, Arcadia&#39;s <Link href="/our-services/dementia-alzheimers-home-care/">dementia and Alzheimer&#39;s home care</Link> is designed for exactly this trajectory: support that starts small and adjusts as needs change, guided by people who understand how dementia actually progresses. You can also read more about <Link href="/conditions/dementia-care-at-home/">what dementia care at home looks like</Link> on our condition page.</p>
+            <p>
+              For families in Toronto and the GTA, Arcadia&apos;s{' '}
+              <Link href="/our-services/dementia-alzheimers-home-care/">
+                dementia and Alzheimer&apos;s home care
+              </Link>{' '}
+              is designed for this trajectory: support that can start small and adjust as needs change. You can
+              also read more about{' '}
+              <Link href="/conditions/dementia-care-at-home/">what dementia care at home looks like</Link> on
+              our condition page.
+            </p>
 
-            {/* Visual divider before the CTA close */}
-            <div className="section-divider" aria-hidden="true">· · ·</div>
+            <div className="section-divider" aria-hidden="true">
+              &middot; &middot; &middot;
+            </div>
 
-            <p>You are not expected to diagnose your parent. You are not expected to have all the answers right now. But if you have been noticing changes and wondering whether they mean something, that instinct is worth following.</p>
+            <p>
+              You are not expected to diagnose your parent. You are not expected to have all the answers right
+              now. But if you have been noticing changes and wondering whether they mean something, that
+              instinct is worth following.
+            </p>
 
-            <p><Link href="/how-care-starts/">Learn how care starts at Arcadia</Link>, or call us to talk through what you are seeing. No obligation, no pressure. Just a conversation with someone who has helped hundreds of Toronto families navigate this exact moment.</p>
+            <p>
+              <Link href="/how-care-starts/">Learn how care starts at Arcadia</Link>, or call us to talk
+              through what you are seeing. No obligation, no pressure. Just a conversation with someone who has
+              helped hundreds of Toronto families navigate this exact moment.
+            </p>
 
-            <p><Link href="/contact/">Book a free consultation</Link> · <a href="tel:8449770050">(844) 977-0050</a></p>
+            <p>
+              <Link href="/contact/">Book a free consultation</Link> &middot;{' '}
+              <a href="tel:8449770050">(844) 977-0050</a>
+            </p>
 
-            {/* FAQ */}
             <div className="faq-section">
               <p className="faq-eyebrow">Frequently Asked Questions</p>
               <h2>Questions families ask about early signs of dementia</h2>
@@ -355,11 +472,10 @@ export default function EarlySignsOfDementiaArticlePage() {
                 <div className="faq-q">What are the earliest signs of dementia in a parent?</div>
                 <div className="faq-a">
                   The most common early signs include repeating questions or stories within a short period,
-                  difficulty managing tasks that involve multiple steps (like cooking or paying bills),
-                  word-finding problems that go beyond the occasional blank, personality changes such as
-                  increased suspicion or withdrawal, and confusion about time or familiar places. These
-                  patterns tend to be persistent rather than occasional, and they represent a change from how
-                  your parent used to function.
+                  difficulty managing multi-step tasks such as cooking or paying bills, word-finding problems
+                  that go beyond the occasional blank, personality changes such as increased suspicion or
+                  withdrawal, and confusion about time or familiar places. These patterns tend to be persistent
+                  rather than occasional, and they represent a change from how your parent used to function.
                 </div>
               </div>
 
@@ -368,9 +484,9 @@ export default function EarlySignsOfDementiaArticlePage() {
                 <div className="faq-a">
                   Normal aging slows recall but does not erase it. You might forget a name but remember it
                   later. Early dementia tends to erase the memory entirely, so the person does not recognize
-                  that something was forgotten. Executive function decline (trouble planning, organizing, or
-                  completing familiar tasks) is another key differentiator. Our full guide to normal aging vs.
-                  dementia covers this in detail.
+                  that something was forgotten. Trouble planning, organizing, or completing familiar tasks is
+                  another key differentiator. Our full guide to normal aging vs. dementia covers this in
+                  detail.
                 </div>
               </div>
 
@@ -379,9 +495,9 @@ export default function EarlySignsOfDementiaArticlePage() {
                 <div className="faq-a">
                   This depends on the situation and your relationship. Some parents respond well to a direct,
                   caring conversation. Others become defensive or anxious. A common approach is to frame it
-                  around a routine checkup rather than a concern: &quot;The doctor suggested a memory screen as
-                  part of your annual checkup&quot; removes the implication that something is wrong while still
-                  getting the assessment done.
+                  around a routine checkup rather than a concern: suggesting a memory screen as part of an
+                  annual checkup removes some of the implication that something is wrong while still getting
+                  the assessment done.
                 </div>
               </div>
 
@@ -398,7 +514,7 @@ export default function EarlySignsOfDementiaArticlePage() {
                 <div className="faq-q">Can early-stage dementia be treated?</div>
                 <div className="faq-a">
                   There is no cure for most forms of dementia, but early detection opens options that are not
-                  available later. Certain medications can help manage symptoms in some cases. More
+                  available later. Certain medications may help manage symptoms in some cases. More
                   importantly, early awareness allows families to plan legal, financial, and care arrangements
                   while the person can still participate in those decisions.
                 </div>
@@ -408,66 +524,100 @@ export default function EarlySignsOfDementiaArticlePage() {
                 <div className="faq-q">My parent seems fine most of the time. Should I still be concerned?</div>
                 <div className="faq-a">
                   Early dementia often shows up inconsistently. A parent may have clear, sharp days followed by
-                  noticeable lapses. This inconsistency is itself a pattern worth watching. If you are noticing
-                  moments that concern you, even if they are not constant, it is reasonable to mention them to a
-                  doctor. You do not need to wait until the pattern is unmistakable.
+                  noticeable lapses. That inconsistency is itself a pattern worth watching. If you are noticing
+                  moments that concern you, even if they are not constant, it is reasonable to mention them to
+                  a doctor. You do not need to wait until the pattern is unmistakable.
                 </div>
               </div>
             </div>
 
-            {/* Related Links */}
             <div className="related-links">
               <h3>You may also find helpful</h3>
               <Link href="/resources/dementia-memory-care/normal-aging-vs-dementia/" className="related-link">
-                Normal Aging vs. Dementia: What&#39;s the Difference?
+                Normal Aging vs. Dementia: What&apos;s the Difference?
               </Link>
-              <Link href="/resources/dementia-memory-care/introducing-home-care-dementia/" className="related-link">
+              <Link href="/resources/dementia-memory-care/dementia-home-safety/" className="related-link">
+                How to Keep Someone with Dementia Safe at Home
+              </Link>
+              <Link
+                href="/resources/dementia-memory-care/introducing-home-care-dementia/"
+                className="related-link"
+              >
                 How to Introduce Home Care to a Parent with Dementia
               </Link>
-              <Link href="/resources/family-caregiver-support/talking-to-parent-about-care/" className="related-link">
+              <Link
+                href="/resources/family-caregiver-support/talking-to-parent-about-care/"
+                className="related-link"
+              >
                 The Conversation You Keep Putting Off
               </Link>
             </div>
-
           </article>
 
-          {/* Sidebar */}
           <aside className="article-sidebar">
             <div className="sidebar-cta">
               <h3>Talk through what you are noticing</h3>
-              <p>Arcadia has helped hundreds of Toronto families make sense of early changes in a parent.</p>
-              <a href="tel:8449770050" className="sidebar-phone">(844) 977-0050</a>
-              <Link href="/contact/" className="btn-red-sm">Book a Free Consultation</Link>
+              <p>
+                Arcadia has helped hundreds of Toronto families make sense of early changes in a parent.
+              </p>
+              <a href="tel:8449770050" className="sidebar-phone">
+                (844) 977-0050
+              </a>
+              <Link href="/contact/" className="btn-red-sm">
+                Book a Free Consultation
+              </Link>
             </div>
 
             <div className="sidebar-card">
               <div className="sidebar-card-title">Related Pages</div>
-              <Link href="/conditions/dementia-care-at-home/" className="sidebar-link">Dementia Care at Home</Link>
-              <Link href="/our-services/dementia-alzheimers-home-care/" className="sidebar-link">Dementia Home Care Service</Link>
-              <Link href="/how-care-starts/" className="sidebar-link">How Care Starts</Link>
-              <Link href="/locations/toronto/" className="sidebar-link">Care in Toronto</Link>
+              <Link href="/conditions/dementia-care-at-home/" className="sidebar-link">
+                Dementia Care at Home
+              </Link>
+              <Link href="/our-services/dementia-alzheimers-home-care/" className="sidebar-link">
+                Dementia Home Care Service
+              </Link>
+              <Link href="/how-care-starts/" className="sidebar-link">
+                How Care Starts
+              </Link>
+              <Link href="/locations/toronto/" className="sidebar-link">
+                Care in Toronto
+              </Link>
             </div>
 
             <div className="sidebar-card">
               <div className="sidebar-card-title">More in This Series</div>
-              <Link href="/resources/dementia-memory-care/" className="sidebar-link">All Dementia Articles</Link>
-              <Link href="/resources/dementia-memory-care/normal-aging-vs-dementia/" className="sidebar-link">Normal Aging vs. Dementia</Link>
-              <Link href="/resources/dementia-memory-care/introducing-home-care-dementia/" className="sidebar-link">Introducing Home Care</Link>
+              <Link href="/resources/dementia-memory-care/" className="sidebar-link">
+                All Dementia Articles
+              </Link>
+              <Link href="/resources/dementia-memory-care/normal-aging-vs-dementia/" className="sidebar-link">
+                Normal Aging vs. Dementia
+              </Link>
+              <Link
+                href="/resources/dementia-memory-care/introducing-home-care-dementia/"
+                className="sidebar-link"
+              >
+                Introducing Home Care
+              </Link>
             </div>
           </aside>
         </div>
 
-        {/* Bottom CTA */}
         <section className="article-bottom-cta">
           <h2>Wondering Whether It Is Time to Pay Closer Attention?</h2>
           <p>
-            Arcadia helps Toronto families understand what they are seeing and what comes next. Call us or
-            book a free consultation, and we will help you think it through.
+            Arcadia helps Toronto families understand what they are seeing and what comes next. Call us or book
+            a free consultation, and we will help you think it through.
           </p>
-          <a href="tel:8449770050" className="article-bottom-cta-phone">(844) 977-0050</a>
+          <a href="tel:8449770050" className="article-bottom-cta-phone">
+            (844) 977-0050
+          </a>
           <div className="cta-buttons">
-            <Link href="/contact/" className="btn-red">Book a Free Consultation</Link>
-            <Link href="/our-services/dementia-alzheimers-home-care/" className="btn-outline">Our Dementia Care Service</Link>
+            <Link href="/contact/" className="btn-red">
+              Book a Free Consultation
+            </Link>
+            <Link href="/our-services/dementia-alzheimers-home-care/" className="btn-outline">
+              Our Dementia Care Service
+            </Link>
           </div>
         </section>
       </main>

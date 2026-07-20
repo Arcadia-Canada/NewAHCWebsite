@@ -42,6 +42,12 @@ const articles = [
     description: 'Not burnout. Not yet. But something heavier than it used to be. What the weight of caregiving actually costs, and what structurally changes things.',
     status: 'live',
   },
+  {
+    title: 'The Guilt of Getting Help',
+    href: '/resources/family-caregiver-support/guilt-of-getting-help/',
+    description: 'Why hiring home care for a parent can feel like failure, what that guilt is really about, and how to get help without abandoning the people you love.',
+    status: 'live',
+  },
 ]
 
 export default function FamilyCaregiverSupportHub() {
