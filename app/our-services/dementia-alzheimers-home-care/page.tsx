@@ -19,11 +19,11 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: 'How does Arcadia train caregivers specifically for dementia and Alzheimer\'s care?',
-    a: 'Arcadia\'s dementia caregivers receive training in dementia-specific communication techniques, behaviour management strategies, safe home environments, and person-centred care approaches. Training is ongoing — not just at onboarding — and is supplemented by supervision from our Clinical Director. We also match caregivers to clients based on personality, language, and temperament, not just availability.',
+    a: 'Arcadia\'s dementia caregivers receive training in dementia-specific communication techniques, behaviour management strategies, safe home environments, and person-centred care approaches. Training is ongoing, not just at onboarding, and is supplemented by supervision from our Clinical Director. We also match caregivers to clients based on personality, language, and temperament, not just availability. Families ask how do I find dementia-trained caregivers near me. We take time to understand the person before we match.',
   },
   {
     q: 'How does caregiver matching work for someone with dementia?',
-    a: 'Matching for dementia care involves more than clinical compatibility. We consider the person\'s history, preferences, cultural background, language, and the specific way their dementia presents. We also factor in temperament — some people with dementia respond well to a calm, quiet presence; others do better with someone more engaging and active. We take time to understand the individual before making a match, and we are transparent when a match is not working.',
+    a: 'Matching for dementia care involves more than clinical compatibility. We consider the person\'s history, preferences, cultural background, language, and the specific way their dementia presents. We also factor in temperament. Some people with dementia respond well to a calm, quiet presence; others do better with someone more engaging and active. We take time to understand the individual before making a match, and we are transparent when a match is not working.',
   },
   {
     q: 'What happens when a caregiver is unavailable or needs to be replaced?',
@@ -31,15 +31,15 @@ const faqs = [
   },
   {
     q: 'Can Arcadia provide care for someone with dementia who also has other medical conditions?',
-    a: 'Yes. Many Arcadia clients have complex needs — dementia alongside diabetes, heart conditions, mobility limitations, or palliative needs. Our Clinical Director reviews care plans for complex cases, and we coordinate with the family physician and any other providers involved. We do not offer nursing care, but we work effectively alongside nurses and other clinical team members.',
+    a: 'Yes. Many Arcadia clients have complex needs: dementia alongside diabetes, heart conditions, mobility limitations, or palliative needs. Our Clinical Director reviews care plans for complex cases, and we coordinate with the family physician and any other providers involved. We do not offer nursing care, but we work effectively alongside nurses and other clinical team members.',
   },
   {
     q: 'How do you handle aggressive or challenging behaviour?',
-    a: 'Behavioural changes in dementia — including agitation, resistance to care, verbal or physical outbursts — are clinical symptoms, not character traits. Our caregivers are trained to respond calmly, avoid escalation, and use redirection and validation techniques rather than confrontation or restraint. If a behavioural pattern is persistent or escalating, we flag it to the family and the clinical team rather than simply managing it in isolation.',
+    a: 'Behavioural changes in dementia, including agitation, resistance to care, verbal or physical outbursts, are clinical symptoms, not character traits. Our caregivers are trained to respond calmly, avoid escalation, and use redirection and validation techniques rather than confrontation or restraint. If a behavioural pattern is persistent or escalating, we flag it to the family and the clinical team rather than simply managing it in isolation.',
   },
   {
     q: 'What does dementia home care cost, and is any of it covered by OHIP or insurance?',
-    a: 'OHIP does not cover private home care directly, but Ontario Health atHome provides publicly funded PSW and nursing hours for eligible clients — which can reduce the hours of private care needed. Some extended health benefit plans and veterans\' benefits cover home care. Cost depends on the level of care, hours, and whether an RSW or PSW is most appropriate. We provide transparent pricing and are happy to help families understand what funding may be available before they commit to anything.',
+    a: 'OHIP does not cover private home care directly, but Ontario Health atHome provides publicly funded PSW and nursing hours for eligible clients, which can reduce the hours of private care needed. Some extended health benefit plans and veterans\' benefits cover home care. Cost depends on the level of care, hours, and whether an RSW or PSW is most appropriate. We provide transparent pricing and are happy to help families understand what funding may be available before they commit to anything. If you are wondering how much dementia home care costs near me, we walk through hours and funding in a first conversation.',
   },
 ]
 

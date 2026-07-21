@@ -1,14 +1,14 @@
 # Indexability Report
 
-Generated: 2026-04-01T07:26:26.492Z
+Generated: 2026-07-21T22:09:24.825Z
 
 ## Summary
 
-- Pages scanned: 58
+- Pages scanned: 76
 - Page-level metadata robots blocks: 0
 - Meta tag noindex blocks: 0
 - Potential generateMetadata robot blocks: 0
-- Pages missing explicit metadata export: 11
+- Pages missing explicit metadata export: 9
 - Robots source found: `app/robots.ts`
 - Robots appears to allow all crawl: yes
 
@@ -30,14 +30,12 @@ Generated: 2026-04-01T07:26:26.492Z
 
 ## Pages Missing Explicit Metadata Export
 
-- `/conditions/` (`app/conditions/page.tsx`)
 - `/conditions/[condition]/` (`app/conditions/[condition]/page.tsx`)
-- `/contact/` (`app/contact/page.tsx`)
+- `/conditions/` (`app/conditions/page.tsx`)
 - `/how-care-starts/` (`app/how-care-starts/page.tsx`)
-- `/locations/[region]/` (`app/locations/[region]/page.tsx`)
 - `/locations/[region]/[city]/` (`app/locations/[region]/[city]/page.tsx`)
-- `/our-services/` (`app/our-services/page.tsx`)
+- `/locations/[region]/` (`app/locations/[region]/page.tsx`)
 - `/our-services/[service]/` (`app/our-services/[service]/page.tsx`)
+- `/our-services/` (`app/our-services/page.tsx`)
 - `/` (`app/page.tsx`)
 - `/pre-hire/` (`app/pre-hire/page.tsx`)
-- `/referral-form/` (`app/referral-form/page.tsx`)

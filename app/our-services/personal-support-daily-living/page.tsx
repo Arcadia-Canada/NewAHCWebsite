@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: 'What does a Personal Support Worker actually do?',
-    a: 'A PSW assists with the personal care and daily living tasks that a person can no longer manage safely or comfortably on their own — bathing, dressing, grooming, toileting, meal preparation, medication reminders, light housekeeping, and companionship. The scope of support depends on the individual\'s needs, and a good PSW adapts to the person\'s routines and preferences rather than imposing their own.',
+    a: 'A PSW assists with the personal care and daily living tasks that a person can no longer manage safely or comfortably on their own: bathing, dressing, grooming, toileting, meal preparation, medication reminders, light housekeeping, and companionship. The scope of support depends on the individual\'s needs, and a good PSW adapts to the person\'s routines and preferences rather than imposing their own. If you are wondering how do I find a PSW near me, we start with a care assessment and match on fit.',
   },
   {
     q: 'How does Arcadia match PSWs to clients?',
@@ -27,19 +27,19 @@ const faqs = [
   },
   {
     q: 'What happens if our PSW is unavailable or needs to be replaced?',
-    a: 'We work hard to maintain caregiver consistency and minimize disruptions. When a change is unavoidable, we brief the replacement caregiver thoroughly on the client\'s routines, preferences, and any clinical considerations before they arrive — and we communicate with the family throughout. We do not send a stranger to the door without preparation.',
+    a: 'We work hard to maintain caregiver consistency and minimize disruptions. When a change is unavoidable, we brief the replacement caregiver thoroughly on the client\'s routines, preferences, and any clinical considerations before they arrive, and we communicate with the family throughout. We do not send a stranger to the door without preparation.',
   },
   {
     q: 'Can Arcadia provide personal support for someone with dementia or a brain injury?',
-    a: 'Yes — and this is one of our core areas of specialization. PSW support for someone with dementia or acquired brain injury requires specific training, patience, and a different approach to communication and routine than standard personal care. Arcadia\'s caregivers supporting these clients receive additional training and supervision appropriate to the complexity of the case.',
+    a: 'Yes, and this is one of our core areas of specialization. PSW support for someone with dementia or acquired brain injury requires specific training, patience, and a different approach to communication and routine than standard personal care. Arcadia\'s caregivers supporting these clients receive additional training and supervision appropriate to the complexity of the case.',
   },
   {
     q: 'How many hours of personal support does a typical client receive?',
-    a: 'It varies widely. Some clients need a few hours a week — a morning routine three times a week, for example — while others need daily support or around-the-clock care. The right level depends on the person\'s needs, what family members can provide, and what publicly funded hours are available. A care assessment helps establish what is actually needed rather than defaulting to a generic package.',
+    a: 'It varies widely. Some clients need a few hours a week, such as a morning routine three times a week, while others need daily support or around-the-clock care. The right level depends on the person\'s needs, what family members can provide, and what publicly funded hours are available. A care assessment helps establish what is actually needed rather than defaulting to a generic package.',
   },
   {
     q: 'Is personal support covered by OHIP or Ontario Health atHome?',
-    a: 'OHIP does not cover private home care directly. Ontario Health atHome provides publicly funded PSW hours for eligible clients, but the allocation is often limited and does not always match what the situation requires. Some extended health benefit plans and veterans\' benefits cover home care. Arcadia can help families understand what funding may be available before committing to private care.',
+    a: 'OHIP does not cover private home care directly. Ontario Health atHome provides publicly funded PSW hours for eligible clients, but the allocation is often limited and does not always match what the situation requires. Some extended health benefit plans and veterans\' benefits cover home care. Arcadia can help families understand what funding may be available before committing to private care. Families also ask how much PSW home care costs near me. We provide transparent pricing in a first conversation.',
   },
 ]
 

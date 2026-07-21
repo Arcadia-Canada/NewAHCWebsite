@@ -70,6 +70,21 @@ const forms = [
   },
 ]
 
+const faqs = [
+  {
+    q: 'What is the first step in the Arcadia hiring process?',
+    a: 'Complete the Application for Employment form online. This is required for all roles: PSW, RN/RPN, and Rehabilitation Support Worker. It is Step 1 before any role-specific assessment.',
+  },
+  {
+    q: 'Do I need to complete a skills assessment?',
+    a: 'Yes. PSW candidates complete the PSW Skills Assessment. RN and RPN candidates complete the Nurse Skills Assessment. Choose only one assessment based on the role you are applying for.',
+  },
+  {
+    q: 'What documents should I upload with my application?',
+    a: 'Upload your certifications, registration documents, Vulnerable Sector Police Check, and any other required credentials in Step 3. Ensure files are legible and current to avoid delays.',
+  },
+]
+
 export default function PreHirePage() {
   const [activeForm, setActiveForm] = useState<string | null>(null)
 
@@ -87,6 +102,29 @@ export default function PreHirePage() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([
+            {
+              '@context': 'https://schema.org',
+              '@type': 'WebPage',
+              name: 'Pre-Hire Application',
+              url: 'https://www.arcadiahomecare.ca/pre-hire/',
+              publisher: { '@type': 'Organization', name: 'Arcadia Home Care', url: 'https://www.arcadiahomecare.ca' },
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: faqs.map((faq) => ({
+                '@type': 'Question',
+                name: faq.q,
+                acceptedAnswer: { '@type': 'Answer', text: faq.a },
+              })),
+            },
+          ]),
+        }}
+      />
       <style>{`
         .prehire-page { font-family: 'DM Sans', system-ui, sans-serif; color: #2D2D2D; }
 
@@ -427,24 +465,14 @@ export default function PreHirePage() {
           </div>
 
           <section className="candidate-faq">
-            <h3>What Candidates Usually Ask</h3>
-            <p>
-              The pre-hire flow is intentionally simple: complete the general
-              application, finish the role-appropriate skills assessment, and
-              upload your documents. Once submitted, our hiring team reviews
-              materials and follows up with next-step communication.
-            </p>
-            <p>
-              To avoid delays, ensure your contact details are current and your
-              uploaded files are legible, complete, and aligned with the role
-              you are applying for.
-            </p>
-            <ul>
-              <li>Complete Step 1 before opening role-specific assessments.</li>
-              <li>Choose only one skills assessment: PSW or RN/RPN.</li>
-              <li>Use the document upload step for certifications and IDs.</li>
-              <li>Call or email if you are unsure which role stream applies.</li>
-            </ul>
+            <p className="prehire-eyebrow" style={{ marginBottom: 12 }}>Frequently Asked Questions</p>
+            <h3>What candidates usually ask</h3>
+            {faqs.map((faq) => (
+              <div key={faq.q} style={{ borderBottom: '1px solid #E5E0D8', padding: '16px 0' }}>
+                <h4 style={{ fontSize: 15, fontWeight: 700, color: '#1C2B3A', margin: '0 0 8px', lineHeight: 1.5 }}>{faq.q}</h4>
+                <p style={{ fontSize: 14, color: '#4B5563', lineHeight: 1.75, margin: 0 }}>{faq.a}</p>
+              </div>
+            ))}
           </section>
 
         </div>

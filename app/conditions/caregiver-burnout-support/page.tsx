@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: 'Is it normal to feel guilty when I think about getting help?',
-    a: 'Yes. Many caregivers feel that asking for help means they are failing or that they should be able to manage on their own. In reality, getting support is one of the most responsible things you can do — for yourself and for the person you care for. Burnout does not serve anyone.',
+    a: 'Yes. Many caregivers feel that asking for help means they are failing or that they should be able to manage on their own. If you are wondering how do I know when I need respite, exhaustion that does not lift is a clear signal. Do you offer relief for family caregivers? Yes. Getting support is one of the most responsible things you can do.',
   },
   {
     q: 'What does respite care actually look like?',

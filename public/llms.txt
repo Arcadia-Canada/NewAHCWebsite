@@ -10,19 +10,424 @@
 - Address: 302 Bay Street, Toronto, Ontario M5H 0B6, Canada
 - Service Area: Toronto and GTA (York, Peel, Durham, Halton)
 
-## Core Services
-- Dementia & Alzheimer's Home Care: https://www.arcadiahomecare.ca/our-services/dementia-alzheimers-home-care/
-- Acquired Brain Injury Home Care: https://www.arcadiahomecare.ca/our-services/acquired-brain-injury-home-care/
-- Rehabilitation Support: https://www.arcadiahomecare.ca/our-services/rehabilitation-support/
-- Hospital Discharge Support: https://www.arcadiahomecare.ca/our-services/hospital-discharge-support/
-- Palliative Home Care: https://www.arcadiahomecare.ca/our-services/palliative-home-care/
-- Personal Support & Daily Living: https://www.arcadiahomecare.ca/our-services/personal-support-daily-living/
-- Companion Care: https://www.arcadiahomecare.ca/our-services/companion-care/
-- Respite Care: https://www.arcadiahomecare.ca/our-services/respite-care/
-- Overnight & 24-Hour Care: https://www.arcadiahomecare.ca/our-services/overnight-24-hour-care/
-- Case Management: https://www.arcadiahomecare.ca/our-services/case-management/
-- Light Housekeeping: https://www.arcadiahomecare.ca/our-services/light-housekeeping/
-- Downsizing & Transition Support: https://www.arcadiahomecare.ca/our-services/downsizing-transition-support/
+## GTA Locations
+
+### GTA Cities
+
+#### Markham
+- URL: https://www.arcadiahomecare.ca/locations/york-region/markham-home-care/
+- Summary: Home care in Markham. Arcadia supports families with dementia care, rehabilitation support, and post-hospital transition planning.
+- FAQs:
+  - (No FAQs on this page yet)
+
+
+#### Mississauga
+- URL: https://www.arcadiahomecare.ca/locations/peel-region/mississauga-home-care/
+- Summary: Home care in Mississauga. Arcadia supports families with dementia care, rehabilitation support, and post-hospital transition planning.
+- FAQs:
+  - (No FAQs on this page yet)
+
+
+#### Richmond Hill
+- URL: https://www.arcadiahomecare.ca/locations/york-region/richmond-hill-home-care/
+- Summary: Home care in Richmond Hill. Arcadia supports families with dementia care, rehabilitation support, and post-hospital transition planning.
+- FAQs:
+  - (No FAQs on this page yet)
+
+
+### GTA Regions
+
+#### Durham Region
+- URL: https://www.arcadiahomecare.ca/locations/durham-region/
+- Summary: Specialized home care across Durham Region. Arcadia supports families with dementia, rehabilitation, hospital discharge, and complex aging care in the GTA.
+- FAQs:
+  - (No FAQs on this page yet)
+
+
+#### Halton Region
+- URL: https://www.arcadiahomecare.ca/locations/halton-region/
+- Summary: Specialized home care across Halton Region. Arcadia supports families with dementia, rehabilitation, hospital discharge, and complex aging care in the GTA.
+- FAQs:
+  - (No FAQs on this page yet)
+
+
+#### Peel Region
+- URL: https://www.arcadiahomecare.ca/locations/peel-region/
+- Summary: Specialized home care across Peel Region. Arcadia supports families with dementia, rehabilitation, hospital discharge, and complex aging care in the GTA.
+- FAQs:
+  - (No FAQs on this page yet)
+
+
+#### York Region
+- URL: https://www.arcadiahomecare.ca/locations/york-region/
+- Summary: Specialized home care across York Region. Arcadia supports families with dementia, rehabilitation, hospital discharge, and complex aging care in the GTA.
+- FAQs:
+  - (No FAQs on this page yet)
+
+
+### Toronto & Boroughs
+
+#### Etobicoke
+- URL: https://www.arcadiahomecare.ca/locations/toronto/etobicoke-home-care/
+- Summary: Clinically informed home care across Etobicoke — dementia care, acquired brain injury, hospital discharge support, palliative care. Serving Etobicoke families since 2005.
+- FAQs:
+  - Q: How quickly can Arcadia start providing care in Etobicoke?
+    A: In most cases, we can complete a care assessment within 24–48 hours and have a caregiver in place shortly after. For urgent situations — such as a discharge from Trillium Health Partners or Humber River Hospital — we prioritize same-day or next-day starts.
+  - Q: Do you work with Trillium Health Partners and Humber River Hospital discharge teams?
+    A: Yes. We regularly coordinate with discharge planners and social workers at both Trillium Health Partners (Mississauga and Credit Valley sites) and Humber River Hospital. If your loved one is preparing to come home, we can begin the intake process before discharge day.
+  - Q: Can I combine Ontario Health atHome funding with Arcadia's private care in Etobicoke?
+    A: Yes — most of our Etobicoke clients do exactly this. If you are wondering how do I combine public and private care, we explain your allocation first. Do you coordinate both systems? Yes, so you do not navigate them alone.
+  - Q: Is home care covered by OHIP in Etobicoke?
+    A: OHIP does not directly cover home care services. Publicly funded support is coordinated through Ontario Health atHome, which may provide limited nursing or personal support hours depending on clinical need. Many Etobicoke families combine these publicly funded services with private home care to ensure consistent, adeq…
+
+#### North York
+- URL: https://www.arcadiahomecare.ca/locations/toronto/north-york-home-care/
+- Summary: Clinically informed home care across North York — dementia care, acquired brain injury, hospital discharge support, palliative care. Serving North York families since 2005.
+- FAQs:
+  - Q: How quickly can Arcadia start providing care in North York?
+    A: In most cases, we can complete a care assessment within 24–48 hours and have a caregiver in place shortly after. For urgent situations — such as a discharge from North York General or Sunnybrook — we prioritize same-day or next-day starts.
+  - Q: Do you work alongside Sunnybrook and North York General discharge teams?
+    A: Yes. We regularly coordinate with discharge planners and social workers at both Sunnybrook Health Sciences Centre and North York General Hospital. If your loved one is preparing to come home, we can begin the intake process before discharge day.
+  - Q: Can I combine Ontario Health atHome funding with Arcadia's private care in North York?
+    A: Yes — most of our North York clients do exactly this. If you are wondering how do I combine public and private care, we explain your allocation first. Do you coordinate both systems? Yes, so you do not navigate them alone.
+  - Q: Is home care covered by OHIP in North York?
+    A: OHIP does not directly cover home care services. Publicly funded support is coordinated through Ontario Health atHome, which may provide limited nursing or personal support hours depending on clinical need. Many North York families combine these publicly funded services with private home care to ensure consistent, ade…
+
+#### Scarborough
+- URL: https://www.arcadiahomecare.ca/locations/toronto/scarborough-home-care/
+- Summary: Clinically informed home care across Scarborough — dementia care, acquired brain injury, hospital discharge support, palliative care. Serving Scarborough families since 2005.
+- FAQs:
+  - Q: How quickly can Arcadia start providing care in Scarborough?
+    A: In most cases, we can complete a care assessment within 24–48 hours and have a caregiver in place shortly after. For urgent situations — such as a discharge from Scarborough Health Network — we prioritize same-day or next-day starts.
+  - Q: Do you work with Scarborough Health Network discharge teams?
+    A: Yes. We regularly coordinate with discharge planners and social workers at Scarborough Health Network's Birchmount, General, and Centenary sites. If your loved one is preparing to come home, we can begin the intake process before discharge day.
+  - Q: Can I combine Ontario Health atHome funding with Arcadia's private care in Scarborough?
+    A: Yes — most of our Scarborough clients do exactly this. If you are wondering how do I combine public and private care, we explain your allocation first. Do you coordinate both systems? Yes, so you do not navigate them alone.
+  - Q: Is home care covered by OHIP in Scarborough?
+    A: OHIP does not directly cover home care services. Publicly funded support is coordinated through Ontario Health atHome, which may provide limited nursing or personal support hours depending on clinical need. Many Scarborough families combine these publicly funded services with private home care to ensure consistent sup…
+
+#### Toronto
+- URL: https://www.arcadiahomecare.ca/locations/toronto/
+- Summary: Clinically informed home care across Toronto — dementia care, acquired brain injury, hospital discharge support, palliative care. Serving Toronto families since 2005.
+- FAQs:
+  - Q: How quickly can Arcadia start providing care in Toronto?
+    A: In most cases, we can complete a care assessment within 24–48 hours and have a caregiver in place shortly after. If you need home care near me in Toronto, we match local caregivers. Do you serve all Toronto neighbourhoods? Yes, including North York, Scarborough, and Etobicoke.
+  - Q: Do your caregivers travel across Toronto, or are they local to specific areas?
+    A: We match caregivers to clients in their area. Most of our Toronto caregivers live in or near the neighbourhoods they serve, which means more reliable scheduling and less travel fatigue — both of which matter for consistency of care.
+  - Q: Can I combine publicly funded care from Ontario Health atHome with Arcadia's services?
+    A: Yes — most of our Toronto clients do exactly this. We help you understand your publicly funded allocation and then structure private care around the gaps. Our team handles the coordination.
+  - Q: Is home care covered by OHIP in Toronto?
+    A: OHIP does not directly cover home care services. Publicly funded support is coordinated through Ontario Health atHome, which may provide limited nursing or personal support hours depending on clinical need. Many Toronto families combine these publicly funded services with private home care to ensure consistent, adequa…
+
+## Core Services (Detailed)
+
+### Acquired Brain Injury Home Care Toronto
+- URL: https://www.arcadiahomecare.ca/our-services/acquired-brain-injury-home-care/
+- Summary: Specialized acquired brain injury home care and community rehabilitation support in Toronto and the GTA. Arcadia has served ABI clients for over 16 years — working alongside rehabilitation teams, case managers, and insurers to support recovery at home.
+- What we provide:
+  - Community rehabilitation programs: Implementing structured programs developed by OTs, physiotherapists, and other treating professionals — focused on the client's specific functional and independence goals.
+  - Cognitive strategy support: Helping clients use compensatory strategies for memory, attention, executive function, and cognitive fatigue — in the context of real daily life, not a clinical setting.
+  - Personal care and daily living: PSW-level support for personal hygiene, meal preparation, medication reminders, and household tasks — calibrated to the client's current abilities and rehabilitation goals.
+  - Mobility and physical support: Assistance with transfers, movement, prescribed exercises, and community outings — in alignment with the physiotherapy program.
+  - Behavioural and emotional support: Working with personality changes, impulsivity, anxiety, and emotional lability in a structured way consistent with the treating team's approach.
+  - Social reintegration and community access: Supporting the client to re-engage with community settings, social situations, and activities — progressively and with appropriate support.
+  - Family guidance and caregiver relief: Educating family members on ABI and effective interaction strategies, and providing respite so family caregivers can maintain their own wellbeing.
+  - Documentation and team communication: Detailed progress notes, session records, and regular communication with case managers, treating clinicians, and insurers.
+- FAQs:
+  - Q: What qualifications do Arcadia's Rehabilitation Support Workers have?
+    A: Arcadia's RSWs hold post-secondary education in rehabilitation, kinesiology, disability studies, or a related field. All undergo a thorough screening process including reference checks and Vulnerable Sector Police Check. They receive in-house orientation and ongoing training, and work under the supervision of our RSW…
+  - Q: How does Arcadia work with our existing rehabilitation team?
+    A: We operate as part of the treating team, not independently of it. Our RSWs implement community rehabilitation programs developed by occupational therapists, physiotherapists, speech-language pathologists, and other professionals. We communicate regularly with case managers and treating clinicians, document observation…
+  - Q: Can Arcadia provide both RSW and PSW support for the same client?
+    A: Yes. Many ABI clients need both: RSW support for community rehabilitation goals and PSW support for personal care and daily living. Arcadia can coordinate both within a single care plan, with clear delineation of roles and consistent communication between team members.
+  - Q: How does Arcadia handle the funding and documentation requirements for insurance-funded ABI care?
+    A: Arcadia is familiar with the documentation requirements for auto insurance (SABS), WSIB, and other funded programs. We provide detailed service records, progress notes, and any other documentation the insurer or case manager requires. We are experienced working within funded care budgets and in communicating with adju…
+  - Q: What happens if a client's ABI rehabilitation goals change or progress plateaus?
+    A: Our RSW Manager monitors progress across all ABI cases and initiates conversations with the treating team and family when goals need to be revised. We do not continue a program that is not producing results without flagging it. Families and case managers deserve honest information about how things are going, and Arcad…
+  - Q: Does Arcadia support ABI clients with behavioural or mental health challenges?
+    A: Yes. Personality changes, impulsivity, irritability, emotional lability, depression, and anxiety are common after ABI and can be among the most challenging aspects for families and care teams to manage. Our RSWs are trained to work with these presentations in a structured, consistent way, using approaches aligned with…
+
+### Case Management | Home Care Coordination
+- URL: https://www.arcadiahomecare.ca/our-services/case-management/
+- Summary: Care coordination and case management for complex home care situations in Toronto and the GTA. Arcadia helps families navigate the healthcare system, coordinate multiple providers, and build a care plan that actually holds together.
+- What we provide:
+  - Comprehensive care assessment: A thorough assessment of the person's medical needs, functional abilities, living situation, and available support — the foundation for a care plan that reflects the full picture.
+  - Care plan development: Building a coordinated care plan that identifies what support is needed, who provides it, how it fits together, and what publicly funded options are available to offset private costs.
+  - Provider coordination: Managing the relationship between all care providers — home care workers, medical teams, therapists, and publicly funded services — so the family is not the relay point.
+  - Ontario Health atHome navigation: Understanding what publicly funded care the person is entitled to, advocating for appropriate hours, and coordinating between publicly funded and private care so nothing falls through the gap.
+  - Ongoing monitoring and adjustment: Regular review of how the care plan is working, with proactive adjustments as the situation changes — rather than waiting for a crisis to force a reassessment.
+  - Family communication and support: Regular updates, clear explanations of what is happening and why, and a consistent point of contact for questions and concerns — particularly valuable for families managing a situation from a distanc…
+  - Crisis response and transition planning: When a hospitalization, decline, or unexpected event disrupts the care plan, the case manager coordinates the response and adjusts the plan for what comes next.
+  - Insurance and funding navigation: For clients with insurance coverage, WSIB, or veterans' benefits, the case manager helps navigate the documentation and processes required to access those funds.
+- FAQs:
+  - Q: What does a case manager actually do?
+    A: A case manager assesses the full situation: the person's medical needs, functional abilities, living environment, family support, and financial considerations, and builds a care plan that coordinates all the pieces. They communicate with the treating medical team, arrange and oversee home care providers, navigate publ…
+  - Q: How is case management different from just hiring a home care agency?
+    A: A home care agency provides care workers. A case manager coordinates care across multiple providers and systems: the family physician, specialist teams, Ontario Health atHome, private home care, and any other services involved. Case management is appropriate when the situation is complex enough that coordination itsel…
+  - Q: Who typically benefits most from case management?
+    A: Families navigating complex, multi-condition situations, particularly those involving dementia, acquired brain injury, or a combination of medical and functional needs. Families who are geographically distant from a parent. Families where the primary caregiver is also managing other significant responsibilities. And s…
+  - Q: Can Arcadia provide case management alongside its home care services?
+    A: Yes, and this is a common arrangement. Arcadia's case manager can coordinate the full care plan, including Arcadia's own home care workers alongside any other services involved. Having case management and home care from the same provider can simplify communication and reduce the coordination burden on the family, thou…
+  - Q: Is case management covered by OHIP or Ontario Health atHome?
+    A: Ontario Health atHome provides care coordination services for eligible clients as part of publicly funded home care. However, the scope of publicly funded coordination is often limited, particularly for complex cases that require intensive ongoing management. Private case management fills the gaps where public coordin…
+  - Q: How does Arcadia's case manager communicate with our family?
+    A: We establish a communication rhythm at the outset: how often updates are provided, through what channel, and who in the family receives them. For families managing a situation from a distance, we can provide regular written summaries alongside direct phone contact. We also communicate proactively when something change…
+
+### Companion Care for Seniors | Toronto & GTA
+- URL: https://www.arcadiahomecare.ca/our-services/companion-care/
+- Summary: Companion care for older adults in Toronto and the GTA. Arcadia matches seniors with warm, consistent companions who provide conversation, activities, outings, and human presence — reducing isolation and supporting confidence at home.
+- What we provide:
+  - Conversation and social engagement: Genuine conversation, reminiscence, storytelling, and the kind of everyday human connection that keeps a person oriented, engaged, and feeling known.
+  - Activities and shared interests: Card games, puzzles, crafts, reading, music, gardening — whatever the person enjoys. A good companion adapts to the individual rather than arriving with a fixed program.
+  - Outings and community access: Walks, café visits, local errands, cultural events, religious services, or simply getting outside and seeing familiar places. Maintaining community connection matters.
+  - Accompaniment to appointments: Accompanying the person to medical appointments, hairdressers, banks, or other errands — providing both practical help and reassuring company.
+  - Meal companionship: Sitting with the person during meals, sometimes helping prepare them together — because eating alone, meal after meal, is one of the most common and least-discussed forms of senior isolation.
+  - Technology and connection support: Helping the person connect with family by video call, navigate a tablet or phone, or engage with online interests — bridging the gap between generations.
+  - Observation and family communication: A consistent companion notices changes — in mood, appetite, mobility, and cognition — and communicates those observations to the family. This early awareness often matters more than any single visit.
+  - Relief for family caregivers: When a companion is present, family members can step away knowing their parent is not alone. That peace of mind is itself a form of care.
+- FAQs:
+  - Q: What is the difference between companion care and personal support?
+    A: Personal support focuses on physical care: bathing, dressing, meals, and mobility. Companion care focuses on social and emotional wellbeing: conversation, activities, outings, and human presence. Many clients benefit from both. Companion care is often the right starting point for someone who is managing physically but…
+  - Q: My parent says they don't want or need a companion. How do we handle that?
+    A: Resistance is common. Many older adults feel that accepting companionship implies they cannot manage on their own. What tends to work better than direct persuasion is introducing the companion gradually, framing visits around a specific shared activity rather than "care," and choosing someone whose personality is a ge…
+  - Q: What do companions actually do during a visit?
+    A: It depends entirely on the person. Some clients enjoy conversation, card games, crosswords, or watching a favourite television program together. Others prefer to go for a walk, visit a local café, or be accompanied to appointments or errands. Others simply want a consistent, warm presence in the home. A good companion…
+  - Q: Can companion care be combined with personal support?
+    A: Yes, and this is a common arrangement. A caregiver can provide both companionship and personal care assistance in the same visit, or companion care can supplement a PSW schedule on additional days. The care plan is built around what the person actually needs, not around a rigid service category.
+  - Q: How do you match a companion to my parent?
+    A: Carefully. We consider personality, interests, communication style, language, cultural background, and the kind of relationship the person tends to respond well to. Some people enjoy an outgoing, chatty companion; others prefer someone quieter and more understated. We take time to understand the individual before maki…
+  - Q: How is Arcadia's companion care different from a volunteer visiting service?
+    A: Volunteer services provide valuable community connection, but they are typically limited in frequency, consistency, and scope. Arcadia's companion care is a professional service: consistent, reliable, built around the individual's preferences, and backed by the same caregiver matching, clinical oversight, and communic…
+
+### Dementia & Alzheimer's Home Care Toronto
+- URL: https://www.arcadiahomecare.ca/our-services/dementia-alzheimers-home-care/
+- Summary: Specialized dementia and Alzheimer's home care in Toronto and the GTA. Arcadia has provided clinically guided, compassionate dementia care since 2005 — matching families with trained, consistent caregivers who understand what this kind of care actually requires.
+- What we provide:
+  - Personal care and daily routines: Bathing, dressing, grooming, and hygiene assistance — provided at a pace and in a sequence that respects the person's established routines. Dementia caregivers know that routine is not a preference,…
+  - Dementia-specific communication: Validation therapy, gentle redirection, and communication approaches that reduce anxiety and agitation rather than escalate it. The ability to stay calm and connected when someone is confused or dist…
+  - Medication reminders: Consistent prompting at the right times, monitoring for missed doses, and communicating changes to the family or care team.
+  - Meals and nutrition: Preparing appropriate meals, sitting with the person during mealtimes, monitoring intake, and adapting to changes in appetite and swallowing ability.
+  - Supervision and safety: Monitoring for wandering, unsafe behaviours, and home hazards — and maintaining a safe, calm, predictable environment that reduces confusion and risk.
+  - Meaningful engagement: Tailored activities, music, reminiscence, walks, and conversation that keeps the person engaged and connected — based on what they have always enjoyed, not a generic activity program.
+  - Overnight and 24-hour care: When nighttime supervision becomes necessary — whether for wandering, sundowning, or safety — Arcadia provides overnight and round-the-clock care. Continuity between day and night caregivers is built…
+  - Respite for family caregivers: Scheduled, consistent relief so family caregivers can rest, work, and maintain their own wellbeing. This is part of the care plan, not an afterthought.
+- FAQs:
+  - Q: How does Arcadia train caregivers specifically for dementia and Alzheimer's care?
+    A: Arcadia's dementia caregivers receive training in dementia-specific communication techniques, behaviour management strategies, safe home environments, and person-centred care approaches. Training is ongoing, not just at onboarding, and is supplemented by supervision from our Clinical Director. We also match caregivers…
+  - Q: How does caregiver matching work for someone with dementia?
+    A: Matching for dementia care involves more than clinical compatibility. We consider the person's history, preferences, cultural background, language, and the specific way their dementia presents. We also factor in temperament. Some people with dementia respond well to a calm, quiet presence; others do better with someon…
+  - Q: What happens when a caregiver is unavailable or needs to be replaced?
+    A: We work hard to maintain consistency and minimize caregiver changes, because we know how disruptive changes are for someone with dementia. When a change is unavoidable, we introduce the new caregiver with an overlap visit where possible, brief the incoming caregiver thoroughly on the client's routines and preferences,…
+  - Q: Can Arcadia provide care for someone with dementia who also has other medical conditions?
+    A: Yes. Many Arcadia clients have complex needs: dementia alongside diabetes, heart conditions, mobility limitations, or palliative needs. Our Clinical Director reviews care plans for complex cases, and we coordinate with the family physician and any other providers involved. We do not offer nursing care, but we work eff…
+  - Q: How do you handle aggressive or challenging behaviour?
+    A: Behavioural changes in dementia, including agitation, resistance to care, verbal or physical outbursts, are clinical symptoms, not character traits. Our caregivers are trained to respond calmly, avoid escalation, and use redirection and validation techniques rather than confrontation or restraint. If a behavioural pat…
+  - Q: What does dementia home care cost, and is any of it covered by OHIP or insurance?
+    A: OHIP does not cover private home care directly, but Ontario Health atHome provides publicly funded PSW and nursing hours for eligible clients, which can reduce the hours of private care needed. Some extended health benefit plans and veterans' benefits cover home care. Cost depends on the level of care, hours, and whet…
+
+### Downsizing & Transition Support | Toronto
+- URL: https://www.arcadiahomecare.ca/our-services/downsizing-transition-support/
+- Summary: Downsizing and transition support for older adults and families in Toronto and the GTA. Arcadia helps with the practical and emotional work of moving — sorting, decluttering, packing, and supporting the person through one of life's most significant transitions.
+- What we provide:
+  - Sorting and decision support: Sitting with the person through the process of deciding what to keep, donate, give to family, or let go — at their pace, with genuine attention to what each item means.
+  - Decluttering and organization: Systematically working through rooms and storage areas — organizing what stays, preparing what goes, and creating order from what can feel like an overwhelming accumulation.
+  - Coordination with family: Helping family members understand what is needed, when, and how they can help — reducing conflict and confusion about the process.
+  - Donation and disposal coordination: Arranging for donations to go where they are wanted, coordinating disposal of what cannot be donated, and handling the logistics so the family does not have to.
+  - Packing and labelling: Careful, organized packing of belongings that are coming to the new space — labelled clearly and prepared in a way that makes unpacking straightforward.
+  - Move-day support: A familiar, supportive presence on moving day — which is often one of the emotionally hardest days in the process, and one where having someone the person trusts nearby matters.
+  - New home setup: Helping organize and arrange the new space so it feels like home as quickly as possible — familiar items in accessible places, the environment set up around the person's needs and preferences.
+  - Post-move settling support: Follow-up visits in the days and weeks after the move — helping the person adjust, addressing practical issues that arise, and providing continuity of support through the settling-in period.
+- FAQs:
+  - Q: What does downsizing support actually involve?
+    A: Downsizing support helps older adults and their families manage the practical and emotional work of moving from a larger home to a smaller one. That includes helping sort and decide what to keep, donate, or dispose of; organizing and packing belongings; coordinating with movers; helping set up the new space; and provi…
+  - Q: My parent is resistant to moving. How do we handle that?
+    A: Resistance to leaving a family home is very common, and it deserves to be taken seriously rather than managed away. A home represents identity, independence, and decades of accumulated life, and the reluctance to leave it is entirely understandable. What tends to work better than persuasion is involving the person as…
+  - Q: How is downsizing support different from hiring a moving company?
+    A: A moving company moves boxes. Downsizing support helps with everything before, during, and after: sorting through decades of belongings with the person, making decisions about what comes and what goes, managing the emotional weight of that process, coordinating practical aspects of the move, and helping the person set…
+  - Q: Can Arcadia help if the person is moving to long-term care rather than another home?
+    A: Yes. Moves to long-term care or retirement communities involve the same sorting, decision-making, and emotional support, often with additional complexity around what can be brought into the new environment. Arcadia can also help families navigate the transition from home care to facility-based care, including coordina…
+  - Q: Can downsizing support be combined with ongoing home care?
+    A: Yes, and for many families, downsizing is the point at which ongoing care begins. A caregiver who has supported the person through the transition is already familiar with them, which makes the shift to regular personal support or companion care more natural. Arcadia can provide downsizing support as a standalone servi…
+  - Q: How long does a typical downsizing engagement take?
+    A: It varies considerably depending on the size of the home, how long the person has lived there, how much needs to be sorted, and the pace at which the person can manage the process. Some moves happen over a few intensive weeks; others are spread over several months to allow the person to adjust emotionally as the proce…
+
+### Hospital Discharge Support | Toronto & GTA
+- URL: https://www.arcadiahomecare.ca/our-services/hospital-discharge-support/
+- Summary: Home care support arranged quickly after hospital discharge in Toronto and the GTA. Arcadia helps families and discharge teams put the right care in place within 24–48 hours — helping reduce the risk of complications and avoidable returns to hospital and making the transition ho…
+- What we provide:
+  - Rapid care arrangement: Care in place within 24–48 hours of contact in most cases. We move at the pace the discharge requires.
+  - Personal care and hygiene: Assistance with bathing, dressing, and grooming — the daily activities most often unsafe or exhausting in the first days and weeks after hospital.
+  - Medication management: Consistent prompting at the right times, monitoring for side effects, and flagging concerns to family or the medical team before they become problems.
+  - Mobility and fall prevention: Safe movement support, transfer assistance, and fall risk reduction — particularly important in the first week when fatigue and deconditioning are highest.
+  - Wound care monitoring: Observing surgical sites or wounds for signs of infection and communicating changes promptly to family or the care team.
+  - Meal preparation and nutrition: Preparing appropriate meals and monitoring intake — recovery depends on nutrition, and many patients leave hospital with reduced appetite or specific dietary requirements.
+  - Transportation to follow-up appointments: Accompanying the person to follow-up appointments — often the first practical challenge after discharge and one of the most important for continuity of care.
+  - Overnight and 24-hour coverage: When continuous supervision is needed — in the first nights home, or for clients with complex conditions — Arcadia can provide overnight and around-the-clock care.
+- FAQs:
+  - Q: How quickly can Arcadia arrange care after a hospital discharge?
+    A: In most cases, within 24 to 48 hours of a first conversation. We understand that hospital discharges move quickly and that families often have very little time to plan. If the situation is urgent, call us directly. We will do our best to move at the pace the discharge requires. If you are asking what is the fastest wa…
+  - Q: What information does Arcadia need to arrange post-discharge care?
+    A: The basics: the person's name and address, the reason for hospitalization and any relevant diagnoses, what support they will need at home, their expected discharge date, and a contact for the family or discharge team. If there are specific clinical considerations (wound care, mobility restrictions, medication changes)…
+  - Q: Will Ontario Health atHome provide support after discharge? Do we still need private care?
+    A: Ontario Health atHome coordinates publicly funded home care following discharge, but the hours allocated are often limited and may not begin immediately. Many families use private home care to fill the gap between discharge and the start of publicly funded services, or to supplement the hours that funding provides. Ar…
+  - Q: Can Arcadia support someone coming home with complex needs (dementia, ABI, or palliative)?
+    A: Yes. Post-discharge support for clients with complex underlying conditions requires more than standard home care. Arcadia specializes in dementia, acquired brain injury, and palliative care, and our discharge support for these clients is built around the specific clinical requirements of each condition. We do not trea…
+  - Q: What is the risk of not having support in place at discharge?
+    A: The first days and weeks after hospital discharge are often the period when risk is highest in a person's recovery. Gaps in supervision, missed medications, falls, inadequate nutrition, and undetected infections are among the most common contributors to readmission. Having the right support in place from day one, even…
+  - Q: How does Arcadia coordinate with the hospital discharge team?
+    A: Discharge planners and social workers can refer directly to Arcadia using our professional referral form or by phone. We respond promptly, gather the clinical information we need, and communicate back to the discharge team about the plan in place. We also coordinate with Ontario Health atHome and any other providers i…
+
+### Overnight & 24-Hour Home Care | Toronto & GTA
+- URL: https://www.arcadiahomecare.ca/our-services/overnight-24-hour-care/
+- Summary: Overnight and 24-hour home care in Toronto and the GTA. Arcadia provides trained, consistent overnight caregivers for individuals who need nighttime supervision — and for family caregivers who need to sleep.
+- What we provide:
+  - Nighttime supervision and safety monitoring: Attentive presence through the night — monitoring for changes, responding to needs, and ensuring the person is safe without being woken unnecessarily.
+  - Toileting and repositioning assistance: Helping the person get up safely during the night, assisting with toileting, and repositioning for comfort — particularly important for individuals with mobility limitations or skin breakdown risk.
+  - Dementia and wandering support: Calm, trained response to nighttime confusion, agitation, and wandering — using redirection and reassurance approaches that keep the person safe without escalation.
+  - Palliative and comfort care overnight: Consistent presence and comfort support through the night for individuals in palliative care — so neither the person nor the family is alone in the hours when a clinical team is unavailable.
+  - Sleep restoration for family caregivers: Overnight coverage specifically so the family member can sleep uninterrupted — often one of the most practical forms of caregiver relief and one of the least used.
+  - 24-hour continuous coverage: Around-the-clock care with coordinated caregiver shifts — for situations where the level of need requires someone present at all times.
+  - Emergency response readiness: Clear protocols for medical emergencies during the night — who to call, how to communicate with the family, and what steps to take while waiting for assistance.
+  - Handover to daytime team: A clear, structured handover at the end of every overnight shift — so the daytime caregiver or family member knows exactly what happened and what to watch for.
+- FAQs:
+  - Q: What is the difference between overnight care and 24-hour care?
+    A: Overnight care typically covers an evening-to-morning shift, usually around 10pm to 7am, providing supervision, safety monitoring, and assistance if the person wakes and needs help during the night. 24-hour care means continuous coverage around the clock, usually with two or more caregivers working in shifts. The righ…
+  - Q: What does an overnight caregiver actually do during the night?
+    A: It depends on the person's needs. For some clients, the overnight caregiver is primarily present and alert, available if needed but not actively providing hands-on care through the night. For others, particularly those with dementia, palliative needs, or significant mobility challenges, the overnight caregiver may be…
+  - Q: We have dementia-related nighttime wandering. Can Arcadia handle that?
+    A: Yes. Nighttime wandering is one of the most common reasons families contact Arcadia for overnight care. Our overnight caregivers for dementia clients are trained in safe redirection and de-escalation approaches, keeping the person calm and safe without confrontation or restraint. We also help families think through ho…
+  - Q: I am the primary caregiver and I am not sleeping. How quickly can overnight support be arranged?
+    A: In most cases we can begin the process quickly after a first conversation. Call us directly and we will give you an honest picture of what is possible. If the situation is urgent, or you are at a point where your own health is at risk from sleep deprivation, call us directly. We will prioritize the conversation and mo…
+  - Q: Can overnight care be part of a broader care plan that also includes daytime support?
+    A: Yes, and this is common. Many clients receive daytime personal support or companion care alongside overnight coverage. Arcadia coordinates the full care plan, ensures handover between day and night caregivers is clear, and maintains consistent communication with the family across all shifts. Do you provide 24-hour car…
+  - Q: How does Arcadia ensure overnight caregiver quality when family members are asleep?
+    A: Overnight caregivers are selected specifically for this work. The temperament and attentiveness required for overnight care is different from daytime caregiving. We brief them thoroughly before the first shift and conduct follow-up after initial nights. We also have clear protocols for what to do in an emergency: who…
+
+### Palliative Home Care | Toronto & GTA
+- URL: https://www.arcadiahomecare.ca/our-services/palliative-home-care/
+- Summary: Private palliative home care support in Toronto and the GTA. Arcadia provides compassionate, clinically guided care alongside the palliative team — filling the gaps in publicly funded hours so your loved one can remain at home with consistent support and dignity.
+- What we provide:
+  - Overnight and 24-hour presence: Consistent overnight coverage so the person is never alone and family caregivers can sleep. Around-the-clock care when the situation requires it.
+  - Personal care and comfort: Assistance with bathing, positioning, hygiene, and skin care — provided gently, at the person's pace, with attention to comfort and dignity above all else.
+  - Companionship and presence: Sitting with the person, reading aloud, playing music, or simply being there in silence. Presence matters and is something the clinical team cannot always provide.
+  - Meal support and hydration: Preparing foods that are appetizing and manageable, monitoring intake, and sitting with the person during meals — adapting as appetite and swallowing ability change.
+  - Comfort medication reminders: Prompting comfort medications at the right times and observing for changes in pain, breathing, or distress — communicating promptly with the palliative care team when something shifts.
+  - Mobility and repositioning: Assisting with movement, repositioning for comfort, and ensuring the person is not left in a position that causes distress or skin breakdown.
+  - Respite for family caregivers: Scheduled, reliable relief so family members can rest, attend to their own lives, and be a family member rather than a caregiver for defined periods.
+  - Support through the final stage: Experienced, compassionate presence through end-of-life care — working alongside the palliative team to ensure the person's final days are as peaceful, comfortable, and dignified as possible.
+- FAQs:
+  - Q: How does Arcadia work with our existing palliative care team?
+    A: We work alongside the palliative care nurse, physician, and any other providers already involved, not instead of them. Our caregivers follow the comfort plan established by the clinical team, communicate changes promptly, and document what they observe so that the treating team has an accurate picture of the person's…
+  - Q: What hours can Arcadia provide for palliative support?
+    A: We provide care seven days a week, including evenings, overnights, and around-the-clock coverage when needed. The hours we provide are built around the gaps in the current care plan, whether that means a few mornings a week, overnight coverage, or full-time presence as the situation requires. Is there overnight pallia…
+  - Q: Can Arcadia support someone who wants to remain at home through the end of life?
+    A: Yes, and this is some of the most meaningful work we do. Supporting a person to remain at home through end of life requires consistent presence, good communication between all care providers, caregivers who are experienced and compassionate in this setting, and a family that feels genuinely supported. Arcadia can help…
+  - Q: How do Arcadia's caregivers approach end-of-life care?
+    A: Our caregivers in palliative situations are selected for their experience, temperament, and genuine capacity to be present in difficult circumstances. They are not there to perform tasks and leave. They are there to provide comfort, presence, and practical support in a way that respects the person's dignity and the fa…
+  - Q: What is the difference between what Ontario Health atHome provides and what Arcadia provides?
+    A: Ontario Health atHome coordinates publicly funded palliative care: nursing visits, some PSW hours, and access to a palliative care team. That foundation is meaningful, but the hours allocated rarely match what a family needs around the clock. Arcadia fills the gaps: overnight, on weekends, between nursing visits, and…
+  - Q: What support does Arcadia provide for family caregivers in palliative situations?
+    A: Family caregivers in palliative situations carry an enormous weight: practically, emotionally, and often without adequate acknowledgement. Arcadia provides scheduled respite so family members can rest, sleep, and have time away from caregiving without the person being alone. We also support family members in understan…
+
+### Personal Support & Daily Living | PSW Care
+- URL: https://www.arcadiahomecare.ca/our-services/personal-support-daily-living/
+- Summary: Personal support and daily living assistance for older adults and individuals with complex needs in Toronto and the GTA. Arcadia's trained PSWs provide compassionate, dignified care — matched carefully to each client's routines, preferences, and personality.
+- What we provide:
+  - Bathing and personal hygiene: Assistance with bathing, showering, oral care, and personal grooming — provided with sensitivity to the person's dignity, privacy, and established routines.
+  - Dressing and grooming: Help selecting and putting on clothing, managing fastenings, and maintaining the personal presentation that matters to the individual.
+  - Toileting and continence support: Discreet, respectful assistance with toileting and continence management — one of the most sensitive aspects of personal care, handled with consistent dignity.
+  - Meal preparation and eating: Preparing nutritious meals appropriate to the person's preferences and any dietary restrictions, and sitting with them during mealtimes.
+  - Medication reminders: Prompting medications at the right times and monitoring for missed doses or changes — communicated to family or the care team when relevant.
+  - Mobility and transfers: Assistance with moving around the home, getting in and out of bed or chairs, and reducing fall risk during daily activities.
+  - Light housekeeping: Maintaining a clean, safe, and organized living environment — vacuuming, laundry, dishes, and the everyday tasks that keep a home functional.
+  - Companionship and engagement: Conversation, activities, music, walks, and consistent human presence — particularly important for individuals who live alone or have limited social contact.
+- FAQs:
+  - Q: What does a Personal Support Worker actually do?
+    A: A PSW assists with the personal care and daily living tasks that a person can no longer manage safely or comfortably on their own: bathing, dressing, grooming, toileting, meal preparation, medication reminders, light housekeeping, and companionship. The scope of support depends on the individual's needs, and a good PS…
+  - Q: How does Arcadia match PSWs to clients?
+    A: Matching involves more than clinical compatibility. We consider personality, language, cultural background, and the specific nature of the person's care needs. For someone with dementia or a complex condition, the match involves additional clinical considerations. We take time to get it right, and we are transparent w…
+  - Q: What happens if our PSW is unavailable or needs to be replaced?
+    A: We work hard to maintain caregiver consistency and minimize disruptions. When a change is unavoidable, we brief the replacement caregiver thoroughly on the client's routines, preferences, and any clinical considerations before they arrive, and we communicate with the family throughout. We do not send a stranger to the…
+  - Q: Can Arcadia provide personal support for someone with dementia or a brain injury?
+    A: Yes, and this is one of our core areas of specialization. PSW support for someone with dementia or acquired brain injury requires specific training, patience, and a different approach to communication and routine than standard personal care. Arcadia's caregivers supporting these clients receive additional training and…
+  - Q: How many hours of personal support does a typical client receive?
+    A: It varies widely. Some clients need a few hours a week, such as a morning routine three times a week, while others need daily support or around-the-clock care. The right level depends on the person's needs, what family members can provide, and what publicly funded hours are available. A care assessment helps establish…
+  - Q: Is personal support covered by OHIP or Ontario Health atHome?
+    A: OHIP does not cover private home care directly. Ontario Health atHome provides publicly funded PSW hours for eligible clients, but the allocation is often limited and does not always match what the situation requires. Some extended health benefit plans and veterans' benefits cover home care. Arcadia can help families…
+
+### Rehabilitation Support | Toronto & GTA
+- URL: https://www.arcadiahomecare.ca/our-services/rehabilitation-support/
+- Summary: Community rehabilitation support for individuals recovering from brain injury, stroke, surgery, work-related injury, or serious illness in Toronto and the GTA. Arcadia's trained RSWs work under clinical supervision to help clients rebuild independence at home.
+- What we provide:
+  - Community rehabilitation program implementation: Implementing structured programs developed by OTs, physiotherapists, SLPs, and other treating professionals — in the client's real environment, not a clinical setting.
+  - Cognitive strategy support: Helping clients use compensatory strategies for memory, attention, executive function, and cognitive fatigue in the context of daily life.
+  - Mobility and physical support: Assisting with transfers, prescribed exercises, mobility in the home and community, and building safe movement confidence progressively.
+  - Activities of daily living: Supporting independence in personal care, meal preparation, household management, and community access — calibrated to the client's current abilities and rehabilitation goals.
+  - Social and community reintegration: Supporting the client to re-engage with community settings, social situations, and meaningful activities — building confidence and participation progressively.
+  - Behavioural and emotional support: Working with anxiety, depression, emotional lability, impulsivity, and other presentations common after injury or illness — in alignment with the clinical team's approach.
+  - Family education and guidance: Helping family members understand the condition, interact effectively with their loved one, and manage their own wellbeing alongside the caregiving role.
+  - Documentation and team communication: Detailed session notes, progress reports, and regular communication with case managers, treating clinicians, and insurers.
+- FAQs:
+  - Q: What conditions does rehabilitation support at home cover?
+    A: Arcadia's Rehabilitation Support Workers support clients recovering from or living with a wide range of conditions, including acquired brain injury, stroke, spinal cord injury, work-related injury or illness, serious mental health diagnoses, and complex post-surgical recovery. The common thread is that the person has…
+  - Q: What is the difference between a Rehabilitation Support Worker and a Personal Support Worker?
+    A: A Personal Support Worker assists with daily living tasks: personal care, meals, household management. A Rehabilitation Support Worker is trained to implement community rehabilitation programs under the supervision of licensed health professionals, with the goal of helping the client build or rebuild specific function…
+  - Q: Does the client need an existing rehabilitation team in place before engaging Arcadia?
+    A: Not necessarily. Some clients come to us with an established team (an OT, physiotherapist, or case manager), and we implement their program. Others come to us at an earlier stage, and we can help coordinate a referral to appropriate clinical services while providing support in the meantime. We work with whatever is in…
+  - Q: How does Arcadia coordinate with our OT, physiotherapist, or case manager?
+    A: We operate as part of the treating team. Our RSWs implement programs developed by the treating professionals, document progress accurately, and communicate changes in the client's presentation promptly. We attend case conferences where appropriate and provide whatever reporting the team or insurer requires. Coordinati…
+  - Q: Is rehabilitation support covered by insurance or WSIB in Ontario?
+    A: It depends on the cause of the injury or illness. Work-related injuries may be covered by WSIB. Motor vehicle accidents may be covered under Ontario's auto insurance system (SABS). Some private extended health plans cover community rehabilitation support. Arcadia is familiar with these systems and can help families an…
+  - Q: How long does community rehabilitation support typically last?
+    A: Duration varies significantly depending on the condition, the rehabilitation goals, and the person's rate of progress. Some clients receive intensive support for a defined post-discharge period; others benefit from ongoing maintenance support over a longer term. Arcadia does not lock families into fixed contracts. We…
+
+### Respite Care for Families | Toronto
+- URL: https://www.arcadiahomecare.ca/our-services/respite-care/
+- Summary: Respite care for family caregivers in Toronto and the GTA. Arcadia provides reliable, consistent relief — so caregivers can rest, work, and attend to their own lives knowing their loved one is well cared for.
+- What we provide:
+  - Scheduled weekly respite: Consistent, recurring visits on a defined schedule — the same caregiver, at the same time — so the family member has something reliable to plan around.
+  - Overnight respite care: Overnight coverage so the family caregiver can sleep uninterrupted. One of the most impactful forms of relief for caregivers who are monitoring or attending to a loved one through the night.
+  - Extended day or weekend coverage: Longer blocks of time — full days, weekends — for caregivers who need to manage work, travel, medical appointments, or their own rest without time pressure.
+  - Emergency or short-notice respite: When an unexpected situation requires a caregiver to be away — illness, family emergency, work obligation — Arcadia can often arrange coverage on short notice.
+  - Personal care and daily support: Full personal support during the respite period — bathing, meals, medication reminders, companionship, and any other daily care the person requires.
+  - Supervision and safety monitoring: Attentive presence during the visit, particularly for individuals who require supervision due to dementia, fall risk, or other conditions.
+- FAQs:
+  - Q: How is respite care different from regular home care?
+    A: The goal is the same: providing quality care for the person at home. But the primary beneficiary of respite care is the family caregiver, not just the care recipient. Respite care is specifically structured to give the caregiver defined, reliable time away. That means consistent scheduling, a caregiver who can be trus…
+  - Q: How many hours of respite do caregivers typically need?
+    A: There is no universal answer, and the right amount is whatever allows the caregiver to genuinely recover rather than just pause. Some caregivers need a few hours a week to sleep, exercise, or have unscheduled time. Others benefit from longer blocks: full days or overnights, to manage work, travel, or their own health.…
+  - Q: My parent refuses to let anyone else provide care. How do we handle that?
+    A: This is one of the most common challenges in arranging respite care, and it is worth exploring approaches that make accepting help more manageable. Approaches that tend to work better than direct persuasion include introducing the respite caregiver gradually, framing visits as companionship before they become care, an…
+  - Q: Can Arcadia provide overnight respite care?
+    A: Yes. Overnight respite, particularly for caregivers who are not sleeping properly because they are monitoring or attending to your parent at night, is one of the most impactful forms of relief. Arcadia provides overnight care seven days a week, and can arrange around-the-clock coverage for caregivers who need longer b…
+  - Q: How does Arcadia ensure the person receiving care is safe while I am away?
+    A: We select and brief the respite caregiver specifically for the situation: the person's routines, preferences, any clinical considerations, and what to do if something unexpected happens. We check in with both the caregiver and the family after initial visits, and we communicate proactively if anything changes. The goa…
+  - Q: Is respite care covered by any public funding in Ontario?
+    A: Ontario Health atHome provides some publicly funded respite hours for eligible family caregivers, though the allocation is often limited. The Ministry of Health also funds certain caregiver support programs. Arcadia can help families understand what publicly funded options may be available alongside private respite ca…
+
+### Senior Light Housekeeping | Toronto & GTA
+- URL: https://www.arcadiahomecare.ca/our-services/light-housekeeping/
+- Summary: Light housekeeping support for older adults and individuals with complex needs in Toronto and the GTA. Arcadia helps maintain a clean, safe, and functional home — matched with the personal support and companionship families need.
+- What we provide:
+  - Vacuuming and floor cleaning: Regular vacuuming of carpets and rugs, sweeping and mopping hard floors — maintaining a clean and safe walking surface throughout the home.
+  - Bathroom and kitchen cleaning: Cleaning sinks, toilets, showers, and baths; wiping down kitchen counters and appliances; ensuring these higher-use spaces stay hygienic.
+  - Laundry and folding: Washing, drying, and folding laundry — and putting items away if the person finds that difficult. Clean clothes and linens matter to dignity and comfort.
+  - Dishes and kitchen tidying: Washing up dishes, wiping down surfaces, and keeping the kitchen organized — preventing the accumulation that makes cooking and eating harder.
+  - Dusting and tidying living areas: Dusting surfaces, tidying clutter, and maintaining the living spaces the person uses most — so the home feels like a home, not an obstacle course.
+  - Fridge and pantry checks: Checking for expired or spoiled food and helping with a light restock — particularly important for older adults living alone whose food safety may not always be monitored.
+  - Rubbish and recycling: Taking out bins, managing rubbish removal, and ensuring the home does not accumulate clutter or hygiene risks from overflowing waste.
+  - Meal preparation: Preparing meals or snacks during the visit — often combined with housekeeping as part of a broader support plan that addresses both nutrition and home maintenance.
+- FAQs:
+  - Q: What is included in light housekeeping?
+    A: Light housekeeping typically covers the everyday tasks that keep a home functional and safe: vacuuming and mopping floors, cleaning bathrooms and kitchens, dusting, doing laundry and folding, washing dishes, tidying living areas, taking out rubbish, and light organization. It does not include heavy cleaning, window wa…
+  - Q: Can light housekeeping be combined with personal care or companion care?
+    A: Yes, and this is the most common arrangement. Light housekeeping is rarely provided in isolation. Most clients receive a combination of personal support, companionship, and housekeeping within the same visit or across a weekly schedule. Arcadia builds care plans around the full picture of what the person needs, not ar…
+  - Q: My parent refuses to let anyone clean their home. How do we handle that?
+    A: This is more common than most families expect. For many older adults, accepting help with the home feels like an admission of decline, something they resist even when the situation has clearly changed. Approaches that tend to work better than direct persuasion include introducing a caregiver whose primary role is comp…
+  - Q: Is light housekeeping covered by Ontario Health atHome or OHIP?
+    A: Ontario Health atHome coordinates publicly funded homemaking services for eligible clients, which may include some light housekeeping hours. However, the hours available are often limited. Veterans Affairs Canada also funds home maintenance support for eligible veterans. Private light housekeeping through Arcadia can…
+  - Q: Can Arcadia help with meal preparation as part of a housekeeping visit?
+    A: Yes. Meal preparation is one of the most common tasks combined with light housekeeping: preparing meals or snacks for the visit and sometimes for later in the day, checking the fridge and pantry for spoiled or expired food, and ensuring the kitchen is clean and organized. This combination is particularly important for…
 
 ## Condition Support
 - Dementia Care at Home: https://www.arcadiahomecare.ca/conditions/dementia-care-at-home/
@@ -37,35 +442,553 @@
 ## Resource Guides (GTA Home Care)
 
 ### Dementia & Memory Care
-- Early Signs of Dementia in a Parent: https://www.arcadiahomecare.ca/resources/dementia-memory-care/early-signs-of-dementia-in-a-parent/
-- How to Introduce Home Care to a Parent with Dementia: https://www.arcadiahomecare.ca/resources/dementia-memory-care/introducing-home-care-dementia/
-- How to Keep Someone with Dementia Safe at Home: https://www.arcadiahomecare.ca/resources/dementia-memory-care/dementia-home-safety/
-- Normal Aging vs. Dementia: What's the Difference?: https://www.arcadiahomecare.ca/resources/dementia-memory-care/normal-aging-vs-dementia/
-- When Should Someone with Dementia Stop Driving?: https://www.arcadiahomecare.ca/resources/dementia-memory-care/dementia-when-to-stop-driving/
+
+#### Early Signs of Dementia in a Parent
+- URL: https://www.arcadiahomecare.ca/resources/dementia-memory-care/early-signs-of-dementia-in-a-parent/
+- FAQs:
+  - Q: What are the earliest signs of dementia in a parent?
+    A: The most common early signs include repeating questions or stories within a short period, difficulty managing multi-step tasks such as cooking or paying bills, word-finding problems that go beyond the occasional blank, personality changes such as increased suspicion or withdrawal, and confusion about time or familiar…
+  - Q: How can I tell the difference between normal aging and early dementia?
+    A: Normal aging slows recall but does not erase it. You might forget a name but remember it later. Early dementia tends to erase the memory entirely, so the person does not recognize that something was forgotten. Trouble planning, organizing, or completing familiar tasks is another key differentiator. Our guide to normal…
+  - Q: Should I tell my parent I think something is wrong?
+    A: This depends on the situation and your relationship. Some parents respond well to a direct, caring conversation. Others become defensive or anxious. A common approach is to frame it around a routine checkup rather than a concern: suggesting a memory screen as part of an annual checkup removes some of the implication t…
+  - Q: What kind of doctor should I take my parent to?
+    A: Start with the family physician. They can run an initial cognitive screen and refer to a specialist if needed. Geriatricians and neurologists handle more detailed assessments. In Toronto, referral wait times vary, so starting the process early gives you more options.
+  - Q: Can early-stage dementia be treated?
+    A: There is no cure for most forms of dementia, but early detection opens options that are not available later. Certain medications may help manage symptoms in some cases. More importantly, early awareness allows families to plan legal, financial, and care arrangements while the person can still participate in those deci…
+  - Q: My parent seems fine most of the time. Should I still be concerned?
+    A: Early dementia often shows up inconsistently. A parent may have clear, sharp days followed by noticeable lapses. That inconsistency is itself a pattern worth watching. If you are noticing moments that concern you, even if they are not constant, it is reasonable to mention them to a doctor. You do not need to wait unti…
+
+#### How to Introduce Home Care to a Parent with Dementia
+- URL: https://www.arcadiahomecare.ca/resources/dementia-memory-care/introducing-home-care-dementia/
+- FAQs:
+  - Q: What if my parent with dementia refuses all help?
+    A: Refusal is extremely common, especially in early and mid-stage dementia. The strategies that tend to work best involve reframing the help as companionship rather than care, starting with very small amounts of time, and letting the caregiver build a relationship before taking on personal care tasks. If refusal is absol…
+  - Q: Should I tell my parent with dementia that a caregiver is coming?
+    A: It depends on the stage. In early dementia, advance notice is usually helpful. In mid to late dementia, telling someone too far in advance can cause repeated anxiety as they forget and re-learn the information. Many families find it works better to mention it shortly before the caregiver arrives, or in some cases, to…
+  - Q: How long does it take for a parent with dementia to accept a caregiver?
+    A: It varies widely: from a few visits to several weeks. Consistency matters enormously: the same caregiver, at the same time, doing the same routine builds familiarity that dementia-affected brains can often retain even when episodic memory is poor. Arcadia prioritizes caregiver consistency for this reason.
+  - Q: My parent thinks they don't need help. How do I handle that?
+    A: Lack of insight into one's own limitations is a common symptom of dementia, not stubbornness. Rather than arguing about whether help is needed, focus on small, specific tasks: 'I'd feel better knowing someone checks in while I'm at work.' Lead with your own feelings and needs, not with what your parent is failing to d…
+
+#### How to Keep Someone with Dementia Safe at Home
+- URL: https://www.arcadiahomecare.ca/resources/dementia-memory-care/dementia-home-safety/
+- FAQs:
+  - Q: What are the biggest safety risks for someone with dementia living at home?
+    A: The most common risks include wandering (especially at night or in unfamiliar emotional states), falls due to impaired spatial awareness, kitchen hazards like leaving the stove on, medication errors such as double-dosing or skipping doses, and bathroom injuries from wet surfaces or scalding water. These risks tend to…
+  - Q: How do I prevent my parent with dementia from wandering?
+    A: Start with door alarms or chime sensors that alert you when an exterior door opens. Camouflage exit doors with curtains or paint them to match the surrounding wall. Keep shoes and coats out of sight near exits. For nighttime wandering, motion-sensor lights in hallways can reduce disorientation without fully waking the…
+  - Q: Should I lock the doors to keep my parent from leaving?
+    A: This is a judgment call that depends on the stage of the condition, the layout of your home, and fire safety. Deadbolts that require a key from inside can prevent wandering but also prevent escape in an emergency. Many families find a middle path: door alarms plus a secured backyard or enclosed porch where the person…
+  - Q: When should I consider bringing in professional help for safety reasons?
+    A: Consider professional support when your parent has had a fall or near-miss that could have caused injury, when wandering incidents are becoming more frequent, when you are losing sleep due to nighttime safety concerns, or when the daily monitoring required is affecting your own health or work. A care assessment can he…
+  - Q: What home modifications help someone with dementia?
+    A: The most effective modifications include grab bars in bathrooms, non-slip mats on all hard floors, stove-top auto shut-off devices, thermostatic mixing valves to prevent scalding, improved lighting (especially at night), removal of area rugs and trip hazards, contrasting colours on stairs and doorframes to aid spatial…
+  - Q: Does Ontario have programs that help with home safety modifications for dementia?
+    A: Ontario Health atHome (formerly the LHIN/CCAC system) may provide occupational therapy assessments that include home safety recommendations. Some municipalities offer seniors home modification grants. The Alzheimer Society of your region can also direct you to local resources. Eligibility and availability vary, so sta…
+
+#### Normal Aging vs. Dementia: What's the Difference?
+- URL: https://www.arcadiahomecare.ca/resources/dementia-memory-care/normal-aging-vs-dementia/
+- FAQs:
+  - Q: Is forgetting names a sign of dementia?
+    A: Occasionally forgetting a name, then remembering it later, is a normal part of aging. What raises concern is forgetting the names of close family members consistently, or not recognizing familiar faces. The pattern and frequency matter more than any single incident. If you are asking how do I tell normal aging from de…
+  - Q: At what age does dementia typically begin?
+    A: Most dementia diagnoses occur after age 65, with risk increasing significantly with each decade. Early-onset dementia, diagnosed before age 65, does occur but is less common. Age alone is not a diagnosis; many people in their 80s and 90s retain strong cognitive function.
+  - Q: My parent says they're fine. Should I still pursue a doctor's assessment?
+    A: Yes. One of the hallmarks of dementia is limited insight into one's own symptoms. The person experiencing changes is often the last to notice them. If you're observing consistent changes in memory, judgment, or daily function, a medical assessment is appropriate even if your parent feels nothing is wrong.
+  - Q: Can dementia be reversed?
+    A: Most forms of dementia, including Alzheimer's, are progressive and currently have no cure. However, some conditions that mimic dementia (such as vitamin deficiencies, thyroid problems, or medication interactions) are reversible with treatment. This is one reason a proper medical assessment matters.
+
+#### When Should Someone with Dementia Stop Driving?
+- URL: https://www.arcadiahomecare.ca/resources/dementia-memory-care/dementia-when-to-stop-driving/
+- FAQs:
+  - Q: When should someone with dementia stop driving?
+    A: There is no single moment that applies to everyone, but key indicators include getting lost on familiar routes, delayed reactions at intersections, drifting between lanes, new dents or scrapes on the car, confusion about traffic signals, or near-misses that the person does not seem to register. A formal driving assess…
+  - Q: Can a person with early-stage dementia still drive safely?
+    A: Some people in early-stage dementia retain enough cognitive function to drive safely for a period, but this declines over time and often faster than families expect. A diagnosis of dementia does not automatically mean driving must stop immediately, but it does mean the question needs to be revisited regularly, ideally…
+  - Q: How do I take the car keys from a parent with dementia?
+    A: The most effective approach depends on your parent and the stage of the condition. Some families have success framing the conversation around safety rather than capability. Others involve the family physician, who can write a letter recommending cessation. In some cases, practical measures like disabling the car, movi…
+  - Q: Can a doctor in Ontario take away a driver's licence for dementia?
+    A: In Ontario, physicians are legally required to report any medical condition that may make a patient unfit to drive. This includes dementia. When a doctor submits a report to the Ministry of Transportation, the ministry may suspend the licence or require a driving assessment. This can be a useful path for families who…
+  - Q: What are the alternatives to driving for someone with dementia in Toronto?
+    A: Options include Wheel-Trans (Toronto's accessible transit service), private companion driving services, volunteer driver programs through community agencies, ride-sharing services with a family member managing the app, and scheduled transportation provided by a home care agency as part of a broader support plan. The b…
+  - Q: What if my parent refuses to stop driving despite safety concerns?
+    A: If your parent refuses and you believe they are a danger to themselves or others, you have options. Ask their family physician to submit a medical fitness report to the Ontario Ministry of Transportation. You can also contact the ministry directly to request a re-examination. In urgent situations, removing physical ac…
 
 ### Family Caregiver Support
-- The Conversation You Keep Putting Off: https://www.arcadiahomecare.ca/resources/family-caregiver-support/talking-to-parent-about-care/
-- The Exhaustion You Have Stopped Noticing: https://www.arcadiahomecare.ca/resources/family-caregiver-support/caregiver-burnout-warning-signs/
-- The Guilt of Getting Help: https://www.arcadiahomecare.ca/resources/family-caregiver-support/guilt-of-getting-help/
-- The Weight You Are Carrying: https://www.arcadiahomecare.ca/resources/family-caregiver-support/weight-of-caregiving/
-- When Siblings Disagree About a Parent's Care: https://www.arcadiahomecare.ca/resources/family-caregiver-support/siblings-disagree-parent-care/
+
+#### The Conversation You Keep Putting Off
+- URL: https://www.arcadiahomecare.ca/resources/family-caregiver-support/talking-to-parent-about-care/
+- FAQs:
+  - Q: How do I start a difficult conversation with my aging parent?
+    A: Start with what you have noticed, not what you have decided. Lead with concern rather than logistics. Be specific about the change you have observed, and frame the conversation as something you want to figure out together rather than something you are presenting them with. Most aging parents respond better to being as…
+  - Q: When is the right time to talk to my parent about giving up driving?
+    A: The right time is before the conversation becomes urgent. If you are noticing changes in their reaction time, judgment, or comfort behind the wheel, the conversation is overdue. Frame it around safety and dignity, not loss. Bring specific observations rather than general worry. If they are resistant, involve their doc…
+  - Q: How do I talk to my parent about accepting outside help?
+    A: Frame outside help as something that protects their independence, not as something that takes it away. Most aging parents resist help because they hear it as 'you can\u2019t manage anymore.' What they need to hear is 'I want you to be able to keep doing what you love, and I want this to be sustainable for everyone.' S…
+  - Q: What if my parent refuses to have the conversation?
+    A: Respect the refusal in the moment, but do not let it close the door. Try again differently. A refusal is rarely about the topic itself. It is about feeling cornered, ambushed, or talked down to. Pick a different setting. A different time of day. A different framing. Sometimes the conversation that fails on a Tuesday a…
+  - Q: Should I have this conversation alone or with my siblings?
+    A: Usually the first conversation is best one-on-one, with whichever family member has the closest relationship to the parent. Group conversations can feel like an intervention, even when they are well-intentioned. Once the topic is on the table and your parent has had time to process, broader family discussions tend to…
+  - Q: What if my parent gets angry or shuts down?
+    A: Anger and shutdown are usually grief responses in disguise. Your parent is not angry at you. They are angry at the situation, at aging, at losing things they used to take for granted. Do not match their anger or push past their shutdown. End the conversation gently and try again later. The willingness to come back wit…
+  - Q: Is it okay to involve a doctor or other professional in the conversation?
+    A: Yes, and often it helps. Aging parents who push back on family will frequently accept the same information from a doctor, social worker, or care coordinator. It is not a betrayal to bring in professional voices. It is recognizing that some conversations land better outside the family system. Geriatric care managers in…
+  - Q: How do I talk to my parent about money or estate planning?
+    A: Money is often the hardest topic because it carries shame, control, and fear all at once. Lead with their goals rather than yours. 'What would you want to happen if...' lands better than 'we need to talk about your finances.' Frame estate planning as protecting the people they love, not as preparing for their decline.…
+  - Q: What if I wait too long to have the conversation?
+    A: If a parent\u2019s cognition declines significantly before the conversation happens, the options narrow. Decisions may need to be made on their behalf rather than with them. The earlier the conversation, the more your parent gets to shape what comes next. But even when timing is not ideal, having the conversation is a…
+
+#### The Exhaustion You Have Stopped Noticing
+- URL: https://www.arcadiahomecare.ca/resources/family-caregiver-support/caregiver-burnout-warning-signs/
+- FAQs:
+  - Q: What are the early warning signs of caregiver burnout?
+    A: Early signs include exhaustion that sleep does not fix, getting sick more often, irritability at small things, pulling away from friends and activities you used to enjoy, difficulty sleeping even when you are tired, and a growing sense of dread about the day ahead. Many caregivers dismiss these as normal stress. The d…
+  - Q: Can caregiving make you physically sick?
+    A: Yes. Research consistently shows that prolonged caregiving stress increases the risk of cardiovascular problems, weakened immune function, chronic pain, digestive issues, and sleep disorders. Family caregivers also report higher rates of anxiety and depression. These are not signs of weakness. They are the body respon…
+  - Q: How do I ask for help when everyone relies on me?
+    A: Start with one specific, concrete request rather than a general plea. Instead of asking family members to help more, ask for something precise: can you take Tuesday afternoons, can you handle the pharmacy run this week, can you sit with Mom on Saturday so I can rest. Specific asks are easier for people to say yes to.…
+  - Q: Is it normal to feel angry at the person you are caring for?
+    A: Yes, and it does not make you a bad person. Resentment and frustration are among the most common and most hidden symptoms of caregiver burnout. You are not angry at your parent. You are angry at a situation that has consumed your life without anyone acknowledging what it costs you. The anger is information. It is tell…
+  - Q: What is respite care and how can it help with caregiver burnout?
+    A: Respite care is temporary relief for family caregivers. A trained caregiver comes to the home and takes over your responsibilities for a set period: a few hours, a day, or longer. The person you care for follows their usual routines with someone qualified and consistent. You step away completely. This is not a luxury.…
+  - Q: Can you recover from caregiver burnout without stopping caregiving?
+    A: You can, but not by willpower alone. Recovery requires changing the structure, not just your mindset. That usually means bringing in consistent outside help, even a few hours a week, so you have protected time to rest, see people, and do things unrelated to caregiving. It also means letting go of the idea that you sho…
+  - Q: When should a family caregiver consider professional home care?
+    A: Consider professional home care when your own health is declining, when your relationships are suffering, when the quality of the care you provide has changed, or when you simply cannot sustain the current level of involvement. You do not need to reach a crisis to justify support. In fact, bringing in help before the…
+  - Q: Where can family caregivers in the GTA find support?
+    A: In Toronto and the Greater Toronto Area, family caregivers can access support through Ontario Health atHome for publicly funded respite, private home care agencies like Arcadia for flexible respite and companion care, caregiver support groups through local community health centres, and the Ontario Caregiver Organizati…
+
+#### The Guilt of Getting Help
+- URL: https://www.arcadiahomecare.ca/resources/family-caregiver-support/guilt-of-getting-help/
+- FAQs:
+  - Q: Why do I feel guilty about hiring home care for my parent?
+    A: Because caregiving is often framed as love expressed through personal effort. Bringing in paid help can feel like stepping away, even when you are still deeply involved. The guilt is usually about identity and loyalty, not about whether help is actually needed.
+  - Q: Does getting help mean I am abandoning my parent?
+    A: No. Getting help changes who carries which tasks. It does not remove you from the relationship. Many families find that professional support makes it possible to stay present as a daughter or son instead of being consumed as the only worker.
+  - Q: What if my parent says they do not want strangers in the house?
+    A: That reaction is common. Resistance often softens when the introduction is gradual, the caregiver is consistent, and the first tasks are practical rather than intimate. The conversation matters as much as the schedule.
+  - Q: Is it selfish to want a break from caregiving?
+    A: Wanting relief is not selfishness. It is information that the load has exceeded what one person can sustain. Rest is part of keeping care going, not evidence that you have failed.
+  - Q: How do I start getting help without feeling like I am giving up?
+    A: Start small and specific. A few consistent hours for the hardest tasks or the hardest part of the week is often easier to accept than a full overhaul. Treat the first arrangement as a trial, not a permanent verdict on your role. Do you offer respite or home care in the GTA? Yes. Can someone cover just a few hours so I…
+  - Q: What if siblings disagree about hiring care?
+    A: Disagreement is common, especially when one sibling carries more of the daily load. Name the actual work being done, the risks of continuing unchanged, and what a limited trial of help would look like. Shared facts reduce moral arguments.
+
+#### The Weight You Are Carrying
+- URL: https://www.arcadiahomecare.ca/resources/family-caregiver-support/weight-of-caregiving/
+- FAQs:
+  - Q: What is caregiver burden?
+    A: Caregiver burden is the cumulative physical, emotional, and financial strain that builds over months or years of providing care to a family member. It is not a single event but an accumulation. Most family caregivers describe it as a weight that increased so gradually they stopped noticing when it became too heavy. It…
+  - Q: How do I know if I am carrying too much as a caregiver?
+    A: Common signs include persistent fatigue that sleep does not resolve, irritability with people you love, loss of interest in things that used to matter to you, difficulty concentrating at work, frequent illness, and a sense that your own life has been put on hold indefinitely. If you cannot remember the last time you d…
+  - Q: What is the difference between caregiver weight and caregiver burnout?
+    A: The weight is the earlier stage. It is the accumulation of responsibility, emotional labour, and physical tasks that builds over time. Burnout is what happens when that weight exceeds capacity for too long without structural relief. Most caregivers experience months or years of carrying the weight before reaching burn…
+  - Q: What actually reduces caregiver burden?
+    A: Structural changes reduce caregiver burden. A weekend off does not fix a structural problem. What helps is having someone qualified carry a consistent, reliable portion of the care load, not as a favour but as a scheduled part of the routine. Respite care, regular professional home care hours, and shared family respon…
+  - Q: Is it normal to feel resentful as a caregiver?
+    A: Yes. Resentment is one of the most common emotions family caregivers report, and one of the least discussed. It does not mean you love your parent less. It means the situation is costing you something real and you have not had permission to name it. Resentment is often the first signal that the load needs to be redist…
+  - Q: How can I get help as a family caregiver in Toronto?
+    A: Start with a conversation about what you are currently carrying. A care assessment from Arcadia can happen within 24 to 48 hours and identifies specifically where professional support would make the most difference. Many families begin with just a few hours per week of respite or personal support and adjust from there…
+
+#### When Siblings Disagree About a Parent's Care
+- URL: https://www.arcadiahomecare.ca/resources/family-caregiver-support/siblings-disagree-parent-care/
+- FAQs:
+  - Q: Why do siblings disagree about a parent's care?
+    A: Siblings often disagree because they are working from different information. The sibling who lives nearby sees what is happening day to day. The sibling who lives far away sees the parent at their best during visits, when everyone is on good behaviour. Distance does not mean indifference, but it does mean a different…
+  - Q: What do you do when a sibling is not helping with a parent's care?
+    A: Start with a specific, concrete request rather than a general complaint. "I need you to take Mum to her Thursday appointments" is easier to say yes to than "I need you to help more." Some siblings are absent because they don't know what is needed, not because they don't care. Others genuinely cannot help more, whether…
+  - Q: How do you have a family meeting about a parent's care?
+    A: Choose a time when no one is in crisis. Set an agenda in advance so no one is ambushed. Keep the focus on your parent's needs, not on who has done more or less. Video call works if siblings are in different cities. The goal is a shared picture, not a face-to-face confrontation. If the conversation regularly derails, a…
+  - Q: What if siblings disagree about whether a parent needs help at all?
+    A: This is the most common form of sibling conflict: one person sees decline, another sees the parent they have always known. The most useful move is to shift the conversation from opinion to observation. Instead of "Dad needs help," try "I noticed last month he missed three medication doses and the fridge was empty twic…
+  - Q: How do you handle a sibling who is making all the decisions alone?
+    A: If one sibling is the primary caregiver, they will inevitably make more day-to-day decisions. That is the nature of being the one who is there. The problem arises when major decisions (care arrangements, finances, medical choices) are made without consultation. Address this directly and early: agree on which decisions…
+  - Q: What role can a professional play in resolving sibling conflict over care?
+    A: A geriatric care manager or social worker can do something family members cannot: provide a neutral, professional assessment of what your parent actually needs. That shared baseline, not any one sibling's account, often resolves disagreements about the level of care required. They can also facilitate family meetings,…
+  - Q: Is it normal to feel resentment toward a sibling during caregiving?
+    A: Yes. Resentment is one of the most common, and least-talked-about, experiences among family caregivers. If you are carrying more of the load, resentment is not a character flaw. It is the predictable result of an imbalanced situation. The goal is not to suppress it but to use it as information: what specifically is mi…
+  - Q: When should a family bring in professional home care to reduce sibling conflict?
+    A: When the care load is the source of the conflict, and disagreements are really about who is doing too much and who is not doing enough, professional home care can change the equation. A consistent, qualified caregiver in the home reduces the burden on the primary family caregiver and gives the whole family a shared re…
 
 ### Navigating Home Care
-- How Much Does Home Care Cost in Ontario?: https://www.arcadiahomecare.ca/resources/navigating-home-care/home-care-cost-ontario/
-- How to Know When It Is Time: https://www.arcadiahomecare.ca/resources/navigating-home-care/signs-parent-needs-home-care/
-- Spring Home Safety Checklist for Seniors: https://www.arcadiahomecare.ca/resources/spring-home-safety-checklist-for-seniors/
-- What Does a PSW Actually Do?: https://www.arcadiahomecare.ca/resources/navigating-home-care/what-does-a-psw-do/
-- What Good Care Actually Looks Like: https://www.arcadiahomecare.ca/resources/navigating-home-care/recognizing-quality-home-care/
-- What No One Tells You About the First Week of Home Care: https://www.arcadiahomecare.ca/resources/navigating-home-care/what-no-one-tells-you-first-week-home-care/
-- When the Person You Love Needs More Help Than You Can Give: https://www.arcadiahomecare.ca/resources/navigating-home-care/when-parent-needs-more-help/
+
+#### How Much Does Home Care Cost in Ontario?
+- URL: https://www.arcadiahomecare.ca/resources/navigating-home-care/home-care-cost-ontario/
+- FAQs:
+  - Q: How much does a PSW cost per hour in Ontario?
+    A: Private PSW (Personal Support Worker) rates in the Greater Toronto Area typically range from $32 to $42 per hour, depending on the level of care required, the time of day, and the agency. Weekend and overnight rates are generally higher. Some agencies require a minimum shift length of three or four hours.
+  - Q: Is home care covered by OHIP in Ontario?
+    A: Ontario Health atHome (formerly the LHIN/CCAC system) provides publicly funded home care at no direct cost to the patient. However, the hours are limited, waitlists can be long, and families do not choose their caregiver or schedule. Many families use publicly funded hours as a supplement and arrange private care to f…
+  - Q: How much does 24-hour home care cost in Ontario?
+    A: Full 24-hour live-in or shift-based care in the GTA typically costs between $350 and $600 per day for PSW-level support, depending on whether it is structured as a live-in arrangement or rotating shifts. Nursing care is higher. Most families who need round-the-clock coverage start with overnight support and expand as…
+  - Q: What is the minimum number of hours for private home care?
+    A: Most private home care agencies in Ontario require a minimum shift of three to four hours. Some offer shorter visits for medication reminders or check-ins, but the standard minimum exists because travel time and care continuity make shorter visits less effective for both the caregiver and the client.
+  - Q: Can I claim home care expenses on my taxes in Ontario?
+    A: Some home care expenses may qualify for the Medical Expense Tax Credit (METC) or the Canada Caregiver Credit. Eligibility depends on your specific situation, the type of care, and whether a medical practitioner has recommended the services. Consult a qualified tax professional to confirm which credits apply to your fa…
+  - Q: Does private insurance cover home care in Ontario?
+    A: Some extended health benefits and long-term care insurance policies cover a portion of private home care costs. Coverage varies significantly by provider and plan. If the person receiving care has group benefits through a former employer or a private policy, it is worth checking what home care services are included be…
+  - Q: How do I budget for home care for a parent?
+    A: Start with the number of hours per week that would genuinely help, not a maximum scenario. Many families begin with 8 to 12 hours per week (two to three visits). At GTA private rates, that typically costs $1,000 to $2,000 per month. Costs increase if overnight care, weekend care, or specialized support is needed. A ca…
+  - Q: Is private home care worth the cost compared to a retirement home?
+    A: For many families, private home care at moderate hours is comparable to or less expensive than a private retirement residence in the GTA, which typically costs $3,500 to $7,000 per month. Home care also allows the person to remain in familiar surroundings with one-to-one support. The comparison depends on how many hou…
+
+#### How to Know When It Is Time
+- URL: https://www.arcadiahomecare.ca/resources/navigating-home-care/signs-parent-needs-home-care/
+- FAQs:
+  - Q: What are the signs a parent needs home care?
+    A: The most common signs are changes in daily function that have developed gradually: meals not being prepared or eaten properly, medications missed or confused, personal hygiene that has declined, and withdrawal from activities the person used to enjoy. Falls or near-falls that have not been formally addressed are also…
+  - Q: How do you know when it is time to get home care for a parent?
+    A: Most families know before they act. If you have been adjusting your own schedule, calling more often, or managing tasks your parent used to handle independently, you are already providing informal support. When that support starts to feel insufficient, or when you cannot cover the gaps reliably, that is usually the th…
+  - Q: What is the difference between needing home care and needing a nursing home?
+    A: Most people who need home care do not need a nursing home. Home care is appropriate when someone needs support with specific daily tasks but can otherwise remain safely at home. A move to a long-term care facility becomes the right option when the level of care required is too intensive to provide safely in a home set…
+  - Q: How do I bring up home care with a parent who does not want help?
+    A: Start from what you have observed, not from what you have concluded. Most parents who resist care are worried about losing independence, not about the care itself. Framing support as something that protects their ability to stay at home, rather than replaces it, often shifts the conversation. Involving a third party s…
+  - Q: What happens if I wait too long to arrange home care?
+    A: The main risk of waiting is that a manageable situation becomes a crisis. Families who reach out after a crisis often say they saw it coming for months. Acting earlier generally means more options, a slower pace, and less disruption for everyone.
+  - Q: How quickly can home care start in Toronto?
+    A: Arcadia can typically conduct a care assessment within 24 to 48 hours of first contact, and care can often begin within a week of the assessment. For urgent situations, the timeline can be compressed. A free consultation is the first step and does not commit you to anything.
+  - Q: Does home care have to be full time?
+    A: No. Home care is arranged based on what the situation actually requires. Some families start with a few hours a week to cover specific tasks and adjust over time. The care plan is built around the individual, not a standard package.
+
+#### Spring Home Safety Checklist for Seniors
+- URL: https://www.arcadiahomecare.ca/resources/spring-home-safety-checklist-for-seniors/
+- FAQs:
+  - Q: When is the right time to do a spring home safety check for an aging parent?
+    A: Spring is a practical time because longer daylight and tidying routines make it easier to notice what changed over winter. Many families spot clutter, mobility changes, or slipping routines when they walk through the home with fresh eyes.
+  - Q: What are early signs that a parent may need more help at home?
+    A: Common signs include a less safe home environment, inconsistent meals, disorganized medications, changes in personal care or housekeeping, reduced mobility, increasing isolation, or the feeling that something has shifted even if your parent insists everything is fine.
+  - Q: When should a family consider home care after a home safety review?
+    A: Home care may help when daily routines are becoming harder to manage, not only when the house itself needs modifications. Triggers often include meal inconsistency, medication slips, mobility changes, isolation, or caregiver stress that is becoming unsustainable.
+  - Q: How do I talk to a parent about safety concerns without taking over?
+    A: Lead with observation rather than judgment. Comments like noticing the stairs felt harder or wanting to make life easier often work better than framing the conversation as proof that independence is ending.
+  - Q: When should we book a home care assessment?
+    A: You do not need to wait for a fall or hospital visit. An assessment is appropriate when the home no longer feels consistently safe, routines are slipping, memory changes are emerging, or you know more support is needed but are unsure what kind.
+  - Q: Does Arcadia help families across the GTA with home safety and care planning?
+    A: Yes. Arcadia Home Care supports families in Toronto and the GTA with companion care, personal support, hospital discharge planning, and guidance on what level of help makes sense after a home safety review.
+
+#### What Does a PSW Actually Do?
+- URL: https://www.arcadiahomecare.ca/resources/navigating-home-care/what-does-a-psw-do/
+- FAQs:
+  - Q: What does PSW stand for?
+    A: PSW stands for Personal Support Worker. In Ontario, a PSW is a trained professional who supports people with daily living activities at home, in retirement residences, in long-term care, and in hospitals. PSWs are the backbone of home care in the province.
+  - Q: What can a PSW do in Ontario?
+    A: A PSW can assist with bathing, dressing, grooming, toileting, meal preparation, feeding, mobility and transfers, light housekeeping, medication reminders, companionship, and accompaniment to appointments. PSWs can also document changes in condition and communicate concerns to the family or care coordinator. They work…
+  - Q: What can a PSW NOT do?
+    A: PSWs cannot perform controlled medical acts. They cannot administer injections, manage IV lines, change sterile dressings, or make clinical decisions about medication. Anything that requires a registered nurse, registered practical nurse, or physician is outside a PSW's scope. A reputable agency will be clear about wh…
+  - Q: What is the difference between a PSW and a nurse?
+    A: A PSW is trained in personal care and daily living support. A Registered Nurse (RN) or Registered Practical Nurse (RPN) is a regulated health professional with broader clinical training. Nurses handle wound care, IV therapy, injections, clinical assessments, and complex medication management. PSWs handle the hands-on…
+  - Q: How are PSWs trained in Ontario?
+    A: PSWs in Ontario complete a recognized PSW certificate program through a college, private career college, or district school board. Programs typically run 6 to 8 months and include classroom instruction plus a clinical placement. Graduates may register with the Ontario Personal Support Worker Registry. Reputable agenci…
+  - Q: Can a PSW give medication?
+    A: A PSW can provide medication reminders and assist a person in taking medication that has been pre-prepared (for example, in a pill organizer or blister pack). PSWs cannot make decisions about dosage or administer medication that requires clinical judgment. For complex medication management, a nurse or pharmacist is in…
+  - Q: Do PSWs provide dementia care?
+    A: Yes. Many PSWs receive additional training in dementia care, including communication techniques, behaviour support, and safety strategies. For families navigating cognitive change, the consistency of the same PSW across visits matters significantly. Familiarity reduces confusion and builds trust. A good agency matches…
+  - Q: How long is a typical PSW visit?
+    A: Most private home care agencies in Ontario require a minimum visit of three or four hours. A typical visit might include morning routines (bathing, dressing, breakfast), a structured activity or appointment, and meal preparation. Longer shifts of 6 to 12 hours are common for clients who need more comprehensive support…
+
+#### What Good Care Actually Looks Like
+- URL: https://www.arcadiahomecare.ca/resources/navigating-home-care/recognizing-quality-home-care/
+- FAQs:
+  - Q: How do I know if my parent is receiving good home care?
+    A: Look for signs beyond the basics. Good care shows up in your parent\u2019s mood, not just their routine. Are they calmer on the days the caregiver visits? Do they mention the caregiver by name? Are they eating better, sleeping better, or more willing to move around the house? The clearest sign is often the absence of…
+  - Q: What should I expect from a home care caregiver?
+    A: Expect consistency, attentiveness, and communication. A good caregiver arrives on time, follows the care plan, and notices small changes in your parent\u2019s condition. They should communicate with you regularly, not just when something goes wrong, but when something goes well. They should treat your parent with dign…
+  - Q: How long does it take for home care to feel normal?
+    A: Most families say it takes two to four weeks for everyone to settle into a rhythm. The first few visits often feel awkward for your parent, for the caregiver, and for you. That is normal. What matters is whether the awkwardness lifts over time. If it does not, or if your parent seems more distressed rather than less,…
+  - Q: What is the difference between a good caregiver and a great one?
+    A: A good caregiver follows the care plan reliably. A great one notices things the care plan does not cover: that your father is quieter than usual, that your mother has stopped reading the newspaper she used to finish every morning, that a medication seems to be causing a side effect nobody has flagged. Great care is at…
+  - Q: What should I do if something about the care does not feel right?
+    A: Say something early. Most issues in home care, whether a scheduling mismatch, a personality fit that is not quite working, or a routine that needs adjusting, are solvable when raised promptly. A good agency will welcome your feedback, not dismiss it. If you are unsure whether something is worth mentioning, it usually…
+  - Q: How involved should I be once home care starts?
+    A: Involved, but not managing every detail. Your role shifts from doing everything yourself to overseeing and advocating. Check in regularly. Ask your parent how they feel about the caregiver. Review the care notes if your agency provides them. But also let the relationship between your parent and the caregiver develop w…
+  - Q: Can I change caregivers if the match is not working?
+    A: Yes. A good agency expects this and plans for it. Not every caregiver will be the right fit for every client, and that is not a failure on anyone\u2019s part. What matters is how the agency handles the transition quickly, smoothly, and without making you feel difficult for asking. If an agency resists changing a careg…
+
+#### What No One Tells You About the First Week of Home Care
+- URL: https://www.arcadiahomecare.ca/resources/navigating-home-care/what-no-one-tells-you-first-week-home-care/
+- FAQs:
+  - Q: How long does it take to adjust to home care?
+    A: Most families find that the adjustment settles within two to four weeks. The first week is almost always the hardest, for your parent, for the caregiver, and often for you. By the third or fourth visit, routines start to form and the relationship becomes less transactional. If things are still feeling genuinely diffic…
+  - Q: What if my parent refuses to cooperate with the caregiver?
+    A: Resistance in the first week is common, especially if your parent did not fully choose this arrangement. The most useful thing is not to push harder but to give the relationship a little space to develop. Let the caregiver take the lead. Most experienced caregivers have navigated resistance before. They know that buil…
+  - Q: Is it normal for the first week of home care to feel awkward?
+    A: Yes. Entirely normal. A stranger is entering your parent's home, learning their routines, and performing intimate tasks, all while your parent is adjusting to a new reality about their own needs. Awkwardness is the expected state. It does not mean care is failing. It means the relationship has not had time to form yet.
+  - Q: Should I be there for the first visit?
+    A: Being there for the first visit, or the first few, can help with introductions and reduces anxiety for everyone. But staying for the entire visit can make it harder for the relationship to form between your parent and the caregiver. Try to make the introduction, handle any handoff of information, and then step away. I…
+  - Q: What information should I give the caregiver before they start?
+    A: A written notes sheet is worth preparing: daily routine and timing, medication schedule, food preferences and restrictions, what your parent likes and dislikes about being helped, any topics that are sensitive, where things are kept, and who to call in an emergency. The more specific, the better. Caregivers work bette…
+  - Q: How do I know if a caregiver is a good fit?
+    A: Watch for whether your parent becomes slightly less resistant over successive visits: not immediately comfortable, but less guarded. A good caregiver will find small ways to connect: a consistent greeting, a remembered detail, a patient approach to tasks your parent finds difficult. Red flags are different from awkwar…
+  - Q: What is the difference between adjustment and a real problem?
+    A: Adjustment looks like: your parent is quieter than usual, a bit formal, or needs time to warm up. The caregiver is still learning routines. The first few visits feel a little stiff. A real problem looks like: your parent is distressed rather than reluctant, the caregiver misses visits or arrives significantly late wit…
+  - Q: When should I give feedback to the home care agency?
+    A: Early. The first week is exactly when feedback is most actionable. Agencies expect to hear from families during the adjustment period. It is not a complaint; it is information. If a caregiver is not a good fit, it is better to know in week one than week six. If something about the routine is not working, say so. A goo…
+
+#### When the Person You Love Needs More Help Than You Can Give
+- URL: https://www.arcadiahomecare.ca/resources/navigating-home-care/when-parent-needs-more-help/
+- FAQs:
+  - Q: How do I know if my parent needs home care?
+    A: Look for patterns rather than single events. Common early signs include skipped meals, missed medications, unopened bills, increased confusion, weight loss, less steady mobility, and social withdrawal. When changes are becoming more frequent and affecting safety, health, or daily life across more than one area, it is…
+  - Q: What does home care actually include?
+    A: Home care can include personal care such as bathing, dressing, and toileting; help with meals and medication reminders; mobility and transfer support; companionship; transportation to appointments; nursing services; and dementia-specific support. Many families start with a few hours a week to relieve the heaviest part…
+  - Q: What is Ontario Health atHome?
+    A: Ontario Health atHome is the public agency that coordinates publicly funded home and community care in Ontario. Depending on assessed need, it can provide personal support, nursing, and therapy services in the home. For many families this is a helpful starting point, but the available hours and flexibility are often l…
+  - Q: What is the difference between public and private home care in Ontario?
+    A: Public home care in Ontario is coordinated through Ontario Health atHome and funded by OHIP, but the number of hours and the timing of visits are limited. Private home care is paid out of pocket or through private insurance and offers more flexible scheduling, longer visits, consistent caregivers, and a wider range of…
+  - Q: How much does home care cost in Toronto and the GTA?
+    A: Private home care in the Toronto area is typically billed hourly, with rates varying by the type of care and provider. Most families do not start with full-time support; they begin with a few hours a week targeted at the most urgent need, then scale up as the situation changes. A care assessment is usually the cleares…
+  - Q: How do I talk to my parent about needing help?
+    A: Approach the conversation with what you have observed rather than what you have decided. Lead with concern, not logistics. Be specific about what you have noticed and how it is affecting them. Frame outside support as a way to protect their independence and the life they already know, not as a replacement for family.…
+  - Q: Should we wait for a crisis to bring in home care, or start sooner?
+    A: Starting sooner is almost always easier. Families who wait for a fall, hospitalization, or moment of acute confusion usually find that decisions get made under pressure, options narrow, and everyone is more overwhelmed. Beginning while there is still room to introduce support gradually allows the parent to adjust with…
+  - Q: Can home care help with dementia or memory loss?
+    A: Yes. Specialized dementia home care supports routines, communication, safety, and behaviour changes including agitation and sundowning. It can also relieve family caregivers, who carry a particularly heavy load with dementia. As the condition progresses, care can scale up to overnight or 24-hour support so the person…
+  - Q: How many hours of home care do most families start with?
+    A: Most families do not begin with a large schedule. A common starting point is a few hours a few mornings a week, focused on the part of daily life that has become hardest, such as bathing, breakfast, and medications. From there the schedule is adjusted based on what the family and the person being cared for actually ex…
+
+## Decision & Hub Pages
+
+### Book a Free Consultation
+- URL: https://www.arcadiahomecare.ca/how-care-starts/page.tsx/
+- FAQs:
+  - Q: How do I start home care with Arcadia?
+    A: It begins with a free consultation. We listen to your situation, explain your options clearly, and if you decide to move forward, schedule an in-home care assessment within 24 to 48 hours.
+  - Q: How long does it take from first call to care starting?
+    A: Most families have a care assessment within 24 to 48 hours of first contact. Care often begins within a week of the assessment, and timelines can be compressed for urgent situations.
+  - Q: Is there any obligation when I book a consultation?
+    A: No. The first conversation is free and carries no commitment. We listen first, then help you understand what your loved one needs and whether Arcadia is the right fit.
+  - Q: What happens during the care assessment?
+    A: A care manager visits your loved one's home to understand daily routines, medical needs, safety risks, and personal preferences. This visit forms the basis of the care plan.
+  - Q: How does Arcadia match caregivers to clients?
+    A: We match based on clinical fit, personality, language, and cultural background, not just availability. You meet the caregiver before care begins and can request a change if the fit is not right.
+  - Q: Can healthcare professionals refer patients to Arcadia?
+    A: Yes. We work with discharge planners, social workers, physicians, and Ontario Health atHome coordinators across the GTA. Submit a referral online or call us directly for urgent cases.
+
+### Book a Free Consultation | How Care Starts
+- URL: https://www.arcadiahomecare.ca/how-care-starts/first-conversation/
+- FAQs:
+  - Q: How long does the first call take?
+    A: Usually between 20 and 40 minutes, depending on how much you want to cover. If you are wondering how do I prepare for the first call, just come as you are. There is no set time limit. We go at the pace that is useful to you.
+  - Q: Who should be on the call?
+    A: Whoever is most informed about the situation and most involved in the decision. That might be an adult child, a spouse, the person who will be receiving care, or some combination. If you are calling on behalf of a parent who is not yet aware you are exploring care options, that is also fine — and common.
+  - Q: Will I be pressured to sign up for anything?
+    A: No. The first call is informational. We may recommend a care assessment as a logical next step, but we do not push for commitments or create artificial urgency. Families who feel pressured tend not to make good decisions, and they tend not to become long-term clients.
+  - Q: What if I am calling from out of town about a parent in Toronto?
+    A: This is a common situation. We are well practised at supporting families who are managing a situation at a distance — the first call can cover what is happening, what we would need to assess, and how we would keep you informed through the process.
+  - Q: Can I request a callback instead of calling?
+    A: Yes — use the form below and we will call you at a time that works for you.
+
+### Brain Injury Resources for Families
+- URL: https://www.arcadiahomecare.ca/resources/brain-injury-rehabilitation/
+- FAQs:
+  - Q: What is acquired brain injury and how does it affect families?
+    A: Acquired brain injury (ABI) results from stroke, trauma, anoxia, or illness. Effects are often invisible: cognitive fatigue, personality changes, and emotional dysregulation. Recovery is rarely linear, and families are often left coordinating care with little guidance.
+  - Q: What support is available after hospital rehabilitation ends?
+    A: Inpatient rehabilitation often ends before families feel ready. Families ask how do I support recovery once rehab ends. Can you coordinate with OT and PT at home? Yes. Home care bridges that gap with structured daily support.
+  - Q: How does Arcadia support ABI recovery at home?
+    A: Our ABI caregivers work alongside your clinical team, following rehabilitation protocols, monitoring for changes, and supporting independence goals. We coordinate with hospitals including UHN, Sunnybrook, and Baycrest.
+  - Q: Can Arcadia help with hospital discharge planning for brain injury?
+    A: Yes. We accept referrals from discharge planners and can often conduct a care assessment within 24 to 48 hours of contact. Call us early in the discharge planning process for the smoothest transition.
+  - Q: How do I know if my parent needs home care after a brain injury?
+    A: If your parent needs help with daily tasks, medication management, supervision for safety, or transportation to therapy appointments, home care can provide structured support while recovery continues.
+
+### Care Assessment | How Care Starts
+- URL: https://www.arcadiahomecare.ca/how-care-starts/care-assessment/
+- FAQs:
+  - Q: How long does the assessment take?
+    A: Usually between 60 and 90 minutes in the home. Complex situations — particularly those involving dementia, acquired brain injury, or palliative care — may require additional follow-up before the care plan is finalized.
+  - Q: Does the person receiving care need to be present?
+    A: Where possible, yes — the assessment is most useful when we can speak directly with the person, observe how they function in their own environment, and understand their perspective on their own situation. For cognitive or communication reasons, this is not always fully possible, and we adapt accordingly.
+  - Q: Can the assessment happen remotely if the family is not local?
+    A: The in-home visit requires a local contact — either the person being assessed or a family member or neighbour who can be present. Family members who are not local can participate by phone during the visit. We are experienced supporting families managing a situation from a distance.
+  - Q: Is there a cost for the assessment?
+    A: The initial care assessment is complimentary for families who proceed with Arcadia's services. If you are wondering how much an assessment costs, there is no fee when you move forward with us. We are happy to discuss details when you call.
+  - Q: What happens after the assessment?
+    A: We present the care plan to the family, discuss it, and refine it based on your input. Once the plan is agreed, we move to caregiver matching. Do you help families understand next steps? Yes. We walk you through who should be involved from there.
+
+### Care Begins: First Week
+- URL: https://www.arcadiahomecare.ca/how-care-starts/care-begins/
+- FAQs:
+  - Q: What if the first visit does not go well?
+    A: Call us the same day. A first visit that does not go well is not a sign that care will not work. It is information we need to act on. If you are wondering how do I know whether to give it more time, we help you decide. Do you adjust quickly when something is off? Yes.
+  - Q: How involved should family members be during the first visits?
+    A: Present but not hovering. Being there for the introduction is helpful. Families often ask who should stay for the first visit. Usually one informed family member is enough. Remaining in the background after that gives the caregiver and your parent space to connect.
+  - Q: What if the person refuses to let the caregiver in?
+    A: This happens, particularly with clients who have dementia or who have not fully accepted that they need help. Our team can advise on approaches that tend to work, and we have experience navigating this with families. It usually requires patience and sometimes a change in approach, but it can often be worked through.
+  - Q: How will I know if the care plan is being followed?
+    A: Your caregiver documents their visits and our team reviews that documentation. You can ask for updates at any time, and we check in with families proactively in the first weeks. If you feel you are not getting the information you need, tell us.
+  - Q: When does care stop feeling new?
+    A: For most clients, the care relationship starts to feel settled and routine within the first month. By six weeks, most families describe the arrangement as something they have stopped thinking about in anxious terms — it has settled into the rhythm of the household.
+
+### Caregiver Matching | How Care Starts
+- URL: https://www.arcadiahomecare.ca/how-care-starts/matching-caregivers/
+- FAQs:
+  - Q: Can we meet the caregiver before they start?
+    A: In most cases, yes, particularly for sensitive introductions. If you are asking how do I prepare my parent to meet a new caregiver, we guide that conversation. Can you arrange a brief visit or video call first? Yes, before the first full care visit.
+  - Q: What if my parent refuses to accept the caregiver?
+    A: Resistance to a new person in the home is common, particularly for those with dementia or a strong sense of independence. We build the introduction gradually where possible, and we have experience navigating the kinds of resistance families most often encounter. If resistance persists, we review the match and consider…
+  - Q: Can we request a specific type of caregiver — language, gender, background?
+    A: Yes. Preferences around language, cultural background, gender, and communication style are part of the matching brief. Do you honour specific requests? We do, and we are honest if a combination limits the available pool.
+  - Q: What happens if our regular caregiver is unavailable?
+    A: We work hard to ensure consistent coverage and minimize disruptions. When a regular caregiver is unavailable, we use a replacement who has been briefed on the client and the care plan — not an unfamiliar person sent cold.
+  - Q: How long does matching take?
+    A: For straightforward situations, matching can happen within a few days of the care plan being agreed. For complex cases — particularly those requiring specific condition experience or a very specific personality fit — it may take a little longer to find the right person. We give honest timelines rather than promising s…
+
+### Cost of Home Care & Financial Planning
+- URL: https://www.arcadiahomecare.ca/resources/cost-of-care-planning/
+- FAQs:
+  - Q: How much does private home care cost in Ontario?
+    A: Private PSW rates in the Greater Toronto Area typically range from $32 to $42 per hour, depending on care needs, timing, and agency. Many families start with 8 to 12 hours per week. See How Much Does Home Care Cost in Ontario? for a detailed breakdown.
+  - Q: Does OHIP cover private home care?
+    A: OHIP does not cover private home care directly. Ontario Health atHome provides publicly funded hours at no direct cost, but with limited availability. Many families use both public and private care together.
+  - Q: How do most families pay for home care in the GTA?
+    A: Most private home care is paid out of pocket. If you are asking how do I afford home care for a parent, options include insurance, injury benefits, Veterans Affairs, and tax credits. Do you help map funding during a consultation? Yes.
+  - Q: How many hours of home care will my parent need?
+    A: It depends on their condition, safety risks, and what family support is available. A few hours of companionship and meal help may be enough early on. Progressive conditions like dementia often require increasing hours over time.
+  - Q: Is home care cheaper than long-term care in Ontario?
+    A: For many families, moderate home care hours cost less than a long-term care home placement, especially when only part-time support is needed. How Much Does Home Care Cost in Ontario? compares both options with real GTA numbers.
+  - Q: Can I get a cost estimate before committing to care?
+    A: Yes. Call us or book a free consultation and we will give you a clear picture of what care would cost for your parent's specific situation. No pressure, no commitment. Read How Much Does Home Care Cost in Ontario? for baseline numbers.
+
+### Dementia & Memory Care Resources for Families
+- URL: https://www.arcadiahomecare.ca/resources/dementia-memory-care/
+- FAQs:
+  - Q: What are the early signs of dementia in a parent?
+    A: Look for changes beyond normal aging: repeating questions, getting lost in familiar places, difficulty managing finances or medications, personality shifts, and trouble following conversations. Our early signs guide covers what warrants a medical evaluation.
+  - Q: How do I know if it is normal aging or dementia?
+    A: Normal aging involves occasional forgetfulness that does not disrupt daily life. Dementia causes progressive changes that affect safety, independence, and daily function. If you are asking how do I tell the difference, our normal aging versus dementia guide walks through examples. Can you point us to the right article…
+  - Q: How do I introduce home care to a parent with dementia?
+    A: Start early, frame help as support rather than replacement, and involve your parent in decisions where possible. Our guide covers strategies for resistance, fear, and confusion about accepting help.
+  - Q: When should someone with dementia stop driving?
+    A: When reaction time, judgment, or spatial awareness create safety risks for the driver and others. Our driving guide covers how to recognize the signs, have the conversation, and find transportation alternatives in Toronto.
+  - Q: How can I keep someone with dementia safe at home?
+    A: Room-by-room modifications help: secure exits for wandering, simplify the kitchen, add bathroom grab bars, and remove trip hazards. Our home safety guide walks through each area and when to bring in professional support.
+  - Q: Does Arcadia specialize in dementia home care?
+    A: Yes. Dementia and Alzheimer's care is one of our most requested services. Our caregivers are trained in dementia-specific communication, safety protocols, and behavioural support. Call us to discuss your parent's situation.
+
+### Family Caregiver Support Resources
+- URL: https://www.arcadiahomecare.ca/resources/family-caregiver-support/
+- FAQs:
+  - Q: What are the warning signs of caregiver burnout?
+    A: Chronic exhaustion, irritability, withdrawal from friends, neglecting your own health, and feeling like you cannot keep going are common signs. If you are wondering how do I know if this is burnout, those patterns are a signal. Do you have guides for exhausted caregivers? Yes, in this cluster.
+  - Q: How do I talk to my parent about accepting home care?
+    A: Start before a crisis, focus on what matters to them (staying at home, independence), and frame help as support rather than takeover. Our guide on talking to a parent about care covers specific language and approaches.
+  - Q: What if my siblings disagree about our parent's care?
+    A: Sibling conflict around caregiving is common, especially when one person carries most of the load. Our guide covers how to move forward without damaging relationships, including when to bring in a neutral third party.
+  - Q: Is it normal to feel guilty about getting help for a parent?
+    A: Yes, and it is one of the most common emotions family caregivers report. Getting help does not mean you are failing. It often means you are making a sustainable choice that protects both you and your parent.
+  - Q: What is respite care and how does it help caregivers?
+    A: Respite care provides scheduled or emergency coverage so you can rest, work, or attend to your own life without worrying about your parent. Even a few hours a week can make a significant difference.
+  - Q: When should a family caregiver ask for professional support?
+    A: Before you reach a breaking point. If you are managing medications, appointments, and daily care while working and raising your own family, professional support is not a luxury. It is a practical necessity.
+
+### Ongoing Support | How Care Starts
+- URL: https://www.arcadiahomecare.ca/how-care-starts/ongoing-support/
+- FAQs:
+  - Q: What does ongoing support look like after care begins?
+    A: Your caregiver documents every visit, your care plan is reviewed regularly, and your named care manager stays reachable by phone. If you are managing care from another city, do you keep distant families updated? Yes. We communicate in the way that works for you.
+  - Q: How often is the care plan updated?
+    A: Care plans are reviewed on a regular schedule and updated immediately when your loved one's condition changes. You are always consulted before any change is made.
+  - Q: Will I be kept informed about what happens during visits?
+    A: Yes. After every visit, your caregiver records what was completed and any observations. Families ask how do I know what happened during a shift. You can request daily notes, weekly calls, or alerts for specific situations.
+  - Q: What happens if my parent's care needs increase?
+    A: Arcadia manages the transition without asking you to restart or find a new provider. The relationship, care plan, and caregiver knowledge carry forward as hours or complexity increase.
+  - Q: Does Arcadia coordinate with other care providers?
+    A: With your consent, your care manager can share relevant observations with physicians, Ontario Health atHome coordinators, and other providers involved in your loved one's care.
+
+### Ontario Home Care Resources
+- URL: https://www.arcadiahomecare.ca/resources/navigating-home-care/
+- FAQs:
+  - Q: How do I know when it is time for home care in Ontario?
+    A: Most families arrive through gradual changes rather than one crisis moment. Look for patterns across daily life: meals, medications, mobility, hygiene, and social connection. When those changes are affecting safety or becoming hard for family to cover reliably, it is time to explore options.
+  - Q: How much does private home care cost in the GTA?
+    A: Private PSW rates in the Greater Toronto Area typically range from $32 to $42 per hour, depending on care needs, timing, and agency. Many families start with 8 to 12 hours per week rather than full-time support. See our cost guide for a detailed breakdown.
+  - Q: What is the difference between Ontario Health atHome and private home care?
+    A: Ontario Health atHome coordinates publicly funded home care at no direct cost, but hours are limited and families do not choose their caregiver or schedule. Private home care is paid out of pocket and offers more flexible scheduling, longer visits, and consistent caregivers. Many families use both.
+  - Q: What does a PSW do during a home care visit?
+    A: A Personal Support Worker helps with bathing, dressing, grooming, meals, mobility, medication reminders, light housekeeping, and companionship. They cannot perform controlled medical acts. Nursing tasks require an RN or RPN.
+  - Q: How do I choose a quality home care provider in Toronto?
+    A: Look for consistent caregivers, clear communication, transparent pricing, and a care plan that adjusts as needs change. Quality shows up in how your parent feels on care days, not just whether tasks get completed. Our guide on recognizing quality home care covers what to watch for.
+  - Q: How quickly can home care start once we decide to move forward?
+    A: Arcadia can typically conduct a care assessment within 24 to 48 hours of first contact, and care often begins within a week of the assessment. For urgent situations, timelines can be compressed.
+  - Q: Can I combine publicly funded care with private home care?
+    A: Yes. Many GTA families use Ontario Health atHome hours for specific tasks and add private care for longer visits, weekends, or consistent caregiver matching. The two systems can work together when planned thoughtfully.
+  - Q: Where should I start if I am overwhelmed by the Ontario home care system?
+    A: Start with the pillar article in this collection, then read the guide that matches your most urgent question. If you are ready to talk, book a free consultation. There is no commitment, just a chance to understand your options clearly.
+
+### Referral Process
+- URL: https://www.arcadiahomecare.ca/how-care-starts/referral-process/
+- FAQs:
+  - Q: Who can refer a patient to Arcadia Home Care?
+    A: We accept referrals from hospital discharge planners, social workers, occupational therapists, physicians, case managers, Ontario Health atHome coordinators, and family members. If you are unsure who should refer, call us. Can you accept an informal family referral? Yes.
+  - Q: What information do I need to submit a referral?
+    A: At minimum: client name and contact, home address, primary diagnosis, anticipated start date, and your contact details. More clinical context helps us respond faster, but we can follow up for details.
+  - Q: How quickly does Arcadia respond to referrals?
+    A: We review referrals within one business day, and often sooner for urgent discharges. If you need the fastest way to place a patient, call directly with discharge timing. Do you respond same day for urgent cases? We aim to.
+  - Q: What happens after I submit a referral?
+    A: Our team reviews the information, contacts you to confirm what we can provide, and where appropriate schedules a home assessment and caregiver matching. We keep you informed throughout.
+  - Q: Does Arcadia accept funded care referrals?
+    A: Yes. We have experience with Auto Insurance (SABS), WSIB, Veterans Affairs Canada, and Ontario Health atHome. Tell us the funding source when you refer.
+  - Q: Can families refer directly, or only professionals?
+    A: Both. Healthcare professionals can use our referral form or call directly. Families are also welcome to contact us at any stage without a formal referral.
+
+### Your Care Plan | How Care Starts
+- URL: https://www.arcadiahomecare.ca/how-care-starts/your-care-plan/
+- FAQs:
+  - Q: What is included in an Arcadia care plan?
+    A: A care plan documents daily routines, medical context, personal preferences, family communication preferences, and goals of care. If you are wondering how do I see what is in the plan, you always have access. Do you update it when needs change? Yes.
+  - Q: Can families see and change the care plan?
+    A: Yes. The care plan is a living document. You can request changes at any time by contacting your Arcadia care manager, and you will always have visibility into what it contains.
+  - Q: How is the care plan used during visits?
+    A: Caregivers review the plan before each shift and document what was completed after every visit. Families ask who should receive updates when something changes. Your named care manager flags concerns the same day.
+  - Q: When is a care plan created?
+    A: The care plan is developed after the in-home care assessment, once we have a clear picture of your loved one's needs, routines, and goals.
+  - Q: Does the care plan get shared with doctors or Ontario Health atHome?
+    A: With your consent, relevant portions can be shared with physicians, Ontario Health atHome coordinators, or other providers involved in your loved one's care.
+
+## Site-Wide FAQs
+
+- Q: How quickly can home care start?
+  A: In many situations, care can begin within 24 to 72 hours after your initial consultation. Timing depends on urgency, care complexity, and caregiver matching needs.
+- Q: Do you support dementia and Alzheimer's care at home?
+  A: Yes. Arcadia specializes in dementia and Alzheimer's home care, including routine-based support, supervision, communication approaches, and caregiver consistency.
+- Q: Can you help after a hospital discharge?
+  A: Yes. We coordinate discharge transitions, home setup, personal care, mobility support, and follow-through so families are not left managing recovery alone.
+- Q: How are caregivers matched to my family?
+  A: We match based on care needs, clinical context, personality fit, communication style, and scheduling reliability. The goal is both safe care and a trusted relationship.
+- Q: Is home care available overnight or 24 hours?
+  A: Yes. Arcadia provides overnight and around-the-clock care for families who need continuous support or supervision.
+- Q: Is there public funding for home care in Ontario?
+  A: Some families qualify for publicly funded services through Ontario Health atHome programs. We can help you understand options and where private care may still be needed.
+- Q: Which areas do you serve?
+  A: Arcadia serves Toronto and the GTA, including York, Peel, Durham, and Halton regions.
+- Q: How do we get started?
+  A: Call (844) 977-0050 or book a free consultation through our contact page. We will discuss your situation, assess needs, and recommend a practical next step.
+- Q: Who should I call if my parent suddenly needs home care in Toronto?
+  A: Start by calling a home care provider that can assess urgency quickly and coordinate a safe first step. Arcadia can usually begin planning immediately and, when appropriate, start care within 24 to 72 hours.
+- Q: How much does home care cost per hour in Toronto and the GTA?
+  A: Rates vary based on care complexity, schedule, and whether support is daytime, overnight, or 24-hour. The clearest way to get accurate pricing is a short consultation based on your family's real needs.
+- Q: Can someone stay overnight with my mom or dad at home?
+  A: Yes. Overnight care is available for families who need supervision, safety monitoring, or support with night routines so primary caregivers can rest.
+- Q: Can you help if my parent has dementia and does not want a caregiver?
+  A: Yes. We often start with a gradual introduction and a personality-based match so support feels familiar instead of disruptive. Building trust slowly is usually more effective than forcing change.
+- Q: What is the fastest way to set up post-hospital care at home?
+  A: The fastest path is to call right away with discharge details, medications, mobility needs, and follow-up appointments. We can then coordinate a practical transition plan and caregiver schedule.
+- Q: Is Arcadia available on weekends and holidays?
+  A: Care can be arranged seven days a week, including weekends and holidays, based on your schedule and care requirements.
+- Q: Do you only serve downtown Toronto or the full GTA?
+  A: Arcadia serves families across Toronto and the Greater Toronto Area, including York, Peel, Durham, and Halton regions.
+- Q: Can I book a free consultation before making any decisions?
+  A: Absolutely. Consultations are no-obligation and designed to give families clarity, options, and a realistic care plan before they commit.
 
 ## Helpful Pages
 - How Care Starts: https://www.arcadiahomecare.ca/how-care-starts/
 - Contact: https://www.arcadiahomecare.ca/contact/
 - Referral Form: https://www.arcadiahomecare.ca/referral-form/
-- Locations: https://www.arcadiahomecare.ca/locations/
-- Resources: https://www.arcadiahomecare.ca/resources/
-- FAQ: https://www.arcadiahomecare.ca/faqs/
+- Locations hub: https://www.arcadiahomecare.ca/locations/
+- Resources hub: https://www.arcadiahomecare.ca/resources/
+- FAQ page: https://www.arcadiahomecare.ca/faqs/
 
 ## Trust Signals
 - Founded: 2005

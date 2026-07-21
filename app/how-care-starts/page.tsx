@@ -14,8 +14,65 @@ const steps = [
   { num: 7, title: "Ongoing Support", description: "We stay in touch as care continues — reviewing the care plan, adjusting as needs change, and making sure your family has the support that fits.", href: "/how-care-starts/ongoing-support/", icon: "🌱" },
 ]
 
+const faqs = [
+  {
+    q: 'How do I start home care with Arcadia?',
+    a: 'It begins with a free consultation. We listen to your situation, explain your options clearly, and if you decide to move forward, schedule an in-home care assessment within 24 to 48 hours.',
+  },
+  {
+    q: 'How long does it take from first call to care starting?',
+    a: 'Most families have a care assessment within 24 to 48 hours of first contact. Care often begins within a week of the assessment, and timelines can be compressed for urgent situations.',
+  },
+  {
+    q: 'Is there any obligation when I book a consultation?',
+    a: 'No. The first conversation is free and carries no commitment. We listen first, then help you understand what your loved one needs and whether Arcadia is the right fit.',
+  },
+  {
+    q: 'What happens during the care assessment?',
+    a: 'A care manager visits your loved one\'s home to understand daily routines, medical needs, safety risks, and personal preferences. This visit forms the basis of the care plan.',
+  },
+  {
+    q: 'How does Arcadia match caregivers to clients?',
+    a: 'We match based on clinical fit, personality, language, and cultural background, not just availability. You meet the caregiver before care begins and can request a change if the fit is not right.',
+  },
+  {
+    q: 'Can healthcare professionals refer patients to Arcadia?',
+    a: 'Yes. We work with discharge planners, social workers, physicians, and Ontario Health atHome coordinators across the GTA. Submit a referral online or call us directly for urgent cases.',
+  },
+]
+
 export default function HowCareStartsHubPage() {
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([
+            {
+              '@context': 'https://schema.org',
+              '@type': 'WebPage',
+              name: 'How Care Starts',
+              description: 'From your first call to ongoing support — what happens when you reach out to Arcadia Home Care.',
+              url: 'https://www.arcadiahomecare.ca/how-care-starts/',
+              publisher: {
+                '@type': 'Organization',
+                name: 'Arcadia Home Care',
+                url: 'https://www.arcadiahomecare.ca',
+              },
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: faqs.map((faq) => ({
+                '@type': 'Question',
+                name: faq.q,
+                acceptedAnswer: { '@type': 'Answer', text: faq.a },
+              })),
+            },
+          ]),
+        }}
+      />
+
     <main style={{ fontFamily: fonts.body, color: colors.text }}>
       <HeroTemplate
         eyebrow="How Care Starts"
@@ -100,6 +157,19 @@ export default function HowCareStartsHubPage() {
         </div>
       </section>
 
+      <section style={{ background: colors.white, padding: "72px 24px" }}>
+        <div style={{ maxWidth: 760, margin: "0 auto" }}>
+          <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: colors.accent, marginBottom: 12 }}>Frequently Asked Questions</p>
+          <h2 style={{ fontFamily: fonts.display, fontSize: "clamp(1.5rem, 2.5vw, 2rem)", fontWeight: 600, color: colors.primary, marginBottom: 24 }}>Common questions about starting care</h2>
+          {faqs.map((faq) => (
+            <div key={faq.q} style={{ borderBottom: `1px solid ${colors.border}`, padding: "20px 0" }}>
+              <h3 style={{ fontSize: 16, fontWeight: 700, color: colors.primary, margin: "0 0 10px", lineHeight: 1.5 }}>{faq.q}</h3>
+              <p style={{ fontSize: 15, color: colors.textLight, lineHeight: 1.8, margin: 0 }}>{faq.a}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* Bottom CTA */}
       <section style={{ background: colors.primary, padding: "80px 24px", textAlign: "center" }}>
         <div style={{ maxWidth: 640, margin: "0 auto" }}>
@@ -132,5 +202,6 @@ export default function HowCareStartsHubPage() {
       </section>
 
     </main>
+    </>
   )
 }

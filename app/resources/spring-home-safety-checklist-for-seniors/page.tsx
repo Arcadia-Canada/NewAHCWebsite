@@ -153,6 +153,33 @@ const assessmentTriggers = [
     'you know something has changed, but you are not sure what kind of help is needed',
 ]
 
+const faqs = [
+    {
+        q: 'When is the right time to do a spring home safety check for an aging parent?',
+        a: 'Spring is a practical time because longer daylight and tidying routines make it easier to notice what changed over winter. Many families spot clutter, mobility changes, or slipping routines when they walk through the home with fresh eyes.',
+    },
+    {
+        q: 'What are early signs that a parent may need more help at home?',
+        a: 'Common signs include a less safe home environment, inconsistent meals, disorganized medications, changes in personal care or housekeeping, reduced mobility, increasing isolation, or the feeling that something has shifted even if your parent insists everything is fine.',
+    },
+    {
+        q: 'When should a family consider home care after a home safety review?',
+        a: 'Home care may help when daily routines are becoming harder to manage, not only when the house itself needs modifications. Triggers often include meal inconsistency, medication slips, mobility changes, isolation, or caregiver stress that is becoming unsustainable.',
+    },
+    {
+        q: 'How do I talk to a parent about safety concerns without taking over?',
+        a: 'Lead with observation rather than judgment. Comments like noticing the stairs felt harder or wanting to make life easier often work better than framing the conversation as proof that independence is ending.',
+    },
+    {
+        q: 'When should we book a home care assessment?',
+        a: 'You do not need to wait for a fall or hospital visit. An assessment is appropriate when the home no longer feels consistently safe, routines are slipping, memory changes are emerging, or you know more support is needed but are unsure what kind.',
+    },
+    {
+        q: 'Does Arcadia help families across the GTA with home safety and care planning?',
+        a: 'Yes. Arcadia Home Care supports families in Toronto and the GTA with companion care, personal support, hospital discharge planning, and guidance on what level of help makes sense after a home safety review.',
+    },
+]
+
 function ChecklistGroup({
     title,
     items,
@@ -221,6 +248,18 @@ export default function SpringHomeSafetyChecklistPage() {
                                     item: pageUrl,
                                 },
                             ],
+                        },
+                        {
+                            '@context': 'https://schema.org',
+                            '@type': 'FAQPage',
+                            mainEntity: faqs.map((faq) => ({
+                                '@type': 'Question',
+                                name: faq.q,
+                                acceptedAnswer: {
+                                    '@type': 'Answer',
+                                    text: faq.a,
+                                },
+                            })),
                         },
                     ]),
                 }}
@@ -607,6 +646,38 @@ export default function SpringHomeSafetyChecklistPage() {
           max-width: 560px;
         }
 
+        .faq-section {
+          margin-top: 48px;
+          padding-top: 40px;
+          border-top: 1px solid #E5E0D8;
+        }
+
+        .faq-eyebrow {
+          font-size: 12px;
+          font-weight: 700;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          color: #C8302A;
+          margin-bottom: 12px;
+        }
+
+        .faq-item {
+          border-bottom: 1px solid #E5E0D8;
+          padding: 20px 0;
+        }
+
+        .faq-item h3 {
+          font-size: 1rem;
+          font-weight: 700;
+          color: #1C2B3A;
+          margin: 0 0 10px;
+          line-height: 1.5;
+        }
+
+        .faq-item p {
+          margin: 0;
+        }
+
         .cta-buttons {
           display: flex;
           justify-content: center;
@@ -947,6 +1018,17 @@ export default function SpringHomeSafetyChecklistPage() {
                                 <br />
                                 <Link href={internalLinks.contact}>Book a Free Consultation</Link>
                             </div>
+                        </section>
+
+                        <section className="section faq-section">
+                            <p className="faq-eyebrow">Frequently Asked Questions</p>
+                            <h2>Questions families ask about spring home safety</h2>
+                            {faqs.map((faq) => (
+                                <div key={faq.q} className="faq-item">
+                                    <h3>{faq.q}</h3>
+                                    <p>{faq.a}</p>
+                                </div>
+                            ))}
                         </section>
                     </article>
 

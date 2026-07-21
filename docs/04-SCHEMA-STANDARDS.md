@@ -203,6 +203,17 @@ The last item (the current page) does **not** include an `item` URL — it repre
 
 When an article includes a visible FAQ section, the FAQ must also be encoded in JSON-LD as `FAQPage`. **The visible FAQ and the schema FAQ must match exactly** — same questions, same answers, same wording. Mismatches are a Google policy violation.
 
+### Minimum requirements (resource articles)
+
+| Field | Requirement |
+|-------|-------------|
+| Question count | **6 minimum** (target 6–8). See `docs/07-VOICE-AND-TONE.md`. |
+| Voice-search phrasing | At least **2** natural spoken-query patterns in FAQ answer strings. See `docs/08-IMPLEMENTATION-BLUEPRINT.md` §3a. |
+| Verification | `npm run voice:report` — page must not appear in Priority Gaps. |
+| `llms.txt` | FAQs are ingested automatically by `scripts/sync-llms-txt.mjs` on commit/build; do not hand-edit `public/llms.txt`. |
+
+Prefer a single `const faqs` array rendered to both visible HTML and `mainEntity` so copy cannot drift.
+
 Each Q&A pair:
 
 ```json

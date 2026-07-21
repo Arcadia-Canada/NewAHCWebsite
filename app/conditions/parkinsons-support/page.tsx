@@ -1,11 +1,11 @@
 // app/conditions/parkinsons-support/page.tsx
 // Tier 3 condition page
-// Target keyword: "parkinsons care at home toronto" / "parkinson's support GTA"
-// Persona: adult child or spouse of someone with Parkinson's — the condition
+// Target keyword: "parkinsons care at home toronto" / "parkinsons support GTA"
+// Persona: adult child or spouse of someone with Parkinsons — the condition
 // has been diagnosed, the family is managing, but increasing symptoms are making
 // daily life harder and they are beginning to recognize that more structured
 // support is needed
-// Distinct angle: Parkinson's is progressive and predictable — the right support
+// Distinct angle: Parkinsons is progressive and predictable — the right support
 // adapts as the condition changes rather than waiting for a crisis
 // Tone: practical, calm, forward-looking — not urgent, not alarming
 // Schema: MedicalCondition + FAQPage + BreadcrumbList
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "What makes home care for Parkinson's different from general personal support?",
-    a: "Parkinson's presents a specific combination of physical and cognitive challenges that require caregivers who understand the condition. Motor fluctuations mean that a person's ability to move and function can change significantly across the day — a caregiver needs to recognize and work with those fluctuations rather than applying a fixed approach. Medication timing is critical and often complex. Fall risk is elevated and context-dependent. Communication changes and cognitive symptoms require patience and adapted approaches. These are not skills every personal support worker has without specific training.",
+    a: "Parkinson's presents a specific combination of physical and cognitive challenges that require caregivers who understand the condition. Motor fluctuations mean that a person's ability to move and function can change significantly across the day. Medication timing is critical. Families ask how do I find someone trained for these patterns. Do you match caregivers with Parkinsons experience? Yes, when clinical fit requires it.",
   },
   {
     q: "My parent is still quite independent. Is it too early to think about home care?",

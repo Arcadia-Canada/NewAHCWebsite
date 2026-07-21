@@ -18,19 +18,19 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: 'What conditions does rehabilitation support at home cover?',
-    a: 'Arcadia\'s Rehabilitation Support Workers support clients recovering from or living with a wide range of conditions — including acquired brain injury, stroke, spinal cord injury, work-related injury or illness, serious mental health diagnoses, and complex post-surgical recovery. The common thread is that the person has rehabilitation goals that require consistent support in their home and community environment, not just assistance with daily tasks.',
+    a: 'Arcadia\'s Rehabilitation Support Workers support clients recovering from or living with a wide range of conditions, including acquired brain injury, stroke, spinal cord injury, work-related injury or illness, serious mental health diagnoses, and complex post-surgical recovery. The common thread is that the person has rehabilitation goals that require consistent support in their home and community environment, not just assistance with daily tasks. Families ask how do I find rehabilitation support near me. Do you place RSWs across the GTA? Yes.',
   },
   {
     q: 'What is the difference between a Rehabilitation Support Worker and a Personal Support Worker?',
-    a: 'A Personal Support Worker assists with daily living tasks — personal care, meals, household management. A Rehabilitation Support Worker is trained to implement community rehabilitation programs under the supervision of licensed health professionals, with the goal of helping the client build or rebuild specific functional capabilities. RSW support is goal-directed and clinically supervised. PSW support is maintenance-oriented. Many clients benefit from both.',
+    a: 'A Personal Support Worker assists with daily living tasks: personal care, meals, household management. A Rehabilitation Support Worker is trained to implement community rehabilitation programs under the supervision of licensed health professionals, with the goal of helping the client build or rebuild specific functional capabilities. RSW support is goal-directed and clinically supervised. PSW support is maintenance-oriented. Many clients benefit from both.',
   },
   {
     q: 'Does the client need an existing rehabilitation team in place before engaging Arcadia?',
-    a: 'Not necessarily. Some clients come to us with an established team — an OT, physiotherapist, case manager — and we implement their program. Others come to us at an earlier stage, and we can help coordinate a referral to appropriate clinical services while providing support in the meantime. We work with whatever is in place and help fill the gaps.',
+    a: 'Not necessarily. Some clients come to us with an established team (an OT, physiotherapist, or case manager), and we implement their program. Others come to us at an earlier stage, and we can help coordinate a referral to appropriate clinical services while providing support in the meantime. We work with whatever is in place and help fill the gaps.',
   },
   {
     q: 'How does Arcadia coordinate with our OT, physiotherapist, or case manager?',
-    a: 'We operate as part of the treating team. Our RSWs implement programs developed by the treating professionals, document progress accurately, and communicate changes in the client\'s presentation promptly. We attend case conferences where appropriate and provide whatever reporting the team or insurer requires. Coordination is active, not nominal.',
+    a: 'We operate as part of the treating team. Our RSWs implement programs developed by the treating professionals, document progress accurately, and communicate changes in the client\'s presentation promptly. We attend case conferences where appropriate and provide whatever reporting the team or insurer requires. Coordination is active, not nominal. Can you coordinate with our physiotherapist or case manager? Yes.',
   },
   {
     q: 'Is rehabilitation support covered by insurance or WSIB in Ontario?',
@@ -38,7 +38,7 @@ const faqs = [
   },
   {
     q: 'How long does community rehabilitation support typically last?',
-    a: 'Duration varies significantly depending on the condition, the rehabilitation goals, and the person\'s rate of progress. Some clients receive intensive support for a defined post-discharge period; others benefit from ongoing maintenance support over a longer term. Arcadia does not lock families into fixed contracts — we build plans around the clinical situation and adjust as things change.',
+    a: 'Duration varies significantly depending on the condition, the rehabilitation goals, and the person\'s rate of progress. Some clients receive intensive support for a defined post-discharge period; others benefit from ongoing maintenance support over a longer term. Arcadia does not lock families into fixed contracts. We build plans around the clinical situation and adjust as things change.',
   },
 ]
 

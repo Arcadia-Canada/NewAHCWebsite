@@ -19,27 +19,27 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: 'What is the difference between overnight care and 24-hour care?',
-    a: 'Overnight care typically covers an evening-to-morning shift — usually around 10pm to 7am — providing supervision, safety monitoring, and assistance if the person wakes and needs help during the night. 24-hour care means continuous coverage around the clock, usually with two or more caregivers working in shifts. The right arrangement depends on how intensive the nighttime needs are and whether daytime support is also needed.',
+    a: 'Overnight care typically covers an evening-to-morning shift, usually around 10pm to 7am, providing supervision, safety monitoring, and assistance if the person wakes and needs help during the night. 24-hour care means continuous coverage around the clock, usually with two or more caregivers working in shifts. The right arrangement depends on how intensive the nighttime needs are and whether daytime support is also needed.',
   },
   {
     q: 'What does an overnight caregiver actually do during the night?',
-    a: 'It depends on the person\'s needs. For some clients, the overnight caregiver is primarily present and alert — available if needed but not actively providing hands-on care through the night. For others — particularly those with dementia, palliative needs, or significant mobility challenges — the overnight caregiver may be assisting with toileting, repositioning, comfort care, or responding to distress multiple times during the night. We build the overnight plan around what the specific situation requires.',
+    a: 'It depends on the person\'s needs. For some clients, the overnight caregiver is primarily present and alert, available if needed but not actively providing hands-on care through the night. For others, particularly those with dementia, palliative needs, or significant mobility challenges, the overnight caregiver may be assisting with toileting, repositioning, comfort care, or responding to distress multiple times during the night. We build the overnight plan around what the specific situation requires.',
   },
   {
     q: 'We have dementia-related nighttime wandering. Can Arcadia handle that?',
-    a: 'Yes. Nighttime wandering is one of the most common reasons families contact Arcadia for overnight care. Our overnight caregivers for dementia clients are trained in safe redirection and de-escalation approaches — keeping the person calm and safe without confrontation or restraint. We also help families think through home environment adjustments that can reduce wandering risk alongside the caregiver presence.',
+    a: 'Yes. Nighttime wandering is one of the most common reasons families contact Arcadia for overnight care. Our overnight caregivers for dementia clients are trained in safe redirection and de-escalation approaches, keeping the person calm and safe without confrontation or restraint. We also help families think through home environment adjustments that can reduce wandering risk alongside the caregiver presence.',
   },
   {
     q: 'I am the primary caregiver and I am not sleeping. How quickly can overnight support be arranged?',
-    a: 'In most cases we can begin the process quickly after a first conversation — call us directly and we will give you an honest picture of what is possible. If the situation is urgent — if you are at a point where your own health is at risk from sleep deprivation — call us directly. We will prioritize the conversation and move as quickly as we can.',
+    a: 'In most cases we can begin the process quickly after a first conversation. Call us directly and we will give you an honest picture of what is possible. If the situation is urgent, or you are at a point where your own health is at risk from sleep deprivation, call us directly. We will prioritize the conversation and move as quickly as we can. Families ask how do I arrange overnight care near me in Toronto. What is the fastest way to get coverage? Call us and we will outline realistic timelines.',
   },
   {
     q: 'Can overnight care be part of a broader care plan that also includes daytime support?',
-    a: 'Yes — and this is common. Many clients receive daytime personal support or companion care alongside overnight coverage. Arcadia coordinates the full care plan, ensures handover between day and night caregivers is clear, and maintains consistent communication with the family across all shifts.',
+    a: 'Yes, and this is common. Many clients receive daytime personal support or companion care alongside overnight coverage. Arcadia coordinates the full care plan, ensures handover between day and night caregivers is clear, and maintains consistent communication with the family across all shifts. Do you provide 24-hour care when someone cannot be left alone? Yes, when clinically appropriate.',
   },
   {
     q: 'How does Arcadia ensure overnight caregiver quality when family members are asleep?',
-    a: 'Overnight caregivers are selected specifically for this work — the temperament and attentiveness required for overnight care is different from daytime caregiving. We brief them thoroughly before the first shift and conduct follow-up after initial nights. We also have clear protocols for what to do in an emergency — who to call, in what order, what to communicate to the family.',
+    a: 'Overnight caregivers are selected specifically for this work. The temperament and attentiveness required for overnight care is different from daytime caregiving. We brief them thoroughly before the first shift and conduct follow-up after initial nights. We also have clear protocols for what to do in an emergency: who to call, in what order, what to communicate to the family.',
   },
 ]
 

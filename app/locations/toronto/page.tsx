@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "How quickly can Arcadia start providing care in Toronto?",
-    a: "In most cases, we can complete a care assessment within 24–48 hours and have a caregiver in place shortly after. For urgent situations — such as a hospital discharge — we prioritize same-day or next-day starts.",
+    a: "In most cases, we can complete a care assessment within 24–48 hours and have a caregiver in place shortly after. If you need home care near me in Toronto, we match local caregivers. Do you serve all Toronto neighbourhoods? Yes, including North York, Scarborough, and Etobicoke.",
   },
   {
     q: "Do your caregivers travel across Toronto, or are they local to specific areas?",

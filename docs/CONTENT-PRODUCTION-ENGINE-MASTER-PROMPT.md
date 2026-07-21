@@ -111,7 +111,7 @@ Output the brief first. Do not draft until the brief is complete. The brief cont
 - H1 targets the search intent; logical H2/H3 hierarchy; conversational question phrasing in headings where natural.
 - Short answer summaries and clear definitions for key terms; comparison tables and step-by-step sections where the topic genuinely calls for them.
 - Entity-rich, topically connected wording — related services, adjacent situations, decision factors, risks, benefits, stakeholders, local Ontario context.
-- FAQ section (3–6 questions, schema-ready, only questions genuinely asked).
+- FAQ section (**6–8 questions** for resource articles, schema-ready, only questions genuinely asked; at least 2 conversational voice-search phrases in answers — see `docs/08-IMPLEMENTATION-BLUEPRINT.md` §3a).
 - Natural keyword placement — primary keyword in title, H1, opening answer, and organically thereafter. No density chasing, no stuffing.
 - Banned filler: "In today's fast-paced world," "As we all know," "Unlock the power of," "game-changer," generic intros, unsupported superlatives, "compassionate, personalized care" and equivalent beige claims.
 - Internal links: parent cluster hub, 1–2 siblings, one service/condition page — only where intent supports it. Natural, varied anchor text. No self-links.
@@ -134,7 +134,7 @@ Score the draft 1–5 on each; anything ≤3 must be revised before output is fi
 4. Brand fit — voice layer rules all pass (check each explicitly)
 5. Readability — plain language, no jargon leaks
 6. SEO basics — title, meta, H-hierarchy, slug, internal links, alt text present
-7. AEO readiness — extractable opening answer, clean definitions, FAQ quality
+7. AEO readiness — extractable opening answer, clean definitions, FAQ quality (6+ Q&As, voice-search phrasing, FAQPage matches visible text)
 8. E-E-A-T — experience signals, reviewer line present, transparent sourcing, limitations stated, "when to seek professional help" included where relevant
 9. Conversion strength — CTA matches role and stage; objection handled
 10. Compliance — no diagnosis, no guarantees, cautious language on flagged topics, disclaimer present
@@ -167,6 +167,8 @@ Add `reviewedBy` (name + credential of [CLINICAL_REVIEWER]) to Article/MedicalWe
 ☐ Keyword owner confirmed in Sheet
 ☐ URL follows site convention (`/resources/[cluster]/[slug]/` for HC); slug is permanent
 ☐ Schema validated (Rich Results Test)
+☐ FAQ: 6+ questions, visible text matches FAQPage JSON-LD; `npm run voice:report` shows no Priority Gap for this URL
+☐ `public/llms.txt` will update via pre-commit or `npm run sync:llms` (do not hand-edit)
 ☐ Metadata complete; self-referencing canonical; breadcrumbs correct
 ☐ Internal links added **and 1–2 existing articles updated to link back to this one**
 ☐ Sitemap updated; indexing requested

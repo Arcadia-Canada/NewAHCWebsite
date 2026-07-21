@@ -17,6 +17,29 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://www.arcadiahomecare.ca/how-care-starts/care-begins/' },
 }
 
+const faqs = [
+  {
+    q: 'What if the first visit does not go well?',
+    a: 'Call us the same day. A first visit that does not go well is not a sign that care will not work. It is information we need to act on. If you are wondering how do I know whether to give it more time, we help you decide. Do you adjust quickly when something is off? Yes.',
+  },
+  {
+    q: 'How involved should family members be during the first visits?',
+    a: 'Present but not hovering. Being there for the introduction is helpful. Families often ask who should stay for the first visit. Usually one informed family member is enough. Remaining in the background after that gives the caregiver and your parent space to connect.',
+  },
+  {
+    q: 'What if the person refuses to let the caregiver in?',
+    a: 'This happens, particularly with clients who have dementia or who have not fully accepted that they need help. Our team can advise on approaches that tend to work, and we have experience navigating this with families. It usually requires patience and sometimes a change in approach, but it can often be worked through.',
+  },
+  {
+    q: 'How will I know if the care plan is being followed?',
+    a: 'Your caregiver documents their visits and our team reviews that documentation. You can ask for updates at any time, and we check in with families proactively in the first weeks. If you feel you are not getting the information you need, tell us.',
+  },
+  {
+    q: 'When does care stop feeling new?',
+    a: 'For most clients, the care relationship starts to feel settled and routine within the first month. By six weeks, most families describe the arrangement as something they have stopped thinking about in anxious terms — it has settled into the rhythm of the household.',
+  },
+]
+
 export default function CareBeginsPage() {
   return (
     <>
@@ -52,6 +75,15 @@ export default function CareBeginsPage() {
                 { '@type': 'ListItem', 'position': 2, 'name': 'How Care Starts', 'item': 'https://www.arcadiahomecare.ca/how-care-starts/' },
                 { '@type': 'ListItem', 'position': 3, 'name': 'Care Begins', 'item': 'https://www.arcadiahomecare.ca/how-care-starts/care-begins/' },
               ],
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: faqs.map((faq) => ({
+                '@type': 'Question',
+                name: faq.q,
+                acceptedAnswer: { '@type': 'Answer', text: faq.a },
+              })),
             },
           ]),
         }}
@@ -366,28 +398,7 @@ export default function CareBeginsPage() {
 
             <h2>Common questions about the first week</h2>
 
-            {[
-              {
-                q: 'What if the first visit does not go well?',
-                a: 'Call us the same day. A first visit that does not go well is not a sign that care will not work — it is information we need to understand and act on. Sometimes the issue is the approach, sometimes the timing, sometimes the match. We find out which and respond accordingly.',
-              },
-              {
-                q: 'How involved should family members be during the first visits?',
-                a: 'Present but not hovering. Being there for the introduction is helpful. Remaining in the background or leaving entirely after the first visit or two gives the caregiver and the person the space to build their own relationship — which is the foundation of good ongoing care.',
-              },
-              {
-                q: 'What if the person refuses to let the caregiver in?',
-                a: 'This happens, particularly with clients who have dementia or who have not fully accepted that they need help. Our team can advise on approaches that tend to work, and we have experience navigating this with families. It usually requires patience and sometimes a change in approach, but it can often be worked through.',
-              },
-              {
-                q: 'How will I know if the care plan is being followed?',
-                a: 'Your caregiver documents their visits and our team reviews that documentation. You can ask for updates at any time, and we check in with families proactively in the first weeks. If you feel you are not getting the information you need, tell us.',
-              },
-              {
-                q: 'When does care stop feeling new?',
-                a: 'For most clients, the care relationship starts to feel settled and routine within the first month. By six weeks, most families describe the arrangement as something they have stopped thinking about in anxious terms — it has settled into the rhythm of the household.',
-              },
-            ].map((faq, i) => (
+            {faqs.map((faq, i) => (
               <div key={i} className="faq-item">
                 <div className="faq-q">{faq.q}</div>
                 <div className="faq-a">{faq.a}</div>

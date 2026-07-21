@@ -49,6 +49,29 @@ const TRUST_BAR_ITEMS = [
   { icon: '\uD83D\uDCDE', text: 'Available 7 Days a Week' },
 ];
 
+const faqs = [
+  {
+    q: 'What does Arcadia Home Care do?',
+    a: 'Arcadia provides specialized in-home care for seniors and families across Toronto and the GTA. Services include dementia care, acquired brain injury support, rehabilitation, hospital discharge coordination, palliative care, personal support, companion care, respite, and case management.',
+  },
+  {
+    q: 'What areas does Arcadia serve?',
+    a: 'We serve Toronto (North York, Scarborough, Etobicoke), York Region, Peel Region, Durham Region, and Halton Region across the Greater Toronto Area. If you are searching for home care near me in Toronto or the suburbs, we likely serve your area. We have been supporting GTA families since 2005.',
+  },
+  {
+    q: 'How do I start home care with Arcadia?',
+    a: 'Call us or book a free consultation. We listen to your situation, explain your options clearly, and if you decide to move forward, schedule an in-home care assessment within 24 to 48 hours. There is no obligation.',
+  },
+  {
+    q: 'Does Arcadia specialize in dementia care?',
+    a: 'Yes. Dementia and Alzheimer\'s home care is one of our most requested services. Our caregivers receive dementia-specific training and are matched based on clinical fit, personality, and language.',
+  },
+  {
+    q: 'Is the first consultation free?',
+    a: 'Yes. The first conversation is free and carries no commitment. Do you have questions before you call? We help you understand what your loved one needs and whether Arcadia is the right fit for your family.',
+  },
+];
+
 function StarRating() {
   return (
     <div style={{ display: 'flex', gap: 2 }}>
@@ -331,6 +354,23 @@ function CTASection() {
   );
 }
 
+function FaqSection() {
+  return (
+    <section style={{ background: colors.warm, padding: '80px 24px', borderTop: `1px solid ${colors.border}` }}>
+      <div style={{ maxWidth: 760, margin: '0 auto' }}>
+        <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: colors.accent, marginBottom: 12 }}>Frequently Asked Questions</p>
+        <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.5rem, 2.5vw, 2rem)', fontWeight: 600, color: colors.primary, marginBottom: 24 }}>Common questions about Arcadia Home Care</h2>
+        {faqs.map((faq) => (
+          <div key={faq.q} style={{ borderBottom: `1px solid ${colors.border}`, padding: '20px 0' }}>
+            <h3 style={{ fontSize: 16, fontWeight: 700, color: colors.primary, margin: '0 0 10px', lineHeight: 1.5 }}>{faq.q}</h3>
+            <p style={{ fontSize: 15, color: colors.textLight, lineHeight: 1.8, margin: 0 }}>{faq.a}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 export default function Home() {
   return (
     <>
@@ -496,6 +536,15 @@ export default function Home() {
           ],
         },
       },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: faqs.map((faq) => ({
+          '@type': 'Question',
+          name: faq.q,
+          acceptedAnswer: { '@type': 'Answer', text: faq.a },
+        })),
+      },
     ]),
   }}
 />
@@ -508,6 +557,7 @@ export default function Home() {
       <TestimonialsCarousel />
       <ReferralSection />
       <LocationsSection />
+      <FaqSection />
       <CTASection />
     </main>
     </>

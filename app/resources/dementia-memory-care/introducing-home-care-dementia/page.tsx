@@ -37,7 +37,7 @@ export default function IntroducingHomeCareArticlePage() {
                   name: 'What if my parent with dementia refuses all help?',
                   acceptedAnswer: {
                     '@type': 'Answer',
-                    text: "Refusal is extremely common, especially in early and mid-stage dementia. The strategies that tend to work best involve reframing the help as companionship rather than care, starting with very small amounts of time, and letting the caregiver build a relationship before taking on personal care tasks. If refusal is absolute and safety is at risk, a conversation with the doctor or a social worker can help assess next steps.",
+                    text: "Refusal is extremely common, especially in early and mid-stage dementia. The strategies that tend to work best involve reframing the help as companionship rather than care, starting with very small amounts of time, and letting the caregiver build a relationship before taking on personal care tasks. If refusal is absolute and safety is at risk, a conversation with the doctor or a social worker can help assess next steps. Do you help families introduce caregivers gradually? Yes. Can you match someone before personal care begins? We often start with companionship.",
                   },
                 },
                 {
@@ -45,7 +45,7 @@ export default function IntroducingHomeCareArticlePage() {
                   name: 'Should I tell my parent with dementia that a caregiver is coming?',
                   acceptedAnswer: {
                     '@type': 'Answer',
-                    text: "It depends on the stage. In early dementia, advance notice is usually helpful. In mid to late dementia, telling someone too far in advance can cause repeated anxiety as they forget and re-learn the information. Many families find it works better to mention it shortly before the caregiver arrives — or in some cases, to frame it as a friend visiting.",
+                    text: "It depends on the stage. In early dementia, advance notice is usually helpful. In mid to late dementia, telling someone too far in advance can cause repeated anxiety as they forget and re-learn the information. Many families find it works better to mention it shortly before the caregiver arrives, or in some cases, to frame it as a friend visiting.",
                   },
                 },
                 {
@@ -53,7 +53,7 @@ export default function IntroducingHomeCareArticlePage() {
                   name: 'How long does it take for a parent with dementia to accept a caregiver?',
                   acceptedAnswer: {
                     '@type': 'Answer',
-                    text: "It varies widely — from a few visits to several weeks. Consistency matters enormously: the same caregiver, at the same time, doing the same routine builds familiarity that dementia-affected brains can often retain even when episodic memory is poor. Arcadia prioritizes caregiver consistency for this reason.",
+                    text: "It varies widely: from a few visits to several weeks. Consistency matters enormously: the same caregiver, at the same time, doing the same routine builds familiarity that dementia-affected brains can often retain even when episodic memory is poor. Arcadia prioritizes caregiver consistency for this reason.",
                   },
                 },
                 {
@@ -61,7 +61,7 @@ export default function IntroducingHomeCareArticlePage() {
                   name: "My parent thinks they don't need help. How do I handle that?",
                   acceptedAnswer: {
                     '@type': 'Answer',
-                    text: "Lack of insight into one's own limitations is a common symptom of dementia — not stubbornness. Rather than arguing about whether help is needed, focus on small, specific tasks: 'I'd feel better knowing someone checks in while I'm at work.' Lead with your own feelings and needs, not with what your parent is failing to do.",
+                    text: "Lack of insight into one's own limitations is a common symptom of dementia, not stubbornness. Rather than arguing about whether help is needed, focus on small, specific tasks: 'I'd feel better knowing someone checks in while I'm at work.' Lead with your own feelings and needs, not with what your parent is failing to do.",
                   },
                 },
               ],
@@ -334,7 +334,9 @@ export default function IntroducingHomeCareArticlePage() {
                   that tend to work best involve reframing the help as companionship rather than care,
                   starting with very small amounts of time, and letting the caregiver build a relationship
                   before taking on personal care tasks. If refusal is absolute and safety is at risk, a
-                  conversation with the doctor or a social worker can help assess next steps.
+                  conversation with the doctor or a social worker can help assess next steps. Do you help
+                  families introduce caregivers gradually? Yes. Can you match someone before personal care
+                  begins? We often start with companionship.
                 </div>
               </div>
 
@@ -344,14 +346,14 @@ export default function IntroducingHomeCareArticlePage() {
                   It depends on the stage. In early dementia, advance notice is usually helpful. In mid
                   to late dementia, telling someone too far in advance can cause repeated anxiety as they
                   forget and re-learn the information. Many families find it works better to mention it
-                  shortly before the caregiver arrives — or in some cases, to frame it as a friend visiting.
+                  shortly before the caregiver arrives, or in some cases, to frame it as a friend visiting.
                 </div>
               </div>
 
               <div className="faq-item">
                 <div className="faq-q">How long does it take for a parent with dementia to accept a caregiver?</div>
                 <div className="faq-a">
-                  It varies widely — from a few visits to several weeks. Consistency matters enormously:
+                  It varies widely: from a few visits to several weeks. Consistency matters enormously:
                   the same caregiver, at the same time, doing the same routine builds familiarity that
                   dementia-affected brains can often retain even when episodic memory is poor. Arcadia
                   prioritizes caregiver consistency for this reason.
@@ -361,7 +363,7 @@ export default function IntroducingHomeCareArticlePage() {
               <div className="faq-item">
                 <div className="faq-q">My parent thinks they don't need help. How do I handle that?</div>
                 <div className="faq-a">
-                  Lack of insight into one's own limitations is a common symptom of dementia — not
+                  Lack of insight into one's own limitations is a common symptom of dementia, not
                   stubbornness. Rather than arguing about whether help is needed, focus on small, specific
                   tasks: "I'd feel better knowing someone checks in while I'm at work." Lead with your
                   own feelings and needs, not with what your parent is failing to do.

@@ -39,9 +39,51 @@ const screeningItems = [
   { icon: '💼', title: 'Above-Average Retention', body: 'Our caregivers stay with Arcadia because they experience that we genuinely care for our staff — just as we care for our clients.' },
 ]
 
+const faqs = [
+  {
+    q: 'How does Arcadia screen and vet caregivers?',
+    a: 'Every caregiver undergoes a thorough application process, reference checks, and a Vulnerable Sector Police Check before joining the team. Families often ask how do I know who will be in the home. We also verify certifications and conduct skills assessments.',
+  },
+  {
+    q: 'What training do Arcadia caregivers receive?',
+    a: 'Caregivers receive high-quality orientation and ongoing education in dementia, brain injury, and complex care. All care is clinically supervised by our Clinical Director and Client Care Manager.',
+  },
+  {
+    q: 'How does Arcadia match caregivers to clients?',
+    a: 'We match based on clinical fit, personality, language, and cultural background, not just availability. Do you want to meet the caregiver before care begins? You can, and you can request a change if the fit is not right.',
+  },
+  {
+    q: 'How long has Arcadia been serving Toronto families?',
+    a: 'Arcadia Home Care has been supporting GTA families since 2005. Our above-average caregiver retention means many clients keep the same caregiver for months or years.',
+  },
+]
+
 export default function AboutPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([
+            {
+              '@context': 'https://schema.org',
+              '@type': 'AboutPage',
+              name: 'About Arcadia Home Care',
+              url: 'https://www.arcadiahomecare.ca/about/',
+              publisher: { '@type': 'Organization', name: 'Arcadia Home Care', url: 'https://www.arcadiahomecare.ca' },
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: faqs.map((faq) => ({
+                '@type': 'Question',
+                name: faq.q,
+                acceptedAnswer: { '@type': 'Answer', text: faq.a },
+              })),
+            },
+          ]),
+        }}
+      />
       <style>{`
         .about-page { font-family: 'DM Sans', system-ui, sans-serif; color: #2D2D2D; }
         .intro-eyebrow { font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #C8302A; margin-bottom: 14px; }
@@ -68,6 +110,11 @@ export default function AboutPage() {
         .join-section h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(2rem, 4vw, 3rem); font-weight: 600; color: #fff; max-width: 640px; margin: 0 auto 16px; line-height: 1.2; }
         .join-section p { color: rgba(255,255,255,0.7); font-size: 1rem; max-width: 480px; margin: 0 auto 36px; line-height: 1.75; }
         .join-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+        .page-faq { max-width: 760px; margin: 0 auto; padding: 80px 24px; }
+        .page-faq h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(1.5rem, 2.5vw, 2rem); font-weight: 600; color: #1C2B3A; margin-bottom: 24px; }
+        .page-faq-item { border-bottom: 1px solid #E5E0D8; padding: 20px 0; }
+        .page-faq-item h3 { font-size: 1rem; font-weight: 700; color: #1C2B3A; margin: 0 0 10px; line-height: 1.5; }
+        .page-faq-item p { font-size: 0.9375rem; color: #4B5563; line-height: 1.8; margin: 0; }
       `}</style>
 
       <main className="about-page">
@@ -156,6 +203,17 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
+
+        <section className="page-faq">
+          <p className="intro-eyebrow">Frequently Asked Questions</p>
+          <h2>Common questions about our caregivers</h2>
+          {faqs.map((faq) => (
+            <div key={faq.q} className="page-faq-item">
+              <h3>{faq.q}</h3>
+              <p>{faq.a}</p>
+            </div>
+          ))}
+        </section>
 
         {/* Join team CTA */}
         <section className="join-section">

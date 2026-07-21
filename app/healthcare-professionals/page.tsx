@@ -9,6 +9,25 @@ export const metadata: Metadata = {
   },
 }
 
+const faqs = [
+  {
+    q: 'How do I refer a patient to Arcadia Home Care?',
+    a: 'Submit a referral through our online form or call (844) 977-0050 directly. Include client name, address, primary diagnosis, anticipated start date, and your contact details. We respond within one business day.',
+  },
+  {
+    q: 'What clinical specialties does Arcadia accept referrals for?',
+    a: 'We accept referrals for dementia and Alzheimer\'s care, acquired brain injury, palliative care, post-surgical recovery, hospital discharge support, and rehabilitation. See our services page for the full list.',
+  },
+  {
+    q: 'How quickly does Arcadia respond to professional referrals?',
+    a: 'We review referrals within one business day and often sooner for urgent discharges. For time-sensitive cases, calling directly and identifying yourself as a referring professional is the fastest route.',
+  },
+  {
+    q: 'Will Arcadia keep me updated after I refer a patient?',
+    a: 'Yes. We maintain ongoing communication with referring teams, including progress notes, changes in presentation, and any concerns, on a schedule that works for you.',
+  },
+]
+
 export default function HealthcareProfessionalsPage() {
   return (
     <>
@@ -65,6 +84,15 @@ export default function HealthcareProfessionalsPage() {
                 { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.arcadiahomecare.ca/' },
                 { '@type': 'ListItem', position: 2, name: 'Healthcare Professionals', item: 'https://www.arcadiahomecare.ca/healthcare-professionals/' },
               ],
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: faqs.map((faq) => ({
+                '@type': 'Question',
+                name: faq.q,
+                acceptedAnswer: { '@type': 'Answer', text: faq.a },
+              })),
             },
           ]),
         }}
@@ -138,6 +166,12 @@ export default function HealthcareProfessionalsPage() {
         .sidebar-link:last-child { border-bottom: none; }
         .sidebar-link:hover { color: #C8302A; }
         .sidebar-link::before { content: '→'; color: #C8302A; font-size: 13px; }
+
+        .page-faq { margin-top: 56px; padding-top: 40px; border-top: 1px solid #E5E0D8; }
+        .page-faq h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(1.5rem, 2.5vw, 2rem); font-weight: 600; color: #1C2B3A; margin-bottom: 24px; }
+        .page-faq-item { border-bottom: 1px solid #E5E0D8; padding: 20px 0; }
+        .page-faq-item h3 { font-size: 1rem; font-weight: 700; color: #1C2B3A; margin: 0 0 10px; line-height: 1.5; }
+        .page-faq-item p { font-size: 0.9375rem; color: #4B5563; line-height: 1.8; margin: 0; }
 
         .info-box { background: #EEF2F7; border-radius: 10px; padding: 20px 24px; margin: 28px 0; font-size: 0.9rem; color: #4B5563; line-height: 1.75; }
         .info-box strong { color: #1C2B3A; }
@@ -372,6 +406,17 @@ export default function HealthcareProfessionalsPage() {
                 <a href="tel:+18449770050" className="btn-outline-lg" style={{ color: '#ffffff' }} aria-label="Call Arcadia now">Call Now</a>
               </div>
             </div>
+
+            <section className="page-faq">
+              <p className="pro-eyebrow" style={{ color: '#C8302A' }}>Frequently Asked Questions</p>
+              <h2>Common questions from referring professionals</h2>
+              {faqs.map((faq) => (
+                <div key={faq.q} className="page-faq-item">
+                  <h3>{faq.q}</h3>
+                  <p>{faq.a}</p>
+                </div>
+              ))}
+            </section>
 
           </div>
 

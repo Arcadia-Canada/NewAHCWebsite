@@ -4,6 +4,8 @@ Copy any block below into Cursor chat when you want the assistant to follow Arca
 
 Last updated: 2026-07-06 — integrated master prompt workflow with brief-approval checkpoint, added reframe-sourcing and UTM rules to social kit prompt, added pre-run reservation check, tightened doc-reading list.
 
+**Article implementation spec:** `docs/08-IMPLEMENTATION-BLUEPRINT.md` §3a (FAQ count, voice-search phrasing, `llms.txt` auto-sync).
+
 ---
 
 ## Master prompt article run (PRIMARY WORKFLOW)
@@ -11,7 +13,7 @@ Last updated: 2026-07-06 — integrated master prompt workflow with brief-approv
 ```
 Following AI-CONTEXT.md and docs/: produce the full article package for the variables below using docs/CONTENT-PRODUCTION-ENGINE-MASTER-PROMPT.md as the governing process.
 
-Read in full: docs/CONTENT-PRODUCTION-ENGINE-MASTER-PROMPT.md, docs/02-CONTENT-CLUSTERS.md, docs/07-VOICE-AND-TONE.md, docs/AUTHORITY-MAP.md, docs/03-INTERNAL-LINKING-RULES.md.
+Read in full: docs/CONTENT-PRODUCTION-ENGINE-MASTER-PROMPT.md, docs/02-CONTENT-CLUSTERS.md, docs/07-VOICE-AND-TONE.md, docs/AUTHORITY-MAP.md, docs/03-INTERNAL-LINKING-RULES.md, docs/08-IMPLEMENTATION-BLUEPRINT.md (§3a FAQ + voice-search + llms.txt).
 Reference as needed: docs/05-URL-CONVENTIONS.md, docs/04-SCHEMA-STANDARDS.md, docs/CLUSTERLINKMAP.md.
 Do NOT read /social/ or any *-PROD.html / *-DEV.html files.
 
@@ -26,6 +28,9 @@ Hard rules — non-negotiable:
 - Propose internal links only to URLs live on arcadiahomecare.ca.
 - If anything conflicts with governance docs (keyword owner, cluster, URL, voice, schema), flag before drafting and propose the governance-compliant version.
 - Clinical/legal/financial claims must cite sources or carry [REVIEW] flags. No hedged claims without hedge language ("may," "often," "in many cases").
+- Resource articles: minimum 6 FAQ questions with matching FAQPage JSON-LD; at least 2 conversational voice-search phrases in FAQ answers (see docs/08-IMPLEMENTATION-BLUEPRINT.md §3a).
+- Article audience in schema and copy must match [TARGET_AUDIENCE] and cluster persona (docs/02-CONTENT-CLUSTERS.md).
+- Do not hand-edit public/llms.txt; it auto-syncs on commit/build when FAQ/schema changes (docs/PRECOMMIT-HOOK.md).
 
 RUNTIME VARIABLES (fill before pasting):
 [SITE]                HC | REHAB | ECC
@@ -58,7 +63,30 @@ RUNTIME VARIABLES (fill before pasting):
 
 ---
 
-## Pre-run reservation and conflict check
+## New resource article — implement in Next.js (after brief approval)
+
+```
+Per docs/08-IMPLEMENTATION-BLUEPRINT.md: implement [ARTICLE SLUG] in app/resources/[cluster]/[slug]/page.tsx.
+
+Requirements:
+- Article + BreadcrumbList + FAQPage + HomeHealthCare JSON-LD
+- const faqs array (6+ Q&As) mapped to both schema and visible .faq-section
+- Article.audience.audienceType = [TARGET_AUDIENCE from brief]
+- Voice per docs/07-VOICE-AND-TONE.md; cluster persona per docs/02-CONTENT-CLUSTERS.md
+- At least 2 conversational phrases in FAQ answers (how do i, do you, can you, near me, etc. — see §3a)
+- No em dashes; no links to Coming Soon stubs
+
+After page.tsx:
+1. npm run voice:report — confirm this URL is not in Priority Gaps
+2. Update cluster hub (status: live), sitemap, AUTHORITY-MAP
+3. Commit — pre-commit should stage public/llms.txt if hooks installed
+
+Do not hand-edit public/llms.txt.
+```
+
+**How to use:** Run in Phase 2 after the content brief is approved. Replaces ad-hoc "write the page" instructions.
+
+---
 
 ```
 Before I draft [ARTICLE TITLE] targeting [PRIMARY KEYWORD]: check the local docs for conflicts. Search docs/10-KEYWORD-OWNERSHIP.md, docs/AUTHORITY-MAP.md, and docs/CLUSTERLINKMAP.md for any existing article or planned topic that targets or overlaps [PRIMARY KEYWORD]. Also check docs/CLUSTERLINKMAP.md to confirm [LIVE_CLUSTER] is an approved existing cluster (no Net New clusters). Report only — do not draft. I will verify the Governance Master Sheet separately and then run the master prompt article workflow.
@@ -180,5 +208,7 @@ Before using these prompts regularly:
 ---
 
 ## Last updated
+
+2026-07-21 — Added §3a (FAQ, voice-search, llms.txt), new "implement in Next.js" prompt block, master-prompt hard rules for FAQs/llms/audience.
 
 2026-07-06 — Integrated master-prompt runner as primary workflow with brief-approval checkpoint. Added pre-run reservation check for local doc conflicts. Updated social kit prompt with reframe-sourcing rule and UTM mandate. Clarified that social captions from fear-based claims reduce help-seeking in adult-children caregivers; reframes enable decisions. Kept conflict-flagging, after-publish inventory, quarterly review, schema updates, and drift checks unchanged — all sound.

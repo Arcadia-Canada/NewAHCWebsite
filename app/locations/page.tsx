@@ -16,12 +16,36 @@ const locations = [
   { label: "Etobicoke",   href: "/locations/toronto/etobicoke-home-care/",    icon: "📍" },
 ]
 
+const faqs = [
+  {
+    q: 'What areas does Arcadia Home Care serve?',
+    a: 'Arcadia serves Toronto (including North York, Scarborough, and Etobicoke), York Region, Peel Region, Durham Region, and Halton Region across the Greater Toronto Area. If you need home care near me in the GTA, call to confirm your neighbourhood.',
+  },
+  {
+    q: 'Does Arcadia have caregivers in my neighbourhood?',
+    a: 'We match caregivers who are local to your area. Local caregivers know neighbourhood resources, hospital systems, and transit options, which makes care more consistent and responsive.',
+  },
+  {
+    q: 'Which hospitals does Arcadia coordinate with?',
+    a: 'We coordinate regularly with Mount Sinai, UHN, Toronto Western, Sunnybrook, North York General, Scarborough Health Network, Humber River Hospital, and Trillium Health Partners.',
+  },
+  {
+    q: 'Can Arcadia help after a hospital discharge in the GTA?',
+    a: 'Yes. Hospital discharge support is one of our core services. We work with discharge planners across the GTA and can often start a care assessment within 24 to 48 hours of contact.',
+  },
+  {
+    q: 'How do I find home care in my specific Toronto neighbourhood?',
+    a: 'Browse our location pages for Toronto, North York, Scarborough, and Etobicoke. If you are wondering how do I find care in my specific neighbourhood, we confirm service availability when you call.',
+  },
+]
+
 export default function LocationsHubPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([
         { "@context": "https://schema.org", "@type": "LocalBusiness", name: "Arcadia Home Care", description: "Specialized in-home care for families across the Greater Toronto Area.", telephone: "+18449770050", areaServed: { "@type": "GeoCircle", geoMidpoint: { "@type": "GeoCoordinates", latitude: 43.6532, longitude: -79.3832 }, geoRadius: "50000" } },
         { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: "https://www.arcadiahomecare.ca/" }, { "@type": "ListItem", position: 2, name: "Locations", item: "https://www.arcadiahomecare.ca/locations/" }] },
+        { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map((faq) => ({ "@type": "Question", name: faq.q, acceptedAnswer: { "@type": "Answer", text: faq.a } })) },
       ]) }} />
 
       <main style={{ fontFamily: fonts.body, color: colors.text }}>
@@ -133,6 +157,19 @@ export default function LocationsHubPage() {
                 <a href={phone.tel} style={{ color: colors.accent, fontWeight: 600, textDecoration: "none" }}>{phone.display}</a>.
               </p>
             </div>
+          </div>
+        </section>
+
+        <section style={{ background: colors.white, padding: "72px 24px" }}>
+          <div style={{ maxWidth: 760, margin: "0 auto" }}>
+            <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: colors.accent, marginBottom: 12 }}>Frequently Asked Questions</p>
+            <h2 style={{ fontFamily: fonts.display, fontSize: "clamp(1.5rem, 2.5vw, 2rem)", fontWeight: 600, color: colors.primary, marginBottom: 24 }}>Common questions about GTA home care locations</h2>
+            {faqs.map((faq) => (
+              <div key={faq.q} style={{ borderBottom: `1px solid ${colors.border}`, padding: "20px 0" }}>
+                <h3 style={{ fontSize: 16, fontWeight: 700, color: colors.primary, margin: "0 0 10px", lineHeight: 1.5 }}>{faq.q}</h3>
+                <p style={{ fontSize: 15, color: colors.textLight, lineHeight: 1.8, margin: 0 }}>{faq.a}</p>
+              </div>
+            ))}
           </div>
         </section>
 

@@ -33,11 +33,16 @@ npm run precommit
 | 4 | Cross-site keyword collision | **blocking** | staged content routes |
 | 5 | Content route not reserved in the ledger | advisory | staged content routes |
 | 6 | Keyword cache older than 7 days | advisory | repo |
+| 7 | LLM map (`public/llms.txt`) stale | auto-fix | article/service/location/FAQ/schema changes |
 
 "Site copy" means `.tsx` / `.mdx` under `app/`, `src/app/`, or `components/`.
 Governance docs under `docs/` are exempt from the em dash rule: the rule is
 about published copy, not internal prose. This file and the canonical both use
 em dashes freely.
+
+Check 7 runs only in repos that ship `scripts/sync-llms-txt.mjs` (HC today).
+When triggered, it regenerates `public/llms.txt` and stages the file so the
+commit that publishes an article always carries an updated AI map.
 
 It reads the **staged blob**, not the working tree, so partially staged files
 are checked as they will actually be committed.

@@ -15,6 +15,29 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://www.arcadiahomecare.ca/how-care-starts/care-assessment/' },
 }
 
+const faqs = [
+  {
+    q: 'How long does the assessment take?',
+    a: 'Usually between 60 and 90 minutes in the home. Complex situations — particularly those involving dementia, acquired brain injury, or palliative care — may require additional follow-up before the care plan is finalized.',
+  },
+  {
+    q: 'Does the person receiving care need to be present?',
+    a: 'Where possible, yes — the assessment is most useful when we can speak directly with the person, observe how they function in their own environment, and understand their perspective on their own situation. For cognitive or communication reasons, this is not always fully possible, and we adapt accordingly.',
+  },
+  {
+    q: 'Can the assessment happen remotely if the family is not local?',
+    a: 'The in-home visit requires a local contact — either the person being assessed or a family member or neighbour who can be present. Family members who are not local can participate by phone during the visit. We are experienced supporting families managing a situation from a distance.',
+  },
+  {
+    q: 'Is there a cost for the assessment?',
+    a: 'The initial care assessment is complimentary for families who proceed with Arcadia\'s services. If you are wondering how much an assessment costs, there is no fee when you move forward with us. We are happy to discuss details when you call.',
+  },
+  {
+    q: 'What happens after the assessment?',
+    a: 'We present the care plan to the family, discuss it, and refine it based on your input. Once the plan is agreed, we move to caregiver matching. Do you help families understand next steps? Yes. We walk you through who should be involved from there.',
+  },
+]
+
 export default function CareAssessmentPage() {
   return (
     <>
@@ -50,6 +73,15 @@ export default function CareAssessmentPage() {
                 { '@type': 'ListItem', 'position': 2, 'name': 'How Care Starts', 'item': 'https://www.arcadiahomecare.ca/how-care-starts/' },
                 { '@type': 'ListItem', 'position': 3, 'name': 'Care Assessment', 'item': 'https://www.arcadiahomecare.ca/how-care-starts/care-assessment/' },
               ],
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: faqs.map((faq) => ({
+                '@type': 'Question',
+                name: faq.q,
+                acceptedAnswer: { '@type': 'Answer', text: faq.a },
+              })),
             },
           ]),
         }}
@@ -338,28 +370,7 @@ export default function CareAssessmentPage() {
 
             <h2>Common questions about the assessment</h2>
 
-            {[
-              {
-                q: 'How long does the assessment take?',
-                a: 'Usually between 60 and 90 minutes in the home. Complex situations — particularly those involving dementia, acquired brain injury, or palliative care — may require additional follow-up before the care plan is finalized.',
-              },
-              {
-                q: 'Does the person receiving care need to be present?',
-                a: 'Where possible, yes — the assessment is most useful when we can speak directly with the person, observe how they function in their own environment, and understand their perspective on their own situation. For cognitive or communication reasons, this is not always fully possible, and we adapt accordingly.',
-              },
-              {
-                q: 'Can the assessment happen remotely if the family is not local?',
-                a: 'The in-home visit requires a local contact — either the person being assessed or a family member or neighbour who can be present. Family members who are not local can participate by phone during the visit. We are experienced supporting families managing a situation from a distance.',
-              },
-              {
-                q: 'Is there a cost for the assessment?',
-                a: 'The initial care assessment is complimentary for families who proceed with Arcadia\'s services. We are happy to discuss this further when you call.',
-              },
-              {
-                q: 'What happens after the assessment?',
-                a: 'We present the care plan to the family, discuss it, and refine it based on your input. Once the plan is agreed, we move to caregiver matching — selecting the right person for the specific situation.',
-              },
-            ].map((faq, i) => (
+            {faqs.map((faq, i) => (
               <div key={i} className="faq-item">
                 <div className="faq-q">{faq.q}</div>
                 <div className="faq-a">{faq.a}</div>

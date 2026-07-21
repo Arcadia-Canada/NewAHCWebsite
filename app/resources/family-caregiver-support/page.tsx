@@ -50,6 +50,33 @@ const articles = [
   },
 ]
 
+const faqs = [
+  {
+    q: 'What are the warning signs of caregiver burnout?',
+    a: 'Chronic exhaustion, irritability, withdrawal from friends, neglecting your own health, and feeling like you cannot keep going are common signs. If you are wondering how do I know if this is burnout, those patterns are a signal. Do you have guides for exhausted caregivers? Yes, in this cluster.',
+  },
+  {
+    q: 'How do I talk to my parent about accepting home care?',
+    a: 'Start before a crisis, focus on what matters to them (staying at home, independence), and frame help as support rather than takeover. Our guide on talking to a parent about care covers specific language and approaches.',
+  },
+  {
+    q: 'What if my siblings disagree about our parent\'s care?',
+    a: 'Sibling conflict around caregiving is common, especially when one person carries most of the load. Our guide covers how to move forward without damaging relationships, including when to bring in a neutral third party.',
+  },
+  {
+    q: 'Is it normal to feel guilty about getting help for a parent?',
+    a: 'Yes, and it is one of the most common emotions family caregivers report. Getting help does not mean you are failing. It often means you are making a sustainable choice that protects both you and your parent.',
+  },
+  {
+    q: 'What is respite care and how does it help caregivers?',
+    a: 'Respite care provides scheduled or emergency coverage so you can rest, work, or attend to your own life without worrying about your parent. Even a few hours a week can make a significant difference.',
+  },
+  {
+    q: 'When should a family caregiver ask for professional support?',
+    a: 'Before you reach a breaking point. If you are managing medications, appointments, and daily care while working and raising your own family, professional support is not a luxury. It is a practical necessity.',
+  },
+]
+
 export default function FamilyCaregiverSupportHub() {
   return (
     <>
@@ -125,6 +152,15 @@ export default function FamilyCaregiverSupportHub() {
                 worstRating: '1',
               },
             },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: faqs.map((faq) => ({
+                '@type': 'Question',
+                name: faq.q,
+                acceptedAnswer: { '@type': 'Answer', text: faq.a },
+              })),
+            },
           ]),
         }}
       />
@@ -177,6 +213,12 @@ export default function FamilyCaregiverSupportHub() {
         .cta-buttons { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
         .btn-red { background: #C8302A; color: #fff; text-decoration: none; padding: 14px 28px; border-radius: 8px; font-size: 15px; font-weight: 700; }
         .btn-outline { border: 1.5px solid rgba(255,255,255,0.5); background: transparent; color: #fff; text-decoration: none; padding: 14px 28px; border-radius: 8px; font-size: 15px; font-weight: 700; }
+
+        .hub-faq { margin-top: 56px; padding-top: 40px; border-top: 1px solid #E5E0D8; }
+        .hub-faq h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(1.5rem, 2.5vw, 2rem); font-weight: 600; color: #1C2B3A; margin-bottom: 24px; }
+        .hub-faq-item { border-bottom: 1px solid #E5E0D8; padding: 20px 0; }
+        .hub-faq-item h3 { font-size: 1rem; font-weight: 700; color: #1C2B3A; margin: 0 0 10px; line-height: 1.5; }
+        .hub-faq-item p { font-size: 0.9375rem; color: #4B5563; line-height: 1.8; margin: 0; }
       `}</style>
 
       <main className="hub-page">
@@ -250,6 +292,17 @@ export default function FamilyCaregiverSupportHub() {
                 cover this in depth, including dementia-specific refusal.
               </p>
             </div>
+
+            <section className="hub-faq">
+              <p className="hub-articles-label">Frequently Asked Questions</p>
+              <h2>Common questions for family caregivers</h2>
+              {faqs.map((faq) => (
+                <div key={faq.q} className="hub-faq-item">
+                  <h3>{faq.q}</h3>
+                  <p>{faq.a}</p>
+                </div>
+              ))}
+            </section>
           </div>
 
           <aside className="hub-sidebar">

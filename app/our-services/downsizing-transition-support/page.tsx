@@ -21,27 +21,27 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: 'What does downsizing support actually involve?',
-    a: 'Downsizing support helps older adults and their families manage the practical and emotional work of moving from a larger home to a smaller one. That includes helping sort and decide what to keep, donate, or dispose of; organizing and packing belongings; coordinating with movers; helping set up the new space; and providing consistent support for the person through a process that is often more emotionally demanding than families anticipate.',
+    a: 'Downsizing support helps older adults and their families manage the practical and emotional work of moving from a larger home to a smaller one. That includes helping sort and decide what to keep, donate, or dispose of; organizing and packing belongings; coordinating with movers; helping set up the new space; and providing consistent support for the person through a process that is often more emotionally demanding than families anticipate. Families ask how do I get help with downsizing when my parent is resistant. Can you move at their pace? Yes.',
   },
   {
     q: 'My parent is resistant to moving. How do we handle that?',
-    a: 'Resistance to leaving a family home is very common, and it deserves to be taken seriously rather than managed away. A home represents identity, independence, and decades of accumulated life — the reluctance to leave it is entirely understandable. What tends to work better than persuasion is involving the person as fully as possible in decisions about their belongings and new space, moving at a pace that feels manageable to them, and acknowledging openly that this is a loss, not just a logistical event. Our team has supported many families through this and can help you think through the approach.',
+    a: 'Resistance to leaving a family home is very common, and it deserves to be taken seriously rather than managed away. A home represents identity, independence, and decades of accumulated life, and the reluctance to leave it is entirely understandable. What tends to work better than persuasion is involving the person as fully as possible in decisions about their belongings and new space, moving at a pace that feels manageable to them, and acknowledging openly that this is a loss, not just a logistical event. Our team has supported many families through this and can help you think through the approach.',
   },
   {
     q: 'How is downsizing support different from hiring a moving company?',
-    a: 'A moving company moves boxes. Downsizing support helps with everything before, during, and after — sorting through decades of belongings with the person, making decisions about what comes and what goes, managing the emotional weight of that process, coordinating practical aspects of the move, and helping the person settle into their new environment. The practical and emotional dimensions of the work are intertwined throughout.',
+    a: 'A moving company moves boxes. Downsizing support helps with everything before, during, and after: sorting through decades of belongings with the person, making decisions about what comes and what goes, managing the emotional weight of that process, coordinating practical aspects of the move, and helping the person settle into their new environment. The practical and emotional dimensions of the work are intertwined throughout.',
   },
   {
     q: 'Can Arcadia help if the person is moving to long-term care rather than another home?',
-    a: 'Yes. Moves to long-term care or retirement communities involve the same sorting, decision-making, and emotional support — often with additional complexity around what can be brought into the new environment. Arcadia can also help families navigate the transition from home care to facility-based care, including coordinating with the receiving facility about the person\'s needs and preferences.',
+    a: 'Yes. Moves to long-term care or retirement communities involve the same sorting, decision-making, and emotional support, often with additional complexity around what can be brought into the new environment. Arcadia can also help families navigate the transition from home care to facility-based care, including coordinating with the receiving facility about the person\'s needs and preferences.',
   },
   {
     q: 'Can downsizing support be combined with ongoing home care?',
-    a: 'Yes — and for many families, downsizing is the point at which ongoing care begins. A caregiver who has supported the person through the transition is already familiar with them, which makes the shift to regular personal support or companion care more natural. Arcadia can provide downsizing support as a standalone service or as the start of a longer-term care relationship.',
+    a: 'Yes, and for many families, downsizing is the point at which ongoing care begins. A caregiver who has supported the person through the transition is already familiar with them, which makes the shift to regular personal support or companion care more natural. Arcadia can provide downsizing support as a standalone service or as the start of a longer-term care relationship.',
   },
   {
     q: 'How long does a typical downsizing engagement take?',
-    a: 'It varies considerably depending on the size of the home, how long the person has lived there, how much needs to be sorted, and the pace at which the person can manage the process. Some moves happen over a few intensive weeks; others are spread over several months to allow the person to adjust emotionally as the process unfolds. We build the timeline around what is manageable for the individual, not what is convenient for the calendar.',
+    a: 'It varies considerably depending on the size of the home, how long the person has lived there, how much needs to be sorted, and the pace at which the person can manage the process. Some moves happen over a few intensive weeks; others are spread over several months to allow the person to adjust emotionally as the process unfolds. We build the timeline around what is manageable for the individual, not what is convenient for the calendar. Do you provide downsizing support near me in Toronto and the GTA? Yes.',
   },
 ]
 

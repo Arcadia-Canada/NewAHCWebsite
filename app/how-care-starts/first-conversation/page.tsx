@@ -2,9 +2,9 @@
 // Decision-stage page — the reader has decided to reach out
 // Target keyword: "book home care consultation toronto" / "how to start home care GTA"
 // Persona: family or individual who is ready to talk but anxious about what happens next
-// — what will be asked, what they need to have ready, whether they'll be pressured
+// — what will be asked, what they need to have ready, whether they will be pressured
 // Tone: reassuring, practical, no pressure — reduce the barrier to calling
-// Schema: Service + BreadcrumbList
+// Schema: Service + BreadcrumbList + FAQPage
 
 // app/how-care-starts/first-conversation/page.tsx
 
@@ -20,6 +20,29 @@ export const metadata: Metadata = {
       'https://www.arcadiahomecare.ca/how-care-starts/first-conversation/',
   },
 }
+
+const faqs = [
+  {
+    q: 'How long does the first call take?',
+    a: 'Usually between 20 and 40 minutes, depending on how much you want to cover. If you are wondering how do I prepare for the first call, just come as you are. There is no set time limit. We go at the pace that is useful to you.',
+  },
+  {
+    q: 'Who should be on the call?',
+    a: 'Whoever is most informed about the situation and most involved in the decision. That might be an adult child, a spouse, the person who will be receiving care, or some combination. If you are calling on behalf of a parent who is not yet aware you are exploring care options, that is also fine — and common.',
+  },
+  {
+    q: 'Will I be pressured to sign up for anything?',
+    a: 'No. The first call is informational. We may recommend a care assessment as a logical next step, but we do not push for commitments or create artificial urgency. Families who feel pressured tend not to make good decisions, and they tend not to become long-term clients.',
+  },
+  {
+    q: 'What if I am calling from out of town about a parent in Toronto?',
+    a: 'This is a common situation. We are well practised at supporting families who are managing a situation at a distance — the first call can cover what is happening, what we would need to assess, and how we would keep you informed through the process.',
+  },
+  {
+    q: 'Can I request a callback instead of calling?',
+    a: 'Yes — use the form below and we will call you at a time that works for you.',
+  },
+]
 
 export default function FirstConversationPage() {
   return (
@@ -72,6 +95,18 @@ export default function FirstConversationPage() {
                   item: 'https://www.arcadiahomecare.ca/how-care-starts/first-conversation/',
                 },
               ],
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: faqs.map((faq) => ({
+                '@type': 'Question',
+                name: faq.q,
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: faq.a,
+                },
+              })),
             },
           ]),
         }}
@@ -391,28 +426,7 @@ export default function FirstConversationPage() {
 
             <h2>Frequently asked questions about the first call</h2>
 
-            {[
-              {
-                q: 'How long does the first call take?',
-                a: 'Usually between 20 and 40 minutes, depending on how much you want to cover. There is no set time limit — we go at the pace that is useful to you.',
-              },
-              {
-                q: 'Who should be on the call?',
-                a: 'Whoever is most informed about the situation and most involved in the decision. That might be an adult child, a spouse, the person who will be receiving care, or some combination. If you are calling on behalf of a parent who is not yet aware you are exploring care options, that is also fine — and common.',
-              },
-              {
-                q: 'Will I be pressured to sign up for anything?',
-                a: 'No. The first call is informational. We may recommend a care assessment as a logical next step, but we do not push for commitments or create artificial urgency. Families who feel pressured tend not to make good decisions, and they tend not to become long-term clients.',
-              },
-              {
-                q: 'What if I am calling from out of town about a parent in Toronto?',
-                a: 'This is a common situation. We are well practised at supporting families who are managing a situation at a distance — the first call can cover what is happening, what we would need to assess, and how we would keep you informed through the process.',
-              },
-              {
-                q: 'Can I request a callback instead of calling?',
-                a: 'Yes — use the form below and we will call you at a time that works for you.',
-              },
-            ].map((faq, i) => (
+            {faqs.map((faq, i) => (
               <div
                 key={i}
                 style={{ borderBottom: '1px solid #E5E0D8', padding: '20px 0' }}

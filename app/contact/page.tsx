@@ -9,8 +9,51 @@ export const metadata: Metadata = {
   },
 };
 
+const faqs = [
+  {
+    q: 'How do I book a free consultation with Arcadia?',
+    a: 'Call (844) 977-0050 or fill out the contact form on this page. We respond within one business day and can often schedule your first conversation within 24 to 48 hours.',
+  },
+  {
+    q: 'Is there any cost or obligation for the first conversation?',
+    a: 'No. The first consultation is free and carries no commitment. We listen to your situation, explain your options clearly, and help you decide whether Arcadia is the right fit.',
+  },
+  {
+    q: 'What should I prepare before calling?',
+    a: 'You do not need to prepare anything formal. It helps to know your loved one\'s general condition, daily routines, any recent hospital visits, and what concerns you most. We guide the rest.',
+  },
+  {
+    q: 'Can I contact Arcadia for an urgent hospital discharge?',
+    a: 'Yes. Tell us your timeline when you reach out. We work with discharge planners across the GTA and can often move quickly when a safe transition home is time-sensitive.',
+  },
+];
+
 export default function ContactPage() {
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([
+            {
+              '@context': 'https://schema.org',
+              '@type': 'ContactPage',
+              name: 'Contact Arcadia Home Care',
+              url: 'https://www.arcadiahomecare.ca/contact/',
+              publisher: { '@type': 'Organization', name: 'Arcadia Home Care', url: 'https://www.arcadiahomecare.ca' },
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: faqs.map((faq) => ({
+                '@type': 'Question',
+                name: faq.q,
+                acceptedAnswer: { '@type': 'Answer', text: faq.a },
+              })),
+            },
+          ]),
+        }}
+      />
     <main
       style={{
         padding: "120px 24px 80px",
@@ -507,6 +550,27 @@ export default function ContactPage() {
           <li>Complex ongoing support with clinical coordination</li>
         </ul>
       </section>
+
+      <section
+        style={{
+          gridColumn: "1 / -1",
+          marginTop: 8,
+          borderRadius: 16,
+          border: "1px solid #E5E0D8",
+          background: "#FAFAF8",
+          padding: 24,
+        }}
+      >
+        <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#C8302A", marginBottom: 12 }}>Frequently Asked Questions</p>
+        <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(1.5rem, 3vw, 2rem)", color: "#1C2B3A", marginBottom: 16 }}>Common questions about contacting us</h2>
+        {faqs.map((faq) => (
+          <div key={faq.q} style={{ borderBottom: "1px solid #E5E0D8", padding: "20px 0" }}>
+            <h3 style={{ fontSize: 16, fontWeight: 700, color: "#1C2B3A", margin: "0 0 10px", lineHeight: 1.5 }}>{faq.q}</h3>
+            <p style={{ fontSize: 15, color: "#4B5563", lineHeight: 1.8, margin: 0 }}>{faq.a}</p>
+          </div>
+        ))}
+      </section>
     </main>
+    </>
   );
 }

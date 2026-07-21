@@ -154,16 +154,49 @@ const categories = [
   },
 ];
 
+const faqs = [
+  {
+    q: 'What topics does the Arcadia resource centre cover?',
+    a: 'Our guides cover dementia and memory care, family caregiver support, navigating home care in Ontario, brain injury rehabilitation, and seasonal home safety. Each cluster links to deeper articles on specific questions.',
+  },
+  {
+    q: 'Are these resources specific to Ontario and the GTA?',
+    a: 'Yes. Our articles are written for Ontario families, with GTA-specific context on costs, providers, public funding, and local hospitals. They reflect how the system actually works here.',
+  },
+  {
+    q: 'Where should I start if I am new to home care?',
+    a: 'Start with the Navigating Home Care cluster, especially the pillar article on when a parent needs more help. If you are wondering how do I know where to begin, that article is the right first read. Is there a guide for Ontario families? Yes, in that cluster.',
+  },
+  {
+    q: 'Can I talk to someone after reading these guides?',
+    a: 'Yes. Call us or book a free consultation at any stage. Do you answer questions even if we are not ready to hire yet? Absolutely. Many families read first and call when they need clarity.',
+  },
+  {
+    q: 'Do you have resources for family caregivers experiencing burnout?',
+    a: 'Yes. The Family Caregiver Support cluster covers burnout warning signs, sibling disagreements, guilt about getting help, and how to talk to a parent about care.',
+  },
+  {
+    q: 'How often are new articles added?',
+    a: 'We publish new guides regularly as part of our resource clusters. If a topic you need is not listed yet, call us anyway. We can often point you to the right information during a consultation.',
+  },
+];
+
 export default function ResourcesHubPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([
         { "@context": "https://schema.org", "@type": "CollectionPage", name: "Caregiving & Home Care Resources", url: "https://www.arcadiahomecare.ca/resources/", publisher: { "@type": "Organization", name: "Arcadia Home Care", url: "https://www.arcadiahomecare.ca" } },
         { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: "https://www.arcadiahomecare.ca/" }, { "@type": "ListItem", position: 2, name: "Resources", item: "https://www.arcadiahomecare.ca/resources/" }] },
+        { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map((faq) => ({ "@type": "Question", name: faq.q, acceptedAnswer: { "@type": "Answer", text: faq.a } })) },
       ]) }} />
       <style>{`
         .res-card:hover { box-shadow: 0 16px 48px rgba(0,0,0,0.28); transform: translateY(-4px); }
         .res-card:hover [data-arrow] { transform: translateX(4px); }
+        .hub-faq { margin-top: 56px; padding-top: 40px; border-top: 1px solid #E5E0D8; max-width: 760px; margin-left: auto; margin-right: auto; }
+        .hub-faq h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(1.5rem, 2.5vw, 2rem); font-weight: 600; color: #1C2B3A; margin-bottom: 24px; }
+        .hub-faq-item { border-bottom: 1px solid #E5E0D8; padding: 20px 0; }
+        .hub-faq-item h3 { font-size: 1rem; font-weight: 700; color: #1C2B3A; margin: 0 0 10px; line-height: 1.5; }
+        .hub-faq-item p { font-size: 0.9375rem; color: #4B5563; line-height: 1.8; margin: 0; }
       `}</style>
 
       <main style={{ fontFamily: fonts.body, color: colors.text }}>
@@ -227,6 +260,19 @@ export default function ResourcesHubPage() {
                 </li>
               ))}
             </ul>
+          </div>
+        </section>
+
+        <section style={{ background: colors.white, padding: "0 24px 72px" }}>
+          <div className="hub-faq">
+            <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: colors.accent, marginBottom: 12 }}>Frequently Asked Questions</p>
+            <h2>Common questions about our resource centre</h2>
+            {faqs.map((faq) => (
+              <div key={faq.q} className="hub-faq-item">
+                <h3>{faq.q}</h3>
+                <p>{faq.a}</p>
+              </div>
+            ))}
           </div>
         </section>
 

@@ -65,6 +65,41 @@ const articles: { title: string; href: string; description: string; status: 'liv
   },
 ]
 
+const faqs = [
+  {
+    q: 'How do I know when it is time for home care in Ontario?',
+    a: 'Most families arrive through gradual changes rather than one crisis moment. Look for patterns across daily life: meals, medications, mobility, hygiene, and social connection. When those changes are affecting safety or becoming hard for family to cover reliably, it is time to explore options.',
+  },
+  {
+    q: 'How much does private home care cost in the GTA?',
+    a: 'Private PSW rates in the Greater Toronto Area typically range from $32 to $42 per hour, depending on care needs, timing, and agency. Many families start with 8 to 12 hours per week rather than full-time support. See our cost guide for a detailed breakdown.',
+  },
+  {
+    q: 'What is the difference between Ontario Health atHome and private home care?',
+    a: 'Ontario Health atHome coordinates publicly funded home care at no direct cost, but hours are limited and families do not choose their caregiver or schedule. Private home care is paid out of pocket and offers more flexible scheduling, longer visits, and consistent caregivers. Many families use both.',
+  },
+  {
+    q: 'What does a PSW do during a home care visit?',
+    a: 'A Personal Support Worker helps with bathing, dressing, grooming, meals, mobility, medication reminders, light housekeeping, and companionship. They cannot perform controlled medical acts. Nursing tasks require an RN or RPN.',
+  },
+  {
+    q: 'How do I choose a quality home care provider in Toronto?',
+    a: 'Look for consistent caregivers, clear communication, transparent pricing, and a care plan that adjusts as needs change. Quality shows up in how your parent feels on care days, not just whether tasks get completed. Our guide on recognizing quality home care covers what to watch for.',
+  },
+  {
+    q: 'How quickly can home care start once we decide to move forward?',
+    a: 'Arcadia can typically conduct a care assessment within 24 to 48 hours of first contact, and care often begins within a week of the assessment. For urgent situations, timelines can be compressed.',
+  },
+  {
+    q: 'Can I combine publicly funded care with private home care?',
+    a: 'Yes. Many GTA families use Ontario Health atHome hours for specific tasks and add private care for longer visits, weekends, or consistent caregiver matching. The two systems can work together when planned thoughtfully.',
+  },
+  {
+    q: 'Where should I start if I am overwhelmed by the Ontario home care system?',
+    a: 'Start with the pillar article in this collection, then read the guide that matches your most urgent question. If you are ready to talk, book a free consultation. There is no commitment, just a chance to understand your options clearly.',
+  },
+]
+
 export default function NavigatingHomeCareHub() {
   return (
     <>
@@ -140,6 +175,18 @@ export default function NavigatingHomeCareHub() {
                 worstRating: '1',
               },
             },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: faqs.map((faq) => ({
+                '@type': 'Question',
+                name: faq.q,
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: faq.a,
+                },
+              })),
+            },
           ]),
         }}
       />
@@ -202,6 +249,12 @@ export default function NavigatingHomeCareHub() {
         .cta-buttons { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
         .btn-red { background: #C8302A; color: #fff; text-decoration: none; padding: 14px 28px; border-radius: 8px; font-size: 15px; font-weight: 700; }
         .btn-outline { border: 1.5px solid rgba(255,255,255,0.5); background: transparent; color: #fff; text-decoration: none; padding: 14px 28px; border-radius: 8px; font-size: 15px; font-weight: 700; }
+
+        .hub-faq { margin-top: 56px; padding-top: 40px; border-top: 1px solid #E5E0D8; }
+        .hub-faq h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(1.5rem, 2.5vw, 2rem); font-weight: 600; color: #1C2B3A; margin-bottom: 24px; }
+        .hub-faq-item { border-bottom: 1px solid #E5E0D8; padding: 20px 0; }
+        .hub-faq-item h3 { font-size: 1rem; font-weight: 700; color: #1C2B3A; margin: 0 0 10px; line-height: 1.5; }
+        .hub-faq-item p { font-size: 0.9375rem; color: #4B5563; line-height: 1.8; margin: 0; }
       `}</style>
 
       <main className="hub-page">
@@ -293,6 +346,17 @@ export default function NavigatingHomeCareHub() {
                 . No pressure, no commitment, just a chance to understand your options.
               </p>
             </div>
+
+            <section className="hub-faq">
+              <p className="hub-articles-label">Frequently Asked Questions</p>
+              <h2>Common questions about navigating home care in Ontario</h2>
+              {faqs.map((faq) => (
+                <div key={faq.q} className="hub-faq-item">
+                  <h3>{faq.q}</h3>
+                  <p>{faq.a}</p>
+                </div>
+              ))}
+            </section>
           </div>
 
           <aside className="hub-sidebar">

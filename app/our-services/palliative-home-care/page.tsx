@@ -20,27 +20,27 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: 'How does Arcadia work with our existing palliative care team?',
-    a: 'We work alongside the palliative care nurse, physician, and any other providers already involved — not instead of them. Our caregivers follow the comfort plan established by the clinical team, communicate changes promptly, and document what they observe so that the treating team has an accurate picture of the person\'s condition between visits. Coordination is active, not nominal.',
+    a: 'We work alongside the palliative care nurse, physician, and any other providers already involved, not instead of them. Our caregivers follow the comfort plan established by the clinical team, communicate changes promptly, and document what they observe so that the treating team has an accurate picture of the person\'s condition between visits. Coordination is active, not nominal. Families ask how do I add home support to our palliative team. Can you work with the nurse we already have? Yes.',
   },
   {
     q: 'What hours can Arcadia provide for palliative support?',
-    a: 'We provide care seven days a week, including evenings, overnights, and around-the-clock coverage when needed. The hours we provide are built around the gaps in the current care plan — whether that means a few mornings a week, overnight coverage, or full-time presence as the situation requires.',
+    a: 'We provide care seven days a week, including evenings, overnights, and around-the-clock coverage when needed. The hours we provide are built around the gaps in the current care plan, whether that means a few mornings a week, overnight coverage, or full-time presence as the situation requires. Is there overnight palliative support near me in Toronto? Yes, when the care plan calls for it.',
   },
   {
     q: 'Can Arcadia support someone who wants to remain at home through the end of life?',
-    a: 'Yes — and this is some of the most meaningful work we do. Supporting a person to remain at home through end of life requires consistent presence, good communication between all care providers, caregivers who are experienced and compassionate in this setting, and a family that feels genuinely supported. Arcadia can help provide that support, in coordination with the palliative care team.',
+    a: 'Yes, and this is some of the most meaningful work we do. Supporting a person to remain at home through end of life requires consistent presence, good communication between all care providers, caregivers who are experienced and compassionate in this setting, and a family that feels genuinely supported. Arcadia can help provide that support, in coordination with the palliative care team.',
   },
   {
     q: 'How do Arcadia\'s caregivers approach end-of-life care?',
-    a: 'Our caregivers in palliative situations are selected for their experience, temperament, and genuine capacity to be present in difficult circumstances. They are not there to perform tasks and leave — they are there to provide comfort, presence, and practical support in a way that respects the person\'s dignity and the family\'s wishes. We brief caregivers thoroughly on the comfort plan, the person\'s history and preferences, and any clinical considerations before they begin.',
+    a: 'Our caregivers in palliative situations are selected for their experience, temperament, and genuine capacity to be present in difficult circumstances. They are not there to perform tasks and leave. They are there to provide comfort, presence, and practical support in a way that respects the person\'s dignity and the family\'s wishes. We brief caregivers thoroughly on the comfort plan, the person\'s history and preferences, and any clinical considerations before they begin.',
   },
   {
     q: 'What is the difference between what Ontario Health atHome provides and what Arcadia provides?',
-    a: 'Ontario Health atHome coordinates publicly funded palliative care — nursing visits, some PSW hours, and access to a palliative care team. That foundation is meaningful, but the hours allocated rarely match what a family needs around the clock. Arcadia fills the gaps — overnight, on weekends, between nursing visits, and as the care needs increase toward the end of life. We work alongside the public system, not as a replacement for it.',
+    a: 'Ontario Health atHome coordinates publicly funded palliative care: nursing visits, some PSW hours, and access to a palliative care team. That foundation is meaningful, but the hours allocated rarely match what a family needs around the clock. Arcadia fills the gaps: overnight, on weekends, between nursing visits, and as the care needs increase toward the end of life. We work alongside the public system, not as a replacement for it.',
   },
   {
     q: 'What support does Arcadia provide for family caregivers in palliative situations?',
-    a: 'Family caregivers in palliative situations carry an enormous weight — practically, emotionally, and often without adequate acknowledgement. Arcadia provides scheduled respite so family members can rest, sleep, and have time away from caregiving without the person being alone. We also support family members in understanding what to expect at each stage and help connect them with bereavement resources when the time comes.',
+    a: 'Family caregivers in palliative situations carry an enormous weight: practically, emotionally, and often without adequate acknowledgement. Arcadia provides scheduled respite so family members can rest, sleep, and have time away from caregiving without the person being alone. We also support family members in understanding what to expect at each stage and help connect them with bereavement resources when the time comes.',
   },
 ]
 

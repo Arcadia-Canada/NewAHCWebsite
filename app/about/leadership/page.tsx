@@ -72,9 +72,54 @@ function Initials({ name }: { name: string }) {
   )
 }
 
+const faqs = [
+  {
+    q: 'Who founded Arcadia Home Care?',
+    a: 'Arcadia was founded in 2005 by Rohit Tamhane after volunteering with the Alzheimer Society of Toronto. If you are wondering how do I choose a home care provider with staying power, longevity and word-of-mouth referrals matter. His experience with families navigating dementia shaped the organization\'s focus on clinical expertise and compassionate home care.',
+  },
+  {
+    q: 'How long has Arcadia been serving Toronto families?',
+    a: 'Arcadia has supported families across Toronto and the GTA since 2005, growing largely through word-of-mouth referrals from families and healthcare professionals.',
+  },
+  {
+    q: 'What values guide Arcadia\'s leadership team?',
+    a: 'Arcadia is guided by dignity, respect, clinical competence, community contribution, leading by example, and ongoing education. These values shape hiring, caregiver training, and how families are supported.',
+  },
+  {
+    q: 'Is Arcadia involved in the community beyond client care?',
+    a: 'Yes. Arcadia supports local community programs and maintains connections with organizations like the Alzheimer Society of Toronto. Do you partner with hospitals and community groups? We do, reflecting a long-standing commitment to education and outreach.',
+  },
+]
+
 export default function LeadershipPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([
+            {
+              '@context': 'https://schema.org',
+              '@type': 'BreadcrumbList',
+              itemListElement: [
+                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.arcadiahomecare.ca/' },
+                { '@type': 'ListItem', position: 2, name: 'About', item: 'https://www.arcadiahomecare.ca/about/' },
+                { '@type': 'ListItem', position: 3, name: 'Leadership', item: 'https://www.arcadiahomecare.ca/about/leadership/' },
+              ],
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: faqs.map((faq) => ({
+                '@type': 'Question',
+                name: faq.q,
+                acceptedAnswer: { '@type': 'Answer', text: faq.a },
+              })),
+            },
+          ]),
+        }}
+      />
+
       <style>{`
         .leadership-page { font-family: 'DM Sans', system-ui, sans-serif; color: #2D2D2D; }
 
@@ -230,6 +275,13 @@ export default function LeadershipPage() {
           font-weight: 600; display: flex; align-items: center; gap: 6px;
         }
         .team-email:hover { color: #C8302A; }
+
+        .page-faq { max-width: 760px; margin: 0 auto; padding: 72px 24px 0; }
+        .page-faq-eyebrow { font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #C8302A; margin-bottom: 12px; }
+        .page-faq h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(1.5rem, 2.5vw, 2rem); font-weight: 600; color: #1C2B3A; margin: 0 0 24px; }
+        .page-faq-item { border-bottom: 1px solid #E5E0D8; padding: 20px 0; }
+        .page-faq-item h3 { font-size: 1rem; font-weight: 700; color: #1C2B3A; margin: 0 0 10px; line-height: 1.5; }
+        .page-faq-item p { font-size: 0.9375rem; color: #4B5563; line-height: 1.8; margin: 0; }
 
         /* Values */
         .values-bg { background: #1C2B3A; padding: 80px 24px; }
@@ -393,6 +445,17 @@ export default function LeadershipPage() {
               ))}
             </div>
           </div>
+        </section>
+
+        <section className="page-faq">
+          <p className="page-faq-eyebrow">Frequently Asked Questions</p>
+          <h2>Questions about Arcadia&apos;s leadership</h2>
+          {faqs.map((faq) => (
+            <div key={faq.q} className="page-faq-item">
+              <h3>{faq.q}</h3>
+              <p>{faq.a}</p>
+            </div>
+          ))}
         </section>
 
         {/* CTA */}

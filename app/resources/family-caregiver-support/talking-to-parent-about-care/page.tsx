@@ -105,7 +105,7 @@ const faqSchema = {
       name: 'How do I start a difficult conversation with my aging parent?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Start with what you have noticed, not what you have decided. Lead with concern rather than logistics. Be specific about the change you have observed, and frame the conversation as something you want to figure out together rather than something you are presenting them with. Most aging parents respond better to being asked than being told.',
+        text: 'Start with what you have noticed, not what you have decided. Lead with concern rather than logistics. Be specific about the change you have observed, and frame the conversation as something you want to figure out together rather than something you are presenting them with. Most aging parents respond better to being asked than being told. Can you help families think through what to say before a hard conversation? Many start with a free consultation.',
       },
     },
     {
@@ -113,7 +113,7 @@ const faqSchema = {
       name: 'When is the right time to talk to my parent about giving up driving?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'The right time is before the conversation becomes urgent. If you are noticing changes in their reaction time, judgment, or comfort behind the wheel, the conversation is overdue. Frame it around safety and dignity, not loss. Bring specific observations rather than general worry. If they are resistant, involve their doctor — physicians in Ontario are required to report unsafe drivers, and that intervention often lands more cleanly than a family one.',
+        text: 'The right time is before the conversation becomes urgent. If you are noticing changes in their reaction time, judgment, or comfort behind the wheel, the conversation is overdue. Frame it around safety and dignity, not loss. Bring specific observations rather than general worry. If they are resistant, involve their doctor. Physicians in Ontario are required to report unsafe drivers, and that intervention often lands more cleanly than a family one.',
       },
     },
     {
@@ -129,7 +129,7 @@ const faqSchema = {
       name: 'What if my parent refuses to have the conversation?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Respect the refusal in the moment, but do not let it close the door. Try again differently. A refusal is rarely about the topic itself — it is about feeling cornered, ambushed, or talked down to. Pick a different setting. A different time of day. A different framing. Sometimes the conversation that fails on a Tuesday afternoon happens naturally on a Sunday drive.',
+        text: 'Respect the refusal in the moment, but do not let it close the door. Try again differently. A refusal is rarely about the topic itself. It is about feeling cornered, ambushed, or talked down to. Pick a different setting. A different time of day. A different framing. Sometimes the conversation that fails on a Tuesday afternoon happens naturally on a Sunday drive.',
       },
     },
     {
@@ -145,7 +145,7 @@ const faqSchema = {
       name: 'What if my parent gets angry or shuts down?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Anger and shutdown are usually grief responses in disguise. Your parent is not angry at you — they are angry at the situation, at aging, at losing things they used to take for granted. Do not match their anger or push past their shutdown. End the conversation gently and try again later. The willingness to come back without resentment is what eventually opens the door.',
+        text: 'Anger and shutdown are usually grief responses in disguise. Your parent is not angry at you. They are angry at the situation, at aging, at losing things they used to take for granted. Do not match their anger or push past their shutdown. End the conversation gently and try again later. The willingness to come back without resentment is what eventually opens the door.',
       },
     },
     {
@@ -153,7 +153,7 @@ const faqSchema = {
       name: 'Is it okay to involve a doctor or other professional in the conversation?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes, and often it helps. Aging parents who push back on family will frequently accept the same information from a doctor, social worker, or care coordinator. It is not a betrayal to bring in professional voices — it is recognizing that some conversations land better outside the family system. Geriatric care managers in the GTA can also lead these conversations directly.',
+        text: 'Yes, and often it helps. Aging parents who push back on family will frequently accept the same information from a doctor, social worker, or care coordinator. It is not a betrayal to bring in professional voices. It is recognizing that some conversations land better outside the family system. Geriatric care managers in the GTA can also lead these conversations directly.',
       },
     },
     {
@@ -758,12 +758,12 @@ export default function TalkingToParentAboutCarePage() {
 
               <div className="faq-item">
                 <div className="faq-q">How do I start a difficult conversation with my aging parent?</div>
-                <div className="faq-a">Start with what you have noticed, not what you have decided. Lead with concern rather than logistics. Be specific about the change you have observed, and frame the conversation as something you want to figure out together rather than something you are presenting them with. Most aging parents respond better to being asked than being told.</div>
+                <div className="faq-a">Start with what you have noticed, not what you have decided. Lead with concern rather than logistics. Be specific about the change you have observed, and frame the conversation as something you want to figure out together rather than something you are presenting them with. Most aging parents respond better to being asked than being told. Can you help families think through what to say before a hard conversation? Many start with a free consultation.</div>
               </div>
 
               <div className="faq-item">
                 <div className="faq-q">When is the right time to talk to my parent about giving up driving?</div>
-                <div className="faq-a">The right time is before the conversation becomes urgent. If you are noticing changes in their reaction time, judgment, or comfort behind the wheel, the conversation is overdue. Frame it around safety and dignity, not loss. Bring specific observations rather than general worry. If they are resistant, involve their doctor — physicians in Ontario are required to report unsafe drivers, and that intervention often lands more cleanly than a family one.</div>
+                <div className="faq-a">The right time is before the conversation becomes urgent. If you are noticing changes in their reaction time, judgment, or comfort behind the wheel, the conversation is overdue. Frame it around safety and dignity, not loss. Bring specific observations rather than general worry. If they are resistant, involve their doctor. Physicians in Ontario are required to report unsafe drivers, and that intervention often lands more cleanly than a family one.</div>
               </div>
 
               <div className="faq-item">
@@ -773,7 +773,7 @@ export default function TalkingToParentAboutCarePage() {
 
               <div className="faq-item">
                 <div className="faq-q">What if my parent refuses to have the conversation?</div>
-                <div className="faq-a">Respect the refusal in the moment, but do not let it close the door. Try again differently. A refusal is rarely about the topic itself — it is about feeling cornered, ambushed, or talked down to. Pick a different setting. A different time of day. A different framing. Sometimes the conversation that fails on a Tuesday afternoon happens naturally on a Sunday drive.</div>
+                <div className="faq-a">Respect the refusal in the moment, but do not let it close the door. Try again differently. A refusal is rarely about the topic itself. It is about feeling cornered, ambushed, or talked down to. Pick a different setting. A different time of day. A different framing. Sometimes the conversation that fails on a Tuesday afternoon happens naturally on a Sunday drive.</div>
               </div>
 
               <div className="faq-item">
@@ -783,12 +783,12 @@ export default function TalkingToParentAboutCarePage() {
 
               <div className="faq-item">
                 <div className="faq-q">What if my parent gets angry or shuts down?</div>
-                <div className="faq-a">Anger and shutdown are usually grief responses in disguise. Your parent is not angry at you — they are angry at the situation, at aging, at losing things they used to take for granted. Do not match their anger or push past their shutdown. End the conversation gently and try again later. The willingness to come back without resentment is what eventually opens the door.</div>
+                <div className="faq-a">Anger and shutdown are usually grief responses in disguise. Your parent is not angry at you. They are angry at the situation, at aging, at losing things they used to take for granted. Do not match their anger or push past their shutdown. End the conversation gently and try again later. The willingness to come back without resentment is what eventually opens the door.</div>
               </div>
 
               <div className="faq-item">
                 <div className="faq-q">Is it okay to involve a doctor or other professional in the conversation?</div>
-                <div className="faq-a">Yes, and often it helps. Aging parents who push back on family will frequently accept the same information from a doctor, social worker, or care coordinator. It is not a betrayal to bring in professional voices — it is recognizing that some conversations land better outside the family system. Geriatric care managers in the GTA can also lead these conversations directly.</div>
+                <div className="faq-a">Yes, and often it helps. Aging parents who push back on family will frequently accept the same information from a doctor, social worker, or care coordinator. It is not a betrayal to bring in professional voices. It is recognizing that some conversations land better outside the family system. Geriatric care managers in the GTA can also lead these conversations directly.</div>
               </div>
 
               <div className="faq-item">

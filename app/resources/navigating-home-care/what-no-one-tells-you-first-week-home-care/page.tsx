@@ -161,7 +161,7 @@ const faqSchema = {
       name: 'When should I give feedback to the home care agency?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Early. The first week is exactly when feedback is most actionable. Agencies expect to hear from families during the adjustment period. It is not a complaint; it is information. If a caregiver is not a good fit, it is better to know in week one than week six. If something about the routine is not working, say so. A good agency will welcome the conversation and adjust accordingly.',
+        text: 'Early. The first week is exactly when feedback is most actionable. Agencies expect to hear from families during the adjustment period. It is not a complaint; it is information. If a caregiver is not a good fit, it is better to know in week one than week six. If something about the routine is not working, say so. A good agency will welcome the conversation and adjust accordingly. Do you check in after the first week if something feels off? Yes.',
       },
     },
   ],
@@ -636,7 +636,7 @@ export default function FirstWeekHomeCare() {
 
               <div className="faq-item">
                 <div className="faq-q">When should I give feedback to the home care agency?</div>
-                <div className="faq-a">Early. The first week is exactly when feedback is most actionable. Agencies expect to hear from families during the adjustment period. It is not a complaint; it is information. If a caregiver is not a good fit, it is better to know in week one than week six. If something about the routine is not working, say so. A good agency will welcome the conversation and adjust accordingly.</div>
+                <div className="faq-a">Early. The first week is exactly when feedback is most actionable. Agencies expect to hear from families during the adjustment period. It is not a complaint; it is information. If a caregiver is not a good fit, it is better to know in week one than week six. If something about the routine is not working, say so. A good agency will welcome the conversation and adjust accordingly. Do you check in after the first week if something feels off? Yes.</div>
               </div>
             </div>
 

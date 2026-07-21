@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: 'How quickly can Arcadia arrange home care after a hospital discharge?',
-    a: 'In most cases we can arrange care within 24 to 48 hours of a first conversation. We understand that hospital discharges move quickly and that families often have very little time to plan. If your situation is urgent, call us directly — we will do our best to move at the pace you need.',
+    a: 'In most cases we can arrange care within 24 to 48 hours of a first conversation. If you are asking what is the fastest way to set up care after discharge, call us with hospital details ready. Do you coordinate with discharge planners? Yes. We move at the pace your situation requires.',
   },
   {
     q: 'Will OHIP or Ontario Health atHome cover post-discharge home care?',

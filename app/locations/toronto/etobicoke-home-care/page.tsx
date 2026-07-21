@@ -18,7 +18,7 @@ const faqs = [
   },
   {
     q: "Can I combine Ontario Health atHome funding with Arcadia's private care in Etobicoke?",
-    a: "Yes — most of our Etobicoke clients do exactly this. We help you understand your publicly funded allocation and structure private care around the gaps. Our team handles the coordination so you don't have to navigate two systems alone.",
+    a: "Yes — most of our Etobicoke clients do exactly this. If you are wondering how do I combine public and private care, we explain your allocation first. Do you coordinate both systems? Yes, so you do not navigate them alone.",
   },
   {
     q: "Is home care covered by OHIP in Etobicoke?",

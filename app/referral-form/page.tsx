@@ -21,6 +21,21 @@ type Field = {
   title?: string;
 };
 
+const faqs = [
+  {
+    q: 'Who can submit a professional referral to Arcadia?',
+    a: 'Hospital discharge planners, social workers, occupational therapists, physicians, case managers, Ontario Health atHome coordinators, and other healthcare professionals can submit referrals. Families may also refer directly.',
+  },
+  {
+    q: 'What information should I include in a referral?',
+    a: 'Include your name, organization, role, contact details, and the patient\'s first name at minimum. Additional clinical context such as diagnosis, mobility status, and anticipated start date helps us respond faster.',
+  },
+  {
+    q: 'How quickly will Arcadia follow up on a referral?',
+    a: 'We aim to respond within one business day. For urgent discharges, call (844) 977-0050 directly and identify yourself as a referring professional for the fastest response.',
+  },
+];
+
 export default function ReferralFormPage() {
   const fields: Field[] = [
     {
@@ -75,6 +90,30 @@ export default function ReferralFormPage() {
   ];
 
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([
+            {
+              '@context': 'https://schema.org',
+              '@type': 'WebPage',
+              name: 'Professional Referral Form',
+              url: 'https://www.arcadiahomecare.ca/referral-form/',
+              publisher: { '@type': 'Organization', name: 'Arcadia Home Care', url: 'https://www.arcadiahomecare.ca' },
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: faqs.map((faq) => ({
+                '@type': 'Question',
+                name: faq.q,
+                acceptedAnswer: { '@type': 'Answer', text: faq.a },
+              })),
+            },
+          ]),
+        }}
+      />
     <main
       style={{
         padding: "120px 24px 80px",
@@ -443,6 +482,26 @@ export default function ReferralFormPage() {
           <li>Discharge timing and preferred care start date</li>
         </ul>
       </section>
+
+      <section
+        style={{
+          marginTop: 12,
+          borderRadius: 16,
+          border: "1px solid #E5E0D8",
+          background: "#FAFAF8",
+          padding: 24,
+        }}
+      >
+        <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#C8302A", marginBottom: 12 }}>Frequently Asked Questions</p>
+        <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(1.5rem, 3vw, 2rem)", color: "#1C2B3A", marginBottom: 16 }}>Common questions about referrals</h2>
+        {faqs.map((faq) => (
+          <div key={faq.q} style={{ borderBottom: "1px solid #E5E0D8", padding: "20px 0" }}>
+            <h3 style={{ fontSize: 16, fontWeight: 700, color: "#1C2B3A", margin: "0 0 10px", lineHeight: 1.5 }}>{faq.q}</h3>
+            <p style={{ fontSize: 15, color: "#4B5563", lineHeight: 1.8, margin: 0 }}>{faq.a}</p>
+          </div>
+        ))}
+      </section>
     </main>
+    </>
   );
 }

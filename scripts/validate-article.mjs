@@ -21,6 +21,7 @@
 
 import fs   from 'node:fs'
 import path from 'node:path'
+import { execSync } from 'node:child_process'
 import { fileURLToPath } from 'node:url'
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
@@ -333,6 +334,19 @@ console.log(`  Blocking issues:   ${bCol}${blockingCount}${C.reset}`)
 console.log(`  Advisory warnings: ${aCol}${advisoryCount}${C.reset}`)
 
 if (exitCode === 0) {
+  const llmsScript = path.join(ROOT, 'scripts', 'sync-llms-txt.mjs')
+  if (fs.existsSync(llmsScript) && /^(app|src\/app)\/resources\//.test(target)) {
+    log.head('LLM map (llms.txt)')
+    try {
+      execSync(`node ${JSON.stringify(llmsScript)}`, { cwd: ROOT, stdio: 'inherit' })
+      log.pass('public/llms.txt updated — include it in your publish commit')
+    } catch {
+      log.fail('npm run sync:llms failed')
+      exitCode = 1
+      blockingCount++
+    }
+  }
+
   console.log(`\n${C.green}${C.bold}PASS${C.reset} — article is ready to commit\n`)
 } else {
   console.log(`\n${C.red}${C.bold}FAIL${C.reset} — fix blocking issues before committing\n`)

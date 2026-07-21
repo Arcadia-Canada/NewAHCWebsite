@@ -42,6 +42,33 @@ const articles = [
   },
 ]
 
+const faqs = [
+  {
+    q: 'What are the early signs of dementia in a parent?',
+    a: 'Look for changes beyond normal aging: repeating questions, getting lost in familiar places, difficulty managing finances or medications, personality shifts, and trouble following conversations. Our early signs guide covers what warrants a medical evaluation.',
+  },
+  {
+    q: 'How do I know if it is normal aging or dementia?',
+    a: 'Normal aging involves occasional forgetfulness that does not disrupt daily life. Dementia causes progressive changes that affect safety, independence, and daily function. If you are asking how do I tell the difference, our normal aging versus dementia guide walks through examples. Can you point us to the right article? Yes, in this cluster.',
+  },
+  {
+    q: 'How do I introduce home care to a parent with dementia?',
+    a: 'Start early, frame help as support rather than replacement, and involve your parent in decisions where possible. Our guide covers strategies for resistance, fear, and confusion about accepting help.',
+  },
+  {
+    q: 'When should someone with dementia stop driving?',
+    a: 'When reaction time, judgment, or spatial awareness create safety risks for the driver and others. Our driving guide covers how to recognize the signs, have the conversation, and find transportation alternatives in Toronto.',
+  },
+  {
+    q: 'How can I keep someone with dementia safe at home?',
+    a: 'Room-by-room modifications help: secure exits for wandering, simplify the kitchen, add bathroom grab bars, and remove trip hazards. Our home safety guide walks through each area and when to bring in professional support.',
+  },
+  {
+    q: 'Does Arcadia specialize in dementia home care?',
+    a: 'Yes. Dementia and Alzheimer\'s care is one of our most requested services. Our caregivers are trained in dementia-specific communication, safety protocols, and behavioural support. Call us to discuss your parent\'s situation.',
+  },
+]
+
 export default function DementiaMemoryCareHub() {
   return (
     <>
@@ -69,6 +96,15 @@ export default function DementiaMemoryCareHub() {
                 { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://www.arcadiahomecare.ca/resources/' },
                 { '@type': 'ListItem', position: 3, name: 'Dementia & Memory Care', item: 'https://www.arcadiahomecare.ca/resources/dementia-memory-care/' },
               ],
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: faqs.map((faq) => ({
+                '@type': 'Question',
+                name: faq.q,
+                acceptedAnswer: { '@type': 'Answer', text: faq.a },
+              })),
             },
           ]),
         }}
@@ -123,6 +159,12 @@ export default function DementiaMemoryCareHub() {
         .cta-buttons { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
         .btn-red { background: #C8302A; color: #fff; text-decoration: none; padding: 14px 28px; border-radius: 8px; font-size: 15px; font-weight: 700; }
         .btn-outline { border: 1.5px solid rgba(255,255,255,0.5); background: transparent; color: #fff; text-decoration: none; padding: 14px 28px; border-radius: 8px; font-size: 15px; font-weight: 700; }
+
+        .hub-faq { margin-top: 56px; padding-top: 40px; border-top: 1px solid #E5E0D8; }
+        .hub-faq h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(1.5rem, 2.5vw, 2rem); font-weight: 600; color: #1C2B3A; margin-bottom: 24px; }
+        .hub-faq-item { border-bottom: 1px solid #E5E0D8; padding: 20px 0; }
+        .hub-faq-item h3 { font-size: 1rem; font-weight: 700; color: #1C2B3A; margin: 0 0 10px; line-height: 1.5; }
+        .hub-faq-item p { font-size: 0.9375rem; color: #4B5563; line-height: 1.8; margin: 0; }
       `}</style>
 
       <main className="hub-page">
@@ -196,6 +238,17 @@ export default function DementiaMemoryCareHub() {
                 in Toronto can have a care assessment within 24–48 hours.
               </p>
             </div>
+
+            <section className="hub-faq">
+              <p className="hub-articles-label">Frequently Asked Questions</p>
+              <h2>Common questions about dementia care at home</h2>
+              {faqs.map((faq) => (
+                <div key={faq.q} className="hub-faq-item">
+                  <h3>{faq.q}</h3>
+                  <p>{faq.a}</p>
+                </div>
+              ))}
+            </section>
           </div>
 
           {/* Sidebar */}

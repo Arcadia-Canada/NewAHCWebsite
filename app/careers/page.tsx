@@ -122,9 +122,47 @@ const benefits = [
   { icon: '🌍', title: 'Diverse Community', body: 'A multilingual team serving clients across cultures — Tagalog, Hindi, Farsi, Mandarin, and more.' },
 ]
 
+const faqs = [
+  {
+    q: 'What roles is Arcadia currently hiring for?',
+    a: 'We are hiring Personal Support Workers, Registered Nurses, Registered Practical Nurses, and Rehabilitation Support Workers across the GTA. All roles start with our pre-hire application process.',
+  },
+  {
+    q: 'What are the requirements to work at Arcadia?',
+    a: 'Requirements vary by role but generally include current certification or CNO registration, CPR/First Aid, a Vulnerable Sector Police Check, and relevant experience. See each role listing for specific requirements.',
+  },
+  {
+    q: 'How do I apply for a position at Arcadia?',
+    a: 'Complete the pre-hire application form online, then finish the role-appropriate skills assessment and upload your credentials. Our hiring team reviews submissions and follows up with next steps.',
+  },
+]
+
 export default function CareersPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([
+            {
+              '@context': 'https://schema.org',
+              '@type': 'WebPage',
+              name: 'Careers at Arcadia Home Care',
+              url: 'https://www.arcadiahomecare.ca/careers/',
+              publisher: { '@type': 'Organization', name: 'Arcadia Home Care', url: 'https://www.arcadiahomecare.ca' },
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: faqs.map((faq) => ({
+                '@type': 'Question',
+                name: faq.q,
+                acceptedAnswer: { '@type': 'Answer', text: faq.a },
+              })),
+            },
+          ]),
+        }}
+      />
       <style>{`
         .careers-page { font-family: 'DM Sans', system-ui, sans-serif; color: #2D2D2D; }
 
@@ -369,6 +407,11 @@ export default function CareersPage() {
         .cta-careers-actions .btn-outline-white {
           min-width: 200px;
         }
+        .page-faq { max-width: 760px; margin: 0 auto; padding: 80px 24px; }
+        .page-faq h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(1.5rem, 2.5vw, 2rem); font-weight: 600; color: #1C2B3A; margin-bottom: 24px; }
+        .page-faq-item { border-bottom: 1px solid #E5E0D8; padding: 20px 0; }
+        .page-faq-item h3 { font-size: 1rem; font-weight: 700; color: #1C2B3A; margin: 0 0 10px; line-height: 1.5; }
+        .page-faq-item p { font-size: 0.9375rem; color: #4B5563; line-height: 1.8; margin: 0; }
       `}</style>
 
       <main className="careers-page">
@@ -511,6 +554,17 @@ export default function CareersPage() {
             </div>
           </div>
         </div>
+
+        <section className="page-faq">
+          <p className="section-eyebrow">Frequently Asked Questions</p>
+          <h2>Common questions about careers at Arcadia</h2>
+          {faqs.map((faq) => (
+            <div key={faq.q} className="page-faq-item">
+              <h3>{faq.q}</h3>
+              <p>{faq.a}</p>
+            </div>
+          ))}
+        </section>
 
         {/* CTA */}
         <section className="cta-careers">

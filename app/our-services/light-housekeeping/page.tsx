@@ -20,15 +20,15 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: 'What is included in light housekeeping?',
-    a: 'Light housekeeping typically covers the everyday tasks that keep a home functional and safe: vacuuming and mopping floors, cleaning bathrooms and kitchens, dusting, doing laundry and folding, washing dishes, tidying living areas, taking out rubbish, and light organization. It does not include heavy cleaning, window washing, or outdoor maintenance. The scope is tailored to what the individual needs and what is practical given the frequency of visits.',
+    a: 'Light housekeeping typically covers the everyday tasks that keep a home functional and safe: vacuuming and mopping floors, cleaning bathrooms and kitchens, dusting, doing laundry and folding, washing dishes, tidying living areas, taking out rubbish, and light organization. It does not include heavy cleaning, window washing, or outdoor maintenance. The scope is tailored to what the individual needs and what is practical given the frequency of visits. Many families ask how do I add housekeeping to an existing care plan.',
   },
   {
     q: 'Can light housekeeping be combined with personal care or companion care?',
-    a: 'Yes — and this is the most common arrangement. Light housekeeping is rarely provided in isolation. Most clients receive a combination of personal support, companionship, and housekeeping within the same visit or across a weekly schedule. Arcadia builds care plans around the full picture of what the person needs, not around a single service category.',
+    a: 'Yes, and this is the most common arrangement. Light housekeeping is rarely provided in isolation. Most clients receive a combination of personal support, companionship, and housekeeping within the same visit or across a weekly schedule. Arcadia builds care plans around the full picture of what the person needs, not around a single service category. Can you combine light housekeeping with personal care in one visit? Yes.',
   },
   {
     q: 'My parent refuses to let anyone clean their home. How do we handle that?',
-    a: 'This is more common than most families expect. For many older adults, accepting help with the home feels like an admission of decline — something they resist even when the situation has clearly changed. Approaches that tend to work better than direct persuasion include introducing a caregiver whose primary role is companionship first, letting the housekeeping happen naturally alongside visits, and framing help as maintaining the home rather than fixing a problem.',
+    a: 'This is more common than most families expect. For many older adults, accepting help with the home feels like an admission of decline, something they resist even when the situation has clearly changed. Approaches that tend to work better than direct persuasion include introducing a caregiver whose primary role is companionship first, letting the housekeeping happen naturally alongside visits, and framing help as maintaining the home rather than fixing a problem.',
   },
   {
     q: 'Is light housekeeping covered by Ontario Health atHome or OHIP?',
@@ -36,7 +36,7 @@ const faqs = [
   },
   {
     q: 'Can Arcadia help with meal preparation as part of a housekeeping visit?',
-    a: 'Yes. Meal preparation is one of the most common tasks combined with light housekeeping — preparing meals or snacks for the visit and sometimes for later in the day, checking the fridge and pantry for spoiled or expired food, and ensuring the kitchen is clean and organized. This combination is particularly important for older adults who are living alone and whose nutrition and food safety are a concern.',
+    a: 'Yes. Meal preparation is one of the most common tasks combined with light housekeeping: preparing meals or snacks for the visit and sometimes for later in the day, checking the fridge and pantry for spoiled or expired food, and ensuring the kitchen is clean and organized. This combination is particularly important for older adults who are living alone and whose nutrition and food safety are a concern.',
   },
 ]
 

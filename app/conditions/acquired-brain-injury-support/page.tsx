@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     q: 'Can Arcadia work with our case manager, occupational therapist, or physiotherapist?',
-    a: 'Yes — and this is how we prefer to work. Our RSWs and caregivers operate as part of a broader care team, implementing plans developed by the treating professionals rather than working in isolation. We communicate regularly with case managers, OTs, physiotherapists, social workers, and other team members, and we document progress in a way that supports the rehabilitation process.',
+    a: 'Yes — and this is how we prefer to work. Our RSWs and caregivers operate as part of a broader care team, implementing plans developed by the treating professionals rather than working in isolation. Can you coordinate with our OT or case manager? Do you communicate with treating professionals? Yes. We document progress for the broader care team.',
   },
   {
     q: 'Is ABI home care covered by insurance in Ontario?',

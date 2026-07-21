@@ -383,11 +383,11 @@ export default function PricingFundingPage() {
               },
               {
                 q: 'My parent was just discharged from hospital. Will they get funded home care automatically?',
-                a: 'Not automatically. A discharge from hospital typically triggers a referral to Ontario Health atHome, but the process takes time and the hours allocated may not begin immediately. Many families use private care to bridge the gap between discharge and the start of funded services, or to supplement funded hours that do not fully cover the need. Arcadia can start within days of a first conversation.',
+                a: 'Not automatically. A discharge from hospital typically triggers a referral to Ontario Health atHome, but the process takes time. Families ask what is the fastest way to get support after discharge. Can you start private care while waiting for funded hours? Yes, often within days.',
               },
               {
                 q: 'We cannot afford full private coverage. What are our options?',
-                a: 'Several options are worth exploring: maximizing publicly funded hours through Ontario Health atHome, checking whether any insurance or benefit coverage applies, and using private care selectively for the hours and tasks where it makes the biggest difference. A care assessment helps identify where private support would have the most impact with the fewest hours — so families are not paying for more than they need.',
+                a: 'Several options are worth exploring: maximizing publicly funded hours through Ontario Health atHome, checking whether any insurance or benefit coverage applies, and using private care selectively for the hours and tasks where it makes the biggest difference. If you are wondering how do I afford care on a limited budget, we help identify the highest-impact hours. Do you offer flexible starting hours? Yes.',
               },
               {
                 q: 'Does Arcadia charge for the initial assessment?',

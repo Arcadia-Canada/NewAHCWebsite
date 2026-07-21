@@ -9,6 +9,29 @@ export const metadata: Metadata = {
   },
 }
 
+const faqs = [
+  {
+    q: 'What is included in an Arcadia care plan?',
+    a: 'A care plan documents daily routines, medical context, personal preferences, family communication preferences, and goals of care. If you are wondering how do I see what is in the plan, you always have access. Do you update it when needs change? Yes.',
+  },
+  {
+    q: 'Can families see and change the care plan?',
+    a: 'Yes. The care plan is a living document. You can request changes at any time by contacting your Arcadia care manager, and you will always have visibility into what it contains.',
+  },
+  {
+    q: 'How is the care plan used during visits?',
+    a: 'Caregivers review the plan before each shift and document what was completed after every visit. Families ask who should receive updates when something changes. Your named care manager flags concerns the same day.',
+  },
+  {
+    q: 'When is a care plan created?',
+    a: 'The care plan is developed after the in-home care assessment, once we have a clear picture of your loved one\'s needs, routines, and goals.',
+  },
+  {
+    q: 'Does the care plan get shared with doctors or Ontario Health atHome?',
+    a: 'With your consent, relevant portions can be shared with physicians, Ontario Health atHome coordinators, or other providers involved in your loved one\'s care.',
+  },
+]
+
 export default function YourCarePlanPage() {
   return (
     <>
@@ -36,6 +59,15 @@ export default function YourCarePlanPage() {
                 { '@type': 'ListItem', position: 2, name: 'How Care Starts', item: 'https://www.arcadiahomecare.ca/how-care-starts/' },
                 { '@type': 'ListItem', position: 3, name: 'Your Care Plan', item: 'https://www.arcadiahomecare.ca/how-care-starts/your-care-plan/' },
               ],
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: faqs.map((faq) => ({
+                '@type': 'Question',
+                name: faq.q,
+                acceptedAnswer: { '@type': 'Answer', text: faq.a },
+              })),
             },
           ]),
         }}
@@ -109,6 +141,13 @@ export default function YourCarePlanPage() {
         .cta-buttons { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
         .btn-red { background: #C8302A; color: #fff; text-decoration: none; padding: 14px 28px; border-radius: 8px; font-size: 15px; font-weight: 700; }
         .btn-outline { border: 1.5px solid rgba(255,255,255,0.5); background: transparent; color: #fff; text-decoration: none; padding: 14px 28px; border-radius: 8px; font-size: 15px; font-weight: 700; }
+
+        .page-faq { margin-top: 48px; padding-top: 40px; border-top: 1px solid #E5E0D8; }
+        .page-faq-eyebrow { font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #C8302A; margin-bottom: 12px; }
+        .page-faq h2 { margin-top: 0; }
+        .page-faq-item { border-bottom: 1px solid #E5E0D8; padding: 20px 0; }
+        .page-faq-item h3 { font-size: 1rem; font-weight: 700; color: #1C2B3A; margin: 0 0 10px; line-height: 1.5; }
+        .page-faq-item p { font-size: 0.9375rem; color: #4B5563; line-height: 1.8; margin: 0; }
       `}</style>
 
       <main className="care-plan-page">
@@ -298,6 +337,17 @@ export default function YourCarePlanPage() {
               With your consent, relevant portions can be shared with physicians, Ontario Health atHome
               coordinators, or other providers involved in your loved one's care.
             </p>
+
+            <section className="page-faq">
+              <p className="page-faq-eyebrow">Frequently Asked Questions</p>
+              <h2>Questions families ask about care plans</h2>
+              {faqs.map((faq) => (
+                <div key={faq.q} className="page-faq-item">
+                  <h3>{faq.q}</h3>
+                  <p>{faq.a}</p>
+                </div>
+              ))}
+            </section>
 
             {/* Step navigation footer */}
             <div className="step-nav-footer">

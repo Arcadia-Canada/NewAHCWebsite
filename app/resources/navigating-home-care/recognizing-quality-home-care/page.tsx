@@ -101,7 +101,7 @@ const faqSchema = {
       name: 'How do I know if my parent is receiving good home care?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Look for signs beyond the basics. Good care shows up in your parent\u2019s mood, not just their routine. Are they calmer on the days the caregiver visits? Do they mention the caregiver by name? Are they eating better, sleeping better, or more willing to move around the house? The clearest sign is often the absence of anxiety \u2014 yours and theirs.',
+        text: 'Look for signs beyond the basics. Good care shows up in your parent\u2019s mood, not just their routine. Are they calmer on the days the caregiver visits? Do they mention the caregiver by name? Are they eating better, sleeping better, or more willing to move around the house? The clearest sign is often the absence of anxiety: yours and theirs. Do you match caregivers consistently near me in the GTA? That consistency is one sign of quality.',
       },
     },
     {
@@ -109,7 +109,7 @@ const faqSchema = {
       name: 'What should I expect from a home care caregiver?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Expect consistency, attentiveness, and communication. A good caregiver arrives on time, follows the care plan, and notices small changes in your parent\u2019s condition. They should communicate with you regularly \u2014 not just when something goes wrong, but when something goes well. They should treat your parent with dignity, respect their preferences, and adapt to their routines rather than imposing new ones.',
+        text: 'Expect consistency, attentiveness, and communication. A good caregiver arrives on time, follows the care plan, and notices small changes in your parent\u2019s condition. They should communicate with you regularly, not just when something goes wrong, but when something goes well. They should treat your parent with dignity, respect their preferences, and adapt to their routines rather than imposing new ones.',
       },
     },
     {
@@ -117,7 +117,7 @@ const faqSchema = {
       name: 'How long does it take for home care to feel normal?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Most families say it takes two to four weeks for everyone to settle into a rhythm. The first few visits often feel awkward \u2014 for your parent, for the caregiver, and for you. That is normal. What matters is whether the awkwardness lifts over time. If it does not, or if your parent seems more distressed rather than less, that is worth raising with the care team.',
+        text: 'Most families say it takes two to four weeks for everyone to settle into a rhythm. The first few visits often feel awkward for your parent, for the caregiver, and for you. That is normal. What matters is whether the awkwardness lifts over time. If it does not, or if your parent seems more distressed rather than less, that is worth raising with the care team.',
       },
     },
     {
@@ -125,7 +125,7 @@ const faqSchema = {
       name: 'What is the difference between a good caregiver and a great one?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'A good caregiver follows the care plan reliably. A great one notices things the care plan does not cover \u2014 that your father is quieter than usual, that your mother has stopped reading the newspaper she used to finish every morning, that a medication seems to be causing a side effect nobody has flagged. Great care is attentive. It sees the person, not just the tasks.',
+        text: 'A good caregiver follows the care plan reliably. A great one notices things the care plan does not cover: that your father is quieter than usual, that your mother has stopped reading the newspaper she used to finish every morning, that a medication seems to be causing a side effect nobody has flagged. Great care is attentive. It sees the person, not just the tasks.',
       },
     },
     {
@@ -133,7 +133,7 @@ const faqSchema = {
       name: 'What should I do if something about the care does not feel right?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Say something early. Most issues in home care \u2014 a scheduling mismatch, a personality fit that is not quite working, a routine that needs adjusting \u2014 are solvable when raised promptly. A good agency will welcome your feedback, not dismiss it. If you are unsure whether something is worth mentioning, it usually is. Trust your instinct as the person who knows your parent best.',
+        text: 'Say something early. Most issues in home care, whether a scheduling mismatch, a personality fit that is not quite working, or a routine that needs adjusting, are solvable when raised promptly. A good agency will welcome your feedback, not dismiss it. If you are unsure whether something is worth mentioning, it usually is. Trust your instinct as the person who knows your parent best.',
       },
     },
     {
@@ -149,7 +149,7 @@ const faqSchema = {
       name: 'Can I change caregivers if the match is not working?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. A good agency expects this and plans for it. Not every caregiver will be the right fit for every client, and that is not a failure on anyone\u2019s part. What matters is how the agency handles the transition \u2014 quickly, smoothly, and without making you feel difficult for asking. If an agency resists changing a caregiver, that is a red flag about the agency, not about your expectations.',
+        text: 'Yes. A good agency expects this and plans for it. Not every caregiver will be the right fit for every client, and that is not a failure on anyone\u2019s part. What matters is how the agency handles the transition quickly, smoothly, and without making you feel difficult for asking. If an agency resists changing a caregiver, that is a red flag about the agency, not about your expectations.',
       },
     },
   ],
@@ -586,27 +586,27 @@ export default function RecognizingQualityHomeCare() {
 
               <div className="faq-item">
                 <div className="faq-q">How do I know if my parent is receiving good home care?</div>
-                <div className="faq-a">Look for signs beyond the basics. Good care shows up in your parent&apos;s mood, not just their routine. Are they calmer on the days the caregiver visits? Do they mention the caregiver by name? Are they eating better, sleeping better, or more willing to move around the house? The clearest sign is often the absence of anxiety &mdash; yours and theirs.</div>
+                <div className="faq-a">Look for signs beyond the basics. Good care shows up in your parent&apos;s mood, not just their routine. Are they calmer on the days the caregiver visits? Do they mention the caregiver by name? Are they eating better, sleeping better, or more willing to move around the house? The clearest sign is often the absence of anxiety: yours and theirs. Do you match caregivers consistently near me in the GTA? That consistency is one sign of quality.</div>
               </div>
 
               <div className="faq-item">
                 <div className="faq-q">What should I expect from a home care caregiver?</div>
-                <div className="faq-a">Expect consistency, attentiveness, and communication. A good caregiver arrives on time, follows the care plan, and notices small changes in your parent&apos;s condition. They should communicate with you regularly &mdash; not just when something goes wrong, but when something goes well. They should treat your parent with dignity, respect their preferences, and adapt to their routines rather than imposing new ones.</div>
+                <div className="faq-a">Expect consistency, attentiveness, and communication. A good caregiver arrives on time, follows the care plan, and notices small changes in your parent&apos;s condition. They should communicate with you regularly, not just when something goes wrong, but when something goes well. They should treat your parent with dignity, respect their preferences, and adapt to their routines rather than imposing new ones.</div>
               </div>
 
               <div className="faq-item">
                 <div className="faq-q">How long does it take for home care to feel normal?</div>
-                <div className="faq-a">Most families say it takes two to four weeks for everyone to settle into a rhythm. The first few visits often feel awkward &mdash; for your parent, for the caregiver, and for you. That is normal. What matters is whether the awkwardness lifts over time. If it does not, or if your parent seems more distressed rather than less, that is worth raising with the care team.</div>
+                <div className="faq-a">Most families say it takes two to four weeks for everyone to settle into a rhythm. The first few visits often feel awkward for your parent, for the caregiver, and for you. That is normal. What matters is whether the awkwardness lifts over time. If it does not, or if your parent seems more distressed rather than less, that is worth raising with the care team.</div>
               </div>
 
               <div className="faq-item">
                 <div className="faq-q">What is the difference between a good caregiver and a great one?</div>
-                <div className="faq-a">A good caregiver follows the care plan reliably. A great one notices things the care plan does not cover &mdash; that your father is quieter than usual, that your mother has stopped reading the newspaper she used to finish every morning, that a medication seems to be causing a side effect nobody has flagged. Great care is attentive. It sees the person, not just the tasks.</div>
+                <div className="faq-a">A good caregiver follows the care plan reliably. A great one notices things the care plan does not cover: that your father is quieter than usual, that your mother has stopped reading the newspaper she used to finish every morning, that a medication seems to be causing a side effect nobody has flagged. Great care is attentive. It sees the person, not just the tasks.</div>
               </div>
 
               <div className="faq-item">
                 <div className="faq-q">What should I do if something about the care does not feel right?</div>
-                <div className="faq-a">Say something early. Most issues in home care &mdash; a scheduling mismatch, a personality fit that is not quite working, a routine that needs adjusting &mdash; are solvable when raised promptly. A good agency will welcome your feedback, not dismiss it. If you are unsure whether something is worth mentioning, it usually is. Trust your instinct as the person who knows your parent best.</div>
+                <div className="faq-a">Say something early. Most issues in home care, whether a scheduling mismatch, a personality fit that is not quite working, or a routine that needs adjusting, are solvable when raised promptly. A good agency will welcome your feedback, not dismiss it. If you are unsure whether something is worth mentioning, it usually is. Trust your instinct as the person who knows your parent best.</div>
               </div>
 
               <div className="faq-item">
@@ -616,7 +616,7 @@ export default function RecognizingQualityHomeCare() {
 
               <div className="faq-item">
                 <div className="faq-q">Can I change caregivers if the match is not working?</div>
-                <div className="faq-a">Yes. A good agency expects this and plans for it. Not every caregiver will be the right fit for every client, and that is not a failure on anyone&apos;s part. What matters is how the agency handles the transition &mdash; quickly, smoothly, and without making you feel difficult for asking. If an agency resists changing a caregiver, that is a red flag about the agency, not about your expectations.</div>
+                <div className="faq-a">Yes. A good agency expects this and plans for it. Not every caregiver will be the right fit for every client, and that is not a failure on anyone&apos;s part. What matters is how the agency handles the transition quickly, smoothly, and without making you feel difficult for asking. If an agency resists changing a caregiver, that is a red flag about the agency, not about your expectations.</div>
               </div>
             </div>
 

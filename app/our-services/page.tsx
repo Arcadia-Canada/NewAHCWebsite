@@ -18,9 +18,60 @@ const services = [
   { icon: '📦', title: 'Downsizing & Transition Support', desc: 'Practical, compassionate help navigating a move — decluttering, organizing, and transitioning with dignity.', href: '/our-services/downsizing-transition-support/', tag: null },
 ]
 
+const faqs = [
+  {
+    q: 'What home care services does Arcadia offer?',
+    a: 'Arcadia offers dementia care, acquired brain injury support, rehabilitation, hospital discharge support, palliative care, personal support, companion care, respite, overnight care, case management, light housekeeping, and downsizing support. If you are not sure where to start, a free consultation helps you map your parent\'s needs to the right combination.',
+  },
+  {
+    q: 'How do I know which service my parent needs?',
+    a: 'Start with a free consultation. We listen to your situation, ask about daily routines and safety risks, and recommend the right combination of services. If you are unsure how do I choose between services, we guide you. Do you help families combine multiple types of care? Yes.',
+  },
+  {
+    q: 'Does Arcadia provide overnight or 24-hour home care?',
+    a: 'Yes. We offer overnight supervision and 24-hour care for clients who need continuous support. Do you provide someone who can stay overnight near me in Toronto? Yes, across the GTA when clinically appropriate.',
+  },
+  {
+    q: 'Can services be combined in one care plan?',
+    a: 'Yes. Most clients use a combination of services tailored to their situation. Case management coordinates everything so your family has one point of contact across all care types.',
+  },
+  {
+    q: 'Does Arcadia specialize in dementia and brain injury care?',
+    a: 'Yes. Dementia and acquired brain injury are two of our most requested specialties. Our caregivers receive condition-specific training and are matched based on clinical fit and personality.',
+  },
+  {
+    q: 'How quickly can services start?',
+    a: 'We can typically conduct a care assessment within 24 to 48 hours of first contact. Care often begins within a week of the assessment, with compressed timelines available for urgent situations.',
+  },
+]
+
 export default function OurServicesPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([
+            {
+              '@context': 'https://schema.org',
+              '@type': 'WebPage',
+              name: 'Our Services',
+              description: 'Specialized home care services for Toronto and GTA families.',
+              url: 'https://www.arcadiahomecare.ca/our-services/',
+              publisher: { '@type': 'Organization', name: 'Arcadia Home Care', url: 'https://www.arcadiahomecare.ca' },
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: faqs.map((faq) => ({
+                '@type': 'Question',
+                name: faq.q,
+                acceptedAnswer: { '@type': 'Answer', text: faq.a },
+              })),
+            },
+          ]),
+        }}
+      />
       <style>{`
         .services-page { font-family: ${fonts.body}; background: ${colors.white}; }
         .trust-strip { background: ${colors.warm}; border-bottom: 1px solid ${colors.border}; padding: 12px 24px; display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; }
@@ -50,6 +101,11 @@ export default function OurServicesPage() {
         .referral-strip p { font-size: 15px; color: ${colors.primary}; margin-bottom: 14px; }
         .referral-strip a { display: inline-block; background: ${colors.primary}; color: ${colors.white}; padding: 11px 24px; border-radius: 8px; text-decoration: none; font-size: 14px; font-weight: 700; transition: all 0.2s; }
         .referral-strip a:hover { background: #0f1a26; }
+        .hub-faq { max-width: 760px; margin: 0 auto; padding: 72px 24px 0; }
+        .hub-faq h2 { font-family: ${fonts.display}; font-size: clamp(1.5rem, 2.5vw, 2rem); font-weight: 600; color: ${colors.primary}; margin-bottom: 24px; }
+        .hub-faq-item { border-bottom: 1px solid ${colors.border}; padding: 20px 0; }
+        .hub-faq-item h3 { font-size: 16px; font-weight: 700; color: ${colors.primary}; margin: 0 0 10px; line-height: 1.5; }
+        .hub-faq-item p { font-size: 15px; color: ${colors.textLight}; line-height: 1.8; margin: 0; }
       `}</style>
 
       <div className="services-page">
@@ -111,6 +167,17 @@ export default function OurServicesPage() {
               </a>
             ))}
           </div>
+        </section>
+
+        <section className="hub-faq">
+          <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: colors.accent, marginBottom: 12 }}>Frequently Asked Questions</p>
+          <h2>Common questions about our services</h2>
+          {faqs.map((faq) => (
+            <div key={faq.q} className="hub-faq-item">
+              <h3>{faq.q}</h3>
+              <p>{faq.a}</p>
+            </div>
+          ))}
         </section>
 
         {/* Bottom CTA */}

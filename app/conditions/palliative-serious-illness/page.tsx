@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: 'We already have a palliative care team. Why would we need additional home care support?',
-    a: 'Publicly funded palliative care in Ontario provides nursing visits, some PSW hours, and access to a palliative care team — but the hours allocated rarely match what a family actually needs around the clock. Gaps in coverage — overnight, on weekends, between nursing visits — are common. Private home care fills those gaps so that your loved one is never without support, and so that family caregivers can rest.',
+    a: 'Publicly funded palliative care in Ontario provides nursing visits, some PSW hours, and access to a palliative care team, but the hours allocated rarely match what a family actually needs around the clock. Families ask how do I cover nights and weekends. Can you fill gaps between nursing visits? Yes. Private home care keeps your loved one supported and gives family caregivers rest.',
   },
   {
     q: 'Can Arcadia provide overnight and 24-hour care for someone in palliative care at home?',

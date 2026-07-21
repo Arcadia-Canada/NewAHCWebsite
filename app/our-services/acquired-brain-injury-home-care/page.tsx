@@ -18,15 +18,15 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: 'What qualifications do Arcadia\'s Rehabilitation Support Workers have?',
-    a: 'Arcadia\'s RSWs hold post-secondary education in rehabilitation, kinesiology, disability studies, or a related field. All undergo a thorough screening process including reference checks and Vulnerable Sector Police Check. They receive in-house orientation and ongoing training, and work under the supervision of our RSW Manager — who has over fifteen years of field experience in ABI rehabilitation.',
+    a: 'Arcadia\'s RSWs hold post-secondary education in rehabilitation, kinesiology, disability studies, or a related field. All undergo a thorough screening process including reference checks and Vulnerable Sector Police Check. They receive in-house orientation and ongoing training, and work under the supervision of our RSW Manager, who has over fifteen years of field experience in ABI rehabilitation. Families often ask how do I find an RSW near me in Toronto. Do you match by clinical fit and personality? Yes.',
   },
   {
     q: 'How does Arcadia work with our existing rehabilitation team?',
-    a: 'We operate as part of the treating team, not independently of it. Our RSWs implement community rehabilitation programs developed by occupational therapists, physiotherapists, speech-language pathologists, and other professionals. We communicate regularly with case managers and treating clinicians, document observations that are clinically relevant, and flag changes in the client\'s presentation promptly rather than managing them in isolation.',
+    a: 'We operate as part of the treating team, not independently of it. Our RSWs implement community rehabilitation programs developed by occupational therapists, physiotherapists, speech-language pathologists, and other professionals. We communicate regularly with case managers and treating clinicians, document observations that are clinically relevant, and flag changes in the client\'s presentation promptly rather than managing them in isolation. Can you coordinate with our OT or case manager? Yes.',
   },
   {
     q: 'Can Arcadia provide both RSW and PSW support for the same client?',
-    a: 'Yes. Many ABI clients need both — RSW support for community rehabilitation goals and PSW support for personal care and daily living. Arcadia can coordinate both within a single care plan, with clear delineation of roles and consistent communication between team members.',
+    a: 'Yes. Many ABI clients need both: RSW support for community rehabilitation goals and PSW support for personal care and daily living. Arcadia can coordinate both within a single care plan, with clear delineation of roles and consistent communication between team members.',
   },
   {
     q: 'How does Arcadia handle the funding and documentation requirements for insurance-funded ABI care?',
@@ -38,7 +38,7 @@ const faqs = [
   },
   {
     q: 'Does Arcadia support ABI clients with behavioural or mental health challenges?',
-    a: 'Yes. Personality changes, impulsivity, irritability, emotional lability, depression, and anxiety are common after ABI and can be among the most challenging aspects for families and care teams to manage. Our RSWs are trained to work with these presentations in a structured, consistent way — using approaches aligned with the overall rehabilitation plan and in close coordination with the treating team.',
+    a: 'Yes. Personality changes, impulsivity, irritability, emotional lability, depression, and anxiety are common after ABI and can be among the most challenging aspects for families and care teams to manage. Our RSWs are trained to work with these presentations in a structured, consistent way, using approaches aligned with the overall rehabilitation plan and in close coordination with the treating team.',
   },
 ]
 

@@ -125,7 +125,7 @@ const faqSchema = {
       name: 'Is it normal to feel angry at the person you are caring for?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes, and it does not make you a bad person. Resentment and frustration are among the most common — and most hidden — symptoms of caregiver burnout. You are not angry at your parent. You are angry at a situation that has consumed your life without anyone acknowledging what it costs you. The anger is information. It is telling you the current arrangement is not sustainable.',
+        text: 'Yes, and it does not make you a bad person. Resentment and frustration are among the most common and most hidden symptoms of caregiver burnout. You are not angry at your parent. You are angry at a situation that has consumed your life without anyone acknowledging what it costs you. The anger is information. It is telling you the current arrangement is not sustainable.',
       },
     },
     {
@@ -133,7 +133,7 @@ const faqSchema = {
       name: 'What is respite care and how can it help with caregiver burnout?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Respite care is temporary relief for family caregivers. A trained caregiver comes to the home and takes over your responsibilities for a set period — a few hours, a day, or longer. The person you care for follows their usual routines with someone qualified and consistent. You step away completely. This is not a luxury. It is maintenance. Regular respite prevents burnout from reaching the point where you cannot continue at all.',
+        text: 'Respite care is temporary relief for family caregivers. A trained caregiver comes to the home and takes over your responsibilities for a set period: a few hours, a day, or longer. The person you care for follows their usual routines with someone qualified and consistent. You step away completely. This is not a luxury. It is maintenance. Regular respite prevents burnout from reaching the point where you cannot continue at all.',
       },
     },
     {
@@ -141,7 +141,7 @@ const faqSchema = {
       name: 'Can you recover from caregiver burnout without stopping caregiving?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'You can, but not by willpower alone. Recovery requires changing the structure, not just your mindset. That usually means bringing in consistent outside help — even a few hours a week — so you have protected time to rest, see people, and do things unrelated to caregiving. It also means letting go of the idea that you should be able to handle everything yourself. Most families who recover from burnout do so by sharing the load, not by trying harder.',
+        text: 'You can, but not by willpower alone. Recovery requires changing the structure, not just your mindset. That usually means bringing in consistent outside help, even a few hours a week, so you have protected time to rest, see people, and do things unrelated to caregiving. It also means letting go of the idea that you should be able to handle everything yourself. Most families who recover from burnout do so by sharing the load, not by trying harder.',
       },
     },
     {
@@ -157,7 +157,7 @@ const faqSchema = {
       name: 'Where can family caregivers in the GTA find support?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'In Toronto and the Greater Toronto Area, family caregivers can access support through Ontario Health atHome for publicly funded respite, private home care agencies like Arcadia for flexible respite and companion care, caregiver support groups through local community health centres, and the Ontario Caregiver Organization for resources and peer support. Starting with a single conversation — even just to understand your options — is often the step that changes things.',
+        text: 'In Toronto and the Greater Toronto Area, family caregivers can access support through Ontario Health atHome for publicly funded respite, private home care agencies like Arcadia for flexible respite and companion care, caregiver support groups through local community health centres, and the Ontario Caregiver Organization for resources and peer support. Starting with a single conversation, even just to understand your options, is often the step that changes things.',
       },
     },
   ],
@@ -601,17 +601,17 @@ export default function CaregiverBurnoutWarningSigns() {
 
               <div className="faq-item">
                 <div className="faq-q">Is it normal to feel angry at the person you are caring for?</div>
-                <div className="faq-a">Yes, and it does not make you a bad person. Resentment and frustration are among the most common — and most hidden — symptoms of caregiver burnout. You are not angry at your parent. You are angry at a situation that has consumed your life without anyone acknowledging what it costs you. The anger is information. It is telling you the current arrangement is not sustainable.</div>
+                <div className="faq-a">Yes, and it does not make you a bad person. Resentment and frustration are among the most common and most hidden symptoms of caregiver burnout. You are not angry at your parent. You are angry at a situation that has consumed your life without anyone acknowledging what it costs you. The anger is information. It is telling you the current arrangement is not sustainable.</div>
               </div>
 
               <div className="faq-item">
                 <div className="faq-q">What is respite care and how can it help with caregiver burnout?</div>
-                <div className="faq-a">Respite care is temporary relief for family caregivers. A trained caregiver comes to the home and takes over your responsibilities for a set period — a few hours, a day, or longer. The person you care for follows their usual routines with someone qualified and consistent. You step away completely. This is not a luxury. It is maintenance. Regular respite prevents burnout from reaching the point where you cannot continue at all.</div>
+                <div className="faq-a">Respite care is temporary relief for family caregivers. A trained caregiver comes to the home and takes over your responsibilities for a set period: a few hours, a day, or longer. The person you care for follows their usual routines with someone qualified and consistent. You step away completely. This is not a luxury. It is maintenance. Regular respite prevents burnout from reaching the point where you cannot continue at all.</div>
               </div>
 
               <div className="faq-item">
                 <div className="faq-q">Can you recover from caregiver burnout without stopping caregiving?</div>
-                <div className="faq-a">You can, but not by willpower alone. Recovery requires changing the structure, not just your mindset. That usually means bringing in consistent outside help — even a few hours a week — so you have protected time to rest, see people, and do things unrelated to caregiving. It also means letting go of the idea that you should be able to handle everything yourself. Most families who recover from burnout do so by sharing the load, not by trying harder.</div>
+                <div className="faq-a">You can, but not by willpower alone. Recovery requires changing the structure, not just your mindset. That usually means bringing in consistent outside help, even a few hours a week, so you have protected time to rest, see people, and do things unrelated to caregiving. It also means letting go of the idea that you should be able to handle everything yourself. Most families who recover from burnout do so by sharing the load, not by trying harder.</div>
               </div>
 
               <div className="faq-item">
@@ -621,7 +621,7 @@ export default function CaregiverBurnoutWarningSigns() {
 
               <div className="faq-item">
                 <div className="faq-q">Where can family caregivers in the GTA find support?</div>
-                <div className="faq-a">In Toronto and the Greater Toronto Area, family caregivers can access support through Ontario Health atHome for publicly funded respite, private home care agencies like Arcadia for flexible respite and companion care, caregiver support groups through local community health centres, and the Ontario Caregiver Organization for resources and peer support. Starting with a single conversation — even just to understand your options — is often the step that changes things.</div>
+                <div className="faq-a">In Toronto and the Greater Toronto Area, family caregivers can access support through Ontario Health atHome for publicly funded respite, private home care agencies like Arcadia for flexible respite and companion care, caregiver support groups through local community health centres, and the Ontario Caregiver Organization for resources and peer support. Starting with a single conversation, even just to understand your options, is often the step that changes things.</div>
               </div>
             </div>
 

@@ -18,27 +18,27 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: 'How quickly can Arcadia arrange care after a hospital discharge?',
-    a: 'In most cases, within 24 to 48 hours of a first conversation. We understand that hospital discharges move quickly and that families often have very little time to plan. If the situation is urgent, call us directly — we will do our best to move at the pace the discharge requires.',
+    a: 'In most cases, within 24 to 48 hours of a first conversation. We understand that hospital discharges move quickly and that families often have very little time to plan. If the situation is urgent, call us directly. We will do our best to move at the pace the discharge requires. If you are asking what is the fastest way to arrange care before discharge day, call us as soon as you have a likely date.',
   },
   {
     q: 'What information does Arcadia need to arrange post-discharge care?',
-    a: 'The basics: the person\'s name and address, the reason for hospitalization and any relevant diagnoses, what support they will need at home, their expected discharge date, and a contact for the family or discharge team. If there are specific clinical considerations — wound care requirements, mobility restrictions, medication changes — we need to know those too. The more context we have, the better the care plan we can build.',
+    a: 'The basics: the person\'s name and address, the reason for hospitalization and any relevant diagnoses, what support they will need at home, their expected discharge date, and a contact for the family or discharge team. If there are specific clinical considerations (wound care, mobility restrictions, medication changes), we need to know those too. The more context we have, the better the care plan we can build.',
   },
   {
     q: 'Will Ontario Health atHome provide support after discharge? Do we still need private care?',
-    a: 'Ontario Health atHome coordinates publicly funded home care following discharge, but the hours allocated are often limited and may not begin immediately. Many families use private home care to fill the gap between discharge and the start of publicly funded services, or to supplement the hours that funding provides. Arcadia works alongside Ontario Health atHome — not instead of it — and can help families understand what they are entitled to.',
+    a: 'Ontario Health atHome coordinates publicly funded home care following discharge, but the hours allocated are often limited and may not begin immediately. Many families use private home care to fill the gap between discharge and the start of publicly funded services, or to supplement the hours that funding provides. Arcadia works alongside Ontario Health atHome, not instead of it, and can help families understand what they are entitled to.',
   },
   {
-    q: 'Can Arcadia support someone coming home with complex needs — dementia, ABI, or palliative?',
+    q: 'Can Arcadia support someone coming home with complex needs (dementia, ABI, or palliative)?',
     a: 'Yes. Post-discharge support for clients with complex underlying conditions requires more than standard home care. Arcadia specializes in dementia, acquired brain injury, and palliative care, and our discharge support for these clients is built around the specific clinical requirements of each condition. We do not treat a dementia-complicated discharge the same as a routine post-surgical recovery.',
   },
   {
     q: 'What is the risk of not having support in place at discharge?',
-    a: 'The first days and weeks after hospital discharge are often the period when risk is highest in a person\'s recovery. Gaps in supervision, missed medications, falls, inadequate nutrition, and undetected infections are among the most common contributors to readmission. Having the right support in place from day one — even for a limited number of hours — can help reduce those risks.',
+    a: 'The first days and weeks after hospital discharge are often the period when risk is highest in a person\'s recovery. Gaps in supervision, missed medications, falls, inadequate nutrition, and undetected infections are among the most common contributors to readmission. Having the right support in place from day one, even for a limited number of hours, can help reduce those risks.',
   },
   {
     q: 'How does Arcadia coordinate with the hospital discharge team?',
-    a: 'Discharge planners and social workers can refer directly to Arcadia using our professional referral form or by phone. We respond promptly, gather the clinical information we need, and communicate back to the discharge team about the plan in place. We also coordinate with Ontario Health atHome and any other providers involved in the person\'s care.',
+    a: 'Discharge planners and social workers can refer directly to Arcadia using our professional referral form or by phone. We respond promptly, gather the clinical information we need, and communicate back to the discharge team about the plan in place. We also coordinate with Ontario Health atHome and any other providers involved in the person\'s care. Can you coordinate with our hospital discharge planner? Yes. Do you accept referrals from healthcare professionals? Yes.',
   },
 ]
 

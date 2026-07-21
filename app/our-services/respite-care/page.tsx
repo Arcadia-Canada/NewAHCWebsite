@@ -18,11 +18,11 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: 'How is respite care different from regular home care?',
-    a: 'The goal is the same — providing quality care for the person at home — but the primary beneficiary of respite care is the family caregiver, not just the care recipient. Respite care is specifically structured to give the caregiver defined, reliable time away. That means consistent scheduling, a caregiver who can be trusted to manage independently, and clear communication so the family member can actually step away rather than remaining on alert.',
+    a: 'The goal is the same: providing quality care for the person at home. But the primary beneficiary of respite care is the family caregiver, not just the care recipient. Respite care is specifically structured to give the caregiver defined, reliable time away. That means consistent scheduling, a caregiver who can be trusted to manage independently, and clear communication so the family member can actually step away rather than remaining on alert. If you are burned out and asking how do I get respite care near me, we start with a short conversation about hours and fit.',
   },
   {
     q: 'How many hours of respite do caregivers typically need?',
-    a: 'There is no universal answer, and the right amount is whatever allows the caregiver to genuinely recover rather than just pause. Some caregivers need a few hours a week to sleep, exercise, or have unscheduled time. Others benefit from longer blocks — full days or overnights — to manage work, travel, or their own health. A care assessment helps establish what would actually make a difference rather than defaulting to the minimum.',
+    a: 'There is no universal answer, and the right amount is whatever allows the caregiver to genuinely recover rather than just pause. Some caregivers need a few hours a week to sleep, exercise, or have unscheduled time. Others benefit from longer blocks: full days or overnights, to manage work, travel, or their own health. A care assessment helps establish what would actually make a difference rather than defaulting to the minimum.',
   },
   {
     q: 'My parent refuses to let anyone else provide care. How do we handle that?',
@@ -30,11 +30,11 @@ const faqs = [
   },
   {
     q: 'Can Arcadia provide overnight respite care?',
-    a: 'Yes. Overnight respite — particularly for caregivers who are not sleeping properly because they are monitoring or attending to a loved one at night — is one of the most impactful forms of relief. Arcadia provides overnight care seven days a week, and can arrange around-the-clock coverage for caregivers who need longer breaks.',
+    a: 'Yes. Overnight respite, particularly for caregivers who are not sleeping properly because they are monitoring or attending to your parent at night, is one of the most impactful forms of relief. Arcadia provides overnight care seven days a week, and can arrange around-the-clock coverage for caregivers who need longer breaks. Can someone stay overnight so I can sleep? Yes, when that is what the care plan requires.',
   },
   {
     q: 'How does Arcadia ensure the person receiving care is safe while I am away?',
-    a: 'We select and brief the respite caregiver specifically for the situation — the person\'s routines, preferences, any clinical considerations, and what to do if something unexpected happens. We check in with both the caregiver and the family after initial visits, and we communicate proactively if anything changes. The goal is that the family member can step away without the nagging worry that they are the only safety net.',
+    a: 'We select and brief the respite caregiver specifically for the situation: the person\'s routines, preferences, any clinical considerations, and what to do if something unexpected happens. We check in with both the caregiver and the family after initial visits, and we communicate proactively if anything changes. The goal is that the family member can step away without the nagging worry that they are the only safety net.',
   },
   {
     q: 'Is respite care covered by any public funding in Ontario?',

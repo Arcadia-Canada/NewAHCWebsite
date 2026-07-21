@@ -19,11 +19,11 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: 'What is the difference between companion care and personal support?',
-    a: 'Personal support focuses on physical care — bathing, dressing, meals, and mobility. Companion care focuses on social and emotional wellbeing — conversation, activities, outings, and human presence. Many clients benefit from both. Companion care is often the right starting point for someone who is managing physically but becoming increasingly isolated or withdrawn.',
+    a: 'Personal support focuses on physical care: bathing, dressing, meals, and mobility. Companion care focuses on social and emotional wellbeing: conversation, activities, outings, and human presence. Many clients benefit from both. Companion care is often the right starting point for someone who is managing physically but becoming increasingly isolated or withdrawn. If you are searching for companion care near me in Toronto, we match on personality and routine.',
   },
   {
     q: 'My parent says they don\'t want or need a companion. How do we handle that?',
-    a: 'Resistance is common — many older adults feel that accepting companionship implies they cannot manage on their own. What tends to work better than direct persuasion is introducing the companion gradually, framing visits around a specific shared activity rather than "care," and choosing someone whose personality is a genuine match for the person. Our team has navigated this many times and can help you think through the approach.',
+    a: 'Resistance is common. Many older adults feel that accepting companionship implies they cannot manage on their own. What tends to work better than direct persuasion is introducing the companion gradually, framing visits around a specific shared activity rather than "care," and choosing someone whose personality is a genuine match for the person. Our team has navigated this many times and can help you think through the approach.',
   },
   {
     q: 'What do companions actually do during a visit?',
@@ -31,15 +31,15 @@ const faqs = [
   },
   {
     q: 'Can companion care be combined with personal support?',
-    a: 'Yes — and this is a common arrangement. A caregiver can provide both companionship and personal care assistance in the same visit, or companion care can supplement a PSW schedule on additional days. The care plan is built around what the person actually needs, not around a rigid service category.',
+    a: 'Yes, and this is a common arrangement. A caregiver can provide both companionship and personal care assistance in the same visit, or companion care can supplement a PSW schedule on additional days. The care plan is built around what the person actually needs, not around a rigid service category.',
   },
   {
     q: 'How do you match a companion to my parent?',
-    a: 'Carefully. We consider personality, interests, communication style, language, cultural background, and the kind of relationship the person tends to respond well to. Some people enjoy an outgoing, chatty companion; others prefer someone quieter and more understated. We take time to understand the individual before making a match.',
+    a: 'Carefully. We consider personality, interests, communication style, language, cultural background, and the kind of relationship the person tends to respond well to. Some people enjoy an outgoing, chatty companion; others prefer someone quieter and more understated. We take time to understand the individual before making a match. Can you introduce a companion gradually if my parent is hesitant? Yes, and we help you plan that approach.',
   },
   {
     q: 'How is Arcadia\'s companion care different from a volunteer visiting service?',
-    a: 'Volunteer services provide valuable community connection, but they are typically limited in frequency, consistency, and scope. Arcadia\'s companion care is a professional service — consistent, reliable, built around the individual\'s preferences, and backed by the same caregiver matching, clinical oversight, and communication standards as our other services. It is also available any day of the week and can flex in hours as needs change.',
+    a: 'Volunteer services provide valuable community connection, but they are typically limited in frequency, consistency, and scope. Arcadia\'s companion care is a professional service: consistent, reliable, built around the individual\'s preferences, and backed by the same caregiver matching, clinical oversight, and communication standards as our other services. It is also available any day of the week and can flex in hours as needs change.',
   },
 ]
 

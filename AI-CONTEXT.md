@@ -77,7 +77,7 @@ Each article lives at: `https://www.arcadiahomecare.ca/resources/[cluster-slug]/
 **Hard gates you cannot skip:**
 1. **Phase 6:** Update cluster hub so article appears in the cluster listing
 2. **Phase 7:** Update `docs/AUTHORITY-MAP.md` to mark article as Published
-3. **Phase 7.5:** Run `npm run sync:llms` and commit `public/llms.txt`
+3. **Phase 7.5:** `public/llms.txt` auto-updates on commit (pre-commit hook stages it) and on build
 4. **Phase 9:** Generate `social/briefs/BRIEF-[slug].md` and `social/kits/KIT-[slug].docx`
 
 If any hard gate is skipped, the article is not done publishing.
@@ -135,13 +135,14 @@ This gate supersedes any softer keyword-check language elsewhere. "Differentiate
 3. **Read 2–3 published articles in that cluster** to absorb the voice and linking pattern.
 4. **Read `docs/07-VOICE-AND-TONE.md`** and check your draft against it before handing off.
 5. **Use the draft prompt in `docs/CURSOR-CONTENT-PROMPTS.md`** for consistency.
+6. **Implement per `docs/08-IMPLEMENTATION-BLUEPRINT.md` §3a** — FAQs, voice-search phrasing, FAQPage schema, and `llms.txt` auto-sync on commit.
 
 ---
 
 ## When You're Publishing an Article
 
 1. **Follow `docs/06-PUBLISHING-CHECKLIST.md` exactly** — all 11 phases.
-2. **Hit the hard gates:** cluster hub update (Phase 6), AUTHORITY-MAP update (Phase 7), `npm run sync:llms` (Phase 7.5), social brief + kit (Phase 9).
+2. **Hit the hard gates:** cluster hub update (Phase 6), AUTHORITY-MAP update (Phase 7), `public/llms.txt` auto-sync (Phase 7.5), social brief + kit (Phase 9).
 3. **Test locally** (`npm run dev`), then test live (Search Console, Rich Results, social previews).
 
 ---

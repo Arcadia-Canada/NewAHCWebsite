@@ -109,7 +109,7 @@ export default function DementiaWhenToStopDrivingArticlePage() {
                   name: 'What are the alternatives to driving for someone with dementia in Toronto?',
                   acceptedAnswer: {
                     '@type': 'Answer',
-                    text: 'Options include Wheel-Trans (Toronto\'s accessible transit service), private companion driving services, volunteer driver programs through community agencies, ride-sharing services with a family member managing the app, and scheduled transportation provided by a home care agency as part of a broader support plan. The best solution depends on where your parent needs to go and whether they can manage independently once they arrive.',
+                    text: 'Options include Wheel-Trans (Toronto\'s accessible transit service), private companion driving services, volunteer driver programs through community agencies, ride-sharing services with a family member managing the app, and scheduled transportation provided by a home care agency as part of a broader support plan. The best solution depends on where your parent needs to go and whether they can manage independently once they arrive. Can you arrange transportation as part of home care near me in Toronto? Yes, many families add accompaniment to appointments.',
                   },
                 },
                 {
@@ -349,6 +349,8 @@ export default function DementiaWhenToStopDrivingArticlePage() {
                   services with a family member managing the app, and scheduled transportation provided by
                   a home care agency as part of a broader support plan. The best solution depends on where
                   your parent needs to go and whether they can manage independently once they arrive.
+                  Can you arrange transportation as part of home care near me in Toronto? Yes, many
+                  families add accompaniment to appointments.
                 </div>
               </div>
 

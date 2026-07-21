@@ -33,8 +33,74 @@ const whatHappensNext = [
   { num: "04", title: "Ongoing communication", desc: "We keep the referring team informed throughout — progress notes, changes in presentation, and any concerns on a schedule that works for you." },
 ]
 
+const faqs = [
+  {
+    q: 'Who can refer a patient to Arcadia Home Care?',
+    a: 'We accept referrals from hospital discharge planners, social workers, occupational therapists, physicians, case managers, Ontario Health atHome coordinators, and family members. If you are unsure who should refer, call us. Can you accept an informal family referral? Yes.',
+  },
+  {
+    q: 'What information do I need to submit a referral?',
+    a: 'At minimum: client name and contact, home address, primary diagnosis, anticipated start date, and your contact details. More clinical context helps us respond faster, but we can follow up for details.',
+  },
+  {
+    q: 'How quickly does Arcadia respond to referrals?',
+    a: 'We review referrals within one business day, and often sooner for urgent discharges. If you need the fastest way to place a patient, call directly with discharge timing. Do you respond same day for urgent cases? We aim to.',
+  },
+  {
+    q: 'What happens after I submit a referral?',
+    a: 'Our team reviews the information, contacts you to confirm what we can provide, and where appropriate schedules a home assessment and caregiver matching. We keep you informed throughout.',
+  },
+  {
+    q: 'Does Arcadia accept funded care referrals?',
+    a: 'Yes. We have experience with Auto Insurance (SABS), WSIB, Veterans Affairs Canada, and Ontario Health atHome. Tell us the funding source when you refer.',
+  },
+  {
+    q: 'Can families refer directly, or only professionals?',
+    a: 'Both. Healthcare professionals can use our referral form or call directly. Families are also welcome to contact us at any stage without a formal referral.',
+  },
+]
+
 export default function ReferralProcessPage() {
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([
+            {
+              '@context': 'https://schema.org',
+              '@type': 'WebPage',
+              name: 'Referral Process',
+              description: 'How to refer a patient or client to Arcadia Home Care in Toronto and the GTA.',
+              url: 'https://www.arcadiahomecare.ca/how-care-starts/referral-process/',
+              publisher: {
+                '@type': 'Organization',
+                name: 'Arcadia Home Care',
+                url: 'https://www.arcadiahomecare.ca',
+              },
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'BreadcrumbList',
+              itemListElement: [
+                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.arcadiahomecare.ca/' },
+                { '@type': 'ListItem', position: 2, name: 'How Care Starts', item: 'https://www.arcadiahomecare.ca/how-care-starts/' },
+                { '@type': 'ListItem', position: 3, name: 'Referral Process', item: 'https://www.arcadiahomecare.ca/how-care-starts/referral-process/' },
+              ],
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: faqs.map((faq) => ({
+                '@type': 'Question',
+                name: faq.q,
+                acceptedAnswer: { '@type': 'Answer', text: faq.a },
+              })),
+            },
+          ]),
+        }}
+      />
+
     <main style={{ fontFamily: fonts.body, color: colors.text }}>
 
       {/* Hero */}
@@ -136,6 +202,17 @@ export default function ReferralProcessPage() {
               ))}
             </ul>
 
+            <section style={{ marginTop: 64, paddingTop: 40, borderTop: `1px solid ${colors.border}` }}>
+              <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: colors.accent, marginBottom: 12 }}>Frequently Asked Questions</p>
+              <h2 style={{ fontFamily: fonts.display, fontSize: "clamp(1.5rem, 2.5vw, 2rem)", fontWeight: 600, color: colors.primary, marginBottom: 24 }}>Common questions about referring patients</h2>
+              {faqs.map((faq) => (
+                <div key={faq.q} style={{ borderBottom: `1px solid ${colors.border}`, padding: "20px 0" }}>
+                  <h3 style={{ fontSize: 16, fontWeight: 700, color: colors.primary, margin: "0 0 10px", lineHeight: 1.5 }}>{faq.q}</h3>
+                  <p style={{ fontSize: 15, color: colors.textLight, lineHeight: 1.8, margin: 0 }}>{faq.a}</p>
+                </div>
+              ))}
+            </section>
+
           </div>
 
           {/* Right sticky sidebar */}
@@ -206,5 +283,6 @@ export default function ReferralProcessPage() {
       </section>
 
     </main>
+    </>
   )
 }

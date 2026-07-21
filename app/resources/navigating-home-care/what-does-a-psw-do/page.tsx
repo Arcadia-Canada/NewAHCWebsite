@@ -108,7 +108,7 @@ const faqSchema = {
       name: 'What can a PSW do in Ontario?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'A PSW can assist with bathing, dressing, grooming, toileting, meal preparation, feeding, mobility and transfers, light housekeeping, medication reminders, companionship, and accompaniment to appointments. PSWs can also document changes in condition and communicate concerns to the family or care coordinator. They work under a care plan and follow the scope of practice set by their employer and the relevant Ontario standards.',
+        text: 'A PSW can assist with bathing, dressing, grooming, toileting, meal preparation, feeding, mobility and transfers, light housekeeping, medication reminders, companionship, and accompaniment to appointments. PSWs can also document changes in condition and communicate concerns to the family or care coordinator. They work under a care plan and follow the scope of practice set by their employer and the relevant Ontario standards. If you are asking what a PSW does during a visit near me in Ontario, expect hands-on daily living support. Can you hire a PSW for just a few hours? Yes.',
       },
     },
     {
@@ -477,7 +477,7 @@ export default function WhatDoesPSWDo() {
                 </div>
                 <div className="faq-item">
                   <p className="faq-q">What can a PSW do in Ontario?</p>
-                  <p className="faq-a">A PSW can assist with bathing, dressing, grooming, toileting, meal preparation, feeding, mobility and transfers, light housekeeping, medication reminders, companionship, and accompaniment to appointments. PSWs can also document changes in condition and communicate concerns to the family or care coordinator. They work under a care plan and follow the scope of practice set by their employer and the relevant Ontario standards.</p>
+                  <p className="faq-a">A PSW can assist with bathing, dressing, grooming, toileting, meal preparation, feeding, mobility and transfers, light housekeeping, medication reminders, companionship, and accompaniment to appointments. PSWs can also document changes in condition and communicate concerns to the family or care coordinator. They work under a care plan and follow the scope of practice set by their employer and the relevant Ontario standards. If you are asking what a PSW does during a visit near me in Ontario, expect hands-on daily living support. Can you hire a PSW for just a few hours? Yes.</p>
                 </div>
                 <div className="faq-item">
                   <p className="faq-q">What can a PSW NOT do?</p>

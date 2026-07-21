@@ -39,7 +39,7 @@ export default function NormalAgingVsDementiaPage() {
                   name: 'Is forgetting names a sign of dementia?',
                   acceptedAnswer: {
                     '@type': 'Answer',
-                    text: "Occasionally forgetting a name — then remembering it later — is a normal part of aging. What raises concern is forgetting the names of close family members consistently, or not recognizing familiar faces. The pattern and frequency matter more than any single incident.",
+                    text: "Occasionally forgetting a name, then remembering it later, is a normal part of aging. What raises concern is forgetting the names of close family members consistently, or not recognizing familiar faces. The pattern and frequency matter more than any single incident. If you are asking how do I tell normal aging from dementia, watch whether the memory comes back later. Do you have a guide with side-by-side examples? Yes, throughout this article.",
                   },
                 },
                 {
@@ -47,7 +47,7 @@ export default function NormalAgingVsDementiaPage() {
                   name: 'At what age does dementia typically begin?',
                   acceptedAnswer: {
                     '@type': 'Answer',
-                    text: "Most dementia diagnoses occur after age 65, with risk increasing significantly with each decade. Early-onset dementia — diagnosed before age 65 — does occur but is less common. Age alone is not a diagnosis; many people in their 80s and 90s retain strong cognitive function.",
+                    text: "Most dementia diagnoses occur after age 65, with risk increasing significantly with each decade. Early-onset dementia, diagnosed before age 65, does occur but is less common. Age alone is not a diagnosis; many people in their 80s and 90s retain strong cognitive function.",
                   },
                 },
                 {
@@ -55,7 +55,7 @@ export default function NormalAgingVsDementiaPage() {
                   name: "My parent says they're fine. Should I still pursue a doctor's assessment?",
                   acceptedAnswer: {
                     '@type': 'Answer',
-                    text: "Yes. One of the hallmarks of dementia is limited insight into one's own symptoms — the person experiencing changes is often the last to notice them. If you're observing consistent changes in memory, judgment, or daily function, a medical assessment is appropriate even if your parent feels nothing is wrong.",
+                    text: "Yes. One of the hallmarks of dementia is limited insight into one's own symptoms. The person experiencing changes is often the last to notice them. If you're observing consistent changes in memory, judgment, or daily function, a medical assessment is appropriate even if your parent feels nothing is wrong.",
                   },
                 },
                 {
@@ -63,7 +63,7 @@ export default function NormalAgingVsDementiaPage() {
                   name: 'Can dementia be reversed?',
                   acceptedAnswer: {
                     '@type': 'Answer',
-                    text: "Most forms of dementia — including Alzheimer's — are progressive and currently have no cure. However, some conditions that mimic dementia (such as vitamin deficiencies, thyroid problems, or medication interactions) are reversible with treatment. This is one reason a proper medical assessment matters.",
+                    text: "Most forms of dementia, including Alzheimer's, are progressive and currently have no cure. However, some conditions that mimic dementia (such as vitamin deficiencies, thyroid problems, or medication interactions) are reversible with treatment. This is one reason a proper medical assessment matters.",
                   },
                 },
               ],
@@ -339,9 +339,11 @@ export default function NormalAgingVsDementiaPage() {
               <div className="faq-item">
                 <div className="faq-q">Is forgetting names a sign of dementia?</div>
                 <div className="faq-a">
-                  Occasionally forgetting a name — then remembering it later — is a normal part of aging.
+                  Occasionally forgetting a name, then remembering it later, is a normal part of aging.
                   What raises concern is forgetting the names of close family members consistently, or not
                   recognizing familiar faces. The pattern and frequency matter more than any single incident.
+                  If you are asking how do I tell normal aging from dementia, watch whether the memory comes
+                  back later. Do you have a guide with side-by-side examples? Yes, throughout this article.
                 </div>
               </div>
 
@@ -349,7 +351,7 @@ export default function NormalAgingVsDementiaPage() {
                 <div className="faq-q">At what age does dementia typically begin?</div>
                 <div className="faq-a">
                   Most dementia diagnoses occur after age 65, with risk increasing significantly with each
-                  decade. Early-onset dementia — diagnosed before age 65 — does occur but is less common.
+                  decade. Early-onset dementia, diagnosed before age 65, does occur but is less common.
                   Age alone is not a diagnosis; many people in their 80s and 90s retain strong cognitive function.
                 </div>
               </div>
@@ -357,7 +359,7 @@ export default function NormalAgingVsDementiaPage() {
               <div className="faq-item">
                 <div className="faq-q">My parent says they're fine. Should I still pursue a doctor's assessment?</div>
                 <div className="faq-a">
-                  Yes. One of the hallmarks of dementia is limited insight into one's own symptoms — the
+                  Yes. One of the hallmarks of dementia is limited insight into one's own symptoms. The
                   person experiencing changes is often the last to notice them. If you're observing consistent
                   changes in memory, judgment, or daily function, a medical assessment is appropriate even
                   if your parent feels nothing is wrong.
@@ -367,7 +369,7 @@ export default function NormalAgingVsDementiaPage() {
               <div className="faq-item">
                 <div className="faq-q">Can dementia be reversed?</div>
                 <div className="faq-a">
-                  Most forms of dementia — including Alzheimer's — are progressive and currently have no cure.
+                  Most forms of dementia, including Alzheimer's, are progressive and currently have no cure.
                   However, some conditions that mimic dementia (such as vitamin deficiencies, thyroid problems,
                   or medication interactions) are reversible with treatment. This is one reason a proper
                   medical assessment matters.

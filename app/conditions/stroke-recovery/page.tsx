@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: 'How much of a stroke survivor\'s function can be expected to return?',
-    a: 'Recovery from stroke varies significantly depending on the location and severity of the stroke, the person\'s age and overall health, and how quickly rehabilitation began. The most significant neurological recovery typically occurs in the first three to six months, but improvement can continue for years with the right rehabilitation and support. No one can predict with certainty how much will return — which is why maintaining consistent rehabilitation effort and support at home matters so much during the recovery window.',
+    a: 'Recovery from stroke varies significantly depending on the location and severity of the stroke, the person\'s age and overall health, and how quickly rehabilitation began. Families often ask how much function can return and how do I support rehab at home. Do you work with OT and PT teams? Yes. Consistent home support during the recovery window matters.',
   },
   {
     q: 'What is the difference between inpatient stroke rehabilitation and home-based rehabilitation support?',

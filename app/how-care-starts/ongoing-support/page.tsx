@@ -9,6 +9,29 @@ export const metadata: Metadata = {
   },
 }
 
+const faqs = [
+  {
+    q: 'What does ongoing support look like after care begins?',
+    a: 'Your caregiver documents every visit, your care plan is reviewed regularly, and your named care manager stays reachable by phone. If you are managing care from another city, do you keep distant families updated? Yes. We communicate in the way that works for you.',
+  },
+  {
+    q: 'How often is the care plan updated?',
+    a: 'Care plans are reviewed on a regular schedule and updated immediately when your loved one\'s condition changes. You are always consulted before any change is made.',
+  },
+  {
+    q: 'Will I be kept informed about what happens during visits?',
+    a: 'Yes. After every visit, your caregiver records what was completed and any observations. Families ask how do I know what happened during a shift. You can request daily notes, weekly calls, or alerts for specific situations.',
+  },
+  {
+    q: 'What happens if my parent\'s care needs increase?',
+    a: 'Arcadia manages the transition without asking you to restart or find a new provider. The relationship, care plan, and caregiver knowledge carry forward as hours or complexity increase.',
+  },
+  {
+    q: 'Does Arcadia coordinate with other care providers?',
+    a: 'With your consent, your care manager can share relevant observations with physicians, Ontario Health atHome coordinators, and other providers involved in your loved one\'s care.',
+  },
+]
+
 export default function OngoingSupportPage() {
   return (
     <>
@@ -36,6 +59,15 @@ export default function OngoingSupportPage() {
                 { '@type': 'ListItem', position: 2, name: 'How Care Starts', item: 'https://www.arcadiahomecare.ca/how-care-starts/' },
                 { '@type': 'ListItem', position: 3, name: 'Ongoing Support', item: 'https://www.arcadiahomecare.ca/how-care-starts/ongoing-support/' },
               ],
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: faqs.map((faq) => ({
+                '@type': 'Question',
+                name: faq.q,
+                acceptedAnswer: { '@type': 'Answer', text: faq.a },
+              })),
             },
           ]),
         }}
@@ -109,6 +141,13 @@ export default function OngoingSupportPage() {
         .cta-buttons { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
         .btn-red { background: #C8302A; color: #fff; text-decoration: none; padding: 14px 28px; border-radius: 8px; font-size: 15px; font-weight: 700; }
         .btn-outline { border: 1.5px solid rgba(255,255,255,0.5); background: transparent; color: #fff; text-decoration: none; padding: 14px 28px; border-radius: 8px; font-size: 15px; font-weight: 700; }
+
+        .page-faq { margin-top: 48px; padding-top: 40px; border-top: 1px solid #E5E0D8; }
+        .page-faq-eyebrow { font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #C8302A; margin-bottom: 12px; }
+        .page-faq h2 { margin-top: 0; }
+        .page-faq-item { border-bottom: 1px solid #E5E0D8; padding: 20px 0; }
+        .page-faq-item h3 { font-size: 1rem; font-weight: 700; color: #1C2B3A; margin: 0 0 10px; line-height: 1.5; }
+        .page-faq-item p { font-size: 0.9375rem; color: #4B5563; line-height: 1.8; margin: 0; }
       `}</style>
 
       <main className="ongoing-page">
@@ -271,6 +310,17 @@ export default function OngoingSupportPage() {
               around therapy appointments or medical visits. We are part of your loved one&apos;s
               broader care network — and we act like it.
             </p>
+
+            <section className="page-faq">
+              <p className="page-faq-eyebrow">Frequently Asked Questions</p>
+              <h2>Questions families ask about ongoing support</h2>
+              {faqs.map((faq) => (
+                <div key={faq.q} className="page-faq-item">
+                  <h3>{faq.q}</h3>
+                  <p>{faq.a}</p>
+                </div>
+              ))}
+            </section>
 
             {/* Step navigation footer */}
             <div className="step-nav-footer">

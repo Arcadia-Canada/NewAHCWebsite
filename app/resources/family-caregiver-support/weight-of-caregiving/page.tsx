@@ -141,7 +141,7 @@ const faqSchema = {
       name: 'How can I get help as a family caregiver in Toronto?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Start with a conversation about what you are currently carrying. A care assessment from Arcadia can happen within 24 to 48 hours and identifies specifically where professional support would make the most difference. Many families begin with just a few hours per week of respite or personal support and adjust from there. The goal is not to replace you but to give you back the parts of your life that have been consumed.',
+        text: 'Start with a conversation about what you are currently carrying. A care assessment from Arcadia can happen within 24 to 48 hours and identifies specifically where professional support would make the most difference. Many families begin with just a few hours per week of respite or personal support and adjust from there. The goal is not to replace you but to give you back the parts of your life that have been consumed. Do you offer caregiver respite near me in Toronto? Yes.',
       },
     },
   ],
@@ -503,7 +503,7 @@ export default function WeightOfCaregiving() {
 
                 <div className="faq-item">
                   <p className="faq-q">How can I get help as a family caregiver in Toronto?</p>
-                  <p className="faq-a">Start with a conversation about what you are currently carrying. A care assessment from Arcadia can happen within 24 to 48 hours and identifies specifically where professional support would make the most difference. Many families begin with just a few hours per week of respite or personal support and adjust from there. The goal is not to replace you but to give you back the parts of your life that have been consumed.</p>
+                  <p className="faq-a">Start with a conversation about what you are currently carrying. A care assessment from Arcadia can happen within 24 to 48 hours and identifies specifically where professional support would make the most difference. Many families begin with just a few hours per week of respite or personal support and adjust from there. The goal is not to replace you but to give you back the parts of your life that have been consumed. Do you offer caregiver respite near me in Toronto? Yes.</p>
                 </div>
               </section>
 

@@ -101,7 +101,7 @@ export default function DementiaHomeSafetyArticlePage() {
                   name: 'When should I consider bringing in professional help for safety reasons?',
                   acceptedAnswer: {
                     '@type': 'Answer',
-                    text: 'Consider professional support when your parent has had a fall or near-miss that could have caused injury, when wandering incidents are becoming more frequent, when you are losing sleep due to nighttime safety concerns, or when the daily monitoring required is affecting your own health or work. A care assessment can help identify which hours of the day carry the most risk and whether a few hours of professional support could address the gap.',
+                    text: 'Consider professional support when your parent has had a fall or near-miss that could have caused injury, when wandering incidents are becoming more frequent, when you are losing sleep due to nighttime safety concerns, or when the daily monitoring required is affecting your own health or work. A care assessment can help identify which hours of the day carry the most risk and whether a few hours of professional support could address the gap. Do you provide dementia safety support near me in Toronto? Yes, when monitoring or supervision is the gap.',
                   },
                 },
                 {
@@ -393,7 +393,8 @@ export default function DementiaHomeSafetyArticlePage() {
                   caused injury, when wandering incidents are becoming more frequent, when you are losing sleep
                   due to nighttime safety concerns, or when the daily monitoring required is affecting your own
                   health or work. A care assessment can help identify which hours of the day carry the most risk
-                  and whether a few hours of professional support could address the gap.
+                  and whether a few hours of professional support could address the gap. Do you provide dementia
+                  safety support near me in Toronto? Yes, when monitoring or supervision is the gap.
                 </div>
               </div>
 

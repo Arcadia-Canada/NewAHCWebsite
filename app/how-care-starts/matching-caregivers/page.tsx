@@ -15,6 +15,29 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://www.arcadiahomecare.ca/how-care-starts/matching-caregivers/' },
 }
 
+const faqs = [
+  {
+    q: 'Can we meet the caregiver before they start?',
+    a: 'In most cases, yes, particularly for sensitive introductions. If you are asking how do I prepare my parent to meet a new caregiver, we guide that conversation. Can you arrange a brief visit or video call first? Yes, before the first full care visit.',
+  },
+  {
+    q: 'What if my parent refuses to accept the caregiver?',
+    a: 'Resistance to a new person in the home is common, particularly for those with dementia or a strong sense of independence. We build the introduction gradually where possible, and we have experience navigating the kinds of resistance families most often encounter. If resistance persists, we review the match and consider whether a different approach or a different caregiver would help.',
+  },
+  {
+    q: 'Can we request a specific type of caregiver — language, gender, background?',
+    a: 'Yes. Preferences around language, cultural background, gender, and communication style are part of the matching brief. Do you honour specific requests? We do, and we are honest if a combination limits the available pool.',
+  },
+  {
+    q: 'What happens if our regular caregiver is unavailable?',
+    a: 'We work hard to ensure consistent coverage and minimize disruptions. When a regular caregiver is unavailable, we use a replacement who has been briefed on the client and the care plan — not an unfamiliar person sent cold.',
+  },
+  {
+    q: 'How long does matching take?',
+    a: 'For straightforward situations, matching can happen within a few days of the care plan being agreed. For complex cases — particularly those requiring specific condition experience or a very specific personality fit — it may take a little longer to find the right person. We give honest timelines rather than promising speed we cannot deliver.',
+  },
+]
+
 export default function CaregiverMatchingPage() {
   return (
     <>
@@ -50,6 +73,15 @@ export default function CaregiverMatchingPage() {
                 { '@type': 'ListItem', 'position': 2, 'name': 'How Care Starts', 'item': 'https://www.arcadiahomecare.ca/how-care-starts/' },
                 { '@type': 'ListItem', 'position': 3, 'name': 'Caregiver Matching', 'item': 'https://www.arcadiahomecare.ca/how-care-starts/matching-caregivers/' },
               ],
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: faqs.map((faq) => ({
+                '@type': 'Question',
+                name: faq.q,
+                acceptedAnswer: { '@type': 'Answer', text: faq.a },
+              })),
             },
           ]),
         }}
@@ -349,28 +381,7 @@ export default function CaregiverMatchingPage() {
 
             <h2>Common questions about caregiver matching</h2>
 
-            {[
-              {
-                q: 'Can we meet the caregiver before they start?',
-                a: 'In most cases, yes — particularly for situations where the introduction is likely to be sensitive. We can arrange a brief introductory visit or video call before the first care visit begins.',
-              },
-              {
-                q: 'What if my parent refuses to accept the caregiver?',
-                a: 'Resistance to a new person in the home is common, particularly for those with dementia or a strong sense of independence. We build the introduction gradually where possible, and we have experience navigating the kinds of resistance families most often encounter. If resistance persists, we review the match and consider whether a different approach or a different caregiver would help.',
-              },
-              {
-                q: 'Can we request a specific type of caregiver — language, gender, background?',
-                a: 'Yes. Preferences around language, cultural background, gender, and communication style are all part of the matching brief. We take them seriously, though we will be honest if a specific combination of factors limits the available pool.',
-              },
-              {
-                q: 'What happens if our regular caregiver is unavailable?',
-                a: 'We work hard to ensure consistent coverage and minimize disruptions. When a regular caregiver is unavailable, we use a replacement who has been briefed on the client and the care plan — not an unfamiliar person sent cold.',
-              },
-              {
-                q: 'How long does matching take?',
-                a: 'For straightforward situations, matching can happen within a few days of the care plan being agreed. For complex cases — particularly those requiring specific condition experience or a very specific personality fit — it may take a little longer to find the right person. We give honest timelines rather than promising speed we cannot deliver.',
-              },
-            ].map((faq, i) => (
+            {faqs.map((faq, i) => (
               <div key={i} className="faq-item">
                 <div className="faq-q">{faq.q}</div>
                 <div className="faq-a">{faq.a}</div>

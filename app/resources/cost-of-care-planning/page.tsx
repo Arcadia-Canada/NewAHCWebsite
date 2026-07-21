@@ -25,6 +25,33 @@ const articles: { title: string; href: string; description: string; status: 'liv
   // See docs/AUTHORITY-MAP.md — Cost of Care & Planning cluster for the full list.
 ]
 
+const faqs = [
+  {
+    q: 'How much does private home care cost in Ontario?',
+    a: 'Private PSW rates in the Greater Toronto Area typically range from $32 to $42 per hour, depending on care needs, timing, and agency. Many families start with 8 to 12 hours per week. See How Much Does Home Care Cost in Ontario? for a detailed breakdown.',
+  },
+  {
+    q: 'Does OHIP cover private home care?',
+    a: 'OHIP does not cover private home care directly. Ontario Health atHome provides publicly funded hours at no direct cost, but with limited availability. Many families use both public and private care together.',
+  },
+  {
+    q: 'How do most families pay for home care in the GTA?',
+    a: 'Most private home care is paid out of pocket. If you are asking how do I afford home care for a parent, options include insurance, injury benefits, Veterans Affairs, and tax credits. Do you help map funding during a consultation? Yes.',
+  },
+  {
+    q: 'How many hours of home care will my parent need?',
+    a: 'It depends on their condition, safety risks, and what family support is available. A few hours of companionship and meal help may be enough early on. Progressive conditions like dementia often require increasing hours over time.',
+  },
+  {
+    q: 'Is home care cheaper than long-term care in Ontario?',
+    a: 'For many families, moderate home care hours cost less than a long-term care home placement, especially when only part-time support is needed. How Much Does Home Care Cost in Ontario? compares both options with real GTA numbers.',
+  },
+  {
+    q: 'Can I get a cost estimate before committing to care?',
+    a: 'Yes. Call us or book a free consultation and we will give you a clear picture of what care would cost for your parent\'s specific situation. No pressure, no commitment. Read How Much Does Home Care Cost in Ontario? for baseline numbers.',
+  },
+]
+
 export default function CostOfCarePlanningHub() {
   return (
     <>
@@ -52,6 +79,15 @@ export default function CostOfCarePlanningHub() {
                 { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://www.arcadiahomecare.ca/resources/' },
                 { '@type': 'ListItem', position: 3, name: 'Cost of Care & Planning', item: 'https://www.arcadiahomecare.ca/resources/cost-of-care-planning/' },
               ],
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: faqs.map((faq) => ({
+                '@type': 'Question',
+                name: faq.q,
+                acceptedAnswer: { '@type': 'Answer', text: faq.a },
+              })),
             },
           ]),
         }}
@@ -110,6 +146,12 @@ export default function CostOfCarePlanningHub() {
         .cta-buttons { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
         .btn-red { background: #C8302A; color: #fff; text-decoration: none; padding: 14px 28px; border-radius: 8px; font-size: 15px; font-weight: 700; }
         .btn-outline { border: 1.5px solid rgba(255,255,255,0.5); background: transparent; color: #fff; text-decoration: none; padding: 14px 28px; border-radius: 8px; font-size: 15px; font-weight: 700; }
+
+        .hub-faq { margin-top: 56px; padding-top: 40px; border-top: 1px solid #E5E0D8; }
+        .hub-faq h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(1.5rem, 2.5vw, 2rem); font-weight: 600; color: #1C2B3A; margin-bottom: 24px; }
+        .hub-faq-item { border-bottom: 1px solid #E5E0D8; padding: 20px 0; }
+        .hub-faq-item h3 { font-size: 1rem; font-weight: 700; color: #1C2B3A; margin: 0 0 10px; line-height: 1.5; }
+        .hub-faq-item p { font-size: 0.9375rem; color: #4B5563; line-height: 1.8; margin: 0; }
       `}</style>
 
       <main className="hub-page">
@@ -191,6 +233,27 @@ export default function CostOfCarePlanningHub() {
                 </Link>
               </p>
             </div>
+
+            <section className="hub-faq">
+              <p className="hub-articles-label">Frequently Asked Questions</p>
+              <h2>Common questions about home care costs</h2>
+              {faqs.map((faq) => (
+                <div key={faq.q} className="hub-faq-item">
+                  <h3>{faq.q}</h3>
+                  <p>
+                    {faq.a.includes('How Much Does Home Care Cost in Ontario?') ? (
+                      <>
+                        {faq.a.split('How Much Does Home Care Cost in Ontario?')[0]}
+                        <Link href="/resources/navigating-home-care/home-care-cost-ontario/">How Much Does Home Care Cost in Ontario?</Link>
+                        {faq.a.split('How Much Does Home Care Cost in Ontario?')[1]}
+                      </>
+                    ) : (
+                      faq.a
+                    )}
+                  </p>
+                </div>
+              ))}
+            </section>
           </div>
 
           <aside className="hub-sidebar">

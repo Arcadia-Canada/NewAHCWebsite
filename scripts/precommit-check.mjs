@@ -15,6 +15,7 @@
  *   4. Cross-site keyword collision                      — BLOCKING
  *   5. Unreserved new content route                      — advisory
  *   6. Stale keyword cache                               — advisory
+ *   7. LLM map (public/llms.txt) out of date            — auto-fix + stage
  *
  * Exit 0 = commit proceeds (advisories printed)
  * Exit 1 = commit blocked
@@ -337,6 +338,51 @@ if (ledger && (SITE === 'REHAB' || SITE === 'ECC')) {
   if (own < 10) {
     log.warn(`Ledger holds only ${own} ${SITE} rows. Cross-check 10-KEYWORD-OWNERSHIP.md by hand.`)
     advisory++
+  }
+}
+
+// ══════════════════════════════════════════════════════════════════════════════
+// 7. LLM MAP (HC only — scripts/sync-llms-txt.mjs)
+// ══════════════════════════════════════════════════════════════════════════════
+const LLMS_SCRIPT = path.join(ROOT, 'scripts', 'sync-llms-txt.mjs')
+const LLMS_OUT = path.join(ROOT, 'public', 'llms.txt')
+
+function triggersLlmsSync(fileList) {
+  return fileList.some(
+    (file) =>
+      /^app\/resources\//.test(file) ||
+      /^app\/our-services\//.test(file) ||
+      /^app\/locations\//.test(file) ||
+      file === 'app/faqs/page.tsx' ||
+      file === 'docs/04-SCHEMA-STANDARDS.md',
+  )
+}
+
+if (fs.existsSync(LLMS_SCRIPT) && triggersLlmsSync(files)) {
+  log.head('LLM map (llms.txt)')
+
+  const before = fs.existsSync(LLMS_OUT) ? fs.readFileSync(LLMS_OUT, 'utf8') : ''
+
+  try {
+    execSync(`node ${JSON.stringify(LLMS_SCRIPT)}`, { cwd: ROOT, stdio: 'pipe' })
+  } catch {
+    log.fail('npm run sync:llms failed')
+    blocking++
+  }
+
+  if (blocking === 0) {
+    const after = fs.existsSync(LLMS_OUT) ? fs.readFileSync(LLMS_OUT, 'utf8') : ''
+    if (before !== after) {
+      try {
+        execSync(`git add ${JSON.stringify(toRepoPath('public/llms.txt'))}`, { cwd: ROOT })
+        log.pass('public/llms.txt regenerated and staged')
+      } catch {
+        log.fail('Could not stage public/llms.txt')
+        blocking++
+      }
+    } else {
+      log.pass('public/llms.txt already current')
+    }
   }
 }
 

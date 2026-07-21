@@ -9,6 +9,29 @@ export const metadata: Metadata = {
   },
 }
 
+const faqs = [
+  {
+    q: 'What is acquired brain injury and how does it affect families?',
+    a: 'Acquired brain injury (ABI) results from stroke, trauma, anoxia, or illness. Effects are often invisible: cognitive fatigue, personality changes, and emotional dysregulation. Recovery is rarely linear, and families are often left coordinating care with little guidance.',
+  },
+  {
+    q: 'What support is available after hospital rehabilitation ends?',
+    a: 'Inpatient rehabilitation often ends before families feel ready. Families ask how do I support recovery once rehab ends. Can you coordinate with OT and PT at home? Yes. Home care bridges that gap with structured daily support.',
+  },
+  {
+    q: 'How does Arcadia support ABI recovery at home?',
+    a: 'Our ABI caregivers work alongside your clinical team, following rehabilitation protocols, monitoring for changes, and supporting independence goals. We coordinate with hospitals including UHN, Sunnybrook, and Baycrest.',
+  },
+  {
+    q: 'Can Arcadia help with hospital discharge planning for brain injury?',
+    a: 'Yes. We accept referrals from discharge planners and can often conduct a care assessment within 24 to 48 hours of contact. Call us early in the discharge planning process for the smoothest transition.',
+  },
+  {
+    q: 'How do I know if my parent needs home care after a brain injury?',
+    a: 'If your parent needs help with daily tasks, medication management, supervision for safety, or transportation to therapy appointments, home care can provide structured support while recovery continues.',
+  },
+]
+
 export default function BrainInjuryRehabHub() {
   return (
     <>
@@ -36,6 +59,15 @@ export default function BrainInjuryRehabHub() {
                 { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://www.arcadiahomecare.ca/resources/' },
                 { '@type': 'ListItem', position: 3, name: 'Brain Injury & Rehabilitation', item: 'https://www.arcadiahomecare.ca/resources/brain-injury-rehabilitation/' },
               ],
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: faqs.map((faq) => ({
+                '@type': 'Question',
+                name: faq.q,
+                acceptedAnswer: { '@type': 'Answer', text: faq.a },
+              })),
             },
           ]),
         }}
@@ -86,6 +118,12 @@ export default function BrainInjuryRehabHub() {
         .cta-buttons { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
         .btn-red { background: #C8302A; color: #fff; text-decoration: none; padding: 14px 28px; border-radius: 8px; font-size: 15px; font-weight: 700; }
         .btn-outline { border: 1.5px solid rgba(255,255,255,0.5); background: transparent; color: #fff; text-decoration: none; padding: 14px 28px; border-radius: 8px; font-size: 15px; font-weight: 700; }
+
+        .hub-faq { margin-top: 56px; padding-top: 40px; border-top: 1px solid #E5E0D8; }
+        .hub-faq h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(1.5rem, 2.5vw, 2rem); font-weight: 600; color: #1C2B3A; margin-bottom: 24px; }
+        .hub-faq-item { border-bottom: 1px solid #E5E0D8; padding: 20px 0; }
+        .hub-faq-item h3 { font-size: 1rem; font-weight: 700; color: #1C2B3A; margin: 0 0 10px; line-height: 1.5; }
+        .hub-faq-item p { font-size: 0.9375rem; color: #4B5563; line-height: 1.8; margin: 0; }
       `}</style>
 
       <main className="hub-page">
@@ -146,6 +184,17 @@ export default function BrainInjuryRehabHub() {
               support →{' '}
               <Link href="/healthcare-professionals/">For Healthcare Professionals</Link>
             </div>
+
+            <section className="hub-faq">
+              <p className="hub-articles-label">Frequently Asked Questions</p>
+              <h2>Common questions about brain injury recovery at home</h2>
+              {faqs.map((faq) => (
+                <div key={faq.q} className="hub-faq-item">
+                  <h3>{faq.q}</h3>
+                  <p>{faq.a}</p>
+                </div>
+              ))}
+            </section>
           </div>
 
           <aside className="hub-sidebar">

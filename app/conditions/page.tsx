@@ -15,8 +15,60 @@ const conditions = [
   { label: "Caregiver Burnout Support",    slug: "caregiver-burnout-support",      icon: "🌿" },
 ]
 
+const faqs = [
+  {
+    q: 'What conditions does Arcadia provide home care for?',
+    a: 'We support families navigating dementia, stroke recovery, Parkinson\'s, acquired brain injury, palliative and serious illness, post-hospital recovery, frailty and fall prevention, and caregiver burnout.',
+  },
+  {
+    q: 'How does Arcadia tailor care to a specific condition?',
+    a: 'Each condition page explains how we assess risk, coordinate with clinical teams, and train caregivers for condition-specific needs. Care plans are built around your loved one\'s diagnosis, daily routines, and goals.',
+  },
+  {
+    q: 'Can Arcadia care for someone with multiple conditions?',
+    a: 'Yes. Many clients have overlapping needs, such as dementia with mobility risk or post-surgical recovery with frailty. Our care managers build plans that address the full picture, not just one diagnosis.',
+  },
+  {
+    q: 'Does Arcadia work with my parent\'s doctors and specialists?',
+    a: 'With your consent, we coordinate with physicians, OTs, PTs, and Ontario Health atHome. Our case management service keeps communication flowing between your family and every professional involved.',
+  },
+  {
+    q: 'How do I know which condition page applies to my parent?',
+    a: 'If you are unsure, call us. We listen to what you are seeing at home and point you to the right resources and service level. Do you need a formal diagnosis first? You do not. A conversation is enough to get oriented.',
+  },
+  {
+    q: 'When should I consider home care for a progressive condition?',
+    a: 'Earlier than most families expect. For conditions like dementia or Parkinson\'s, consistent caregiver relationships help detect changes early and prevent crises. A consultation costs nothing and clarifies your options.',
+  },
+]
+
 export default function ConditionsHubPage() {
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([
+            {
+              '@context': 'https://schema.org',
+              '@type': 'WebPage',
+              name: 'Conditions We Support',
+              description: 'Home care for dementia, brain injury, stroke, Parkinson\'s, palliative illness, and more.',
+              url: 'https://www.arcadiahomecare.ca/conditions/',
+              publisher: { '@type': 'Organization', name: 'Arcadia Home Care', url: 'https://www.arcadiahomecare.ca' },
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: faqs.map((faq) => ({
+                '@type': 'Question',
+                name: faq.q,
+                acceptedAnswer: { '@type': 'Answer', text: faq.a },
+              })),
+            },
+          ]),
+        }}
+      />
     <main style={{ fontFamily: fonts.body, color: colors.text }}>
       <HeroTemplate
         eyebrow="Conditions We Support"
@@ -90,6 +142,19 @@ export default function ConditionsHubPage() {
         </div>
       </section>
 
+      <section style={{ background: colors.white, padding: "72px 24px" }}>
+        <div style={{ maxWidth: 760, margin: "0 auto" }}>
+          <p style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: colors.accent, marginBottom: 12 }}>Frequently Asked Questions</p>
+          <h2 style={{ fontFamily: fonts.display, fontSize: "clamp(1.5rem, 2.5vw, 2rem)", fontWeight: 600, color: colors.primary, marginBottom: 24 }}>Common questions about conditions we support</h2>
+          {faqs.map((faq) => (
+            <div key={faq.q} style={{ borderBottom: `1px solid ${colors.border}`, padding: "20px 0" }}>
+              <h3 style={{ fontSize: 16, fontWeight: 700, color: colors.primary, margin: "0 0 10px", lineHeight: 1.5 }}>{faq.q}</h3>
+              <p style={{ fontSize: 15, color: colors.textLight, lineHeight: 1.8, margin: 0 }}>{faq.a}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* Bottom CTA */}
       <section style={{ background: colors.primary, padding: "80px 24px", textAlign: "center" }}>
         <div style={{ maxWidth: 640, margin: "0 auto" }}>
@@ -109,5 +174,6 @@ export default function ConditionsHubPage() {
       </section>
 
     </main>
+    </>
   )
 }

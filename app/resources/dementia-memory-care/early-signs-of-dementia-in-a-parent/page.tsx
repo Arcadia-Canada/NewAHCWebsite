@@ -77,7 +77,7 @@ export default function EarlySignsOfDementiaArticlePage() {
                   name: 'What are the earliest signs of dementia in a parent?',
                   acceptedAnswer: {
                     '@type': 'Answer',
-                    text: 'The most common early signs include repeating questions or stories within a short period, difficulty managing multi-step tasks such as cooking or paying bills, word-finding problems that go beyond the occasional blank, personality changes such as increased suspicion or withdrawal, and confusion about time or familiar places. These patterns tend to be persistent rather than occasional, and they represent a change from how your parent used to function.',
+                    text: 'The most common early signs include repeating questions or stories within a short period, difficulty managing multi-step tasks such as cooking or paying bills, word-finding problems that go beyond the occasional blank, personality changes such as increased suspicion or withdrawal, and confusion about time or familiar places. These patterns tend to be persistent rather than occasional, and they represent a change from how your parent used to function. If you are wondering how do I know when it is more than aging, look for persistent patterns across memory, planning, and personality. Is there a doctor near me who can screen? Start with the family physician.',
                   },
                 },
                 {
@@ -476,6 +476,9 @@ export default function EarlySignsOfDementiaArticlePage() {
                   that go beyond the occasional blank, personality changes such as increased suspicion or
                   withdrawal, and confusion about time or familiar places. These patterns tend to be persistent
                   rather than occasional, and they represent a change from how your parent used to function.
+                  If you are wondering how do I know when it is more than aging, look for persistent patterns
+                  across memory, planning, and personality. Is there a doctor near me who can screen? Start
+                  with the family physician.
                 </div>
               </div>
 

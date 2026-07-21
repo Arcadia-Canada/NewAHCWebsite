@@ -205,10 +205,22 @@ Always include the phone number as a co-equal option: **(844) 977-0050**.
 
 When an article includes an FAQ section:
 
-- 6–10 questions per article. More than 10 dilutes; fewer than 6 misses the AEO opportunity.
-- Each question should be one a real reader would type into Google.
+- **6–8 questions per article** (minimum **6** for resource articles). More than 10 dilutes; fewer than 6 misses the AEO opportunity.
+- Each question should be one a real reader would type into Google **or ask aloud** to a voice assistant.
 - Each answer should be 50–120 words. Long enough to be useful, short enough to be a featured snippet.
 - Answers should NOT pitch Arcadia in every paragraph. Most should be informational. One or two can route to Arcadia services where genuinely relevant.
+
+### Voice-search phrasing in FAQs
+
+FAQ answers are the primary surface for conversational / voice-search coverage. In addition to direct, useful answers:
+
+- Embed **at least two** natural spoken-query patterns per page in FAQ answer copy, e.g. *"Families ask how do I…"*, *"Can you…?"*, *"Is there… near me…?"*
+- Match phrasing to **who the article is for** (adult child vs. spouse vs. professional referrer) and **funnel stage** from the content brief.
+- Phrases must read naturally in context, not as a keyword list.
+
+Tracked patterns (see `scripts/voice-search-report.mjs`): `how do i`, `how much`, `can you`, `who should`, `what is the fastest way`, `is there`, `near me`, `can someone`, `do you`.
+
+Before publish, run `npm run voice:report` and confirm the page is not in Priority Gaps. Implementation details: `docs/08-IMPLEMENTATION-BLUEPRINT.md` §3a.
 
 ---
 

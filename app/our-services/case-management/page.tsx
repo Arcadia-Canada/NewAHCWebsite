@@ -20,27 +20,27 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: 'What does a case manager actually do?',
-    a: 'A case manager assesses the full situation — the person\'s medical needs, functional abilities, living environment, family support, and financial considerations — and builds a care plan that coordinates all the pieces. They communicate with the treating medical team, arrange and oversee home care providers, navigate publicly funded systems like Ontario Health atHome, and serve as the single point of contact for the family. When something changes — and it always does — the case manager adjusts the plan rather than leaving the family to figure it out.',
+    a: 'A case manager assesses the full situation: the person\'s medical needs, functional abilities, living environment, family support, and financial considerations, and builds a care plan that coordinates all the pieces. They communicate with the treating medical team, arrange and oversee home care providers, navigate publicly funded systems like Ontario Health atHome, and serve as the single point of contact for the family. When something changes, and it always does, the case manager adjusts the plan rather than leaving the family to figure it out. If you are wondering how do I coordinate all of this, case management is built for that.',
   },
   {
     q: 'How is case management different from just hiring a home care agency?',
-    a: 'A home care agency provides care workers. A case manager coordinates care across multiple providers and systems — the family physician, specialist teams, Ontario Health atHome, private home care, and any other services involved. Case management is appropriate when the situation is complex enough that coordination itself has become a significant challenge, or when the family does not have the knowledge or bandwidth to manage that coordination themselves.',
+    a: 'A home care agency provides care workers. A case manager coordinates care across multiple providers and systems: the family physician, specialist teams, Ontario Health atHome, private home care, and any other services involved. Case management is appropriate when the situation is complex enough that coordination itself has become a significant challenge, or when the family does not have the knowledge or bandwidth to manage that coordination themselves.',
   },
   {
     q: 'Who typically benefits most from case management?',
-    a: 'Families navigating complex, multi-condition situations — particularly those involving dementia, acquired brain injury, or a combination of medical and functional needs. Families who are geographically distant from a parent or loved one. Families where the primary caregiver is also managing other significant responsibilities. And situations where multiple providers are involved but no one is taking overall responsibility for how the pieces fit together.',
+    a: 'Families navigating complex, multi-condition situations, particularly those involving dementia, acquired brain injury, or a combination of medical and functional needs. Families who are geographically distant from a parent. Families where the primary caregiver is also managing other significant responsibilities. And situations where multiple providers are involved but no one is taking overall responsibility for how the pieces fit together.',
   },
   {
     q: 'Can Arcadia provide case management alongside its home care services?',
-    a: 'Yes — and this is a common arrangement. Arcadia\'s case manager can coordinate the full care plan, including Arcadia\'s own home care workers alongside any other services involved. Having case management and home care from the same provider can simplify communication and reduce the coordination burden on the family, though we can also provide case management independently for clients who use other home care providers.',
+    a: 'Yes, and this is a common arrangement. Arcadia\'s case manager can coordinate the full care plan, including Arcadia\'s own home care workers alongside any other services involved. Having case management and home care from the same provider can simplify communication and reduce the coordination burden on the family, though we can also provide case management independently for clients who use other home care providers. Do you provide case management near me in the GTA? Yes.',
   },
   {
     q: 'Is case management covered by OHIP or Ontario Health atHome?',
-    a: 'Ontario Health atHome provides care coordination services for eligible clients as part of publicly funded home care. However, the scope of publicly funded coordination is often limited — particularly for complex cases that require intensive ongoing management. Private case management fills the gaps where public coordination does not cover what the situation requires.',
+    a: 'Ontario Health atHome provides care coordination services for eligible clients as part of publicly funded home care. However, the scope of publicly funded coordination is often limited, particularly for complex cases that require intensive ongoing management. Private case management fills the gaps where public coordination does not cover what the situation requires.',
   },
   {
     q: 'How does Arcadia\'s case manager communicate with our family?',
-    a: 'We establish a communication rhythm at the outset — how often updates are provided, through what channel, and who in the family receives them. For families managing a situation from a distance, we can provide regular written summaries alongside direct phone contact. We also communicate proactively when something changes, rather than waiting for the family to check in.',
+    a: 'We establish a communication rhythm at the outset: how often updates are provided, through what channel, and who in the family receives them. For families managing a situation from a distance, we can provide regular written summaries alongside direct phone contact. We also communicate proactively when something changes, rather than waiting for the family to check in.',
   },
 ]
 

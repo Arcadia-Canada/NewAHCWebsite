@@ -109,7 +109,7 @@ export default function GuiltOfGettingHelpArticlePage() {
                   name: 'How do I start getting help without feeling like I am giving up?',
                   acceptedAnswer: {
                     '@type': 'Answer',
-                    text: 'Start small and specific. A few consistent hours for the hardest tasks or the hardest part of the week is often easier to accept than a full overhaul. Treat the first arrangement as a trial, not a permanent verdict on your role.',
+                    text: 'Start small and specific. A few consistent hours for the hardest tasks or the hardest part of the week is often easier to accept than a full overhaul. Treat the first arrangement as a trial, not a permanent verdict on your role. Do you offer respite or home care in the GTA? Yes. Can someone cover just a few hours so I can rest? That is a common starting point.',
                   },
                 },
                 {
@@ -393,7 +393,8 @@ export default function GuiltOfGettingHelpArticlePage() {
                 <div className="faq-a">
                   Start small and specific. A few consistent hours for the hardest tasks or the hardest part of
                   the week is often easier to accept than a full overhaul. Treat the first arrangement as a
-                  trial, not a permanent verdict on your role.
+                  trial, not a permanent verdict on your role. Do you offer respite or home care in the GTA?
+                  Yes. Can someone cover just a few hours so I can rest? That is a common starting point.
                 </div>
               </div>
 
