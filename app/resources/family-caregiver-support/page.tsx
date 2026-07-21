@@ -120,7 +120,7 @@ export default function FamilyCaregiverSupportHub() {
               aggregateRating: {
                 '@type': 'AggregateRating',
                 ratingValue: '4.9',
-                reviewCount: '41',
+                reviewCount: '44',
                 bestRating: '5',
                 worstRating: '1',
               },

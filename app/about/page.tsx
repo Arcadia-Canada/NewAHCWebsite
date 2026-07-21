@@ -112,7 +112,7 @@ export default function AboutPage() {
             <div style={{ display: 'flex', gap: 0, justifyContent: 'center', flexWrap: 'wrap', borderTop: `1px solid ${colors.border}`, borderBottom: `1px solid ${colors.border}` }}>
               {[
                 { num: '2005', label: 'Year Founded' },
-                { num: '4.9★', label: 'Google Rating · 41 Reviews' },
+                { num: '4.9★', label: 'Google Rating · 44 Reviews' },
                 { num: '7', label: 'Days a Week' },
                 { num: '20+', label: 'Years Serving GTA Families' },
               ].map((stat, i) => (

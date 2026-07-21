@@ -135,7 +135,7 @@ export default function NavigatingHomeCareHub() {
               aggregateRating: {
                 '@type': 'AggregateRating',
                 ratingValue: '4.9',
-                reviewCount: '41',
+                reviewCount: '44',
                 bestRating: '5',
                 worstRating: '1',
               },

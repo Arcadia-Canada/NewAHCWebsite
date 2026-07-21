@@ -244,8 +244,8 @@ Mississauga is served by Ontario Health atHome — Mississauga Halton Region. Tr
   },
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingValue": "5.0",
-    "reviewCount": "38"
+    "ratingValue": "4.9",
+    "reviewCount": "44"
   }
 }
 ```

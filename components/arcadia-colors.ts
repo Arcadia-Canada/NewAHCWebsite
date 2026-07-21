@@ -27,7 +27,7 @@ export const phone = {
 } as const
 
 export const trustItems = [
-  { icon: "⭐", text: "4.9 Google Rating · 41 Reviews" },
+  { icon: "⭐", text: "4.9 Google Rating · 44 Reviews" },
   { icon: "🏠", text: "Serving GTA Families Since 2005" },
   { icon: "🩺", text: "Clinically Supervised Care" },
   { icon: "📞", text: "Available 7 Days a Week" },

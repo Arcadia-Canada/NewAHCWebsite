@@ -99,7 +99,7 @@ function Hero() {
             </a>
             <a href="https://www.google.com/search?q=arcadia+home+care+toronto" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.15)', borderRadius: 100, padding: '8px 16px', textDecoration: 'none', transition: 'background 0.2s, border-color 0.2s' }}>
               <StarRating />
-              <span style={{ fontSize: 13, color: 'rgba(255,255,255,0.85)', fontWeight: 600 }}>4.9 {String.fromCharCode(0xB7)} 41 Google Reviews</span>
+              <span style={{ fontSize: 13, color: 'rgba(255,255,255,0.85)', fontWeight: 600 }}>4.9 {String.fromCharCode(0xB7)} 44 Google Reviews</span>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
                 <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
                 <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
@@ -383,7 +383,7 @@ export default function Home() {
         aggregateRating: {
           '@type': 'AggregateRating',
           ratingValue: '4.9',
-          reviewCount: '41',
+          reviewCount: '44',
         },
         review: [
           {
