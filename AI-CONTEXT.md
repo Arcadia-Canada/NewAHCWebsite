@@ -77,7 +77,8 @@ Each article lives at: `https://www.arcadiahomecare.ca/resources/[cluster-slug]/
 **Hard gates you cannot skip:**
 1. **Phase 6:** Update cluster hub so article appears in the cluster listing
 2. **Phase 7:** Update `docs/AUTHORITY-MAP.md` to mark article as Published
-3. **Phase 9:** Generate `social/briefs/BRIEF-[slug].md` and `social/kits/KIT-[slug].docx`
+3. **Phase 7.5:** Run `npm run sync:llms` and commit `public/llms.txt`
+4. **Phase 9:** Generate `social/briefs/BRIEF-[slug].md` and `social/kits/KIT-[slug].docx`
 
 If any hard gate is skipped, the article is not done publishing.
 
@@ -140,7 +141,7 @@ This gate supersedes any softer keyword-check language elsewhere. "Differentiate
 ## When You're Publishing an Article
 
 1. **Follow `docs/06-PUBLISHING-CHECKLIST.md` exactly** — all 11 phases.
-2. **Hit the three hard gates:** cluster hub update (Phase 6), AUTHORITY-MAP update (Phase 7), social brief + kit (Phase 9).
+2. **Hit the hard gates:** cluster hub update (Phase 6), AUTHORITY-MAP update (Phase 7), `npm run sync:llms` (Phase 7.5), social brief + kit (Phase 9).
 3. **Test locally** (`npm run dev`), then test live (Search Console, Rich Results, social previews).
 
 ---

@@ -34,6 +34,31 @@
 - Post-Hospital Recovery: https://www.arcadiahomecare.ca/conditions/post-hospital-recovery/
 - Caregiver Burnout Support: https://www.arcadiahomecare.ca/conditions/caregiver-burnout-support/
 
+## Resource Guides (GTA Home Care)
+
+### Dementia & Memory Care
+- Early Signs of Dementia in a Parent: https://www.arcadiahomecare.ca/resources/dementia-memory-care/early-signs-of-dementia-in-a-parent/
+- How to Introduce Home Care to a Parent with Dementia: https://www.arcadiahomecare.ca/resources/dementia-memory-care/introducing-home-care-dementia/
+- How to Keep Someone with Dementia Safe at Home: https://www.arcadiahomecare.ca/resources/dementia-memory-care/dementia-home-safety/
+- Normal Aging vs. Dementia: What's the Difference?: https://www.arcadiahomecare.ca/resources/dementia-memory-care/normal-aging-vs-dementia/
+- When Should Someone with Dementia Stop Driving?: https://www.arcadiahomecare.ca/resources/dementia-memory-care/dementia-when-to-stop-driving/
+
+### Family Caregiver Support
+- The Conversation You Keep Putting Off: https://www.arcadiahomecare.ca/resources/family-caregiver-support/talking-to-parent-about-care/
+- The Exhaustion You Have Stopped Noticing: https://www.arcadiahomecare.ca/resources/family-caregiver-support/caregiver-burnout-warning-signs/
+- The Guilt of Getting Help: https://www.arcadiahomecare.ca/resources/family-caregiver-support/guilt-of-getting-help/
+- The Weight You Are Carrying: https://www.arcadiahomecare.ca/resources/family-caregiver-support/weight-of-caregiving/
+- When Siblings Disagree About a Parent's Care: https://www.arcadiahomecare.ca/resources/family-caregiver-support/siblings-disagree-parent-care/
+
+### Navigating Home Care
+- How Much Does Home Care Cost in Ontario?: https://www.arcadiahomecare.ca/resources/navigating-home-care/home-care-cost-ontario/
+- How to Know When It Is Time: https://www.arcadiahomecare.ca/resources/navigating-home-care/signs-parent-needs-home-care/
+- Spring Home Safety Checklist for Seniors: https://www.arcadiahomecare.ca/resources/spring-home-safety-checklist-for-seniors/
+- What Does a PSW Actually Do?: https://www.arcadiahomecare.ca/resources/navigating-home-care/what-does-a-psw-do/
+- What Good Care Actually Looks Like: https://www.arcadiahomecare.ca/resources/navigating-home-care/recognizing-quality-home-care/
+- What No One Tells You About the First Week of Home Care: https://www.arcadiahomecare.ca/resources/navigating-home-care/what-no-one-tells-you-first-week-home-care/
+- When the Person You Love Needs More Help Than You Can Give: https://www.arcadiahomecare.ca/resources/navigating-home-care/when-parent-needs-more-help/
+
 ## Helpful Pages
 - How Care Starts: https://www.arcadiahomecare.ca/how-care-starts/
 - Contact: https://www.arcadiahomecare.ca/contact/
@@ -52,3 +77,4 @@
 
 ## Sitemap
 - XML Sitemap: https://www.arcadiahomecare.ca/sitemap.xml
+- LLM map (this file): https://www.arcadiahomecare.ca/llms.txt

@@ -17,6 +17,7 @@
     "validate": "node scripts/validate-article.mjs",
     "sync": "node scripts/sync-from-sheet.mjs",
     "sync:registry": "node scripts/sync-registry.mjs",
+    "sync:llms": "node scripts/sync-llms-txt.mjs",
     "precommit": "node scripts/precommit-check.mjs",
     "hooks:install": "git config core.hooksPath .githooks && echo \"Arcadia hooks active\""
   },

@@ -6,7 +6,7 @@ The step-by-step workflow for publishing a new resource article on arcadiahomeca
 
 **Time per article:** roughly 60–90 minutes the first time, ~30 minutes once the workflow is familiar.
 
-**Last updated:** May 2026 — aligned phase numbers and **hard gates** with `.cursorrules` at the repo root.
+**Last updated:** July 2026 — added Phase 7.5 `llms.txt` auto-sync for AI agent discoverability. May 2026 — aligned phase numbers and **hard gates** with `.cursorrules` at the repo root.
 
 ---
 
@@ -122,6 +122,14 @@ Keep governance and the live site in sync in **one commit** when practical.
 
 ✅ **7.4** — **`app/sitemap.ts`** — Include the new URL so the static sitemap matches the site.
 
+✅ **7.5** — **`public/llms.txt`** — Regenerate the AI discovery map:
+
+```bash
+npm run sync:llms
+```
+
+This script reads live articles from cluster hub pages, adds any standalone resource routes on disk, and pulls trust signals from `docs/04-SCHEMA-STANDARDS.md`. Commit the updated `public/llms.txt` in the same publish commit.
+
 ---
 
 ## Phase 8 — Optional: quick handoff note
@@ -194,6 +202,8 @@ Not allowed for publish. Link only to live pages, or use an HTML comment placeho
 **Auto-injected schema:** None from a plugin. Article pages ship hand-authored JSON-LD in `page.tsx`.
 
 **Sitemap:** `app/sitemap.ts` — must be updated for each new URL (see Phase 7).
+
+**LLM map:** `public/llms.txt` — run `npm run sync:llms` after each publish (see Phase 7.5). Source script: `scripts/sync-llms-txt.mjs`.
 
 **Redirects:** `vercel.json` (and `redirects.json` as reference). Next export does not apply redirects at build time; Vercel serves them.
 
