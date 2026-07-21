@@ -3,7 +3,7 @@
 The complete article inventory across all five clusters. **This file is the live status tracker.** Every time an article publishes, change its status here from `Net New` or `Coming Soon` → `Published`, and add the live URL.
 
 Total inventory: **101 unique articles** across 5 clusters.
-Last updated: June 9, 2026 (Cleared all Coming Soon stubs — cards removed, converted to Net New)
+Last updated: July 20, 2026 (Published guilt-of-getting-help; deployed early-signs rewrite)
 
 ---
 
@@ -36,7 +36,7 @@ These 11 articles are the production priority. The pillar (P) is published. The 
 | 5     | The Weight You Are Carrying                                                  | Caregiver  | **Published** | `/resources/family-caregiver-support/weight-of-caregiving/`     |
 | 6     | What Good Care Actually Looks Like                                           | Navigating | **Published** | `/resources/navigating-home-care/recognizing-quality-home-care/`     |
 | 7     | Navigating the System                                                        | Navigating | Net New       | —                                                                   |
-| 8     | The Guilt of Getting Help                                                    | Caregiver  | Net New       | —                                                                   |
+| 8     | The Guilt of Getting Help                                                    | Caregiver  | Published       | Live 2026-07-20 at /resources/family-caregiver-support/guilt-of-getting-help/                                                                   |
 | 9     | When the Situation Changes Overnight                                         | Navigating | Net New       | —                                                                   |
 | 10    | What Trust Actually Means                                                    | Navigating | Net New       | —                                                                   |
 
@@ -52,14 +52,14 @@ These 11 articles are the production priority. The pillar (P) is published. The 
 
 | #   | Article                                              | Status      | Action        | Notes                                                                           |
 | --- | ---------------------------------------------------- | ----------- | ------------- | ------------------------------------------------------------------------------- |
-| 1   | Early Signs of Dementia in a Parent                  | Published   | Skip          | Live at `/resources/dementia-memory-care/early-signs-of-dementia-in-a-parent/`. |
+| 1   | Early Signs of Dementia in a Parent                  | Published   | Skip          | Live at `/resources/dementia-memory-care/early-signs-of-dementia-in-a-parent/`. Rewrite deployed 2026-07-20. |
 | 2   | Normal Aging vs. Dementia: What's the Difference?    | Published   | Skip          | Live at `/resources/dementia-memory-care/normal-aging-vs-dementia/`.            |
 | 3   | How to Introduce Home Care to a Parent with Dementia | Published   | Skip          | Live at `/resources/dementia-memory-care/introducing-home-care-dementia/`.      |
 | 4   | Managing Behaviour Changes in Dementia               | Net New     | Write         | Card removed from hub 2026-06-09 (past 60-day deadline). Write when ready. |
 | 5   | Communication Strategies for Dementia                | Net New     | Write         | Card removed from hub 2026-06-09 (past 60-day deadline). Write when ready. |
 | 6   | Late Stage Dementia: What Families Need to Know      | Net New     | Write         | Card removed from hub 2026-06-09 (past 60-day deadline). Write when ready. |
-| 7   | How to Keep Someone with Dementia Safe at Home       | Net New     | Write         | Evergreen safety.                                                               |
-| 8   | When Should Someone with Dementia Stop Driving?      | Net New     | Write         | High volume. Sensitive.                                                         |
+| 7   | How to Keep Someone with Dementia Safe at Home       | Published   | Skip          | Live at `/resources/dementia-memory-care/dementia-home-safety/`. Published 2026-07-09. |
+| 8   | When Should Someone with Dementia Stop Driving?      | Published   | Skip          | Live at `/resources/dementia-memory-care/dementia-when-to-stop-driving/`. Published 2026-07-09. |
 | 9   | Stages of Alzheimer's and What to Expect             | Net New     | Differentiate | Avoid overlap with "Late Stage Dementia" stub (#6).                             |
 | 10  | Creating Routines for Dementia Patients              | Net New     | Write         | —                                                                               |
 | 11  | How Dementia Affects Sleep                           | Net New     | Write         | —                                                                               |
@@ -168,7 +168,7 @@ These 11 articles are the production priority. The pillar (P) is published. The 
 | 5   | The Emotional Impact of Caring for Aging Parents | Net New       | Write         | Card removed from hub 2026-06-09 (past 60-day deadline). Write when ready. |
 | 6   | How Families Can Share Care Responsibilities     | Net New       | Write         | Card removed from hub 2026-06-09 (past 60-day deadline). Write when ready. |
 | 7   | The Weight You Are Carrying and Why It Matters   | **Published** | Skip          | Live at `/resources/family-caregiver-support/weight-of-caregiving/`. Published 2026-05-22. Master Prompt Art. 5. |
-| 8   | The Guilt of Getting Help                        | Net New       | Write         | Master prompt Art. 8. No live equivalent.                                                                                                         |
+| 8   | The Guilt of Getting Help                        | Published       | Skip         | Live 2026-07-20. Master prompt Art. 8.                                                                                                         |
 | 9   | Preparing for Decline Conversations              | Net New       | Write         | Pre-crisis planning. Differentiate from Art. 1.                                                                                                   |
 | 10  | How Families Make Care Decisions                 | Net New       | Write         | —                                                                                                                                                 |
 | 11  | Helping a Parent Accept Help                     | Net New       | Differentiate | Overlaps with master prompt Art. 1 and "When a Parent Resists."                                                                                   |
@@ -213,10 +213,10 @@ These 11 articles are the production priority. The pillar (P) is published. The 
 
 | Status                        | Count                                   |
 | ----------------------------- | --------------------------------------- |
-| Published                     | 12 (3 dementia + 3 caregiver + 1 pillar + 4 navigating + 1 seasonal) |
+| Published                     | 14 (5 dementia + 3 caregiver + 1 pillar + 4 navigating + 1 seasonal) |
 | Coming Soon stubs to replace  | 0 — all resolved 2026-06-09             |
 | Requiring differentiation     | 8                                       |
-| Clean Net New, ready to write | 83 (11 former stubs converted to Net New) |
+| Clean Net New, ready to write | 81 (11 former stubs converted to Net New) |
 | **Total**                     | **103**                                 |
 
 

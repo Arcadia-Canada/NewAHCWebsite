@@ -1,41 +1,47 @@
-# BRIEF-early-signs-of-dementia-in-a-parent — Early Signs of Dementia in a Parent
+# BRIEF-early-signs-of-dementia-in-a-parent: Early Signs of Dementia in a Parent
 
-> **Strategy brief.** Read once when the article publishes. For ready-to-paste captions, distribution timing, and visual direction — see the companion file KIT-early-signs-of-dementia-in-a-parent.docx.
+> **RELEASE STATUS: APPROVED — READY TO POST (2026-07-20).** Article is LIVE at `/resources/dementia-memory-care/early-signs-of-dementia-in-a-parent/` (verified 200). Cleared for scheduling. Social Posted? stays No until the posts actually go out.
+>
+> **Strategy brief.** Read once when the article publishes. For ready-to-paste captions, distribution timing, and visual direction, see the companion file KIT-early-signs-of-dementia-in-a-parent.docx.
 
 ---
 
 ## What this article is
 
-Cluster anchor article. Adult children find this when something has felt off and they are starting to search for words for it. Clinical but compassionate. Opens the dementia conversation.
+A recognition guide for adult children who have started noticing small cognitive and behavioural changes in a parent and cannot tell whether they are looking at normal aging or something more. It sits at the front of the Dementia & Memory Care cluster: the article that names what the reader is already seeing before the safety, driving, and home-care conversation articles take over.
 
-The emotional entry point: She noticed something at Thanksgiving. Or on a phone call that felt different. Or the third time her father told her the same story in one afternoon. She has been telling herself it is just aging. Maybe it is. Maybe it is not. The not-knowing is the hardest part.
+The emotional entry point: You have been noticing things. Small things, at first. Your parent repeating the same question within a few minutes. A word that should come easily but does not. A bill left unpaid, not because of money, but because the task of paying it somehow slipped past. You are not sure yet whether this is normal aging or something else, and you are not sure you want to find out.
 
-The key reframe: Most families notice changes long before they name them. The gap between noticing and acting is where the anxiety lives. Naming what you are seeing — even cautiously, even out loud only to a doctor — is what closes that gap.
+The key reframe: Noticing is not a failure. It is the beginning of being able to help. You do not need certainty, or a diagnosis, before paying closer attention or talking to a doctor.
 
 ## The URL
 
 `https://www.arcadiahomecare.ca/resources/dementia-memory-care/early-signs-of-dementia-in-a-parent/`
 
-Permanent. Use everywhere — Instagram bio links, Facebook posts, LinkedIn articles, email newsletters, comment replies. The companion KIT-early-signs-of-dementia-in-a-parent.docx contains the same URL with platform-specific UTM strings already attached to every caption.
+Permanent. Use everywhere: Instagram bio links, Facebook posts, LinkedIn articles, email newsletters, comment replies. The companion KIT-early-signs-of-dementia-in-a-parent.docx contains the same URL with platform-specific UTM strings already attached to every caption.
 
 ## Cluster
 
 **Dementia & Memory Care**
 
-Pub date: March 2026
+Pub date (original): March 22, 2026
+Rewrite review date: July 20, 2026 (not live until approved)
 
 ## Pull quotes for graphics
 
 **Quote 1**
-> Most families notice changes long before they name them. The gap between noticing and acting is where anxiety lives.
+> You are not looking for one dramatic incident. You are looking for a pattern your parent did not used to have.
 
 **Quote 2**
-> Forgetting where you put your keys is normal aging. Forgetting what keys are for is not.
+> The difference between normal forgetfulness and early dementia is whether the forgotten thing comes back.
 
 **Quote 3**
-> Early signs of dementia are often easier to see from a distance than up close. The adult child who visits weekly may notice what the spouse who is there every day cannot.
+> When a parent's temperament changes, families feel it before they can explain it.
 
-Use these cyclically across the 14-day window. Don't post all of them in one week.
+**Quote 4**
+> Noticing is not a failure. It is the beginning of being able to help.
+
+Use these cyclically across the 14-day window. Do not post all of them in one week.
 
 ## Audience
 
@@ -44,37 +50,39 @@ Same primary persona that anchors the entire Arcadia content arc:
 - Adult daughter or son in their 40s, 50s, 60s
 - Living in Toronto or the GTA
 - Carrying more responsibility than they admit out loud
-- Searching at odd hours
+- Searching at odd hours, often after a visit that left a quiet unease
 
-This article catches the reader in a specific moment. The share target — the person this reader most often forwards the article to — is: A sibling who has not seen the parent recently and would not recognize the changes. A spouse you have been wanting to talk to about it but have not. A friend whose parent is going through something similar.
+This article catches the reader before they have language for what they are seeing. The share target is usually a sibling who visits less often and has not noticed the same pattern, or a spouse who thinks they are overreacting.
 
 ## Tone
 
-Tone reminder: this is the first calm voice the reader hears after a difficult phone call. Informative, never panicked. Validate before diagnosing. Most readers come scared. Lead with steadiness.
+This is a "name what you are seeing" article. The reader needs recognition and calm specificity, not alarm and not a clinical lecture.
+
+The biggest voice risk is drifting into symptom-listicle mode or diagnostic certainty. The article must keep hedging honest: patterns matter more than any single incident, and a doctor makes the call. Another risk is softening into motivational encouragement. Stay warm, direct, and specific.
 
 **Avoid:**
-- "Don't miss this!" / "Must read!" / "Share if you agree!"
-- "You've got this!" / motivational framing of any kind
-- Listicle framing ("5 tips for...")
-- Exclamation points (default to none)
-- "We at Arcadia believe..." or any pivot to corporate-speak
-- Stock platitudes the reader has heard a thousand times
+- Listicle framing ("7 early warning signs doctors never mention")
+- Diagnostic certainty or medical advice framed as diagnosis
+- Fear-bait compression of clinical claims in social captions
+- "You've got this!" motivational framing
+- Exclamation points
+- "We at Arcadia believe..." or any corporate pivot
 
 **Lean into:**
-- Recognition language — "You have been..."
-- Specific tiny scenes — the small detail your reader will recognize
-- Permission language — "You do not have to do it perfectly"
-- Direct address — "you," "your parent," "your family"
-- Honest specificity over generic encouragement
+- Recognition language: "You have been noticing..."
+- Specific tiny scenes: unpaid bills, repeated questions, quieter conversations
+- Permission: you do not need certainty before paying attention
+- The memory reframe: slower recall vs lost recall
+- Direct address: "you," "your parent," "your family"
 
 ## Cross-promotion within the Master Prompt series
 
-This article sits inside Arcadia's Master Prompt series — a coherent narrative arc across the Family Caregiver Support and Navigating Home Care clusters. Each article in the series reinforces the others. Treat the whole series as a long arc, not a sequence of disposable posts.
+This article sits at the recognition stage of Arcadia's Dementia & Memory Care cluster.
 
 Where this article fits in the reader's journey:
-- Upstream: pillar article (`/resources/navigating-home-care/when-parent-needs-more-help/`) — readers move from "is this happening?" recognition into the specific articles that name what they are seeing.
-- Lateral: other Master Prompt articles in the same emotional register.
-- Downstream: condition pages, service pages, /how-care-starts/ — the destination once the reader is ready to move from reading to acting.
+- Upstream: often arrives from search or from caregiver burnout / conversation articles when memory worry surfaces
+- Lateral: Normal Aging vs. Dementia; The Conversation You Keep Putting Off
+- Downstream: Dementia Home Safety; When Someone with Dementia Should Stop Driving; Introducing Home Care to a Parent with Dementia
 
 For ready-to-paste cross-promotion captions, see KIT-early-signs-of-dementia-in-a-parent.docx.
 
@@ -82,46 +90,42 @@ For ready-to-paste cross-promotion captions, see KIT-early-signs-of-dementia-in-
 
 | Platform | Priority | Why |
 |---|---|---|
-| Facebook | **High** | Adult children of aging parents are most active here. Recognition-led copy lands. |
-| LinkedIn | **High** | Professional caregivers, healthcare partners, and adult children in working roles share thoughtful long-form pieces. Captions written for the referral-partner audience. |
-| Instagram | **Medium** | Quote graphics work well; carousels for Key Takeaways. Shorter captions, link in bio. |
-| X / Twitter | **Low–medium** | Title + one quote works. Lower priority. |
-| Email | **High** if Arcadia has a newsletter | Replies likely. |
-| TikTok / Reels | **Skip** | Wrong tone for short-form video. |
+| Facebook | High | Adult children of aging parents are most active here. |
+| LinkedIn | High | Professional caregivers, healthcare partners, and adult children in working roles share thoughtful long-form pieces. |
+| Instagram | Medium | Quote graphics work well; carousels for Key Takeaways. |
+| X / Twitter | Low–medium | Title + one quote works. |
+| Email | High if newsletter active | Replies likely. |
+| TikTok / Reels | Skip | Wrong tone for short-form video. |
 
 ## What success looks like
 
-Not raw reach or follower count — those metrics are weak signals for Arcadia's audience. The metrics that matter:
+Not raw reach or follower count. The metrics that matter:
 
 - **Click-through to the URL** (tracked via UTM parameters in the kit)
-- **Time on page** for traffic from social — target 2+ minutes. Indicates trust, not curiosity.
+- **Time on page** for traffic from social: target 2+ minutes
 - **Bookmarks and saves** on Instagram and LinkedIn
-- **Personal comments** that disclose first-person experience ("This is me right now," "I forwarded this to my sister")
-- **Direct/email referrals** — unusual referrer patterns. Traffic from email, iMessage, WhatsApp signals private forwarding, the highest-value behaviour.
+- **Personal comments** that disclose first-person experience
+- **Direct/email referrals** (the "send to a sibling" signal)
 - **Inbound contact-form submissions** referencing the article
-
-This article is built to be forwarded, not just read. Watch for sharing patterns more than impression counts.
 
 ## When to refresh
 
-In 12 months, pull new quotes from the article body and produce a Month 12 resurfacing wave. The piece is built to last — the situation it describes does not change.
-
-If a quarterly review (per docs/06-PUBLISHING-CHECKLIST.md Phase 10) flags the article for update, the strategy brief should be revisited at the same time. Strategy can drift even when the content is stable.
+In 12 months, pull new quotes from the article body and produce a Month 12 resurfacing wave. The piece is built to last. The situation it describes does not change.
 
 ## What is NOT in this brief
 
 This brief is strategy. The execution lives in **KIT-early-signs-of-dementia-in-a-parent.docx**, which contains:
 
-- A0 Pre-Post Brief with all the production-ready specs
-- A1 Recognition Post — labelled captions for Facebook, LinkedIn, and Instagram
-- A2 Reframe Post — three reframes, each in three platform-tuned versions (9 captions total)
-- A3 Share-Prompt Post — captions designed to generate forwards
-- A4 Quiet Authority Post — LinkedIn caption for the professional audience
-- 14-Day Distribution Summary — when to post each variant
+- A0 Pre-Post Brief with production-ready specs
+- A1 Recognition Post: Facebook + LinkedIn + Instagram captions, labelled
+- A2 Reframe Post: three reframes × three platforms = 9 captions
+- A3 Share-Prompt Post: captions designed to generate forwards
+- A4 Quiet Authority Post: LinkedIn caption for the professional audience
+- 14-Day Distribution Summary
 - Performance metrics + voice rules
 
-The two files are deliberately separated. The brief explains the article. The kit produces the posts. Don't read them as duplicates — they are sequential.
+The two files are deliberately separated. The brief explains the article. The kit produces the posts.
 
 ## Last updated
 
-May 2026 — generated from the published article and the Arcadia governance pack.
+July 2026: generated from the rewritten review draft for Early Signs of Dementia in a Parent. Do not schedule posts until rewrite approval and go-live.

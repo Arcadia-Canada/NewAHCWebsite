@@ -1,0 +1,18 @@
+#!/bin/sh
+#
+# Arcadia pre-commit hook.
+#
+# Versioned in the repo rather than living in .git/hooks, so all four Arcadia
+# repos share one implementation. Activated per clone with:
+#
+#   npm run hooks:install     (sets core.hooksPath to .githooks)
+#
+# Skips silently if node is unavailable, so a missing toolchain never blocks a
+# commit outright.
+
+if ! command -v node >/dev/null 2>&1; then
+  echo "pre-commit: node not found, skipping Arcadia checks"
+  exit 0
+fi
+
+exec node scripts/precommit-check.mjs

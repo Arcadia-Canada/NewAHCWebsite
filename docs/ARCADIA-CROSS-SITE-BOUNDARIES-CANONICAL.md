@@ -1,12 +1,12 @@
 # ARCADIA CROSS-SITE BOUNDARIES — CANONICAL
-**This is the single source of truth.** Repo copies in HC, Rehab, and ECC's `/docs` folders
+**This is the single source of truth.** Repo copies in AHA, HC, Rehab, and ECC's `/docs` folders
 are mirrors of this file, current only as of their last sync date (see footer).
 If you are reading this inside a repo, check whether a newer canonical version exists
 at [Arcadia Content Governance — Master](https://docs.google.com/spreadsheets/d/1EcU9frKxc9TxdCIKbc5u9peX9vS5udsb29Kf_1uyosk/edit?usp=sharing) before relying on it for a publishing decision.
 
-**Sites covered:** Arcadia Home Care (arcadiahomecare.ca / "HC") · Arcadia Rehab (arcadiarehab.ca / "Rehab") · ECC (eldercareconcierge)
+**Sites covered:** Arcadia Health Alliance (arcadiahealth.ca / "AHA") · Arcadia Home Care (arcadiahomecare.ca / "HC") · Arcadia Rehab (arcadiarehab.ca / "Rehab") · ECC (eldercareconcierge.ca)
 
-**Canonical version: 1.0 — created 2026-06-22**
+**Canonical version: 1.1 — updated 2026-07-20** (v1.0 created 2026-06-22)
 
 ---
 
@@ -16,13 +16,73 @@ at [Arcadia Content Governance — Master](https://docs.google.com/spreadsheets/
 1. Search this file for your target keyword/topic.
 2. If it's listed as owned by another site → don't write it as planned. Pick a different angle or a different topic.
 3. If it's not listed → check the "Open / Unverified" section below in case it's mid-resolution.
-4. If genuinely new and unclaimed → write it, then add it to the ownership table below and sync to all three repos.
+4. If genuinely new and unclaimed → write it, then add it to the ownership table below and sync to all four repos.
 5. **The Reserved Keywords table and Content Calendar live in the Google Sheet, not in this file.** This file documents the rules and conflict resolutions. The Sheet is where you check and reserve keywords day-to-day.
 
 **When you publish something that changes ownership** (new article, a "Coming Soon" goes live, a planned piece gets cut or retargeted):
 1. Update this canonical file first, adding a new row to the Sync Log table.
-2. Copy the updated version into each of the three repos' `docs/11-SISTER-SITE-KEYWORD-BOUNDARIES.md` (or equivalent), overwriting the old copy.
+2. Copy the updated version into each of the four repos' `docs/ARCADIA-CROSS-SITE-BOUNDARIES-CANONICAL.md`, overwriting the old copy.
 3. In each repo copy, mark that site's column Y for the new row, and update "Last synced (this file)" to today's date.
+
+---
+
+## The four-way intent split
+
+Each site answers a different question. This is the first filter for any new topic.
+
+| Site | The question it answers | Shorthand |
+|---|---|---|
+| **AHA** | "Who is Arcadia, and where do I start?" | **ORIENT** |
+| **HC** | "I need hands-on help at home." | **HELP WITH** |
+| **Rehab** | "I want to get stronger and stay independent." | **DO** |
+| **ECC** | "I am a professional planning someone's care." | **PLAN / DECIDE** |
+
+Intent framing alone does not guarantee distinct search outcomes. Per Conflicts 1–4 below, the published text has to actually hold to the intended lane.
+
+---
+
+## AHA lane definition (added v1.1)
+
+Arcadia Health Alliance is the parent organization site. It exists to hold the
+brand entity, route enquiries, and hire across all three divisions. **It is
+structurally not a content site.**
+
+### AHA owns
+
+| Category | Examples | Why it belongs to AHA |
+|---|---|---|
+| **Brand and entity terms** | "Arcadia Health", "Arcadia Health Alliance", "Arcadia Health Toronto", "Arcadia divisions" | Nobody else can own the parent brand. |
+| **Organizational terms** | "about Arcadia Health", "Arcadia leadership", "Arcadia accreditation", "is Arcadia legitimate" | Corporate trust queries, not service queries. |
+| **Cross-division careers** | "Arcadia Health careers", "PSW jobs Toronto", "caregiver jobs GTA", "rehabilitation support therapist jobs", "Arcadia Health hiring" | One employer brand across three divisions. Splitting recruitment across three sites competes with itself for the same candidate pool. |
+| **Which-team triage** | "which Arcadia service do I need", "Arcadia home care vs Arcadia rehab" | Only the parent can compare its own divisions neutrally. |
+| **Referral partner (org level)** | "refer a client to Arcadia", "partner with Arcadia Health" | Organizational relationship, not a service enquiry. |
+
+### AHA explicitly does NOT own
+
+These belong to the divisions and AHA must not target them, at any depth:
+
+- Any service term: home care, personal support, PSW, companionship, respite, palliative, dementia care, hospital discharge → **HC**
+- Any movement term: exercise, strength, balance, fall prevention, aquatherapy, RST, cognitive vitality → **Rehab**
+- Any advisor tooling term: assessment platform, care planning software, advisor reports → **ECC**
+- Any geo service term: "home care Toronto", "senior rehab Toronto", and every location page variant → the owning division
+- **"When a parent needs more help than you can give"** and its query cluster → **HC owns this, published.** This is the closest thing to an umbrella term that is already claimed. AHA must not write a competing orientation piece on recognizing decline.
+
+### The bridge page rule
+
+`/home-care/`, `/rehabilitation/`, and `/eldercare-concierge/` on AHA are **bridge
+pages**: they describe a division and link out. They must never target the
+division's head terms, publish articles, or duplicate cluster content.
+
+This rule is also stated in `AI-CONTEXT.md` and in code at
+`components/DivisionPage.tsx` in the AHA repo.
+
+### Realistic expectation
+
+AHA is a small site with no article pipeline. It will win brand terms and
+careers terms, which are low-competition and genuinely its own. **It will not
+out-rank HC's established pillars on broad care queries, and it should not try.**
+If a broad term is worth owning and a division already owns it, the answer is to
+strengthen the division's page, not to build a competing one on AHA.
 
 ---
 
@@ -43,6 +103,10 @@ at [Arcadia Content Governance — Master](https://docs.google.com/spreadsheets/
 ### HC: Dementia-specific content
 **Status: resolved, no conflict.** `dementia-memory-care/introducing-home-care-dementia` is correctly scoped to dementia-specific mechanics (memory-safe framing, caregiver consistency, cognitive-stage-specific advice) — distinct from general resistance content on any site. No overlap with Rehab or ECC.
 
+### Dementia vs. normal aging
+**Status: resolved by redirect, verified live 2026-07-20.**
+Rehab's `/blog/dementia-vs-normal-forgetfulness/` 308-redirects to HC's `/resources/dementia-memory-care/normal-aging-vs-dementia/` and serves HC's canonical. Rehab deferred; HC owns the term. This is the reference pattern for resolving a cross-domain collision: redirect plus matching canonical, not two differentiated pages.
+
 ---
 
 ## Active Conflicts (resolved direction, action pending)
@@ -58,6 +122,8 @@ at [Arcadia Content Governance — Master](https://docs.google.com/spreadsheets/
 **Owner split — two distinct layers, not duplicated:**
 - **HC owns:** the home-care-specific number — hourly PSW/agency rates, what's included. Live/planned at `navigating-home-care/home-care-cost-ontario`.
 - **ECC owns:** the total eldercare financial picture — how home care cost compares to LTC, retirement homes, OHIP-funded options, legal/financial planning costs. ECC's article should link to HC's page for the home-care-specific figure rather than restating it.
+
+**AHA is excluded from this conflict.** Cost content of any kind is out of AHA's lane. If AHA needs to reference cost, it links to HC or ECC.
 
 **Deadline-sensitive:** ECC's cost article had a target publish date of 2026-07-22. Confirm this split is locked in before that date. **Status: HOLD pending confirmation, time-sensitive.**
 
@@ -78,6 +144,15 @@ at [Arcadia Content Governance — Master](https://docs.google.com/spreadsheets/
 
 **Status: HOLD.** Don't finalize HC's draft, or ECC's FD5, until HC's actual draft is checked against Rehab's live article side-by-side for lever overlap.
 
+### Conflict 4: Careers and recruitment (new, v1.1)
+**Owner: AHA, once its careers page is live.**
+
+HC currently runs `/careers` and `/pre-hire`. Rehab and ECC have no careers content. Candidate-side queries ("PSW jobs Toronto", "caregiver jobs GTA") are one pool, and Arcadia hires into three divisions from it.
+
+**Direction:** AHA `/careers/` becomes the single destination for recruitment. HC's `/careers` should either 301 to AHA's, or stay live as an HC-specific application page that canonicals to AHA and does not target generic job keywords.
+
+**Do not action until AHA is live and indexed.** Redirecting HC's careers page before AHA ranks would lose the only careers traffic Arcadia currently has. **Status: HOLD until AHA launch confirmed.**
+
 ---
 
 ## ECC-Specific Boundary Notes (from ECC's own governance doc)
@@ -87,9 +162,31 @@ ECC's three-way intent split, for reference when evaluating any new ECC topic ag
 - **HC = GET HANDS-ON CARE** — the actual service delivery, daily living support
 - **Rehab = STAY STRONG** — exercise, recovery, active independence
 
-This intent split is a useful starting filter, but per Conflicts 1–3 above, intent framing alone does not guarantee distinct search/AI-citation outcomes — the published text has to actually hold to the intended lane.
+This intent split is a useful starting filter, but per Conflicts 1–4 above, intent framing alone does not guarantee distinct search/AI-citation outcomes — the published text has to actually hold to the intended lane.
 
 ECC's cross-linking to HC/Rehab is deliberately deferred (per ECC's own governance, 6–12 month timeline). This file's job is to stop ECC's *content* from colliding with HC/Rehab even while ECC's *links* stay deferred.
+
+---
+
+## Entity architecture (added v1.1)
+
+The four sites stay on four separate domains. Nothing was migrated to
+subdomains or subdirectories. The parent/division relationship is declared in
+schema, not in DNS:
+
+- AHA declares `subOrganization` for HC, Rehab, and ECC (`lib/schema.ts` in the AHA repo)
+- **Each division site must declare `parentOrganization`** pointing at `https://www.arcadiahealth.ca/#organization`
+
+Both directions are required. As of 2026-07-20 the AHA side is built and the
+three division sides are **not yet added**. Until they are, the relationship is
+asserted by only one party.
+
+Rationale for keeping four domains: consolidating HC and Rehab under one domain
+would convert every cross-site collision documented above into internal
+cannibalization on a single site, and would migrate a continuously-live domain
+(arcadiahomecare.ca, live since 2014) into one that was dormant from roughly
+2021 to 2026. The redirect pattern under "Dementia vs. normal aging" resolves
+collisions without that cost.
 
 ---
 
@@ -97,6 +194,9 @@ ECC's cross-linking to HC/Rehab is deliberately deferred (per ECC's own governan
 
 - HC's full set of planned-but-unwritten articles (beyond what's visible on the live site) has not been comprehensively cross-checked against Rehab and ECC's planned content. This file reflects what's been verified through 2026-06-22 — new planned articles on any site should be checked against this file before drafting, and added once written.
 - Rehab's and ECC's own internal docs (`10-KEYWORD-OWNERSHIP.md`) have not yet been updated to reference each other directly — this canonical file is the bridge until that's done.
+- **The Sheet's Reserved Keywords tab is materially incomplete for Rehab and ECC** (verified 2026-07-20): it holds ~45 HC rows, 3 Rehab rows, and 0 ECC rows, while Rehab's local `10-KEYWORD-OWNERSHIP.md` lists roughly 30 reserved keywords that were never added. Until this is closed, a Rehab or ECC keyword check against the Sheet alone will return a false "unclaimed".
+- AHA's careers consolidation (Conflict 4) is blocked on AHA launch.
+- AHA's own keyword rows need adding to the Sheet, tagged AHA. See the paste-ready block in `docs/AHA-KEYWORD-ROWS-2026-07-20.md`.
 
 ---
 
@@ -104,9 +204,15 @@ ECC's cross-linking to HC/Rehab is deliberately deferred (per ECC's own governan
 
 Mark Y or N for each site once you've pasted the matching canonical version into that site's docs file. Add a new dated block above this one each time the canonical file changes — most recent on top.
 
+**2026-07-20 — Canonical v1.1** (added AHA as fourth site, AHA lane definition, bridge page rule, Conflict 4 careers, entity architecture section, dementia redirect resolution, Sheet completeness finding)
+- AHA: Y
+- HC: Y
+- Rehab: Y
+- ECC: Y
+
 **2026-06-22 — Canonical v1.0 created** (merged HC↔Rehab boundary doc, ECC boundary doc, and Conflicts 1–3 resolution)
-- HC: N
-- Rehab: N
+- HC: Y
+- Rehab: Y
 - ECC: N
 
-**Last synced (this file):** —
+**Last synced (this file):** 2026-07-20
